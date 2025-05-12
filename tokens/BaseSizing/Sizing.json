@@ -1,0 +1,86 @@
+{
+  "size-2": {
+    "$type": "number",
+    "$value": 2
+  },
+  "size-4": {
+    "$type": "number",
+    "$value": 4
+  },
+  "size-8": {
+    "$type": "number",
+    "$value": 8
+  },
+  "size-12": {
+    "$type": "number",
+    "$value": 12
+  },
+  "size-16": {
+    "$type": "number",
+    "$value": 16
+  },
+  "size-24": {
+    "$type": "number",
+    "$value": 24
+  },
+  "size-32": {
+    "$type": "number",
+    "$value": 32
+  },
+  "size-48": {
+    "$type": "number",
+    "$value": 48
+  },
+  "size-0": {
+    "$type": "number",
+    "$value": 0
+  },
+  "size-1": {
+    "$type": "number",
+    "$value": 1
+  },
+  "size-6": {
+    "$type": "number",
+    "$value": 6
+  },
+  "size-20": {
+    "$type": "number",
+    "$value": 20
+  },
+  "size-40": {
+    "$type": "number",
+    "$value": 40
+  },
+  "size-64": {
+    "$type": "number",
+    "$value": 64
+  },
+  "size-96": {
+    "$type": "number",
+    "$value": 96
+  },
+  "size-128": {
+    "$type": "number",
+    "$value": 128
+  },
+  "size-256": {
+    "$type": "number",
+    "$value": 256
+  },
+  "size-512": {
+    "$type": "number",
+    "$value": 512
+  },
+  "size-10": {
+    "$type": "number",
+    "$value": 10
+  },
+  "size-28": {
+    "$type": "number",
+    "$value": 28
+  },
+  "size-1024": {
+    "$type": "number",
+    "$value": 1024
+  }
+}

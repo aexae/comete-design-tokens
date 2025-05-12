@@ -1,0 +1,62 @@
+{
+  "_FIGMA-Globals-brand": {
+    "lightest": {
+      "$type": "color",
+      "$value": "{Brands.CometePrimary.50}"
+    },
+    "lighter": {
+      "$type": "color",
+      "$value": "{Brands.CometePrimary.200}"
+    },
+    "light": {
+      "$type": "color",
+      "$value": "{Brands.CometePrimary.400}"
+    },
+    "main": {
+      "$type": "color",
+      "$value": "{Brands.CometePrimary.700}"
+    },
+    "dark": {
+      "$type": "color",
+      "$value": "{Brands.CometePrimary.800}"
+    },
+    "darker": {
+      "$type": "color",
+      "$value": "{Brands.CometePrimary.900}"
+    },
+    "darkest": {
+      "$type": "color",
+      "$value": "{Brands.CometePrimary.950}"
+    }
+  },
+  "_FIGMA-Globals-brand-themed": {
+    "lightest": {
+      "$type": "color",
+      "$value": "{color._DEPRECATED._brand.Comete-primary.lightest}"
+    },
+    "lighter": {
+      "$type": "color",
+      "$value": "{color._DEPRECATED._brand.Comete-primary.lighter}"
+    },
+    "light": {
+      "$type": "color",
+      "$value": "{color._DEPRECATED._brand.Comete-primary.light}"
+    },
+    "main": {
+      "$type": "color",
+      "$value": "{color._DEPRECATED._brand.Comete-primary.main}"
+    },
+    "dark": {
+      "$type": "color",
+      "$value": "{color._DEPRECATED._brand.Comete-primary.dark}"
+    },
+    "darker": {
+      "$type": "color",
+      "$value": "{color._DEPRECATED._brand.Comete-primary.darker}"
+    },
+    "darkest": {
+      "$type": "color",
+      "$value": "{color._DEPRECATED._brand.Comete-primary.darkest}"
+    }
+  }
+}

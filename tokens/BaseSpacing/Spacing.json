@@ -1,0 +1,66 @@
+{
+  "space-2": {
+    "$type": "number",
+    "$value": "{size-2}"
+  },
+  "space-4": {
+    "$type": "number",
+    "$value": "{size-4}"
+  },
+  "space-8": {
+    "$type": "number",
+    "$value": "{size-8}"
+  },
+  "space-12": {
+    "$type": "number",
+    "$value": "{size-12}"
+  },
+  "space-16": {
+    "$type": "number",
+    "$value": "{size-16}"
+  },
+  "space-24": {
+    "$type": "number",
+    "$value": "{size-24}"
+  },
+  "space-32": {
+    "$type": "number",
+    "$value": "{size-32}"
+  },
+  "space-48": {
+    "$type": "number",
+    "$value": "{size-48}"
+  },
+  "space-0": {
+    "$type": "number",
+    "$value": "{size-0}"
+  },
+  "space-10": {
+    "$type": "number",
+    "$value": "{size-10}"
+  },
+  "space-6": {
+    "$type": "number",
+    "$value": "{size-6}"
+  },
+  "space-64": {
+    "$type": "number",
+    "$value": "{size-64}"
+  },
+  "space-96": {
+    "$type": "number",
+    "$value": "{size-96}"
+  },
+  "space-128": {
+    "$type": "number",
+    "$value": "{size-128}"
+  },
+  "space-20": {
+    "$type": "number",
+    "$value": "{size-20}"
+  },
+  "space-28": {
+    "$type": "number",
+    "$value": "{size-28}"
+  }
+}

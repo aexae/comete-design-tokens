@@ -1,0 +1,19 @@
+{
+  "tokenSetOrder": [
+    "BaseColors/Color",
+    "SemanticsColors/Light",
+    "SemanticsColors/Dark",
+    "_BrandMode/Comete",
+    "_BrandMode/PurpleCompany",
+    "_BrandMode/YellowCompany",
+    "_BrandMode/RedCompany",
+    "_TEST_Tokens/Light",
+    "_TEST_Tokens/Dark",
+    "ComponentsColors/Token",
+    "Typography/Value",
+    "BaseRadius/Radius",
+    "BaseSizing/Sizing",
+    "BaseSpacing/Spacing",
+    "Breakpoints/Breakpoints"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "gt": {
+    "$type": "number",
+    "$value": 1920
+  },
+  "xl": {
+    "$type": "number",
+    "$value": 1536
+  },
+  "lg": {
+    "$type": "number",
+    "$value": 1200
+  },
+  "md": {
+    "$type": "number",
+    "$value": 900
+  },
+  "sm": {
+    "$type": "number",
+    "$value": 600
+  },
+  "sd": {
+    "$type": "number",
+    "$value": 420
+  },
+  "sr": {
+    "$type": "number",
+    "$value": 350
+  },
+  "xs": {
+    "$type": "number",
+    "$value": 0
+  }
+}

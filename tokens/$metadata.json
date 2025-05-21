@@ -1,19 +1,14 @@
 {
   "tokenSetOrder": [
-    "BaseColors/Color",
-    "SemanticsColors/Light",
-    "SemanticsColors/Dark",
-    "_BrandMode/Comete",
-    "_BrandMode/PurpleCompany",
-    "_BrandMode/YellowCompany",
-    "_BrandMode/RedCompany",
-    "_TEST_Tokens/Light",
-    "_TEST_Tokens/Dark",
-    "ComponentsColors/Token",
-    "Typography/Value",
-    "BaseRadius/Radius",
-    "BaseSizing/Sizing",
-    "BaseSpacing/Spacing",
-    "Breakpoints/Breakpoints"
+    "base/color/hex",
+    "base/brand/hex",
+    "base/typography/mobile",
+    "base/radius/mobile",
+    "base/sizing/mobile",
+    "base/spacing/mobile",
+    "base/breakpoints/media-queries",
+    "theme/light",
+    "theme/dark",
+    "components/mobile"
   ]
 }

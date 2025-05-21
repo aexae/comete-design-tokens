@@ -1,0 +1,74 @@
+{
+  "Space0": {
+    "$type": "number",
+    "$value": "{Size0}"
+  },
+  "Space025": {
+    "$type": "number",
+    "$value": "{Size025}"
+  },
+  "Space075": {
+    "$type": "number",
+    "$value": "{Size075}"
+  },
+  "Space050": {
+    "$type": "number",
+    "$value": "{Size050}"
+  },
+  "Space100": {
+    "$type": "number",
+    "$value": "{Size100}"
+  },
+  "Space125": {
+    "$type": "number",
+    "$value": "{Size125}"
+  },
+  "Space150": {
+    "$type": "number",
+    "$value": "{Size150}"
+  },
+  "Space200": {
+    "$type": "number",
+    "$value": "{Size200}"
+  },
+  "Space250": {
+    "$type": "number",
+    "$value": "{Size250}"
+  },
+  "Space300": {
+    "$type": "number",
+    "$value": "{Size300}"
+  },
+  "Space350": {
+    "$type": "number",
+    "$value": "{Size350}"
+  },
+  "Space400": {
+    "$type": "number",
+    "$value": "{Size400}"
+  },
+  "Space600": {
+    "$type": "number",
+    "$value": "{Size600}"
+  },
+  "Space800": {
+    "$type": "number",
+    "$value": "{Size800}"
+  },
+  "Space1200": {
+    "$type": "number",
+    "$value": "{Size1200}"
+  },
+  "Space1600": {
+    "$type": "number",
+    "$value": "{Size1600}"
+  },
+  "Space500": {
+    "$type": "number",
+    "$value": "{Size500}"
+  },
+  "Space1000": {
+    "$type": "number",
+    "$value": "{Size1000}"
+  }
+}

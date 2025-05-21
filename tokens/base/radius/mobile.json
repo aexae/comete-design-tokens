@@ -1,0 +1,42 @@
+{
+  "RadiusROUND": {
+    "$type": "number",
+    "$value": "{Size6400}"
+  },
+  "RadiusXXXL": {
+    "$type": "number",
+    "$value": "{Size400}"
+  },
+  "RadiusXXL": {
+    "$type": "number",
+    "$value": "{Size300}"
+  },
+  "RadiusXL": {
+    "$type": "number",
+    "$value": "{Size200}"
+  },
+  "RadiusL": {
+    "$type": "number",
+    "$value": "{Size150}"
+  },
+  "RadiusM": {
+    "$type": "number",
+    "$value": "{Size100}"
+  },
+  "RadiusS": {
+    "$type": "number",
+    "$value": "{Size075}"
+  },
+  "RadiusXS": {
+    "$type": "number",
+    "$value": "{Size050}"
+  },
+  "RadiusXXS": {
+    "$type": "number",
+    "$value": "{Size025}"
+  },
+  "RadiusXXXS": {
+    "$type": "number",
+    "$value": "{Size0}"
+  }
+}

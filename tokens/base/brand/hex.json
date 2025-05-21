@@ -1,0 +1,96 @@
+{
+  "Comete": {
+    "Biscay": {
+      "B950": {
+        "$type": "color",
+        "$value": "#1e3661"
+      },
+      "B900": {
+        "$type": "color",
+        "$value": "#224986"
+      },
+      "B800": {
+        "$type": "color",
+        "$value": "#2354aa"
+      },
+      "B700": {
+        "$type": "color",
+        "$value": "#2467d1"
+      },
+      "B600": {
+        "$type": "color",
+        "$value": "#2c7ee4"
+      },
+      "B500": {
+        "$type": "color",
+        "$value": "#429aef"
+      },
+      "B400": {
+        "$type": "color",
+        "$value": "#66b8f4"
+      },
+      "B300": {
+        "$type": "color",
+        "$value": "#97d2f9"
+      },
+      "B200": {
+        "$type": "color",
+        "$value": "#c1e3fc"
+      },
+      "B100": {
+        "$type": "color",
+        "$value": "#dceefd"
+      },
+      "B50": {
+        "$type": "color",
+        "$value": "#f0f8fe"
+      }
+    },
+    "Lightning Yellow": {
+      "50": {
+        "$type": "color",
+        "$value": "#fffeea"
+      },
+      "100": {
+        "$type": "color",
+        "$value": "#fffcc5"
+      },
+      "200": {
+        "$type": "color",
+        "$value": "#fffa86"
+      },
+      "300": {
+        "$type": "color",
+        "$value": "#fff146"
+      },
+      "400": {
+        "$type": "color",
+        "$value": "#ffe31c"
+      },
+      "500": {
+        "$type": "color",
+        "$value": "#f8bf01"
+      },
+      "600": {
+        "$type": "color",
+        "$value": "#e19800"
+      },
+      "700": {
+        "$type": "color",
+        "$value": "#bb6c02"
+      },
+      "800": {
+        "$type": "color",
+        "$value": "#975309"
+      },
+      "900": {
+        "$type": "color",
+        "$value": "#7c440b"
+      },
+      "950": {
+        "$type": "color",
+        "$value": "#482300"
+      }
+    }
+  }
+}

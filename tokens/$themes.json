@@ -3,7 +3,16 @@
     "id": "base/color-value",
     "name": "Value",
     "group": "base/color",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Red.R400": "6d007957d6f42a60d1fee4787e83d48f9ee09974",
@@ -143,7 +152,16 @@
     "id": "base/radius-rad",
     "name": "rad",
     "group": "base/radius",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "RadiusXXS": "65bfb7a4cdc67d788066cd039f714600e05c9465",
@@ -164,7 +182,16 @@
     "id": "base/sizing-value",
     "name": "Value",
     "group": "base/sizing",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Size025": "2daf6472259113631adedee3904cf52647662a89",
@@ -197,7 +224,16 @@
     "id": "base/spacing-value",
     "name": "Value",
     "group": "base/spacing",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Space025": "69eb858a5e3321bacfb26136f01126f09c604b04",
@@ -226,7 +262,16 @@
     "id": "base/breakpoints-value",
     "name": "Value",
     "group": "base/breakpoints",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Desktop": "215ea82ff1786b52abd0b668f61cbb54abe3838e",
@@ -241,7 +286,16 @@
     "id": "base/typography-value",
     "name": "Value",
     "group": "base/typography",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "FontWeight.FontWeightRegular": "0ee93b09f7f9eef2230819e17f3f03d357cfc31a",
@@ -278,7 +332,16 @@
     "id": "components-value",
     "name": "Value",
     "group": "components",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "button.color.contained.default.background.default": "18604f3d57a56e0962b55baf79e0eca505af25dc",
@@ -510,7 +573,15 @@
     "name": "light",
     "group": "theme",
     "selectedTokenSets": {
-      "theme/light": "enabled"
+      "theme/light": "enabled",
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -643,7 +714,15 @@
     "name": "dark",
     "group": "theme",
     "selectedTokenSets": {
-      "theme/dark": "enabled"
+      "theme/dark": "enabled",
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -775,7 +854,16 @@
     "id": "base/brand-mode 1",
     "name": "Mode 1",
     "group": "base/brand",
-    "selectedTokenSets": {},
+    "selectedTokenSets": {
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
+    },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
       "Comete.Biscay.B100": "7807c9680c93667742a33eb5fb8811ad1c73b100",
@@ -809,7 +897,14 @@
     "name": "hex",
     "group": "base/color",
     "selectedTokenSets": {
-      "base/color/hex": "enabled"
+      "base/color/tokens": "enabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -951,7 +1046,14 @@
     "name": "mobile",
     "group": "base/radius",
     "selectedTokenSets": {
-      "base/radius/mobile": "enabled"
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "enabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -974,7 +1076,14 @@
     "name": "mobile",
     "group": "base/sizing",
     "selectedTokenSets": {
-      "base/sizing/mobile": "enabled"
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "enabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -1009,7 +1118,14 @@
     "name": "mobile",
     "group": "base/spacing",
     "selectedTokenSets": {
-      "base/spacing/mobile": "enabled"
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "enabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -1040,7 +1156,14 @@
     "name": "media-queries",
     "group": "base/breakpoints",
     "selectedTokenSets": {
-      "base/breakpoints/media-queries": "enabled"
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "enabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -1057,7 +1180,14 @@
     "name": "mobile",
     "group": "base/typography",
     "selectedTokenSets": {
-      "base/typography/mobile": "enabled"
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "enabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -1096,7 +1226,14 @@
     "name": "mobile",
     "group": "components",
     "selectedTokenSets": {
-      "components/mobile": "enabled"
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "disabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "enabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
@@ -1329,7 +1466,14 @@
     "name": "hex",
     "group": "base/brand",
     "selectedTokenSets": {
-      "base/brand/hex": "enabled"
+      "base/color/tokens": "disabled",
+      "base/brand/tokens": "enabled",
+      "base/typography/tokens": "disabled",
+      "base/radius/tokens": "disabled",
+      "base/sizing/tokens": "disabled",
+      "base/spacing/tokens": "disabled",
+      "base/breakpoints/tokens": "disabled",
+      "components/tokens": "disabled"
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {

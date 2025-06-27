@@ -1,14 +1,14 @@
 {
   "tokenSetOrder": [
-    "base/color/hex",
-    "base/brand/hex",
-    "base/typography/mobile",
-    "base/radius/mobile",
-    "base/sizing/mobile",
-    "base/spacing/mobile",
-    "base/breakpoints/media-queries",
+    "base/color/tokens",
+    "base/brand/tokens",
+    "base/typography/tokens",
+    "base/radius/tokens",
+    "base/sizing/tokens",
+    "base/spacing/tokens",
+    "base/breakpoints/tokens",
     "theme/light",
     "theme/dark",
-    "components/mobile"
+    "components/tokens"
   ]
 }

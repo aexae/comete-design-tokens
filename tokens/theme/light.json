@@ -68,6 +68,10 @@
     },
     "selected": {
       "bold": {
+        "default": {
+          "$type": "color",
+          "$value": "{Comete.Biscay.B800}"
+        },
         "hovered": {
           "$type": "color",
           "$value": "{Comete.Biscay.B900}"
@@ -75,24 +79,20 @@
         "pressed": {
           "$type": "color",
           "$value": "{Comete.Biscay.B950}"
-        },
-        "default": {
-          "$type": "color",
-          "$value": "{Comete.Biscay.B800}"
         }
       },
       "subtlest": {
-        "pressed": {
+        "default": {
           "$type": "color",
-          "$value": "{Comete.Biscay.B300}"
+          "$value": "{Comete.Biscay.B100}"
         },
         "hovered": {
           "$type": "color",
           "$value": "{Comete.Biscay.B200}"
         },
-        "default": {
+        "pressed": {
           "$type": "color",
-          "$value": "{Comete.Biscay.B100}"
+          "$value": "{Comete.Biscay.B300}"
         }
       }
     },
@@ -128,6 +128,10 @@
         }
       },
       "subtlest": {
+        "default": {
+          "$type": "color",
+          "$value": "{Salem.G100}"
+        },
         "hovered": {
           "$type": "color",
           "$value": "{Salem.G200}"
@@ -135,10 +139,6 @@
         "pressed": {
           "$type": "color",
           "$value": "{Salem.G300}"
-        },
-        "default": {
-          "$type": "color",
-          "$value": "{Salem.G100}"
         }
       }
     },
@@ -158,17 +158,17 @@
         }
       },
       "subtlest": {
-        "pressed": {
+        "default": {
           "$type": "color",
-          "$value": "{Supernova.Y300}"
+          "$value": "{Supernova.Y100}"
         },
         "hovered": {
           "$type": "color",
           "$value": "{Supernova.Y200}"
         },
-        "default": {
+        "pressed": {
           "$type": "color",
-          "$value": "{Supernova.Y100}"
+          "$value": "{Supernova.Y300}"
         }
       }
     },
@@ -188,17 +188,17 @@
         }
       },
       "subtlest": {
-        "pressed": {
+        "default": {
           "$type": "color",
-          "$value": "{Red.R200}"
+          "$value": "{Red.R50}"
         },
         "hovered": {
           "$type": "color",
           "$value": "{Red.R100}"
         },
-        "default": {
+        "pressed": {
           "$type": "color",
-          "$value": "{Red.R50}"
+          "$value": "{Red.R200}"
         }
       }
     },
@@ -218,17 +218,17 @@
         }
       },
       "subtlest": {
-        "pressed": {
+        "default": {
           "$type": "color",
-          "$value": "{GreenVogue.B300}"
+          "$value": "{GreenVogue.B100}"
         },
         "hovered": {
           "$type": "color",
           "$value": "{GreenVogue.B200}"
         },
-        "default": {
+        "pressed": {
           "$type": "color",
-          "$value": "{GreenVogue.B100}"
+          "$value": "{GreenVogue.B300}"
         }
       }
     },
@@ -535,7 +535,7 @@
       "$value": "{GreenVogue.B800}"
     }
   },
-  "_logo_no_themed_gradients": {
+  "logo": {
     "Comete": {
       "_default": {
         "$type": "color",

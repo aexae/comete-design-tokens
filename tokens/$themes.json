@@ -415,16 +415,7 @@
     },
     "$figmaStyleReferences": {},
     "$figmaVariableReferences": {
-      "RadiusXXS": "65bfb7a4cdc67d788066cd039f714600e05c9465",
-      "RadiusXS": "e5d0136821432a2f8c7ed3d230d8c8aa0c78b12f",
-      "RadiusM": "96d2d172c328ac99428594b6e5e08f8dd2a74025",
-      "RadiusL": "aa407000d3305973b0d17138879bc0f43ecf56d4",
-      "RadiusXL": "2bf7254b0c527361b1f7ef67fc3dd0876d89e272",
-      "RadiusXXL": "00ddf56cf564cd297a9abe21b51c85fe03b5d223",
-      "RadiusXXXL": "d1e0a5cc5eb69deee0e3d37d78d9fec5968209bb",
-      "RadiusROUND": "7d48900cdfb0966b19bbe144b83ace9dbb85adc0",
-      "RadiusXXXS": "5e6ff0d9b866916c3dac7c801a5fc7e6845c6347",
-      "RadiusS": "346906a01f98dabf20c4cbfc5016fa52f7e2a518"
+      "RadiusROUND": "7d48900cdfb0966b19bbe144b83ace9dbb85adc0"
     },
     "$figmaModeId": "278:1",
     "$figmaCollectionId": "VariableCollectionId:278:1322",
@@ -544,9 +535,9 @@
       "LetterSpacing.LetterSpacingNormal": "cef71f66128d34406b680c949245c6a3b50a2baf",
       "LetterSpacing.positive.LetterSpacingWide": "069183e17fe3d3422173cd31c694c7e32a9c420a",
       "LetterSpacing.positive.LetterSpacingExtraWide": "05eadac546c1c5b1375676377059a098ab24ec01",
-      "family.FontFamilyPrimary": "cd81fceeb7579e12cf47a385d04b7e6726faaafc",
       "FontSize.FontSizeXXXS": "0b0ab6c998837d5c21b6f83490fa72c166db9edf",
-      "family.FontFamilySecondary": "cb39bb8dc9dcfdaf19a4bfedb1c1cbb48a5fe9f7"
+      "FontFamily.FontFamilyPrimary": "cd81fceeb7579e12cf47a385d04b7e6726faaafc",
+      "FontFamily.FontFamilySecondary": "cb39bb8dc9dcfdaf19a4bfedb1c1cbb48a5fe9f7"
     },
     "$figmaModeId": "2363:0",
     "$figmaCollectionId": "VariableCollectionId:2363:6519",

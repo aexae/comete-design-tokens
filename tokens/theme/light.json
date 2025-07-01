@@ -33,7 +33,7 @@
     "disabled": {
       "default": {
         "$type": "color",
-        "$value": "{Grey.N50}"
+        "$value": "{Grey.N100}"
       }
     },
     "brand": {
@@ -109,7 +109,11 @@
       },
       "mask": {
         "$type": "color",
-        "$value": "{Black.N60}"
+        "$value": "{AlphaDark.N60}"
+      },
+      "elevation": {
+        "$type": "color",
+        "$value": "{AlphaDark.N2}"
       }
     },
     "success": {
@@ -353,12 +357,28 @@
           }
         }
       }
+    },
+    "focused": {
+      "focused": {
+        "$type": "color",
+        "$value": "{GreenVogue.B500}"
+      }
+    },
+    "alpha": {
+      "default": {
+        "$type": "color",
+        "$value": "{AlphaDark.N80}"
+      }
     }
   },
   "text": {
     "primary": {
       "$type": "color",
       "$value": "{Porcelain.G950}"
+    },
+    "brand": {
+      "$type": "color",
+      "$value": "{Comete.Biscay.B700}"
     },
     "selected": {
       "$type": "color",
@@ -403,6 +423,20 @@
     "accent inverted": {
       "$type": "color",
       "$value": "{BlueMarguerite.B50}"
+    },
+    "link": {
+      "default": {
+        "$type": "color",
+        "$value": "{GreenVogue.B600}"
+      },
+      "hovered": {
+        "$type": "color",
+        "$value": "{GreenVogue.B700}"
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{GreenVogue.B800}"
+      }
     }
   },
   "border": {
@@ -428,7 +462,7 @@
     },
     "critical": {
       "$type": "color",
-      "$value": "{Red.R600}"
+      "$value": "{Red.R700}"
     },
     "warning": {
       "$type": "color",
@@ -461,12 +495,16 @@
     "day subtle": {
       "$type": "color",
       "$value": "{Saffron.Y100}"
+    },
+    "brand": {
+      "$type": "color",
+      "$value": "{Comete.Biscay.B700}"
     }
   },
   "icon": {
     "default": {
       "$type": "color",
-      "$value": "{BlueGrey.B700}"
+      "$value": "{BlueGrey.B600}"
     },
     "disabled": {
       "$type": "color",
@@ -478,7 +516,7 @@
     },
     "warning": {
       "$type": "color",
-      "$value": "{Supernova.Y600}"
+      "$value": "{Supernova.Y800}"
     },
     "critical": {
       "$type": "color",
@@ -521,21 +559,7 @@
       "$value": "{GreenVogue.B600}"
     }
   },
-  "link": {
-    "default": {
-      "$type": "color",
-      "$value": "{GreenVogue.B600}"
-    },
-    "hovered": {
-      "$type": "color",
-      "$value": "{GreenVogue.B700}"
-    },
-    "pressed": {
-      "$type": "color",
-      "$value": "{GreenVogue.B800}"
-    }
-  },
-  "logo": {
+  "_logo_no_themed_gradients": {
     "Comete": {
       "_default": {
         "$type": "color",
@@ -543,11 +567,11 @@
       },
       "_gradient-dark": {
         "$type": "color",
-        "$value": "{Comete.Lightning Yellow.500}"
+        "$value": "{Comete.Lightning Yellow.Y500}"
       },
       "_gradient-light": {
         "$type": "color",
-        "$value": "{Comete.Lightning Yellow.300}"
+        "$value": "{Comete.Lightning Yellow.Y300}"
       },
       "_neutral": {
         "$type": "color",

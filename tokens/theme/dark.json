@@ -374,7 +374,7 @@
   "text": {
     "primary": {
       "$type": "color",
-      "$value": "{porcelain.G50}"
+      "$value": "{porcelain.G200}"
     },
     "selected": {
       "$type": "color",
@@ -390,7 +390,7 @@
     },
     "subtle": {
       "$type": "color",
-      "$value": "{porcelain.G200}"
+      "$value": "{porcelain.G300}"
     },
     "inverted": {
       "$type": "color",
@@ -414,7 +414,7 @@
     },
     "subtlest": {
       "$type": "color",
-      "$value": "{porcelain.G400}"
+      "$value": "{porcelain.G500}"
     },
     "accent": {
       "$type": "color",
@@ -499,6 +499,18 @@
     "brand": {
       "$type": "color",
       "$value": "{Comete.Biscay.B500}"
+    },
+    "focus": {
+      "$type": "color",
+      "$value": "{green-vogue.B400}"
+    },
+    "selected inverted": {
+      "$type": "color",
+      "$value": "{green-vogue.B800}"
+    },
+    "focus inverted": {
+      "$type": "color",
+      "$value": "{green-vogue.B900}"
     }
   },
   "icon": {

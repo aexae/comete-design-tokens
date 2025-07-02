@@ -382,7 +382,7 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{green-vogue.B700}"
+      "$value": "{green-vogue.B600}"
     },
     "disabled": {
       "$type": "color",
@@ -499,6 +499,18 @@
     "brand": {
       "$type": "color",
       "$value": "{Comete.Biscay.B700}"
+    },
+    "focus": {
+      "$type": "color",
+      "$value": "{green-vogue.B500}"
+    },
+    "selected inverted": {
+      "$type": "color",
+      "$value": "{green-vogue.B200}"
+    },
+    "focus inverted": {
+      "$type": "color",
+      "$value": "{green-vogue.B100}"
     }
   },
   "icon": {

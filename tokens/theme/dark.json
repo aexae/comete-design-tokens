@@ -54,29 +54,29 @@
       "subtlest": {
         "default": {
           "$type": "color",
-          "$value": "{Comete.Biscay.950}"
+          "$value": "{comete.biscay.950}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{Comete.Biscay.900}"
+          "$value": "{comete.biscay.900}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{Comete.Biscay.800}"
+          "$value": "{comete.biscay.800}"
         }
       },
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{Comete.Biscay.300}"
+          "$value": "{comete.biscay.300}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{Comete.Biscay.200}"
+          "$value": "{comete.biscay.200}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{Comete.Biscay.100}"
+          "$value": "{comete.biscay.100}"
         }
       }
     },
@@ -84,29 +84,29 @@
       "bold": {
         "hovered": {
           "$type": "color",
-          "$value": "{Comete.Biscay.100}"
+          "$value": "{comete.biscay.100}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{Comete.Biscay.50}"
+          "$value": "{comete.biscay.50}"
         },
         "default": {
           "$type": "color",
-          "$value": "{Comete.Biscay.200}"
+          "$value": "{comete.biscay.200}"
         }
       },
       "subtlest": {
         "pressed": {
           "$type": "color",
-          "$value": "{Comete.Biscay.800}"
+          "$value": "{comete.biscay.800}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{Comete.Biscay.900}"
+          "$value": "{comete.biscay.900}"
         },
         "default": {
           "$type": "color",
-          "$value": "{Comete.Biscay.950}"
+          "$value": "{comete.biscay.950}"
         }
       }
     },
@@ -264,29 +264,29 @@
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{Comete.Biscay.500}"
+          "$value": "{comete.biscay.500}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{Comete.Biscay.400}"
+          "$value": "{comete.biscay.400}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{Comete.Biscay.300}"
+          "$value": "{comete.biscay.300}"
         }
       },
       "subtlest": {
         "default": {
           "$type": "color",
-          "$value": "{Comete.Biscay.900}"
+          "$value": "{comete.biscay.900}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{Comete.Biscay.800}"
+          "$value": "{comete.biscay.800}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{Comete.Biscay.700}"
+          "$value": "{comete.biscay.700}"
         }
       }
     },
@@ -460,7 +460,7 @@
     },
     "brand": {
       "$type": "color",
-      "$value": "{Comete.Biscay.300}"
+      "$value": "{comete.biscay.300}"
     }
   },
   "border": {
@@ -522,7 +522,7 @@
     },
     "brand": {
       "$type": "color",
-      "$value": "{Comete.Biscay.500}"
+      "$value": "{comete.biscay.500}"
     },
     "selected inverted": {
       "$type": "color",
@@ -576,7 +576,7 @@
     },
     "brand": {
       "$type": "color",
-      "$value": "{Comete.Biscay.200}"
+      "$value": "{comete.biscay.200}"
     },
     "selected": {
       "$type": "color",
@@ -611,19 +611,19 @@
     "Comete": {
       "_default": {
         "$type": "color",
-        "$value": "{Comete.Biscay.400}"
+        "$value": "{comete.biscay.400}"
       },
       "_gradient-dark": {
         "$type": "color",
-        "$value": "{Comete.Lightning Yellow.500}"
+        "$value": "{comete.lightning-yellow.500}"
       },
       "_gradient-light": {
         "$type": "color",
-        "$value": "{Comete.Lightning Yellow.300}"
+        "$value": "{comete.lightning-yellow.300}"
       },
       "_neutral": {
         "$type": "color",
-        "$value": "{Comete.Biscay.100}"
+        "$value": "{comete.biscay.100}"
       },
       "_subtlest": {
         "$type": "color",
@@ -631,7 +631,7 @@
       },
       "_inverted": {
         "$type": "color",
-        "$value": "{Comete.Biscay.950}"
+        "$value": "{comete.biscay.950}"
       },
       "_subtle": {
         "$type": "color",

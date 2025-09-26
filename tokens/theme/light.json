@@ -383,7 +383,7 @@
       }
     },
     "focused": {
-      "focused": {
+      "default": {
         "$type": "color",
         "$value": "{green-vogue.500}"
       }
@@ -454,7 +454,7 @@
       "$type": "color",
       "$value": "{blue-marguerite.700}"
     },
-    "accent inverted": {
+    "accent-inverted": {
       "$type": "color",
       "$value": "{blue-marguerite.50}"
     },
@@ -524,11 +524,11 @@
       "$type": "color",
       "$value": "{comete.biscay.700}"
     },
-    "selected inverted": {
+    "selected-inverted": {
       "$type": "color",
       "$value": "{green-vogue.200}"
     },
-    "focus inverted": {
+    "focus-inverted": {
       "$type": "color",
       "$value": "{green-vogue.100}"
     },

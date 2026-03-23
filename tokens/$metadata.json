@@ -1,0 +1,14 @@
+{
+  "tokenSetOrder": [
+    "base/color/tokens",
+    "base/brand/tokens",
+    "base/sizing/tokens",
+    "base/breakpoints/tokens",
+    "base/spacing/tokens",
+    "base/radius/tokens",
+    "components/tokens",
+    "theme/light",
+    "theme/dark",
+    "base/typography/tokens"
+  ]
+}

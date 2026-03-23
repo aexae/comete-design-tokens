@@ -10,42 +10,61 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 Initial public release.
 
-### Added
+La fondation de l'écosystème Comète : **767 CSS custom properties** compilées dans un fichier unique, avec support natif du light/dark mode.
 
-#### Build pipeline
+## Contenu
 
-- **Style Dictionary 5** + `@tokens-studio/sd-transforms` pour compiler les tokens JSON en CSS custom properties
-- Fichier CSS unifié `build/css/comete-tokens.css` (~767 custom properties)
-- Source au format **W3C Design Tokens (DTCG)**, éditée via Tokens Studio
+### Tokens primitifs (~317)
 
-#### Tokens primitifs
+- **Couleurs** — 11 palettes (biscay, lightning-yellow, red, salem, grey, porcelain, blue-marguerite, blue-grey, supernova, green-vogue, saffron) + neutrals avec alpha
+- **Typographie** — 6 familles (Poppins, Outfit, Satoshi, Urbanist, Space Grotesk, SF Mono), 4 weights, 2 échelles de tailles (ui + hero), line-heights, letter-spacing
+- **Spacing** — 16 valeurs (0px → 128px)
+- **Sizing** — 27 valeurs (0px → 1024px)
+- **Border radius** — 12 valeurs (0px → round)
+- **Shadows** — 6 niveaux (none → xl)
+- **Animation** — 5 durées + 4 courbes d'easing
+- **Opacity, Z-index** (9 niveaux), **Breakpoints** (4)
 
-- **Couleurs** — 11 palettes (neutral, brand, success, warning, critical, information, accent, etc.)
-- **Typographie** — 6 familles de polices, 4 weights, 2 échelles de tailles
-- **Spacing** — 16 valeurs (de `2xs` à `4xl`)
-- **Sizing** — 27 valeurs
-- **Border-radius** — 12 valeurs (de `none` à `full`)
-- **Ombres** — 6 niveaux d'élévation
-- **Animation** — durées + courbes d'easing
-- **Z-index**, **opacity**, **breakpoints**
+### Tokens sémantiques (~300, light + dark)
 
-#### Tokens sémantiques (light + dark)
+- **Surfaces** : background (neutral, brand, selected, success, warning, critical, information, accent, cycle, focused, alpha)
+- **Texte** : primary, selected, disabled, link, subtle, inverted, success, information, warning, critical, subtlest, accent, brand
+- **Bordures** : 12+ variantes sémantiques
+- **Icônes** : 11 couleurs sémantiques (`--icon-default`, `--icon-brand`, etc.)
+- **Interaction** : hovered, pressed
+- **Blanket** : overlay
 
-- Catégories : `background`, `text`, `border`, `icon`
-- Intentions : `default`, `brand`, `success`, `warning`, `critical`, `information`, `accent`
-- États : `default`, `hovered`, `pressed`, `disabled`, `selected`
+## Theming
 
-#### Tokens composants
+- `:root` expose les primitifs + les tokens sémantiques light par défaut
+- `[data-theme="dark"]` applique les overrides dark
+- Fallback `@media (prefers-color-scheme: dark)` si aucun `data-theme` n'est défini
 
-Couverture initiale de 35 composants : `alert`, `autosave-indicator`, `avatar`, `badge`, `blanket`, `breadcrumbs`, `button`, `button-group`, `calendar`, `card`, `checkbox`, `code`, `drop-indicator`, `focus-ring`, `informative-state`, `input`, `logo`, `media-picker`, `menu`, `modal-dialog`, `month-picker`, `page`, `popup`, `radio`, `scrollbar`, `select`, `slot`, `snackbar`, `spinner`, `tabs`, `tag`, `text-field`, `toggle-button`, `week-picker`, `year-picker`
+## Stack technique
 
-#### Theming
+- **Source** : JSON au format W3C Design Tokens (`$type`/`$value`), édités via Tokens Studio
+- **Build** : Style Dictionary 5.0.0 + @tokens-studio/sd-transforms 1.3.0
+- **Sortie** : un fichier CSS unique `build/css/comete-tokens.css` (805 lignes)
+- **Distribution** : GitHub Packages (`@aexae/comete-design-tokens`)
 
-- Light mode activé par défaut sur `:root`
-- Dark mode via attribut `[data-theme="dark"]` sur `<html>`
-- Fallback automatique via `@media (prefers-color-scheme: dark)`
+## Utilisation
 
-#### Écosystème
+```bash
+pnpm add @aexae/comete-design-tokens
+```
 
-- Peer dependency de `@aexae/comete-design-system`
-- Tokens `--icon-*` consommés par `@aexae/comete-icons`
+```css
+@import "@aexae/comete-design-tokens/css";
+```
+
+```css
+.component {
+  color: var(--text-default);
+  background: var(--background-neutral-default);
+  border: 1px solid var(--border-default);
+}
+```
+
+## Écosystème
+
+Peer dependency de `@aexae/comete-design-system`. Les tokens `--icon-*` sont consommés par `@aexae/comete-icons`.

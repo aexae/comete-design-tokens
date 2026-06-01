@@ -1,5 +1,5 @@
 {
-  "name": "@naxit/comete-design-tokens",
+  "name": "@aexae/comete-design-tokens",
   "version": "0.11.2",
   "author": "Comète",
   "type": "module",
@@ -7,7 +7,7 @@
   "description": "Comète design tokens — CSS custom properties (primitives + semantic light/dark).",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naxit/comete-design-tokens.git"
+    "url": "git+https://github.com/aexae/comete-design-tokens.git"
   },
   "sideEffects": false,
   "files": [

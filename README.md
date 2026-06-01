@@ -1,15 +1,15 @@
-# @naxit/comete-design-tokens
+# @aexae/comete-design-tokens
 
 Design tokens de l'écosystème Comète, compilés en **CSS custom properties** avec support natif du **light/dark mode**.
 
 ## Installation
 
 ```bash
-pnpm add @naxit/comete-design-tokens
+pnpm add @aexae/comete-design-tokens
 ```
 
 ```css
-@import "@naxit/comete-design-tokens/css";
+@import "@aexae/comete-design-tokens/css";
 ```
 
 ## Utilisation
@@ -52,7 +52,7 @@ pnpm build        # Compile les tokens → build/css/comete-tokens.css
 
 ## Écosystème
 
-Peer dependency de `@naxit/comete-design-system`. Les tokens `--icon-*` sont consommés par `@naxit/comete-icons`.
+Peer dependency de `@aexae/comete-design-system`. Les tokens `--icon-*` sont consommés par `@naxit/comete-icons`.
 
 ## Licence
 

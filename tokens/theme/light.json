@@ -1061,7 +1061,7 @@
       },
       "turquoise": {
         "$type": "color",
-        "$value": "{turquoise.500}"
+        "$value": "{turquoise.600}"
       },
       "magenta": {
         "$type": "color",

@@ -1,11 +1,8 @@
 import StyleDictionary from "style-dictionary";
-import { register } from "@tokens-studio/sd-transforms";
 import { transformGroups, formats } from "style-dictionary/enums";
 import fs from "node:fs";
 import path from "node:path";
 import { extractVars } from "./src/css-utils.js";
-
-register(StyleDictionary);
 
 const CSS_DIR = "./build/css";
 const semanticPrefixes = [

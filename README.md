@@ -40,8 +40,8 @@ Un fichier CSS unique (`build/css/comete-tokens.css`) contenant ~767 custom prop
 
 ## Stack
 
-- **Source** : JSON W3C Design Tokens, édités via Tokens Studio
-- **Build** : Style Dictionary 5 + @tokens-studio/sd-transforms
+- **Source** : JSON W3C Design Tokens
+- **Build** : Style Dictionary 5
 - **Theming** : `:root` (light par défaut), `[data-theme="dark"]` (overrides dark)
 
 ## Commandes

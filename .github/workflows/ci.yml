@@ -34,5 +34,12 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Verify committed build is up to date
+        run: |
+          if ! git diff --exit-code --stat -- build/; then
+            echo "::error::Le CSS committé dans build/ est obsolète. Lancer 'pnpm build' et committer le résultat."
+            exit 1
+          fi
+
       - name: Test
         run: pnpm test

@@ -48,6 +48,9 @@ Un fichier CSS unique (`build/css/comete-tokens.css`) contenant ~767 custom prop
 
 ```bash
 pnpm build        # Compile les tokens → build/css/comete-tokens.css
+pnpm test         # Tests (lancer `pnpm build` au préalable)
+pnpm typecheck    # Vérification TypeScript
+pnpm lint         # ESLint
 ```
 
 ## Écosystème

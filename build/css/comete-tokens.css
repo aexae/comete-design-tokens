@@ -360,6 +360,12 @@
   --z-index-popover: 500;
   --z-index-toast: 600;
   --z-index-tooltip: 700;
+  --control-height-compact: var(--size300); /** Hauteur contrôle — compact (24 px) */
+  --control-height-default: var(--size400); /** Hauteur contrôle — default (32 px) */
+  --control-height-touch: var(--size600); /** Hauteur contrôle — touch (48 px) */
+  --control-icon-compact: var(--size250); /** Taille icône contrôle — compact (20 px) */
+  --control-icon-default: var(--size300); /** Taille icône contrôle — default (24 px) */
+  --control-icon-touch: var(--size300); /** Taille icône contrôle — touch (24 px) */
   --radius0: var(--size0); /** Radius0 (0 px) */
   --radius0125: var(--size0125); /** Radius0125 (1 px) */
   --radius025: var(--size025); /** Radius025 (2 px) */
@@ -399,6 +405,12 @@
   --space1200: var(--size1200); /** Spacing 1200 (96 px) */
   --space1600: var(--size1600); /** Spacing 1600 (128 px) */
   --font-family-primary: var(--font-family-poppins);
+  --control-radius-compact: var(--radius050); /** Radius contrôle — compact (4 px) */
+  --control-radius-default: var(--radius075); /** Radius contrôle — default (6 px) */
+  --control-radius-touch: var(--radius100); /** Radius contrôle — touch (8 px) */
+  --control-padding-x-compact: var(--space100); /** Padding horizontal contrôle — compact (8 px) */
+  --control-padding-x-default: var(--space150); /** Padding horizontal contrôle — default (12 px) */
+  --control-padding-x-touch: var(--space200); /** Padding horizontal contrôle — touch (16 px) */
 }
 
 

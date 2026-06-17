@@ -408,9 +408,9 @@
   --control-radius-compact: var(--radius050); /** Radius contrôle — compact (4 px) */
   --control-radius-default: var(--radius075); /** Radius contrôle — default (6 px) */
   --control-radius-touch: var(--radius100); /** Radius contrôle — touch (8 px) */
-  --control-padding-x-compact: var(--space100); /** Padding horizontal contrôle — compact (8 px) */
-  --control-padding-x-default: var(--space150); /** Padding horizontal contrôle — default (12 px) */
-  --control-padding-x-touch: var(--space200); /** Padding horizontal contrôle — touch (16 px) */
+  --control-padding-x-compact: var(--space050); /** Padding horizontal contrôle — compact (4 px) */
+  --control-padding-x-default: var(--space100); /** Padding horizontal contrôle — default (8 px) */
+  --control-padding-x-touch: var(--space150); /** Padding horizontal contrôle — touch (12 px) */
 }
 
 

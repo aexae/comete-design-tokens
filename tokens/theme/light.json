@@ -94,6 +94,50 @@
         }
       }
     },
+    "comete": {
+      "subtlest": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.100}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.200}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.300}"
+        }
+      },
+      "bold": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.950}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.900}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.800}"
+        }
+      },
+      "subtler": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.200}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.300}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.400}"
+        }
+      }
+    },
     "selected": {
       "bold": {
         "hovered": {
@@ -832,6 +876,10 @@
       "$type": "color",
       "$value": "{comete.blue.900}"
     },
+    "comete": {
+      "$type": "color",
+      "$value": "{comete.blue.900}"
+    },
     "on-warning": {
       "$type": "color",
       "$value": "{cool-grey.950}"
@@ -1003,6 +1051,16 @@
         "$type": "color",
         "$value": "{comete.blue.200}"
       }
+    },
+    "comete": {
+      "bold": {
+        "$type": "color",
+        "$value": "{comete.blue.900}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{comete.blue.200}"
+      }
     }
   },
   "icon": {
@@ -1031,6 +1089,10 @@
       "$value": "{green.600}"
     },
     "brand": {
+      "$type": "color",
+      "$value": "{comete.blue.800}"
+    },
+    "comete": {
       "$type": "color",
       "$value": "{comete.blue.800}"
     },

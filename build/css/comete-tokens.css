@@ -435,6 +435,15 @@
   --background-brand-subtler-default: #c1e3fc;
   --background-brand-subtler-hovered: #97d2f9;
   --background-brand-subtler-pressed: #66b8f4;
+  --background-comete-subtlest-default: #dceefd;
+  --background-comete-subtlest-hovered: #c1e3fc;
+  --background-comete-subtlest-pressed: #97d2f9;
+  --background-comete-bold-default: #1e3661;
+  --background-comete-bold-hovered: #224986;
+  --background-comete-bold-pressed: #2354aa;
+  --background-comete-subtler-default: #c1e3fc;
+  --background-comete-subtler-hovered: #97d2f9;
+  --background-comete-subtler-pressed: #66b8f4;
   --background-selected-bold-hovered: #224986;
   --background-selected-bold-pressed: #1e3661;
   --background-selected-bold-default: #2354aa;
@@ -588,6 +597,7 @@
   --text-accent-blue-grey: #32415a;
   --text-accent-blue-grey-inverted: #f5f7fa;
   --text-brand: #224986;
+  --text-comete: #224986;
   --text-on-warning: #252a2c;
   --border-disabled: #f8f8f8;
   --border-subtle: #eaedee;
@@ -624,6 +634,8 @@
   --border-night-subtle: #71cdff;
   --border-brand-bold: #224986;
   --border-brand-subtle: #c1e3fc;
+  --border-comete-bold: #224986;
+  --border-comete-subtle: #c1e3fc;
   --icon-default: #32415a;
   --icon-disabled: #dddee1;
   --icon-inverted: #f7f8f8;
@@ -631,6 +643,7 @@
   --icon-critical: #e12121;
   --icon-success: #009b60;
   --icon-brand: #2354aa;
+  --icon-comete: #2354aa;
   --icon-selected: #0076d8;
   --icon-information: #0076d8;
   --icon-subtle: #596b70;
@@ -683,6 +696,15 @@
   --background-brand-subtler-default: #2354aa;
   --background-brand-subtler-hovered: #2467d1;
   --background-brand-subtler-pressed: #2c7ee4;
+  --background-comete-subtlest-default: #1e3661;
+  --background-comete-subtlest-hovered: #224986;
+  --background-comete-subtlest-pressed: #2354aa;
+  --background-comete-bold-default: #f0f8fe;
+  --background-comete-bold-hovered: #dceefd;
+  --background-comete-bold-pressed: #c1e3fc;
+  --background-comete-subtler-default: #2354aa;
+  --background-comete-subtler-hovered: #2467d1;
+  --background-comete-subtler-pressed: #2c7ee4;
   --background-selected-bold-hovered: #dceefd;
   --background-selected-bold-pressed: #f0f8fe;
   --background-selected-bold-default: #c1e3fc;
@@ -836,6 +858,7 @@
   --text-accent-blue-grey: #d1d9e6;
   --text-accent-blue-grey-inverted: #1e2533;
   --text-brand: #dceefd;
+  --text-comete: #dceefd;
   --text-on-warning: #252a2c;
   --border-disabled: #3b3d42;
   --border-subtle: #3f4a4d;
@@ -872,6 +895,8 @@
   --border-night-subtle: #0060b0;
   --border-brand-bold: #dceefd;
   --border-brand-subtle: #2354aa;
+  --border-comete-bold: #dceefd;
+  --border-comete-subtle: #2354aa;
   --icon-default: #eaedf4;
   --icon-disabled: #6b6e76;
   --icon-inverted: #374043;
@@ -879,6 +904,7 @@
   --icon-critical: #ffa2a2;
   --icon-success: #2fd88e;
   --icon-brand: #c1e3fc;
+  --icon-comete: #c1e3fc;
   --icon-selected: #71cdff;
   --icon-information: #71cdff;
   --icon-subtle: #8d9fa3;
@@ -929,6 +955,15 @@
     --background-brand-subtler-default: #2354aa;
     --background-brand-subtler-hovered: #2467d1;
     --background-brand-subtler-pressed: #2c7ee4;
+    --background-comete-subtlest-default: #1e3661;
+    --background-comete-subtlest-hovered: #224986;
+    --background-comete-subtlest-pressed: #2354aa;
+    --background-comete-bold-default: #f0f8fe;
+    --background-comete-bold-hovered: #dceefd;
+    --background-comete-bold-pressed: #c1e3fc;
+    --background-comete-subtler-default: #2354aa;
+    --background-comete-subtler-hovered: #2467d1;
+    --background-comete-subtler-pressed: #2c7ee4;
     --background-selected-bold-hovered: #dceefd;
     --background-selected-bold-pressed: #f0f8fe;
     --background-selected-bold-default: #c1e3fc;
@@ -1082,6 +1117,7 @@
     --text-accent-blue-grey: #d1d9e6;
     --text-accent-blue-grey-inverted: #1e2533;
     --text-brand: #dceefd;
+    --text-comete: #dceefd;
     --text-on-warning: #252a2c;
     --border-disabled: #3b3d42;
     --border-subtle: #3f4a4d;
@@ -1118,6 +1154,8 @@
     --border-night-subtle: #0060b0;
     --border-brand-bold: #dceefd;
     --border-brand-subtle: #2354aa;
+    --border-comete-bold: #dceefd;
+    --border-comete-subtle: #2354aa;
     --icon-default: #eaedf4;
     --icon-disabled: #6b6e76;
     --icon-inverted: #374043;
@@ -1125,6 +1163,7 @@
     --icon-critical: #ffa2a2;
     --icon-success: #2fd88e;
     --icon-brand: #c1e3fc;
+    --icon-comete: #c1e3fc;
     --icon-selected: #71cdff;
     --icon-information: #71cdff;
     --icon-subtle: #8d9fa3;

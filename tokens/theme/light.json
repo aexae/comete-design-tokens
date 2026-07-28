@@ -434,50 +434,6 @@
         }
       }
     },
-    "client": {
-      "bold": {
-        "default": {
-          "$type": "color",
-          "$value": "{comete.blue.500}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{comete.blue.600}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{comete.blue.700}"
-        }
-      },
-      "subtlest": {
-        "default": {
-          "$type": "color",
-          "$value": "{comete.blue.100}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{comete.blue.200}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{comete.blue.300}"
-        }
-      },
-      "subtler": {
-        "default": {
-          "$type": "color",
-          "$value": "{comete.blue.200}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{comete.blue.300}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{comete.blue.400}"
-        }
-      }
-    },
     "accent": {
       "purple": {
         "bold": {

@@ -1,4 +1,4 @@
-# @naxit/comete-design-tokens v0.3.2 — Première release
+# @aexae/comete-design-tokens v0.3.2 — Première release
 
 La fondation de l'écosystème Comète : **767 CSS custom properties** compilées dans un fichier unique, avec support natif du light/dark mode.
 
@@ -35,16 +35,16 @@ La fondation de l'écosystème Comète : **767 CSS custom properties** compilée
 - **Source** : JSON au format W3C Design Tokens (`$type`/`$value`), édités via Tokens Studio
 - **Build** : Style Dictionary 5.0.0 + @tokens-studio/sd-transforms 1.3.0
 - **Sortie** : un fichier CSS unique `build/css/comete-tokens.css` (805 lignes)
-- **Distribution** : GitHub Packages (`@naxit/comete-design-tokens`)
+- **Distribution** : GitHub Packages (`@aexae/comete-design-tokens`)
 
 ## Utilisation
 
 ```bash
-pnpm add @naxit/comete-design-tokens
+pnpm add @aexae/comete-design-tokens
 ```
 
 ```css
-@import "@naxit/comete-design-tokens/css";
+@import "@aexae/comete-design-tokens/css";
 ```
 
 ```css
@@ -57,4 +57,4 @@ pnpm add @naxit/comete-design-tokens
 
 ## Écosystème
 
-Peer dependency de `@naxit/comete-design-system`. Les tokens `--icon-*` sont consommés par `@naxit/comete-icons`.
+Peer dependency de `@aexae/comete-design-system`. Les tokens `--icon-*` sont consommés par `@aexae/comete-icons`.

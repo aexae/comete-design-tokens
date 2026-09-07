@@ -291,7 +291,7 @@
   --size3200: 256px; /** 256 */
   --size6400: 512px; /** 512 */
   --size12800: 1024px; /** 1024 */
-  --font-family-code: SF Mono;
+  --font-family-code: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --font-family-poppins: Poppins;
   --font-family-outfit: Outfit;
   --font-family-satoshi: Satoshi;

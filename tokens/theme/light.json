@@ -112,15 +112,15 @@
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.950}"
+          "$value": "{comete.blue.700}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.900}"
+          "$value": "{comete.blue.800}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.800}"
+          "$value": "{comete.blue.900}"
         }
       },
       "subtler": {
@@ -721,7 +721,7 @@
     "focused": {
       "default": {
         "$type": "color",
-        "$value": "{blue.500}"
+        "$value": "{comete.blue.500}"
       }
     },
     "alpha": {
@@ -738,7 +738,7 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{blue.600}"
+      "$value": "{comete.blue.600}"
     },
     "disabled": {
       "$type": "color",
@@ -852,7 +852,7 @@
     },
     "focused": {
       "$type": "color",
-      "$value": "{blue.500}"
+      "$value": "{comete.blue.500}"
     },
     "bold": {
       "$type": "color",
@@ -900,7 +900,7 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{blue.500}"
+      "$value": "{comete.blue.500}"
     },
     "accent": {
       "purple": {
@@ -956,11 +956,11 @@
     },
     "selected-inverted": {
       "$type": "color",
-      "$value": "{blue.200}"
+      "$value": "{comete.blue.200}"
     },
     "focus-inverted": {
       "$type": "color",
-      "$value": "{blue.100}"
+      "$value": "{comete.blue.100}"
     },
     "neutral": {
       "$type": "color",
@@ -1054,7 +1054,7 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{blue.600}"
+      "$value": "{comete.blue.600}"
     },
     "information": {
       "$type": "color",

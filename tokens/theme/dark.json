@@ -721,7 +721,7 @@
     "focused": {
       "default": {
         "$type": "color",
-        "$value": "{blue.400}"
+        "$value": "{comete.blue.400}"
       }
     },
     "alpha": {
@@ -738,7 +738,7 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{blue.200}"
+      "$value": "{comete.blue.200}"
     },
     "disabled": {
       "$type": "color",
@@ -852,7 +852,7 @@
     },
     "focused": {
       "$type": "color",
-      "$value": "{blue.400}"
+      "$value": "{comete.blue.400}"
     },
     "bold": {
       "$type": "color",
@@ -900,7 +900,7 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{blue.400}"
+      "$value": "{comete.blue.400}"
     },
     "accent": {
       "purple": {
@@ -956,11 +956,11 @@
     },
     "selected-inverted": {
       "$type": "color",
-      "$value": "{blue.800}"
+      "$value": "{comete.blue.800}"
     },
     "focus-inverted": {
       "$type": "color",
-      "$value": "{blue.900}"
+      "$value": "{comete.blue.900}"
     },
     "neutral": {
       "$type": "color",
@@ -1054,7 +1054,7 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{blue.300}"
+      "$value": "{comete.blue.300}"
     },
     "information": {
       "$type": "color",

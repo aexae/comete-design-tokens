@@ -13,6 +13,17 @@ Le package est publié sur GitHub Packages. Configurer le registry dans un `.npm
 //npm.pkg.github.com/:_authToken=${NPM_AUTH_TOKEN}
 ```
 
+### Authentification
+
+GitHub Packages exige un token même en lecture. L'organisation `aexae` **interdit les PAT classic dont la durée de vie dépasse 90 jours** — le plus simple est d'utiliser le token OAuth de la CLI `gh` (non soumis à cette règle) :
+
+```bash
+gh auth refresh -h github.com -s read:packages   # une fois, ajoute le scope
+export NPM_AUTH_TOKEN=$(gh auth token)            # dans le shell qui lance l'install
+```
+
+> Alternative : un PAT *fine-grained* (permission **Packages: Read**) ou classic à expiration ≤ 90 jours, placé dans `NPM_AUTH_TOKEN`.
+
 ```bash
 pnpm add @aexae/comete-design-tokens
 ```
@@ -122,6 +133,19 @@ pnpm clean        # Supprime build/
 ```
 
 Le CSS compilé est **committé** dans le repo. La CI échoue si `build/` est obsolète par rapport aux sources — toujours lancer `pnpm build` et committer le résultat avec la modification des tokens.
+
+## Publication
+
+La publication sur GitHub Packages est **automatisée par la CI** (`.github/workflows/publish.yml`) : elle se déclenche au push d'un tag de version et s'authentifie via le `GITHUB_TOKEN` intégré à Actions (`packages: write`) — **aucun PAT requis**.
+
+```bash
+# 1. bump la version dans package.json (ex. 0.14.0), pnpm build, committer
+# 2. tagger et pousser :
+git tag 0.14.0
+git push origin main 0.14.0   # le tag déclenche le workflow Publish
+```
+
+Le tag doit correspondre à la version de `package.json` et suivre le format `X.Y.Z` (sans préfixe `v`).
 
 ## Ajout ou modification d'un token
 

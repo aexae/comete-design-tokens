@@ -284,6 +284,7 @@
   --size400: 32px; /** 32 */
   --size500: 40px; /** 40 */
   --size600: 48px; /** 48 */
+  --size700: 56px; /** 56 */
   --size800: 64px; /** 64 */
   --size1000: 80px; /** 80 */
   --size1200: 96px; /** 96 */
@@ -400,6 +401,7 @@
   --space400: var(--size400); /** Spacing 400 (32 px) */
   --space500: var(--size500); /** Spacing 500 (40 px) */
   --space600: var(--size600); /** Spacing 600 (48 px) */
+  --space700: var(--size700); /** Spacing 700 (56 px) */
   --space800: var(--size800); /** Spacing 800 (64 px) */
   --space1000: var(--size1000); /** Spacing 1000 (80 px) */
   --space1200: var(--size1200); /** Spacing 1200 (96 px) */

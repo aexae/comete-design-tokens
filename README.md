@@ -78,6 +78,23 @@ Un fichier unique — `build/css/comete-tokens.css` — contenant **640 custom p
 | Contrôles | `--control-{height,radius,padding-x,icon}-{compact,default,touch}` — densité partagée par les composants interactifs |
 | Divers | `--z-index-*` (hide → toast), `--opacity-*`, breakpoints (`--mobile`, `--tablet`, `--laptop`, `--desktop`) |
 
+#### Échelle d'espacement (`--space*`)
+
+Base : `--space100` vaut **8 px**. Chaque cran suit la formule `(numéro / 100) × 8 px` (donc `--space050` = 4 px, `--space200` = 16 px, `--space800` = 64 px). Les tokens sémantiques `--space*` aliasent les primitives `--size*` (px bruts), à utiliser pour `gap` / `padding` / `margin` dans les composants (jamais de px en dur).
+
+| Token | px | Token | px |
+|---|---|---|---|
+| `--space0` | 0 | `--space300` | 24 |
+| `--space025` | 2 | `--space350` | 28 |
+| `--space0375` | 3 | `--space400` | 32 |
+| `--space050` | 4 | `--space500` | 40 |
+| `--space075` | 6 | `--space600` | 48 |
+| `--space100` | **8** | `--space800` | 64 |
+| `--space125` | 10 | `--space1000` | 80 |
+| `--space150` | 12 | `--space1200` | 96 |
+| `--space200` | 16 | `--space1600` | 128 |
+| `--space250` | 20 | | |
+
 ### Sémantiques
 
 Sept familles, déclinées par **intention** puis par **état** (`default`, `hovered`, `pressed`, `disabled`, `selected`) :

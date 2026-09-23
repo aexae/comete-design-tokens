@@ -158,11 +158,11 @@ La publication sur GitHub Packages est **automatisée par la CI** (`.github/work
 ```bash
 # 1. bump la version dans package.json (ex. 0.14.0), pnpm build, committer
 # 2. tagger et pousser :
-git tag 0.14.0
-git push origin main 0.14.0   # le tag déclenche le workflow Publish
+git tag v0.14.0
+git push origin main v0.14.0   # le tag déclenche le workflow Publish
 ```
 
-Le tag doit correspondre à la version de `package.json` et suivre le format `X.Y.Z` (sans préfixe `v`).
+Le tag doit correspondre à la version de `package.json`, préfixée par `v` (format `vX.Y.Z`), aligné sur les autres dépôts de l'écosystème.
 
 ## Ajout ou modification d'un token
 

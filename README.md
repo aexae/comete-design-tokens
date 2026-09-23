@@ -89,11 +89,11 @@ Base : `--space100` vaut **8 px**. Chaque cran suit la formule `(numéro / 100) 
 | `--space0375` | 3 | `--space400` | 32 |
 | `--space050` | 4 | `--space500` | 40 |
 | `--space075` | 6 | `--space600` | 48 |
-| `--space100` | **8** | `--space800` | 64 |
-| `--space125` | 10 | `--space1000` | 80 |
-| `--space150` | 12 | `--space1200` | 96 |
-| `--space200` | 16 | `--space1600` | 128 |
-| `--space250` | 20 | | |
+| `--space100` | **8** | `--space700` | 56 |
+| `--space125` | 10 | `--space800` | 64 |
+| `--space150` | 12 | `--space1000` | 80 |
+| `--space200` | 16 | `--space1200` | 96 |
+| `--space250` | 20 | `--space1600` | 128 |
 
 ### Sémantiques
 

@@ -734,7 +734,7 @@
   "text": {
     "default": {
       "$type": "color",
-      "$value": "{cool-grey.200}"
+      "$value": "{cool-grey.50}"
     },
     "selected": {
       "$type": "color",

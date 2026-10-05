@@ -818,7 +818,7 @@
   --background-cycle-day-subtlest-pressed: #9c4f10;
   --background-focused-default: #66b8f4;
   --background-alpha-default: #3f4a4d;
-  --text-default: #d8dedf;
+  --text-default: #f7f8f8;
   --text-selected: #c1e3fc;
   --text-disabled: rgba(255, 255, 255, 0.4);
   --text-link-default: #71cdff;
@@ -1068,7 +1068,7 @@
     --background-cycle-day-subtlest-pressed: #9c4f10;
     --background-focused-default: #66b8f4;
     --background-alpha-default: #3f4a4d;
-    --text-default: #d8dedf;
+    --text-default: #f7f8f8;
     --text-selected: #c1e3fc;
     --text-disabled: rgba(255, 255, 255, 0.4);
     --text-link-default: #71cdff;

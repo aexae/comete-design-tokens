@@ -657,6 +657,7 @@
   --logo-comete-subtlest: #596b70;
   --logo-comete-inverted: #f0f8fe;
   --logo-comete-subtle: #596b70;
+  --logo-comete-subtle-inverted: #b5c1c4;
   --blanket-default: rgba(5, 12, 31, 0.49);
   --interaction-hovered: rgba(0, 0, 0, 0.16);
   --interaction-pressed: rgba(0, 0, 0, 0.32);
@@ -909,6 +910,7 @@
   --logo-comete-subtlest: #b5c1c4;
   --logo-comete-inverted: #1e3661;
   --logo-comete-subtle: #b5c1c4;
+  --logo-comete-subtle-inverted: #596b70;
   --blanket-default: rgba(155, 180, 202, 0.5);
   --interaction-hovered: rgba(255, 255, 255, 0.2);
   --interaction-pressed: rgba(255, 255, 255, 0.36);
@@ -1159,6 +1161,7 @@
     --logo-comete-subtlest: #b5c1c4;
     --logo-comete-inverted: #1e3661;
     --logo-comete-subtle: #b5c1c4;
+    --logo-comete-subtle-inverted: #596b70;
     --blanket-default: rgba(155, 180, 202, 0.5);
     --interaction-hovered: rgba(255, 255, 255, 0.2);
     --interaction-pressed: rgba(255, 255, 255, 0.36);

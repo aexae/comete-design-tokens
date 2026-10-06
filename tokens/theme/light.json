@@ -1136,6 +1136,10 @@
       "subtle": {
         "$type": "color",
         "$value": "{cool-grey.600}"
+      },
+      "subtle-inverted": {
+        "$type": "color",
+        "$value": "{cool-grey.300}"
       }
     }
   },

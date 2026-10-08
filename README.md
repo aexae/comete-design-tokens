@@ -114,6 +114,22 @@ Sept familles, déclinées par **intention** puis par **état** (`default`, `hov
 - **`comete-*`** — couleur fixe de la marque Comète, jamais surchargée par un client.
 - **`brand-*`** — charte du client, surchargeable à l'exécution (navy par défaut). Le design system fournit un `BrandProvider` qui génère et injecte ces valeurs.
 
+#### Couleurs `disabled` (doctrine)
+
+Les tokens `disabled` (fond, texte, icône, bordure) pointent sur les primitives **alpha** (`black-*` en thème clair, `white-*` en thème sombre), jamais sur des gris solides (`grey.solid`).
+
+Pourquoi : un fond disabled en gris solide s'empile avec un texte disabled en gris solide et écrase le contraste (environ 1,27:1, illisible). Une couleur alpha se compose avec la surface réelle sous l'élément. Résultat : le contraste texte sur fond disabled remonte à **2,62:1** en clair et **3,42:1** en sombre, et le fond disabled s'adapte à n'importe quelle surface (Card, Menu, SideNav) au lieu de plaquer un gris fixe. WCAG 1.4.3 exempte les éléments disabled, mais on reste bien au-dessus du seuil de perceptibilité.
+
+Correspondance (clair via `black`, sombre via `white`, même opacité) :
+
+| Rôle | Primitive | Opacité |
+|---|---|---|
+| `background-disabled-default` | `black` / `white` | 10 % |
+| `border-disabled` | `black` / `white` | 20 % |
+| `text-disabled`, `icon-disabled` | `black` / `white` | 40 % |
+
+Règle : pour tout nouveau token ou composant disabled, réutiliser ces primitives alpha. Ne jamais revenir à un gris solide, ce qui réintroduirait la régression de contraste et la perte d'adaptation à la surface.
+
 ## Architecture
 
 ```

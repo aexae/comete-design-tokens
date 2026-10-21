@@ -766,6 +766,14 @@
       "$type": "color",
       "$value": "{white.100}"
     },
+    "subtle-inverted": {
+      "$type": "color",
+      "$value": "{cool-grey.300}"
+    },
+    "subtlest-inverted": {
+      "$type": "color",
+      "$value": "{cool-grey.500}"
+    },
     "success": {
       "$type": "color",
       "$value": "{green.800}"

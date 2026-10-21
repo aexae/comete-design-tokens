@@ -103,7 +103,7 @@ Sept familles, déclinées par **intention** puis par **état** (`default`, `hov
 |---|---|
 | `--background-*` (148) | `default`, `surface`, `neutral`, `comete`, `brand`, `selected`, `focused`, `disabled`, `success`, `warning`, `critical`, `information`, `accent`, `cycle`, `alpha` |
 | `--border-*` (37) | `default`, `neutral`, `subtle`, `bold`, `focused`, `focus-inverted`, `selected`, `selected-inverted`, `inverted`, `invisible`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `disabled` |
-| `--text-*` (26) | `default`, `subtle`, `subtlest`, `inverted`, `link`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `on-warning` |
+| `--text-*` (28) | `default`, `subtle`, `subtlest`, `inverted`, `subtle-inverted`, `subtlest-inverted`, `link`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `on-warning` |
 | `--icon-*` (21) | `default`, `bold`, `subtle`, `subtlest`, `inverted`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `on-warning` |
 | `--logo-*` (7) | `comete` : `default`, `neutral`, `inverted`, `subtle`, `gradient-light`, `gradient-dark` |
 | `--interaction-*` (4) | `hovered`, `pressed` |

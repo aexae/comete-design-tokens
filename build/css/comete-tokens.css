@@ -375,6 +375,7 @@
   --radius0625: var(--size0625); /** Radius0625 (5 px) */
   --radius075: var(--size075); /** Radius075 (6 px) */
   --radius100: var(--size100); /** Radius100 (8 px) */
+  --radius125: var(--size125); /** Radius125 (10 px) */
   --radius150: var(--size150); /** Radius150 (12 px) */
   --radius200: var(--size200); /** Radius200 (16 px) */
   --radius300: var(--size300); /** Radius300 (24 px) */

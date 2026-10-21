@@ -2,6 +2,14 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-10-21 — Ajout de `radius125` (10 px)
+
+**Décision** : ajout de `Radius125` = `{Size125}` (10 px) dans `tokens/base/radius/tokens.json`.
+
+**Contexte / raison** : `Avatar` `xxlarge` du DS référençait `--radius125`, inexistant (coin carré). Le token comble l'échelle entre `radius100` (8 px) et `radius150` (12 px). Pas de nouvelle valeur brute, il pointe sur le primitif `Size125` existant. Création approuvée explicitement.
+
+**Statut** : livré en 0.19.0.
+
 ## 2026-10-21 — Ajout de `text-subtle-inverted` et `text-subtlest-inverted`
 
 **Décision** : ajout de deux tokens sémantiques dans la famille `--text-*` :

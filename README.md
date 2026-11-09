@@ -69,7 +69,7 @@ Un fichier unique — `build/css/comete-tokens.css` — contenant **640 custom p
 | Groupe | Contenu |
 |---|---|
 | Couleur | 16 palettes chromatiques : `comete-blue`, `comete-yellow`, `blue`, `blue-grey`, `cool-grey`, `green`, `lime`, `magenta`, `orange`, `purple`, `red`, `teal`, `turquoise`, `yellow`, `grey-solid`, `dark-grey-solid` — échelle 50 → 950 ; plus `black` et `white` en échelle d'opacité (0 → 100) |
-| Typographie | 7 familles (`--font-family-primary`, Outfit, Poppins, Satoshi, Space Grotesk, Urbanist, code), 4 graisses, 2 échelles de taille (`ui-*` et `hero-*`), line-heights, letter-spacings, paragraph spacing / indent |
+| Typographie | 8 familles (`--font-family-primary` = Noto Sans, Noto Sans, Outfit, Poppins, Satoshi, Space Grotesk, Urbanist, code), 4 graisses, 2 échelles de taille (`ui-*` et `hero-*`), line-heights, letter-spacings, paragraph spacing / indent |
 | Espacement | `--space0` → `--space1600` |
 | Sizing | `--size0` → `--size12800` |
 | Radius | `--radius0` → `--radius300` |

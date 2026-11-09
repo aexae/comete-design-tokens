@@ -69,10 +69,42 @@ for (const theme of ["light", "dark"]) {
   await themeSD.buildAllPlatforms();
 }
 
+// ─── 2b. Tokens de composants ───────────────────────────────────
+// Les tokens de composants aliasent la couche sémantique (et base/control
+// pour les dimensions). On émet des références `var(--…)` (outputReferences)
+// pour qu'ils héritent automatiquement du thème via les variables sémantiques.
+const isComponentToken = (token: { path: string[] }) => token.path[0] === "button";
+const componentSD = new StyleDictionary({
+  log: { verbosity: "verbose", warnings: "warn" },
+  source: [
+    "tokens/base/**/*.json",
+    "tokens/theme/light.json",
+    "tokens/component/**/*.json",
+  ],
+  platforms: {
+    css: {
+      transformGroup: transformGroups.css,
+      buildPath: `${CSS_DIR}/`,
+      files: [
+        {
+          destination: "_component.css",
+          format: formats.cssVariables,
+          options: { outputReferences: true },
+          filter: isComponentToken,
+        },
+      ],
+    },
+  },
+});
+
+await componentSD.cleanAllPlatforms();
+await componentSD.buildAllPlatforms();
+
 // ─── 3. Assemble le fichier CSS unifié ──────────────────────────
 const primitives = fs.readFileSync(path.join(CSS_DIR, "_primitives.css"), "utf-8");
 const lightCSS = fs.readFileSync(path.join(CSS_DIR, "_semantic.light.css"), "utf-8");
 const darkCSS = fs.readFileSync(path.join(CSS_DIR, "_semantic.dark.css"), "utf-8");
+const componentCSS = fs.readFileSync(path.join(CSS_DIR, "_component.css"), "utf-8");
 
 const unified = `/**
  * Comète Design Tokens
@@ -102,6 +134,11 @@ ${darkCSS}
 ${extractVars(darkCSS, "    ")}
   }
 }
+
+/* ── Composants (aliasent le sémantique → héritent du thème) ──── */
+:root {
+${extractVars(componentCSS)}
+}
 `;
 
 fs.writeFileSync(path.join(CSS_DIR, "comete-tokens.css"), unified);
@@ -110,6 +147,7 @@ fs.writeFileSync(path.join(CSS_DIR, "comete-tokens.css"), unified);
 fs.unlinkSync(path.join(CSS_DIR, "_primitives.css"));
 fs.unlinkSync(path.join(CSS_DIR, "_semantic.light.css"));
 fs.unlinkSync(path.join(CSS_DIR, "_semantic.dark.css"));
+fs.unlinkSync(path.join(CSS_DIR, "_component.css"));
 
 console.log("\\n✨ Build terminé");
 console.log("   📁 build/css/comete-tokens.css (fichier unique)");

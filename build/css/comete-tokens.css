@@ -414,7 +414,7 @@
   --control-radius-touch: var(--radius100); /** Radius contrôle — touch (8 px) */
   --control-padding-x-compact: var(--space050); /** Padding horizontal contrôle — compact (4 px) */
   --control-padding-x-default: var(--space100); /** Padding horizontal contrôle — default (8 px) */
-  --control-padding-x-touch: var(--space150); /** Padding horizontal contrôle — touch (12 px) */
+  --control-padding-x-touch: var(--space200); /** Padding horizontal contrôle — touch (16 px) */
 }
 
 
@@ -1483,11 +1483,11 @@
   --button-size-touch-height: var(--control-height-touch);
   --button-size-touch-icon: var(--control-icon-touch);
   --button-size-touch-gap: var(--space050);
-  --button-size-touch-padding-x: var(--space200);
   --button-size-touch-padding-y: var(--space100);
   --button-size-compact-radius: var(--control-radius-compact);
   --button-size-compact-padding-x: var(--control-padding-x-compact);
   --button-size-default-radius: var(--control-radius-default);
   --button-size-default-padding-x: var(--control-padding-x-default);
   --button-size-touch-radius: var(--control-radius-touch);
+  --button-size-touch-padding-x: var(--control-padding-x-touch);
 }

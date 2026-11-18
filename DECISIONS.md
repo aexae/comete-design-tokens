@@ -2,6 +2,16 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-18 — Padding horizontal touch des contrôles à 16 px, Button aliasé
+
+**Décision** : `control.padding-x.touch` passe de `{Space150}` (12 px) à `{Space200}` (16 px). `button.size.touch.padding-x` redevient un alias de `{Control.PaddingX.Touch}` au lieu de `{Space200}` en direct.
+
+**Contexte / raison** : le Button touch faisait exception à l'échelle `control` (règle DS « padding X ≥ 2 × padding Y », padding Y touch à 8 px). Axel a branché la variable Figma `button/spacing/touch/padding-x` sur `control/padding-x/touch`, passé à `space200`. Report dans le code. Modification de valeur, aucun token créé.
+
+**Portée** : rendu du Button inchangé (16 px). Les champs touch (`InputContainer`) passent de 12 à 16 px de padding horizontal.
+
+**Statut** : publié en 0.22.0.
+
 ## 2026-11-18 — Tailles d'icône des contrôles alignées sur Figma (16 / 20 / 24 px)
 
 **Décision** : `control.icon.compact` passe de `{size250}` (20 px) à `{size200}` (16 px) et `control.icon.default` de `{size300}` (24 px) à `{size250}` (20 px). `control.icon.touch` reste `{size300}` (24 px). Les variables Figma `control/icon/*` sont réalignées sur les mêmes primitifs.

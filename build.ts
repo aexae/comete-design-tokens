@@ -73,7 +73,8 @@ for (const theme of ["light", "dark"]) {
 // Les tokens de composants aliasent la couche sémantique (et base/control
 // pour les dimensions). On émet des références `var(--…)` (outputReferences)
 // pour qu'ils héritent automatiquement du thème via les variables sémantiques.
-const isComponentToken = (token: { path: string[] }) => token.path[0] === "button";
+const COMPONENTS = new Set(["button", "spinner"]);
+const isComponentToken = (token: { path: string[] }) => COMPONENTS.has(token.path[0] ?? "");
 const componentSD = new StyleDictionary({
   log: { verbosity: "verbose", warnings: "warn" },
   source: [

@@ -2,6 +2,17 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-18 — Tokens de composant Spinner, icônes des contrôles 16 / 24 / 32 px
+
+**Décision** (demandes d'Axel, création de tokens approuvée) :
+
+- Nouveau fichier `tokens/component/spinner/tokens.json` : `spinner.size.{xsmall,small,medium,large,xlarge}` (Size100 / 200 / 300 / 600 / 1200) `spinner.color.{default,inverted}` (icon.default / icon.inverted) et `spinner.color.comete.{light,dark}` (logo.comete.gradient-light / gradient-dark, dégradé du spinner en comète, approuvé par Axel le 2026-11-18). Remplacent les variables Figma `DEPRECATED-spinner/*`, recréées dans la collection `component`. `build.ts` émet désormais les composants `button` et `spinner`.
+- `control.icon.default` passe à `{Size300}` (24 px) et `control.icon.touch` à `{Size400}` (32 px). Compact reste 16 px.
+
+**Portée** : seul le Button consomme `--control-icon-*`. Ses icônes grossissent de 4 px en default et 8 px en touch.
+
+**Statut** : publié en 0.23.0.
+
 ## 2026-11-18 — Padding horizontal touch des contrôles à 16 px, Button aliasé
 
 **Décision** : `control.padding-x.touch` passe de `{Space150}` (12 px) à `{Space200}` (16 px). `button.size.touch.padding-x` redevient un alias de `{Control.PaddingX.Touch}` au lieu de `{Space200}` en direct.

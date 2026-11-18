@@ -366,8 +366,8 @@
   --control-height-default: var(--size400); /** Hauteur contrôle — default (32 px) */
   --control-height-touch: var(--size600); /** Hauteur contrôle — touch (48 px) */
   --control-icon-compact: var(--size200); /** Taille icône contrôle — compact (16 px) */
-  --control-icon-default: var(--size250); /** Taille icône contrôle — default (20 px) */
-  --control-icon-touch: var(--size300); /** Taille icône contrôle — touch (24 px) */
+  --control-icon-default: var(--size300); /** Taille icône contrôle — default (24 px) */
+  --control-icon-touch: var(--size400); /** Taille icône contrôle — touch (32 px) */
   --radius0: var(--size0); /** Radius0 (0 px) */
   --radius0125: var(--size0125); /** Radius0125 (1 px) */
   --radius025: var(--size025); /** Radius025 (2 px) */
@@ -1234,6 +1234,11 @@
 
 /* ── Composants (aliasent le sémantique → héritent du thème) ──── */
 :root {
+  --spinner-size-xsmall: var(--size100); /** Spinner xsmall (8 px) */
+  --spinner-size-small: var(--size200); /** Spinner small (16 px) */
+  --spinner-size-medium: var(--size300); /** Spinner medium (24 px) */
+  --spinner-size-large: var(--size600); /** Spinner large (48 px) */
+  --spinner-size-xlarge: var(--size1200); /** Spinner xlarge (96 px) */
   --button-contained-default-text-default: var(--text-default-default);
   --button-contained-default-background-default: var(--background-neutral-subtler-default);
   --button-contained-default-background-hovered: var(--background-neutral-subtler-hovered);
@@ -1484,6 +1489,10 @@
   --button-size-touch-icon: var(--control-icon-touch);
   --button-size-touch-gap: var(--space050);
   --button-size-touch-padding-y: var(--space100);
+  --spinner-color-default: var(--icon-default); /** Spinner sur fond clair (appearance inherit hors contexte) */
+  --spinner-color-inverted: var(--icon-inverted); /** Spinner sur fond foncé (appearance inverted) */
+  --spinner-color-comete-light: var(--logo-comete-gradient-light); /** Dégradé comète, pointe de la queue (repris du logo) */
+  --spinner-color-comete-dark: var(--logo-comete-gradient-dark); /** Dégradé comète, tête (repris du logo) */
   --button-size-compact-radius: var(--control-radius-compact);
   --button-size-compact-padding-x: var(--control-padding-x-compact);
   --button-size-default-radius: var(--control-radius-default);

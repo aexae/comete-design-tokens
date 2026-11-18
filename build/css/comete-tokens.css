@@ -365,8 +365,8 @@
   --control-height-compact: var(--size300); /** Hauteur contrôle — compact (24 px) */
   --control-height-default: var(--size400); /** Hauteur contrôle — default (32 px) */
   --control-height-touch: var(--size600); /** Hauteur contrôle — touch (48 px) */
-  --control-icon-compact: var(--size250); /** Taille icône contrôle — compact (20 px) */
-  --control-icon-default: var(--size300); /** Taille icône contrôle — default (24 px) */
+  --control-icon-compact: var(--size200); /** Taille icône contrôle — compact (16 px) */
+  --control-icon-default: var(--size250); /** Taille icône contrôle — default (20 px) */
   --control-icon-touch: var(--size300); /** Taille icône contrôle — touch (24 px) */
   --radius0: var(--size0); /** Radius0 (0 px) */
   --radius0125: var(--size0125); /** Radius0125 (1 px) */

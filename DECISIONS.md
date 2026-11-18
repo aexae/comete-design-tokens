@@ -2,6 +2,16 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-18 — Tailles d'icône des contrôles alignées sur Figma (16 / 20 / 24 px)
+
+**Décision** : `control.icon.compact` passe de `{size250}` (20 px) à `{size200}` (16 px) et `control.icon.default` de `{size300}` (24 px) à `{size250}` (20 px). `control.icon.touch` reste `{size300}` (24 px). Les variables Figma `control/icon/*` sont réalignées sur les mêmes primitifs.
+
+**Contexte / raison** : le Button rebuild Figma dessine ses icônes à 16 / 20 / 24 px selon la densité, alors que les tokens donnaient 20 / 24 / 24 px. Écart relevé quand le DS a recommencé à consommer `--button-icon-size` (correctif `.icon`, DS alpha.177). Alignement demandé par Axel. Modification de valeurs, aucun token créé.
+
+**Portée** : seul le Button consomme `--control-icon-*` (via `--button-size-*-icon`). Les autres contrôles ne sont pas touchés.
+
+**Statut** : publié en 0.21.0.
+
 ## 2026-11-09 — Réintroduction d'une couche de tokens de composants (architecture + pilote Button)
 
 **Contexte** : audit des variables de composants Figma taguées DEPRECATED (voir

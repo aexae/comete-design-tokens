@@ -2,6 +2,37 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-19 — Tokens de composant nommés par catégorie, opacité disabled, avatar-group
+
+**Décision** (demandes d'Axel) :
+
+- Nommage `<composant>.<catégorie>.…` aligné sur Figma (`color`, `size`, `spacing`, `radius`, `opacity`, `border-width`). `button.json` restructuré : `button.<apparence>.<couleur>` devient `button.color.<apparence>.<couleur>` (`default` devient `neutral`), `selected` et `focus` passent sous `button.color`, `button.size.<densité>` ne garde que `height` et `icon`, `padding-x`, `padding-y` et `gap` passent sous `button.spacing.<densité>`, `radius` devient `button.radius.<densité>`. Cassant pour les lecteurs de `--button-*`.
+- `button.color.link-subtle.neutral.text` aligné sur Figma : `{text.default.default}`, `{text.subtle.hovered}`, `{text.default.pressed}`.
+- Disabled en opacité (option A) : `button.opacity.disabled` et `avatar.opacity.disabled` aliasent `{opacity.disabled}`. Dans Figma, `base/opacity/*` passe en pourcentage (0-100, Figma lit l'opacité ainsi), le code reste en fraction.
+- `avatar` : `avatar.color.<couleur>.{background,text,icon}`, `avatar.size.<taille>.{container,icon}`, `avatar.radius`, `avatar.opacity.disabled`.
+- Nouveau `tokens/component/avatar-group/tokens.json` : `avatar-group.border-width.*` (anneau de séparation, déplacé depuis `avatar`) et `avatar-group.spacing.overlap.*` (création approuvée par Axel). Le chevauchement est une marge négative (-4, -6, -8, -10, -16, -24, -32 px, 25 % du diamètre) : valeur brute négative et non alias de `Space*`, car ni le DTCG ni Figma ne savent négativer un alias. Le même nombre est lié à l'`itemSpacing` Figma et lu tel quel en `margin-left` dans le code.
+- Couleur de l'anneau : pas de token. Il prend la couleur du fond du conteneur (prop `borderColor` dans le code), blanc brut #FFFFFF dans Figma sur demande d'Axel (un token de fond posé sur une bordure était incohérent).
+- `autosave-indicator` : `autosave-indicator.color.*` et `autosave-indicator.spacing.gap`.
+- Figma : mêmes noms dans la collection `component`, code syntax WEB posée sur toutes les variables, `button/color/subtle/default` renommé `…/neutral`.
+
+**Statut** : publié en 0.24.0 avec l'entrée du 2026-11-18.
+
+## 2026-11-18 — Tokens de composant Avatar et AutosaveIndicator, retrait des DEPRECATED
+
+**Décision** (demande d'Axel, création de tokens approuvée) :
+
+- `tokens/component/avatar/tokens.json` (60 tokens) : `avatar.size.*`, `avatar.icon-size.*` (10 à 64 px) et `avatar.border-width.*` (anneau de séparation de l'AvatarGroup, distinct du focus ring) pour les 7 tailles (xsmall à xxxlarge, 16 / 24 / 32 / 40 / 64 / 96 / 128 px), `avatar.radius` (RadiusRound, l'avatar est toujours rond), et par couleur (`neutral`, `comete`, `accent-purple`, `accent-teal`, `accent-turquoise`, `accent-magenta`, `accent-blue-grey`) `background.{default,hovered,pressed}`, `text` et `icon`, plus `avatar.selected.{background,text,icon}`. Valeurs reprises du DS. Révisé le 2026-11-19 : rayons par taille retirés (apparence carrée supprimée du code), tokens `icon` et `icon-size` ajoutés.
+- `tokens/component/autosave-indicator/tokens.json` (7 tokens) : `gap` (Space025) et `{default,success,critical}.{text,icon}`.
+- `build.ts` émet `avatar` et `autosave-indicator`.
+- Figma : variables miroir dans la collection `component` (59 puis 60 après la révision du 2026-11-19) (alias vers `theme` et `base`, code syntax WEB). Les ❖ Avatar (216 variantes) et ❖ AutosaveIndicator y sont branchés. Variable `base/radius/radius125` ajoutée en miroir du token `Radius125` existant (elle manquait côté Figma).
+- Supprimées de Figma, après vérification qu'aucun calque ne les utilisait : `DEPRECATED-spinner/*` (12), `-DEPRECATED-avatar/*` (27), `-DEPRECATED-autosave-indicator/*` (7). La collection `DEPRECATED-components` passe à 819 variables.
+
+**Contexte / raison** : poursuite de la couche composant après Button et Spinner.
+
+Le 2026-11-19, les 4 variables Figma `button/color/contained/{background,text}/*` (accent-purple sorti de son groupe) sont renommées `button/color/contained/accent-purple/...`. Renommage dans Figma uniquement, liaisons conservées.
+
+**Statut** : publié en 0.24.0.
+
 ## 2026-11-18 — Tokens de composant Spinner, icônes des contrôles 16 / 24 / 32 px
 
 **Décision** (demandes d'Axel, création de tokens approuvée) :

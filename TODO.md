@@ -82,9 +82,22 @@ les développeurs. Aucune écriture effectuée.
 
 ### Obsolètes (groupe sans composant DS correspondant)
 
-- `slot`, `autosave-indicator`, `media-picker`, `button-square` (pas de
+- `slot`, `media-picker`, `button-square` (pas de
   composant `ButtonSquare`, fonction reprise par Button/IconTile), `scrollbar`
   (renommé `ScrollArea`). À confirmer avant suppression définitive.
+- `autosave-indicator` : FAIT 2026-11-18, recréé en couche composant (le
+  composant existe dans Figma, pas encore dans le DS).
+
+### Avancement de la couche composant (2026-11-18)
+
+- Faits : `button`, `spinner`, `avatar`, `avatar-group`, `autosave-indicator` (nommage par catégorie depuis le 2026-11-19).
+- Disabled en opacité : 22 composants du DS restent sur les couleurs `*-disabled`, à migrer un par un après la livraison du Button et de l'Avatar. Les tokens sémantiques `background-disabled`, `text-disabled`, `border-disabled`, `icon-disabled` deviendront alors obsolètes. Deprecated
+  correspondantes supprimées de Figma (`DEPRECATED-components` : 819 restantes).
+- Le ❖ AutosaveIndicator Figma garde des variables `DEPRECATED-tag/*` sur son
+  item (coins, contour masqué, tailles du Slot) : à nettoyer avec la couche `tag`.
+- `avatar-group.spacing.overlap.*` est en valeur brute négative, sans lien avec l'échelle `Space*` : si l'échelle change, le chevauchement ne suit pas. À reconsidérer si Style Dictionary reçoit un transform de calcul (ex. `calc(-1 * var(--space100))`), Figma restant limité à une valeur brute.
+- Le ❖ Avatar Figma garde `DEPRECATED-badge/*` (badges) et
+  `DEPRECATED-focus-ring/*` (anneau de focus) : à traiter avec ces couches.
 
 ### Manquantes (composant DS existant, zéro token)
 
@@ -92,7 +105,7 @@ les développeurs. Aucune écriture effectuée.
   BottomNav, Drawer, Divider, Field / InputContainer, Hero, IconTile, List,
   Popover, ProgressBar, ProgressIndicator, QuickActions, SearchField, SideNav,
   Skeleton, Spotlight, Stepper, Switch, Table, TimePicker, DatePicker,
-  AvatarGroup.
+  (AvatarGroup fait le 2026-11-19 : `border-width` et `spacing.overlap`.)
 - Légitimement sans tokens de couleur (primitives de layout) : Bleed, Cluster,
   Grid, Stack.
 

@@ -1234,269 +1234,345 @@
 
 /* ── Composants (aliasent le sémantique → héritent du thème) ──── */
 :root {
+  --avatar-group-spacing-overlap-xsmall: -4px; /** Chevauchement des avatars xsmall empilés (marge négative, 25 % du diamètre) */
+  --avatar-group-spacing-overlap-small: -6px; /** Chevauchement des avatars small empilés (marge négative, 25 % du diamètre) */
+  --avatar-group-spacing-overlap-medium: -8px; /** Chevauchement des avatars medium empilés (marge négative, 25 % du diamètre) */
+  --avatar-group-spacing-overlap-large: -10px; /** Chevauchement des avatars large empilés (marge négative, 25 % du diamètre) */
+  --avatar-group-spacing-overlap-xlarge: -16px; /** Chevauchement des avatars xlarge empilés (marge négative, 25 % du diamètre) */
+  --avatar-group-spacing-overlap-xxlarge: -24px; /** Chevauchement des avatars xxlarge empilés (marge négative, 25 % du diamètre) */
+  --avatar-group-spacing-overlap-xxxlarge: -32px; /** Chevauchement des avatars xxxlarge empilés (marge négative, 25 % du diamètre) */
+  --avatar-group-border-width-xsmall: var(--size0125); /** Anneau de séparation des avatars xsmall empilés (couleur du conteneur, prop borderColor) */
+  --avatar-group-border-width-small: var(--size0125); /** Anneau de séparation des avatars small empilés (couleur du conteneur, prop borderColor) */
+  --avatar-group-border-width-medium: var(--size025); /** Anneau de séparation des avatars medium empilés (couleur du conteneur, prop borderColor) */
+  --avatar-group-border-width-large: var(--size025); /** Anneau de séparation des avatars large empilés (couleur du conteneur, prop borderColor) */
+  --avatar-group-border-width-xlarge: var(--size025); /** Anneau de séparation des avatars xlarge empilés (couleur du conteneur, prop borderColor) */
+  --avatar-group-border-width-xxlarge: var(--size0375); /** Anneau de séparation des avatars xxlarge empilés (couleur du conteneur, prop borderColor) */
+  --avatar-group-border-width-xxxlarge: var(--size050); /** Anneau de séparation des avatars xxxlarge empilés (couleur du conteneur, prop borderColor) */
+  --avatar-size-xsmall-container: var(--size200); /** Avatar xsmall (16 px) */
+  --avatar-size-xsmall-icon: var(--size125); /** Icône de l'avatar xsmall (10 px) */
+  --avatar-size-small-container: var(--size300); /** Avatar small (24 px) */
+  --avatar-size-small-icon: var(--size175); /** Icône de l'avatar small (14 px) */
+  --avatar-size-medium-container: var(--size400); /** Avatar medium (32 px) */
+  --avatar-size-medium-icon: var(--size200); /** Icône de l'avatar medium (16 px) */
+  --avatar-size-large-container: var(--size500); /** Avatar large (40 px) */
+  --avatar-size-large-icon: var(--size250); /** Icône de l'avatar large (20 px) */
+  --avatar-size-xlarge-container: var(--size800); /** Avatar xlarge (64 px) */
+  --avatar-size-xlarge-icon: var(--size400); /** Icône de l'avatar xlarge (32 px) */
+  --avatar-size-xxlarge-container: var(--size1200); /** Avatar xxlarge (96 px) */
+  --avatar-size-xxlarge-icon: var(--size600); /** Icône de l'avatar xxlarge (48 px) */
+  --avatar-size-xxxlarge-container: var(--size1600); /** Avatar xxxlarge (128 px) */
+  --avatar-size-xxxlarge-icon: var(--size800); /** Icône de l'avatar xxxlarge (64 px) */
+  --avatar-opacity-disabled: var(--opacity-disabled); /** Opacité de l'avatar désactivé */
+  --button-opacity-disabled: var(--opacity-disabled); /** Opacité du bouton désactivé (couleur conservée, estompée) */
   --spinner-size-xsmall: var(--size100); /** Spinner xsmall (8 px) */
   --spinner-size-small: var(--size200); /** Spinner small (16 px) */
   --spinner-size-medium: var(--size300); /** Spinner medium (24 px) */
   --spinner-size-large: var(--size600); /** Spinner large (48 px) */
   --spinner-size-xlarge: var(--size1200); /** Spinner xlarge (96 px) */
-  --button-contained-default-text-default: var(--text-default-default);
-  --button-contained-default-background-default: var(--background-neutral-subtler-default);
-  --button-contained-default-background-hovered: var(--background-neutral-subtler-hovered);
-  --button-contained-default-background-pressed: var(--background-neutral-subtler-pressed);
-  --button-contained-subtle-text-default: var(--text-subtle-default);
-  --button-contained-subtle-background-hovered: var(--background-neutral-subtler-hovered);
-  --button-contained-subtle-background-pressed: var(--background-neutral-subtler-pressed);
-  --button-contained-subtlest-text-default: var(--text-subtlest-default);
-  --button-contained-subtlest-background-hovered: var(--background-neutral-subtler-hovered);
-  --button-contained-subtlest-background-pressed: var(--background-neutral-subtler-pressed);
-  --button-contained-comete-text-default: var(--text-inverted);
-  --button-contained-comete-background-default: var(--background-comete-bold-default);
-  --button-contained-comete-background-hovered: var(--background-comete-bold-hovered);
-  --button-contained-comete-background-pressed: var(--background-comete-bold-pressed);
-  --button-contained-success-text-default: var(--text-inverted);
-  --button-contained-success-background-default: var(--background-success-bold-default);
-  --button-contained-success-background-hovered: var(--background-success-bold-hovered);
-  --button-contained-success-background-pressed: var(--background-success-bold-pressed);
-  --button-contained-critical-text-default: var(--text-inverted);
-  --button-contained-critical-background-default: var(--background-critical-bold-default);
-  --button-contained-critical-background-hovered: var(--background-critical-bold-hovered);
-  --button-contained-critical-background-pressed: var(--background-critical-bold-pressed);
-  --button-contained-warning-text-default: var(--text-on-warning);
-  --button-contained-warning-background-default: var(--background-warning-bold-default);
-  --button-contained-warning-background-hovered: var(--background-warning-bold-hovered);
-  --button-contained-warning-background-pressed: var(--background-warning-bold-pressed);
-  --button-contained-information-text-default: var(--text-inverted);
-  --button-contained-information-background-default: var(--background-information-bold-default);
-  --button-contained-information-background-hovered: var(--background-information-bold-hovered);
-  --button-contained-information-background-pressed: var(--background-information-bold-pressed);
-  --button-contained-brand-background-default: var(--background-brand-bold-default);
-  --button-contained-brand-background-hovered: var(--background-brand-bold-hovered);
-  --button-contained-brand-background-pressed: var(--background-brand-bold-pressed);
-  --button-contained-brand-text-default: var(--text-inverted);
-  --button-contained-accent-purple-background-default: var(--background-accent-purple-bold-default);
-  --button-contained-accent-purple-background-hovered: var(--background-accent-purple-bold-hovered);
-  --button-contained-accent-purple-background-pressed: var(--background-accent-purple-bold-pressed);
-  --button-contained-accent-purple-text-default: var(--text-inverted);
-  --button-contained-accent-teal-background-default: var(--background-accent-teal-bold-default);
-  --button-contained-accent-teal-background-hovered: var(--background-accent-teal-bold-hovered);
-  --button-contained-accent-teal-background-pressed: var(--background-accent-teal-bold-pressed);
-  --button-contained-accent-teal-text-default: var(--text-inverted);
-  --button-contained-accent-turquoise-background-default: var(--background-accent-turquoise-bold-default);
-  --button-contained-accent-turquoise-background-hovered: var(--background-accent-turquoise-bold-hovered);
-  --button-contained-accent-turquoise-background-pressed: var(--background-accent-turquoise-bold-pressed);
-  --button-contained-accent-turquoise-text-default: var(--text-inverted);
-  --button-contained-accent-magenta-background-default: var(--background-accent-magenta-bold-default);
-  --button-contained-accent-magenta-background-hovered: var(--background-accent-magenta-bold-hovered);
-  --button-contained-accent-magenta-background-pressed: var(--background-accent-magenta-bold-pressed);
-  --button-contained-accent-magenta-text-default: var(--text-inverted);
-  --button-contained-accent-blue-grey-background-default: var(--background-accent-blue-grey-bold-default);
-  --button-contained-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-bold-hovered);
-  --button-contained-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-bold-pressed);
-  --button-contained-accent-blue-grey-text-default: var(--text-inverted);
-  --button-outlined-default-text-default: var(--text-default-default);
-  --button-outlined-default-border-default: var(--border-bold);
-  --button-outlined-default-background-hovered: var(--background-neutral-subtlest-hovered);
-  --button-outlined-default-background-pressed: var(--background-neutral-subtlest-pressed);
-  --button-outlined-subtle-text-default: var(--text-subtle-default);
-  --button-outlined-subtle-border-default: var(--border-bold);
-  --button-outlined-subtle-background-hovered: var(--background-neutral-subtlest-hovered);
-  --button-outlined-subtle-background-pressed: var(--background-neutral-subtlest-pressed);
-  --button-outlined-subtlest-text-default: var(--text-subtlest-default);
-  --button-outlined-subtlest-border-default: var(--border-subtle);
-  --button-outlined-subtlest-background-hovered: var(--background-neutral-subtlest-hovered);
-  --button-outlined-subtlest-background-pressed: var(--background-neutral-subtlest-pressed);
-  --button-outlined-comete-text-default: var(--text-comete-default);
-  --button-outlined-comete-border-default: var(--border-comete-bold);
-  --button-outlined-comete-background-hovered: var(--background-comete-subtlest-hovered);
-  --button-outlined-comete-background-pressed: var(--background-comete-subtlest-pressed);
-  --button-outlined-success-text-default: var(--text-success-default);
-  --button-outlined-success-border-default: var(--border-success-bold);
-  --button-outlined-success-background-hovered: var(--background-success-subtlest-hovered);
-  --button-outlined-success-background-pressed: var(--background-success-subtlest-pressed);
-  --button-outlined-critical-text-default: var(--text-critical-default);
-  --button-outlined-critical-border-default: var(--border-critical-bold);
-  --button-outlined-critical-background-hovered: var(--background-critical-subtlest-hovered);
-  --button-outlined-critical-background-pressed: var(--background-critical-subtlest-pressed);
-  --button-outlined-warning-text-default: var(--text-warning-default);
-  --button-outlined-warning-border-default: var(--border-warning-bold);
-  --button-outlined-warning-background-hovered: var(--background-warning-subtlest-hovered);
-  --button-outlined-warning-background-pressed: var(--background-warning-subtlest-pressed);
-  --button-outlined-information-text-default: var(--text-information-default);
-  --button-outlined-information-border-default: var(--border-information-bold);
-  --button-outlined-information-background-hovered: var(--background-information-subtlest-hovered);
-  --button-outlined-information-background-pressed: var(--background-information-subtlest-pressed);
-  --button-outlined-brand-border-default: var(--border-brand-bold);
-  --button-outlined-brand-text-default: var(--text-brand-default);
-  --button-outlined-brand-background-hovered: var(--background-brand-subtlest-hovered);
-  --button-outlined-brand-background-pressed: var(--background-brand-subtlest-pressed);
-  --button-outlined-accent-purple-border-default: var(--border-accent-purple-bold);
-  --button-outlined-accent-purple-text-default: var(--text-accent-purple-default);
-  --button-outlined-accent-purple-background-hovered: var(--background-accent-purple-subtlest-hovered);
-  --button-outlined-accent-purple-background-pressed: var(--background-accent-purple-subtlest-pressed);
-  --button-outlined-accent-teal-border-default: var(--border-accent-teal-bold);
-  --button-outlined-accent-teal-text-default: var(--text-accent-teal-default);
-  --button-outlined-accent-teal-background-hovered: var(--background-accent-teal-subtlest-hovered);
-  --button-outlined-accent-teal-background-pressed: var(--background-accent-teal-subtlest-pressed);
-  --button-outlined-accent-turquoise-border-default: var(--border-accent-turquoise-bold);
-  --button-outlined-accent-turquoise-text-default: var(--text-accent-turquoise-default);
-  --button-outlined-accent-turquoise-background-hovered: var(--background-accent-turquoise-subtlest-hovered);
-  --button-outlined-accent-turquoise-background-pressed: var(--background-accent-turquoise-subtlest-pressed);
-  --button-outlined-accent-magenta-border-default: var(--border-accent-magenta-bold);
-  --button-outlined-accent-magenta-text-default: var(--text-accent-magenta-default);
-  --button-outlined-accent-magenta-background-hovered: var(--background-accent-magenta-subtlest-hovered);
-  --button-outlined-accent-magenta-background-pressed: var(--background-accent-magenta-subtlest-pressed);
-  --button-outlined-accent-blue-grey-border-default: var(--border-accent-blue-grey-bold);
-  --button-outlined-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
-  --button-outlined-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-subtlest-hovered);
-  --button-outlined-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-subtlest-pressed);
-  --button-subtle-default-text-default: var(--text-default-default);
-  --button-subtle-default-background-hovered: var(--background-neutral-subtlest-hovered);
-  --button-subtle-default-background-pressed: var(--background-neutral-subtlest-pressed);
-  --button-subtle-subtle-text-default: var(--text-subtle-default);
-  --button-subtle-subtle-background-hovered: var(--background-neutral-subtlest-hovered);
-  --button-subtle-subtle-background-pressed: var(--background-neutral-subtlest-pressed);
-  --button-subtle-subtlest-text-default: var(--text-subtlest-default);
-  --button-subtle-subtlest-background-hovered: var(--background-neutral-subtlest-hovered);
-  --button-subtle-subtlest-background-pressed: var(--background-neutral-subtlest-pressed);
-  --button-subtle-comete-text-default: var(--text-comete-default);
-  --button-subtle-comete-background-hovered: var(--background-comete-subtlest-hovered);
-  --button-subtle-comete-background-pressed: var(--background-comete-subtlest-pressed);
-  --button-subtle-success-text-default: var(--text-success-default);
-  --button-subtle-success-background-hovered: var(--background-success-subtlest-hovered);
-  --button-subtle-success-background-pressed: var(--background-success-subtlest-pressed);
-  --button-subtle-critical-text-default: var(--text-critical-default);
-  --button-subtle-critical-background-hovered: var(--background-critical-subtlest-hovered);
-  --button-subtle-critical-background-pressed: var(--background-critical-subtlest-pressed);
-  --button-subtle-warning-text-default: var(--text-warning-default);
-  --button-subtle-warning-background-hovered: var(--background-warning-subtlest-hovered);
-  --button-subtle-warning-background-pressed: var(--background-warning-subtlest-pressed);
-  --button-subtle-information-text-default: var(--text-information-default);
-  --button-subtle-information-background-hovered: var(--background-information-subtlest-hovered);
-  --button-subtle-information-background-pressed: var(--background-information-subtlest-pressed);
-  --button-subtle-brand-text-default: var(--text-brand-default);
-  --button-subtle-brand-background-hovered: var(--background-brand-subtlest-hovered);
-  --button-subtle-brand-background-pressed: var(--background-brand-subtlest-pressed);
-  --button-subtle-accent-purple-text-default: var(--text-accent-purple-default);
-  --button-subtle-accent-purple-background-hovered: var(--background-accent-purple-subtlest-hovered);
-  --button-subtle-accent-purple-background-pressed: var(--background-accent-purple-subtlest-pressed);
-  --button-subtle-accent-teal-text-default: var(--text-accent-teal-default);
-  --button-subtle-accent-teal-background-hovered: var(--background-accent-teal-subtlest-hovered);
-  --button-subtle-accent-teal-background-pressed: var(--background-accent-teal-subtlest-pressed);
-  --button-subtle-accent-turquoise-text-default: var(--text-accent-turquoise-default);
-  --button-subtle-accent-turquoise-background-hovered: var(--background-accent-turquoise-subtlest-hovered);
-  --button-subtle-accent-turquoise-background-pressed: var(--background-accent-turquoise-subtlest-pressed);
-  --button-subtle-accent-magenta-text-default: var(--text-accent-magenta-default);
-  --button-subtle-accent-magenta-background-hovered: var(--background-accent-magenta-subtlest-hovered);
-  --button-subtle-accent-magenta-background-pressed: var(--background-accent-magenta-subtlest-pressed);
-  --button-subtle-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
-  --button-subtle-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-subtlest-hovered);
-  --button-subtle-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-subtlest-pressed);
-  --button-link-default-text-default: var(--text-link-default);
-  --button-link-default-text-hovered: var(--text-link-hovered);
-  --button-link-default-text-pressed: var(--text-link-pressed);
-  --button-link-comete-text-default: var(--text-comete-default);
-  --button-link-comete-text-hovered: var(--text-comete-hovered);
-  --button-link-comete-text-pressed: var(--text-comete-pressed);
-  --button-link-success-text-default: var(--text-success-default);
-  --button-link-success-text-hovered: var(--text-success-hovered);
-  --button-link-success-text-pressed: var(--text-success-pressed);
-  --button-link-critical-text-default: var(--text-critical-default);
-  --button-link-critical-text-hovered: var(--text-critical-hovered);
-  --button-link-critical-text-pressed: var(--text-critical-pressed);
-  --button-link-warning-text-default: var(--text-warning-default);
-  --button-link-warning-text-hovered: var(--text-warning-hovered);
-  --button-link-warning-text-pressed: var(--text-warning-pressed);
-  --button-link-information-text-default: var(--text-information-default);
-  --button-link-information-text-hovered: var(--text-information-hovered);
-  --button-link-information-text-pressed: var(--text-information-pressed);
-  --button-link-subtle-text-default: var(--text-subtle-default);
-  --button-link-subtle-text-hovered: var(--text-subtlest-default);
-  --button-link-subtlest-text-default: var(--text-subtlest-default);
-  --button-link-subtlest-text-hovered: var(--text-subtle-default);
-  --button-link-brand-text-default: var(--text-brand-default);
-  --button-link-brand-text-hovered: var(--text-brand-hovered);
-  --button-link-brand-text-pressed: var(--text-brand-pressed);
-  --button-link-accent-purple-text-default: var(--text-accent-purple-default);
-  --button-link-accent-purple-text-hovered: var(--text-accent-purple-default);
-  --button-link-accent-purple-text-pressed: var(--text-accent-purple-default);
-  --button-link-accent-teal-text-default: var(--text-accent-teal-default);
-  --button-link-accent-teal-text-hovered: var(--text-accent-teal-default);
-  --button-link-accent-teal-text-pressed: var(--text-accent-teal-default);
-  --button-link-accent-turquoise-text-default: var(--text-accent-turquoise-default);
-  --button-link-accent-turquoise-text-hovered: var(--text-accent-turquoise-default);
-  --button-link-accent-turquoise-text-pressed: var(--text-accent-turquoise-default);
-  --button-link-accent-magenta-text-default: var(--text-accent-magenta-default);
-  --button-link-accent-magenta-text-hovered: var(--text-accent-magenta-default);
-  --button-link-accent-magenta-text-pressed: var(--text-accent-magenta-default);
-  --button-link-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
-  --button-link-accent-blue-grey-text-hovered: var(--text-accent-blue-grey-default);
-  --button-link-accent-blue-grey-text-pressed: var(--text-accent-blue-grey-default);
-  --button-link-subtle-default-text-default: var(--text-subtle-default);
-  --button-link-subtle-default-text-hovered: var(--text-subtle-hovered);
-  --button-link-subtle-default-text-pressed: var(--text-subtle-pressed);
-  --button-link-subtle-comete-text-default: var(--text-comete-default);
-  --button-link-subtle-comete-text-hovered: var(--text-comete-hovered);
-  --button-link-subtle-comete-text-pressed: var(--text-comete-pressed);
-  --button-link-subtle-success-text-default: var(--text-success-default);
-  --button-link-subtle-success-text-hovered: var(--text-success-hovered);
-  --button-link-subtle-success-text-pressed: var(--text-success-pressed);
-  --button-link-subtle-critical-text-default: var(--text-critical-default);
-  --button-link-subtle-critical-text-hovered: var(--text-critical-hovered);
-  --button-link-subtle-critical-text-pressed: var(--text-critical-pressed);
-  --button-link-subtle-warning-text-default: var(--text-warning-default);
-  --button-link-subtle-warning-text-hovered: var(--text-warning-hovered);
-  --button-link-subtle-warning-text-pressed: var(--text-warning-pressed);
-  --button-link-subtle-information-text-default: var(--text-information-default);
-  --button-link-subtle-information-text-hovered: var(--text-information-hovered);
-  --button-link-subtle-information-text-pressed: var(--text-information-pressed);
-  --button-link-subtle-subtle-text-default: var(--text-subtle-default);
-  --button-link-subtle-subtle-text-hovered: var(--text-subtle-hovered);
-  --button-link-subtle-subtle-text-pressed: var(--text-subtle-pressed);
-  --button-link-subtle-subtlest-text-default: var(--text-subtlest-default);
-  --button-link-subtle-subtlest-text-hovered: var(--text-subtlest-hovered);
-  --button-link-subtle-subtlest-text-pressed: var(--text-subtlest-pressed);
-  --button-link-subtle-brand-text-default: var(--text-brand-default);
-  --button-link-subtle-brand-text-hovered: var(--text-brand-hovered);
-  --button-link-subtle-brand-text-pressed: var(--text-brand-pressed);
-  --button-link-subtle-accent-purple-text-default: var(--text-accent-purple-default);
-  --button-link-subtle-accent-purple-text-hovered: var(--text-accent-purple-default);
-  --button-link-subtle-accent-purple-text-pressed: var(--text-accent-purple-default);
-  --button-link-subtle-accent-teal-text-default: var(--text-accent-teal-default);
-  --button-link-subtle-accent-teal-text-hovered: var(--text-accent-teal-default);
-  --button-link-subtle-accent-teal-text-pressed: var(--text-accent-teal-default);
-  --button-link-subtle-accent-turquoise-text-default: var(--text-accent-turquoise-default);
-  --button-link-subtle-accent-turquoise-text-hovered: var(--text-accent-turquoise-default);
-  --button-link-subtle-accent-turquoise-text-pressed: var(--text-accent-turquoise-default);
-  --button-link-subtle-accent-magenta-text-default: var(--text-accent-magenta-default);
-  --button-link-subtle-accent-magenta-text-hovered: var(--text-accent-magenta-default);
-  --button-link-subtle-accent-magenta-text-pressed: var(--text-accent-magenta-default);
-  --button-link-subtle-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
-  --button-link-subtle-accent-blue-grey-text-hovered: var(--text-accent-blue-grey-default);
-  --button-link-subtle-accent-blue-grey-text-pressed: var(--text-accent-blue-grey-default);
-  --button-selected-background-default: var(--background-selected-subtlest-default);
-  --button-selected-background-hovered: var(--background-selected-subtlest-hovered);
-  --button-selected-background-pressed: var(--background-selected-subtlest-pressed);
-  --button-selected-text-default: var(--text-selected);
-  --button-focus-border: var(--border-focused);
+  --autosave-indicator-color-default-text: var(--text-default-default); /** Libellé de l'état default */
+  --autosave-indicator-color-default-icon: var(--icon-default); /** Icône ou spinner de l'état default */
+  --autosave-indicator-color-success-text: var(--text-success-default); /** Libellé de l'état success */
+  --autosave-indicator-color-success-icon: var(--icon-success); /** Icône ou spinner de l'état success */
+  --autosave-indicator-color-critical-text: var(--text-critical-default); /** Libellé de l'état critical */
+  --autosave-indicator-color-critical-icon: var(--icon-critical); /** Icône ou spinner de l'état critical */
+  --autosave-indicator-spacing-gap: var(--space025); /** Espace entre l'icône et le libellé (2 px) */
+  --avatar-color-neutral-background-default: var(--background-neutral-subtler-default);
+  --avatar-color-neutral-background-hovered: var(--background-neutral-subtler-hovered);
+  --avatar-color-neutral-background-pressed: var(--background-neutral-subtler-pressed);
+  --avatar-color-neutral-text: var(--text-default-default); /** Initiales de l'avatar neutral */
+  --avatar-color-neutral-icon: var(--icon-default); /** Icône de l'avatar neutral */
+  --avatar-color-comete-background-default: var(--background-comete-subtlest-default);
+  --avatar-color-comete-background-hovered: var(--background-comete-subtlest-hovered);
+  --avatar-color-comete-background-pressed: var(--background-comete-subtlest-pressed);
+  --avatar-color-comete-text: var(--text-comete-default); /** Initiales de l'avatar comete */
+  --avatar-color-comete-icon: var(--icon-comete); /** Icône de l'avatar comete */
+  --avatar-color-accent-purple-background-default: var(--background-accent-purple-subtlest-default);
+  --avatar-color-accent-purple-background-hovered: var(--background-accent-purple-subtlest-hovered);
+  --avatar-color-accent-purple-background-pressed: var(--background-accent-purple-subtlest-pressed);
+  --avatar-color-accent-purple-text: var(--text-accent-purple-default); /** Initiales de l'avatar accent-purple */
+  --avatar-color-accent-purple-icon: var(--icon-accent-purple); /** Icône de l'avatar accent-purple */
+  --avatar-color-accent-teal-background-default: var(--background-accent-teal-subtlest-default);
+  --avatar-color-accent-teal-background-hovered: var(--background-accent-teal-subtlest-hovered);
+  --avatar-color-accent-teal-background-pressed: var(--background-accent-teal-subtlest-pressed);
+  --avatar-color-accent-teal-text: var(--text-accent-teal-default); /** Initiales de l'avatar accent-teal */
+  --avatar-color-accent-teal-icon: var(--icon-accent-teal); /** Icône de l'avatar accent-teal */
+  --avatar-color-accent-turquoise-background-default: var(--background-accent-turquoise-subtlest-default);
+  --avatar-color-accent-turquoise-background-hovered: var(--background-accent-turquoise-subtlest-hovered);
+  --avatar-color-accent-turquoise-background-pressed: var(--background-accent-turquoise-subtlest-pressed);
+  --avatar-color-accent-turquoise-text: var(--text-accent-turquoise-default); /** Initiales de l'avatar accent-turquoise */
+  --avatar-color-accent-turquoise-icon: var(--icon-accent-turquoise); /** Icône de l'avatar accent-turquoise */
+  --avatar-color-accent-magenta-background-default: var(--background-accent-magenta-subtlest-default);
+  --avatar-color-accent-magenta-background-hovered: var(--background-accent-magenta-subtlest-hovered);
+  --avatar-color-accent-magenta-background-pressed: var(--background-accent-magenta-subtlest-pressed);
+  --avatar-color-accent-magenta-text: var(--text-accent-magenta-default); /** Initiales de l'avatar accent-magenta */
+  --avatar-color-accent-magenta-icon: var(--icon-accent-magenta); /** Icône de l'avatar accent-magenta */
+  --avatar-color-accent-blue-grey-background-default: var(--background-accent-blue-grey-subtlest-default);
+  --avatar-color-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-subtlest-hovered);
+  --avatar-color-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-subtlest-pressed);
+  --avatar-color-accent-blue-grey-text: var(--text-accent-blue-grey-default); /** Initiales de l'avatar accent-blue-grey */
+  --avatar-color-accent-blue-grey-icon: var(--icon-accent-blue-grey); /** Icône de l'avatar accent-blue-grey */
+  --avatar-color-selected-background: var(--background-selected-subtlest-default); /** Fond de l'avatar sélectionné, prime sur la couleur et les états */
+  --avatar-color-selected-text: var(--text-selected); /** Initiales de l'avatar sélectionné */
+  --avatar-color-selected-icon: var(--icon-selected); /** Icône de l'avatar sélectionné */
+  --avatar-radius: var(--radius-round); /** Coin de l'avatar, toujours rond */
+  --button-color-contained-neutral-text-default: var(--text-default-default);
+  --button-color-contained-neutral-background-default: var(--background-neutral-subtler-default);
+  --button-color-contained-neutral-background-hovered: var(--background-neutral-subtler-hovered);
+  --button-color-contained-neutral-background-pressed: var(--background-neutral-subtler-pressed);
+  --button-color-contained-subtle-text-default: var(--text-subtle-default);
+  --button-color-contained-subtle-background-hovered: var(--background-neutral-subtler-hovered);
+  --button-color-contained-subtle-background-pressed: var(--background-neutral-subtler-pressed);
+  --button-color-contained-subtlest-text-default: var(--text-subtlest-default);
+  --button-color-contained-subtlest-background-hovered: var(--background-neutral-subtler-hovered);
+  --button-color-contained-subtlest-background-pressed: var(--background-neutral-subtler-pressed);
+  --button-color-contained-comete-text-default: var(--text-inverted);
+  --button-color-contained-comete-background-default: var(--background-comete-bold-default);
+  --button-color-contained-comete-background-hovered: var(--background-comete-bold-hovered);
+  --button-color-contained-comete-background-pressed: var(--background-comete-bold-pressed);
+  --button-color-contained-success-text-default: var(--text-inverted);
+  --button-color-contained-success-background-default: var(--background-success-bold-default);
+  --button-color-contained-success-background-hovered: var(--background-success-bold-hovered);
+  --button-color-contained-success-background-pressed: var(--background-success-bold-pressed);
+  --button-color-contained-critical-text-default: var(--text-inverted);
+  --button-color-contained-critical-background-default: var(--background-critical-bold-default);
+  --button-color-contained-critical-background-hovered: var(--background-critical-bold-hovered);
+  --button-color-contained-critical-background-pressed: var(--background-critical-bold-pressed);
+  --button-color-contained-warning-text-default: var(--text-on-warning);
+  --button-color-contained-warning-background-default: var(--background-warning-bold-default);
+  --button-color-contained-warning-background-hovered: var(--background-warning-bold-hovered);
+  --button-color-contained-warning-background-pressed: var(--background-warning-bold-pressed);
+  --button-color-contained-information-text-default: var(--text-inverted);
+  --button-color-contained-information-background-default: var(--background-information-bold-default);
+  --button-color-contained-information-background-hovered: var(--background-information-bold-hovered);
+  --button-color-contained-information-background-pressed: var(--background-information-bold-pressed);
+  --button-color-contained-brand-background-default: var(--background-brand-bold-default);
+  --button-color-contained-brand-background-hovered: var(--background-brand-bold-hovered);
+  --button-color-contained-brand-background-pressed: var(--background-brand-bold-pressed);
+  --button-color-contained-brand-text-default: var(--text-inverted);
+  --button-color-contained-accent-purple-background-default: var(--background-accent-purple-bold-default);
+  --button-color-contained-accent-purple-background-hovered: var(--background-accent-purple-bold-hovered);
+  --button-color-contained-accent-purple-background-pressed: var(--background-accent-purple-bold-pressed);
+  --button-color-contained-accent-purple-text-default: var(--text-inverted);
+  --button-color-contained-accent-teal-background-default: var(--background-accent-teal-bold-default);
+  --button-color-contained-accent-teal-background-hovered: var(--background-accent-teal-bold-hovered);
+  --button-color-contained-accent-teal-background-pressed: var(--background-accent-teal-bold-pressed);
+  --button-color-contained-accent-teal-text-default: var(--text-inverted);
+  --button-color-contained-accent-turquoise-background-default: var(--background-accent-turquoise-bold-default);
+  --button-color-contained-accent-turquoise-background-hovered: var(--background-accent-turquoise-bold-hovered);
+  --button-color-contained-accent-turquoise-background-pressed: var(--background-accent-turquoise-bold-pressed);
+  --button-color-contained-accent-turquoise-text-default: var(--text-inverted);
+  --button-color-contained-accent-magenta-background-default: var(--background-accent-magenta-bold-default);
+  --button-color-contained-accent-magenta-background-hovered: var(--background-accent-magenta-bold-hovered);
+  --button-color-contained-accent-magenta-background-pressed: var(--background-accent-magenta-bold-pressed);
+  --button-color-contained-accent-magenta-text-default: var(--text-inverted);
+  --button-color-contained-accent-blue-grey-background-default: var(--background-accent-blue-grey-bold-default);
+  --button-color-contained-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-bold-hovered);
+  --button-color-contained-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-bold-pressed);
+  --button-color-contained-accent-blue-grey-text-default: var(--text-inverted);
+  --button-color-outlined-neutral-text-default: var(--text-default-default);
+  --button-color-outlined-neutral-border-default: var(--border-bold);
+  --button-color-outlined-neutral-background-hovered: var(--background-neutral-subtlest-hovered);
+  --button-color-outlined-neutral-background-pressed: var(--background-neutral-subtlest-pressed);
+  --button-color-outlined-subtle-text-default: var(--text-subtle-default);
+  --button-color-outlined-subtle-border-default: var(--border-bold);
+  --button-color-outlined-subtle-background-hovered: var(--background-neutral-subtlest-hovered);
+  --button-color-outlined-subtle-background-pressed: var(--background-neutral-subtlest-pressed);
+  --button-color-outlined-subtlest-text-default: var(--text-subtlest-default);
+  --button-color-outlined-subtlest-border-default: var(--border-subtle);
+  --button-color-outlined-subtlest-background-hovered: var(--background-neutral-subtlest-hovered);
+  --button-color-outlined-subtlest-background-pressed: var(--background-neutral-subtlest-pressed);
+  --button-color-outlined-comete-text-default: var(--text-comete-default);
+  --button-color-outlined-comete-border-default: var(--border-comete-bold);
+  --button-color-outlined-comete-background-hovered: var(--background-comete-subtlest-hovered);
+  --button-color-outlined-comete-background-pressed: var(--background-comete-subtlest-pressed);
+  --button-color-outlined-success-text-default: var(--text-success-default);
+  --button-color-outlined-success-border-default: var(--border-success-bold);
+  --button-color-outlined-success-background-hovered: var(--background-success-subtlest-hovered);
+  --button-color-outlined-success-background-pressed: var(--background-success-subtlest-pressed);
+  --button-color-outlined-critical-text-default: var(--text-critical-default);
+  --button-color-outlined-critical-border-default: var(--border-critical-bold);
+  --button-color-outlined-critical-background-hovered: var(--background-critical-subtlest-hovered);
+  --button-color-outlined-critical-background-pressed: var(--background-critical-subtlest-pressed);
+  --button-color-outlined-warning-text-default: var(--text-warning-default);
+  --button-color-outlined-warning-border-default: var(--border-warning-bold);
+  --button-color-outlined-warning-background-hovered: var(--background-warning-subtlest-hovered);
+  --button-color-outlined-warning-background-pressed: var(--background-warning-subtlest-pressed);
+  --button-color-outlined-information-text-default: var(--text-information-default);
+  --button-color-outlined-information-border-default: var(--border-information-bold);
+  --button-color-outlined-information-background-hovered: var(--background-information-subtlest-hovered);
+  --button-color-outlined-information-background-pressed: var(--background-information-subtlest-pressed);
+  --button-color-outlined-brand-border-default: var(--border-brand-bold);
+  --button-color-outlined-brand-text-default: var(--text-brand-default);
+  --button-color-outlined-brand-background-hovered: var(--background-brand-subtlest-hovered);
+  --button-color-outlined-brand-background-pressed: var(--background-brand-subtlest-pressed);
+  --button-color-outlined-accent-purple-border-default: var(--border-accent-purple-bold);
+  --button-color-outlined-accent-purple-text-default: var(--text-accent-purple-default);
+  --button-color-outlined-accent-purple-background-hovered: var(--background-accent-purple-subtlest-hovered);
+  --button-color-outlined-accent-purple-background-pressed: var(--background-accent-purple-subtlest-pressed);
+  --button-color-outlined-accent-teal-border-default: var(--border-accent-teal-bold);
+  --button-color-outlined-accent-teal-text-default: var(--text-accent-teal-default);
+  --button-color-outlined-accent-teal-background-hovered: var(--background-accent-teal-subtlest-hovered);
+  --button-color-outlined-accent-teal-background-pressed: var(--background-accent-teal-subtlest-pressed);
+  --button-color-outlined-accent-turquoise-border-default: var(--border-accent-turquoise-bold);
+  --button-color-outlined-accent-turquoise-text-default: var(--text-accent-turquoise-default);
+  --button-color-outlined-accent-turquoise-background-hovered: var(--background-accent-turquoise-subtlest-hovered);
+  --button-color-outlined-accent-turquoise-background-pressed: var(--background-accent-turquoise-subtlest-pressed);
+  --button-color-outlined-accent-magenta-border-default: var(--border-accent-magenta-bold);
+  --button-color-outlined-accent-magenta-text-default: var(--text-accent-magenta-default);
+  --button-color-outlined-accent-magenta-background-hovered: var(--background-accent-magenta-subtlest-hovered);
+  --button-color-outlined-accent-magenta-background-pressed: var(--background-accent-magenta-subtlest-pressed);
+  --button-color-outlined-accent-blue-grey-border-default: var(--border-accent-blue-grey-bold);
+  --button-color-outlined-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
+  --button-color-outlined-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-subtlest-hovered);
+  --button-color-outlined-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-subtlest-pressed);
+  --button-color-subtle-neutral-text-default: var(--text-default-default);
+  --button-color-subtle-neutral-background-hovered: var(--background-neutral-subtlest-hovered);
+  --button-color-subtle-neutral-background-pressed: var(--background-neutral-subtlest-pressed);
+  --button-color-subtle-subtle-text-default: var(--text-subtle-default);
+  --button-color-subtle-subtle-background-hovered: var(--background-neutral-subtlest-hovered);
+  --button-color-subtle-subtle-background-pressed: var(--background-neutral-subtlest-pressed);
+  --button-color-subtle-subtlest-text-default: var(--text-subtlest-default);
+  --button-color-subtle-subtlest-background-hovered: var(--background-neutral-subtlest-hovered);
+  --button-color-subtle-subtlest-background-pressed: var(--background-neutral-subtlest-pressed);
+  --button-color-subtle-comete-text-default: var(--text-comete-default);
+  --button-color-subtle-comete-background-hovered: var(--background-comete-subtlest-hovered);
+  --button-color-subtle-comete-background-pressed: var(--background-comete-subtlest-pressed);
+  --button-color-subtle-success-text-default: var(--text-success-default);
+  --button-color-subtle-success-background-hovered: var(--background-success-subtlest-hovered);
+  --button-color-subtle-success-background-pressed: var(--background-success-subtlest-pressed);
+  --button-color-subtle-critical-text-default: var(--text-critical-default);
+  --button-color-subtle-critical-background-hovered: var(--background-critical-subtlest-hovered);
+  --button-color-subtle-critical-background-pressed: var(--background-critical-subtlest-pressed);
+  --button-color-subtle-warning-text-default: var(--text-warning-default);
+  --button-color-subtle-warning-background-hovered: var(--background-warning-subtlest-hovered);
+  --button-color-subtle-warning-background-pressed: var(--background-warning-subtlest-pressed);
+  --button-color-subtle-information-text-default: var(--text-information-default);
+  --button-color-subtle-information-background-hovered: var(--background-information-subtlest-hovered);
+  --button-color-subtle-information-background-pressed: var(--background-information-subtlest-pressed);
+  --button-color-subtle-brand-text-default: var(--text-brand-default);
+  --button-color-subtle-brand-background-hovered: var(--background-brand-subtlest-hovered);
+  --button-color-subtle-brand-background-pressed: var(--background-brand-subtlest-pressed);
+  --button-color-subtle-accent-purple-text-default: var(--text-accent-purple-default);
+  --button-color-subtle-accent-purple-background-hovered: var(--background-accent-purple-subtlest-hovered);
+  --button-color-subtle-accent-purple-background-pressed: var(--background-accent-purple-subtlest-pressed);
+  --button-color-subtle-accent-teal-text-default: var(--text-accent-teal-default);
+  --button-color-subtle-accent-teal-background-hovered: var(--background-accent-teal-subtlest-hovered);
+  --button-color-subtle-accent-teal-background-pressed: var(--background-accent-teal-subtlest-pressed);
+  --button-color-subtle-accent-turquoise-text-default: var(--text-accent-turquoise-default);
+  --button-color-subtle-accent-turquoise-background-hovered: var(--background-accent-turquoise-subtlest-hovered);
+  --button-color-subtle-accent-turquoise-background-pressed: var(--background-accent-turquoise-subtlest-pressed);
+  --button-color-subtle-accent-magenta-text-default: var(--text-accent-magenta-default);
+  --button-color-subtle-accent-magenta-background-hovered: var(--background-accent-magenta-subtlest-hovered);
+  --button-color-subtle-accent-magenta-background-pressed: var(--background-accent-magenta-subtlest-pressed);
+  --button-color-subtle-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
+  --button-color-subtle-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-subtlest-hovered);
+  --button-color-subtle-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-subtlest-pressed);
+  --button-color-link-neutral-text-default: var(--text-link-default);
+  --button-color-link-neutral-text-hovered: var(--text-link-hovered);
+  --button-color-link-neutral-text-pressed: var(--text-link-pressed);
+  --button-color-link-comete-text-default: var(--text-comete-default);
+  --button-color-link-comete-text-hovered: var(--text-comete-hovered);
+  --button-color-link-comete-text-pressed: var(--text-comete-pressed);
+  --button-color-link-success-text-default: var(--text-success-default);
+  --button-color-link-success-text-hovered: var(--text-success-hovered);
+  --button-color-link-success-text-pressed: var(--text-success-pressed);
+  --button-color-link-critical-text-default: var(--text-critical-default);
+  --button-color-link-critical-text-hovered: var(--text-critical-hovered);
+  --button-color-link-critical-text-pressed: var(--text-critical-pressed);
+  --button-color-link-warning-text-default: var(--text-warning-default);
+  --button-color-link-warning-text-hovered: var(--text-warning-hovered);
+  --button-color-link-warning-text-pressed: var(--text-warning-pressed);
+  --button-color-link-information-text-default: var(--text-information-default);
+  --button-color-link-information-text-hovered: var(--text-information-hovered);
+  --button-color-link-information-text-pressed: var(--text-information-pressed);
+  --button-color-link-subtle-text-default: var(--text-subtle-default);
+  --button-color-link-subtle-text-hovered: var(--text-subtlest-default);
+  --button-color-link-subtlest-text-default: var(--text-subtlest-default);
+  --button-color-link-subtlest-text-hovered: var(--text-subtle-default);
+  --button-color-link-brand-text-default: var(--text-brand-default);
+  --button-color-link-brand-text-hovered: var(--text-brand-hovered);
+  --button-color-link-brand-text-pressed: var(--text-brand-pressed);
+  --button-color-link-accent-purple-text-default: var(--text-accent-purple-default);
+  --button-color-link-accent-purple-text-hovered: var(--text-accent-purple-default);
+  --button-color-link-accent-purple-text-pressed: var(--text-accent-purple-default);
+  --button-color-link-accent-teal-text-default: var(--text-accent-teal-default);
+  --button-color-link-accent-teal-text-hovered: var(--text-accent-teal-default);
+  --button-color-link-accent-teal-text-pressed: var(--text-accent-teal-default);
+  --button-color-link-accent-turquoise-text-default: var(--text-accent-turquoise-default);
+  --button-color-link-accent-turquoise-text-hovered: var(--text-accent-turquoise-default);
+  --button-color-link-accent-turquoise-text-pressed: var(--text-accent-turquoise-default);
+  --button-color-link-accent-magenta-text-default: var(--text-accent-magenta-default);
+  --button-color-link-accent-magenta-text-hovered: var(--text-accent-magenta-default);
+  --button-color-link-accent-magenta-text-pressed: var(--text-accent-magenta-default);
+  --button-color-link-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
+  --button-color-link-accent-blue-grey-text-hovered: var(--text-accent-blue-grey-default);
+  --button-color-link-accent-blue-grey-text-pressed: var(--text-accent-blue-grey-default);
+  --button-color-link-subtle-neutral-text-default: var(--text-default-default);
+  --button-color-link-subtle-neutral-text-hovered: var(--text-subtle-hovered);
+  --button-color-link-subtle-neutral-text-pressed: var(--text-default-pressed);
+  --button-color-link-subtle-comete-text-default: var(--text-comete-default);
+  --button-color-link-subtle-comete-text-hovered: var(--text-comete-hovered);
+  --button-color-link-subtle-comete-text-pressed: var(--text-comete-pressed);
+  --button-color-link-subtle-success-text-default: var(--text-success-default);
+  --button-color-link-subtle-success-text-hovered: var(--text-success-hovered);
+  --button-color-link-subtle-success-text-pressed: var(--text-success-pressed);
+  --button-color-link-subtle-critical-text-default: var(--text-critical-default);
+  --button-color-link-subtle-critical-text-hovered: var(--text-critical-hovered);
+  --button-color-link-subtle-critical-text-pressed: var(--text-critical-pressed);
+  --button-color-link-subtle-warning-text-default: var(--text-warning-default);
+  --button-color-link-subtle-warning-text-hovered: var(--text-warning-hovered);
+  --button-color-link-subtle-warning-text-pressed: var(--text-warning-pressed);
+  --button-color-link-subtle-information-text-default: var(--text-information-default);
+  --button-color-link-subtle-information-text-hovered: var(--text-information-hovered);
+  --button-color-link-subtle-information-text-pressed: var(--text-information-pressed);
+  --button-color-link-subtle-subtle-text-default: var(--text-subtle-default);
+  --button-color-link-subtle-subtle-text-hovered: var(--text-subtle-hovered);
+  --button-color-link-subtle-subtle-text-pressed: var(--text-subtle-pressed);
+  --button-color-link-subtle-subtlest-text-default: var(--text-subtlest-default);
+  --button-color-link-subtle-subtlest-text-hovered: var(--text-subtlest-hovered);
+  --button-color-link-subtle-subtlest-text-pressed: var(--text-subtlest-pressed);
+  --button-color-link-subtle-brand-text-default: var(--text-brand-default);
+  --button-color-link-subtle-brand-text-hovered: var(--text-brand-hovered);
+  --button-color-link-subtle-brand-text-pressed: var(--text-brand-pressed);
+  --button-color-link-subtle-accent-purple-text-default: var(--text-accent-purple-default);
+  --button-color-link-subtle-accent-purple-text-hovered: var(--text-accent-purple-default);
+  --button-color-link-subtle-accent-purple-text-pressed: var(--text-accent-purple-default);
+  --button-color-link-subtle-accent-teal-text-default: var(--text-accent-teal-default);
+  --button-color-link-subtle-accent-teal-text-hovered: var(--text-accent-teal-default);
+  --button-color-link-subtle-accent-teal-text-pressed: var(--text-accent-teal-default);
+  --button-color-link-subtle-accent-turquoise-text-default: var(--text-accent-turquoise-default);
+  --button-color-link-subtle-accent-turquoise-text-hovered: var(--text-accent-turquoise-default);
+  --button-color-link-subtle-accent-turquoise-text-pressed: var(--text-accent-turquoise-default);
+  --button-color-link-subtle-accent-magenta-text-default: var(--text-accent-magenta-default);
+  --button-color-link-subtle-accent-magenta-text-hovered: var(--text-accent-magenta-default);
+  --button-color-link-subtle-accent-magenta-text-pressed: var(--text-accent-magenta-default);
+  --button-color-link-subtle-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
+  --button-color-link-subtle-accent-blue-grey-text-hovered: var(--text-accent-blue-grey-default);
+  --button-color-link-subtle-accent-blue-grey-text-pressed: var(--text-accent-blue-grey-default);
+  --button-color-selected-background-default: var(--background-selected-subtlest-default);
+  --button-color-selected-background-hovered: var(--background-selected-subtlest-hovered);
+  --button-color-selected-background-pressed: var(--background-selected-subtlest-pressed);
+  --button-color-selected-text-default: var(--text-selected);
+  --button-color-focus-border: var(--border-focused);
   --button-size-compact-height: var(--control-height-compact);
   --button-size-compact-icon: var(--control-icon-compact);
-  --button-size-compact-gap: var(--space050);
   --button-size-default-height: var(--control-height-default);
   --button-size-default-icon: var(--control-icon-default);
-  --button-size-default-gap: var(--space050);
-  --button-size-default-padding-y: var(--space050);
   --button-size-touch-height: var(--control-height-touch);
   --button-size-touch-icon: var(--control-icon-touch);
-  --button-size-touch-gap: var(--space050);
-  --button-size-touch-padding-y: var(--space100);
+  --button-spacing-compact-gap: var(--space050);
+  --button-spacing-default-gap: var(--space050);
+  --button-spacing-default-padding-y: var(--space050);
+  --button-spacing-touch-gap: var(--space050);
+  --button-spacing-touch-padding-y: var(--space100);
   --spinner-color-default: var(--icon-default); /** Spinner sur fond clair (appearance inherit hors contexte) */
   --spinner-color-inverted: var(--icon-inverted); /** Spinner sur fond foncé (appearance inverted) */
   --spinner-color-comete-light: var(--logo-comete-gradient-light); /** Dégradé comète, pointe de la queue (repris du logo) */
   --spinner-color-comete-dark: var(--logo-comete-gradient-dark); /** Dégradé comète, tête (repris du logo) */
-  --button-size-compact-radius: var(--control-radius-compact);
-  --button-size-compact-padding-x: var(--control-padding-x-compact);
-  --button-size-default-radius: var(--control-radius-default);
-  --button-size-default-padding-x: var(--control-padding-x-default);
-  --button-size-touch-radius: var(--control-radius-touch);
-  --button-size-touch-padding-x: var(--control-padding-x-touch);
+  --button-spacing-compact-padding-x: var(--control-padding-x-compact);
+  --button-spacing-default-padding-x: var(--control-padding-x-default);
+  --button-spacing-touch-padding-x: var(--control-padding-x-touch);
+  --button-radius-compact: var(--control-radius-compact);
+  --button-radius-default: var(--control-radius-default);
+  --button-radius-touch: var(--control-radius-touch);
 }

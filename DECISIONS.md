@@ -12,6 +12,14 @@
 
 **Contexte / raison** : les accents servent de couleur de texte à des éléments interactifs (Tag, Badge, Avatar) sans états. Les inverted étaient des tokens morts.
 
+## 2026-11-19 — Logo comète blanc en sombre, Figma réaligné sur le code (0.27.0)
+
+**Décisions** (Axel) : `logo.comete.default` sombre passe de `comete.blue.50` à `white.100`
+(Figma faisait déjà foi). Pour les valeurs `comete` et `brand`, **le code fait foi** :
+Figma `background/{comete,brand}/bold` réaligné sur 700 / 800 / 900 (clair) et
+50 / 100 / 200 (sombre), `subtlest` sur 100 / 200 / 300 (clair) et 950 / 900 / 800
+(sombre). `border/brand` (sans suffixe, Figma seulement) renommé `DEPRECATED-border/brand`.
+
 ## 2026-11-19 — brand miroir de comete, niveau boldest, surface navy, dossier base/comete (0.26.0)
 
 **Contexte** : chantier « descriptions des tokens ». En décrivant `brand` et `comete`,

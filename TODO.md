@@ -21,14 +21,9 @@ Relevé pendant l'alignement `brand` = `comete` (0.26.0). À traiter dans le cha
   `overlay.warning` pointe sur `yellow.50` dans le repo et `orange/50` dans Figma.
   Figma porte encore `DEPRECATED-background/surface/comete` à côté de
   `background/surface/comete`. Décider d'une seule hiérarchie et la décrire.
-- **Valeurs Figma ≠ repo sur `comete` / `brand`** : dans Figma `background/comete/bold`
-  vaut 600/700/800 (clair) et 300/200/100 (sombre), le repo (et la planche de marque,
-  « Bleu action #2467D1 ») vaut 700/800/900 et 50/100/200 ; `background/comete/subtlest`
-  Figma 50/100/200 contre 100/200/300 ; `background/brand/bold` Figma 500/600/700 contre
-  950/900/800 ; `background/brand/subtlest` sombre 900/800/700 contre 950/900/800 ;
-  `logo/comete/default` sombre `white/100` contre `comete.blue.50` ; Figma a un
-  `border/brand` sans suffixe (700/500) absent du repo. Source de vérité des valeurs à
-  trancher avant de synchroniser les descriptions.
+- ~~**Valeurs Figma ≠ repo sur `comete` / `brand`**~~ fait en 0.27.0 (2026-11-19) : Figma
+  réaligné sur le code (`bold`, `subtlest` des deux familles), `logo/comete/default`
+  sombre passé à blanc dans le code, `border/brand` sans suffixe déprécié dans Figma.
 - **Collection Figma `semantics`** (ex-`theme`) sans code syntax WEB : à poser lors de la
   synchro des descriptions.
 - **`BottomNav.Action` consomme `background-brand-bold`** (charte client) alors que c'est

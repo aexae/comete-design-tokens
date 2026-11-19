@@ -1322,7 +1322,8 @@
     "comete": {
       "default": {
         "$type": "color",
-        "$value": "{comete.blue.950}"
+        "$value": "{comete.blue.950}",
+        "$description": "Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest)."
       },
       "gradient-dark": {
         "$type": "color",

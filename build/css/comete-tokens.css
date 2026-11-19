@@ -690,7 +690,7 @@
   --icon-night: #0076d8;
   --icon-on-warning: #374043;
   --icon-bold: #374043;
-  --logo-comete-default: #1e3661;
+  --logo-comete-default: #1e3661; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
   --logo-comete-gradient-light: #fff146;
   --logo-comete-neutral: #224986;
@@ -981,7 +981,7 @@
   --icon-night: #26b5ff;
   --icon-on-warning: #374043;
   --icon-bold: #374043;
-  --logo-comete-default: #f0f8fe;
+  --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
   --logo-comete-gradient-light: #fff146;
   --logo-comete-neutral: #dceefd;
@@ -1270,7 +1270,7 @@
     --icon-night: #26b5ff;
     --icon-on-warning: #374043;
     --icon-bold: #374043;
-    --logo-comete-default: #f0f8fe;
+    --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
     --logo-comete-gradient-dark: #f8bf01;
     --logo-comete-gradient-light: #fff146;
     --logo-comete-neutral: #dceefd;

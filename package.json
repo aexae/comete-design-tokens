@@ -23,7 +23,8 @@
     "prepack": "pnpm build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "inventory": "tsx scripts/inventory.ts"
   },
   "devDependencies": {
     "@types/node": "^25.0.3",

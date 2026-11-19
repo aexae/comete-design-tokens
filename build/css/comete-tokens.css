@@ -24,28 +24,6 @@
   --easing-entrance: cubic-bezier(0, 0, 0.38, 0.9); /** Elements entering the screen */
   --easing-exit: cubic-bezier(0.2, 0, 1, 0.9); /** Elements leaving the screen */
   --easing-linear: linear; /** Constant speed (spinners, progress) */
-  --comete-blue-50: #f0f8fe;
-  --comete-blue-100: #dceefd;
-  --comete-blue-200: #c1e3fc;
-  --comete-blue-300: #97d2f9;
-  --comete-blue-400: #66b8f4;
-  --comete-blue-500: #429aef;
-  --comete-blue-600: #2c7ee4;
-  --comete-blue-700: #2467d1;
-  --comete-blue-800: #2354aa;
-  --comete-blue-900: #224986;
-  --comete-blue-950: #1e3661;
-  --comete-yellow-50: #fffeea;
-  --comete-yellow-100: #fffcc5;
-  --comete-yellow-200: #fffa86;
-  --comete-yellow-300: #fff146;
-  --comete-yellow-400: #ffe31c;
-  --comete-yellow-500: #f8bf01;
-  --comete-yellow-600: #e19800;
-  --comete-yellow-700: #bb6c02;
-  --comete-yellow-800: #975309;
-  --comete-yellow-900: #7c440b;
-  --comete-yellow-950: #482300;
   --mobile: 0px; /** Smartphone */
   --tablet: 600px; /** Tablette */
   --laptop: 1200px; /** Ordinateur portable (ou tablette en paysage) */
@@ -244,6 +222,28 @@
   --blue-grey-800: #32415a;
   --blue-grey-900: #2c374b;
   --blue-grey-950: #1e2533;
+  --comete-blue-50: #f0f8fe;
+  --comete-blue-100: #dceefd;
+  --comete-blue-200: #c1e3fc;
+  --comete-blue-300: #97d2f9;
+  --comete-blue-400: #66b8f4;
+  --comete-blue-500: #429aef;
+  --comete-blue-600: #2c7ee4;
+  --comete-blue-700: #2467d1;
+  --comete-blue-800: #2354aa;
+  --comete-blue-900: #224986;
+  --comete-blue-950: #1e3661;
+  --comete-yellow-50: #fffeea;
+  --comete-yellow-100: #fffcc5;
+  --comete-yellow-200: #fffa86;
+  --comete-yellow-300: #fff146;
+  --comete-yellow-400: #ffe31c;
+  --comete-yellow-500: #f8bf01;
+  --comete-yellow-600: #e19800;
+  --comete-yellow-700: #bb6c02;
+  --comete-yellow-800: #975309;
+  --comete-yellow-900: #7c440b;
+  --comete-yellow-950: #482300;
   --opacity-0: 0;
   --opacity-25: 0.25;
   --opacity-50: 0.5;
@@ -433,12 +433,15 @@
   --background-brand-subtlest-default: #dceefd;
   --background-brand-subtlest-hovered: #c1e3fc;
   --background-brand-subtlest-pressed: #97d2f9;
-  --background-brand-bold-default: #1e3661;
-  --background-brand-bold-hovered: #224986;
-  --background-brand-bold-pressed: #2354aa;
+  --background-brand-bold-default: #2467d1;
+  --background-brand-bold-hovered: #2354aa;
+  --background-brand-bold-pressed: #224986;
   --background-brand-subtler-default: #c1e3fc;
   --background-brand-subtler-hovered: #97d2f9;
   --background-brand-subtler-pressed: #66b8f4;
+  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. */
+  --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
+  --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
   --background-comete-subtlest-default: #dceefd;
   --background-comete-subtlest-hovered: #c1e3fc;
   --background-comete-subtlest-pressed: #97d2f9;
@@ -448,6 +451,9 @@
   --background-comete-subtler-default: #c1e3fc;
   --background-comete-subtler-hovered: #97d2f9;
   --background-comete-subtler-pressed: #66b8f4;
+  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.inverted (12:1). */
+  --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
+  --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
   --background-selected-bold-hovered: #224986;
   --background-selected-bold-pressed: #1e3661;
   --background-selected-bold-default: #2354aa;
@@ -473,6 +479,7 @@
   --background-surface-elevation-overlay-warning: #fdfee8;
   --background-surface-elevation-raise-default: #ffffff;
   --background-surface-critical: #fef2f2;
+  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.inverted (12:1). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --background-success-bold-default: #00784d;
   --background-success-bold-hovered: #036240;
   --background-success-bold-pressed: #245041;
@@ -612,12 +619,14 @@
   --text-accent-blue-grey-default: #32415a;
   --text-accent-blue-grey-hovered: #2c374b;
   --text-accent-blue-grey-pressed: #1e2533;
-  --text-brand-default: #2467d1;
+  --text-brand-default: #224986;
   --text-brand-hovered: #2354aa;
-  --text-brand-pressed: #224986;
+  --text-brand-pressed: #2467d1;
+  --text-brand-boldest: #1e3661; /** Miroir de text.comete.boldest pour la charte du client (BrandProvider). */
   --text-comete-default: #224986;
   --text-comete-hovered: #2354aa;
   --text-comete-pressed: #2467d1;
+  --text-comete-boldest: #1e3661; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
   --text-on-warning: #252a2c;
   --border-disabled: rgba(9, 9, 11, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #eaedee;
@@ -654,16 +663,20 @@
   --border-night-subtle: #71cdff;
   --border-brand-bold: #224986;
   --border-brand-subtle: #c1e3fc;
+  --border-brand-boldest: #1e3661; /** Miroir de border.comete.boldest pour la charte du client (BrandProvider). */
   --border-comete-bold: #224986;
   --border-comete-subtle: #c1e3fc;
+  --border-comete-boldest: #1e3661; /** Bordure navy Comète, accent d'identité le plus appuyé. Pas pour les contrôles (border.comete.bold). */
   --icon-default: #32415a;
   --icon-disabled: rgba(9, 9, 11, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --icon-inverted: #f7f8f8;
   --icon-warning: #856d0e;
   --icon-critical: #e12121;
   --icon-success: #009b60;
-  --icon-brand: #2354aa;
-  --icon-comete: #2354aa;
+  --icon-brand-default: #2354aa; /** Miroir de icon.comete.default pour la charte du client (BrandProvider). */
+  --icon-brand-boldest: #1e3661; /** Miroir de icon.comete.boldest pour la charte du client (BrandProvider). */
+  --icon-comete-default: #2354aa; /** Icône bleu Comète sur fond clair : iconographie d'identité et tuiles comete. */
+  --icon-comete-boldest: #1e3661; /** Icône navy Comète sur fond clair uniquement, accent d'identité le plus appuyé. */
   --icon-selected: #2c7ee4;
   --icon-information: #0076d8;
   --icon-subtle: #596b70;
@@ -717,6 +730,9 @@
   --background-brand-subtler-default: #2354aa;
   --background-brand-subtler-hovered: #2467d1;
   --background-brand-subtler-pressed: #2c7ee4;
+  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. */
+  --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
+  --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
   --background-comete-subtlest-default: #1e3661;
   --background-comete-subtlest-hovered: #224986;
   --background-comete-subtlest-pressed: #2354aa;
@@ -726,6 +742,9 @@
   --background-comete-subtler-default: #2354aa;
   --background-comete-subtler-hovered: #2467d1;
   --background-comete-subtler-pressed: #2c7ee4;
+  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.inverted (12:1). */
+  --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
+  --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
   --background-selected-bold-hovered: #dceefd;
   --background-selected-bold-pressed: #f0f8fe;
   --background-selected-bold-default: #c1e3fc;
@@ -751,6 +770,7 @@
   --background-surface-elevation-overlay-warning: #292410;
   --background-surface-elevation-raise-default: #49585b;
   --background-surface-critical: #2e1717;
+  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.inverted (12:1). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --background-success-bold-default: #0abf76;
   --background-success-bold-hovered: #2fd88e;
   --background-success-bold-pressed: #6aebae;
@@ -890,12 +910,14 @@
   --text-accent-blue-grey-default: #d1d9e6;
   --text-accent-blue-grey-hovered: #eaedf4;
   --text-accent-blue-grey-pressed: #f5f7fa;
-  --text-brand-default: #97d2f9;
+  --text-brand-default: #dceefd;
   --text-brand-hovered: #c1e3fc;
-  --text-brand-pressed: #dceefd;
+  --text-brand-pressed: #97d2f9;
+  --text-brand-boldest: #f0f8fe; /** Miroir de text.comete.boldest pour la charte du client (BrandProvider). */
   --text-comete-default: #dceefd;
   --text-comete-hovered: #c1e3fc;
   --text-comete-pressed: #97d2f9;
+  --text-comete-boldest: #f0f8fe; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
   --text-on-warning: #252a2c;
   --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #3f4a4d;
@@ -932,16 +954,20 @@
   --border-night-subtle: #0060b0;
   --border-brand-bold: #dceefd;
   --border-brand-subtle: #2354aa;
+  --border-brand-boldest: #f0f8fe; /** Miroir de border.comete.boldest pour la charte du client (BrandProvider). */
   --border-comete-bold: #dceefd;
   --border-comete-subtle: #2354aa;
+  --border-comete-boldest: #f0f8fe; /** Bordure navy Comète, accent d'identité le plus appuyé. Pas pour les contrôles (border.comete.bold). */
   --icon-default: #eaedf4;
   --icon-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --icon-inverted: #374043;
   --icon-warning: #fdd847;
   --icon-critical: #ffa2a2;
   --icon-success: #2fd88e;
-  --icon-brand: #c1e3fc;
-  --icon-comete: #c1e3fc;
+  --icon-brand-default: #c1e3fc; /** Miroir de icon.comete.default pour la charte du client (BrandProvider). */
+  --icon-brand-boldest: #f0f8fe; /** Miroir de icon.comete.boldest pour la charte du client (BrandProvider). */
+  --icon-comete-default: #c1e3fc; /** Icône bleu Comète sur fond clair : iconographie d'identité et tuiles comete. */
+  --icon-comete-boldest: #f0f8fe; /** Icône navy Comète sur fond clair uniquement, accent d'identité le plus appuyé. */
   --icon-selected: #97d2f9;
   --icon-information: #71cdff;
   --icon-subtle: #8d9fa3;
@@ -993,6 +1019,9 @@
     --background-brand-subtler-default: #2354aa;
     --background-brand-subtler-hovered: #2467d1;
     --background-brand-subtler-pressed: #2c7ee4;
+    --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. */
+    --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
+    --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
     --background-comete-subtlest-default: #1e3661;
     --background-comete-subtlest-hovered: #224986;
     --background-comete-subtlest-pressed: #2354aa;
@@ -1002,6 +1031,9 @@
     --background-comete-subtler-default: #2354aa;
     --background-comete-subtler-hovered: #2467d1;
     --background-comete-subtler-pressed: #2c7ee4;
+    --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.inverted (12:1). */
+    --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
+    --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
     --background-selected-bold-hovered: #dceefd;
     --background-selected-bold-pressed: #f0f8fe;
     --background-selected-bold-default: #c1e3fc;
@@ -1027,6 +1059,7 @@
     --background-surface-elevation-overlay-warning: #292410;
     --background-surface-elevation-raise-default: #49585b;
     --background-surface-critical: #2e1717;
+    --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.inverted (12:1). Pour une carte ou un bloc avec états, background.comete.boldest. */
     --background-success-bold-default: #0abf76;
     --background-success-bold-hovered: #2fd88e;
     --background-success-bold-pressed: #6aebae;
@@ -1166,12 +1199,14 @@
     --text-accent-blue-grey-default: #d1d9e6;
     --text-accent-blue-grey-hovered: #eaedf4;
     --text-accent-blue-grey-pressed: #f5f7fa;
-    --text-brand-default: #97d2f9;
+    --text-brand-default: #dceefd;
     --text-brand-hovered: #c1e3fc;
-    --text-brand-pressed: #dceefd;
+    --text-brand-pressed: #97d2f9;
+    --text-brand-boldest: #f0f8fe; /** Miroir de text.comete.boldest pour la charte du client (BrandProvider). */
     --text-comete-default: #dceefd;
     --text-comete-hovered: #c1e3fc;
     --text-comete-pressed: #97d2f9;
+    --text-comete-boldest: #f0f8fe; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
     --text-on-warning: #252a2c;
     --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --border-subtle: #3f4a4d;
@@ -1208,16 +1243,20 @@
     --border-night-subtle: #0060b0;
     --border-brand-bold: #dceefd;
     --border-brand-subtle: #2354aa;
+    --border-brand-boldest: #f0f8fe; /** Miroir de border.comete.boldest pour la charte du client (BrandProvider). */
     --border-comete-bold: #dceefd;
     --border-comete-subtle: #2354aa;
+    --border-comete-boldest: #f0f8fe; /** Bordure navy Comète, accent d'identité le plus appuyé. Pas pour les contrôles (border.comete.bold). */
     --icon-default: #eaedf4;
     --icon-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --icon-inverted: #374043;
     --icon-warning: #fdd847;
     --icon-critical: #ffa2a2;
     --icon-success: #2fd88e;
-    --icon-brand: #c1e3fc;
-    --icon-comete: #c1e3fc;
+    --icon-brand-default: #c1e3fc; /** Miroir de icon.comete.default pour la charte du client (BrandProvider). */
+    --icon-brand-boldest: #f0f8fe; /** Miroir de icon.comete.boldest pour la charte du client (BrandProvider). */
+    --icon-comete-default: #c1e3fc; /** Icône bleu Comète sur fond clair : iconographie d'identité et tuiles comete. */
+    --icon-comete-boldest: #f0f8fe; /** Icône navy Comète sur fond clair uniquement, accent d'identité le plus appuyé. */
     --icon-selected: #97d2f9;
     --icon-information: #71cdff;
     --icon-subtle: #8d9fa3;
@@ -1300,7 +1339,7 @@
   --avatar-color-comete-background-hovered: var(--background-comete-subtlest-hovered);
   --avatar-color-comete-background-pressed: var(--background-comete-subtlest-pressed);
   --avatar-color-comete-text: var(--text-comete-default); /** Initiales de l'avatar comete */
-  --avatar-color-comete-icon: var(--icon-comete); /** Icône de l'avatar comete */
+  --avatar-color-comete-icon: var(--icon-comete-default); /** Icône de l'avatar comete */
   --avatar-color-accent-purple-background-default: var(--background-accent-purple-subtlest-default);
   --avatar-color-accent-purple-background-hovered: var(--background-accent-purple-subtlest-hovered);
   --avatar-color-accent-purple-background-pressed: var(--background-accent-purple-subtlest-pressed);

@@ -11,7 +11,7 @@
 
 ## Tokens de surface et dérive Figma ↔ repo sur comete / brand (2026-11-19)
 
-Relevé pendant l'alignement `brand` = `comete` (0.25.0). À traiter dans le chantier
+Relevé pendant l'alignement `brand` = `comete` (0.26.0). À traiter dans le chantier
 « descriptions » (lot A, surfaces, et lot C, brand / comete).
 
 - **Surfaces incohérentes** (signalé par Axel) : `background.surface.critical` double

@@ -12,7 +12,7 @@
 
 **Contexte / raison** : les accents servent de couleur de texte à des éléments interactifs (Tag, Badge, Avatar) sans états. Les inverted étaient des tokens morts.
 
-## 2026-11-19 — brand miroir de comete, niveau boldest, surface navy, dossier base/comete (0.25.0)
+## 2026-11-19 — brand miroir de comete, niveau boldest, surface navy, dossier base/comete (0.26.0)
 
 **Contexte** : chantier « descriptions des tokens ». En décrivant `brand` et `comete`,
 cinq rôles divergeaient (fonds `bold` 950/900/800 contre 700/800/900, `text.default`

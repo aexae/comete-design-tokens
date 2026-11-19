@@ -12,6 +12,38 @@
 
 **Contexte / raison** : les accents servent de couleur de texte à des éléments interactifs (Tag, Badge, Avatar) sans états. Les inverted étaient des tokens morts.
 
+## 2026-11-19 — brand miroir de comete, niveau boldest, surface navy, dossier base/comete (0.25.0)
+
+**Contexte** : chantier « descriptions des tokens ». En décrivant `brand` et `comete`,
+cinq rôles divergeaient (fonds `bold` 950/900/800 contre 700/800/900, `text.default`
+700 contre 900, `text.pressed`). Dérive historique : `8b9449d` a créé `comete-*` par
+copie de `brand-*`, puis `25f9198` a passé `comete.bold` à 700 sans toucher `brand`.
+
+**Décisions** (Axel) :
+
+- **`brand` est un miroir rôle pour rôle de `comete`**, mêmes valeurs par défaut. Un
+  composant rendu en `brand` doit rendre comme en `comete` sans `BrandProvider`. Pas de
+  renommage (`brand-comete` / `brand-client` écartés : `brand` est le terme standard,
+  `comete` ne varie jamais, `client-*` a été retiré en 0.13.0, coût cassant élevé).
+- **Règle d'usage** : jamais de navy sur une surface interactive, le bleu action
+  (`comete-blue-700`, `*.bold`) porte les contrôles et appels à l'action. Le navy
+  (`comete-blue-950`) est l'identité et le chrome.
+- **Niveau `boldest`** ajouté dans les deux familles : `background.*.boldest.{default,
+  hovered,pressed}` (950/900/800, identique en clair et sombre, texte inversé),
+  `text.*.boldest`, `border.*.boldest`, `icon.*.boldest` (950 en clair, 50 en sombre).
+- **`icon.comete` et `icon.brand` deviennent des groupes** (`default`, `boldest`), donc
+  `--icon-comete` → `--icon-comete-default` et `--icon-brand` → `--icon-brand-default`
+  (cassant, même précédent que `text.<couleur>` en 0.20.0). L'alias
+  `avatar.color.comete.icon` suit.
+- **`background.surface.comete`** (950 en clair et en sombre) : surface navy non
+  interactive, reprise de la variable Figma `background/surface/comete`.
+- **Dossier `tokens/base/brand` renommé `tokens/base/comete`** (demande d'Axel, la
+  collection Figma `base/brand` est devenue `base/comete`) : ce sont les primitives
+  Comète. Les noms CSS `--comete-blue-*` ne changent pas, seul le chemin JSON exporté
+  `tokens/base/comete/tokens.json` change.
+- **Descriptions** : les nouveaux tokens inaugurent le gabarit validé (rôle, quand
+  l'utiliser, quand ne pas l'utiliser, couple de contraste, nom marque).
+
 ## 2026-11-19 — Tokens disabled sémantiques dépréciés (0.24.1)
 
 **Décision** (demande d'Axel) : `background.disabled.default`, `text.disabled`, `border.disabled` et `icon.disabled` sont marqués `$deprecated` (clair et sombre), avec une `$description` « DEPRECATED » reprise en commentaire dans le CSS. Valeurs et noms inchangés, donc version corrective. Dans Figma, les variables passent en `DEPRECATED-…` (code syntax conservée).

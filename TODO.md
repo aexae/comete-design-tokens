@@ -9,6 +9,32 @@
 - **`DEPRECATED-text/accent-inverted`** (Figma seul, purple 50/950) reste lié à 187 nœuds, surtout les en-têtes de pages de documentation. À remplacer par `text/inverted` ou un token dédié, puis supprimer.
 - **`text.accent.*.hovered/pressed` non consommés** : aucun composant ne les lit encore (Tag, Badge, Avatar n'ont pas d'état de survol sur le texte accent). Tokens potentiellement morts tant qu'un usage n'est pas câblé.
 
+## Tokens de surface et dérive Figma ↔ repo sur comete / brand (2026-11-19)
+
+Relevé pendant l'alignement `brand` = `comete` (0.25.0). À traiter dans le chantier
+« descriptions » (lot A, surfaces, et lot C, brand / comete).
+
+- **Surfaces incohérentes** (signalé par Axel) : `background.surface.critical` double
+  `background.surface.elevation.overlay.critical` (mêmes valeurs) ; `surface.comete` et
+  `surface.mask` sont à plat quand les autres sont sous `elevation.{sunken,raise,
+  overlay}` ; `overlay.default` et `raise.default` valent tous deux `white.100` en clair ;
+  `overlay.warning` pointe sur `yellow.50` dans le repo et `orange/50` dans Figma.
+  Figma porte encore `DEPRECATED-background/surface/comete` à côté de
+  `background/surface/comete`. Décider d'une seule hiérarchie et la décrire.
+- **Valeurs Figma ≠ repo sur `comete` / `brand`** : dans Figma `background/comete/bold`
+  vaut 600/700/800 (clair) et 300/200/100 (sombre), le repo (et la planche de marque,
+  « Bleu action #2467D1 ») vaut 700/800/900 et 50/100/200 ; `background/comete/subtlest`
+  Figma 50/100/200 contre 100/200/300 ; `background/brand/bold` Figma 500/600/700 contre
+  950/900/800 ; `background/brand/subtlest` sombre 900/800/700 contre 950/900/800 ;
+  `logo/comete/default` sombre `white/100` contre `comete.blue.50` ; Figma a un
+  `border/brand` sans suffixe (700/500) absent du repo. Source de vérité des valeurs à
+  trancher avant de synchroniser les descriptions.
+- **Collection Figma `semantics`** (ex-`theme`) sans code syntax WEB : à poser lors de la
+  synchro des descriptions.
+- **`BottomNav.Action` consomme `background-brand-bold`** (charte client) alors que c'est
+  un contrôle : l'ADR 0001 réserve `brand` aux surfaces ambiantes. Passer sur
+  `comete.bold`. Côté DS.
+
 ## Tokens `text-subtle-inverted` / `text-subtlest-inverted` (2026-10-21)
 
 - **Accessibilité — `text-subtlest-inverted` (cool-grey.500, #6f8488)** : contraste ~3,7 à 4,3:1 sur les surfaces inversées testées (cool-grey.950, surface dark) et ~3,9:1 sur blanc en dark. Sous le seuil AA 4,5:1 pour le petit texte. À réserver au texte large ou secondaire (même réserve que le `subtlest` non inversé), ne pas l'utiliser pour du corps de texte.
@@ -72,7 +98,7 @@ les développeurs. Aucune écriture effectuée.
    raison de fond de l'abandon.
 2. **Alias vers les primitives, pas vers la couche sémantique.** Sur 865
    variables, seules **2** pointent vers `theme`. Les autres résolvent vers
-   `base/color` (492), `base/brand` (183), `base/sizing` (147). Elles
+   `base/color` (492), `base/comete` (183, ex-`base/brand`), `base/sizing` (147). Elles
    court-circuitent la couche sémantique (`background/*`, `text/*`, `border/*`,
    `icon/*`), d'où double maintenance et theming impossible.
 

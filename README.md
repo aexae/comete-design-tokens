@@ -112,7 +112,9 @@ Sept familles, déclinées par **intention** puis par **état** (`default`, `hov
 #### `comete-*` vs `brand-*`
 
 - **`comete-*`** — couleur fixe de la marque Comète, jamais surchargée par un client.
-- **`brand-*`** — charte du client, surchargeable à l'exécution (navy par défaut). Le design system fournit un `BrandProvider` qui génère et injecte ces valeurs.
+- **`brand-*`** — charte du client, surchargeable à l'exécution. **Miroir rôle pour rôle de `comete-*`**, mêmes valeurs par défaut (bleu Comète). Le design system fournit un `BrandProvider` qui génère et injecte ces valeurs.
+
+Chaque famille porte quatre niveaux d'emphase de fond : `subtlest`, `subtler`, `bold` (bleu action, `comete-blue-700`, pour les contrôles et appels à l'action) et `boldest` (navy, `comete-blue-950`, identité et chrome, jamais sur un contrôle). `text`, `border` et `icon` ont aussi leur `boldest`. La surface navy non interactive est `--background-surface-comete` (identique en clair et en sombre).
 
 #### Couleurs `disabled` (doctrine)
 
@@ -135,7 +137,7 @@ Règle : pour tout nouveau token ou composant disabled, réutiliser ces primitiv
 ```
 comete-design-tokens/
 ├── tokens/
-│   ├── base/                 # Primitives (color, brand, typography, spacing,
+│   ├── base/                 # Primitives (color, comete, typography, spacing,
 │   │   └── */tokens.json     #   sizing, radius, shadow, animation, control,
 │   │                         #   opacity, z-index, breakpoints)
 │   └── theme/

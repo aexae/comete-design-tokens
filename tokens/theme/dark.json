@@ -94,6 +94,23 @@
           "$type": "color",
           "$value": "{comete.blue.600}"
         }
+      },
+      "boldest": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.950}",
+          "$description": "Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.900}",
+          "$description": "État survolé de background.brand.boldest.default."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.800}",
+          "$description": "État pressé de background.brand.boldest.default."
+        }
       }
     },
     "comete": {
@@ -137,6 +154,23 @@
         "pressed": {
           "$type": "color",
           "$value": "{comete.blue.600}"
+        }
+      },
+      "boldest": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.950}",
+          "$description": "Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.inverted (12:1)."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.900}",
+          "$description": "État survolé de background.comete.boldest.default (cartes bold interactives)."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.800}",
+          "$description": "État pressé de background.comete.boldest.default (cartes bold interactives)."
         }
       }
     },
@@ -258,6 +292,11 @@
       "critical": {
         "$type": "color",
         "$value": "{red.950}"
+      },
+      "comete": {
+        "$type": "color",
+        "$value": "{comete.blue.950}",
+        "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.inverted (12:1). Pour une carte ou un bloc avec états, background.comete.boldest."
       }
     },
     "success": {
@@ -943,7 +982,7 @@
     "brand": {
       "default": {
         "$type": "color",
-        "$value": "{comete.blue.300}"
+        "$value": "{comete.blue.100}"
       },
       "hovered": {
         "$type": "color",
@@ -951,7 +990,12 @@
       },
       "pressed": {
         "$type": "color",
-        "$value": "{comete.blue.100}"
+        "$value": "{comete.blue.300}"
+      },
+      "boldest": {
+        "$type": "color",
+        "$value": "{comete.blue.50}",
+        "$description": "Miroir de text.comete.boldest pour la charte du client (BrandProvider)."
       }
     },
     "comete": {
@@ -966,6 +1010,11 @@
       "pressed": {
         "$type": "color",
         "$value": "{comete.blue.300}"
+      },
+      "boldest": {
+        "$type": "color",
+        "$value": "{comete.blue.50}",
+        "$description": "Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default)."
       }
     },
     "on-warning": {
@@ -1140,6 +1189,11 @@
       "subtle": {
         "$type": "color",
         "$value": "{comete.blue.800}"
+      },
+      "boldest": {
+        "$type": "color",
+        "$value": "{comete.blue.50}",
+        "$description": "Miroir de border.comete.boldest pour la charte du client (BrandProvider)."
       }
     },
     "comete": {
@@ -1150,6 +1204,11 @@
       "subtle": {
         "$type": "color",
         "$value": "{comete.blue.800}"
+      },
+      "boldest": {
+        "$type": "color",
+        "$value": "{comete.blue.50}",
+        "$description": "Bordure navy Comète, accent d'identité le plus appuyé. Pas pour les contrôles (border.comete.bold)."
       }
     }
   },
@@ -1181,12 +1240,28 @@
       "$value": "{green.400}"
     },
     "brand": {
-      "$type": "color",
-      "$value": "{comete.blue.200}"
+      "default": {
+        "$type": "color",
+        "$value": "{comete.blue.200}",
+        "$description": "Miroir de icon.comete.default pour la charte du client (BrandProvider)."
+      },
+      "boldest": {
+        "$type": "color",
+        "$value": "{comete.blue.50}",
+        "$description": "Miroir de icon.comete.boldest pour la charte du client (BrandProvider)."
+      }
     },
     "comete": {
-      "$type": "color",
-      "$value": "{comete.blue.200}"
+      "default": {
+        "$type": "color",
+        "$value": "{comete.blue.200}",
+        "$description": "Icône bleu Comète sur fond clair : iconographie d'identité et tuiles comete."
+      },
+      "boldest": {
+        "$type": "color",
+        "$value": "{comete.blue.50}",
+        "$description": "Icône navy Comète sur fond clair uniquement, accent d'identité le plus appuyé."
+      }
     },
     "selected": {
       "$type": "color",

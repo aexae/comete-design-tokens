@@ -1374,9 +1374,11 @@
   --button-color-contained-neutral-background-hovered: var(--background-neutral-subtler-hovered);
   --button-color-contained-neutral-background-pressed: var(--background-neutral-subtler-pressed);
   --button-color-contained-subtle-text-default: var(--text-subtle-default);
+  --button-color-contained-subtle-background-default: var(--background-neutral-subtler-default); /** Fond au repos du bouton contained subtle : même gris que contained neutral (background.neutral.subtler.default), seul le texte diffère. Aligné sur le rendu réel (le navigateur affichait son gris par défaut faute de token). */
   --button-color-contained-subtle-background-hovered: var(--background-neutral-subtler-hovered);
   --button-color-contained-subtle-background-pressed: var(--background-neutral-subtler-pressed);
   --button-color-contained-subtlest-text-default: var(--text-subtlest-default);
+  --button-color-contained-subtlest-background-default: var(--background-neutral-subtler-default); /** Fond au repos du bouton contained subtlest : même gris que contained neutral (background.neutral.subtler.default), seul le texte diffère. Aligné sur le rendu réel (le navigateur affichait son gris par défaut faute de token). */
   --button-color-contained-subtlest-background-hovered: var(--background-neutral-subtler-hovered);
   --button-color-contained-subtlest-background-pressed: var(--background-neutral-subtler-pressed);
   --button-color-contained-comete-text-default: var(--text-inverted);

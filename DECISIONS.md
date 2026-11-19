@@ -20,6 +20,18 @@
 
 **Contexte / raison** : les accents servent de couleur de texte à des éléments interactifs (Tag, Badge, Avatar) sans états. Les inverted étaient des tokens morts.
 
+## 2026-11-19 — Button contained subtle / subtlest : fond au repos tokenisé (0.28.0)
+
+**Décision** (Axel, sur capture Storybook) : `button.color.contained.{subtle,subtlest}.background.default`
+créés sur `{background.neutral.subtler.default}`, comme `contained.neutral`. Les trois
+couleurs neutres de `contained` partagent le même fond, seul le texte change.
+
+**Contexte / raison** : la décision DS du 2026-11-09 (« pas de fond au repos, motif
+fantôme ») n'avait jamais été effective : sans règle `background-color`, le `<button>`
+héritait du gris par défaut du navigateur (`ButtonFace`). Le rendu observé avait donc un
+fond, mais hors tokens. On tokenise ce rendu plutôt que de le supprimer. Figma reçoit les
+deux variables dans la collection `component`.
+
 ## 2026-11-19 — Logo comète blanc en sombre, Figma réaligné sur le code (0.27.0)
 
 **Décisions** (Axel) : `logo.comete.default` sombre passe de `comete.blue.50` à `white.100`

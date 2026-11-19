@@ -5,9 +5,27 @@
 ## Text accent et link (2026-11-19)
 
 - **Divergence silencieuse Figma / dépôt** : `text/link/*` pointait sur `comete/blue/*` dans Figma alors que le dépôt pointe sur `blue/*` depuis l'origine. Rien ne détecte ce type d'écart. Piste : un script d'audit qui compare les alias des variables Figma `theme` aux `$value` du dépôt (la page Figma « Audit Tokens — CSS vs Figma » est manuelle).
-- **Scopes** : `text/accent/{teal,turquoise,magenta,blue-grey}/default` étaient en `ALL_SCOPES` (réglés sur `TEXT_FILL` comme purple). D'autres variables `theme` sont probablement dans ce cas, à auditer.
+- ~~**Scopes**~~ : audit fait le 2026-11-19 (voir la section suivante).
 - **`DEPRECATED-text/accent-inverted`** (Figma seul, purple 50/950) reste lié à 187 nœuds, surtout les en-têtes de pages de documentation. À remplacer par `text/inverted` ou un token dédié, puis supprimer.
-- **`text.accent.*.hovered/pressed` non consommés** : aucun composant ne les lit encore (Tag, Badge, Avatar n'ont pas d'état de survol sur le texte accent). Tokens potentiellement morts tant qu'un usage n'est pas câblé.
+- **`text.accent.*.hovered/pressed`** : lus par `button.color.{link,link-subtle}.accent-*` depuis 0.27.1. Le Button du DS ne propose pas encore les couleurs accent (ni brand), donc toujours aucun rendu côté code.
+- **Button `outlined` et `subtle`** : aucune couleur n'a de `text.hovered/pressed` (l'état passe par le fond). Si le texte doit aussi changer au survol, il faut créer `button.color.{outlined,subtle}.<couleur>.text.{hovered,pressed}` (décision en attente).
+- **Button `link` subtle / subtlest** : `link.subtle` a `hovered` = `text.subtlest.default` et pas de `pressed`, `link.subtlest` a `hovered` = `text.subtle.default` et pas de `pressed`. Inversion et lacune à valider côté design.
+
+## Audit des variables Figma : scopes, publication, code syntax (2026-11-19)
+
+Corrigé dans Figma (hors collections DEPRECATED) :
+
+- **207 scopes harmonisés** sur la règle majoritaire de chaque groupe : primitives couleur `FRAME_FILL, SHAPE_FILL` (lime, teal, turquoise, magenta, alpha étaient en `ALL_SCOPES`), `background`/`blanket`/`interaction` `FRAME_FILL, SHAPE_FILL`, `border` `FRAME_FILL, SHAPE_FILL, STROKE_COLOR`, `icon` `SHAPE_FILL`, `text` `TEXT_FILL`, `control` par usage (`WIDTH_HEIGHT`, `GAP`, `CORNER_RADIUS`), `size700`/`space700` alignés. Les variables sans propriété Figma liable (`z-index`, `duration`, `easing`, `shadow`, `elevation`) passent en scope vide pour ne plus polluer les sélecteurs. Composants : `avatar/…/text` `TEXT_FILL`, `autosave-indicator/…/icon` `SHAPE_FILL`.
+- **Code syntax WEB posée sur 618 variables**, chacune vérifiée contre le CSS généré. Aucune valeur existante n'était fausse.
+- **6 orphelines renommées `DEPRECATED-`** : `border/{success,critical,warning,information,accent}` et `icon/accent` (sans équivalent CSS, lues seulement par des variables DEPRECATED).
+
+Reste ouvert :
+
+- **Exceptions de scope conservées** : `cool-grey/950` et `white/100` (primitives) acceptent aussi `TEXT_FILL`, `text/default/*`, `text/link/*` et `text/on-warning` acceptent aussi `SHAPE_FILL`. Probablement voulu (soulignement, pictos), à confirmer.
+- **Publication** : la collection `DEPRECATED-components` (819 variables) et les variables `DEPRECATED-*` de `semantics` sont publiées, donc proposées aux fichiers consommateurs. À l'inverse, `comete/blue/*` (primitives) et `logo/comete/*` sont masquées alors que `comete/yellow/*` et toutes les autres primitives sont publiées. Masquer une variable déjà utilisée dans un fichier consommateur peut la détacher, donc décision à prendre avant de toucher.
+- **Présents dans le CSS, absents de Figma** : `text-subtle-inverted`, `text-subtlest-inverted`, `logo-comete-inverted`, `logo-comete-subtle-inverted`, `logo-comete-subtlest`, et les polices `font-family-{outfit,poppins,satoshi,space-grotesk,urbanist}`.
+- **Présent dans Figma, absent du dépôt** : `font-family/noto-sans-mono`, cible de l'alias `font-family/code`.
+- **Collection `component`** : mode unique nommé « Mode 1 » (cosmétique).
 
 ## Tokens de surface et dérive Figma ↔ repo sur comete / brand (2026-11-19)
 

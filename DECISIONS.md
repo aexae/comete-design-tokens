@@ -2,6 +2,14 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-19 — Button link accent sur les états d'accent, scopes Figma harmonisés (0.27.1)
+
+**Décision** (demande d'Axel) :
+
+- `button.color.{link,link-subtle}.accent-<famille>.text.{hovered,pressed}` pointent sur `text.accent.<famille>.{hovered,pressed}` (ils pointaient tous sur `default`). Même chose dans Figma.
+- `outlined` et `subtle` inchangés : aucune couleur n'y a d'état de texte, le survol passe par le fond. En ajouter seulement pour l'accent créerait une incohérence.
+- Scopes Figma harmonisés sur la règle majoritaire de chaque groupe, code syntax WEB posée partout où le nom CSS existe, orphelines renommées `DEPRECATED-` (détail dans TODO.md). Les scopes ne changent aucun rendu, seulement les propriétés proposées dans les sélecteurs.
+
 ## 2026-11-19 — Text accent : hovered/pressed ajoutés, inverted supprimés, link en blue dans Figma (0.25.0)
 
 **Décision** (demande d'Axel) :

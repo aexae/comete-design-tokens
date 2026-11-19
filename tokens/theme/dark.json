@@ -47,7 +47,9 @@
     "disabled": {
       "default": {
         "$type": "color",
-        "$value": "{white.10}"
+        "$value": "{white.10}",
+        "$deprecated": "Déprécié : le disabled passe par l'opacité (<composant>/opacity/disabled, alias de opacity.disabled). Ne plus l'utiliser, il sera supprimé quand les derniers composants auront migré.",
+        "$description": "DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants."
       }
     },
     "brand": {
@@ -752,7 +754,9 @@
     },
     "disabled": {
       "$type": "color",
-      "$value": "{white.40}"
+      "$value": "{white.40}",
+      "$deprecated": "Déprécié : le disabled passe par l'opacité (<composant>/opacity/disabled, alias de opacity.disabled). Ne plus l'utiliser, il sera supprimé quand les derniers composants auront migré.",
+      "$description": "DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants."
     },
     "link": {
       "default": {
@@ -952,7 +956,9 @@
   "border": {
     "disabled": {
       "$type": "color",
-      "$value": "{white.20}"
+      "$value": "{white.20}",
+      "$deprecated": "Déprécié : le disabled passe par l'opacité (<composant>/opacity/disabled, alias de opacity.disabled). Ne plus l'utiliser, il sera supprimé quand les derniers composants auront migré.",
+      "$description": "DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants."
     },
     "subtle": {
       "$type": "color",
@@ -1134,7 +1140,9 @@
     },
     "disabled": {
       "$type": "color",
-      "$value": "{white.40}"
+      "$value": "{white.40}",
+      "$deprecated": "Déprécié : le disabled passe par l'opacité (<composant>/opacity/disabled, alias de opacity.disabled). Ne plus l'utiliser, il sera supprimé quand les derniers composants auront migré.",
+      "$description": "DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants."
     },
     "inverted": {
       "$type": "color",

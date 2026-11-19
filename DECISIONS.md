@@ -2,6 +2,12 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-19 — Tokens disabled sémantiques dépréciés (0.24.1)
+
+**Décision** (demande d'Axel) : `background.disabled.default`, `text.disabled`, `border.disabled` et `icon.disabled` sont marqués `$deprecated` (clair et sombre), avec une `$description` « DEPRECATED » reprise en commentaire dans le CSS. Valeurs et noms inchangés, donc version corrective. Dans Figma, les variables passent en `DEPRECATED-…` (code syntax conservée).
+
+**Contexte / raison** : le disabled passe désormais par l'opacité (`<composant>/opacity/disabled`). Ces tokens restent lus par 24 composants du DS (73 usages) : on les garde jusqu'à leur migration, puis on les supprime. Le DS bloque tout nouvel usage par un test.
+
 ## 2026-11-19 — Tokens de composant nommés par catégorie, opacité disabled, avatar-group
 
 **Décision** (demandes d'Axel) :

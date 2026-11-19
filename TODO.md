@@ -91,7 +91,7 @@ les développeurs. Aucune écriture effectuée.
 ### Avancement de la couche composant (2026-11-18)
 
 - Faits : `button`, `spinner`, `avatar`, `avatar-group`, `autosave-indicator` (nommage par catégorie depuis le 2026-11-19).
-- Disabled en opacité : 22 composants du DS restent sur les couleurs `*-disabled`, à migrer un par un après la livraison du Button et de l'Avatar. Les tokens sémantiques `background-disabled`, `text-disabled`, `border-disabled`, `icon-disabled` deviendront alors obsolètes. Deprecated
+- Disabled en opacité : 24 composants du DS restent sur les couleurs `*-disabled` (73 usages), à migrer un par un. Les tokens sémantiques `background-disabled-default`, `text-disabled`, `border-disabled`, `icon-disabled` sont dépréciés depuis 0.24.1 : les supprimer (version cassante) quand le DS n'en lit plus aucun. Deprecated
   correspondantes supprimées de Figma (`DEPRECATED-components` : 819 restantes).
 - Le ❖ AutosaveIndicator Figma garde des variables `DEPRECATED-tag/*` sur son
   item (coins, contour masqué, tailles du Slot) : à nettoyer avec la couche `tag`.

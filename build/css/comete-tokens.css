@@ -429,7 +429,7 @@
   --background-neutral-subtlest-default: #f7f8f8;
   --background-neutral-subtlest-hovered: #eaedee;
   --background-neutral-subtlest-pressed: #d8dedf;
-  --background-disabled-default: rgba(9, 9, 11, 0.1);
+  --background-disabled-default: rgba(9, 9, 11, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --background-brand-subtlest-default: #dceefd;
   --background-brand-subtlest-hovered: #c1e3fc;
   --background-brand-subtlest-pressed: #97d2f9;
@@ -572,7 +572,7 @@
   --text-default-hovered: #374043;
   --text-default-pressed: #3f4a4d;
   --text-selected: #2c7ee4;
-  --text-disabled: rgba(9, 9, 11, 0.4);
+  --text-disabled: rgba(9, 9, 11, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --text-link-default: #0076d8;
   --text-link-hovered: #0060b0;
   --text-link-pressed: #005391;
@@ -614,7 +614,7 @@
   --text-comete-hovered: #2354aa;
   --text-comete-pressed: #2467d1;
   --text-on-warning: #252a2c;
-  --border-disabled: rgba(9, 9, 11, 0.2);
+  --border-disabled: rgba(9, 9, 11, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #eaedee;
   --border-focused: #429aef;
   --border-bold: #b5c1c4;
@@ -652,7 +652,7 @@
   --border-comete-bold: #224986;
   --border-comete-subtle: #c1e3fc;
   --icon-default: #32415a;
-  --icon-disabled: rgba(9, 9, 11, 0.4);
+  --icon-disabled: rgba(9, 9, 11, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --icon-inverted: #f7f8f8;
   --icon-warning: #856d0e;
   --icon-critical: #e12121;
@@ -702,7 +702,7 @@
   --background-neutral-subtlest-default: #49585b;
   --background-neutral-subtlest-hovered: #3f4a4d;
   --background-neutral-subtlest-pressed: #374043;
-  --background-disabled-default: rgba(255, 255, 255, 0.1);
+  --background-disabled-default: rgba(255, 255, 255, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --background-brand-subtlest-default: #1e3661;
   --background-brand-subtlest-hovered: #224986;
   --background-brand-subtlest-pressed: #2354aa;
@@ -845,7 +845,7 @@
   --text-default-hovered: #eaedee;
   --text-default-pressed: #d8dedf;
   --text-selected: #c1e3fc;
-  --text-disabled: rgba(255, 255, 255, 0.4);
+  --text-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --text-link-default: #71cdff;
   --text-link-hovered: #b4e3ff;
   --text-link-pressed: #ddf1ff;
@@ -887,7 +887,7 @@
   --text-comete-hovered: #c1e3fc;
   --text-comete-pressed: #97d2f9;
   --text-on-warning: #252a2c;
-  --border-disabled: rgba(255, 255, 255, 0.2);
+  --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #3f4a4d;
   --border-focused: #66b8f4;
   --border-bold: #49585b;
@@ -925,7 +925,7 @@
   --border-comete-bold: #dceefd;
   --border-comete-subtle: #2354aa;
   --icon-default: #eaedf4;
-  --icon-disabled: rgba(255, 255, 255, 0.4);
+  --icon-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --icon-inverted: #374043;
   --icon-warning: #fdd847;
   --icon-critical: #ffa2a2;
@@ -973,7 +973,7 @@
     --background-neutral-subtlest-default: #49585b;
     --background-neutral-subtlest-hovered: #3f4a4d;
     --background-neutral-subtlest-pressed: #374043;
-    --background-disabled-default: rgba(255, 255, 255, 0.1);
+    --background-disabled-default: rgba(255, 255, 255, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --background-brand-subtlest-default: #1e3661;
     --background-brand-subtlest-hovered: #224986;
     --background-brand-subtlest-pressed: #2354aa;
@@ -1116,7 +1116,7 @@
     --text-default-hovered: #eaedee;
     --text-default-pressed: #d8dedf;
     --text-selected: #c1e3fc;
-    --text-disabled: rgba(255, 255, 255, 0.4);
+    --text-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --text-link-default: #71cdff;
     --text-link-hovered: #b4e3ff;
     --text-link-pressed: #ddf1ff;
@@ -1158,7 +1158,7 @@
     --text-comete-hovered: #c1e3fc;
     --text-comete-pressed: #97d2f9;
     --text-on-warning: #252a2c;
-    --border-disabled: rgba(255, 255, 255, 0.2);
+    --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --border-subtle: #3f4a4d;
     --border-focused: #66b8f4;
     --border-bold: #49585b;
@@ -1196,7 +1196,7 @@
     --border-comete-bold: #dceefd;
     --border-comete-subtle: #2354aa;
     --icon-default: #eaedf4;
-    --icon-disabled: rgba(255, 255, 255, 0.4);
+    --icon-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --icon-inverted: #374043;
     --icon-warning: #fdd847;
     --icon-critical: #ffa2a2;

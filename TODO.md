@@ -21,10 +21,18 @@ Corrigé dans Figma (hors collections DEPRECATED) :
 
 Reste ouvert :
 
-- **Exceptions de scope conservées** : `cool-grey/950` et `white/100` (primitives) acceptent aussi `TEXT_FILL`, `text/default/*`, `text/link/*` et `text/on-warning` acceptent aussi `SHAPE_FILL`. Probablement voulu (soulignement, pictos), à confirmer.
-- **Publication** : la collection `DEPRECATED-components` (819 variables) et les variables `DEPRECATED-*` de `semantics` sont publiées, donc proposées aux fichiers consommateurs. À l'inverse, `comete/blue/*` (primitives) et `logo/comete/*` sont masquées alors que `comete/yellow/*` et toutes les autres primitives sont publiées. Masquer une variable déjà utilisée dans un fichier consommateur peut la détacher, donc décision à prendre avant de toucher.
-- **Présents dans le CSS, absents de Figma** : `text-subtle-inverted`, `text-subtlest-inverted`, `logo-comete-inverted`, `logo-comete-subtle-inverted`, `logo-comete-subtlest`, et les polices `font-family-{outfit,poppins,satoshi,space-grotesk,urbanist}`.
-- **Présent dans Figma, absent du dépôt** : `font-family/noto-sans-mono`, cible de l'alias `font-family/code`.
+- **Exceptions de scope conservées (à revoir)** :
+  - `cool-grey/950` et `white/100` (primitives) acceptent aussi `TEXT_FILL`, seules primitives dans ce cas. Une primitive ne devrait pas être proposée pour du texte, le texte passe par `text/*`.
+  - `text/default/*`, `text/link/*` et `text/on-warning` acceptent aussi `SHAPE_FILL` (soulignement du lien, pictos dessinés en vecteur ?). Les autres `text/*` sont en `TEXT_FILL` seul.
+  - À trancher : supprimer ces exceptions, ou les documenter dans la `description` des variables.
+- ~~**Publication**~~ : FAIT 2026-11-19. `DEPRECATED-components` et les 20 `DEPRECATED-*` de `semantics` masqués (remplacement par des tokens de composant au cas par cas). `comete/blue/*` (aliasés par 3 à 18 variables du thème) et `logo/comete/*` (78 à 193 nœuds du Logo, 2 alias spinner) publiés. Reste publié : `yellow-DEPRECATED/*` (base/color, 11 variables), hors périmètre de la demande. Vérifier après publication de la librairie qu'aucun fichier consommateur ne perd de liaison.
+- **Présents dans le CSS, absents de Figma** :
+  - consommés : `logo-comete-inverted` et `logo-comete-subtle-inverted` (comete-logos, appearance `inverted`, visible dans la story Logo), `text-subtle-inverted` (story Welcome seulement, aucun composant). À créer dans Figma (en attente d'accord).
+  - non consommés : `text-subtlest-inverted`, `logo-comete-subtlest`. Candidats à la suppression.
+  - incohérence : en sombre, `logo.comete.subtle-inverted` = cool-grey.600 mais `text.subtle-inverted` = cool-grey.700.
+  - ~~polices `outfit`, `poppins`, `satoshi`, `space-grotesk`, `urbanist`~~ supprimées en 0.29.0.
+- ~~**Présent dans Figma, absent du dépôt** : `font-family/noto-sans-mono`~~ ajouté en 0.29.0, `font-family.code` l'aliase.
+- **Polices sans repli** : `--font-family-primary` vaut `Noto Sans` et `--font-family-code` `Noto Sans Mono`, sans famille générique. Si l'application ne charge pas la police, le navigateur retombe sur sa police par défaut (souvent serif). Les composants doivent ajouter le repli (`var(--font-family-code), monospace`), et chaque application doit charger Noto Sans et Noto Sans Mono.
 - **Collection `component`** : mode unique nommé « Mode 1 » (cosmétique).
 
 ## Tokens de surface et dérive Figma ↔ repo sur comete / brand (2026-11-19)

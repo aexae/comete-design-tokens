@@ -2,6 +2,14 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-19 — Polices limitées à Noto Sans et Noto Sans Mono, publication Figma (0.29.0)
+
+**Décision** (Axel) :
+
+- `font-family.{outfit,poppins,satoshi,space-grotesk,urbanist}` supprimés (cassant, d'où 0.29.0). Seules restent `noto-sans` et `noto-sans-mono` (nouveau, déjà présent dans Figma). `font-family.code` aliase `noto-sans-mono` au lieu de la pile monospace système, comme dans Figma. Les styles de texte Figma n'utilisent déjà que ces deux familles.
+- Figma : collection `DEPRECATED-components` et variables `DEPRECATED-*` du thème masquées à la publication. Elles seront remplacées par des tokens de composant au cas par cas. `comete/blue/*` et `logo/comete/*`, consommées, sont de nouveau publiées.
+- Exceptions de scope notées dans TODO.md, non corrigées.
+
 ## 2026-11-19 — Button link accent sur les états d'accent, scopes Figma harmonisés (0.27.1)
 
 **Décision** (demande d'Axel) :

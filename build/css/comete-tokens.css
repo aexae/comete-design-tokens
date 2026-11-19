@@ -292,13 +292,8 @@
   --size3200: 256px; /** 256 */
   --size6400: 512px; /** 512 */
   --size12800: 1024px; /** 1024 */
-  --font-family-code: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --font-family-noto-sans: Noto Sans;
-  --font-family-poppins: Poppins;
-  --font-family-outfit: Outfit;
-  --font-family-satoshi: Satoshi;
-  --font-family-urbanist: Urbanist;
-  --font-family-space-grotesk: Space grotesk;
+  --font-family-noto-sans-mono: Noto Sans Mono;
   --font-style-italic: Italic;
   --font-style-normal: normal;
   --font-weight-regular: 400; /** pour les paragraphes génériques afin de contraster avec les titres, et pour le texte de longueur moyenne dans les composants */
@@ -408,6 +403,7 @@
   --space1000: var(--size1000); /** Spacing 1000 (80 px) */
   --space1200: var(--size1200); /** Spacing 1200 (96 px) */
   --space1600: var(--size1600); /** Spacing 1600 (128 px) */
+  --font-family-code: var(--font-family-noto-sans-mono);
   --font-family-primary: var(--font-family-noto-sans);
   --control-radius-compact: var(--radius050); /** Radius contrôle — compact (4 px) */
   --control-radius-default: var(--radius075); /** Radius contrôle — default (6 px) */

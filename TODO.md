@@ -2,6 +2,13 @@
 
 > Failles, faiblesses et pistes d'amélioration signalées au fil des échanges.
 
+## Text accent et link (2026-11-19)
+
+- **Divergence silencieuse Figma / dépôt** : `text/link/*` pointait sur `comete/blue/*` dans Figma alors que le dépôt pointe sur `blue/*` depuis l'origine. Rien ne détecte ce type d'écart. Piste : un script d'audit qui compare les alias des variables Figma `theme` aux `$value` du dépôt (la page Figma « Audit Tokens — CSS vs Figma » est manuelle).
+- **Scopes** : `text/accent/{teal,turquoise,magenta,blue-grey}/default` étaient en `ALL_SCOPES` (réglés sur `TEXT_FILL` comme purple). D'autres variables `theme` sont probablement dans ce cas, à auditer.
+- **`DEPRECATED-text/accent-inverted`** (Figma seul, purple 50/950) reste lié à 187 nœuds, surtout les en-têtes de pages de documentation. À remplacer par `text/inverted` ou un token dédié, puis supprimer.
+- **`text.accent.*.hovered/pressed` non consommés** : aucun composant ne les lit encore (Tag, Badge, Avatar n'ont pas d'état de survol sur le texte accent). Tokens potentiellement morts tant qu'un usage n'est pas câblé.
+
 ## Tokens `text-subtle-inverted` / `text-subtlest-inverted` (2026-10-21)
 
 - **Accessibilité — `text-subtlest-inverted` (cool-grey.500, #6f8488)** : contraste ~3,7 à 4,3:1 sur les surfaces inversées testées (cool-grey.950, surface dark) et ~3,9:1 sur blanc en dark. Sous le seuil AA 4,5:1 pour le petit texte. À réserver au texte large ou secondaire (même réserve que le `subtlest` non inversé), ne pas l'utiliser pour du corps de texte.

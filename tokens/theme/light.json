@@ -874,9 +874,13 @@
           "$type": "color",
           "$value": "{purple.700}"
         },
-        "inverted": {
+        "hovered": {
           "$type": "color",
-          "$value": "{purple.50}"
+          "$value": "{purple.800}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{purple.900}"
         }
       },
       "teal": {
@@ -884,9 +888,13 @@
           "$type": "color",
           "$value": "{teal.800}"
         },
-        "inverted": {
+        "hovered": {
           "$type": "color",
-          "$value": "{teal.50}"
+          "$value": "{teal.900}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{teal.950}"
         }
       },
       "turquoise": {
@@ -894,9 +902,13 @@
           "$type": "color",
           "$value": "{turquoise.800}"
         },
-        "inverted": {
+        "hovered": {
           "$type": "color",
-          "$value": "{turquoise.50}"
+          "$value": "{turquoise.900}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{turquoise.950}"
         }
       },
       "magenta": {
@@ -904,9 +916,13 @@
           "$type": "color",
           "$value": "{magenta.800}"
         },
-        "inverted": {
+        "hovered": {
           "$type": "color",
-          "$value": "{magenta.50}"
+          "$value": "{magenta.900}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{magenta.950}"
         }
       },
       "blue-grey": {
@@ -914,9 +930,13 @@
           "$type": "color",
           "$value": "{blue-grey.800}"
         },
-        "inverted": {
+        "hovered": {
           "$type": "color",
-          "$value": "{blue-grey.50}"
+          "$value": "{blue-grey.900}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{blue-grey.950}"
         }
       }
     },

@@ -2,6 +2,16 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-19 — Text accent : hovered/pressed ajoutés, inverted supprimés, link en blue dans Figma (0.25.0)
+
+**Décision** (demande d'Axel) :
+
+- `text.accent.<famille>.{hovered,pressed}` ajoutés pour les 5 familles (purple, teal, turquoise, magenta, blue-grey), sur le modèle des autres familles de texte : en clair, deux crans plus foncés que `default` (purple 800/900, les autres 900/950), en sombre, deux crans plus clairs (100/50).
+- `text.accent.<famille>.inverted` supprimés : aucun usage dans le code du DS ni dans Figma (0 nœud lié, 0 alias). Les autres familles de texte n'ont pas d'inverted, l'accent était la seule exception sans raison d'être. Cassant pour un lecteur éventuel de `--text-accent-*-inverted`, d'où la version mineure.
+- `text.link.*` : le dépôt pointait déjà sur `blue.600/700/800` (sombre `blue.300/200/100`). Figma pointait sur `comete/blue/*`, réaligné sur `blue/*`.
+
+**Contexte / raison** : les accents servent de couleur de texte à des éléments interactifs (Tag, Badge, Avatar) sans états. Les inverted étaient des tokens morts.
+
 ## 2026-11-19 — Tokens disabled sémantiques dépréciés (0.24.1)
 
 **Décision** (demande d'Axel) : `background.disabled.default`, `text.disabled`, `border.disabled` et `icon.disabled` sont marqués `$deprecated` (clair et sombre), avec une `$description` « DEPRECATED » reprise en commentaire dans le CSS. Valeurs et noms inchangés, donc version corrective. Dans Figma, les variables passent en `DEPRECATED-…` (code syntax conservée).

@@ -220,8 +220,21 @@
         "$value": "{white.100}"
       },
       "mask": {
-        "$type": "color",
-        "$value": "{grey.alpha.500A}"
+        "default": {
+          "$type": "color",
+          "$value": "{grey.alpha.500A}",
+          "$description": "Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{grey.alpha.300A}",
+          "$description": "Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{grey.alpha.400A}",
+          "$description": "Voile local à la pression d'un média cliquable : plus dense que hovered, moins que default."
+        }
       },
       "elevation": {
         "sunken": {
@@ -763,12 +776,6 @@
       "default": {
         "$type": "color",
         "$value": "{comete.blue.500}"
-      }
-    },
-    "alpha": {
-      "default": {
-        "$type": "color",
-        "$value": "{grey.alpha.500A}"
       }
     }
   },
@@ -1314,6 +1321,11 @@
       "$type": "color",
       "$value": "{cool-grey.900}"
     },
+    "on-comete": {
+      "$type": "color",
+      "$value": "{white.100}",
+      "$description": "Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Pendant de text.on-comete, modèle de icon.on-warning. Pas sur les fonds bold qui suivent le thème (icon.inverted)."
+    },
     "bold": {
       "$type": "color",
       "$value": "{cool-grey.950}"
@@ -1355,25 +1367,8 @@
   "blanket": {
     "default": {
       "$type": "color",
-      "$value": "{grey.alpha.500A}"
-    }
-  },
-  "interaction": {
-    "hovered": {
-      "$type": "color",
-      "$value": "#00000029"
-    },
-    "pressed": {
-      "$type": "color",
-      "$value": "#00000052"
-    },
-    "hovered-MEDIAPICKER": {
-      "$type": "color",
-      "$value": "#00000029"
-    },
-    "pressed-MEDIAPICKER": {
-      "$type": "color",
-      "$value": "#00000052"
+      "$value": "{grey.alpha.500A}",
+      "$description": "Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, couvre et bloque la page. Pour un voile local posé sur un élément, utiliser background.surface.mask."
     }
   }
 }

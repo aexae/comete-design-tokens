@@ -2,6 +2,17 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-20 — `icon.on-comete`, voiles ramenés à deux rôles (0.32.0)
+
+**Décisions** (Axel, sur rapport d'analyse des usages Figma et code) :
+
+- **`icon.on-comete`** créé, pendant de `text.on-comete` : `{white.100}` dans les deux thèmes, modèle de `icon.on-warning`. Les icônes de `Card bold comete / brand` passent dessus dans le DS (elles restaient en `icon.inverted`, sombres sur navy en thème sombre). Figma : `icon/on-comete` (scope SHAPE_FILL, code syntax).
+- **Deux voiles, deux rôles** : `blanket.default` reste le seul voile plein écran (couche modale). `background.surface.mask` devient le voile local avec ses états `default` (chargement, zone inactive), `hovered` et `pressed` (média cliquable). Valeurs en primitives grey-alpha, jamais `black.*` / `white.*` (choix d'Axel) : clair `grey.alpha.500A / 300A / 400A`, sombre `dark-grey.alpha.500A / 300A / 400A`. Le `default` sombre passe de `grey.alpha.400A` (voile sombre) à `dark-grey.alpha.500A`, aligné sur `blanket` sombre : en thème sombre les voiles éclaircissent.
+- **Supprimés** : `interaction.{hovered,pressed,hovered-MEDIAPICKER,pressed-MEDIAPICKER}` (hex bruts, zéro nœud Figma, zéro usage code) et `background.alpha.default` (même valeur que `blanket` en clair, opaque en sombre, un seul cadre de doc). Changement cassant : `--background-surface-mask` devient `--background-surface-mask-default` (aucun consommateur dans le DS).
+- **Figma** : variantes hovered / pressed du MediaPicker et alias `DEPRECATED-media-picker/background/*` reliés aux nouveaux états ; `interaction/*` supprimées ; `background/alpha/default` renommée `DEPRECATED-…` tant que le cadre « Dark background » du Spinner n'a pas de surface cible (voir TODO, question background vs surface).
+
+**Raison** : trois tokens pour un même voile sans règle d'usage ; `surface.mask` était déjà le choix de fait du MediaPicker, `interaction.*` n'a jamais été branché.
+
 ## 2026-11-20 — Tokens de composant Banner, Page, PageBar, PageToolbar, SideNav et BottomNav (0.31.0)
 
 **Décision** (demande d'Axel, création des tokens de composant approuvée par la demande) :

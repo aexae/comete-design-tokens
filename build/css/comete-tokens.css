@@ -459,7 +459,9 @@
   --background-default-default: #ffffff;
   --background-default-inverted: #252a2c;
   --background-surface-default: #ffffff;
-  --background-surface-mask: rgba(5, 12, 31, 0.49);
+  --background-surface-mask-default: rgba(5, 12, 31, 0.49); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
+  --background-surface-mask-hovered: rgba(11, 18, 14, 0.14); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
+  --background-surface-mask-pressed: rgba(8, 15, 33, 0.31); /** Voile local à la pression d'un média cliquable : plus dense que hovered, moins que default. */
   --background-surface-elevation-sunken-default: #f7f8f8;
   --background-surface-elevation-sunken-hovered: #eaedee;
   --background-surface-elevation-sunken-pressed: #d8dedf;
@@ -570,7 +572,6 @@
   --background-cycle-day-subtlest-hovered: #fff6d4;
   --background-cycle-day-subtlest-pressed: #ffe8a9;
   --background-focused-default: #429aef;
-  --background-alpha-default: rgba(5, 12, 31, 0.49);
   --text-default-default: #252a2c;
   --text-default-hovered: #374043;
   --text-default-pressed: #3f4a4d;
@@ -685,6 +686,7 @@
   --icon-day: #f68909;
   --icon-night: #0076d8;
   --icon-on-warning: #374043;
+  --icon-on-comete: #ffffff; /** Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Pendant de text.on-comete, modèle de icon.on-warning. Pas sur les fonds bold qui suivent le thème (icon.inverted). */
   --icon-bold: #252a2c;
   --logo-comete-default: #1e3661; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
@@ -693,11 +695,7 @@
   --logo-comete-inverted: #f0f8fe;
   --logo-comete-subtle: #596b70;
   --logo-comete-subtle-inverted: #b5c1c4;
-  --blanket-default: rgba(5, 12, 31, 0.49);
-  --interaction-hovered: rgba(0, 0, 0, 0.16);
-  --interaction-pressed: rgba(0, 0, 0, 0.32);
-  --interaction-hovered-mediapicker: rgba(0, 0, 0, 0.16);
-  --interaction-pressed-mediapicker: rgba(0, 0, 0, 0.32);
+  --blanket-default: rgba(5, 12, 31, 0.49); /** Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, couvre et bloque la page. Pour un voile local posé sur un élément, utiliser background.surface.mask. */
 }
 
 /* ── Semantic (dark) ─────────────────────────────────────────── */
@@ -749,7 +747,9 @@
   --background-default-default: #252a2c;
   --background-default-inverted: #ffffff;
   --background-surface-default: #374043;
-  --background-surface-mask: rgba(8, 15, 33, 0.31);
+  --background-surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
+  --background-surface-mask-hovered: rgba(166, 197, 226, 0.16); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
+  --background-surface-mask-pressed: rgba(191, 219, 248, 0.28); /** Voile local à la pression d'un média cliquable : plus dense que hovered, moins que default. */
   --background-surface-elevation-sunken-default: #252a2c;
   --background-surface-elevation-sunken-hovered: #374043;
   --background-surface-elevation-sunken-pressed: #3f4a4d;
@@ -860,7 +860,6 @@
   --background-cycle-day-subtlest-hovered: #7e4210;
   --background-cycle-day-subtlest-pressed: #9c4f10;
   --background-focused-default: #66b8f4;
-  --background-alpha-default: #3f4a4d;
   --text-default-default: #f7f8f8;
   --text-default-hovered: #eaedee;
   --text-default-pressed: #d8dedf;
@@ -975,6 +974,7 @@
   --icon-day: #feb939;
   --icon-night: #26b5ff;
   --icon-on-warning: #374043;
+  --icon-on-comete: #ffffff; /** Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Pendant de text.on-comete, modèle de icon.on-warning. Pas sur les fonds bold qui suivent le thème (icon.inverted). */
   --icon-bold: #f7f8f8;
   --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
@@ -983,11 +983,7 @@
   --logo-comete-inverted: #1e3661;
   --logo-comete-subtle: #b5c1c4;
   --logo-comete-subtle-inverted: #596b70;
-  --blanket-default: rgba(155, 180, 202, 0.5);
-  --interaction-hovered: rgba(255, 255, 255, 0.2);
-  --interaction-pressed: rgba(255, 255, 255, 0.36);
-  --interaction-hovered-mediapicker: rgba(255, 255, 255, 0.2);
-  --interaction-pressed-mediapicker: rgba(255, 255, 255, 0.36);
+  --blanket-default: rgba(155, 180, 202, 0.5); /** Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, couvre et bloque la page. Pour un voile local posé sur un élément, utiliser background.surface.mask. */
 }
 
 
@@ -1037,7 +1033,9 @@
     --background-default-default: #252a2c;
     --background-default-inverted: #ffffff;
     --background-surface-default: #374043;
-    --background-surface-mask: rgba(8, 15, 33, 0.31);
+    --background-surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
+    --background-surface-mask-hovered: rgba(166, 197, 226, 0.16); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
+    --background-surface-mask-pressed: rgba(191, 219, 248, 0.28); /** Voile local à la pression d'un média cliquable : plus dense que hovered, moins que default. */
     --background-surface-elevation-sunken-default: #252a2c;
     --background-surface-elevation-sunken-hovered: #374043;
     --background-surface-elevation-sunken-pressed: #3f4a4d;
@@ -1148,7 +1146,6 @@
     --background-cycle-day-subtlest-hovered: #7e4210;
     --background-cycle-day-subtlest-pressed: #9c4f10;
     --background-focused-default: #66b8f4;
-    --background-alpha-default: #3f4a4d;
     --text-default-default: #f7f8f8;
     --text-default-hovered: #eaedee;
     --text-default-pressed: #d8dedf;
@@ -1263,6 +1260,7 @@
     --icon-day: #feb939;
     --icon-night: #26b5ff;
     --icon-on-warning: #374043;
+    --icon-on-comete: #ffffff; /** Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Pendant de text.on-comete, modèle de icon.on-warning. Pas sur les fonds bold qui suivent le thème (icon.inverted). */
     --icon-bold: #f7f8f8;
     --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
     --logo-comete-gradient-dark: #f8bf01;
@@ -1271,11 +1269,7 @@
     --logo-comete-inverted: #1e3661;
     --logo-comete-subtle: #b5c1c4;
     --logo-comete-subtle-inverted: #596b70;
-    --blanket-default: rgba(155, 180, 202, 0.5);
-    --interaction-hovered: rgba(255, 255, 255, 0.2);
-    --interaction-pressed: rgba(255, 255, 255, 0.36);
-    --interaction-hovered-mediapicker: rgba(255, 255, 255, 0.2);
-    --interaction-pressed-mediapicker: rgba(255, 255, 255, 0.36);
+    --blanket-default: rgba(155, 180, 202, 0.5); /** Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, couvre et bloque la page. Pour un voile local posé sur un élément, utiliser background.surface.mask. */
   }
 }
 

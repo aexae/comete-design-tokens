@@ -2,6 +2,14 @@
 
 > Failles, faiblesses et pistes d'amélioration signalées au fil des échanges.
 
+## Suites de `icon.on-comete` et des voiles (2026-11-20)
+
+- **`icon.on-warning` : dérive Figma ↔ repo** : Figma `icon/on-warning` = `cool-grey/950` (clair et sombre), repo = `{cool-grey.900}`. Le code consomme le repo. Même écart que l'icône warning du Banner. À trancher (950 partout ?) puis aligner.
+- **comete-icons** : `IconColor` n'a pas de valeur `on-comete` (ni classe `.comete-icon--on-comete`). Le DS passe par l'override `--icon-default` dans Card ; ajouter la couleur dans comete-icons pour un usage direct `<Icon color="on-comete" />`.
+- **Cadre « Dark background » de la page Spinner (Figma)** : encore lié à `DEPRECATED-background/alpha/default`. À relier à une surface une fois la règle background vs surface posée, puis supprimer la variable.
+- **background vs surface** : la question posée par le cadre Spinner (neutral.bold ou surface.comete ?) révèle l'absence de règle écrite. Proposition et pratiques des autres DS dans la réponse du 2026-11-20 ; à consigner dans DECISIONS une fois tranchée.
+- **Lot A** : les descriptions de `blanket`, `surface.mask.*` sont désormais sur main ; retirer du lot A celles des tokens supprimés (`interaction.*`, `alpha.default`).
+
 ## Tokens de composant Banner, Page, SideNav, BottomNav : écarts Figma / code (2026-11-20)
 
 Variables créées dans Figma mais non liées là où Figma et le code divergent. Pour chaque point, Axel tranche lequel fait foi, puis on lie (ou on corrige le code).

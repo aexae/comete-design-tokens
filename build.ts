@@ -11,7 +11,6 @@ const semanticPrefixes = [
   "border",
   "icon",
   "blanket",
-  "interaction",
   "logo",
 ];
 const isSemanticToken = (token: { path: string[] }) => {

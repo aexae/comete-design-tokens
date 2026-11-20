@@ -1,6 +1,6 @@
 # Inventaire des tokens
 
-> Généré par `pnpm inventory` le 2026-11-19. Ne pas éditer à la main : la source est `tokens/**/*.json`.
+> Généré par `pnpm inventory` le 2026-11-20. Ne pas éditer à la main : la source est `tokens/**/*.json`.
 
 Usages = occurrences de `var(--token)` dans le design system (`src/` hors tests, puis `storybook/stories/`).
 Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**, **dépréciée**, ok.
@@ -9,13 +9,13 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Lot | Tokens | Décrits (ok) | À écrire ou réécrire | Non consommés par le DS |
 |---|---:|---:|---:|---:|
-| A | 78 | 1 (1 %) | 73 | 29 |
+| A | 78 | 2 (3 %) | 72 | 29 |
 | B | 62 | 0 (0 %) | 62 | 25 |
-| C | 143 | 15 (10 %) | 128 | 82 |
+| C | 142 | 15 (11 %) | 127 | 81 |
 | D | 196 | 24 (12 %) | 172 | 82 |
 | E | 200 | 0 (0 %) | 200 | 193 |
 | F | 343 | 53 (15 %) | 290 | 8 |
-| **Total** | **1022** | **93 (9 %)** | **925** | **419** |
+| **Total** | **1021** | **94 (9 %)** | **923** | **418** |
 
 ## Lot A — sémantique neutre : text, background, border, icon (default, neutral, surface, selected…)
 
@@ -74,10 +74,10 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--text-subtle-pressed` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
 | `--text-inverted` | color | #ffffff | #252a2c | `white.100` | 50 / 8 | absente |  |
 | `--text-subtle-inverted` | color | #b5c1c4 | #49585b | `cool-grey.300` | 0 / 2 | absente |  |
-| `--text-subtlest-inverted` | color | #6f8488 | = | `cool-grey.500` | 0 / 0 | absente |  |
 | `--text-subtlest-default` | color | #6f8488 | = | `cool-grey.500` | 22 / 71 | absente |  |
 | `--text-subtlest-hovered` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 0 / 0 | absente |  |
 | `--text-subtlest-pressed` | color | #49585b | #b5c1c4 | `cool-grey.700` | 0 / 0 | absente |  |
+| `--text-on-comete` | color | #ffffff | = | `white.100` | 0 / 0 | ok | Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, backgroun… |
 | `--border-disabled` | color | #09090b33 | #ffffff33 | `black.20` | 4 / 0 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
 | `--border-subtle` | color | #eaedee | #3f4a4d | `cool-grey.100` | 11 / 21 | absente |  |
 | `--border-focused` | color | #429aef | #66b8f4 | `comete.blue.500` | 18 / 10 | absente |  |
@@ -95,7 +95,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--icon-selected` | color | #2c7ee4 | #97d2f9 | `comete.blue.600` | 2 / 0 | absente |  |
 | `--icon-subtle` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 13 / 0 | absente |  |
 | `--icon-subtlest` | color | #6f8488 | = | `cool-grey.500` | 11 / 0 | absente |  |
-| `--icon-bold` | color | #374043 | = | `cool-grey.900` | 1 / 0 | absente |  |
+| `--icon-bold` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 1 / 0 | absente |  |
 | `--blanket-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 5 / 0 | absente |  |
 | `--interaction-hovered` | color | #00000029 | #ffffff33 |  | 0 / 0 | absente |  |
 | `--interaction-pressed` | color | #00000052 | #ffffff5c |  | 0 / 0 | absente |  |
@@ -173,7 +173,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 ## Lot C — marque : brand, comete, accent, cycle, logo
 
-143 tokens.
+142 tokens.
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
@@ -316,7 +316,6 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--logo-comete-gradient-dark` | color | #f8bf01 | = | `comete.yellow.500` | 0 / 0 | absente |  |
 | `--logo-comete-gradient-light` | color | #fff146 | = | `comete.yellow.300` | 0 / 0 | absente |  |
 | `--logo-comete-neutral` | color | #224986 | #dceefd | `comete.blue.900` | 0 / 0 | absente |  |
-| `--logo-comete-subtlest` | color | #596b70 | #b5c1c4 | `cool-grey.600` | 0 / 0 | absente |  |
 | `--logo-comete-inverted` | color | #f0f8fe | #1e3661 | `comete.blue.50` | 0 / 0 | absente |  |
 | `--logo-comete-subtle` | color | #596b70 | #b5c1c4 | `cool-grey.600` | 0 / 0 | absente |  |
 | `--logo-comete-subtle-inverted` | color | #b5c1c4 | #596b70 | `cool-grey.300` | 0 / 0 | absente |  |

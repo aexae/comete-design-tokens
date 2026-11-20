@@ -2,6 +2,14 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-20 — Suppression de text.subtlest-inverted et logo.comete.subtlest (0.30.1)
+
+**Décision** (Axel) :
+
+- `text.subtlest-inverted` et `logo.comete.subtlest` supprimés : aucun consommateur (DS, comete-logos, comete-icons, applications du poste) et absents de Figma.
+- Les sources JSON ont été embarquées par le commit 0.30.0 d'une session parallèle, mais le CSS publié en 0.30.0 contenait encore les deux variables. 0.30.1 régénère le CSS et l'inventaire. Patch et non mineure : rien ne les consommait.
+- **Conservés, réservés au code** : `text.subtle-inverted`, `logo.comete.inverted` et `logo.comete.subtle-inverted`. L'apparence `inverted` de comete-logos (logo sur une surface opposée au thème) les consomme. Dans Figma, on pose le composant `❖ Logo / Dark` sur une surface sombre au lieu de dupliquer chaque logo en version inversée. Les variables existent dans Figma pour les parts internes du logo, documentées « code uniquement ».
+
 ## 2026-11-19 — Polices limitées à Noto Sans et Noto Sans Mono, publication Figma (0.29.0)
 
 **Décision** (Axel) :

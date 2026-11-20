@@ -28,7 +28,7 @@ Reste ouvert :
 - ~~**Publication**~~ : FAIT 2026-11-19. `DEPRECATED-components` et les 20 `DEPRECATED-*` de `semantics` masqués (remplacement par des tokens de composant au cas par cas). `comete/blue/*` (aliasés par 3 à 18 variables du thème) et `logo/comete/*` (78 à 193 nœuds du Logo, 2 alias spinner) publiés. Reste publié : `yellow-DEPRECATED/*` (base/color, 11 variables), hors périmètre de la demande. Vérifier après publication de la librairie qu'aucun fichier consommateur ne perd de liaison.
 - **Présents dans le CSS, absents de Figma** :
   - consommés : `logo-comete-inverted` et `logo-comete-subtle-inverted` (comete-logos, appearance `inverted`, visible dans la story Logo), `text-subtle-inverted` (story Welcome seulement, aucun composant). À créer dans Figma (en attente d'accord).
-  - non consommés : `text-subtlest-inverted`, `logo-comete-subtlest`. Candidats à la suppression.
+  - ~~non consommés : `text-subtlest-inverted`, `logo-comete-subtlest`~~ supprimés en 0.30.1 (2026-11-20).
   - incohérence : en sombre, `logo.comete.subtle-inverted` = cool-grey.600 mais `text.subtle-inverted` = cool-grey.700.
   - ~~polices `outfit`, `poppins`, `satoshi`, `space-grotesk`, `urbanist`~~ supprimées en 0.29.0.
 - ~~**Présent dans Figma, absent du dépôt** : `font-family/noto-sans-mono`~~ ajouté en 0.29.0, `font-family.code` l'aliase.
@@ -60,6 +60,7 @@ Relevé pendant l'alignement `brand` = `comete` (0.26.0). À traiter dans le cha
 
 - **Accessibilité — `text-subtlest-inverted` (cool-grey.500, #6f8488)** : contraste ~3,7 à 4,3:1 sur les surfaces inversées testées (cool-grey.950, surface dark) et ~3,9:1 sur blanc en dark. Sous le seuil AA 4,5:1 pour le petit texte. À réserver au texte large ou secondaire (même réserve que le `subtlest` non inversé), ne pas l'utiliser pour du corps de texte.
 - **Incohérence de primitive** : en thème clair, `text.inverted` pointe sur `white.100` alors que ses variantes `subtle/subtlest-inverted` pointent sur `cool-grey.*`. Mélange de familles (white vs cool-grey) volontaire (suit l'échelle du thème opposé) mais à valider côté design si une teinte 100 % neutre blanche est attendue.
+- ~~`text-subtlest-inverted`~~ supprimé en 0.30.1. `text-subtle-inverted` reste réservé au code (story Welcome).
 - **Tokens non consommés** : aucun composant du DS n'utilise encore ces deux tokens. Risque de tokens morts tant qu'ils ne sont pas câblés (ex. texte secondaire sur Banner/Tooltip/surfaces bold). À adopter ou documenter l'usage cible.
 - **Publication** : changement non commité et non publié (en attente de « livre »). Nécessitera bump de version tokens + tag, puis bump de la dép dans le DS (root + storybook) pour être exploitable.
 

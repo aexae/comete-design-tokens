@@ -435,7 +435,7 @@
   --background-brand-subtler-default: #c1e3fc;
   --background-brand-subtler-hovered: #97d2f9;
   --background-brand-subtler-pressed: #66b8f4;
-  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-comete. */
+  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-dark-surface. */
   --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
   --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
   --background-comete-subtlest-default: #dceefd;
@@ -447,7 +447,7 @@
   --background-comete-subtler-default: #c1e3fc;
   --background-comete-subtler-hovered: #97d2f9;
   --background-comete-subtler-pressed: #66b8f4;
-  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-comete (12:1), jamais text.inverted. */
+  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-dark-surface (12:1), jamais text.inverted. */
   --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
   --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
   --background-selected-bold-hovered: #224986;
@@ -477,7 +477,7 @@
   --background-surface-elevation-overlay-warning: #fdfee8;
   --background-surface-elevation-raise-default: #ffffff;
   --background-surface-critical: #fef2f2;
-  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-comete (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
+  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --background-success-bold-default: #00784d;
   --background-success-bold-hovered: #036240;
   --background-success-bold-pressed: #245041;
@@ -623,8 +623,8 @@
   --text-comete-hovered: #2354aa;
   --text-comete-pressed: #2467d1;
   --text-comete-boldest: #1e3661; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
-  --text-on-warning: #252a2c;
-  --text-on-comete: #ffffff; /** Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Modèle de text.on-warning. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+  --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+  --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --border-disabled: rgba(9, 9, 11, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #eaedee;
   --border-focused: #429aef;
@@ -685,8 +685,8 @@
   --icon-accent-blue-grey: #58759f;
   --icon-day: #f68909;
   --icon-night: #0076d8;
-  --icon-on-warning: #374043;
-  --icon-on-comete: #ffffff; /** Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Pendant de text.on-comete, modèle de icon.on-warning. Pas sur les fonds bold qui suivent le thème (icon.inverted). */
+  --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
+  --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
   --icon-bold: #252a2c;
   --logo-comete-default: #1e3661; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
@@ -723,7 +723,7 @@
   --background-brand-subtler-default: #2354aa;
   --background-brand-subtler-hovered: #2467d1;
   --background-brand-subtler-pressed: #2c7ee4;
-  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-comete. */
+  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-dark-surface. */
   --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
   --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
   --background-comete-subtlest-default: #1e3661;
@@ -735,7 +735,7 @@
   --background-comete-subtler-default: #2354aa;
   --background-comete-subtler-hovered: #2467d1;
   --background-comete-subtler-pressed: #2c7ee4;
-  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-comete (12:1), jamais text.inverted. */
+  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-dark-surface (12:1), jamais text.inverted. */
   --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
   --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
   --background-selected-bold-hovered: #dceefd;
@@ -765,7 +765,7 @@
   --background-surface-elevation-overlay-warning: #292410;
   --background-surface-elevation-raise-default: #49585b;
   --background-surface-critical: #2e1717;
-  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-comete (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
+  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --background-success-bold-default: #0abf76;
   --background-success-bold-hovered: #2fd88e;
   --background-success-bold-pressed: #6aebae;
@@ -784,9 +784,9 @@
   --background-warning-subtler-default: #856d0e;
   --background-warning-subtler-hovered: #a18207;
   --background-warning-subtler-pressed: #caa204;
-  --background-critical-bold-default: #fc6d6d;
-  --background-critical-bold-hovered: #ffa2a2;
-  --background-critical-bold-pressed: #ffc8c8;
+  --background-critical-bold-default: #e12121;
+  --background-critical-bold-hovered: #f44040;
+  --background-critical-bold-pressed: #fc6d6d;
   --background-critical-subtlest-pressed: #be1717;
   --background-critical-subtlest-hovered: #9d1717;
   --background-critical-subtlest-default: #821a1a;
@@ -911,8 +911,8 @@
   --text-comete-hovered: #c1e3fc;
   --text-comete-pressed: #97d2f9;
   --text-comete-boldest: #f0f8fe; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
-  --text-on-warning: #252a2c;
-  --text-on-comete: #ffffff; /** Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Modèle de text.on-warning. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+  --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+  --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #3f4a4d;
   --border-focused: #66b8f4;
@@ -973,8 +973,8 @@
   --icon-accent-blue-grey: #a8b9d1;
   --icon-day: #feb939;
   --icon-night: #26b5ff;
-  --icon-on-warning: #374043;
-  --icon-on-comete: #ffffff; /** Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Pendant de text.on-comete, modèle de icon.on-warning. Pas sur les fonds bold qui suivent le thème (icon.inverted). */
+  --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
+  --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
   --icon-bold: #f7f8f8;
   --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
@@ -1009,7 +1009,7 @@
     --background-brand-subtler-default: #2354aa;
     --background-brand-subtler-hovered: #2467d1;
     --background-brand-subtler-pressed: #2c7ee4;
-    --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-comete. */
+    --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-dark-surface. */
     --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
     --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
     --background-comete-subtlest-default: #1e3661;
@@ -1021,7 +1021,7 @@
     --background-comete-subtler-default: #2354aa;
     --background-comete-subtler-hovered: #2467d1;
     --background-comete-subtler-pressed: #2c7ee4;
-    --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-comete (12:1), jamais text.inverted. */
+    --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-dark-surface (12:1), jamais text.inverted. */
     --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
     --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
     --background-selected-bold-hovered: #dceefd;
@@ -1051,7 +1051,7 @@
     --background-surface-elevation-overlay-warning: #292410;
     --background-surface-elevation-raise-default: #49585b;
     --background-surface-critical: #2e1717;
-    --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-comete (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
+    --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
     --background-success-bold-default: #0abf76;
     --background-success-bold-hovered: #2fd88e;
     --background-success-bold-pressed: #6aebae;
@@ -1070,9 +1070,9 @@
     --background-warning-subtler-default: #856d0e;
     --background-warning-subtler-hovered: #a18207;
     --background-warning-subtler-pressed: #caa204;
-    --background-critical-bold-default: #fc6d6d;
-    --background-critical-bold-hovered: #ffa2a2;
-    --background-critical-bold-pressed: #ffc8c8;
+    --background-critical-bold-default: #e12121;
+    --background-critical-bold-hovered: #f44040;
+    --background-critical-bold-pressed: #fc6d6d;
     --background-critical-subtlest-pressed: #be1717;
     --background-critical-subtlest-hovered: #9d1717;
     --background-critical-subtlest-default: #821a1a;
@@ -1197,8 +1197,8 @@
     --text-comete-hovered: #c1e3fc;
     --text-comete-pressed: #97d2f9;
     --text-comete-boldest: #f0f8fe; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
-    --text-on-warning: #252a2c;
-    --text-on-comete: #ffffff; /** Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Modèle de text.on-warning. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+    --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+    --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
     --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --border-subtle: #3f4a4d;
     --border-focused: #66b8f4;
@@ -1259,8 +1259,8 @@
     --icon-accent-blue-grey: #a8b9d1;
     --icon-day: #feb939;
     --icon-night: #26b5ff;
-    --icon-on-warning: #374043;
-    --icon-on-comete: #ffffff; /** Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Pendant de text.on-comete, modèle de icon.on-warning. Pas sur les fonds bold qui suivent le thème (icon.inverted). */
+    --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
+    --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
     --icon-bold: #f7f8f8;
     --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
     --logo-comete-gradient-dark: #f8bf01;
@@ -1282,6 +1282,10 @@
   --avatar-group-spacing-overlap-xlarge: -16px; /** Chevauchement des avatars xlarge empilés (marge négative, 25 % du diamètre) */
   --avatar-group-spacing-overlap-xxlarge: -24px; /** Chevauchement des avatars xxlarge empilés (marge négative, 25 % du diamètre) */
   --avatar-group-spacing-overlap-xxxlarge: -32px; /** Chevauchement des avatars xxxlarge empilés (marge négative, 25 % du diamètre) */
+  --page-toolbar-size-search-min-width: 160px; /** Largeur minimale du champ de recherche (160 px, placeholder lisible). Valeur brute : aucun token d'échelle */
+  --page-toolbar-size-search-max-width: 240px; /** Largeur maximale du champ de recherche (240 px). Valeur brute : aucun token d'échelle */
+  --side-nav-size-header-min-height: 72px; /** Hauteur minimale de l'en-tête (72 px). Valeur brute : aucun token d'échelle à 72 px */
+  --side-nav-size-width: 240px; /** Largeur du panneau déployé (240 px). Valeur brute : aucun token d'échelle à 240 px */
   --avatar-group-border-width-xsmall: var(--size0125); /** Anneau de séparation des avatars xsmall empilés (couleur du conteneur, prop borderColor) */
   --avatar-group-border-width-small: var(--size0125); /** Anneau de séparation des avatars small empilés (couleur du conteneur, prop borderColor) */
   --avatar-group-border-width-medium: var(--size025); /** Anneau de séparation des avatars medium empilés (couleur du conteneur, prop borderColor) */
@@ -1304,6 +1308,7 @@
   --avatar-size-xxxlarge-container: var(--size1600); /** Avatar xxxlarge (128 px) */
   --avatar-size-xxxlarge-icon: var(--size800); /** Icône de l'avatar xxxlarge (64 px) */
   --avatar-opacity-disabled: var(--opacity-disabled); /** Opacité de l'avatar désactivé */
+  --banner-size-icon: var(--size300); /** Largeur et hauteur de l'icône du bandeau (24 px) */
   --bottom-nav-size-item-icon: var(--size300); /** Icône d'un item (24 px) */
   --bottom-nav-size-action-container: var(--size700); /** Diamètre du bouton d'action central (56 px) */
   --bottom-nav-size-action-icon: var(--size350); /** Icône du bouton d'action central (28 px) */
@@ -1321,6 +1326,8 @@
   --side-nav-size-empty-icon: var(--size500); /** Pastille de l'icône de l'état vide (40 px) */
   --side-nav-border-width-surface: var(--size0125); /** Bordure droite du panneau (1 px) */
   --side-nav-border-width-divider: var(--size025); /** Épaisseur du séparateur (2 px) */
+  --side-nav-opacity-disabled: var(--opacity-disabled); /** Opacité d'un item désactivé (standard disabled par opacité) */
+  --side-nav-opacity-footer-brand: var(--opacity-50); /** Opacité de la marque du pied (0,5) */
   --spinner-size-xsmall: var(--size100); /** Spinner xsmall (8 px) */
   --spinner-size-small: var(--size200); /** Spinner small (16 px) */
   --spinner-size-medium: var(--size300); /** Spinner medium (24 px) */
@@ -1373,11 +1380,11 @@
   --avatar-color-selected-icon: var(--icon-selected); /** Icône de l'avatar sélectionné */
   --avatar-radius: var(--radius-round); /** Coin de l'avatar, toujours rond */
   --banner-color-warning-background: var(--background-warning-bold-default); /** Fond du bandeau warning (jaune) */
-  --banner-color-warning-text: var(--text-on-warning); /** Message du bandeau warning (texte sombre fixe, lisible sur le jaune) */
-  --banner-color-warning-icon: var(--icon-on-warning); /** Icône contextuelle du bandeau warning */
+  --banner-color-warning-text: var(--text-on-light-surface); /** Message du bandeau warning (texte sombre fixe, lisible sur le jaune) */
+  --banner-color-warning-icon: var(--icon-on-light-surface); /** Icône contextuelle du bandeau warning */
   --banner-color-critical-background: var(--background-critical-bold-default); /** Fond du bandeau critical (rouge) */
-  --banner-color-critical-text: var(--text-inverted); /** Message du bandeau critical (texte inversé) */
-  --banner-color-critical-icon: var(--icon-inverted); /** Icône contextuelle du bandeau critical */
+  --banner-color-critical-text: var(--text-on-dark-surface); /** Message du bandeau critical (texte inversé) */
+  --banner-color-critical-icon: var(--icon-on-dark-surface); /** Icône contextuelle du bandeau critical */
   --banner-color-announcement-background: var(--background-neutral-bold-default); /** Fond du bandeau announcement (neutre sombre) */
   --banner-color-announcement-text: var(--text-inverted); /** Message du bandeau announcement (texte inversé) */
   --banner-color-announcement-icon: var(--icon-inverted); /** Icône contextuelle du bandeau announcement */
@@ -1387,15 +1394,16 @@
   --banner-color-information-background: var(--background-information-bold-default); /** Fond du bandeau information (bleu) */
   --banner-color-information-text: var(--text-inverted); /** Message du bandeau information (texte inversé) */
   --banner-color-information-icon: var(--icon-inverted); /** Icône contextuelle du bandeau information */
+  --banner-color-discovery-background: var(--background-accent-purple-bold-default); /** Fond du bandeau discovery (nouveauté, mise à jour majeure) */
+  --banner-color-discovery-text: var(--text-inverted); /** Texte du bandeau discovery */
+  --banner-color-discovery-icon: var(--icon-inverted); /** Icône du bandeau discovery */
   --banner-spacing-gap: var(--space150); /** Espace entre l'icône et le message (12 px) */
   --banner-spacing-padding: var(--space150); /** Marge intérieure du bandeau sur les quatre côtés (12 px) */
   --bottom-nav-color-background: var(--background-surface-default); /** Fond de la barre */
   --bottom-nav-color-item-label-default: var(--text-subtlest-default); /** Libellé d'un item au repos */
   --bottom-nav-color-item-label-selected: var(--text-selected); /** Libellé d'un item sélectionné ou ouvert */
-  --bottom-nav-color-item-label-disabled: var(--text-disabled); /** Libellé d'un item désactivé (s'ajoute à l'opacité disabled, token sémantique déprécié) */
   --bottom-nav-color-item-icon-default: var(--icon-subtlest); /** Icône d'un item au repos */
   --bottom-nav-color-item-icon-selected: var(--icon-selected); /** Icône d'un item sélectionné, et croix de fermeture d'un item ouvert */
-  --bottom-nav-color-item-icon-disabled: var(--icon-disabled); /** Icône d'un item désactivé (s'ajoute à l'opacité disabled, token sémantique déprécié) */
   --bottom-nav-color-item-background-selected: var(--background-selected-subtlest-default); /** Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé dessus */
   --bottom-nav-color-action-background: var(--background-comete-bold-default); /** Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client */
   --bottom-nav-color-action-icon: var(--icon-inverted); /** Icône du bouton d'action central */
@@ -1431,11 +1439,11 @@
   --button-color-contained-success-background-default: var(--background-success-bold-default);
   --button-color-contained-success-background-hovered: var(--background-success-bold-hovered);
   --button-color-contained-success-background-pressed: var(--background-success-bold-pressed);
-  --button-color-contained-critical-text-default: var(--text-inverted);
+  --button-color-contained-critical-text-default: var(--text-on-dark-surface); /** Texte blanc fixe : background.critical.bold reste red 600 en sombre */
   --button-color-contained-critical-background-default: var(--background-critical-bold-default);
   --button-color-contained-critical-background-hovered: var(--background-critical-bold-hovered);
   --button-color-contained-critical-background-pressed: var(--background-critical-bold-pressed);
-  --button-color-contained-warning-text-default: var(--text-on-warning);
+  --button-color-contained-warning-text-default: var(--text-on-light-surface);
   --button-color-contained-warning-background-default: var(--background-warning-bold-default);
   --button-color-contained-warning-background-hovered: var(--background-warning-bold-hovered);
   --button-color-contained-warning-background-pressed: var(--background-warning-bold-pressed);
@@ -1701,7 +1709,7 @@
   --side-nav-spacing-header-padding-top: var(--space300); /** Marge haute de l'en-tête (24 px) */
   --side-nav-spacing-header-padding-bottom: var(--space100); /** Marge basse de l'en-tête (8 px) */
   --side-nav-spacing-item-gap: var(--space150); /** Espace entre l'icône et le libellé (12 px) */
-  --side-nav-spacing-item-padding-y: var(--space075); /** Marge verticale d'un item (6 px) */
+  --side-nav-spacing-item-padding-y: var(--space050); /** Padding vertical d'un item (4 px) : hauteur 32 px avec l'icône de 24 px */
   --side-nav-spacing-rail-padding-x: var(--space050); /** Retrait horizontal des items et titres de section en rail (4 px) */
   --side-nav-spacing-rail-item-gap: var(--space025); /** Espace entre l'icône et le libellé court en rail (2 px) */
   --side-nav-spacing-section-title-padding-top: var(--space200); /** Marge au-dessus d'un titre de section (16 px) */

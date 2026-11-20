@@ -103,8 +103,8 @@ Sept familles, déclinées par **intention** puis par **état** (`default`, `hov
 |---|---|
 | `--background-*` (148) | `default`, `surface`, `neutral`, `comete`, `brand`, `selected`, `focused`, `disabled`, `success`, `warning`, `critical`, `information`, `accent`, `cycle` |
 | `--border-*` (37) | `default`, `neutral`, `subtle`, `bold`, `focused`, `focus-inverted`, `selected`, `selected-inverted`, `inverted`, `invisible`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `disabled` |
-| `--text-*` (53) | `default`, `subtle`, `subtlest`, `inverted`, `subtle-inverted`, `link`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `on-warning`, `on-comete` |
-| `--icon-*` (21) | `default`, `bold`, `subtle`, `subtlest`, `inverted`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `on-warning` |
+| `--text-*` (53) | `default`, `subtle`, `subtlest`, `inverted`, `subtle-inverted`, `link`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `on-light-surface`, `on-dark-surface` |
+| `--icon-*` (21) | `default`, `bold`, `subtle`, `subtlest`, `inverted`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `on-light-surface`, `on-dark-surface` |
 | `--logo-*` (7) | `comete` : `default`, `neutral`, `inverted`, `subtle`, `subtle-inverted`, `gradient-light`, `gradient-dark` |
 | `--blanket-*` (1) | voile plein écran des couches modales (le voile local est `--background-surface-mask-*`) |
 

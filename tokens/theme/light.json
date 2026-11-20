@@ -99,7 +99,7 @@
         "default": {
           "$type": "color",
           "$value": "{comete.blue.950}",
-          "$description": "Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-comete."
+          "$description": "Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-dark-surface."
         },
         "hovered": {
           "$type": "color",
@@ -160,7 +160,7 @@
         "default": {
           "$type": "color",
           "$value": "{comete.blue.950}",
-          "$description": "Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-comete (12:1), jamais text.inverted."
+          "$description": "Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-dark-surface (12:1), jamais text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -309,7 +309,7 @@
       "comete": {
         "$type": "color",
         "$value": "{comete.blue.950}",
-        "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-comete (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest."
+        "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest."
       }
     },
     "success": {
@@ -1020,14 +1020,15 @@
         "$description": "Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default)."
       }
     },
-    "on-warning": {
+    "on-light-surface": {
       "$type": "color",
-      "$value": "{cool-grey.950}"
+      "$value": "{cool-grey.950}",
+      "$description": "Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted)."
     },
-    "on-comete": {
+    "on-dark-surface": {
       "$type": "color",
       "$value": "{white.100}",
-      "$description": "Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Modèle de text.on-warning. Pas sur les fonds bold qui suivent le thème (text.inverted)."
+      "$description": "Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted)."
     }
   },
   "border": {
@@ -1317,14 +1318,15 @@
       "$type": "color",
       "$value": "{blue.600}"
     },
-    "on-warning": {
+    "on-light-surface": {
       "$type": "color",
-      "$value": "{cool-grey.900}"
+      "$value": "{cool-grey.950}",
+      "$description": "Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface."
     },
-    "on-comete": {
+    "on-dark-surface": {
       "$type": "color",
       "$value": "{white.100}",
-      "$description": "Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Pendant de text.on-comete, modèle de icon.on-warning. Pas sur les fonds bold qui suivent le thème (icon.inverted)."
+      "$description": "Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface."
     },
     "bold": {
       "$type": "color",

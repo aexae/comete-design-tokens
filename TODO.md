@@ -4,7 +4,7 @@
 
 ## Suites de `icon.on-comete` et des voiles (2026-11-20)
 
-- **`icon.on-warning` : dérive Figma ↔ repo** : Figma `icon/on-warning` = `cool-grey/950` (clair et sombre), repo = `{cool-grey.900}`. Le code consomme le repo. Même écart que l'icône warning du Banner. À trancher (950 partout ?) puis aligner.
+- ~~**`icon.on-warning` : dérive Figma ↔ repo**~~ : FAIT en 0.33.0, `icon.on-light-surface` (ex `icon.on-warning`) vaut cool-grey.950 partout.
 - **comete-icons** : `IconColor` n'a pas de valeur `on-comete` (ni classe `.comete-icon--on-comete`). Le DS passe par l'override `--icon-default` dans Card ; ajouter la couleur dans comete-icons pour un usage direct `<Icon color="on-comete" />`.
 - **Cadre « Dark background » de la page Spinner (Figma)** : encore lié à `DEPRECATED-background/alpha/default`. À relier à une surface une fois la règle background vs surface posée, puis supprimer la variable.
 - **background vs surface** : la question posée par le cadre Spinner (neutral.bold ou surface.comete ?) révèle l'absence de règle écrite. Proposition et pratiques des autres DS dans la réponse du 2026-11-20 ; à consigner dans DECISIONS une fois tranchée.
@@ -14,13 +14,13 @@
 
 Variables créées dans Figma mais non liées là où Figma et le code divergent. Pour chaque point, Axel tranche lequel fait foi, puis on lie (ou on corrige le code).
 
-- **Banner** : icône warning en `cool-grey/950` en dur dans Figma contre `icon.on-warning` (900) dans le code. Variantes `success` et `information` absentes de Figma. Icône `Warning` pour toutes les variantes Figma alors que le code varie par apparence. Taille d'icône 24 px passée en prop TSX, sans token (`banner.size.icon` ?). Lisibilité de `text.inverted` sur les fonds bold en sombre à vérifier.
+- **Banner** : ~~icône warning~~ (Figma lié à `banner/color/warning/icon`, 950 partout), ~~taille d'icône~~ (`banner.size.icon`), apparences `success`, `information` et `discovery` ajoutées (0.33.0). Reste : lisibilité de `text.inverted` sur les fonds bold success, information et discovery en sombre à vérifier.
 - **PageBar** : fond de la barre compacte posé dans le code, absent de Figma. Variante `compact, leading=none` sans cadre `globalActions`.
-- **PageToolbar** : regroupement via `❖ ButtonGroup` lié à `DEPRECATED-button-group/gap/default`. Largeurs de la recherche (160 et 240 px) en dur dans le code et Figma, aucun token. Recherche liée à `DEPRECATED-text-field/*`.
+- **PageToolbar** : regroupement via `❖ ButtonGroup` lié à `DEPRECATED-button-group/gap/default`. ~~Largeurs de la recherche~~ : `page-toolbar.size.search.{min-width,max-width}` (0.33.0). Recherche liée à `DEPRECATED-text-field/*`.
 - **Page** : états chargement, vide et erreur du Body absents de Figma. Fond `background/surface/default` sur la racine Figma, absent du code. Nommage de la gouttière `mobile` / `laptop` (calé sur les breakpoints) à confirmer. Slot `{footer}` lié aux variables distantes `space/150` et `space/075`.
-- **SideNav** : fond `surface/elevation/overlay` (Figma) contre `surface/default` (code), bordure `border/default` contre `border/subtle`, indicateur de sélection présent seulement dans Figma, retraits 16 / 8 / 0 px contre 12 px, hauteur d'item min 32 px (encore liée à `DEPRECATED-select/option/min-height/default`) contre 36 px fixe, ligne de description absente du code, titre de section `xxxs` contre `xxs`, disabled en `DEPRECATED-*`, logo 32 contre 40 px. Valeurs en dur sans token : largeur 240 px, en-tête 72 px, opacité 0,55 de la marque du pied, transition `100ms ease`. Disabled à migrer vers `side-nav.opacity.disabled` (change le rendu). Variables distantes `space/150` et `space/075` sur les Slot, `DEPRECATED-logo/brand/default` sur les logos.
-- **BottomNav** : padding horizontal de la barre 16 px (Figma) contre 4 px (code). Fond du bouton d'action `background/brand/bold` dans Figma contre `comete.bold` dans le code (ADR 0001). Rayon de la barre et home indicator seulement dans Figma. Cellule de l'action Figma avec paddings et rayon sans équivalent code. Disabled en double (opacité et couleurs dépréciées) : passer à l'opacité seule et supprimer `item.{label,icon}.disabled`. Badge encore sur `-DEPRECATED-badge/*`, QuickActions mélange brand et comete.
-- **Garde des tokens dépréciés contournée** : `deprecatedDisabledTokens.test.ts` du DS compte les `var(--text-disabled)` directs. Un token de composant qui aliase un token déprécié (cas BottomNav) n'est plus compté. Ajouter côté tokens un test qui interdit les alias vers un token `$deprecated`, ou l'accepter explicitement.
+- **SideNav** : fond `surface/elevation/overlay` (Figma) contre `surface/default` (code), bordure `border/default` contre `border/subtle`, ligne de description absente du code, titre de section `xxxs` contre `xxs`, logo 32 contre 40 px : à trancher. Faits en 0.33.0 : indicateur de sélection retiré de Figma, retraits du code reportés dans Figma, item à 32 px (padding-y 4), disabled en opacité, largeur 240 px, en-tête 72 px, opacité 0,5 du pied. Restent : transition `100ms ease` en dur, variables distantes `space/150` et `space/075` sur les Slot, `DEPRECATED-logo/brand/default` sur les logos.
+- **BottomNav** : faits en 0.33.0 : padding horizontal 4 px dans Figma, bouton d'action sur `comete.bold`, disabled en opacité seule. Restent : rayon de la barre et home indicator seulement dans Figma, cellule de l'action Figma avec paddings et rayon sans équivalent code, badge sur `-DEPRECATED-badge/*`, QuickActions mélange brand et comete.
+- ~~**Garde des tokens dépréciés contournée**~~ : FAIT en 0.33.0, `tests/deprecated.test.ts` interdit tout alias d'un token de composant vers un token `$deprecated`.
 
 ## Text accent et link (2026-11-19)
 
@@ -43,7 +43,7 @@ Reste ouvert :
 
 - **Exceptions de scope conservées (à revoir)** :
   - `cool-grey/950` et `white/100` (primitives) acceptent aussi `TEXT_FILL`, seules primitives dans ce cas. Une primitive ne devrait pas être proposée pour du texte, le texte passe par `text/*`.
-  - `text/default/*`, `text/link/*` et `text/on-warning` acceptent aussi `SHAPE_FILL` (soulignement du lien, pictos dessinés en vecteur ?). Les autres `text/*` sont en `TEXT_FILL` seul.
+  - `text/default/*`, `text/link/*` et `text/on-light-surface` acceptent aussi `SHAPE_FILL` (soulignement du lien, pictos dessinés en vecteur ?). Les autres `text/*` sont en `TEXT_FILL` seul.
   - À trancher : supprimer ces exceptions, ou les documenter dans la `description` des variables.
 - ~~**Publication**~~ : FAIT 2026-11-19. `DEPRECATED-components` et les 20 `DEPRECATED-*` de `semantics` masqués (remplacement par des tokens de composant au cas par cas). `comete/blue/*` (aliasés par 3 à 18 variables du thème) et `logo/comete/*` (78 à 193 nœuds du Logo, 2 alias spinner) publiés. `yellow-DEPRECATED/*` (base/color, 11 variables) supprimé le 2026-11-20 : aucun alias ni nœud lié dans le fichier (vérifié via l'API REST). Les fichiers consommateurs n'ont pas pu être vérifiés (API d'analytics de bibliothèque refusée, plan sans accès) : une liaison éventuelle y sera détachée à la mise à jour de la librairie. Vérifier après publication de la librairie qu'aucun fichier consommateur ne perd de liaison.
 - **Présents dans le CSS, absents de Figma** :

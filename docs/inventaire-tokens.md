@@ -9,17 +9,17 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Lot | Tokens | Décrits (ok) | À écrire ou réécrire | Non consommés par le DS |
 |---|---:|---:|---:|---:|
-| A | 76 | 7 (9 %) | 65 | 26 |
-| B | 62 | 0 (0 %) | 62 | 25 |
+| A | 78 | 9 (12 %) | 65 | 29 |
+| B | 60 | 0 (0 %) | 60 | 25 |
 | C | 142 | 15 (11 %) | 127 | 81 |
 | D | 196 | 24 (12 %) | 172 | 82 |
 | E | 200 | 0 (0 %) | 200 | 193 |
-| F | 452 | 155 (34 %) | 297 | 8 |
-| **Total** | **1128** | **201 (18 %)** | **923** | **415** |
+| F | 460 | 164 (36 %) | 296 | 18 |
+| **Total** | **1136** | **212 (19 %)** | **920** | **428** |
 
 ## Lot A — sémantique neutre : text, background, border, icon (default, neutral, surface, selected…)
 
-76 tokens.
+78 tokens.
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
@@ -78,7 +78,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--text-subtlest-default` | color | #6f8488 | = | `cool-grey.500` | 19 / 71 | absente |  |
 | `--text-subtlest-hovered` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 0 / 0 | absente |  |
 | `--text-subtlest-pressed` | color | #49585b | #b5c1c4 | `cool-grey.700` | 0 / 0 | absente |  |
-| `--text-on-comete` | color | #ffffff | = | `white.100` | 4 / 2 | ok | Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, backgroun… |
+| `--text-on-light-surface` | color | #252a2c | = | `cool-grey.950` | 0 / 0 | ok | Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) … |
+| `--text-on-dark-surface` | color | #ffffff | = | `white.100` | 0 / 0 | ok | Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.s… |
 | `--border-disabled` | color | #09090b33 | #ffffff33 | `black.20` | 4 / 0 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
 | `--border-subtle` | color | #eaedee | #3f4a4d | `cool-grey.100` | 7 / 21 | absente |  |
 | `--border-focused` | color | #429aef | #66b8f4 | `comete.blue.500` | 18 / 10 | absente |  |
@@ -96,13 +97,14 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--icon-selected` | color | #2c7ee4 | #97d2f9 | `comete.blue.600` | 2 / 0 | absente |  |
 | `--icon-subtle` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 13 / 0 | absente |  |
 | `--icon-subtlest` | color | #6f8488 | = | `cool-grey.500` | 11 / 0 | absente |  |
-| `--icon-on-comete` | color | #ffffff | = | `white.100` | 0 / 0 | ok | Icône blanche fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, backgro… |
+| `--icon-on-light-surface` | color | #252a2c | = | `cool-grey.950` | 0 / 0 | ok | Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre.… |
+| `--icon-on-dark-surface` | color | #ffffff | = | `white.100` | 0 / 0 | ok | Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair… |
 | `--icon-bold` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 1 / 0 | absente |  |
 | `--blanket-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 5 / 0 | ok | Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, … |
 
 ## Lot B — sémantique de statut : success, warning, critical, information
 
-62 tokens.
+60 tokens.
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
@@ -124,9 +126,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-warning-subtler-default` | color | #fee78a | #856d0e | `yellow.200` | 0 / 0 | absente |  |
 | `--background-warning-subtler-hovered` | color | #fdd847 | #a18207 | `yellow.300` | 0 / 0 | absente |  |
 | `--background-warning-subtler-pressed` | color | #facc15 | #caa204 | `yellow.400` | 0 / 0 | absente |  |
-| `--background-critical-bold-default` | color | #e12121 | #fc6d6d | `red.600` | 10 / 2 | absente |  |
-| `--background-critical-bold-hovered` | color | #be1717 | #ffa2a2 | `red.700` | 4 / 0 | absente |  |
-| `--background-critical-bold-pressed` | color | #9d1717 | #ffc8c8 | `red.800` | 4 / 0 | absente |  |
+| `--background-critical-bold-default` | color | #e12121 | = | `red.600` | 10 / 2 | absente |  |
+| `--background-critical-bold-hovered` | color | #be1717 | #f44040 | `red.700` | 4 / 0 | absente |  |
+| `--background-critical-bold-pressed` | color | #9d1717 | #fc6d6d | `red.800` | 4 / 0 | absente |  |
 | `--background-critical-subtlest-pressed` | color | #ffa2a2 | #be1717 | `red.300` | 5 / 0 | absente |  |
 | `--background-critical-subtlest-hovered` | color | #ffc8c8 | #9d1717 | `red.200` | 5 / 0 | absente |  |
 | `--background-critical-subtlest-default` | color | #ffe1e1 | #821a1a | `red.100` | 7 / 0 | absente |  |
@@ -154,7 +156,6 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--text-critical-default` | color | #9d1717 | #ffc8c8 | `red.800` | 16 / 2 | absente |  |
 | `--text-critical-hovered` | color | #821a1a | #ffe1e1 | `red.900` | 0 / 0 | absente |  |
 | `--text-critical-pressed` | color | #2e1717 | #fef2f2 | `red.950` | 0 / 0 | absente |  |
-| `--text-on-warning` | color | #252a2c | = | `cool-grey.950` | 8 / 0 | absente |  |
 | `--border-success-bold` | color | #009b60 | #0abf76 | `green.600` | 3 / 0 | absente |  |
 | `--border-success-subtle` | color | #a4f6ca | #036240 | `green.200` | 0 / 0 | absente |  |
 | `--border-critical-bold` | color | #e12121 | #f44040 | `red.600` | 5 / 0 | absente |  |
@@ -167,7 +168,6 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--icon-critical` | color | #e12121 | #ffa2a2 | `red.600` | 2 / 0 | absente |  |
 | `--icon-success` | color | #009b60 | #2fd88e | `green.600` | 1 / 0 | absente |  |
 | `--icon-information` | color | #0076d8 | #71cdff | `blue.600` | 0 / 0 | absente |  |
-| `--icon-on-warning` | color | #374043 | = | `cool-grey.900` | 3 / 0 | absente |  |
 
 ## Lot C — marque : brand, comete, accent, cycle, logo
 
@@ -730,7 +730,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 ## Lot F — tokens de composants
 
-452 tokens.
+460 tokens.
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
@@ -810,11 +810,11 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--avatar-group-spacing-overlap-xxlarge` | dimension | -24px | = |  | 1 / 0 | ok | Chevauchement des avatars xxlarge empilés (marge négative, 25 % du diamètre) |
 | `--avatar-group-spacing-overlap-xxxlarge` | dimension | -32px | = |  | 1 / 0 | ok | Chevauchement des avatars xxxlarge empilés (marge négative, 25 % du diamètre) |
 | `--banner-color-warning-background` | color | #facc15 | #eabd08 | `background.warning.bold.default` | 1 / 0 | ok | Fond du bandeau warning (jaune) |
-| `--banner-color-warning-text` | color | #252a2c | = | `text.on-warning` | 1 / 0 | ok | Message du bandeau warning (texte sombre fixe, lisible sur le jaune) |
-| `--banner-color-warning-icon` | color | #374043 | = | `icon.on-warning` | 1 / 0 | ok | Icône contextuelle du bandeau warning |
-| `--banner-color-critical-background` | color | #e12121 | #fc6d6d | `background.critical.bold.default` | 1 / 0 | ok | Fond du bandeau critical (rouge) |
-| `--banner-color-critical-text` | color | #ffffff | #252a2c | `text.inverted` | 1 / 0 | ok | Message du bandeau critical (texte inversé) |
-| `--banner-color-critical-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône contextuelle du bandeau critical |
+| `--banner-color-warning-text` | color | #252a2c | = | `text.on-light-surface` | 1 / 0 | ok | Message du bandeau warning (texte sombre fixe, lisible sur le jaune) |
+| `--banner-color-warning-icon` | color | #252a2c | = | `icon.on-light-surface` | 1 / 0 | ok | Icône contextuelle du bandeau warning |
+| `--banner-color-critical-background` | color | #e12121 | = | `background.critical.bold.default` | 1 / 0 | ok | Fond du bandeau critical (rouge) |
+| `--banner-color-critical-text` | color | #ffffff | = | `text.on-dark-surface` | 1 / 0 | ok | Message du bandeau critical (texte inversé) |
+| `--banner-color-critical-icon` | color | #ffffff | = | `icon.on-dark-surface` | 1 / 0 | ok | Icône contextuelle du bandeau critical |
 | `--banner-color-announcement-background` | color | #3f4a4d | #eaedee | `background.neutral.bold.default` | 1 / 0 | ok | Fond du bandeau announcement (neutre sombre) |
 | `--banner-color-announcement-text` | color | #ffffff | #252a2c | `text.inverted` | 1 / 0 | ok | Message du bandeau announcement (texte inversé) |
 | `--banner-color-announcement-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône contextuelle du bandeau announcement |
@@ -824,15 +824,17 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--banner-color-information-background` | color | #0076d8 | #009bfe | `background.information.bold.default` | 1 / 0 | ok | Fond du bandeau information (bleu) |
 | `--banner-color-information-text` | color | #ffffff | #252a2c | `text.inverted` | 1 / 0 | ok | Message du bandeau information (texte inversé) |
 | `--banner-color-information-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône contextuelle du bandeau information |
+| `--banner-color-discovery-background` | color | #6e5dc6 | #9897e2 | `background.accent.purple.bold.default` | 0 / 0 | ok | Fond du bandeau discovery (nouveauté, mise à jour majeure) |
+| `--banner-color-discovery-text` | color | #ffffff | #252a2c | `text.inverted` | 0 / 0 | ok | Texte du bandeau discovery |
+| `--banner-color-discovery-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 0 / 0 | ok | Icône du bandeau discovery |
 | `--banner-spacing-gap` | dimension | 12px | = | `Space150` | 1 / 0 | ok | Espace entre l'icône et le message (12 px) |
 | `--banner-spacing-padding` | dimension | 12px | = | `Space150` | 1 / 0 | ok | Marge intérieure du bandeau sur les quatre côtés (12 px) |
+| `--banner-size-icon` | dimension | 24px | = | `Size300` | 0 / 0 | ok | Largeur et hauteur de l'icône du bandeau (24 px) |
 | `--bottom-nav-color-background` | color | #ffffff | #374043 | `background.surface.default` | 2 / 0 | trop courte | Fond de la barre |
 | `--bottom-nav-color-item-label-default` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | ok | Libellé d'un item au repos |
 | `--bottom-nav-color-item-label-selected` | color | #2c7ee4 | #c1e3fc | `text.selected` | 1 / 0 | ok | Libellé d'un item sélectionné ou ouvert |
-| `--bottom-nav-color-item-label-disabled` | color | #09090b66 | #ffffff66 | `text.disabled` | 1 / 0 | ok | Libellé d'un item désactivé (s'ajoute à l'opacité disabled, token sémantique déprécié) |
 | `--bottom-nav-color-item-icon-default` | color | #6f8488 | = | `icon.subtlest` | 1 / 0 | trop courte | Icône d'un item au repos |
 | `--bottom-nav-color-item-icon-selected` | color | #2c7ee4 | #97d2f9 | `icon.selected` | 1 / 0 | ok | Icône d'un item sélectionné, et croix de fermeture d'un item ouvert |
-| `--bottom-nav-color-item-icon-disabled` | color | #09090b66 | #ffffff66 | `icon.disabled` | 1 / 0 | ok | Icône d'un item désactivé (s'ajoute à l'opacité disabled, token sémantique déprécié) |
 | `--bottom-nav-color-item-background-selected` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 2 / 0 | ok | Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé … |
 | `--bottom-nav-color-action-background` | color | #2467d1 | #f0f8fe | `background.comete.bold.default` | 1 / 0 | ok | Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client |
 | `--bottom-nav-color-action-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône du bouton d'action central |
@@ -874,11 +876,11 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-contained-success-background-default` | color | #00784d | #0abf76 | `background.success.bold.default` | 1 / 0 | absente |  |
 | `--button-color-contained-success-background-hovered` | color | #036240 | #2fd88e | `background.success.bold.hovered` | 1 / 0 | absente |  |
 | `--button-color-contained-success-background-pressed` | color | #245041 | #6aebae | `background.success.bold.pressed` | 1 / 0 | absente |  |
-| `--button-color-contained-critical-text-default` | color | #ffffff | #252a2c | `text.inverted` | 1 / 0 | absente |  |
-| `--button-color-contained-critical-background-default` | color | #e12121 | #fc6d6d | `background.critical.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-critical-background-hovered` | color | #be1717 | #ffa2a2 | `background.critical.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-critical-background-pressed` | color | #9d1717 | #ffc8c8 | `background.critical.bold.pressed` | 1 / 0 | absente |  |
-| `--button-color-contained-warning-text-default` | color | #252a2c | = | `text.on-warning` | 1 / 0 | absente |  |
+| `--button-color-contained-critical-text-default` | color | #ffffff | = | `text.on-dark-surface` | 1 / 0 | ok | Texte blanc fixe : background.critical.bold reste red 600 en sombre |
+| `--button-color-contained-critical-background-default` | color | #e12121 | = | `background.critical.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-critical-background-hovered` | color | #be1717 | #f44040 | `background.critical.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-critical-background-pressed` | color | #9d1717 | #fc6d6d | `background.critical.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-warning-text-default` | color | #252a2c | = | `text.on-light-surface` | 1 / 0 | absente |  |
 | `--button-color-contained-warning-background-default` | color | #facc15 | #eabd08 | `background.warning.bold.default` | 1 / 0 | absente |  |
 | `--button-color-contained-warning-background-hovered` | color | #eabd08 | #facc15 | `background.warning.bold.hovered` | 1 / 0 | absente |  |
 | `--button-color-contained-warning-background-pressed` | color | #caa204 | #fdd847 | `background.warning.bold.pressed` | 1 / 0 | absente |  |
@@ -1131,6 +1133,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--page-toolbar-spacing-gap` | dimension | 8px | = | `Space100` | 1 / 0 | ok | Espace entre recherche, filtres, start et end (8 px) |
 | `--page-toolbar-spacing-padding-y` | dimension | 8px | = | `Space100` | 1 / 0 | ok | Retrait vertical de la toolbar (8 px) |
 | `--page-toolbar-spacing-group-gap` | dimension | 8px | = | `Space100` | 3 / 0 | ok | Espace entre les éléments des zones filters, start et end (8 px) |
+| `--page-toolbar-size-search-min-width` | dimension | 160px | = |  | 0 / 0 | ok | Largeur minimale du champ de recherche (160 px, placeholder lisible). Valeur brute : aucun token d'échelle |
+| `--page-toolbar-size-search-max-width` | dimension | 240px | = |  | 0 / 0 | ok | Largeur maximale du champ de recherche (240 px). Valeur brute : aucun token d'échelle |
 | `--side-nav-color-surface-background` | color | #ffffff | #374043 | `background.surface.default` | 2 / 0 | ok | Fond du panneau de navigation (aussi le fond au survol d'un item désactivé) |
 | `--side-nav-color-surface-border` | color | #eaedee | #3f4a4d | `border.subtle` | 1 / 0 | ok | Bordure droite du panneau, séparation avec le contenu |
 | `--side-nav-color-header-title` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | ok | Nom de l'application dans l'en-tête |
@@ -1151,15 +1155,17 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--side-nav-size-item-icon` | dimension | 24px | = | `Size300` | 2 / 0 | ok | Icône d'item (24 px), fixe aussi la hauteur de ligne : hauteur d'item = icône + 2 × spacing.item.padding-y (3… |
 | `--side-nav-size-rail-item-min-height` | dimension | 32px | = | `Size400` | 1 / 0 | ok | Hauteur minimale d'un item en rail (32 px) |
 | `--side-nav-size-header-logo` | dimension | 40px | = | `Size500` | 2 / 0 | ok | Hauteur maximale du logo de l'en-tête (40 px) |
+| `--side-nav-size-header-min-height` | dimension | 72px | = |  | 0 / 0 | ok | Hauteur minimale de l'en-tête (72 px). Valeur brute : aucun token d'échelle à 72 px |
 | `--side-nav-size-footer-brand` | dimension | 24px | = | `Size300` | 1 / 0 | ok | Hauteur maximale de la marque du pied (24 px) |
 | `--side-nav-size-empty-icon` | dimension | 40px | = | `Size500` | 2 / 0 | ok | Pastille de l'icône de l'état vide (40 px) |
+| `--side-nav-size-width` | dimension | 240px | = |  | 0 / 0 | ok | Largeur du panneau déployé (240 px). Valeur brute : aucun token d'échelle à 240 px |
 | `--side-nav-spacing-gutter` | dimension | 8px | = | `Space100` | 3 / 0 | ok | Gouttière horizontale du panneau (8 px), reprise à droite par la zone défilante |
 | `--side-nav-spacing-inset` | dimension | 12px | = | `Space150` | 8 / 0 | ok | Retrait horizontal commun de l'en-tête, des items, titres de section, séparateurs et pied (12 px) |
 | `--side-nav-spacing-header-gap` | dimension | 12px | = | `Space150` | 2 / 0 | ok | Espace entre le logo, le nom et le bouton de bascule (12 px) |
 | `--side-nav-spacing-header-padding-top` | dimension | 24px | = | `Space300` | 2 / 0 | ok | Marge haute de l'en-tête (24 px) |
 | `--side-nav-spacing-header-padding-bottom` | dimension | 8px | = | `Space100` | 2 / 0 | ok | Marge basse de l'en-tête (8 px) |
 | `--side-nav-spacing-item-gap` | dimension | 12px | = | `Space150` | 2 / 0 | ok | Espace entre l'icône et le libellé (12 px) |
-| `--side-nav-spacing-item-padding-y` | dimension | 6px | = | `Space075` | 5 / 0 | ok | Marge verticale d'un item (6 px) |
+| `--side-nav-spacing-item-padding-y` | dimension | 4px | = | `Space050` | 5 / 0 | ok | Padding vertical d'un item (4 px) : hauteur 32 px avec l'icône de 24 px |
 | `--side-nav-spacing-rail-padding-x` | dimension | 4px | = | `Space050` | 2 / 0 | ok | Retrait horizontal des items et titres de section en rail (4 px) |
 | `--side-nav-spacing-rail-item-gap` | dimension | 2px | = | `Space025` | 1 / 0 | ok | Espace entre l'icône et le libellé court en rail (2 px) |
 | `--side-nav-spacing-section-title-padding-top` | dimension | 16px | = | `Space200` | 2 / 0 | ok | Marge au-dessus d'un titre de section (16 px) |
@@ -1177,6 +1183,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--side-nav-radius-empty-icon` | dimension | 1024px | = | `RadiusRound` | 1 / 0 | ok | Pastille ronde de l'état vide |
 | `--side-nav-border-width-surface` | dimension | 1px | = | `Size0125` | 1 / 0 | ok | Bordure droite du panneau (1 px) |
 | `--side-nav-border-width-divider` | dimension | 2px | = | `Size025` | 1 / 0 | ok | Épaisseur du séparateur (2 px) |
+| `--side-nav-opacity-disabled` | number | 0.38 | = | `opacity.disabled` | 0 / 0 | ok | Opacité d'un item désactivé (standard disabled par opacité) |
+| `--side-nav-opacity-footer-brand` | number | 0.5 | = | `opacity.50` | 0 / 0 | ok | Opacité de la marque du pied (0,5) |
 | `--spinner-size-xsmall` | dimension | 8px | = | `Size100` | 2 / 0 | trop courte | Spinner xsmall (8 px) |
 | `--spinner-size-small` | dimension | 16px | = | `Size200` | 2 / 0 | trop courte | Spinner small (16 px) |
 | `--spinner-size-medium` | dimension | 24px | = | `Size300` | 2 / 0 | trop courte | Spinner medium (24 px) |

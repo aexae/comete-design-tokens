@@ -2,6 +2,20 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-20 — on-light-surface / on-dark-surface, critical bold sombre, suite des tokens de composant (0.33.0)
+
+**Décision** (Axel) :
+
+- **Renommage cassant** : `text.on-warning` et `icon.on-warning` deviennent `text.on-light-surface` et `icon.on-light-surface`. `text.on-comete` et `icon.on-comete` deviennent `text.on-dark-surface` et `icon.on-dark-surface`. Le nom décrit la surface (claire ou sombre fixe) et non plus une famille de couleur, car les deux servent désormais à plusieurs familles. Mêmes renommages dans Figma (liaisons conservées).
+- **`icon.on-light-surface` passe de cool-grey.900 à 950**, aligné sur Figma et sur `text.on-light-surface`.
+- **`background.critical.bold` en sombre** aligné sur la modification d'Axel dans Figma : red 600 / 500 / 400 (au lieu de 400 / 300 / 200), pour mieux ressortir. Le repos vaut red 600 dans les deux thèmes : les textes et icônes posés dessus passent en `on-dark-surface` (blanc fixe) au lieu de `inverted` (encre en sombre). Côté tokens : `button.color.contained.critical.text`, `banner.color.critical.{text,icon}`.
+- **Banner** : apparence `discovery` (nouveautés, mises à jour majeures) sur `background.accent.purple.bold`, `banner.size.icon` (Size300, largeur et hauteur de l'icône).
+- **SideNav** : `side-nav.spacing.item.padding-y` à Space050 (item de 32 px sans description). `side-nav.size.width` (240 px) et `side-nav.size.header.min-height` (72 px) en valeurs brutes, `side-nav.opacity.disabled` (standard disabled par opacité), `side-nav.opacity.footer-brand` (0,5 au lieu de 0,55).
+- **BottomNav** : `bottom-nav.color.item.{label,icon}.disabled` supprimés : ils aliasaient des tokens dépréciés. Le disabled passe par l'opacité seule.
+- **PageToolbar** : `page-toolbar.size.search.{min-width,max-width}` (160 et 240 px) en valeurs brutes.
+- **Valeurs brutes au niveau composant** : quand aucun token d'échelle ne correspond (240, 72, 160 px), la valeur est portée par le token de composant plutôt que par un nouveau token d'échelle, comme `avatar-group.spacing.overlap`. Une échelle globale ne gagne une valeur que si plusieurs composants la partagent.
+- **Règle** : aucun nouvel usage d'un élément déprécié, y compris via un alias de token de composant. En cas de besoin, arbitrage d'Axel.
+
 ## 2026-11-20 — `icon.on-comete`, voiles ramenés à deux rôles (0.32.0)
 
 **Décisions** (Axel, sur rapport d'analyse des usages Figma et code) :

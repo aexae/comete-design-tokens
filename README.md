@@ -97,23 +97,30 @@ Base : `--space100` vaut **8 px**. Chaque cran suit la formule `(numéro / 100) 
 
 ### Sémantiques
 
-Sept familles, déclinées par **intention** puis par **état** (`default`, `hovered`, `pressed`, `disabled`, `selected`) :
+Sept familles (plus `surface`), déclinées par **intention** puis par **état** (`default`, `hovered`, `pressed`, `disabled`, `selected`) :
 
 | Famille | Intentions |
 |---|---|
-| `--background-*` (148) | `default`, `surface`, `neutral`, `comete`, `brand`, `selected`, `focused`, `disabled`, `success`, `warning`, `critical`, `information`, `accent`, `cycle` |
-| `--border-*` (37) | `default`, `neutral`, `subtle`, `bold`, `focused`, `focus-inverted`, `selected`, `selected-inverted`, `inverted`, `invisible`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `disabled` |
+| `--background-*` (136) | `default`, `neutral`, `comete`, `brand`, `selected`, `focused`, `disabled`, `success`, `warning`, `critical`, `information`, `accent`, `cycle` |
+| `--surface-*` (19) | `default`, `sunken`, `raise`, `overlay`, `mask`, `comete` (voir la doctrine background vs surface) |
+| `--border-*` (39) | `default`, `neutral`, `subtle`, `bold`, `focused`, `focus-inverted`, `selected`, `selected-inverted`, `inverted`, `invisible`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `disabled` |
 | `--text-*` (53) | `default`, `subtle`, `subtlest`, `inverted`, `subtle-inverted`, `link`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `on-light-surface`, `on-dark-surface` |
-| `--icon-*` (21) | `default`, `bold`, `subtle`, `subtlest`, `inverted`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `on-light-surface`, `on-dark-surface` |
+| `--icon-*` (24) | `default`, `bold`, `subtle`, `subtlest`, `inverted`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `on-light-surface`, `on-dark-surface` |
 | `--logo-*` (7) | `comete` : `default`, `neutral`, `inverted`, `subtle`, `subtle-inverted`, `gradient-light`, `gradient-dark` |
-| `--blanket-*` (1) | voile plein écran des couches modales (le voile local est `--background-surface-mask-*`) |
+| `--blanket-*` (1) | voile plein écran des couches modales (le voile local est `--surface-mask-*`) |
 
 #### `comete-*` vs `brand-*`
 
 - **`comete-*`** — couleur fixe de la marque Comète, jamais surchargée par un client.
 - **`brand-*`** — charte du client, surchargeable à l'exécution. **Miroir rôle pour rôle de `comete-*`**, mêmes valeurs par défaut (bleu Comète). Le design system fournit un `BrandProvider` qui génère et injecte ces valeurs.
 
-Chaque famille porte quatre niveaux d'emphase de fond : `subtlest`, `subtler`, `bold` (bleu action, `comete-blue-700`, pour les contrôles et appels à l'action) et `boldest` (navy, `comete-blue-950`, identité et chrome, jamais sur un contrôle). `text`, `border` et `icon` ont aussi leur `boldest`. La surface navy non interactive est `--background-surface-comete` (identique en clair et en sombre).
+Chaque famille porte quatre niveaux d'emphase de fond : `subtlest`, `subtler`, `bold` (bleu action, `comete-blue-700`, pour les contrôles et appels à l'action) et `boldest` (navy, `comete-blue-950`, identité et chrome, jamais sur un contrôle). `text`, `border` et `icon` ont aussi leur `boldest`. La surface navy non interactive est `--surface-comete` (identique en clair et en sombre).
+
+#### `surface-*` vs `background-*` (doctrine)
+
+- **Surface** : ce sur quoi on pose du contenu. Page, panneau, carte, dialogue, menu, cellule. Une surface ne porte pas de sens, elle porte une **profondeur** : `sunken` (en retrait), `default` (la page), `raise` (carte, panneau), `overlay` (menu, popover, dialogue). Un contenant a une seule surface, un contenant imbriqué monte d'un cran. Les tokens `text-*`, `border-*` et `icon-*` sont calibrés sur `--surface-default`. `mask` est le voile local posé sur un élément (chargement, média cliquable), `comete` la surface navy fixe des en-têtes et pages de présentation.
+- **Background** : ce qu'un composant **peint pour dire quelque chose**. Neutre, marque, statut, sélection, avec une échelle d'emphase (`subtlest` → `boldest`) et des états (`hovered`, `pressed`). Un background se pose sur une surface, jamais l'inverse. `--background-default-*` est le remplissage des champs et contrôles (entrée de saisie, case à cocher, pouce du Switch).
+- **Test de décision** : la couleur dit-elle quelque chose (emphase, statut, marque) ? Background. Elle ne dit que la profondeur de ce qui est posé dessus ? Surface. Un cadre de démonstration « fond sombre » est donc `--surface-default` en thème sombre, pas un background.
 
 #### Couleurs `disabled` (doctrine)
 

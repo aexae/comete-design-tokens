@@ -458,26 +458,6 @@
   --background-selected-subtlest-default: #dceefd;
   --background-default-default: #ffffff;
   --background-default-inverted: #252a2c;
-  --background-surface-default: #ffffff;
-  --background-surface-mask-default: rgba(5, 12, 31, 0.49); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
-  --background-surface-mask-hovered: rgba(11, 18, 14, 0.14); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
-  --background-surface-mask-pressed: rgba(8, 15, 33, 0.31); /** Voile local à la pression d'un média cliquable : plus dense que hovered, moins que default. */
-  --background-surface-elevation-sunken-default: #f7f8f8;
-  --background-surface-elevation-sunken-hovered: #eaedee;
-  --background-surface-elevation-sunken-pressed: #d8dedf;
-  --background-surface-elevation-overlay-default: #ffffff;
-  --background-surface-elevation-overlay-critical: #fef2f2;
-  --background-surface-elevation-overlay-success: #ebfef4;
-  --background-surface-elevation-overlay-accent-purple: #f3f0ff;
-  --background-surface-elevation-overlay-accent-teal: #eefafd;
-  --background-surface-elevation-overlay-accent-turquoise: #edfffd;
-  --background-surface-elevation-overlay-accent-magenta: #fcf3f9;
-  --background-surface-elevation-overlay-accent-blue-grey: #f5f7fa;
-  --background-surface-elevation-overlay-information: #eff8ff;
-  --background-surface-elevation-overlay-warning: #fdfee8;
-  --background-surface-elevation-raise-default: #ffffff;
-  --background-surface-critical: #fef2f2;
-  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --background-success-bold-default: #00784d;
   --background-success-bold-hovered: #036240;
   --background-success-bold-pressed: #245041;
@@ -572,6 +552,25 @@
   --background-cycle-day-subtlest-hovered: #fff6d4;
   --background-cycle-day-subtlest-pressed: #ffe8a9;
   --background-focused-default: #429aef;
+  --surface-default: #ffffff;
+  --surface-sunken-default: #f7f8f8;
+  --surface-sunken-hovered: #eaedee;
+  --surface-sunken-pressed: #d8dedf;
+  --surface-raise-default: #ffffff;
+  --surface-overlay-default: #ffffff;
+  --surface-overlay-critical: #fef2f2;
+  --surface-overlay-success: #ebfef4;
+  --surface-overlay-accent-purple: #f3f0ff;
+  --surface-overlay-accent-teal: #eefafd;
+  --surface-overlay-accent-turquoise: #edfffd;
+  --surface-overlay-accent-magenta: #fcf3f9;
+  --surface-overlay-accent-blue-grey: #f5f7fa;
+  --surface-overlay-information: #eff8ff;
+  --surface-overlay-warning: #fdfee8;
+  --surface-mask-default: rgba(5, 12, 31, 0.49); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
+  --surface-mask-hovered: rgba(8, 15, 33, 0.31); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
+  --surface-mask-pressed: rgba(11, 18, 14, 0.14); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
+  --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --text-default-default: #252a2c;
   --text-default-hovered: #374043;
   --text-default-pressed: #3f4a4d;
@@ -746,26 +745,6 @@
   --background-selected-subtlest-default: #1e3661;
   --background-default-default: #252a2c;
   --background-default-inverted: #ffffff;
-  --background-surface-default: #374043;
-  --background-surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
-  --background-surface-mask-hovered: rgba(166, 197, 226, 0.16); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
-  --background-surface-mask-pressed: rgba(191, 219, 248, 0.28); /** Voile local à la pression d'un média cliquable : plus dense que hovered, moins que default. */
-  --background-surface-elevation-sunken-default: #252a2c;
-  --background-surface-elevation-sunken-hovered: #374043;
-  --background-surface-elevation-sunken-pressed: #3f4a4d;
-  --background-surface-elevation-overlay-default: #3f4a4d;
-  --background-surface-elevation-overlay-critical: #2e1717;
-  --background-surface-elevation-overlay-success: #0e2d24;
-  --background-surface-elevation-overlay-accent-purple: #292442;
-  --background-surface-elevation-overlay-accent-teal: #0f2b3d;
-  --background-surface-elevation-overlay-accent-turquoise: #00373a;
-  --background-surface-elevation-overlay-accent-magenta: #47102d;
-  --background-surface-elevation-overlay-accent-blue-grey: #1e2533;
-  --background-surface-elevation-overlay-information: #023059;
-  --background-surface-elevation-overlay-warning: #292410;
-  --background-surface-elevation-raise-default: #49585b;
-  --background-surface-critical: #2e1717;
-  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --background-success-bold-default: #0abf76;
   --background-success-bold-hovered: #2fd88e;
   --background-success-bold-pressed: #6aebae;
@@ -860,6 +839,25 @@
   --background-cycle-day-subtlest-hovered: #7e4210;
   --background-cycle-day-subtlest-pressed: #9c4f10;
   --background-focused-default: #66b8f4;
+  --surface-default: #374043;
+  --surface-sunken-default: #252a2c;
+  --surface-sunken-hovered: #374043;
+  --surface-sunken-pressed: #3f4a4d;
+  --surface-raise-default: #49585b;
+  --surface-overlay-default: #3f4a4d;
+  --surface-overlay-critical: #2e1717;
+  --surface-overlay-success: #0e2d24;
+  --surface-overlay-accent-purple: #292442;
+  --surface-overlay-accent-teal: #0f2b3d;
+  --surface-overlay-accent-turquoise: #00373a;
+  --surface-overlay-accent-magenta: #47102d;
+  --surface-overlay-accent-blue-grey: #1e2533;
+  --surface-overlay-information: #023059;
+  --surface-overlay-warning: #292410;
+  --surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
+  --surface-mask-hovered: rgba(191, 219, 248, 0.28); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
+  --surface-mask-pressed: rgba(166, 197, 226, 0.16); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
+  --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --text-default-default: #f7f8f8;
   --text-default-hovered: #eaedee;
   --text-default-pressed: #d8dedf;
@@ -1032,26 +1030,6 @@
     --background-selected-subtlest-default: #1e3661;
     --background-default-default: #252a2c;
     --background-default-inverted: #ffffff;
-    --background-surface-default: #374043;
-    --background-surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
-    --background-surface-mask-hovered: rgba(166, 197, 226, 0.16); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
-    --background-surface-mask-pressed: rgba(191, 219, 248, 0.28); /** Voile local à la pression d'un média cliquable : plus dense que hovered, moins que default. */
-    --background-surface-elevation-sunken-default: #252a2c;
-    --background-surface-elevation-sunken-hovered: #374043;
-    --background-surface-elevation-sunken-pressed: #3f4a4d;
-    --background-surface-elevation-overlay-default: #3f4a4d;
-    --background-surface-elevation-overlay-critical: #2e1717;
-    --background-surface-elevation-overlay-success: #0e2d24;
-    --background-surface-elevation-overlay-accent-purple: #292442;
-    --background-surface-elevation-overlay-accent-teal: #0f2b3d;
-    --background-surface-elevation-overlay-accent-turquoise: #00373a;
-    --background-surface-elevation-overlay-accent-magenta: #47102d;
-    --background-surface-elevation-overlay-accent-blue-grey: #1e2533;
-    --background-surface-elevation-overlay-information: #023059;
-    --background-surface-elevation-overlay-warning: #292410;
-    --background-surface-elevation-raise-default: #49585b;
-    --background-surface-critical: #2e1717;
-    --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
     --background-success-bold-default: #0abf76;
     --background-success-bold-hovered: #2fd88e;
     --background-success-bold-pressed: #6aebae;
@@ -1146,6 +1124,25 @@
     --background-cycle-day-subtlest-hovered: #7e4210;
     --background-cycle-day-subtlest-pressed: #9c4f10;
     --background-focused-default: #66b8f4;
+    --surface-default: #374043;
+    --surface-sunken-default: #252a2c;
+    --surface-sunken-hovered: #374043;
+    --surface-sunken-pressed: #3f4a4d;
+    --surface-raise-default: #49585b;
+    --surface-overlay-default: #3f4a4d;
+    --surface-overlay-critical: #2e1717;
+    --surface-overlay-success: #0e2d24;
+    --surface-overlay-accent-purple: #292442;
+    --surface-overlay-accent-teal: #0f2b3d;
+    --surface-overlay-accent-turquoise: #00373a;
+    --surface-overlay-accent-magenta: #47102d;
+    --surface-overlay-accent-blue-grey: #1e2533;
+    --surface-overlay-information: #023059;
+    --surface-overlay-warning: #292410;
+    --surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
+    --surface-mask-hovered: rgba(191, 219, 248, 0.28); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
+    --surface-mask-pressed: rgba(166, 197, 226, 0.16); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
+    --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
     --text-default-default: #f7f8f8;
     --text-default-hovered: #eaedee;
     --text-default-pressed: #d8dedf;
@@ -1399,7 +1396,7 @@
   --banner-color-discovery-icon: var(--icon-inverted); /** Icône du bandeau discovery */
   --banner-spacing-gap: var(--space150); /** Espace entre l'icône et le message (12 px) */
   --banner-spacing-padding: var(--space150); /** Marge intérieure du bandeau sur les quatre côtés (12 px) */
-  --bottom-nav-color-background: var(--background-surface-default); /** Fond de la barre */
+  --bottom-nav-color-background: var(--surface-default); /** Fond de la barre */
   --bottom-nav-color-item-label-default: var(--text-subtlest-default); /** Libellé d'un item au repos */
   --bottom-nav-color-item-label-selected: var(--text-selected); /** Libellé d'un item sélectionné ou ouvert */
   --bottom-nav-color-item-icon-default: var(--icon-subtlest); /** Icône d'un item au repos */
@@ -1672,7 +1669,7 @@
   --button-spacing-touch-gap: var(--space050);
   --button-spacing-touch-padding-y: var(--space100);
   --page-bar-color-title: var(--text-default-default); /** Titre de la barre de page */
-  --page-bar-color-compact-background: var(--background-surface-default); /** Fond de la barre compacte, épinglée en haut au défilement */
+  --page-bar-color-compact-background: var(--surface-default); /** Fond de la barre compacte, épinglée en haut au défilement */
   --page-bar-color-compact-border: var(--border-subtle); /** Filet bas de la barre compacte */
   --page-bar-spacing-gap: var(--space100); /** Espace entre les zones leading, titre et trailing (8 px) */
   --page-bar-spacing-trailing-gap: var(--space100); /** Espace entre les actions de la zone trailing (8 px) */
@@ -1687,7 +1684,7 @@
   --page-spacing-body-padding-top: var(--space100); /** Retrait haut du Body, sous la toolbar (8 px). Pas de retrait bas */
   --page-spacing-state-padding-y: var(--space600); /** Marge verticale de l'état vide ou erreur centré dans le Body (48 px) */
   --page-spacing-skeleton-gap: var(--space300); /** Espace entre les blocs du squelette de chargement du Body (24 px) */
-  --side-nav-color-surface-background: var(--background-surface-default); /** Fond du panneau de navigation (aussi le fond au survol d'un item désactivé) */
+  --side-nav-color-surface-background: var(--surface-default); /** Fond du panneau de navigation (aussi le fond au survol d'un item désactivé) */
   --side-nav-color-surface-border: var(--border-subtle); /** Bordure droite du panneau, séparation avec le contenu */
   --side-nav-color-header-title: var(--text-default-default); /** Nom de l'application dans l'en-tête */
   --side-nav-color-header-subtitle: var(--text-subtlest-default); /** Sous-titre de l'en-tête (module, client) */

@@ -2,6 +2,18 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-20 — `surface.*` sort de `background`, doctrine surface vs background, voile du MediaPicker (0.34.0)
+
+**Décision** (Axel) :
+
+- **Renommage cassant** : la famille `background.surface.*` devient `surface.*`, hors de `background`, comme `elevation.surface` chez Atlassian. La hiérarchie est aplatie en même temps : le niveau `elevation` disparaît (`surface.{default, sunken, raise, overlay, mask, comete}`), parce que `--elevation-*` désigne déjà les ombres. CSS : `--background-surface-elevation-sunken-default` → `--surface-sunken-default`, `--background-surface-default` → `--surface-default`, etc. Figma : mêmes renommages dans `semantics` (liaisons conservées, code syntax mis à jour).
+- **`background.surface.critical` supprimé** : doublon de `surface.overlay.critical` (mêmes valeurs), sans consommateur. Figma : renommée `DEPRECATED-surface/critical`.
+- **Doctrine écrite** (README) : surface = ce sur quoi on pose du contenu, profondeur sans sens ; background = ce qu'un composant peint pour porter un sens ou une emphase. Test : la couleur dit-elle quelque chose ? background. Sinon, surface. Le cadre « Dark background » du Spinner dans Figma est relié à `surface/default` en mode sombre (Axel), conforme à la règle, et `DEPRECATED-background/alpha/default` est supprimée.
+- **`surface.mask`** : hovered et pressed inversés pour suivre la correction d'Axel dans Figma. Le voile s'allège à mesure que l'on interagit : `default` 500A, `hovered` 400A, `pressed` 300A (grey-alpha en clair, dark-grey-alpha en sombre).
+- **`background.default.*`** reste : c'est le remplissage des champs et contrôles (Figma : entrée de saisie, Checkbox, pouce du Switch), distinct de `surface.default` en thème sombre (cool-grey 950 contre 900). Le DS y rebranche Checkbox et Switch.
+
+**Contexte / raison** : la question du cadre Spinner (neutral.bold ou surface.comete ?) a montré qu'aucune règle n'écrivait la frontière entre les deux familles, qui cohabitaient sous la même racine. Les DS de référence (Atlassian, Material 3, Carbon, Polaris) séparent tous couches et remplissages. Sortir la famille rend la séparation lisible dans le nom. Propagation : DS alpha.194 (28 usages), comete-icons inchangé.
+
 ## 2026-11-20 — on-light-surface / on-dark-surface, critical bold sombre, suite des tokens de composant (0.33.0)
 
 **Décision** (Axel) :

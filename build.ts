@@ -7,6 +7,7 @@ import { extractVars } from "./src/css-utils.js";
 const CSS_DIR = "./build/css";
 const semanticPrefixes = [
   "background",
+  "surface",
   "text",
   "border",
   "icon",

@@ -214,104 +214,6 @@
         "$value": "{white.100}"
       }
     },
-    "surface": {
-      "default": {
-        "$type": "color",
-        "$value": "{cool-grey.900}"
-      },
-      "mask": {
-        "default": {
-          "$type": "color",
-          "$value": "{dark-grey.alpha.500A}",
-          "$description": "Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default."
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{dark-grey.alpha.300A}",
-          "$description": "Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image."
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{dark-grey.alpha.400A}",
-          "$description": "Voile local à la pression d'un média cliquable : plus dense que hovered, moins que default."
-        }
-      },
-      "elevation": {
-        "sunken": {
-          "default": {
-            "$type": "color",
-            "$value": "{cool-grey.950}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{cool-grey.900}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{cool-grey.800}"
-          }
-        },
-        "overlay": {
-          "default": {
-            "$type": "color",
-            "$value": "{cool-grey.800}"
-          },
-          "critical": {
-            "$type": "color",
-            "$value": "{red.950}"
-          },
-          "success": {
-            "$type": "color",
-            "$value": "{green.950}"
-          },
-          "accent": {
-            "purple": {
-              "$type": "color",
-              "$value": "{purple.950}"
-            },
-            "teal": {
-              "$type": "color",
-              "$value": "{teal.950}"
-            },
-            "turquoise": {
-              "$type": "color",
-              "$value": "{turquoise.950}"
-            },
-            "magenta": {
-              "$type": "color",
-              "$value": "{magenta.950}"
-            },
-            "blue-grey": {
-              "$type": "color",
-              "$value": "{blue-grey.950}"
-            }
-          },
-          "information": {
-            "$type": "color",
-            "$value": "{blue.950}"
-          },
-          "warning": {
-            "$type": "color",
-            "$value": "{yellow.950}"
-          }
-        },
-        "raise": {
-          "default": {
-            "$type": "color",
-            "$value": "{cool-grey.700}"
-          }
-        }
-      },
-      "critical": {
-        "$type": "color",
-        "$value": "{red.950}"
-      },
-      "comete": {
-        "$type": "color",
-        "$value": "{comete.blue.950}",
-        "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest."
-      }
-    },
     "success": {
       "bold": {
         "default": {
@@ -777,6 +679,98 @@
         "$type": "color",
         "$value": "{comete.blue.400}"
       }
+    }
+  },
+  "surface": {
+    "default": {
+      "$type": "color",
+      "$value": "{cool-grey.900}"
+    },
+    "sunken": {
+      "default": {
+        "$type": "color",
+        "$value": "{cool-grey.950}"
+      },
+      "hovered": {
+        "$type": "color",
+        "$value": "{cool-grey.900}"
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{cool-grey.800}"
+      }
+    },
+    "raise": {
+      "default": {
+        "$type": "color",
+        "$value": "{cool-grey.700}"
+      }
+    },
+    "overlay": {
+      "default": {
+        "$type": "color",
+        "$value": "{cool-grey.800}"
+      },
+      "critical": {
+        "$type": "color",
+        "$value": "{red.950}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{green.950}"
+      },
+      "accent": {
+        "purple": {
+          "$type": "color",
+          "$value": "{purple.950}"
+        },
+        "teal": {
+          "$type": "color",
+          "$value": "{teal.950}"
+        },
+        "turquoise": {
+          "$type": "color",
+          "$value": "{turquoise.950}"
+        },
+        "magenta": {
+          "$type": "color",
+          "$value": "{magenta.950}"
+        },
+        "blue-grey": {
+          "$type": "color",
+          "$value": "{blue-grey.950}"
+        }
+      },
+      "information": {
+        "$type": "color",
+        "$value": "{blue.950}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{yellow.950}"
+      }
+    },
+    "mask": {
+      "default": {
+        "$type": "color",
+        "$value": "{dark-grey.alpha.500A}",
+        "$description": "Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default."
+      },
+      "hovered": {
+        "$type": "color",
+        "$value": "{dark-grey.alpha.400A}",
+        "$description": "Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image."
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{dark-grey.alpha.300A}",
+        "$description": "Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt."
+      }
+    },
+    "comete": {
+      "$type": "color",
+      "$value": "{comete.blue.950}",
+      "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest."
     }
   },
   "text": {

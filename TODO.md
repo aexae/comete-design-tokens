@@ -5,10 +5,13 @@
 ## Suites de `icon.on-comete` et des voiles (2026-11-20)
 
 - ~~**`icon.on-warning` : dérive Figma ↔ repo**~~ : FAIT en 0.33.0, `icon.on-light-surface` (ex `icon.on-warning`) vaut cool-grey.950 partout.
-- **comete-icons** : `IconColor` n'a pas de valeur `on-comete` (ni classe `.comete-icon--on-comete`). Le DS passe par l'override `--icon-default` dans Card ; ajouter la couleur dans comete-icons pour un usage direct `<Icon color="on-comete" />`.
-- **Cadre « Dark background » de la page Spinner (Figma)** : encore lié à `DEPRECATED-background/alpha/default`. À relier à une surface une fois la règle background vs surface posée, puis supprimer la variable.
-- **background vs surface** : la question posée par le cadre Spinner (neutral.bold ou surface.comete ?) révèle l'absence de règle écrite. Proposition et pratiques des autres DS dans la réponse du 2026-11-20 ; à consigner dans DECISIONS une fois tranchée.
-- **Lot A** : les descriptions de `blanket`, `surface.mask.*` sont désormais sur main ; retirer du lot A celles des tokens supprimés (`interaction.*`, `alpha.default`).
+- ~~**comete-icons** : `IconColor` n'a pas de valeur `on-comete`~~ : FAIT, `on-dark-surface` en comete-icons 0.13.0.
+- ~~**Cadre « Dark background » de la page Spinner (Figma)**~~ : FAIT, relié à `surface/default` en mode sombre (Axel), `DEPRECATED-background/alpha/default` supprimée.
+- ~~**background vs surface**~~ : FAIT, doctrine dans le README et DECISIONS (0.34.0).
+- **Lot A** : les descriptions de `blanket`, `surface.mask.*` sont désormais sur main ; retirer du lot A celles des tokens supprimés (`interaction.*`, `alpha.default`, `surface.critical`) et reprendre les chemins `surface.*` (0.34.0).
+- **`surface.comete`** : une surface qui porte la marque (navy) est à la frontière de la doctrine (une surface ne porte pas de sens). Tolérée parce que non interactive et sans état ; si un second cas apparaît (surface critical, surface brand), préférer un `background.*.boldest` et ne pas étendre `surface`.
+- **`background.default.*`** : nom trompeur depuis la doctrine (c'est le remplissage des champs et contrôles, pas « le fond par défaut »). Candidat à un renommage `background.field.*` ou `background.input.*`, avec `inverted` à reclasser. À trancher avec le lot A.
+- **Badge** (DS) : l'anneau de découpe (`box-shadow`) et la bordure d'AvatarGroup gardent `--surface-default` parce qu'ils imitent la surface sous l'élément. Documenter dans la description de `surface.default`.
 
 ## Tokens de composant Banner, Page, SideNav, BottomNav : écarts Figma / code (2026-11-20)
 
@@ -68,13 +71,12 @@ Reste ouvert :
 Relevé pendant l'alignement `brand` = `comete` (0.26.0). À traiter dans le chantier
 « descriptions » (lot A, surfaces, et lot C, brand / comete).
 
-- **Surfaces incohérentes** (signalé par Axel) : `background.surface.critical` double
-  `background.surface.elevation.overlay.critical` (mêmes valeurs) ; `surface.comete` et
-  `surface.mask` sont à plat quand les autres sont sous `elevation.{sunken,raise,
-  overlay}` ; `overlay.default` et `raise.default` valent tous deux `white.100` en clair ;
-  `overlay.warning` pointe sur `yellow.50` dans le repo et `orange/50` dans Figma.
-  Figma porte encore `DEPRECATED-background/surface/comete` à côté de
-  `background/surface/comete`. Décider d'une seule hiérarchie et la décrire.
+- **Surfaces** (signalé par Axel) : ~~`surface.critical` doublon de `overlay.critical`, hiérarchie
+  à plat contre `elevation`~~ réglé en 0.34.0 (`surface.*` aplati, `critical` supprimé). Restent :
+  `overlay.default` et `raise.default` valent tous deux `white.100` en clair (distinguer par
+  l'ombre, ou fusionner) ; `overlay.warning` pointe sur `yellow.50` dans le repo et `orange/50`
+  dans Figma (dérive à trancher) ; Figma porte encore `DEPRECATED-background/surface/comete` et
+  `DEPRECATED-background/surface/elevation/overlay/accent` (à supprimer avec leurs instances).
 - ~~**Valeurs Figma ≠ repo sur `comete` / `brand`**~~ fait en 0.27.0 (2026-11-19) : Figma
   réaligné sur le code (`bold`, `subtlest` des deux familles), `logo/comete/default`
   sombre passé à blanc dans le code, `border/brand` sans suffixe déprécié dans Figma.

@@ -21,6 +21,13 @@ Variables créées dans Figma mais non liées là où Figma et le code divergent
 - **SideNav** : fond `surface/elevation/overlay` (Figma) contre `surface/default` (code), bordure `border/default` contre `border/subtle`, ligne de description absente du code, titre de section `xxxs` contre `xxs`, logo 32 contre 40 px : à trancher. Faits en 0.33.0 : indicateur de sélection retiré de Figma, retraits du code reportés dans Figma, item à 32 px (padding-y 4), disabled en opacité, largeur 240 px, en-tête 72 px, opacité 0,5 du pied. Restent : transition `100ms ease` en dur, variables distantes `space/150` et `space/075` sur les Slot, `DEPRECATED-logo/brand/default` sur les logos.
 - **BottomNav** : faits en 0.33.0 : padding horizontal 4 px dans Figma, bouton d'action sur `comete.bold`, disabled en opacité seule. Restent : rayon de la barre et home indicator seulement dans Figma, cellule de l'action Figma avec paddings et rayon sans équivalent code, badge sur `-DEPRECATED-badge/*`, QuickActions mélange brand et comete.
 - ~~**Garde des tokens dépréciés contournée**~~ : FAIT en 0.33.0, `tests/deprecated.test.ts` interdit tout alias d'un token de composant vers un token `$deprecated`.
+- **Reliquats Figma relevés le 2026-11-20** :
+  - Card : aucune variante bold critical dans Figma (le code l'a, texte en `on-dark-surface`).
+  - Switch : Figma pose une icône `icon/on-dark-surface` sur un cadre critical bold, le code n'a pas cette combinaison (pouce blanc, glyphe critical). À aligner.
+  - PageToolbar : les variantes avec filtres actifs ont une largeur min de recherche de 120 px dans Figma, 160 px dans le code. Non liée.
+  - SideNav : 2 indicateurs de sélection masqués dans d'anciens `Code parts / <Side navigation item>` (suppression refusée par Figma), master de l'indicateur conservé pour cette raison.
+  - Banner : en-tête de la frame Parts encore sur `DEPRECATED-icon/accent` et `DEPRECATED-text/accent-inverted`.
+  - Button et Tag outlined : variables `*/outlined/*/text/inverted` à revoir (hors fonds critical bold).
 
 ## Text accent et link (2026-11-19)
 

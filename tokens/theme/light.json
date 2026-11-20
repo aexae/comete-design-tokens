@@ -99,7 +99,7 @@
         "default": {
           "$type": "color",
           "$value": "{comete.blue.950}",
-          "$description": "Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle."
+          "$description": "Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-comete."
         },
         "hovered": {
           "$type": "color",
@@ -160,7 +160,7 @@
         "default": {
           "$type": "color",
           "$value": "{comete.blue.950}",
-          "$description": "Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.inverted (12:1)."
+          "$description": "Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-comete (12:1), jamais text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -296,7 +296,7 @@
       "comete": {
         "$type": "color",
         "$value": "{comete.blue.950}",
-        "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.inverted (12:1). Pour une carte ou un bloc avec états, background.comete.boldest."
+        "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-comete (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest."
       }
     },
     "success": {
@@ -833,10 +833,6 @@
       "$type": "color",
       "$value": "{cool-grey.300}"
     },
-    "subtlest-inverted": {
-      "$type": "color",
-      "$value": "{cool-grey.500}"
-    },
     "success": {
       "default": {
         "$type": "color",
@@ -1020,6 +1016,11 @@
     "on-warning": {
       "$type": "color",
       "$value": "{cool-grey.950}"
+    },
+    "on-comete": {
+      "$type": "color",
+      "$value": "{white.100}",
+      "$description": "Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Modèle de text.on-warning. Pas sur les fonds bold qui suivent le thème (text.inverted)."
     }
   },
   "border": {
@@ -1315,7 +1316,7 @@
     },
     "bold": {
       "$type": "color",
-      "$value": "{cool-grey.900}"
+      "$value": "{cool-grey.950}"
     }
   },
   "logo": {
@@ -1336,10 +1337,6 @@
       "neutral": {
         "$type": "color",
         "$value": "{comete.blue.900}"
-      },
-      "subtlest": {
-        "$type": "color",
-        "$value": "{cool-grey.600}"
       },
       "inverted": {
         "$type": "color",

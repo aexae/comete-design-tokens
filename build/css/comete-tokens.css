@@ -435,7 +435,7 @@
   --background-brand-subtler-default: #c1e3fc;
   --background-brand-subtler-hovered: #97d2f9;
   --background-brand-subtler-pressed: #66b8f4;
-  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. */
+  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-comete. */
   --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
   --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
   --background-comete-subtlest-default: #dceefd;
@@ -447,7 +447,7 @@
   --background-comete-subtler-default: #c1e3fc;
   --background-comete-subtler-hovered: #97d2f9;
   --background-comete-subtler-pressed: #66b8f4;
-  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.inverted (12:1). */
+  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-comete (12:1), jamais text.inverted. */
   --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
   --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
   --background-selected-bold-hovered: #224986;
@@ -475,7 +475,7 @@
   --background-surface-elevation-overlay-warning: #fdfee8;
   --background-surface-elevation-raise-default: #ffffff;
   --background-surface-critical: #fef2f2;
-  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.inverted (12:1). Pour une carte ou un bloc avec états, background.comete.boldest. */
+  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-comete (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --background-success-bold-default: #00784d;
   --background-success-bold-hovered: #036240;
   --background-success-bold-pressed: #245041;
@@ -624,6 +624,7 @@
   --text-comete-pressed: #2467d1;
   --text-comete-boldest: #1e3661; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
   --text-on-warning: #252a2c;
+  --text-on-comete: #ffffff; /** Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Modèle de text.on-warning. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --border-disabled: rgba(9, 9, 11, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #eaedee;
   --border-focused: #429aef;
@@ -685,7 +686,7 @@
   --icon-day: #f68909;
   --icon-night: #0076d8;
   --icon-on-warning: #374043;
-  --icon-bold: #374043;
+  --icon-bold: #252a2c;
   --logo-comete-default: #1e3661; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
   --logo-comete-gradient-light: #fff146;
@@ -726,7 +727,7 @@
   --background-brand-subtler-default: #2354aa;
   --background-brand-subtler-hovered: #2467d1;
   --background-brand-subtler-pressed: #2c7ee4;
-  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. */
+  --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-comete. */
   --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
   --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
   --background-comete-subtlest-default: #1e3661;
@@ -738,7 +739,7 @@
   --background-comete-subtler-default: #2354aa;
   --background-comete-subtler-hovered: #2467d1;
   --background-comete-subtler-pressed: #2c7ee4;
-  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.inverted (12:1). */
+  --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-comete (12:1), jamais text.inverted. */
   --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
   --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
   --background-selected-bold-hovered: #dceefd;
@@ -766,7 +767,7 @@
   --background-surface-elevation-overlay-warning: #292410;
   --background-surface-elevation-raise-default: #49585b;
   --background-surface-critical: #2e1717;
-  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.inverted (12:1). Pour une carte ou un bloc avec états, background.comete.boldest. */
+  --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-comete (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --background-success-bold-default: #0abf76;
   --background-success-bold-hovered: #2fd88e;
   --background-success-bold-pressed: #6aebae;
@@ -915,6 +916,7 @@
   --text-comete-pressed: #97d2f9;
   --text-comete-boldest: #f0f8fe; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
   --text-on-warning: #252a2c;
+  --text-on-comete: #ffffff; /** Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Modèle de text.on-warning. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #3f4a4d;
   --border-focused: #66b8f4;
@@ -976,7 +978,7 @@
   --icon-day: #feb939;
   --icon-night: #26b5ff;
   --icon-on-warning: #374043;
-  --icon-bold: #374043;
+  --icon-bold: #f7f8f8;
   --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
   --logo-comete-gradient-light: #fff146;
@@ -1015,7 +1017,7 @@
     --background-brand-subtler-default: #2354aa;
     --background-brand-subtler-hovered: #2467d1;
     --background-brand-subtler-pressed: #2c7ee4;
-    --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. */
+    --background-brand-boldest-default: #1e3661; /** Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-comete. */
     --background-brand-boldest-hovered: #224986; /** État survolé de background.brand.boldest.default. */
     --background-brand-boldest-pressed: #2354aa; /** État pressé de background.brand.boldest.default. */
     --background-comete-subtlest-default: #1e3661;
@@ -1027,7 +1029,7 @@
     --background-comete-subtler-default: #2354aa;
     --background-comete-subtler-hovered: #2467d1;
     --background-comete-subtler-pressed: #2c7ee4;
-    --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.inverted (12:1). */
+    --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-comete (12:1), jamais text.inverted. */
     --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
     --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
     --background-selected-bold-hovered: #dceefd;
@@ -1055,7 +1057,7 @@
     --background-surface-elevation-overlay-warning: #292410;
     --background-surface-elevation-raise-default: #49585b;
     --background-surface-critical: #2e1717;
-    --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.inverted (12:1). Pour une carte ou un bloc avec états, background.comete.boldest. */
+    --background-surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-comete (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
     --background-success-bold-default: #0abf76;
     --background-success-bold-hovered: #2fd88e;
     --background-success-bold-pressed: #6aebae;
@@ -1204,6 +1206,7 @@
     --text-comete-pressed: #97d2f9;
     --text-comete-boldest: #f0f8fe; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
     --text-on-warning: #252a2c;
+    --text-on-comete: #ffffff; /** Texte blanc fixe sur les surfaces navy fixes (background.surface.comete, background.comete.boldest, background.brand.boldest) : identique en clair et en sombre, 12:1 sur navy. Modèle de text.on-warning. Pas sur les fonds bold qui suivent le thème (text.inverted). */
     --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --border-subtle: #3f4a4d;
     --border-focused: #66b8f4;
@@ -1265,7 +1268,7 @@
     --icon-day: #feb939;
     --icon-night: #26b5ff;
     --icon-on-warning: #374043;
-    --icon-bold: #374043;
+    --icon-bold: #f7f8f8;
     --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
     --logo-comete-gradient-dark: #f8bf01;
     --logo-comete-gradient-light: #fff146;

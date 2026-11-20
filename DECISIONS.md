@@ -28,6 +28,17 @@
 
 **Contexte / raison** : les accents servent de couleur de texte à des éléments interactifs (Tag, Badge, Avatar) sans états. Les inverted étaient des tokens morts.
 
+## 2026-11-20 — text.on-comete, icon.bold aligné sur Figma (0.30.0)
+
+**Décisions** (Axel, à partir des faiblesses du lot A) :
+
+- **`text.on-comete`** : blanc fixe (`white.100`) dans les deux thèmes, sur le modèle de
+  `text.on-warning`, pour les surfaces navy fixes (`surface.comete`, `*.boldest`).
+  `text.inverted` suit le thème et tombait à 1,2:1 sur navy en sombre.
+- **`icon.bold`** : le code s'aligne sur Figma, `cool-grey.950` en clair et `cool-grey.50`
+  en sombre (était `cool-grey.900` dans les deux thèmes, invisible en sombre).
+- `text.subtlest.inverted` : laissé tel quel, traité par ailleurs.
+
 ## 2026-11-19 — Button contained subtle / subtlest : fond au repos tokenisé (0.28.0)
 
 **Décision** (Axel, sur capture Storybook) : `button.color.contained.{subtle,subtlest}.background.default`

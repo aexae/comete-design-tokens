@@ -456,8 +456,7 @@
   --background-selected-subtlest-pressed: #97d2f9;
   --background-selected-subtlest-hovered: #c1e3fc;
   --background-selected-subtlest-default: #dceefd;
-  --background-default-default: #ffffff;
-  --background-default-inverted: #252a2c;
+  --background-field-default: #ffffff; /** Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default. */
   --background-success-bold-default: #00784d;
   --background-success-bold-hovered: #036240;
   --background-success-bold-pressed: #245041;
@@ -571,6 +570,7 @@
   --surface-mask-hovered: rgba(8, 15, 33, 0.31); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
   --surface-mask-pressed: rgba(11, 18, 14, 0.14); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
   --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
+  --surface-inverted: #252a2c; /** Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page : démonstration d'un logo inversé, encart contrasté. Texte en text.inverted. Pas une surface navy (surface.comete) ni un fond de statut. */
   --text-default-default: #252a2c;
   --text-default-hovered: #374043;
   --text-default-pressed: #3f4a4d;
@@ -743,8 +743,7 @@
   --background-selected-subtlest-pressed: #2354aa;
   --background-selected-subtlest-hovered: #224986;
   --background-selected-subtlest-default: #1e3661;
-  --background-default-default: #252a2c;
-  --background-default-inverted: #ffffff;
+  --background-field-default: #252a2c; /** Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default. */
   --background-success-bold-default: #0abf76;
   --background-success-bold-hovered: #2fd88e;
   --background-success-bold-pressed: #6aebae;
@@ -858,6 +857,7 @@
   --surface-mask-hovered: rgba(191, 219, 248, 0.28); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
   --surface-mask-pressed: rgba(166, 197, 226, 0.16); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
   --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
+  --surface-inverted: #ffffff; /** Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page : démonstration d'un logo inversé, encart contrasté. Texte en text.inverted. Pas une surface navy (surface.comete) ni un fond de statut. */
   --text-default-default: #f7f8f8;
   --text-default-hovered: #eaedee;
   --text-default-pressed: #d8dedf;
@@ -1028,8 +1028,7 @@
     --background-selected-subtlest-pressed: #2354aa;
     --background-selected-subtlest-hovered: #224986;
     --background-selected-subtlest-default: #1e3661;
-    --background-default-default: #252a2c;
-    --background-default-inverted: #ffffff;
+    --background-field-default: #252a2c; /** Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default. */
     --background-success-bold-default: #0abf76;
     --background-success-bold-hovered: #2fd88e;
     --background-success-bold-pressed: #6aebae;
@@ -1143,6 +1142,7 @@
     --surface-mask-hovered: rgba(191, 219, 248, 0.28); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
     --surface-mask-pressed: rgba(166, 197, 226, 0.16); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
     --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
+    --surface-inverted: #ffffff; /** Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page : démonstration d'un logo inversé, encart contrasté. Texte en text.inverted. Pas une surface navy (surface.comete) ni un fond de statut. */
     --text-default-default: #f7f8f8;
     --text-default-hovered: #eaedee;
     --text-default-pressed: #d8dedf;
@@ -1401,7 +1401,7 @@
   --bottom-nav-color-item-background-selected: var(--background-selected-subtlest-default); /** Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé dessus */
   --bottom-nav-color-action-background: var(--background-comete-bold-default); /** Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client */
   --bottom-nav-color-action-icon: var(--icon-inverted); /** Icône du bouton d'action central */
-  --bottom-nav-color-action-cradle: var(--background-default-default); /** Anneau (cradle) autour de la moitié haute du bouton d'action */
+  --bottom-nav-color-action-cradle: var(--background-field-default); /** Anneau (cradle) autour de la moitié haute du bouton d'action */
   --bottom-nav-spacing-padding-top: var(--space050); /** Marge intérieure haute de la barre (4 px) */
   --bottom-nav-spacing-padding-x: var(--space050); /** Marges intérieures gauche et droite de la barre (4 px) */
   --bottom-nav-spacing-padding-bottom: var(--space300); /** Marge intérieure basse de la barre, réserve la zone du home indicator iOS (24 px) */

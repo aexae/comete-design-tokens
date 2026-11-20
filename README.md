@@ -101,8 +101,8 @@ Sept familles (plus `surface`), déclinées par **intention** puis par **état**
 
 | Famille | Intentions |
 |---|---|
-| `--background-*` (136) | `default`, `neutral`, `comete`, `brand`, `selected`, `focused`, `disabled`, `success`, `warning`, `critical`, `information`, `accent`, `cycle` |
-| `--surface-*` (19) | `default`, `sunken`, `raise`, `overlay`, `mask`, `comete` (voir la doctrine background vs surface) |
+| `--background-*` (135) | `field`, `neutral`, `comete`, `brand`, `selected`, `focused`, `disabled`, `success`, `warning`, `critical`, `information`, `accent`, `cycle` |
+| `--surface-*` (20) | `default`, `sunken`, `raise`, `overlay`, `mask`, `comete`, `inverted` (voir la doctrine background vs surface) |
 | `--border-*` (39) | `default`, `neutral`, `subtle`, `bold`, `focused`, `focus-inverted`, `selected`, `selected-inverted`, `inverted`, `invisible`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `disabled` |
 | `--text-*` (53) | `default`, `subtle`, `subtlest`, `inverted`, `subtle-inverted`, `link`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `on-light-surface`, `on-dark-surface` |
 | `--icon-*` (24) | `default`, `bold`, `subtle`, `subtlest`, `inverted`, `selected`, `disabled`, `comete`, `brand`, `success`, `warning`, `critical`, `information`, `accent`, `day`, `night`, `on-light-surface`, `on-dark-surface` |
@@ -118,8 +118,8 @@ Chaque famille porte quatre niveaux d'emphase de fond : `subtlest`, `subtler`, `
 
 #### `surface-*` vs `background-*` (doctrine)
 
-- **Surface** : ce sur quoi on pose du contenu. Page, panneau, carte, dialogue, menu, cellule. Une surface ne porte pas de sens, elle porte une **profondeur** : `sunken` (en retrait), `default` (la page), `raise` (carte, panneau), `overlay` (menu, popover, dialogue). Un contenant a une seule surface, un contenant imbriqué monte d'un cran. Les tokens `text-*`, `border-*` et `icon-*` sont calibrés sur `--surface-default`. `mask` est le voile local posé sur un élément (chargement, média cliquable), `comete` la surface navy fixe des en-têtes et pages de présentation.
-- **Background** : ce qu'un composant **peint pour dire quelque chose**. Neutre, marque, statut, sélection, avec une échelle d'emphase (`subtlest` → `boldest`) et des états (`hovered`, `pressed`). Un background se pose sur une surface, jamais l'inverse. `--background-default-*` est le remplissage des champs et contrôles (entrée de saisie, case à cocher, pouce du Switch).
+- **Surface** : ce sur quoi on pose du contenu. Page, panneau, carte, dialogue, menu, cellule. Une surface ne porte pas de sens, elle porte une **profondeur** : `sunken` (en retrait), `default` (la page), `raise` (carte, panneau), `overlay` (menu, popover, dialogue). Un contenant a une seule surface, un contenant imbriqué monte d'un cran. Les tokens `text-*`, `border-*` et `icon-*` sont calibrés sur `--surface-default`. `mask` est le voile local posé sur un élément (chargement, média cliquable), `comete` la surface navy fixe des en-têtes et pages de présentation, `inverted` la surface opposée au thème (encre en clair, blanc en sombre) pour un encart contrasté.
+- **Background** : ce qu'un composant **peint pour dire quelque chose**. Neutre, marque, statut, sélection, avec une échelle d'emphase (`subtlest` → `boldest`) et des états (`hovered`, `pressed`). Un background se pose sur une surface, jamais l'inverse. `--background-field-default` est le remplissage des champs et contrôles (entrée de saisie, case à cocher, pouce du Switch).
 - **Test de décision** : la couleur dit-elle quelque chose (emphase, statut, marque) ? Background. Elle ne dit que la profondeur de ce qui est posé dessus ? Surface. Un cadre de démonstration « fond sombre » est donc `--surface-default` en thème sombre, pas un background.
 
 #### Couleurs `disabled` (doctrine)

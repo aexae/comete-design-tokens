@@ -9,13 +9,13 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Lot | Tokens | Décrits (ok) | À écrire ou réécrire | Non consommés par le DS |
 |---|---:|---:|---:|---:|
-| A | 76 | 8 (11 %) | 64 | 24 |
+| A | 76 | 10 (13 %) | 62 | 26 |
 | B | 60 | 0 (0 %) | 60 | 25 |
 | C | 143 | 16 (11 %) | 127 | 81 |
 | D | 196 | 24 (12 %) | 172 | 82 |
 | E | 200 | 0 (0 %) | 200 | 193 |
-| F | 459 | 161 (35 %) | 298 | 10 |
-| **Total** | **1134** | **209 (18 %)** | **921** | **415** |
+| F | 459 | 161 (35 %) | 298 | 8 |
+| **Total** | **1134** | **211 (19 %)** | **919** | **415** |
 
 ## Lot A — sémantique neutre : text, background, border, icon (default, neutral, surface, selected…)
 
@@ -39,8 +39,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-selected-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 3 / 0 | absente |  |
 | `--background-selected-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 4 / 0 | absente |  |
 | `--background-selected-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 4 / 9 | absente |  |
-| `--background-default-default` | color | #ffffff | #252a2c | `white.100` | 6 / 12 | absente |  |
-| `--background-default-inverted` | color | #252a2c | #ffffff | `cool-grey.950` | 0 / 5 | absente |  |
+| `--background-field-default` | color | #ffffff | #252a2c | `white.100` | 0 / 0 | ok | Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce … |
 | `--background-focused-default` | color | #429aef | #66b8f4 | `comete.blue.500` | 4 / 0 | absente |  |
 | `--surface-default` | color | #ffffff | #374043 | `white.100` | 10 / 7 | absente |  |
 | `--surface-sunken-default` | color | #f7f8f8 | #252a2c | `cool-grey.50` | 2 / 14 | absente |  |
@@ -60,6 +59,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--surface-mask-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 0 / 0 | ok | Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'en… |
 | `--surface-mask-hovered` | color | #080f214f | #bfdbf847 | `grey.alpha.400A` | 0 / 0 | ok | Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour… |
 | `--surface-mask-pressed` | color | #0b120e24 | #a6c5e229 | `grey.alpha.300A` | 0 / 0 | ok | Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doi… |
+| `--surface-inverted` | color | #252a2c | #ffffff | `cool-grey.950` | 0 / 0 | ok | Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page :… |
 | `--text-default-default` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 59 / 52 | absente |  |
 | `--text-default-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
 | `--text-default-pressed` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | absente |  |
@@ -834,7 +834,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--bottom-nav-color-item-background-selected` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 3 / 0 | ok | Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé … |
 | `--bottom-nav-color-action-background` | color | #2467d1 | #f0f8fe | `background.comete.bold.default` | 1 / 0 | ok | Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client |
 | `--bottom-nav-color-action-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône du bouton d'action central |
-| `--bottom-nav-color-action-cradle` | color | #ffffff | #252a2c | `background.default.default` | 1 / 0 | ok | Anneau (cradle) autour de la moitié haute du bouton d'action |
+| `--bottom-nav-color-action-cradle` | color | #ffffff | #252a2c | `background.field.default` | 1 / 0 | ok | Anneau (cradle) autour de la moitié haute du bouton d'action |
 | `--bottom-nav-size-item-icon` | dimension | 24px | = | `Size300` | 2 / 0 | trop courte | Icône d'un item (24 px) |
 | `--bottom-nav-size-action-container` | dimension | 56px | = | `Size700` | 4 / 0 | ok | Diamètre du bouton d'action central (56 px) |
 | `--bottom-nav-size-action-icon` | dimension | 28px | = | `Size350` | 2 / 0 | ok | Icône du bouton d'action central (28 px) |
@@ -1026,10 +1026,10 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-link-information-text-pressed` | color | #034477 | #eff8ff | `text.information.pressed` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-text-hovered` | color | #3f4a4d | #d8dedf | `text.subtle.hovered` | 1 / 0 | absente |  |
-| `--button-color-link-subtle-text-pressed` | color | #374043 | #eaedee | `text.subtle.pressed` | 0 / 0 | absente |  |
+| `--button-color-link-subtle-text-pressed` | color | #374043 | #eaedee | `text.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-link-subtlest-text-default` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | absente |  |
 | `--button-color-link-subtlest-text-hovered` | color | #596b70 | #8d9fa3 | `text.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-link-subtlest-text-pressed` | color | #49585b | #b5c1c4 | `text.subtlest.pressed` | 0 / 0 | absente |  |
+| `--button-color-link-subtlest-text-pressed` | color | #49585b | #b5c1c4 | `text.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-link-brand-text-default` | color | #224986 | #dceefd | `text.brand.default` | 1 / 0 | absente |  |
 | `--button-color-link-brand-text-hovered` | color | #2354aa | #c1e3fc | `text.brand.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-brand-text-pressed` | color | #2467d1 | #97d2f9 | `text.brand.pressed` | 1 / 0 | absente |  |

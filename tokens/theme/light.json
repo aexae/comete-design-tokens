@@ -204,14 +204,11 @@
         }
       }
     },
-    "default": {
+    "field": {
       "default": {
         "$type": "color",
-        "$value": "{white.100}"
-      },
-      "inverted": {
-        "$type": "color",
-        "$value": "{cool-grey.950}"
+        "$value": "{white.100}",
+        "$description": "Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default."
       }
     },
     "success": {
@@ -771,6 +768,11 @@
       "$type": "color",
       "$value": "{comete.blue.950}",
       "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest."
+    },
+    "inverted": {
+      "$type": "color",
+      "$value": "{cool-grey.950}",
+      "$description": "Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page : démonstration d'un logo inversé, encart contrasté. Texte en text.inverted. Pas une surface navy (surface.comete) ni un fond de statut."
     }
   },
   "text": {

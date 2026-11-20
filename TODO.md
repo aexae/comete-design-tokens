@@ -10,7 +10,7 @@
 - ~~**background vs surface**~~ : FAIT, doctrine dans le README et DECISIONS (0.34.0).
 - **Lot A** : les descriptions de `blanket`, `surface.mask.*` sont désormais sur main ; retirer du lot A celles des tokens supprimés (`interaction.*`, `alpha.default`, `surface.critical`) et reprendre les chemins `surface.*` (0.34.0).
 - **`surface.comete`** : une surface qui porte la marque (navy) est à la frontière de la doctrine (une surface ne porte pas de sens). Tolérée parce que non interactive et sans état ; si un second cas apparaît (surface critical, surface brand), préférer un `background.*.boldest` et ne pas étendre `surface`.
-- **`background.default.*`** : nom trompeur depuis la doctrine (c'est le remplissage des champs et contrôles, pas « le fond par défaut »). Candidat à un renommage `background.field.*` ou `background.input.*`, avec `inverted` à reclasser. À trancher avec le lot A.
+- ~~**`background.default.*`** : nom trompeur depuis la doctrine~~ : FAIT en 0.36.0, `background.field.default` et `surface.inverted`.
 - **Badge** (DS) : l'anneau de découpe (`box-shadow`) et la bordure d'AvatarGroup gardent `--surface-default` parce qu'ils imitent la surface sous l'élément. Documenter dans la description de `surface.default`.
 
 ## Tokens de composant Banner, Page, SideNav, BottomNav : écarts Figma / code (2026-11-20)

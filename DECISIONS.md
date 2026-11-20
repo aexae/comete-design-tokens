@@ -12,6 +12,10 @@
 
 **Contexte / raison** : report des corrections Figma d'Axel. Ferme la lacune notée le 19/11 (link subtle et subtlest sans `pressed`, `hovered` croisés).
 
+## 2026-11-20 — `background.default` devient `background.field`, `inverted` rangé sous `surface` (0.36.0)
+
+**Décision** (Axel) : `background.default.default` est renommé `background.field.default` (cassant). Depuis la doctrine surface vs background, « fond par défaut » prêtait à confusion avec `surface.default` : ce token est le remplissage des champs et contrôles (entrée de saisie, Checkbox non cochée, pouce du Switch, Badge, cradle du BottomNav), plus sombre que la surface en thème sombre (cool-grey 950 contre 900). `background.default.inverted` devient `surface.inverted` : c'est une surface opposée au thème sur laquelle on pose du contenu (démonstration d'un logo inversé, encart contrasté), sans sens de statut. Figma : `background/field/default` et `surface/inverted`, liaisons conservées. Propagation : DS alpha.195 (Badge, Checkbox, InputContainer, Switch, stories).
+
 ## 2026-11-20 — `surface.*` sort de `background`, doctrine surface vs background, voile du MediaPicker (0.34.0)
 
 **Décision** (Axel) :

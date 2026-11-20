@@ -17,7 +17,7 @@
 
 Variables créées dans Figma mais non liées là où Figma et le code divergent. Pour chaque point, Axel tranche lequel fait foi, puis on lie (ou on corrige le code).
 
-- **Banner** : ~~icône warning~~ (Figma lié à `banner/color/warning/icon`, 950 partout), ~~taille d'icône~~ (`banner.size.icon`), apparences `success`, `information` et `discovery` ajoutées (0.33.0). Reste : lisibilité de `text.inverted` sur les fonds bold success, information et discovery en sombre à vérifier.
+- **Banner** : ~~icône warning~~ (Figma lié à `banner/color/warning/icon`, 950 partout), ~~taille d'icône~~ (`banner.size.icon`), apparences `success`, `information` et `discovery` ajoutées (0.33.0), `discovery` fusionné dans `announcement` (0.35.0). Reste : lisibilité de `text.inverted` sur les fonds bold success, information et announcement en sombre à vérifier.
 - **PageBar** : fond de la barre compacte posé dans le code, absent de Figma. Variante `compact, leading=none` sans cadre `globalActions`.
 - **PageToolbar** : regroupement via `❖ ButtonGroup` lié à `DEPRECATED-button-group/gap/default`. ~~Largeurs de la recherche~~ : `page-toolbar.size.search.{min-width,max-width}` (0.33.0). Recherche liée à `DEPRECATED-text-field/*`.
 - **Page** : états chargement, vide et erreur du Body absents de Figma. Fond `background/surface/default` sur la racine Figma, absent du code. Nommage de la gouttière `mobile` / `laptop` (calé sur les breakpoints) à confirmer. Slot `{footer}` lié aux variables distantes `space/150` et `space/075`.
@@ -39,7 +39,8 @@ Variables créées dans Figma mais non liées là où Figma et le code divergent
 - **`DEPRECATED-text/accent-inverted`** (Figma seul, purple 50/950) reste lié à 187 nœuds, surtout les en-têtes de pages de documentation. À remplacer par `text/inverted` ou un token dédié, puis supprimer.
 - **`text.accent.*.hovered/pressed`** : lus par `button.color.{link,link-subtle}.accent-*` depuis 0.27.1. Le Button du DS ne propose pas encore les couleurs accent (ni brand), donc toujours aucun rendu côté code.
 - **Button `outlined` et `subtle`** : aucune couleur n'a de `text.hovered/pressed` (l'état passe par le fond). Si le texte doit aussi changer au survol, il faut créer `button.color.{outlined,subtle}.<couleur>.text.{hovered,pressed}` (décision en attente).
-- **Button `link` subtle / subtlest** : `link.subtle` a `hovered` = `text.subtlest.default` et pas de `pressed`, `link.subtlest` a `hovered` = `text.subtle.default` et pas de `pressed`. Inversion et lacune à valider côté design.
+- ~~**Button `link` subtle / subtlest**~~ : `hovered` et `pressed` alignés sur Figma (0.35.0).
+- **`text.link.*`** : plus lu par le Button (`link.neutral` passe sur `text.default.*`, 0.35.0). Reste lu par le composant `Text` du DS (`--text-link-default`). Vérifier s'il garde un rôle (lien dans un paragraphe) ou s'il doit suivre.
 
 ## Audit des variables Figma : scopes, publication, code syntax (2026-11-19)
 

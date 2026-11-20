@@ -9,13 +9,13 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Lot | Tokens | Décrits (ok) | À écrire ou réécrire | Non consommés par le DS |
 |---|---:|---:|---:|---:|
-| A | 76 | 8 (11 %) | 64 | 29 |
+| A | 76 | 8 (11 %) | 64 | 24 |
 | B | 60 | 0 (0 %) | 60 | 25 |
-| C | 143 | 16 (11 %) | 127 | 82 |
+| C | 143 | 16 (11 %) | 127 | 81 |
 | D | 196 | 24 (12 %) | 172 | 82 |
 | E | 200 | 0 (0 %) | 200 | 193 |
-| F | 460 | 164 (36 %) | 296 | 8 |
-| **Total** | **1135** | **212 (19 %)** | **919** | **419** |
+| F | 459 | 161 (35 %) | 298 | 10 |
+| **Total** | **1134** | **209 (18 %)** | **921** | **415** |
 
 ## Lot A — sémantique neutre : text, background, border, icon (default, neutral, surface, selected…)
 
@@ -39,15 +39,15 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-selected-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 3 / 0 | absente |  |
 | `--background-selected-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 4 / 0 | absente |  |
 | `--background-selected-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 4 / 9 | absente |  |
-| `--background-default-default` | color | #ffffff | #252a2c | `white.100` | 4 / 12 | absente |  |
+| `--background-default-default` | color | #ffffff | #252a2c | `white.100` | 6 / 12 | absente |  |
 | `--background-default-inverted` | color | #252a2c | #ffffff | `cool-grey.950` | 0 / 5 | absente |  |
 | `--background-focused-default` | color | #429aef | #66b8f4 | `comete.blue.500` | 4 / 0 | absente |  |
-| `--surface-default` | color | #ffffff | #374043 | `white.100` | 0 / 0 | absente |  |
-| `--surface-sunken-default` | color | #f7f8f8 | #252a2c | `cool-grey.50` | 0 / 0 | absente |  |
-| `--surface-sunken-hovered` | color | #eaedee | #374043 | `cool-grey.100` | 0 / 0 | absente |  |
+| `--surface-default` | color | #ffffff | #374043 | `white.100` | 10 / 7 | absente |  |
+| `--surface-sunken-default` | color | #f7f8f8 | #252a2c | `cool-grey.50` | 2 / 14 | absente |  |
+| `--surface-sunken-hovered` | color | #eaedee | #374043 | `cool-grey.100` | 1 / 0 | absente |  |
 | `--surface-sunken-pressed` | color | #d8dedf | #3f4a4d | `cool-grey.200` | 0 / 0 | absente |  |
-| `--surface-raise-default` | color | #ffffff | #49585b | `white.100` | 0 / 0 | absente |  |
-| `--surface-overlay-default` | color | #ffffff | #3f4a4d | `white.100` | 0 / 0 | absente |  |
+| `--surface-raise-default` | color | #ffffff | #49585b | `white.100` | 8 / 2 | absente |  |
+| `--surface-overlay-default` | color | #ffffff | #3f4a4d | `white.100` | 7 / 0 | absente |  |
 | `--surface-overlay-critical` | color | #fef2f2 | #2e1717 | `red.50` | 0 / 0 | absente |  |
 | `--surface-overlay-success` | color | #ebfef4 | #0e2d24 | `green.50` | 0 / 0 | absente |  |
 | `--surface-overlay-accent-purple` | color | #f3f0ff | #292442 | `purple.50` | 0 / 0 | absente |  |
@@ -254,7 +254,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-cycle-day-subtlest-default` | color | #fffbed | #441f06 | `orange.50` | 0 / 0 | absente |  |
 | `--background-cycle-day-subtlest-hovered` | color | #fff6d4 | #7e4210 | `orange.100` | 0 / 0 | absente |  |
 | `--background-cycle-day-subtlest-pressed` | color | #ffe8a9 | #9c4f10 | `orange.200` | 0 / 0 | absente |  |
-| `--surface-comete` | color | #1e3661 | = | `comete.blue.950` | 0 / 0 | ok | Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation… |
+| `--surface-comete` | color | #1e3661 | = | `comete.blue.950` | 0 / 5 | ok | Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation… |
 | `--text-accent-purple-default` | color | #5e4db2 | #d1d4f4 | `purple.700` | 4 / 0 | absente |  |
 | `--text-accent-purple-hovered` | color | #51458e | #e6e8f9 | `purple.800` | 0 / 0 | absente |  |
 | `--text-accent-purple-pressed` | color | #453d72 | #f3f0ff | `purple.900` | 0 / 0 | absente |  |
@@ -324,11 +324,11 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
 | `--duration-instant` | duration | 0ms | = |  | 0 / 0 | trop courte | No animation |
-| `--duration-fast` | duration | 100ms | = |  | 33 / 0 | ok | Micro-interactions (hover, focus) |
-| `--duration-normal` | duration | 200ms | = |  | 10 / 2 | trop courte | Standard transitions |
+| `--duration-fast` | duration | 100ms | = |  | 36 / 0 | ok | Micro-interactions (hover, focus) |
+| `--duration-normal` | duration | 200ms | = |  | 17 / 2 | trop courte | Standard transitions |
 | `--duration-slow` | duration | 300ms | = |  | 0 / 2 | ok | Larger transitions (modals, panels) |
 | `--duration-slower` | duration | 500ms | = |  | 0 / 1 | trop courte | Complex animations |
-| `--easing-default` | other | cubic-bezier(0.2, 0, 0.38, 0.9) | = |  | 42 / 4 | ok | Standard easing for most transitions |
+| `--easing-default` | other | cubic-bezier(0.2, 0, 0.38, 0.9) | = |  | 52 / 4 | ok | Standard easing for most transitions |
 | `--easing-entrance` | other | cubic-bezier(0, 0, 0.38, 0.9) | = |  | 0 / 1 | ok | Elements entering the screen |
 | `--easing-exit` | other | cubic-bezier(0.2, 0, 1, 0.9) | = |  | 0 / 0 | ok | Elements leaving the screen |
 | `--easing-linear` | other | linear | = |  | 1 / 0 | ok | Constant speed (spinners, progress) |
@@ -729,7 +729,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 ## Lot F — tokens de composants
 
-460 tokens.
+459 tokens.
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
@@ -814,7 +814,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--banner-color-critical-background` | color | #e12121 | = | `background.critical.bold.default` | 1 / 0 | ok | Fond du bandeau critical (rouge) |
 | `--banner-color-critical-text` | color | #ffffff | = | `text.on-dark-surface` | 1 / 0 | ok | Message du bandeau critical (texte inversé) |
 | `--banner-color-critical-icon` | color | #ffffff | = | `icon.on-dark-surface` | 1 / 0 | ok | Icône contextuelle du bandeau critical |
-| `--banner-color-announcement-background` | color | #3f4a4d | #eaedee | `background.neutral.bold.default` | 1 / 0 | ok | Fond du bandeau announcement (neutre sombre) |
+| `--banner-color-announcement-background` | color | #6e5dc6 | #9897e2 | `background.accent.purple.bold.default` | 1 / 0 | ok | Fond du bandeau announcement (violet accent : nouveauté, mise à jour majeure) |
 | `--banner-color-announcement-text` | color | #ffffff | #252a2c | `text.inverted` | 1 / 0 | ok | Message du bandeau announcement (texte inversé) |
 | `--banner-color-announcement-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône contextuelle du bandeau announcement |
 | `--banner-color-success-background` | color | #00784d | #0abf76 | `background.success.bold.default` | 1 / 0 | ok | Fond du bandeau success (vert) |
@@ -823,9 +823,6 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--banner-color-information-background` | color | #0076d8 | #009bfe | `background.information.bold.default` | 1 / 0 | ok | Fond du bandeau information (bleu) |
 | `--banner-color-information-text` | color | #ffffff | #252a2c | `text.inverted` | 1 / 0 | ok | Message du bandeau information (texte inversé) |
 | `--banner-color-information-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône contextuelle du bandeau information |
-| `--banner-color-discovery-background` | color | #6e5dc6 | #9897e2 | `background.accent.purple.bold.default` | 1 / 0 | ok | Fond du bandeau discovery (nouveauté, mise à jour majeure) |
-| `--banner-color-discovery-text` | color | #ffffff | #252a2c | `text.inverted` | 1 / 0 | ok | Texte du bandeau discovery |
-| `--banner-color-discovery-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône du bandeau discovery |
 | `--banner-spacing-gap` | dimension | 12px | = | `Space150` | 1 / 0 | ok | Espace entre l'icône et le message (12 px) |
 | `--banner-spacing-padding` | dimension | 12px | = | `Space150` | 1 / 0 | ok | Marge intérieure du bandeau sur les quatre côtés (12 px) |
 | `--banner-size-icon` | dimension | 24px | = | `Size300` | 2 / 0 | ok | Largeur et hauteur de l'icône du bandeau (24 px) |
@@ -834,7 +831,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--bottom-nav-color-item-label-selected` | color | #2c7ee4 | #c1e3fc | `text.selected` | 1 / 0 | ok | Libellé d'un item sélectionné ou ouvert |
 | `--bottom-nav-color-item-icon-default` | color | #6f8488 | = | `icon.subtlest` | 1 / 0 | trop courte | Icône d'un item au repos |
 | `--bottom-nav-color-item-icon-selected` | color | #2c7ee4 | #97d2f9 | `icon.selected` | 1 / 0 | ok | Icône d'un item sélectionné, et croix de fermeture d'un item ouvert |
-| `--bottom-nav-color-item-background-selected` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 2 / 0 | ok | Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé … |
+| `--bottom-nav-color-item-background-selected` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 3 / 0 | ok | Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé … |
 | `--bottom-nav-color-action-background` | color | #2467d1 | #f0f8fe | `background.comete.bold.default` | 1 / 0 | ok | Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client |
 | `--bottom-nav-color-action-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône du bouton d'action central |
 | `--bottom-nav-color-action-cradle` | color | #ffffff | #252a2c | `background.default.default` | 1 / 0 | ok | Anneau (cradle) autour de la moitié haute du bouton d'action |
@@ -852,7 +849,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--bottom-nav-spacing-item-badge-offset-top` | dimension | 6px | = | `Space075` | 1 / 0 | ok | Remontée du badge au-dessus de l'icône (6 px, appliqué en négatif) |
 | `--bottom-nav-spacing-item-badge-offset-start` | dimension | 12px | = | `Space150` | 1 / 0 | ok | Décalage du badge depuis le bord gauche de l'icône (12 px) |
 | `--bottom-nav-radius-item` | dimension | 12px | = | `Radius150` | 1 / 0 | ok | Coins de la cellule d'un item (12 px, visibles au focus) |
-| `--bottom-nav-radius-item-selected` | dimension | 1024px | = | `RadiusRound` | 1 / 0 | ok | Pastille d'un item sélectionné ou ouvert |
+| `--bottom-nav-radius-item-selected` | dimension | 1024px | = | `RadiusRound` | 2 / 0 | ok | Pastille d'un item sélectionné ou ouvert |
 | `--bottom-nav-radius-action` | dimension | 1024px | = | `RadiusRound` | 2 / 0 | ok | Bouton d'action central et son anneau |
 | `--bottom-nav-opacity-disabled` | number | 0.38 | = | `opacity.disabled` | 1 / 0 | ok | Opacité d'un item désactivé |
 | `--button-color-contained-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
@@ -1009,9 +1006,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-subtle-accent-blue-grey-text-default` | color | #32415a | #d1d9e6 | `text.accent.blue-grey.default` | 1 / 0 | absente |  |
 | `--button-color-subtle-accent-blue-grey-background-hovered` | color | #d1d9e6 | #32415a | `background.accent.blue-grey.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-accent-blue-grey-background-pressed` | color | #a8b9d1 | #384b6c | `background.accent.blue-grey.subtlest.pressed` | 1 / 0 | absente |  |
-| `--button-color-link-neutral-text-default` | color | #0076d8 | #71cdff | `text.link.default` | 1 / 0 | absente |  |
-| `--button-color-link-neutral-text-hovered` | color | #0060b0 | #b4e3ff | `text.link.hovered` | 1 / 0 | absente |  |
-| `--button-color-link-neutral-text-pressed` | color | #005391 | #ddf1ff | `text.link.pressed` | 1 / 0 | absente |  |
+| `--button-color-link-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
+| `--button-color-link-neutral-text-hovered` | color | #374043 | #eaedee | `text.default.hovered` | 1 / 0 | absente |  |
+| `--button-color-link-neutral-text-pressed` | color | #3f4a4d | #d8dedf | `text.default.pressed` | 1 / 0 | absente |  |
 | `--button-color-link-comete-text-default` | color | #224986 | #dceefd | `text.comete.default` | 1 / 0 | absente |  |
 | `--button-color-link-comete-text-hovered` | color | #2354aa | #c1e3fc | `text.comete.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-comete-text-pressed` | color | #2467d1 | #97d2f9 | `text.comete.pressed` | 1 / 0 | absente |  |
@@ -1028,9 +1025,11 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-link-information-text-hovered` | color | #005391 | #ddf1ff | `text.information.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-information-text-pressed` | color | #034477 | #eff8ff | `text.information.pressed` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
-| `--button-color-link-subtle-text-hovered` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | absente |  |
+| `--button-color-link-subtle-text-hovered` | color | #3f4a4d | #d8dedf | `text.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-link-subtle-text-pressed` | color | #374043 | #eaedee | `text.subtle.pressed` | 0 / 0 | absente |  |
 | `--button-color-link-subtlest-text-default` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | absente |  |
-| `--button-color-link-subtlest-text-hovered` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
+| `--button-color-link-subtlest-text-hovered` | color | #596b70 | #8d9fa3 | `text.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-link-subtlest-text-pressed` | color | #49585b | #b5c1c4 | `text.subtlest.pressed` | 0 / 0 | absente |  |
 | `--button-color-link-brand-text-default` | color | #224986 | #dceefd | `text.brand.default` | 1 / 0 | absente |  |
 | `--button-color-link-brand-text-hovered` | color | #2354aa | #c1e3fc | `text.brand.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-brand-text-pressed` | color | #2467d1 | #97d2f9 | `text.brand.pressed` | 1 / 0 | absente |  |
@@ -1141,9 +1140,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--side-nav-color-item-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | trop courte | Fond d'un item au survol |
 | `--side-nav-color-item-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | trop courte | Fond d'un item à l'appui |
 | `--side-nav-color-item-text` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | ok | Libellé d'un item non sélectionné |
-| `--side-nav-color-item-selected-background-default` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 1 / 0 | ok | Fond de l'item de la page courante |
-| `--side-nav-color-item-selected-background-hovered` | color | #c1e3fc | #224986 | `background.selected.subtlest.hovered` | 1 / 0 | ok | Fond de l'item de la page courante au survol |
-| `--side-nav-color-item-selected-background-pressed` | color | #97d2f9 | #2354aa | `background.selected.subtlest.pressed` | 1 / 0 | ok | Fond de l'item de la page courante à l'appui |
+| `--side-nav-color-item-selected-background-default` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 2 / 0 | ok | Fond de l'item de la page courante |
+| `--side-nav-color-item-selected-background-hovered` | color | #c1e3fc | #224986 | `background.selected.subtlest.hovered` | 2 / 0 | ok | Fond de l'item de la page courante au survol |
+| `--side-nav-color-item-selected-background-pressed` | color | #97d2f9 | #2354aa | `background.selected.subtlest.pressed` | 2 / 0 | ok | Fond de l'item de la page courante à l'appui |
 | `--side-nav-color-item-selected-text` | color | #2c7ee4 | #c1e3fc | `text.selected` | 1 / 0 | ok | Libellé de l'item de la page courante |
 | `--side-nav-color-section-title` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | ok | Titre de section (capitales) |
 | `--side-nav-color-divider` | color | #eaedee | #3f4a4d | `border.subtle` | 1 / 0 | ok | Séparateur entre groupes d'items |
@@ -1177,7 +1176,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--side-nav-spacing-empty-text-gap` | dimension | 4px | = | `Space050` | 1 / 0 | ok | Espace entre le titre et la description de l'état vide (4 px) |
 | `--side-nav-spacing-empty-action` | dimension | 8px | = | `Space100` | 1 / 0 | ok | Marge au-dessus de l'action de l'état vide (8 px) |
 | `--side-nav-spacing-skeleton-gap` | dimension | 6px | = | `Space075` | 2 / 0 | ok | Espace entre les lignes d'un placeholder de chargement (6 px) |
-| `--side-nav-radius-item` | dimension | 3px | = | `Radius0375` | 1 / 0 | trop courte | Coins d'un item (3 px) |
+| `--side-nav-radius-item` | dimension | 3px | = | `Radius0375` | 2 / 0 | trop courte | Coins d'un item (3 px) |
 | `--side-nav-radius-divider` | dimension | 1px | = | `Radius0125` | 1 / 0 | ok | Coins du séparateur (1 px) |
 | `--side-nav-radius-empty-icon` | dimension | 1024px | = | `RadiusRound` | 1 / 0 | ok | Pastille ronde de l'état vide |
 | `--side-nav-border-width-surface` | dimension | 1px | = | `Size0125` | 1 / 0 | ok | Bordure droite du panneau (1 px) |

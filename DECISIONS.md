@@ -2,6 +2,16 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-20 — Button link neutral, subtle et subtlest alignés sur Figma, Banner announcement violet (0.35.0)
+
+**Décision** (Axel) :
+
+- **`button.color.link.neutral.text.*`** passe de `text.link.*` (bleu) à `text.default.{default,hovered,pressed}`, comme la chaîne modifiée par Axel dans Figma. Le lien neutre est désormais de la couleur du texte courant. Le soulignement au repos (Figma) le distingue du texte.
+- **`button.color.link.subtle.text`** : `hovered` = `text.subtle.hovered` (au lieu de `text.subtlest.default`), nouveau `pressed` = `text.subtle.pressed`. **`button.color.link.subtlest.text`** : `hovered` = `text.subtlest.hovered` (au lieu de `text.subtle.default`), nouveau `pressed` = `text.subtlest.pressed`. Variables créées par Axel dans Figma. Leur code syntax WEB copiait celle de `hovered`, corrigé.
+- **Banner** : `announcement` et `discovery` avaient le même rôle. `discovery` est fusionné dans `announcement`, qui prend son fond violet (`background.accent.purple.bold.default`). L'ancien announcement noir (`background.neutral.bold.default`) est supprimé, ainsi que `banner.color.discovery.*`. Figma : variante discovery renommée announcement, ancienne variante noire supprimée, variables discovery supprimées.
+
+**Contexte / raison** : report des corrections Figma d'Axel. Ferme la lacune notée le 19/11 (link subtle et subtlest sans `pressed`, `hovered` croisés).
+
 ## 2026-11-20 — `surface.*` sort de `background`, doctrine surface vs background, voile du MediaPicker (0.34.0)
 
 **Décision** (Axel) :

@@ -1382,7 +1382,7 @@
   --banner-color-critical-background: var(--background-critical-bold-default); /** Fond du bandeau critical (rouge) */
   --banner-color-critical-text: var(--text-on-dark-surface); /** Message du bandeau critical (texte inversé) */
   --banner-color-critical-icon: var(--icon-on-dark-surface); /** Icône contextuelle du bandeau critical */
-  --banner-color-announcement-background: var(--background-neutral-bold-default); /** Fond du bandeau announcement (neutre sombre) */
+  --banner-color-announcement-background: var(--background-accent-purple-bold-default); /** Fond du bandeau announcement (violet accent : nouveauté, mise à jour majeure) */
   --banner-color-announcement-text: var(--text-inverted); /** Message du bandeau announcement (texte inversé) */
   --banner-color-announcement-icon: var(--icon-inverted); /** Icône contextuelle du bandeau announcement */
   --banner-color-success-background: var(--background-success-bold-default); /** Fond du bandeau success (vert) */
@@ -1391,9 +1391,6 @@
   --banner-color-information-background: var(--background-information-bold-default); /** Fond du bandeau information (bleu) */
   --banner-color-information-text: var(--text-inverted); /** Message du bandeau information (texte inversé) */
   --banner-color-information-icon: var(--icon-inverted); /** Icône contextuelle du bandeau information */
-  --banner-color-discovery-background: var(--background-accent-purple-bold-default); /** Fond du bandeau discovery (nouveauté, mise à jour majeure) */
-  --banner-color-discovery-text: var(--text-inverted); /** Texte du bandeau discovery */
-  --banner-color-discovery-icon: var(--icon-inverted); /** Icône du bandeau discovery */
   --banner-spacing-gap: var(--space150); /** Espace entre l'icône et le message (12 px) */
   --banner-spacing-padding: var(--space150); /** Marge intérieure du bandeau sur les quatre côtés (12 px) */
   --bottom-nav-color-background: var(--surface-default); /** Fond de la barre */
@@ -1570,9 +1567,9 @@
   --button-color-subtle-accent-blue-grey-text-default: var(--text-accent-blue-grey-default);
   --button-color-subtle-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-subtlest-hovered);
   --button-color-subtle-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-subtlest-pressed);
-  --button-color-link-neutral-text-default: var(--text-link-default);
-  --button-color-link-neutral-text-hovered: var(--text-link-hovered);
-  --button-color-link-neutral-text-pressed: var(--text-link-pressed);
+  --button-color-link-neutral-text-default: var(--text-default-default);
+  --button-color-link-neutral-text-hovered: var(--text-default-hovered);
+  --button-color-link-neutral-text-pressed: var(--text-default-pressed);
   --button-color-link-comete-text-default: var(--text-comete-default);
   --button-color-link-comete-text-hovered: var(--text-comete-hovered);
   --button-color-link-comete-text-pressed: var(--text-comete-pressed);
@@ -1589,9 +1586,11 @@
   --button-color-link-information-text-hovered: var(--text-information-hovered);
   --button-color-link-information-text-pressed: var(--text-information-pressed);
   --button-color-link-subtle-text-default: var(--text-subtle-default);
-  --button-color-link-subtle-text-hovered: var(--text-subtlest-default);
+  --button-color-link-subtle-text-hovered: var(--text-subtle-hovered);
+  --button-color-link-subtle-text-pressed: var(--text-subtle-pressed);
   --button-color-link-subtlest-text-default: var(--text-subtlest-default);
-  --button-color-link-subtlest-text-hovered: var(--text-subtle-default);
+  --button-color-link-subtlest-text-hovered: var(--text-subtlest-hovered);
+  --button-color-link-subtlest-text-pressed: var(--text-subtlest-pressed);
   --button-color-link-brand-text-default: var(--text-brand-default);
   --button-color-link-brand-text-hovered: var(--text-brand-hovered);
   --button-color-link-brand-text-pressed: var(--text-brand-pressed);

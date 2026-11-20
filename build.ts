@@ -79,6 +79,12 @@ const COMPONENTS = new Set([
   "avatar",
   "avatar-group",
   "autosave-indicator",
+  "banner",
+  "page",
+  "page-bar",
+  "page-toolbar",
+  "side-nav",
+  "bottom-nav",
 ]);
 const isComponentToken = (token: { path: string[] }) => COMPONENTS.has(token.path[0] ?? "");
 const componentSD = new StyleDictionary({

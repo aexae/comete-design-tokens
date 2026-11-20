@@ -2,6 +2,16 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-20 — Tokens de composant Banner, Page, PageBar, PageToolbar, SideNav et BottomNav (0.31.0)
+
+**Décision** (demande d'Axel, création des tokens de composant approuvée par la demande) :
+
+- 6 nouveaux fichiers sous `tokens/component/` : `banner` (17 tokens), `page` (5), `page-bar` (10), `page-toolbar` (3), `side-nav` (46), `bottom-nav` (28). Nommage `<composant>.<catégorie>.…` (`color`, `size`, `spacing`, `radius`, `opacity`, `border-width`), tous en alias vers les tokens sémantiques ou base. `build.ts` les émet.
+- Valeurs reprises du code DS : rendu inchangé. Les propriétés locales du DS (`--bar-compact-*`, `--sidenav-*`) et les valeurs en dur du bouton d'action du BottomNav (56, 68, -14, -20 px) deviennent des tokens. `--page-gutter` reste un relais CSS local (bascule responsive), alimenté par `page.spacing.gutter.{mobile,laptop}`.
+- Typographie laissée hors des tokens de composant : elle suit les styles de texte et les tokens typographiques de base.
+- Figma : variables miroir dans la collection `component` (code syntax WEB, alias `semantics` et `base`), liées aux composants seulement là où la valeur Figma était déjà celle du code. Les écarts sont listés dans TODO.md, à trancher par Axel avant de les lier. Les liaisons `DEPRECATED-select/option/padding/*` des items du SideNav sont remplacées.
+- BottomNav : `bottom-nav.color.item.{label,icon}.disabled` aliasent `text.disabled` et `icon.disabled` (dépréciés) pour garder le rendu. À supprimer si le disabled passe à l'opacité seule.
+
 ## 2026-11-20 — Suppression de text.subtlest-inverted et logo.comete.subtlest (0.30.1)
 
 **Décision** (Axel) :

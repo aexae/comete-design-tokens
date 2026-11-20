@@ -2,6 +2,18 @@
 
 > Failles, faiblesses et pistes d'amélioration signalées au fil des échanges.
 
+## Tokens de composant Banner, Page, SideNav, BottomNav : écarts Figma / code (2026-11-20)
+
+Variables créées dans Figma mais non liées là où Figma et le code divergent. Pour chaque point, Axel tranche lequel fait foi, puis on lie (ou on corrige le code).
+
+- **Banner** : icône warning en `cool-grey/950` en dur dans Figma contre `icon.on-warning` (900) dans le code. Variantes `success` et `information` absentes de Figma. Icône `Warning` pour toutes les variantes Figma alors que le code varie par apparence. Taille d'icône 24 px passée en prop TSX, sans token (`banner.size.icon` ?). Lisibilité de `text.inverted` sur les fonds bold en sombre à vérifier.
+- **PageBar** : fond de la barre compacte posé dans le code, absent de Figma. Variante `compact, leading=none` sans cadre `globalActions`.
+- **PageToolbar** : regroupement via `❖ ButtonGroup` lié à `DEPRECATED-button-group/gap/default`. Largeurs de la recherche (160 et 240 px) en dur dans le code et Figma, aucun token. Recherche liée à `DEPRECATED-text-field/*`.
+- **Page** : états chargement, vide et erreur du Body absents de Figma. Fond `background/surface/default` sur la racine Figma, absent du code. Nommage de la gouttière `mobile` / `laptop` (calé sur les breakpoints) à confirmer. Slot `{footer}` lié aux variables distantes `space/150` et `space/075`.
+- **SideNav** : fond `surface/elevation/overlay` (Figma) contre `surface/default` (code), bordure `border/default` contre `border/subtle`, indicateur de sélection présent seulement dans Figma, retraits 16 / 8 / 0 px contre 12 px, hauteur d'item min 32 px (encore liée à `DEPRECATED-select/option/min-height/default`) contre 36 px fixe, ligne de description absente du code, titre de section `xxxs` contre `xxs`, disabled en `DEPRECATED-*`, logo 32 contre 40 px. Valeurs en dur sans token : largeur 240 px, en-tête 72 px, opacité 0,55 de la marque du pied, transition `100ms ease`. Disabled à migrer vers `side-nav.opacity.disabled` (change le rendu). Variables distantes `space/150` et `space/075` sur les Slot, `DEPRECATED-logo/brand/default` sur les logos.
+- **BottomNav** : padding horizontal de la barre 16 px (Figma) contre 4 px (code). Fond du bouton d'action `background/brand/bold` dans Figma contre `comete.bold` dans le code (ADR 0001). Rayon de la barre et home indicator seulement dans Figma. Cellule de l'action Figma avec paddings et rayon sans équivalent code. Disabled en double (opacité et couleurs dépréciées) : passer à l'opacité seule et supprimer `item.{label,icon}.disabled`. Badge encore sur `-DEPRECATED-badge/*`, QuickActions mélange brand et comete.
+- **Garde des tokens dépréciés contournée** : `deprecatedDisabledTokens.test.ts` du DS compte les `var(--text-disabled)` directs. Un token de composant qui aliase un token déprécié (cas BottomNav) n'est plus compté. Ajouter côté tokens un test qui interdit les alias vers un token `$deprecated`, ou l'accepter explicitement.
+
 ## Text accent et link (2026-11-19)
 
 - **Divergence silencieuse Figma / dépôt** : `text/link/*` pointait sur `comete/blue/*` dans Figma alors que le dépôt pointe sur `blue/*` depuis l'origine. Rien ne détecte ce type d'écart. Piste : un script d'audit qui compare les alias des variables Figma `theme` aux `$value` du dépôt (la page Figma « Audit Tokens — CSS vs Figma » est manuelle).

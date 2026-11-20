@@ -1310,7 +1310,23 @@
   --avatar-size-xxxlarge-container: var(--size1600); /** Avatar xxxlarge (128 px) */
   --avatar-size-xxxlarge-icon: var(--size800); /** Icône de l'avatar xxxlarge (64 px) */
   --avatar-opacity-disabled: var(--opacity-disabled); /** Opacité de l'avatar désactivé */
+  --bottom-nav-size-item-icon: var(--size300); /** Icône d'un item (24 px) */
+  --bottom-nav-size-action-container: var(--size700); /** Diamètre du bouton d'action central (56 px) */
+  --bottom-nav-size-action-icon: var(--size350); /** Icône du bouton d'action central (28 px) */
+  --bottom-nav-size-action-offset: var(--size175); /** Dépassement du bouton d'action au-dessus du bord haut de la barre (14 px) */
+  --bottom-nav-size-action-cradle-ring: var(--size075); /** Épaisseur de l'anneau autour du bouton d'action (6 px). Le cradle mesure container + 2 × cradle-ring */
+  --bottom-nav-opacity-disabled: var(--opacity-disabled); /** Opacité d'un item désactivé */
   --button-opacity-disabled: var(--opacity-disabled); /** Opacité du bouton désactivé (couleur conservée, estompée) */
+  --page-bar-size-compact-min-height: var(--size700); /** Hauteur minimale de la barre compacte (56 px), hors zone de sécurité iOS */
+  --page-bar-border-width-compact: var(--size0125); /** Épaisseur du filet bas de la barre compacte (1 px) */
+  --side-nav-size-rail-width: var(--size1000); /** Largeur du panneau en mode rail (80 px) */
+  --side-nav-size-item-icon: var(--size300); /** Icône d'item (24 px), fixe aussi la hauteur de ligne : hauteur d'item = icône + 2 × spacing.item.padding-y (36 px) */
+  --side-nav-size-rail-item-min-height: var(--size400); /** Hauteur minimale d'un item en rail (32 px) */
+  --side-nav-size-header-logo: var(--size500); /** Hauteur maximale du logo de l'en-tête (40 px) */
+  --side-nav-size-footer-brand: var(--size300); /** Hauteur maximale de la marque du pied (24 px) */
+  --side-nav-size-empty-icon: var(--size500); /** Pastille de l'icône de l'état vide (40 px) */
+  --side-nav-border-width-surface: var(--size0125); /** Bordure droite du panneau (1 px) */
+  --side-nav-border-width-divider: var(--size025); /** Épaisseur du séparateur (2 px) */
   --spinner-size-xsmall: var(--size100); /** Spinner xsmall (8 px) */
   --spinner-size-small: var(--size200); /** Spinner small (16 px) */
   --spinner-size-medium: var(--size300); /** Spinner medium (24 px) */
@@ -1362,6 +1378,45 @@
   --avatar-color-selected-text: var(--text-selected); /** Initiales de l'avatar sélectionné */
   --avatar-color-selected-icon: var(--icon-selected); /** Icône de l'avatar sélectionné */
   --avatar-radius: var(--radius-round); /** Coin de l'avatar, toujours rond */
+  --banner-color-warning-background: var(--background-warning-bold-default); /** Fond du bandeau warning (jaune) */
+  --banner-color-warning-text: var(--text-on-warning); /** Message du bandeau warning (texte sombre fixe, lisible sur le jaune) */
+  --banner-color-warning-icon: var(--icon-on-warning); /** Icône contextuelle du bandeau warning */
+  --banner-color-critical-background: var(--background-critical-bold-default); /** Fond du bandeau critical (rouge) */
+  --banner-color-critical-text: var(--text-inverted); /** Message du bandeau critical (texte inversé) */
+  --banner-color-critical-icon: var(--icon-inverted); /** Icône contextuelle du bandeau critical */
+  --banner-color-announcement-background: var(--background-neutral-bold-default); /** Fond du bandeau announcement (neutre sombre) */
+  --banner-color-announcement-text: var(--text-inverted); /** Message du bandeau announcement (texte inversé) */
+  --banner-color-announcement-icon: var(--icon-inverted); /** Icône contextuelle du bandeau announcement */
+  --banner-color-success-background: var(--background-success-bold-default); /** Fond du bandeau success (vert) */
+  --banner-color-success-text: var(--text-inverted); /** Message du bandeau success (texte inversé) */
+  --banner-color-success-icon: var(--icon-inverted); /** Icône contextuelle du bandeau success */
+  --banner-color-information-background: var(--background-information-bold-default); /** Fond du bandeau information (bleu) */
+  --banner-color-information-text: var(--text-inverted); /** Message du bandeau information (texte inversé) */
+  --banner-color-information-icon: var(--icon-inverted); /** Icône contextuelle du bandeau information */
+  --banner-spacing-gap: var(--space150); /** Espace entre l'icône et le message (12 px) */
+  --banner-spacing-padding: var(--space150); /** Marge intérieure du bandeau sur les quatre côtés (12 px) */
+  --bottom-nav-color-background: var(--background-surface-default); /** Fond de la barre */
+  --bottom-nav-color-item-label-default: var(--text-subtlest-default); /** Libellé d'un item au repos */
+  --bottom-nav-color-item-label-selected: var(--text-selected); /** Libellé d'un item sélectionné ou ouvert */
+  --bottom-nav-color-item-label-disabled: var(--text-disabled); /** Libellé d'un item désactivé (s'ajoute à l'opacité disabled, token sémantique déprécié) */
+  --bottom-nav-color-item-icon-default: var(--icon-subtlest); /** Icône d'un item au repos */
+  --bottom-nav-color-item-icon-selected: var(--icon-selected); /** Icône d'un item sélectionné, et croix de fermeture d'un item ouvert */
+  --bottom-nav-color-item-icon-disabled: var(--icon-disabled); /** Icône d'un item désactivé (s'ajoute à l'opacité disabled, token sémantique déprécié) */
+  --bottom-nav-color-item-background-selected: var(--background-selected-subtlest-default); /** Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé dessus */
+  --bottom-nav-color-action-background: var(--background-comete-bold-default); /** Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client */
+  --bottom-nav-color-action-icon: var(--icon-inverted); /** Icône du bouton d'action central */
+  --bottom-nav-color-action-cradle: var(--background-default-default); /** Anneau (cradle) autour de la moitié haute du bouton d'action */
+  --bottom-nav-spacing-padding-top: var(--space050); /** Marge intérieure haute de la barre (4 px) */
+  --bottom-nav-spacing-padding-x: var(--space050); /** Marges intérieures gauche et droite de la barre (4 px) */
+  --bottom-nav-spacing-padding-bottom: var(--space300); /** Marge intérieure basse de la barre, réserve la zone du home indicator iOS (24 px) */
+  --bottom-nav-spacing-item-padding-y: var(--space100); /** Marge verticale de la cellule d'un item (8 px) */
+  --bottom-nav-spacing-item-content-padding-y: var(--space100); /** Marge verticale de la pastille (icône et libellé) d'un item (8 px) */
+  --bottom-nav-spacing-item-gap: var(--space025); /** Espace entre l'icône et le libellé (2 px) */
+  --bottom-nav-spacing-item-badge-offset-top: var(--space075); /** Remontée du badge au-dessus de l'icône (6 px, appliqué en négatif) */
+  --bottom-nav-spacing-item-badge-offset-start: var(--space150); /** Décalage du badge depuis le bord gauche de l'icône (12 px) */
+  --bottom-nav-radius-item: var(--radius150); /** Coins de la cellule d'un item (12 px, visibles au focus) */
+  --bottom-nav-radius-item-selected: var(--radius-round); /** Pastille d'un item sélectionné ou ouvert */
+  --bottom-nav-radius-action: var(--radius-round); /** Bouton d'action central et son anneau */
   --button-color-contained-neutral-text-default: var(--text-default-default);
   --button-color-contained-neutral-background-default: var(--background-neutral-subtler-default);
   --button-color-contained-neutral-background-hovered: var(--background-neutral-subtler-hovered);
@@ -1614,6 +1669,60 @@
   --button-spacing-default-padding-y: var(--space050);
   --button-spacing-touch-gap: var(--space050);
   --button-spacing-touch-padding-y: var(--space100);
+  --page-bar-color-title: var(--text-default-default); /** Titre de la barre de page */
+  --page-bar-color-compact-background: var(--background-surface-default); /** Fond de la barre compacte, épinglée en haut au défilement */
+  --page-bar-color-compact-border: var(--border-subtle); /** Filet bas de la barre compacte */
+  --page-bar-spacing-gap: var(--space100); /** Espace entre les zones leading, titre et trailing (8 px) */
+  --page-bar-spacing-trailing-gap: var(--space100); /** Espace entre les actions de la zone trailing (8 px) */
+  --page-bar-spacing-large-padding-y: var(--space200); /** Retrait vertical de la barre large (16 px) */
+  --page-bar-spacing-compact-padding-y: var(--space100); /** Retrait vertical de la barre compacte (8 px), plus la zone de sécurité iOS en haut */
+  --page-bar-spacing-title-padding-y: var(--space025); /** Retrait vertical du titre pour ne pas rogner les jambages tronqués (2 px) */
+  --page-toolbar-spacing-gap: var(--space100); /** Espace entre recherche, filtres, start et end (8 px) */
+  --page-toolbar-spacing-padding-y: var(--space100); /** Retrait vertical de la toolbar (8 px) */
+  --page-toolbar-spacing-group-gap: var(--space100); /** Espace entre les éléments des zones filters, start et end (8 px) */
+  --page-spacing-gutter-mobile: var(--space150); /** Gouttière horizontale de la page sous 1200 px (mobile et tablette), partagée par Bar, Toolbar et Body (12 px) */
+  --page-spacing-gutter-laptop: var(--space300); /** Gouttière horizontale de la page à partir de 1200 px, partagée par Bar, Toolbar et Body (24 px) */
+  --page-spacing-body-padding-top: var(--space100); /** Retrait haut du Body, sous la toolbar (8 px). Pas de retrait bas */
+  --page-spacing-state-padding-y: var(--space600); /** Marge verticale de l'état vide ou erreur centré dans le Body (48 px) */
+  --page-spacing-skeleton-gap: var(--space300); /** Espace entre les blocs du squelette de chargement du Body (24 px) */
+  --side-nav-color-surface-background: var(--background-surface-default); /** Fond du panneau de navigation (aussi le fond au survol d'un item désactivé) */
+  --side-nav-color-surface-border: var(--border-subtle); /** Bordure droite du panneau, séparation avec le contenu */
+  --side-nav-color-header-title: var(--text-default-default); /** Nom de l'application dans l'en-tête */
+  --side-nav-color-header-subtitle: var(--text-subtlest-default); /** Sous-titre de l'en-tête (module, client) */
+  --side-nav-color-item-background-hovered: var(--background-neutral-subtlest-hovered); /** Fond d'un item au survol */
+  --side-nav-color-item-background-pressed: var(--background-neutral-subtlest-pressed); /** Fond d'un item à l'appui */
+  --side-nav-color-item-text: var(--text-subtle-default); /** Libellé d'un item non sélectionné */
+  --side-nav-color-item-selected-background-default: var(--background-selected-subtlest-default); /** Fond de l'item de la page courante */
+  --side-nav-color-item-selected-background-hovered: var(--background-selected-subtlest-hovered); /** Fond de l'item de la page courante au survol */
+  --side-nav-color-item-selected-background-pressed: var(--background-selected-subtlest-pressed); /** Fond de l'item de la page courante à l'appui */
+  --side-nav-color-item-selected-text: var(--text-selected); /** Libellé de l'item de la page courante */
+  --side-nav-color-section-title: var(--text-subtle-default); /** Titre de section (capitales) */
+  --side-nav-color-divider: var(--border-subtle); /** Séparateur entre groupes d'items */
+  --side-nav-color-empty-icon-background: var(--background-neutral-subtlest-default); /** Pastille de l'icône de l'état vide */
+  --side-nav-color-empty-title: var(--text-default-default); /** Titre de l'état vide */
+  --side-nav-color-empty-description: var(--text-subtlest-default); /** Description de l'état vide */
+  --side-nav-spacing-gutter: var(--space100); /** Gouttière horizontale du panneau (8 px), reprise à droite par la zone défilante */
+  --side-nav-spacing-inset: var(--space150); /** Retrait horizontal commun de l'en-tête, des items, titres de section, séparateurs et pied (12 px) */
+  --side-nav-spacing-header-gap: var(--space150); /** Espace entre le logo, le nom et le bouton de bascule (12 px) */
+  --side-nav-spacing-header-padding-top: var(--space300); /** Marge haute de l'en-tête (24 px) */
+  --side-nav-spacing-header-padding-bottom: var(--space100); /** Marge basse de l'en-tête (8 px) */
+  --side-nav-spacing-item-gap: var(--space150); /** Espace entre l'icône et le libellé (12 px) */
+  --side-nav-spacing-item-padding-y: var(--space075); /** Marge verticale d'un item (6 px) */
+  --side-nav-spacing-rail-padding-x: var(--space050); /** Retrait horizontal des items et titres de section en rail (4 px) */
+  --side-nav-spacing-rail-item-gap: var(--space025); /** Espace entre l'icône et le libellé court en rail (2 px) */
+  --side-nav-spacing-section-title-padding-top: var(--space200); /** Marge au-dessus d'un titre de section (16 px) */
+  --side-nav-spacing-section-title-padding-bottom: var(--space025); /** Marge sous un titre de section (2 px) */
+  --side-nav-spacing-divider-margin-y: var(--space075); /** Marge verticale du séparateur (6 px) */
+  --side-nav-spacing-footer-padding-y: var(--space200); /** Marge verticale du pied (16 px) */
+  --side-nav-spacing-empty-gap: var(--space150); /** Espace entre l'icône, le texte et l'action de l'état vide (12 px) */
+  --side-nav-spacing-empty-padding-y: var(--space400); /** Marge verticale de l'état vide (32 px) */
+  --side-nav-spacing-empty-padding-x: var(--space200); /** Marge horizontale de l'état vide (16 px) */
+  --side-nav-spacing-empty-text-gap: var(--space050); /** Espace entre le titre et la description de l'état vide (4 px) */
+  --side-nav-spacing-empty-action: var(--space100); /** Marge au-dessus de l'action de l'état vide (8 px) */
+  --side-nav-spacing-skeleton-gap: var(--space075); /** Espace entre les lignes d'un placeholder de chargement (6 px) */
+  --side-nav-radius-item: var(--radius0375); /** Coins d'un item (3 px) */
+  --side-nav-radius-divider: var(--radius0125); /** Coins du séparateur (1 px) */
+  --side-nav-radius-empty-icon: var(--radius-round); /** Pastille ronde de l'état vide */
   --spinner-color-default: var(--icon-default); /** Spinner sur fond clair (appearance inherit hors contexte) */
   --spinner-color-inverted: var(--icon-inverted); /** Spinner sur fond foncé (appearance inverted) */
   --spinner-color-comete-light: var(--logo-comete-gradient-light); /** Dégradé comète, pointe de la queue (repris du logo) */

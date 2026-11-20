@@ -416,15 +416,15 @@
 
 /* ── Semantic (light = default) ──────────────────────────────── */
 :root {
-  --background-neutral-subtler-default: #eaedee;
-  --background-neutral-subtler-hovered: #d8dedf;
-  --background-neutral-subtler-pressed: #b5c1c4;
-  --background-neutral-bold-default: #3f4a4d;
-  --background-neutral-bold-hovered: #374043;
-  --background-neutral-bold-pressed: #252a2c;
-  --background-neutral-subtlest-default: #f7f8f8;
-  --background-neutral-subtlest-hovered: #eaedee;
-  --background-neutral-subtlest-pressed: #d8dedf;
+  --background-neutral-subtler-default: #eaedee; /** Fond gris des contrôles neutres au repos : bouton contained neutral, tag, badge, barre de progression, interrupteur inactif. Texte en text.default (12,3:1) ou text.subtle (6,3:1). Pas pour une zone de page (neutral.subtlest). */
+  --background-neutral-subtler-hovered: #d8dedf; /** État survolé de background.neutral.subtler : contrôles neutres, lignes et options sélectionnables, case et radio au survol. */
+  --background-neutral-subtler-pressed: #b5c1c4; /** État pressé de background.neutral.subtler. */
+  --background-neutral-bold-default: #3f4a4d; /** Fond gris foncé plein, contraste fort : badge, bandeau, tag bold, case cochée, tiroir sombre. Texte et icône en text.inverted et icon.inverted (9,1:1). Pas pour une surface de page ni pour du texte. */
+  --background-neutral-bold-hovered: #374043; /** État survolé de background.neutral.bold : tag bold, case et radio cochées, snackbar. */
+  --background-neutral-bold-pressed: #252a2c; /** État pressé de background.neutral.bold. */
+  --background-neutral-subtlest-default: #f7f8f8; /** Fond gris le plus léger : zones secondaires, en-têtes de tableau, tuiles, panneau de navigation. Texte en text.default (13,6:1) ou text.subtle. Pas pour un contrôle plein (neutral.subtler) ni pour la page (surface.default). */
+  --background-neutral-subtlest-hovered: #eaedee; /** État survolé d'un élément posé sur background.neutral.subtlest : ligne de liste, accordéon, bouton d'apparence subtle, option de sélecteur. */
+  --background-neutral-subtlest-pressed: #d8dedf; /** État pressé d'un élément posé sur background.neutral.subtlest. */
   --background-disabled-default: rgba(9, 9, 11, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --background-brand-subtlest-default: #dceefd;
   --background-brand-subtlest-hovered: #c1e3fc;
@@ -450,12 +450,12 @@
   --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-dark-surface (12:1), jamais text.inverted. */
   --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
   --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
-  --background-selected-bold-hovered: #224986;
-  --background-selected-bold-pressed: #1e3661;
-  --background-selected-bold-default: #2354aa;
-  --background-selected-subtlest-pressed: #97d2f9;
-  --background-selected-subtlest-hovered: #c1e3fc;
-  --background-selected-subtlest-default: #dceefd;
+  --background-selected-bold-hovered: #224986; /** État survolé de background.selected.bold (bouton à bascule actif). */
+  --background-selected-bold-pressed: #1e3661; /** État pressé de background.selected.bold (bouton à bascule actif). */
+  --background-selected-bold-default: #2354aa; /** Fond plein de sélection : bouton à bascule actif, interrupteur activé, indicateur de progression. Texte et icône inversés (7,2:1). Bleu Comète fixe : ne suit pas la charte client. */
+  --background-selected-subtlest-pressed: #97d2f9; /** État pressé d'un élément sélectionné posé sur background.selected.subtlest. */
+  --background-selected-subtlest-hovered: #c1e3fc; /** État survolé d'un élément sélectionné posé sur background.selected.subtlest. */
+  --background-selected-subtlest-default: #dceefd; /** Fond de l'élément sélectionné dans une liste, un menu, une navigation ou un tableau. Texte en text.selected, icône en icon.selected. Bleu Comète fixe : ne suit pas la charte client. */
   --background-field-default: #ffffff; /** Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default. */
   --background-success-bold-default: #00784d;
   --background-success-bold-hovered: #036240;
@@ -550,40 +550,40 @@
   --background-cycle-day-subtlest-default: #fffbed;
   --background-cycle-day-subtlest-hovered: #fff6d4;
   --background-cycle-day-subtlest-pressed: #ffe8a9;
-  --background-focused-default: #429aef;
-  --surface-default: #ffffff;
-  --surface-sunken-default: #f7f8f8;
-  --surface-sunken-hovered: #eaedee;
-  --surface-sunken-pressed: #d8dedf;
-  --surface-raise-default: #ffffff;
-  --surface-overlay-default: #ffffff;
-  --surface-overlay-critical: #fef2f2;
-  --surface-overlay-success: #ebfef4;
-  --surface-overlay-accent-purple: #f3f0ff;
-  --surface-overlay-accent-teal: #eefafd;
-  --surface-overlay-accent-turquoise: #edfffd;
-  --surface-overlay-accent-magenta: #fcf3f9;
-  --surface-overlay-accent-blue-grey: #f5f7fa;
-  --surface-overlay-information: #eff8ff;
-  --surface-overlay-warning: #fdfee8;
+  --background-focused-default: #429aef; /** Fond de l'indicateur de focus clavier quand il ne peut pas être une bordure : cellule de tableau, puce radio, action rapide. Même bleu que border.focused. Jamais décoratif. */
+  --surface-default: #ffffff; /** Surface de base de la page et des conteneurs : Page, panneaux latéraux, tableaux, listes, menus. Texte en text.default (14,5:1). Point de départ de la profondeur : sunken en dessous, raise puis overlay au-dessus. Une surface porte une profondeur, jamais un sens : pour un remplissage qui dit quelque chose, background.*. Sert aussi d'anneau de découpe (Badge, AvatarGroup) pour imiter la surface sous l'élément. */
+  --surface-sunken-default: #f7f8f8; /** Surface en creux, sous la surface de base : fond de page derrière des cartes, zone de dépôt, champ de saisie au repos. Texte en text.default. */
+  --surface-sunken-hovered: #eaedee; /** État survolé d'une surface en creux (champ de saisie au repos survolé). */
+  --surface-sunken-pressed: #d8dedf; /** État pressé d'une surface en creux. Sans consommateur dans le DS à ce jour. */
+  --surface-raise-default: #ffffff; /** Surface surélevée au-dessus de la base : popover, sélecteurs de date, de mois, de semaine, d'année et d'heure. S'accompagne d'une ombre elevation.* pour marquer la hauteur. */
+  --surface-overlay-default: #ffffff; /** Surface de la couche modale : boîte de dialogue, tiroir, spotlight. Posée sur blanket.default. Niveau le plus haut de la profondeur, au-dessus de raise. */
+  --surface-overlay-critical: #fef2f2; /** Teinte la plus claire de critical pour une surface modale ou un encart d'erreur. Texte en text.critical ou text.default. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-success: #ebfef4; /** Teinte la plus claire de success pour une surface modale ou un encart de confirmation. Texte en text.success ou text.default. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-purple: #f3f0ff; /** Teinte la plus claire de l'accent purple pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-teal: #eefafd; /** Teinte la plus claire de l'accent teal pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-turquoise: #edfffd; /** Teinte la plus claire de l'accent turquoise pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-magenta: #fcf3f9; /** Teinte la plus claire de l'accent magenta pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-blue-grey: #f5f7fa; /** Teinte la plus claire de l'accent blue-grey pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-information: #eff8ff; /** Teinte la plus claire d'information pour une surface modale ou un encart informatif. Texte en text.information ou text.default. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-warning: #fdfee8; /** Teinte la plus claire de warning pour une surface modale ou un encart d'avertissement. Texte en text.default (text.warning est limite en petit texte). Sans consommateur dans le DS à ce jour. */
   --surface-mask-default: rgba(5, 12, 31, 0.49); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
   --surface-mask-hovered: rgba(8, 15, 33, 0.31); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
   --surface-mask-pressed: rgba(11, 18, 14, 0.14); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
   --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --surface-inverted: #252a2c; /** Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page : démonstration d'un logo inversé, encart contrasté. Texte en text.inverted. Pas une surface navy (surface.comete) ni un fond de statut. */
-  --text-default-default: #252a2c;
-  --text-default-hovered: #374043;
-  --text-default-pressed: #3f4a4d;
-  --text-selected: #2c7ee4;
+  --text-default-default: #252a2c; /** Texte principal : corps, titres, libellés, valeurs. Sur toute surface claire (14,5:1 sur surface.default, 12,3:1 sur neutral.subtler). Sur fond bold, utiliser text.inverted. */
+  --text-default-hovered: #374043; /** Texte principal survolé : lien discret (link-subtle) ou texte cliquable sans fond. */
+  --text-default-pressed: #3f4a4d; /** Texte principal pressé : lien discret (link-subtle) ou texte cliquable sans fond. */
+  --text-selected: #2c7ee4; /** Texte de l'élément sélectionné : liste, menu, navigation, badge. Bleu Comète fixe. 4:1 sur surface.default et 3,4:1 sur background.selected.subtlest en clair : à réserver aux libellés de 14 px medium et plus. */
   --text-disabled: rgba(9, 9, 11, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-  --text-link-default: #0076d8;
-  --text-link-hovered: #0060b0;
-  --text-link-pressed: #005391;
-  --text-subtle-default: #49585b;
-  --text-subtle-hovered: #3f4a4d;
-  --text-subtle-pressed: #374043;
-  --text-inverted: #ffffff;
-  --text-subtle-inverted: #b5c1c4;
+  --text-link-default: #0076d8; /** Lien dans un texte courant (Text, bouton link neutral). 4,6:1 sur surface.default seulement : pas sur fond gris ni teinté. Toujours souligné. Pas pour un bouton ni une navigation (text.selected). */
+  --text-link-hovered: #0060b0; /** Lien survolé : plus foncé en clair, plus clair en sombre. Le soulignement reste. */
+  --text-link-pressed: #005391; /** Lien pressé. Le soulignement reste. */
+  --text-subtle-default: #49585b; /** Texte secondaire : descriptions, aides de champ, métadonnées, en-têtes de colonne, fil d'Ariane. 7,4:1 sur surface.default, 6,3:1 sur neutral.subtler. Pas pour l'information essentielle. */
+  --text-subtle-hovered: #3f4a4d; /** Texte secondaire survolé (lien discret, bouton subtle). */
+  --text-subtle-pressed: #374043; /** Texte secondaire pressé (lien discret, bouton subtle). */
+  --text-inverted: #ffffff; /** Texte sur fond bold : bandeau, tag bold, bouton plein, snackbar, carte bold neutre. Blanc en clair, encre en sombre (9,1:1 sur neutral.bold). Suit le thème : sur une surface navy fixe (surface.comete, *.boldest), utiliser text.on-dark-surface. */
+  --text-subtle-inverted: #b5c1c4; /** Texte secondaire sur fond bold (5:1 sur neutral.bold en clair). Suit le thème, même réserve que text.inverted. Sans consommateur dans le DS à ce jour. */
   --text-success-default: #036240;
   --text-success-hovered: #245041;
   --text-success-pressed: #0e2d24;
@@ -596,9 +596,9 @@
   --text-critical-default: #9d1717;
   --text-critical-hovered: #821a1a;
   --text-critical-pressed: #2e1717;
-  --text-subtlest-default: #6f8488;
-  --text-subtlest-hovered: #596b70;
-  --text-subtlest-pressed: #49585b;
+  --text-subtlest-default: #6f8488; /** Texte tertiaire : placeholder, mention, compteur, jour hors mois. 3,9:1 sur surface.default, sous le seuil AA du petit texte : réservé au texte de 24 px et plus ou à l'information non essentielle. Jamais en corps de texte. */
+  --text-subtlest-hovered: #596b70; /** Texte tertiaire survolé (bouton subtlest, lien discret). Même réserve de contraste que text.subtlest.default. */
+  --text-subtlest-pressed: #49585b; /** Texte tertiaire pressé (bouton subtlest, lien discret). Même réserve de contraste que text.subtlest.default. */
   --text-accent-purple-default: #5e4db2;
   --text-accent-purple-hovered: #51458e;
   --text-accent-purple-pressed: #453d72;
@@ -625,9 +625,9 @@
   --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --border-disabled: rgba(9, 9, 11, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-  --border-subtle: #eaedee;
-  --border-focused: #429aef;
-  --border-bold: #b5c1c4;
+  --border-subtle: #eaedee; /** Séparateur discret : filet de liste, diviseur, bord de page, accordéon. Plus léger que border.default. */
+  --border-focused: #429aef; /** Anneau de focus clavier : FocusRing et tout contrôle focalisable. 3:1 sur surface.default, seuil AA des composants. Jamais décoratif, jamais remplacé par une couleur de statut. */
+  --border-bold: #b5c1c4; /** Bordure appuyée : bouton outlined, diviseur fort, onglets, champ en relief. Reste décorative (1,8:1) : ne porte pas seule une information. */
   --border-success-bold: #009b60;
   --border-success-subtle: #a4f6ca;
   --border-critical-bold: #e12121;
@@ -636,7 +636,7 @@
   --border-warning-subtle: #fee78a;
   --border-information-bold: #0076d8;
   --border-information-subtle: #b4e3ff;
-  --border-selected: #429aef;
+  --border-selected: #429aef; /** Bordure de l'élément sélectionné : onglet actif, option de menu, indicateur de dépôt. Bleu Comète fixe. Même bleu que border.focused : ne pas cumuler les deux sur un même bord. */
   --border-accent-purple-bold: #8270db;
   --border-accent-purple-subtle: #d1d4f4;
   --border-accent-teal-bold: #1f92bb;
@@ -647,12 +647,12 @@
   --border-accent-magenta-subtle: #f6d4eb;
   --border-accent-blue-grey-bold: #58759f;
   --border-accent-blue-grey-subtle: #d1d9e6;
-  --border-selected-inverted: #c1e3fc;
-  --border-focus-inverted: #dceefd;
-  --border-neutral: #374043;
-  --border-default: #d8dedf;
-  --border-invisible: #ffffff;
-  --border-inverted: #ffffff;
+  --border-selected-inverted: #c1e3fc; /** Bordure de sélection sur fond bold ou sombre. Sans consommateur dans le DS à ce jour. */
+  --border-focus-inverted: #dceefd; /** Anneau de focus sur fond bold ou sombre. Sans consommateur dans le DS à ce jour (FocusRing n'a pas de variante inversée). */
+  --border-neutral: #374043; /** Bordure gris foncé, proche de l'encre, pour un bloc contrasté (Bleed outlined). À n'utiliser que sur fond clair. */
+  --border-default: #d8dedf; /** Bordure courante des conteneurs et contrôles : champ, carte, menu, tableau, onglet, tag. Décorative (1,4:1 sur surface.default), ne porte pas seule une information. */
+  --border-invisible: #ffffff; /** Bordure de la couleur de la surface, pour réserver l'épaisseur sans la montrer (alignement outlined / non outlined). Vaut blanc en clair et encre en sombre, pas transparent. Sans consommateur dans le DS. */
+  --border-inverted: #ffffff; /** Bordure blanche sur fond bold ou sombre (carte bold). Suit le thème, comme text.inverted. */
   --border-day-bold: #f68909;
   --border-day-subtle: #fff6d4;
   --border-night-bold: #0076d8;
@@ -663,9 +663,9 @@
   --border-comete-bold: #224986;
   --border-comete-subtle: #c1e3fc;
   --border-comete-boldest: #1e3661; /** Bordure navy Comète, accent d'identité le plus appuyé. Pas pour les contrôles (border.comete.bold). */
-  --icon-default: #32415a;
+  --icon-default: #32415a; /** Icône principale, aux côtés de text.default (10,3:1 sur surface.default). Teinte blue-grey, légèrement distincte de l'encre du texte. */
   --icon-disabled: rgba(9, 9, 11, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-  --icon-inverted: #f7f8f8;
+  --icon-inverted: #f7f8f8; /** Icône sur fond bold ou sombre, avec text.inverted (8,6:1 sur neutral.bold). Suit le thème. */
   --icon-warning: #856d0e;
   --icon-critical: #e12121;
   --icon-success: #009b60;
@@ -673,10 +673,10 @@
   --icon-brand-boldest: #1e3661; /** Miroir de icon.comete.boldest pour la charte du client (BrandProvider). */
   --icon-comete-default: #2354aa; /** Icône bleu Comète sur fond clair : iconographie d'identité et tuiles comete. */
   --icon-comete-boldest: #1e3661; /** Icône navy Comète sur fond clair uniquement, accent d'identité le plus appuyé. */
-  --icon-selected: #2c7ee4;
+  --icon-selected: #2c7ee4; /** Icône de l'élément sélectionné, avec text.selected. Bleu Comète fixe. */
   --icon-information: #0076d8;
-  --icon-subtle: #596b70;
-  --icon-subtlest: #6f8488;
+  --icon-subtle: #596b70; /** Icône secondaire : chevron, icône de champ, curseur d'action, barre de défilement. 5,6:1 en clair, 3,9:1 en sombre (seuil AA des composants 3:1). */
+  --icon-subtlest: #6f8488; /** Icône tertiaire : décorative ou placeholder de champ. 3,9:1 en clair, 2,7:1 en sombre : ne doit pas porter seule une information. */
   --icon-accent-purple: #8270db;
   --icon-accent-teal: #1f92bb;
   --icon-accent-turquoise: #00b7b1;
@@ -686,7 +686,7 @@
   --icon-night: #0076d8;
   --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
   --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
-  --icon-bold: #252a2c;
+  --icon-bold: #252a2c; /** Icône gris foncé fixe (poignée du Switch). Même valeur en clair et en sombre, donc invisible sur fond sombre : valeur sombre à corriger. */
   --logo-comete-default: #1e3661; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
   --logo-comete-gradient-light: #fff146;
@@ -703,15 +703,15 @@
  */
 
 [data-theme="dark"] {
-  --background-neutral-subtler-default: #49585b;
-  --background-neutral-subtler-hovered: #596b70;
-  --background-neutral-subtler-pressed: #6f8488;
-  --background-neutral-bold-default: #eaedee;
-  --background-neutral-bold-hovered: #d8dedf;
-  --background-neutral-bold-pressed: #b5c1c4;
-  --background-neutral-subtlest-default: #49585b;
-  --background-neutral-subtlest-hovered: #3f4a4d;
-  --background-neutral-subtlest-pressed: #374043;
+  --background-neutral-subtler-default: #49585b; /** Fond gris des contrôles neutres au repos : bouton contained neutral, tag, badge, barre de progression, interrupteur inactif. Texte en text.default (12,3:1) ou text.subtle (6,3:1). Pas pour une zone de page (neutral.subtlest). */
+  --background-neutral-subtler-hovered: #596b70; /** État survolé de background.neutral.subtler : contrôles neutres, lignes et options sélectionnables, case et radio au survol. */
+  --background-neutral-subtler-pressed: #6f8488; /** État pressé de background.neutral.subtler. */
+  --background-neutral-bold-default: #eaedee; /** Fond gris foncé plein, contraste fort : badge, bandeau, tag bold, case cochée, tiroir sombre. Texte et icône en text.inverted et icon.inverted (9,1:1). Pas pour une surface de page ni pour du texte. */
+  --background-neutral-bold-hovered: #d8dedf; /** État survolé de background.neutral.bold : tag bold, case et radio cochées, snackbar. */
+  --background-neutral-bold-pressed: #b5c1c4; /** État pressé de background.neutral.bold. */
+  --background-neutral-subtlest-default: #49585b; /** Fond gris le plus léger : zones secondaires, en-têtes de tableau, tuiles, panneau de navigation. Texte en text.default (13,6:1) ou text.subtle. Pas pour un contrôle plein (neutral.subtler) ni pour la page (surface.default). */
+  --background-neutral-subtlest-hovered: #3f4a4d; /** État survolé d'un élément posé sur background.neutral.subtlest : ligne de liste, accordéon, bouton d'apparence subtle, option de sélecteur. */
+  --background-neutral-subtlest-pressed: #374043; /** État pressé d'un élément posé sur background.neutral.subtlest. */
   --background-disabled-default: rgba(255, 255, 255, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --background-brand-subtlest-default: #1e3661;
   --background-brand-subtlest-hovered: #224986;
@@ -737,12 +737,12 @@
   --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-dark-surface (12:1), jamais text.inverted. */
   --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
   --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
-  --background-selected-bold-hovered: #dceefd;
-  --background-selected-bold-pressed: #f0f8fe;
-  --background-selected-bold-default: #c1e3fc;
-  --background-selected-subtlest-pressed: #2354aa;
-  --background-selected-subtlest-hovered: #224986;
-  --background-selected-subtlest-default: #1e3661;
+  --background-selected-bold-hovered: #dceefd; /** État survolé de background.selected.bold (bouton à bascule actif). */
+  --background-selected-bold-pressed: #f0f8fe; /** État pressé de background.selected.bold (bouton à bascule actif). */
+  --background-selected-bold-default: #c1e3fc; /** Fond plein de sélection : bouton à bascule actif, interrupteur activé, indicateur de progression. Texte et icône inversés (7,2:1). Bleu Comète fixe : ne suit pas la charte client. */
+  --background-selected-subtlest-pressed: #2354aa; /** État pressé d'un élément sélectionné posé sur background.selected.subtlest. */
+  --background-selected-subtlest-hovered: #224986; /** État survolé d'un élément sélectionné posé sur background.selected.subtlest. */
+  --background-selected-subtlest-default: #1e3661; /** Fond de l'élément sélectionné dans une liste, un menu, une navigation ou un tableau. Texte en text.selected, icône en icon.selected. Bleu Comète fixe : ne suit pas la charte client. */
   --background-field-default: #252a2c; /** Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default. */
   --background-success-bold-default: #0abf76;
   --background-success-bold-hovered: #2fd88e;
@@ -837,40 +837,40 @@
   --background-cycle-day-subtlest-default: #441f06;
   --background-cycle-day-subtlest-hovered: #7e4210;
   --background-cycle-day-subtlest-pressed: #9c4f10;
-  --background-focused-default: #66b8f4;
-  --surface-default: #374043;
-  --surface-sunken-default: #252a2c;
-  --surface-sunken-hovered: #374043;
-  --surface-sunken-pressed: #3f4a4d;
-  --surface-raise-default: #49585b;
-  --surface-overlay-default: #3f4a4d;
-  --surface-overlay-critical: #2e1717;
-  --surface-overlay-success: #0e2d24;
-  --surface-overlay-accent-purple: #292442;
-  --surface-overlay-accent-teal: #0f2b3d;
-  --surface-overlay-accent-turquoise: #00373a;
-  --surface-overlay-accent-magenta: #47102d;
-  --surface-overlay-accent-blue-grey: #1e2533;
-  --surface-overlay-information: #023059;
-  --surface-overlay-warning: #292410;
+  --background-focused-default: #66b8f4; /** Fond de l'indicateur de focus clavier quand il ne peut pas être une bordure : cellule de tableau, puce radio, action rapide. Même bleu que border.focused. Jamais décoratif. */
+  --surface-default: #374043; /** Surface de base de la page et des conteneurs : Page, panneaux latéraux, tableaux, listes, menus. Texte en text.default (14,5:1). Point de départ de la profondeur : sunken en dessous, raise puis overlay au-dessus. Une surface porte une profondeur, jamais un sens : pour un remplissage qui dit quelque chose, background.*. Sert aussi d'anneau de découpe (Badge, AvatarGroup) pour imiter la surface sous l'élément. */
+  --surface-sunken-default: #252a2c; /** Surface en creux, sous la surface de base : fond de page derrière des cartes, zone de dépôt, champ de saisie au repos. Texte en text.default. */
+  --surface-sunken-hovered: #374043; /** État survolé d'une surface en creux (champ de saisie au repos survolé). */
+  --surface-sunken-pressed: #3f4a4d; /** État pressé d'une surface en creux. Sans consommateur dans le DS à ce jour. */
+  --surface-raise-default: #49585b; /** Surface surélevée au-dessus de la base : popover, sélecteurs de date, de mois, de semaine, d'année et d'heure. S'accompagne d'une ombre elevation.* pour marquer la hauteur. */
+  --surface-overlay-default: #3f4a4d; /** Surface de la couche modale : boîte de dialogue, tiroir, spotlight. Posée sur blanket.default. Niveau le plus haut de la profondeur, au-dessus de raise. */
+  --surface-overlay-critical: #2e1717; /** Teinte la plus claire de critical pour une surface modale ou un encart d'erreur. Texte en text.critical ou text.default. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-success: #0e2d24; /** Teinte la plus claire de success pour une surface modale ou un encart de confirmation. Texte en text.success ou text.default. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-purple: #292442; /** Teinte la plus claire de l'accent purple pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-teal: #0f2b3d; /** Teinte la plus claire de l'accent teal pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-turquoise: #00373a; /** Teinte la plus claire de l'accent turquoise pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-magenta: #47102d; /** Teinte la plus claire de l'accent magenta pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-accent-blue-grey: #1e2533; /** Teinte la plus claire de l'accent blue-grey pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-information: #023059; /** Teinte la plus claire d'information pour une surface modale ou un encart informatif. Texte en text.information ou text.default. Sans consommateur dans le DS à ce jour. */
+  --surface-overlay-warning: #292410; /** Teinte la plus claire de warning pour une surface modale ou un encart d'avertissement. Texte en text.default (text.warning est limite en petit texte). Sans consommateur dans le DS à ce jour. */
   --surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
   --surface-mask-hovered: rgba(191, 219, 248, 0.28); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
   --surface-mask-pressed: rgba(166, 197, 226, 0.16); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
   --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
   --surface-inverted: #ffffff; /** Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page : démonstration d'un logo inversé, encart contrasté. Texte en text.inverted. Pas une surface navy (surface.comete) ni un fond de statut. */
-  --text-default-default: #f7f8f8;
-  --text-default-hovered: #eaedee;
-  --text-default-pressed: #d8dedf;
-  --text-selected: #c1e3fc;
+  --text-default-default: #f7f8f8; /** Texte principal : corps, titres, libellés, valeurs. Sur toute surface claire (14,5:1 sur surface.default, 12,3:1 sur neutral.subtler). Sur fond bold, utiliser text.inverted. */
+  --text-default-hovered: #eaedee; /** Texte principal survolé : lien discret (link-subtle) ou texte cliquable sans fond. */
+  --text-default-pressed: #d8dedf; /** Texte principal pressé : lien discret (link-subtle) ou texte cliquable sans fond. */
+  --text-selected: #c1e3fc; /** Texte de l'élément sélectionné : liste, menu, navigation, badge. Bleu Comète fixe. 4:1 sur surface.default et 3,4:1 sur background.selected.subtlest en clair : à réserver aux libellés de 14 px medium et plus. */
   --text-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-  --text-link-default: #71cdff;
-  --text-link-hovered: #b4e3ff;
-  --text-link-pressed: #ddf1ff;
-  --text-subtle-default: #b5c1c4;
-  --text-subtle-hovered: #d8dedf;
-  --text-subtle-pressed: #eaedee;
-  --text-inverted: #252a2c;
-  --text-subtle-inverted: #49585b;
+  --text-link-default: #71cdff; /** Lien dans un texte courant (Text, bouton link neutral). 4,6:1 sur surface.default seulement : pas sur fond gris ni teinté. Toujours souligné. Pas pour un bouton ni une navigation (text.selected). */
+  --text-link-hovered: #b4e3ff; /** Lien survolé : plus foncé en clair, plus clair en sombre. Le soulignement reste. */
+  --text-link-pressed: #ddf1ff; /** Lien pressé. Le soulignement reste. */
+  --text-subtle-default: #b5c1c4; /** Texte secondaire : descriptions, aides de champ, métadonnées, en-têtes de colonne, fil d'Ariane. 7,4:1 sur surface.default, 6,3:1 sur neutral.subtler. Pas pour l'information essentielle. */
+  --text-subtle-hovered: #d8dedf; /** Texte secondaire survolé (lien discret, bouton subtle). */
+  --text-subtle-pressed: #eaedee; /** Texte secondaire pressé (lien discret, bouton subtle). */
+  --text-inverted: #252a2c; /** Texte sur fond bold : bandeau, tag bold, bouton plein, snackbar, carte bold neutre. Blanc en clair, encre en sombre (9,1:1 sur neutral.bold). Suit le thème : sur une surface navy fixe (surface.comete, *.boldest), utiliser text.on-dark-surface. */
+  --text-subtle-inverted: #49585b; /** Texte secondaire sur fond bold (5:1 sur neutral.bold en clair). Suit le thème, même réserve que text.inverted. Sans consommateur dans le DS à ce jour. */
   --text-success-default: #6aebae;
   --text-success-hovered: #a4f6ca;
   --text-success-pressed: #d0fbe2;
@@ -883,9 +883,9 @@
   --text-critical-default: #ffc8c8;
   --text-critical-hovered: #ffe1e1;
   --text-critical-pressed: #fef2f2;
-  --text-subtlest-default: #6f8488;
-  --text-subtlest-hovered: #8d9fa3;
-  --text-subtlest-pressed: #b5c1c4;
+  --text-subtlest-default: #6f8488; /** Texte tertiaire : placeholder, mention, compteur, jour hors mois. 3,9:1 sur surface.default, sous le seuil AA du petit texte : réservé au texte de 24 px et plus ou à l'information non essentielle. Jamais en corps de texte. */
+  --text-subtlest-hovered: #8d9fa3; /** Texte tertiaire survolé (bouton subtlest, lien discret). Même réserve de contraste que text.subtlest.default. */
+  --text-subtlest-pressed: #b5c1c4; /** Texte tertiaire pressé (bouton subtlest, lien discret). Même réserve de contraste que text.subtlest.default. */
   --text-accent-purple-default: #d1d4f4;
   --text-accent-purple-hovered: #e6e8f9;
   --text-accent-purple-pressed: #f3f0ff;
@@ -912,9 +912,9 @@
   --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-  --border-subtle: #3f4a4d;
-  --border-focused: #66b8f4;
-  --border-bold: #49585b;
+  --border-subtle: #3f4a4d; /** Séparateur discret : filet de liste, diviseur, bord de page, accordéon. Plus léger que border.default. */
+  --border-focused: #66b8f4; /** Anneau de focus clavier : FocusRing et tout contrôle focalisable. 3:1 sur surface.default, seuil AA des composants. Jamais décoratif, jamais remplacé par une couleur de statut. */
+  --border-bold: #49585b; /** Bordure appuyée : bouton outlined, diviseur fort, onglets, champ en relief. Reste décorative (1,8:1) : ne porte pas seule une information. */
   --border-success-bold: #0abf76;
   --border-success-subtle: #036240;
   --border-critical-bold: #f44040;
@@ -923,7 +923,7 @@
   --border-warning-subtle: #856d0e;
   --border-information-bold: #009bfe;
   --border-information-subtle: #005391;
-  --border-selected: #66b8f4;
+  --border-selected: #66b8f4; /** Bordure de l'élément sélectionné : onglet actif, option de menu, indicateur de dépôt. Bleu Comète fixe. Même bleu que border.focused : ne pas cumuler les deux sur un même bord. */
   --border-accent-purple-bold: #8270db;
   --border-accent-purple-subtle: #51458e;
   --border-accent-teal-bold: #1f92bb;
@@ -934,12 +934,12 @@
   --border-accent-magenta-subtle: #8d275d;
   --border-accent-blue-grey-bold: #58759f;
   --border-accent-blue-grey-subtle: #32415a;
-  --border-selected-inverted: #2354aa;
-  --border-focus-inverted: #224986;
-  --border-neutral: #f8f8f8;
-  --border-default: #49585b;
-  --border-invisible: #252a2c;
-  --border-inverted: #252a2c;
+  --border-selected-inverted: #2354aa; /** Bordure de sélection sur fond bold ou sombre. Sans consommateur dans le DS à ce jour. */
+  --border-focus-inverted: #224986; /** Anneau de focus sur fond bold ou sombre. Sans consommateur dans le DS à ce jour (FocusRing n'a pas de variante inversée). */
+  --border-neutral: #f8f8f8; /** Bordure gris foncé, proche de l'encre, pour un bloc contrasté (Bleed outlined). À n'utiliser que sur fond clair. */
+  --border-default: #49585b; /** Bordure courante des conteneurs et contrôles : champ, carte, menu, tableau, onglet, tag. Décorative (1,4:1 sur surface.default), ne porte pas seule une information. */
+  --border-invisible: #252a2c; /** Bordure de la couleur de la surface, pour réserver l'épaisseur sans la montrer (alignement outlined / non outlined). Vaut blanc en clair et encre en sombre, pas transparent. Sans consommateur dans le DS. */
+  --border-inverted: #252a2c; /** Bordure blanche sur fond bold ou sombre (carte bold). Suit le thème, comme text.inverted. */
   --border-day-bold: #fca013;
   --border-day-subtle: #7e4210;
   --border-night-bold: #009bfe;
@@ -950,9 +950,9 @@
   --border-comete-bold: #dceefd;
   --border-comete-subtle: #2354aa;
   --border-comete-boldest: #f0f8fe; /** Bordure navy Comète, accent d'identité le plus appuyé. Pas pour les contrôles (border.comete.bold). */
-  --icon-default: #eaedf4;
+  --icon-default: #eaedf4; /** Icône principale, aux côtés de text.default (10,3:1 sur surface.default). Teinte blue-grey, légèrement distincte de l'encre du texte. */
   --icon-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-  --icon-inverted: #374043;
+  --icon-inverted: #374043; /** Icône sur fond bold ou sombre, avec text.inverted (8,6:1 sur neutral.bold). Suit le thème. */
   --icon-warning: #fdd847;
   --icon-critical: #ffa2a2;
   --icon-success: #2fd88e;
@@ -960,10 +960,10 @@
   --icon-brand-boldest: #f0f8fe; /** Miroir de icon.comete.boldest pour la charte du client (BrandProvider). */
   --icon-comete-default: #c1e3fc; /** Icône bleu Comète sur fond clair : iconographie d'identité et tuiles comete. */
   --icon-comete-boldest: #f0f8fe; /** Icône navy Comète sur fond clair uniquement, accent d'identité le plus appuyé. */
-  --icon-selected: #97d2f9;
+  --icon-selected: #97d2f9; /** Icône de l'élément sélectionné, avec text.selected. Bleu Comète fixe. */
   --icon-information: #71cdff;
-  --icon-subtle: #8d9fa3;
-  --icon-subtlest: #6f8488;
+  --icon-subtle: #8d9fa3; /** Icône secondaire : chevron, icône de champ, curseur d'action, barre de défilement. 5,6:1 en clair, 3,9:1 en sombre (seuil AA des composants 3:1). */
+  --icon-subtlest: #6f8488; /** Icône tertiaire : décorative ou placeholder de champ. 3,9:1 en clair, 2,7:1 en sombre : ne doit pas porter seule une information. */
   --icon-accent-purple: #b5b8ec;
   --icon-accent-teal: #79cee7;
   --icon-accent-turquoise: #3afff9;
@@ -973,7 +973,7 @@
   --icon-night: #26b5ff;
   --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
   --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
-  --icon-bold: #f7f8f8;
+  --icon-bold: #f7f8f8; /** Icône gris foncé fixe (poignée du Switch). Même valeur en clair et en sombre, donc invisible sur fond sombre : valeur sombre à corriger. */
   --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
   --logo-comete-gradient-dark: #f8bf01;
   --logo-comete-gradient-light: #fff146;
@@ -988,15 +988,15 @@
 /* ── Fallback: prefers-color-scheme ──────────────────────────── */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --background-neutral-subtler-default: #49585b;
-    --background-neutral-subtler-hovered: #596b70;
-    --background-neutral-subtler-pressed: #6f8488;
-    --background-neutral-bold-default: #eaedee;
-    --background-neutral-bold-hovered: #d8dedf;
-    --background-neutral-bold-pressed: #b5c1c4;
-    --background-neutral-subtlest-default: #49585b;
-    --background-neutral-subtlest-hovered: #3f4a4d;
-    --background-neutral-subtlest-pressed: #374043;
+    --background-neutral-subtler-default: #49585b; /** Fond gris des contrôles neutres au repos : bouton contained neutral, tag, badge, barre de progression, interrupteur inactif. Texte en text.default (12,3:1) ou text.subtle (6,3:1). Pas pour une zone de page (neutral.subtlest). */
+    --background-neutral-subtler-hovered: #596b70; /** État survolé de background.neutral.subtler : contrôles neutres, lignes et options sélectionnables, case et radio au survol. */
+    --background-neutral-subtler-pressed: #6f8488; /** État pressé de background.neutral.subtler. */
+    --background-neutral-bold-default: #eaedee; /** Fond gris foncé plein, contraste fort : badge, bandeau, tag bold, case cochée, tiroir sombre. Texte et icône en text.inverted et icon.inverted (9,1:1). Pas pour une surface de page ni pour du texte. */
+    --background-neutral-bold-hovered: #d8dedf; /** État survolé de background.neutral.bold : tag bold, case et radio cochées, snackbar. */
+    --background-neutral-bold-pressed: #b5c1c4; /** État pressé de background.neutral.bold. */
+    --background-neutral-subtlest-default: #49585b; /** Fond gris le plus léger : zones secondaires, en-têtes de tableau, tuiles, panneau de navigation. Texte en text.default (13,6:1) ou text.subtle. Pas pour un contrôle plein (neutral.subtler) ni pour la page (surface.default). */
+    --background-neutral-subtlest-hovered: #3f4a4d; /** État survolé d'un élément posé sur background.neutral.subtlest : ligne de liste, accordéon, bouton d'apparence subtle, option de sélecteur. */
+    --background-neutral-subtlest-pressed: #374043; /** État pressé d'un élément posé sur background.neutral.subtlest. */
     --background-disabled-default: rgba(255, 255, 255, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --background-brand-subtlest-default: #1e3661;
     --background-brand-subtlest-hovered: #224986;
@@ -1022,12 +1022,12 @@
     --background-comete-boldest-default: #1e3661; /** Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-dark-surface (12:1), jamais text.inverted. */
     --background-comete-boldest-hovered: #224986; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
     --background-comete-boldest-pressed: #2354aa; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
-    --background-selected-bold-hovered: #dceefd;
-    --background-selected-bold-pressed: #f0f8fe;
-    --background-selected-bold-default: #c1e3fc;
-    --background-selected-subtlest-pressed: #2354aa;
-    --background-selected-subtlest-hovered: #224986;
-    --background-selected-subtlest-default: #1e3661;
+    --background-selected-bold-hovered: #dceefd; /** État survolé de background.selected.bold (bouton à bascule actif). */
+    --background-selected-bold-pressed: #f0f8fe; /** État pressé de background.selected.bold (bouton à bascule actif). */
+    --background-selected-bold-default: #c1e3fc; /** Fond plein de sélection : bouton à bascule actif, interrupteur activé, indicateur de progression. Texte et icône inversés (7,2:1). Bleu Comète fixe : ne suit pas la charte client. */
+    --background-selected-subtlest-pressed: #2354aa; /** État pressé d'un élément sélectionné posé sur background.selected.subtlest. */
+    --background-selected-subtlest-hovered: #224986; /** État survolé d'un élément sélectionné posé sur background.selected.subtlest. */
+    --background-selected-subtlest-default: #1e3661; /** Fond de l'élément sélectionné dans une liste, un menu, une navigation ou un tableau. Texte en text.selected, icône en icon.selected. Bleu Comète fixe : ne suit pas la charte client. */
     --background-field-default: #252a2c; /** Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default. */
     --background-success-bold-default: #0abf76;
     --background-success-bold-hovered: #2fd88e;
@@ -1122,40 +1122,40 @@
     --background-cycle-day-subtlest-default: #441f06;
     --background-cycle-day-subtlest-hovered: #7e4210;
     --background-cycle-day-subtlest-pressed: #9c4f10;
-    --background-focused-default: #66b8f4;
-    --surface-default: #374043;
-    --surface-sunken-default: #252a2c;
-    --surface-sunken-hovered: #374043;
-    --surface-sunken-pressed: #3f4a4d;
-    --surface-raise-default: #49585b;
-    --surface-overlay-default: #3f4a4d;
-    --surface-overlay-critical: #2e1717;
-    --surface-overlay-success: #0e2d24;
-    --surface-overlay-accent-purple: #292442;
-    --surface-overlay-accent-teal: #0f2b3d;
-    --surface-overlay-accent-turquoise: #00373a;
-    --surface-overlay-accent-magenta: #47102d;
-    --surface-overlay-accent-blue-grey: #1e2533;
-    --surface-overlay-information: #023059;
-    --surface-overlay-warning: #292410;
+    --background-focused-default: #66b8f4; /** Fond de l'indicateur de focus clavier quand il ne peut pas être une bordure : cellule de tableau, puce radio, action rapide. Même bleu que border.focused. Jamais décoratif. */
+    --surface-default: #374043; /** Surface de base de la page et des conteneurs : Page, panneaux latéraux, tableaux, listes, menus. Texte en text.default (14,5:1). Point de départ de la profondeur : sunken en dessous, raise puis overlay au-dessus. Une surface porte une profondeur, jamais un sens : pour un remplissage qui dit quelque chose, background.*. Sert aussi d'anneau de découpe (Badge, AvatarGroup) pour imiter la surface sous l'élément. */
+    --surface-sunken-default: #252a2c; /** Surface en creux, sous la surface de base : fond de page derrière des cartes, zone de dépôt, champ de saisie au repos. Texte en text.default. */
+    --surface-sunken-hovered: #374043; /** État survolé d'une surface en creux (champ de saisie au repos survolé). */
+    --surface-sunken-pressed: #3f4a4d; /** État pressé d'une surface en creux. Sans consommateur dans le DS à ce jour. */
+    --surface-raise-default: #49585b; /** Surface surélevée au-dessus de la base : popover, sélecteurs de date, de mois, de semaine, d'année et d'heure. S'accompagne d'une ombre elevation.* pour marquer la hauteur. */
+    --surface-overlay-default: #3f4a4d; /** Surface de la couche modale : boîte de dialogue, tiroir, spotlight. Posée sur blanket.default. Niveau le plus haut de la profondeur, au-dessus de raise. */
+    --surface-overlay-critical: #2e1717; /** Teinte la plus claire de critical pour une surface modale ou un encart d'erreur. Texte en text.critical ou text.default. Sans consommateur dans le DS à ce jour. */
+    --surface-overlay-success: #0e2d24; /** Teinte la plus claire de success pour une surface modale ou un encart de confirmation. Texte en text.success ou text.default. Sans consommateur dans le DS à ce jour. */
+    --surface-overlay-accent-purple: #292442; /** Teinte la plus claire de l'accent purple pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+    --surface-overlay-accent-teal: #0f2b3d; /** Teinte la plus claire de l'accent teal pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+    --surface-overlay-accent-turquoise: #00373a; /** Teinte la plus claire de l'accent turquoise pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+    --surface-overlay-accent-magenta: #47102d; /** Teinte la plus claire de l'accent magenta pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+    --surface-overlay-accent-blue-grey: #1e2533; /** Teinte la plus claire de l'accent blue-grey pour une surface ou un encart décoratif. Catégoriel, sans sens de statut. Sans consommateur dans le DS à ce jour. */
+    --surface-overlay-information: #023059; /** Teinte la plus claire d'information pour une surface modale ou un encart informatif. Texte en text.information ou text.default. Sans consommateur dans le DS à ce jour. */
+    --surface-overlay-warning: #292410; /** Teinte la plus claire de warning pour une surface modale ou un encart d'avertissement. Texte en text.default (text.warning est limite en petit texte). Sans consommateur dans le DS à ce jour. */
     --surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
     --surface-mask-hovered: rgba(191, 219, 248, 0.28); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
     --surface-mask-pressed: rgba(166, 197, 226, 0.16); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
     --surface-comete: #1e3661; /** Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest. */
     --surface-inverted: #ffffff; /** Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page : démonstration d'un logo inversé, encart contrasté. Texte en text.inverted. Pas une surface navy (surface.comete) ni un fond de statut. */
-    --text-default-default: #f7f8f8;
-    --text-default-hovered: #eaedee;
-    --text-default-pressed: #d8dedf;
-    --text-selected: #c1e3fc;
+    --text-default-default: #f7f8f8; /** Texte principal : corps, titres, libellés, valeurs. Sur toute surface claire (14,5:1 sur surface.default, 12,3:1 sur neutral.subtler). Sur fond bold, utiliser text.inverted. */
+    --text-default-hovered: #eaedee; /** Texte principal survolé : lien discret (link-subtle) ou texte cliquable sans fond. */
+    --text-default-pressed: #d8dedf; /** Texte principal pressé : lien discret (link-subtle) ou texte cliquable sans fond. */
+    --text-selected: #c1e3fc; /** Texte de l'élément sélectionné : liste, menu, navigation, badge. Bleu Comète fixe. 4:1 sur surface.default et 3,4:1 sur background.selected.subtlest en clair : à réserver aux libellés de 14 px medium et plus. */
     --text-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-    --text-link-default: #71cdff;
-    --text-link-hovered: #b4e3ff;
-    --text-link-pressed: #ddf1ff;
-    --text-subtle-default: #b5c1c4;
-    --text-subtle-hovered: #d8dedf;
-    --text-subtle-pressed: #eaedee;
-    --text-inverted: #252a2c;
-    --text-subtle-inverted: #49585b;
+    --text-link-default: #71cdff; /** Lien dans un texte courant (Text, bouton link neutral). 4,6:1 sur surface.default seulement : pas sur fond gris ni teinté. Toujours souligné. Pas pour un bouton ni une navigation (text.selected). */
+    --text-link-hovered: #b4e3ff; /** Lien survolé : plus foncé en clair, plus clair en sombre. Le soulignement reste. */
+    --text-link-pressed: #ddf1ff; /** Lien pressé. Le soulignement reste. */
+    --text-subtle-default: #b5c1c4; /** Texte secondaire : descriptions, aides de champ, métadonnées, en-têtes de colonne, fil d'Ariane. 7,4:1 sur surface.default, 6,3:1 sur neutral.subtler. Pas pour l'information essentielle. */
+    --text-subtle-hovered: #d8dedf; /** Texte secondaire survolé (lien discret, bouton subtle). */
+    --text-subtle-pressed: #eaedee; /** Texte secondaire pressé (lien discret, bouton subtle). */
+    --text-inverted: #252a2c; /** Texte sur fond bold : bandeau, tag bold, bouton plein, snackbar, carte bold neutre. Blanc en clair, encre en sombre (9,1:1 sur neutral.bold). Suit le thème : sur une surface navy fixe (surface.comete, *.boldest), utiliser text.on-dark-surface. */
+    --text-subtle-inverted: #49585b; /** Texte secondaire sur fond bold (5:1 sur neutral.bold en clair). Suit le thème, même réserve que text.inverted. Sans consommateur dans le DS à ce jour. */
     --text-success-default: #6aebae;
     --text-success-hovered: #a4f6ca;
     --text-success-pressed: #d0fbe2;
@@ -1168,9 +1168,9 @@
     --text-critical-default: #ffc8c8;
     --text-critical-hovered: #ffe1e1;
     --text-critical-pressed: #fef2f2;
-    --text-subtlest-default: #6f8488;
-    --text-subtlest-hovered: #8d9fa3;
-    --text-subtlest-pressed: #b5c1c4;
+    --text-subtlest-default: #6f8488; /** Texte tertiaire : placeholder, mention, compteur, jour hors mois. 3,9:1 sur surface.default, sous le seuil AA du petit texte : réservé au texte de 24 px et plus ou à l'information non essentielle. Jamais en corps de texte. */
+    --text-subtlest-hovered: #8d9fa3; /** Texte tertiaire survolé (bouton subtlest, lien discret). Même réserve de contraste que text.subtlest.default. */
+    --text-subtlest-pressed: #b5c1c4; /** Texte tertiaire pressé (bouton subtlest, lien discret). Même réserve de contraste que text.subtlest.default. */
     --text-accent-purple-default: #d1d4f4;
     --text-accent-purple-hovered: #e6e8f9;
     --text-accent-purple-pressed: #f3f0ff;
@@ -1197,9 +1197,9 @@
     --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
     --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
     --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-    --border-subtle: #3f4a4d;
-    --border-focused: #66b8f4;
-    --border-bold: #49585b;
+    --border-subtle: #3f4a4d; /** Séparateur discret : filet de liste, diviseur, bord de page, accordéon. Plus léger que border.default. */
+    --border-focused: #66b8f4; /** Anneau de focus clavier : FocusRing et tout contrôle focalisable. 3:1 sur surface.default, seuil AA des composants. Jamais décoratif, jamais remplacé par une couleur de statut. */
+    --border-bold: #49585b; /** Bordure appuyée : bouton outlined, diviseur fort, onglets, champ en relief. Reste décorative (1,8:1) : ne porte pas seule une information. */
     --border-success-bold: #0abf76;
     --border-success-subtle: #036240;
     --border-critical-bold: #f44040;
@@ -1208,7 +1208,7 @@
     --border-warning-subtle: #856d0e;
     --border-information-bold: #009bfe;
     --border-information-subtle: #005391;
-    --border-selected: #66b8f4;
+    --border-selected: #66b8f4; /** Bordure de l'élément sélectionné : onglet actif, option de menu, indicateur de dépôt. Bleu Comète fixe. Même bleu que border.focused : ne pas cumuler les deux sur un même bord. */
     --border-accent-purple-bold: #8270db;
     --border-accent-purple-subtle: #51458e;
     --border-accent-teal-bold: #1f92bb;
@@ -1219,12 +1219,12 @@
     --border-accent-magenta-subtle: #8d275d;
     --border-accent-blue-grey-bold: #58759f;
     --border-accent-blue-grey-subtle: #32415a;
-    --border-selected-inverted: #2354aa;
-    --border-focus-inverted: #224986;
-    --border-neutral: #f8f8f8;
-    --border-default: #49585b;
-    --border-invisible: #252a2c;
-    --border-inverted: #252a2c;
+    --border-selected-inverted: #2354aa; /** Bordure de sélection sur fond bold ou sombre. Sans consommateur dans le DS à ce jour. */
+    --border-focus-inverted: #224986; /** Anneau de focus sur fond bold ou sombre. Sans consommateur dans le DS à ce jour (FocusRing n'a pas de variante inversée). */
+    --border-neutral: #f8f8f8; /** Bordure gris foncé, proche de l'encre, pour un bloc contrasté (Bleed outlined). À n'utiliser que sur fond clair. */
+    --border-default: #49585b; /** Bordure courante des conteneurs et contrôles : champ, carte, menu, tableau, onglet, tag. Décorative (1,4:1 sur surface.default), ne porte pas seule une information. */
+    --border-invisible: #252a2c; /** Bordure de la couleur de la surface, pour réserver l'épaisseur sans la montrer (alignement outlined / non outlined). Vaut blanc en clair et encre en sombre, pas transparent. Sans consommateur dans le DS. */
+    --border-inverted: #252a2c; /** Bordure blanche sur fond bold ou sombre (carte bold). Suit le thème, comme text.inverted. */
     --border-day-bold: #fca013;
     --border-day-subtle: #7e4210;
     --border-night-bold: #009bfe;
@@ -1235,9 +1235,9 @@
     --border-comete-bold: #dceefd;
     --border-comete-subtle: #2354aa;
     --border-comete-boldest: #f0f8fe; /** Bordure navy Comète, accent d'identité le plus appuyé. Pas pour les contrôles (border.comete.bold). */
-    --icon-default: #eaedf4;
+    --icon-default: #eaedf4; /** Icône principale, aux côtés de text.default (10,3:1 sur surface.default). Teinte blue-grey, légèrement distincte de l'encre du texte. */
     --icon-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-    --icon-inverted: #374043;
+    --icon-inverted: #374043; /** Icône sur fond bold ou sombre, avec text.inverted (8,6:1 sur neutral.bold). Suit le thème. */
     --icon-warning: #fdd847;
     --icon-critical: #ffa2a2;
     --icon-success: #2fd88e;
@@ -1245,10 +1245,10 @@
     --icon-brand-boldest: #f0f8fe; /** Miroir de icon.comete.boldest pour la charte du client (BrandProvider). */
     --icon-comete-default: #c1e3fc; /** Icône bleu Comète sur fond clair : iconographie d'identité et tuiles comete. */
     --icon-comete-boldest: #f0f8fe; /** Icône navy Comète sur fond clair uniquement, accent d'identité le plus appuyé. */
-    --icon-selected: #97d2f9;
+    --icon-selected: #97d2f9; /** Icône de l'élément sélectionné, avec text.selected. Bleu Comète fixe. */
     --icon-information: #71cdff;
-    --icon-subtle: #8d9fa3;
-    --icon-subtlest: #6f8488;
+    --icon-subtle: #8d9fa3; /** Icône secondaire : chevron, icône de champ, curseur d'action, barre de défilement. 5,6:1 en clair, 3,9:1 en sombre (seuil AA des composants 3:1). */
+    --icon-subtlest: #6f8488; /** Icône tertiaire : décorative ou placeholder de champ. 3,9:1 en clair, 2,7:1 en sombre : ne doit pas porter seule une information. */
     --icon-accent-purple: #b5b8ec;
     --icon-accent-teal: #79cee7;
     --icon-accent-turquoise: #3afff9;
@@ -1258,7 +1258,7 @@
     --icon-night: #26b5ff;
     --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
     --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
-    --icon-bold: #f7f8f8;
+    --icon-bold: #f7f8f8; /** Icône gris foncé fixe (poignée du Switch). Même valeur en clair et en sombre, donc invisible sur fond sombre : valeur sombre à corriger. */
     --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
     --logo-comete-gradient-dark: #f8bf01;
     --logo-comete-gradient-light: #fff146;

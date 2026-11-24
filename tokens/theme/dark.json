@@ -1172,6 +1172,11 @@
       "$type": "color",
       "$value": "{cool-grey.950}"
     },
+    "on-dark-surface": {
+      "$type": "color",
+      "$value": "{white.100}",
+      "$description": "Bordure blanche fixe sur les surfaces sombres fixes, identiques en clair et en sombre (navy Comète : background.surface.comete, background.comete.boldest, background.brand.boldest). Pendant de text.on-dark-surface et icon.on-dark-surface. Pas border.inverted, qui devient foncée en sombre."
+    },
     "day": {
       "bold": {
         "$type": "color",

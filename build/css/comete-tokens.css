@@ -654,6 +654,7 @@
   --border-default: #d8dedf;
   --border-invisible: #ffffff;
   --border-inverted: #ffffff;
+  --border-on-dark-surface: #ffffff; /** Bordure blanche fixe sur les surfaces sombres fixes, identiques en clair et en sombre (navy Comète : background.surface.comete, background.comete.boldest, background.brand.boldest). Pendant de text.on-dark-surface et icon.on-dark-surface. Pas border.inverted, qui devient foncée en sombre. */
   --border-day-bold: #f68909;
   --border-day-subtle: #fff6d4;
   --border-night-bold: #0076d8;
@@ -941,6 +942,7 @@
   --border-default: #49585b;
   --border-invisible: #252a2c;
   --border-inverted: #252a2c;
+  --border-on-dark-surface: #ffffff; /** Bordure blanche fixe sur les surfaces sombres fixes, identiques en clair et en sombre (navy Comète : background.surface.comete, background.comete.boldest, background.brand.boldest). Pendant de text.on-dark-surface et icon.on-dark-surface. Pas border.inverted, qui devient foncée en sombre. */
   --border-day-bold: #fca013;
   --border-day-subtle: #7e4210;
   --border-night-bold: #009bfe;
@@ -1226,6 +1228,7 @@
     --border-default: #49585b;
     --border-invisible: #252a2c;
     --border-inverted: #252a2c;
+    --border-on-dark-surface: #ffffff; /** Bordure blanche fixe sur les surfaces sombres fixes, identiques en clair et en sombre (navy Comète : background.surface.comete, background.comete.boldest, background.brand.boldest). Pendant de text.on-dark-surface et icon.on-dark-surface. Pas border.inverted, qui devient foncée en sombre. */
     --border-day-bold: #fca013;
     --border-day-subtle: #7e4210;
     --border-night-bold: #009bfe;

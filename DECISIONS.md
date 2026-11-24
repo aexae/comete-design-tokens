@@ -7,7 +7,7 @@
 - **Décision** (Axel) : nouveau token `border.on-dark-surface` (`white.100`, identique en clair et en sombre), pendant de `text.on-dark-surface` et `icon.on-dark-surface`.
 - **Raison** : sur le navy fixe (`surface.comete`, `comete.boldest`, `brand.boldest`), `border.inverted` devient foncée en sombre et les filets disparaissent (hero de la Welcome du DS).
 - **Manquent encore** : `border.on-light-surface` (pendant sur le jaune warning bold) et toute la famille `background` en `on-*-surface` (fond d'un élément posé sur une surface fixe : avatar, tag, champ). À créer au premier besoin.
-- **Figma** : variable `border/on-dark-surface` à créer dans la collection theme (light et dark).
+- **Figma** : variable `border/on-dark-surface` créée (collection `semantics`, alias `white/100` en light et dark, portée bordures, syntaxe web `var(--border-on-dark-surface)`).
 
 ## 2026-11-24 — `text.link.*` déprécié (0.38.0)
 

@@ -2,6 +2,12 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-24 — `easing.emphasized`, ease-out franc pour les indicateurs de sélection (0.37.0)
+
+- **Décision** : ajout de `easing.emphasized` = `cubic-bezier(0.23, 1, 0.32, 1)` (`--easing-emphasized`), validé par Axel.
+- **Raison** : `easing.default` démarre lentement. Un indicateur de sélection (pastille de SideNav, pastille de BottomNav) doit réagir dès l'appui puis se poser en douceur, comme les barres de navigation iOS et Material 3. Cette courbe part vite et atterrit longuement.
+- **Portée** : réservé aux changements d'état qui doivent paraître instantanés. Les entrées et sorties d'écran gardent `entrance` / `exit`.
+
 ## 2026-11-20 — Button link neutral, subtle et subtlest alignés sur Figma, Banner announcement violet (0.35.0)
 
 **Décision** (Axel) :

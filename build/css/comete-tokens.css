@@ -23,6 +23,7 @@
   --easing-default: cubic-bezier(0.2, 0, 0.38, 0.9); /** Standard easing for most transitions */
   --easing-entrance: cubic-bezier(0, 0, 0.38, 0.9); /** Elements entering the screen */
   --easing-exit: cubic-bezier(0.2, 0, 1, 0.9); /** Elements leaving the screen */
+  --easing-emphasized: cubic-bezier(0.23, 1, 0.32, 1); /** Strong ease-out: fast start, long soft landing (selection indicators, state changes that must feel instant) */
   --easing-linear: linear; /** Constant speed (spinners, progress) */
   --mobile: 0px; /** Smartphone */
   --tablet: 600px; /** Tablette */

@@ -2,6 +2,12 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-24 — `text.link.*` déprécié (0.38.0)
+
+- **Décision** (Axel) : `text.link.default`, `hovered` et `pressed` sont dépréciés (`$deprecated` dans les deux thèmes, mention DEPRECATED dans la description des variables Figma, laissées publiées).
+- **Raison** : un lien est un Button link (`<Button appearance="link">`, `isInline` dans un paragraphe), en texte courant souligné via `button.color.link.*`. Plus aucun composant du DS ne lit `text.link.*` depuis alpha.197 (couleur `link` de `Text` retirée).
+- **Suite** : suppression quand les apps consommatrices auront migré. Figma : seules des variables `-DEPRECATED-button` et `-DEPRECATED-badge` les aliasent encore.
+
 ## 2026-11-24 — `easing.emphasized`, ease-out franc pour les indicateurs de sélection (0.37.0)
 
 - **Décision** : ajout de `easing.emphasized` = `cubic-bezier(0.23, 1, 0.32, 1)` (`--easing-emphasized`), validé par Axel.

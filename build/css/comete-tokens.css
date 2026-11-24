@@ -577,9 +577,9 @@
   --text-default-pressed: #3f4a4d;
   --text-selected: #2c7ee4;
   --text-disabled: rgba(9, 9, 11, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-  --text-link-default: #0076d8;
-  --text-link-hovered: #0060b0;
-  --text-link-pressed: #005391;
+  --text-link-default: #0076d8; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
+  --text-link-hovered: #0060b0; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
+  --text-link-pressed: #005391; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
   --text-subtle-default: #49585b;
   --text-subtle-hovered: #3f4a4d;
   --text-subtle-pressed: #374043;
@@ -864,9 +864,9 @@
   --text-default-pressed: #d8dedf;
   --text-selected: #c1e3fc;
   --text-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-  --text-link-default: #71cdff;
-  --text-link-hovered: #b4e3ff;
-  --text-link-pressed: #ddf1ff;
+  --text-link-default: #71cdff; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
+  --text-link-hovered: #b4e3ff; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
+  --text-link-pressed: #ddf1ff; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
   --text-subtle-default: #b5c1c4;
   --text-subtle-hovered: #d8dedf;
   --text-subtle-pressed: #eaedee;
@@ -1149,9 +1149,9 @@
     --text-default-pressed: #d8dedf;
     --text-selected: #c1e3fc;
     --text-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
-    --text-link-default: #71cdff;
-    --text-link-hovered: #b4e3ff;
-    --text-link-pressed: #ddf1ff;
+    --text-link-default: #71cdff; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
+    --text-link-hovered: #b4e3ff; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
+    --text-link-pressed: #ddf1ff; /** DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices. */
     --text-subtle-default: #b5c1c4;
     --text-subtle-hovered: #d8dedf;
     --text-subtle-pressed: #eaedee;

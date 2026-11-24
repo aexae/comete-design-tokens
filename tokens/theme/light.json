@@ -803,15 +803,21 @@
     "link": {
       "default": {
         "$type": "color",
-        "$value": "{blue.600}"
+        "$value": "{blue.600}",
+        "$deprecated": "Déprécié : un lien est un Button link (comete-design-system, `<Button appearance=\"link\">`, inline dans un paragraphe avec `isInline`), en texte courant souligné (button.color.link.*). Ne plus l'utiliser, il sera supprimé quand les apps consommatrices auront migré.",
+        "$description": "DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices."
       },
       "hovered": {
         "$type": "color",
-        "$value": "{blue.700}"
+        "$value": "{blue.700}",
+        "$deprecated": "Déprécié : un lien est un Button link (comete-design-system, `<Button appearance=\"link\">`, inline dans un paragraphe avec `isInline`), en texte courant souligné (button.color.link.*). Ne plus l'utiliser, il sera supprimé quand les apps consommatrices auront migré.",
+        "$description": "DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices."
       },
       "pressed": {
         "$type": "color",
-        "$value": "{blue.800}"
+        "$value": "{blue.800}",
+        "$deprecated": "Déprécié : un lien est un Button link (comete-design-system, `<Button appearance=\"link\">`, inline dans un paragraphe avec `isInline`), en texte courant souligné (button.color.link.*). Ne plus l'utiliser, il sera supprimé quand les apps consommatrices auront migré.",
+        "$description": "DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices."
       }
     },
     "subtle": {

@@ -40,7 +40,7 @@ Variables créées dans Figma mais non liées là où Figma et le code divergent
 - **`text.accent.*.hovered/pressed`** : lus par `button.color.{link,link-subtle}.accent-*` depuis 0.27.1. Le Button du DS ne propose pas encore les couleurs accent (ni brand), donc toujours aucun rendu côté code.
 - **Button `outlined` et `subtle`** : aucune couleur n'a de `text.hovered/pressed` (l'état passe par le fond). Si le texte doit aussi changer au survol, il faut créer `button.color.{outlined,subtle}.<couleur>.text.{hovered,pressed}` (décision en attente).
 - ~~**Button `link` subtle / subtlest**~~ : `hovered` et `pressed` alignés sur Figma (0.35.0).
-- **`text.link.*`** : plus lu par le Button (`link.neutral` passe sur `text.default.*`, 0.35.0). Reste lu par le composant `Text` du DS (`--text-link-default`). Vérifier s'il garde un rôle (lien dans un paragraphe) ou s'il doit suivre.
+- ~~**`text.link.*`**~~ : déprécié (0.38.0). Plus lu par aucun composant du DS (alpha.197). **Reste** : recenser les usages dans les apps consommatrices, puis supprimer (dépôt et Figma, avec les variables `-DEPRECATED-button/color/link/*` et `-DEPRECATED-badge/color/primary-inverted/*` qui l'aliasent encore).
 
 ## Audit des variables Figma : scopes, publication, code syntax (2026-11-19)
 

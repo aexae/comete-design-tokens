@@ -6,7 +6,7 @@ on:
       - 'v*'
 
 permissions:
-  contents: read
+  contents: write
   packages: write
 
 jobs:
@@ -38,3 +38,15 @@ jobs:
         run: pnpm publish --no-git-checks
         env:
           NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # R6 : les fichiers générés sont attachés à la Release du tag, à une URL stable
+      # indépendante de l'arborescence du dépôt :
+      #   https://github.com/aexae/comete-design-tokens/releases/download/vX.Y.Z/comete-tokens.light.omnis.json
+      - name: GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            build/css/comete-tokens.css
+            build/omnis/comete-tokens.light.omnis.json
+            build/omnis/comete-tokens.dark.omnis.json
+          generate_release_notes: true

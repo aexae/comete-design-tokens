@@ -211,6 +211,8 @@ git push origin main v0.14.0   # le tag déclenche le workflow Publish
 
 Le tag doit correspondre à la version de `package.json`, préfixée par `v` (format `vX.Y.Z`), aligné sur les autres dépôts de l'écosystème.
 
+Le même workflow crée la **GitHub Release** du tag et y attache `comete-tokens.css` et les deux JSON Omnis : `https://github.com/aexae/comete-design-tokens/releases/download/vX.Y.Z/comete-tokens.light.omnis.json` est une URL stable, indépendante de l'arborescence du dépôt (alternative à l'URL `raw` par tag).
+
 ## Ajout ou modification d'un token
 
 1. Éditer le JSON concerné dans `tokens/base/**` (primitive) ou `tokens/theme/{light,dark}.json` (sémantique)

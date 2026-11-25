@@ -2,6 +2,16 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-25 — Button `inverted`, `text.inverted` à états, `background.inverted.*` (0.42.0)
+
+- **Décision** (Axel) : le Button reçoit une couleur `inverted` dans chaque apparence (contained, outlined, subtle, link, link-subtle). Elle **suit le thème**, comme `surface.inverted` : bouton pour une surface inversée (encre en clair, blanc en sombre).
+- **Tokens sémantiques** (proposition B validée) :
+  - `text.inverted` devient `text.inverted.default` (**CASSANT**), avec `hovered` (white.80 / cool-grey.800) et `pressed` (white.70 / cool-grey.700) pour les liens inversés.
+  - `background.inverted.subtler.{default,hovered,pressed}` (white.10/20/30, en sombre grey.alpha.200A/300A/400A) : fond du contained inverted, miroir de `background.neutral.subtler`.
+  - `background.inverted.subtlest.{hovered,pressed}` (white.10/20, en sombre grey.alpha.200A/300A) : survol et appui des outlined et subtle inverted.
+  - Translucides pour rester justes sur tout fond inversé.
+- **Tokens de composant** : `button.color.<apparence>.inverted.*`, même structure que `neutral`. Bordure de l'outlined en `border.inverted`.
+
 ## 2026-11-25 — `warning` aligné sur Figma : `orange` partout (0.41.0)
 
 - **Décision** (Axel) : « aligne le code sur Figma ». Les fonds (`bold`, `boldest`, `subtler`, `subtlest`), `border.warning.*`, `icon.warning` et `surface.overlay.warning` passent de `yellow` à `orange`, aux mêmes paliers. `text.warning.*` l'était depuis le 19/11.

@@ -61,6 +61,37 @@
         }
       }
     },
+    "inverted": {
+      "subtler": {
+        "default": {
+          "$type": "color",
+          "$value": "{grey.alpha.200A}",
+          "$description": "Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester juste sur tout fond inversé."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{grey.alpha.300A}",
+          "$description": "État survolé de background.inverted.subtler.default."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{grey.alpha.400A}",
+          "$description": "État pressé de background.inverted.subtler.default."
+        }
+      },
+      "subtlest": {
+        "hovered": {
+          "$type": "color",
+          "$value": "{grey.alpha.200A}",
+          "$description": "Fond de survol d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted)."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{grey.alpha.300A}",
+          "$description": "Fond d'appui d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted)."
+        }
+      }
+    },
     "disabled": {
       "default": {
         "$type": "color",
@@ -1005,8 +1036,21 @@
       }
     },
     "inverted": {
-      "$type": "color",
-      "$value": "{cool-grey.950}"
+      "default": {
+        "$type": "color",
+        "$value": "{cool-grey.950}",
+        "$description": "Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre)."
+      },
+      "hovered": {
+        "$type": "color",
+        "$value": "{cool-grey.800}",
+        "$description": "État survolé de text.inverted.default (lien inversé)."
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{cool-grey.700}",
+        "$description": "État pressé de text.inverted.default (lien inversé)."
+      }
     },
     "subtle-inverted": {
       "$type": "color",

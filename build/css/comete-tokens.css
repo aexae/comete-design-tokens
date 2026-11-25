@@ -429,6 +429,11 @@
   --background-neutral-subtlest-default: #f7f8f8;
   --background-neutral-subtlest-hovered: #eaedee;
   --background-neutral-subtlest-pressed: #d8dedf;
+  --background-inverted-subtler-default: rgba(255, 255, 255, 0.1); /** Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester juste sur tout fond inversé. */
+  --background-inverted-subtler-hovered: rgba(255, 255, 255, 0.2); /** État survolé de background.inverted.subtler.default. */
+  --background-inverted-subtler-pressed: rgba(255, 255, 255, 0.3); /** État pressé de background.inverted.subtler.default. */
+  --background-inverted-subtlest-hovered: rgba(255, 255, 255, 0.1); /** Fond de survol d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). */
+  --background-inverted-subtlest-pressed: rgba(255, 255, 255, 0.2); /** Fond d'appui d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). */
   --background-disabled-default: rgba(9, 9, 11, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --background-brand-subtlest-default: #dceefd;
   --background-brand-subtlest-hovered: #c1e3fc;
@@ -613,7 +618,9 @@
   --text-subtle-default: #49585b;
   --text-subtle-hovered: #3f4a4d;
   --text-subtle-pressed: #374043;
-  --text-inverted: #ffffff;
+  --text-inverted-default: #ffffff; /** Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre). */
+  --text-inverted-hovered: rgba(255, 255, 255, 0.8); /** État survolé de text.inverted.default (lien inversé). */
+  --text-inverted-pressed: rgba(255, 255, 255, 0.7); /** État pressé de text.inverted.default (lien inversé). */
   --text-subtle-inverted: #b5c1c4;
   --text-success-default: #036240;
   --text-success-hovered: #245041;
@@ -747,6 +754,11 @@
   --background-neutral-subtlest-default: #49585b;
   --background-neutral-subtlest-hovered: #3f4a4d;
   --background-neutral-subtlest-pressed: #374043;
+  --background-inverted-subtler-default: rgba(5, 21, 36, 0.06); /** Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester juste sur tout fond inversé. */
+  --background-inverted-subtler-hovered: rgba(11, 18, 14, 0.14); /** État survolé de background.inverted.subtler.default. */
+  --background-inverted-subtler-pressed: rgba(8, 15, 33, 0.31); /** État pressé de background.inverted.subtler.default. */
+  --background-inverted-subtlest-hovered: rgba(5, 21, 36, 0.06); /** Fond de survol d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). */
+  --background-inverted-subtlest-pressed: rgba(11, 18, 14, 0.14); /** Fond d'appui d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). */
   --background-disabled-default: rgba(255, 255, 255, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --background-brand-subtlest-default: #1e3661;
   --background-brand-subtlest-hovered: #224986;
@@ -931,7 +943,9 @@
   --text-subtle-default: #b5c1c4;
   --text-subtle-hovered: #d8dedf;
   --text-subtle-pressed: #eaedee;
-  --text-inverted: #252a2c;
+  --text-inverted-default: #252a2c; /** Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre). */
+  --text-inverted-hovered: #3f4a4d; /** État survolé de text.inverted.default (lien inversé). */
+  --text-inverted-pressed: #49585b; /** État pressé de text.inverted.default (lien inversé). */
   --text-subtle-inverted: #49585b;
   --text-success-default: #6aebae;
   --text-success-hovered: #a4f6ca;
@@ -1063,6 +1077,11 @@
     --background-neutral-subtlest-default: #49585b;
     --background-neutral-subtlest-hovered: #3f4a4d;
     --background-neutral-subtlest-pressed: #374043;
+    --background-inverted-subtler-default: rgba(5, 21, 36, 0.06); /** Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester juste sur tout fond inversé. */
+    --background-inverted-subtler-hovered: rgba(11, 18, 14, 0.14); /** État survolé de background.inverted.subtler.default. */
+    --background-inverted-subtler-pressed: rgba(8, 15, 33, 0.31); /** État pressé de background.inverted.subtler.default. */
+    --background-inverted-subtlest-hovered: rgba(5, 21, 36, 0.06); /** Fond de survol d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). */
+    --background-inverted-subtlest-pressed: rgba(11, 18, 14, 0.14); /** Fond d'appui d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). */
     --background-disabled-default: rgba(255, 255, 255, 0.1); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --background-brand-subtlest-default: #1e3661;
     --background-brand-subtlest-hovered: #224986;
@@ -1247,7 +1266,9 @@
     --text-subtle-default: #b5c1c4;
     --text-subtle-hovered: #d8dedf;
     --text-subtle-pressed: #eaedee;
-    --text-inverted: #252a2c;
+    --text-inverted-default: #252a2c; /** Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre). */
+    --text-inverted-hovered: #3f4a4d; /** État survolé de text.inverted.default (lien inversé). */
+    --text-inverted-pressed: #49585b; /** État pressé de text.inverted.default (lien inversé). */
     --text-subtle-inverted: #49585b;
     --text-success-default: #6aebae;
     --text-success-hovered: #a4f6ca;
@@ -1477,13 +1498,13 @@
   --banner-color-critical-text: var(--text-on-dark-surface); /** Message du bandeau critical (texte inversé) */
   --banner-color-critical-icon: var(--icon-on-dark-surface); /** Icône contextuelle du bandeau critical */
   --banner-color-announcement-background: var(--background-accent-purple-bold-default); /** Fond du bandeau announcement (violet accent : nouveauté, mise à jour majeure) */
-  --banner-color-announcement-text: var(--text-inverted); /** Message du bandeau announcement (texte inversé) */
+  --banner-color-announcement-text: var(--text-inverted-default); /** Message du bandeau announcement (texte inversé) */
   --banner-color-announcement-icon: var(--icon-inverted); /** Icône contextuelle du bandeau announcement */
   --banner-color-success-background: var(--background-success-bold-default); /** Fond du bandeau success (vert) */
-  --banner-color-success-text: var(--text-inverted); /** Message du bandeau success (texte inversé) */
+  --banner-color-success-text: var(--text-inverted-default); /** Message du bandeau success (texte inversé) */
   --banner-color-success-icon: var(--icon-inverted); /** Icône contextuelle du bandeau success */
   --banner-color-information-background: var(--background-information-bold-default); /** Fond du bandeau information (bleu) */
-  --banner-color-information-text: var(--text-inverted); /** Message du bandeau information (texte inversé) */
+  --banner-color-information-text: var(--text-inverted-default); /** Message du bandeau information (texte inversé) */
   --banner-color-information-icon: var(--icon-inverted); /** Icône contextuelle du bandeau information */
   --banner-spacing-gap: var(--space150); /** Espace entre l'icône et le message (12 px) */
   --banner-spacing-padding: var(--space150); /** Marge intérieure du bandeau sur les quatre côtés (12 px) */
@@ -1511,6 +1532,10 @@
   --button-color-contained-neutral-background-default: var(--background-neutral-subtler-default);
   --button-color-contained-neutral-background-hovered: var(--background-neutral-subtler-hovered);
   --button-color-contained-neutral-background-pressed: var(--background-neutral-subtler-pressed);
+  --button-color-contained-inverted-text-default: var(--text-inverted-default);
+  --button-color-contained-inverted-background-default: var(--background-inverted-subtler-default);
+  --button-color-contained-inverted-background-hovered: var(--background-inverted-subtler-hovered);
+  --button-color-contained-inverted-background-pressed: var(--background-inverted-subtler-pressed);
   --button-color-contained-subtle-text-default: var(--text-subtle-default);
   --button-color-contained-subtle-background-default: var(--background-neutral-subtler-default); /** Fond au repos du bouton contained subtle : même gris que contained neutral (background.neutral.subtler.default), seul le texte diffère. Aligné sur le rendu réel (le navigateur affichait son gris par défaut faute de token). */
   --button-color-contained-subtle-background-hovered: var(--background-neutral-subtler-hovered);
@@ -1519,11 +1544,11 @@
   --button-color-contained-subtlest-background-default: var(--background-neutral-subtler-default); /** Fond au repos du bouton contained subtlest : même gris que contained neutral (background.neutral.subtler.default), seul le texte diffère. Aligné sur le rendu réel (le navigateur affichait son gris par défaut faute de token). */
   --button-color-contained-subtlest-background-hovered: var(--background-neutral-subtler-hovered);
   --button-color-contained-subtlest-background-pressed: var(--background-neutral-subtler-pressed);
-  --button-color-contained-comete-text-default: var(--text-inverted);
+  --button-color-contained-comete-text-default: var(--text-inverted-default);
   --button-color-contained-comete-background-default: var(--background-comete-bold-default);
   --button-color-contained-comete-background-hovered: var(--background-comete-bold-hovered);
   --button-color-contained-comete-background-pressed: var(--background-comete-bold-pressed);
-  --button-color-contained-success-text-default: var(--text-inverted);
+  --button-color-contained-success-text-default: var(--text-inverted-default);
   --button-color-contained-success-background-default: var(--background-success-bold-default);
   --button-color-contained-success-background-hovered: var(--background-success-bold-hovered);
   --button-color-contained-success-background-pressed: var(--background-success-bold-pressed);
@@ -1535,38 +1560,42 @@
   --button-color-contained-warning-background-default: var(--background-warning-bold-default);
   --button-color-contained-warning-background-hovered: var(--background-warning-bold-hovered);
   --button-color-contained-warning-background-pressed: var(--background-warning-bold-pressed);
-  --button-color-contained-information-text-default: var(--text-inverted);
+  --button-color-contained-information-text-default: var(--text-inverted-default);
   --button-color-contained-information-background-default: var(--background-information-bold-default);
   --button-color-contained-information-background-hovered: var(--background-information-bold-hovered);
   --button-color-contained-information-background-pressed: var(--background-information-bold-pressed);
   --button-color-contained-brand-background-default: var(--background-brand-bold-default);
   --button-color-contained-brand-background-hovered: var(--background-brand-bold-hovered);
   --button-color-contained-brand-background-pressed: var(--background-brand-bold-pressed);
-  --button-color-contained-brand-text-default: var(--text-inverted);
+  --button-color-contained-brand-text-default: var(--text-inverted-default);
   --button-color-contained-accent-purple-background-default: var(--background-accent-purple-bold-default);
   --button-color-contained-accent-purple-background-hovered: var(--background-accent-purple-bold-hovered);
   --button-color-contained-accent-purple-background-pressed: var(--background-accent-purple-bold-pressed);
-  --button-color-contained-accent-purple-text-default: var(--text-inverted);
+  --button-color-contained-accent-purple-text-default: var(--text-inverted-default);
   --button-color-contained-accent-teal-background-default: var(--background-accent-teal-bold-default);
   --button-color-contained-accent-teal-background-hovered: var(--background-accent-teal-bold-hovered);
   --button-color-contained-accent-teal-background-pressed: var(--background-accent-teal-bold-pressed);
-  --button-color-contained-accent-teal-text-default: var(--text-inverted);
+  --button-color-contained-accent-teal-text-default: var(--text-inverted-default);
   --button-color-contained-accent-turquoise-background-default: var(--background-accent-turquoise-bold-default);
   --button-color-contained-accent-turquoise-background-hovered: var(--background-accent-turquoise-bold-hovered);
   --button-color-contained-accent-turquoise-background-pressed: var(--background-accent-turquoise-bold-pressed);
-  --button-color-contained-accent-turquoise-text-default: var(--text-inverted);
+  --button-color-contained-accent-turquoise-text-default: var(--text-inverted-default);
   --button-color-contained-accent-magenta-background-default: var(--background-accent-magenta-bold-default);
   --button-color-contained-accent-magenta-background-hovered: var(--background-accent-magenta-bold-hovered);
   --button-color-contained-accent-magenta-background-pressed: var(--background-accent-magenta-bold-pressed);
-  --button-color-contained-accent-magenta-text-default: var(--text-inverted);
+  --button-color-contained-accent-magenta-text-default: var(--text-inverted-default);
   --button-color-contained-accent-blue-grey-background-default: var(--background-accent-blue-grey-bold-default);
   --button-color-contained-accent-blue-grey-background-hovered: var(--background-accent-blue-grey-bold-hovered);
   --button-color-contained-accent-blue-grey-background-pressed: var(--background-accent-blue-grey-bold-pressed);
-  --button-color-contained-accent-blue-grey-text-default: var(--text-inverted);
+  --button-color-contained-accent-blue-grey-text-default: var(--text-inverted-default);
   --button-color-outlined-neutral-text-default: var(--text-default-default);
   --button-color-outlined-neutral-border-default: var(--border-bold);
   --button-color-outlined-neutral-background-hovered: var(--background-neutral-subtlest-hovered);
   --button-color-outlined-neutral-background-pressed: var(--background-neutral-subtlest-pressed);
+  --button-color-outlined-inverted-text-default: var(--text-inverted-default);
+  --button-color-outlined-inverted-border-default: var(--border-inverted);
+  --button-color-outlined-inverted-background-hovered: var(--background-inverted-subtlest-hovered);
+  --button-color-outlined-inverted-background-pressed: var(--background-inverted-subtlest-pressed);
   --button-color-outlined-subtle-text-default: var(--text-subtle-default);
   --button-color-outlined-subtle-border-default: var(--border-bold);
   --button-color-outlined-subtle-background-hovered: var(--background-neutral-subtlest-hovered);
@@ -1622,6 +1651,9 @@
   --button-color-subtle-neutral-text-default: var(--text-default-default);
   --button-color-subtle-neutral-background-hovered: var(--background-neutral-subtlest-hovered);
   --button-color-subtle-neutral-background-pressed: var(--background-neutral-subtlest-pressed);
+  --button-color-subtle-inverted-text-default: var(--text-inverted-default);
+  --button-color-subtle-inverted-background-hovered: var(--background-inverted-subtlest-hovered);
+  --button-color-subtle-inverted-background-pressed: var(--background-inverted-subtlest-pressed);
   --button-color-subtle-subtle-text-default: var(--text-subtle-default);
   --button-color-subtle-subtle-background-hovered: var(--background-neutral-subtlest-hovered);
   --button-color-subtle-subtle-background-pressed: var(--background-neutral-subtlest-pressed);
@@ -1664,6 +1696,9 @@
   --button-color-link-neutral-text-default: var(--text-default-default);
   --button-color-link-neutral-text-hovered: var(--text-default-hovered);
   --button-color-link-neutral-text-pressed: var(--text-default-pressed);
+  --button-color-link-inverted-text-default: var(--text-inverted-default);
+  --button-color-link-inverted-text-hovered: var(--text-inverted-hovered);
+  --button-color-link-inverted-text-pressed: var(--text-inverted-pressed);
   --button-color-link-comete-text-default: var(--text-comete-default);
   --button-color-link-comete-text-hovered: var(--text-comete-hovered);
   --button-color-link-comete-text-pressed: var(--text-comete-pressed);
@@ -1706,6 +1741,9 @@
   --button-color-link-subtle-neutral-text-default: var(--text-default-default);
   --button-color-link-subtle-neutral-text-hovered: var(--text-subtle-hovered);
   --button-color-link-subtle-neutral-text-pressed: var(--text-default-pressed);
+  --button-color-link-subtle-inverted-text-default: var(--text-inverted-default);
+  --button-color-link-subtle-inverted-text-hovered: var(--text-inverted-hovered);
+  --button-color-link-subtle-inverted-text-pressed: var(--text-inverted-pressed);
   --button-color-link-subtle-comete-text-default: var(--text-comete-default);
   --button-color-link-subtle-comete-text-hovered: var(--text-comete-hovered);
   --button-color-link-subtle-comete-text-pressed: var(--text-comete-pressed);

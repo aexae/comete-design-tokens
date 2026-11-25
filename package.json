@@ -1,6 +1,6 @@
 {
   "name": "@aexae/comete-design-tokens",
-  "version": "0.43.0",
+  "version": "0.44.0",
   "author": "Comète",
   "type": "module",
   "license": "AGPL-3.0-only",
@@ -12,6 +12,7 @@
   "sideEffects": false,
   "files": [
     "build/css",
+    "build/omnis",
     "tokens"
   ],
   "engines": {
@@ -39,6 +40,7 @@
   "exports": {
     "./package.json": "./package.json",
     "./css": "./build/css/comete-tokens.css",
+    "./omnis/*": "./build/omnis/*",
     "./tokens/*": "./tokens/*"
   },
   "publishConfig": {

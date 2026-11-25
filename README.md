@@ -62,7 +62,7 @@ Trois niveaux de résolution :
 
 ## Contenu
 
-Un fichier unique — `build/css/comete-tokens.css` — contenant **640 custom properties** : 396 primitives et 244 tokens sémantiques (déclinés light + dark).
+Un fichier CSS — `build/css/comete-tokens.css` — contenant **640 custom properties** : 396 primitives et 244 tokens sémantiques (déclinés light + dark).
 
 ### Primitives
 
@@ -157,11 +157,34 @@ comete-design-tokens/
 └── tests/                    # Tests Vitest (build + cohérence des tokens)
 ```
 
-Le build se déroule en trois passes :
+Le build se déroule en quatre passes :
 
 1. **Primitives** — `tokens/base/**` → `_primitives.css` (avec `outputReferences`)
 2. **Sémantiques** — `tokens/base/**` + `tokens/theme/{light,dark}.json`, filtrés sur les préfixes sémantiques → `_semantic.{light,dark}.css`
 3. **Assemblage** — fusion en `comete-tokens.css` (`:root` = clair, `[data-theme="dark"]` = sombre, plus le fallback `prefers-color-scheme`), puis suppression des fichiers intermédiaires
+4. **Omnis** — `tokens/base/**` + `tokens/theme/{light,dark}.json` + `tokens/component/**` → `build/omnis/comete-tokens.{light,dark}.omnis.json` (voir ci-dessous)
+
+### Sortie Omnis (Comète SQL)
+
+Comète SQL (Omnis Studio 6.1.3) ne consomme ni le CSS ni le package npm : elle lit un fichier JSON **plat et résolu** par thème, committé dans `build/omnis/` et servi par URL épinglée sur un tag (`https://raw.githubusercontent.com/aexae/comete-design-tokens/vX.Y.Z/build/omnis/comete-tokens.light.omnis.json`).
+
+```json
+{
+  "$schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
+  "version": "0.44.0",
+  "theme": "light",
+  "backdrop": "#ffffff",
+  "tokens": { "red50": 15921918, "textDefaultDefault": 2894373, "space100": 8, "fontFamilyPrimary": "Noto Sans" },
+  "deprecated": ["textDisabled"]
+}
+```
+
+- **Clés** : chemin du token en camelCase (`cool-grey.100` → `coolGrey100`, `text.default.default` → `textDefaultDefault`, `Control.Height.Compact` → `controlHeightCompact`), noms de colonnes Omnis.
+- **Couleurs** : entier Omnis `rgb()` (`r + g × 256 + b × 65536`). Les couleurs avec canal alpha sont **aplaties sur `surface.default` du thème** (`backdrop`), Omnis 6 n'ayant pas de transparence.
+- **Dimensions** : nombre de px. **Nombres** (opacité, graisse) et **textes** (familles de police) tels quels.
+- **Exclus** : ombres, animation (`duration`, `easing`), `z-index`.
+- **Dépréciés** : conservés dans `tokens` tant qu'ils existent dans les sources, listés dans `deprecated`.
+- **Contrat consommateur** : `consumers/omnis.json` liste les clés lues par Comète ; `tests/consumers.test.ts` fait échouer la CI si l'une d'elles disparaît de la sortie Omnis. Renommer un token consommé impose un alias ou une coordination avec Comète avant la release.
 
 ## Commandes
 
@@ -173,7 +196,7 @@ pnpm lint         # ESLint
 pnpm clean        # Supprime build/
 ```
 
-Le CSS compilé est **committé** dans le repo. La CI échoue si `build/` est obsolète par rapport aux sources — toujours lancer `pnpm build` et committer le résultat avec la modification des tokens.
+Le CSS compilé et les JSON Omnis sont **committés** dans le repo. La CI échoue si `build/` est obsolète par rapport aux sources — toujours lancer `pnpm build` et committer le résultat avec la modification des tokens.
 
 ## Publication
 
@@ -209,6 +232,7 @@ Peer dependency des packages suivants :
 | [`@aexae/comete-design-system`](https://github.com/aexae/comete-design-system) | l'ensemble |
 | [`@aexae/comete-icons`](https://github.com/aexae/comete-icons) | `--icon-*` |
 | [`@aexae/comete-logos`](https://github.com/aexae/comete-logos) | `--logo-comete-*` |
+| Comète SQL (Omnis, hors npm) | `build/omnis/*.omnis.json`, clés listées dans `consumers/omnis.json` |
 
 ## Licence
 

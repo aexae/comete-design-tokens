@@ -2,6 +2,14 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-25 — Sortie Omnis et contrat consommateur Comète SQL (0.44.0)
+
+- **Contexte** : Comète SQL (Omnis 6.1.3) lisait les JSON sources sur `main` (`tokens/base/color`, `tokens/base/brand`, `tokens/theme/*`) et résolvait elle-même références, noms et alpha. Le renommage `brand` → `comete` (0.25.0) et la restructuration de `text.*` (0.20.0) l'ont cassée sans que rien ne le détecte.
+- **Décision** (Axel) : le dépôt publie une sortie dédiée, `build/omnis/comete-tokens.{light,dark}.omnis.json`, plate et résolue : clés camelCase, couleurs en **entier Omnis** (alpha aplati sur `surface.default` du thème), dimensions en px, nombres et textes tels quels ; **tout sauf ombres, animation et z-index**. Comète lit un tag (`vX.Y.Z`), jamais `main`.
+- **Contrat** : `consumers/omnis.json` liste les clés lues par Comète ; `tests/consumers.test.ts` échoue si l'une manque dans la sortie Omnis. Un token déprécié reste servi tant qu'il est consommé (`textDisabled`).
+- **Correspondances retenues pour Comète** : `text.<x>` → `text.<x>.default`, `borderBrand` → `border.comete.bold`, `borderCritical` → `border.critical.bold`, `backgroundDefaultDefault` → `background.neutral.subtlest.default`, `backgroundTealSubtlestDefault` → `background.accent.teal.subtlest.default`, Tag `accent` → `background.accent.purple.*`. Les clés héritées d'avant les tokens (`primary`, `lNav*`, `porcelain*`...) sont hors périmètre.
+
+
 ## 2026-11-25 — `button.color.focus.border-inverted` (0.43.0)
 
 - **Décision** (Axel) : le Button inverted a son propre anneau de focus, `button.color.focus.border-inverted` = `{border.focus-inverted}`. Le bleu de focus standard se lit mal sur `surface.inverted`.

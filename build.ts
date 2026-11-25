@@ -113,6 +113,126 @@ const componentSD = new StyleDictionary({
 await componentSD.cleanAllPlatforms();
 await componentSD.buildAllPlatforms();
 
+// ─── 2c. Sortie Omnis (Comète SQL) ──────────────────────────────
+// Un fichier plat et résolu par thème, consommé par Comète (Omnis Studio 6.1.3) :
+// noms camelCase (convention Omnis), couleurs en entier Omnis (r + g*256 + b*65536)
+// avec l'alpha aplati sur surface.default du thème (Omnis 6 n'a pas de transparence),
+// dimensions en nombre de px. Exclus : ombres, animation, z-index.
+// Le contrat de nommage vis-à-vis de Comète est vérifié par tests/consumers.test.ts.
+const OMNIS_DIR = "./build/omnis";
+const OMNIS_EXCLUDED_TYPES = new Set(["shadow", "duration", "other"]);
+const OMNIS_EXCLUDED_ROOTS = new Set(["z-index"]);
+const pkg = JSON.parse(fs.readFileSync("./package.json", "utf-8")) as { version: string };
+
+type TokenNode = { $value?: unknown; [key: string]: unknown };
+const flattenTokens = (node: TokenNode, prefix: string[] = [], out: Record<string, TokenNode> = {}) => {
+  for (const [key, value] of Object.entries(node)) {
+    if (key.startsWith("$") || value === null || typeof value !== "object") continue;
+    const child = value as TokenNode;
+    if ("$value" in child) out[[...prefix, key].join(".")] = child;
+    else flattenTokens(child, [...prefix, key], out);
+  }
+  return out;
+};
+/** Valeur hex de `surface.default` du thème, références résolues dans les sources. */
+const surfaceDefault = (theme: string): string => {
+  const all: Record<string, TokenNode> = {};
+  for (const file of fs.globSync("tokens/base/**/*.json")) {
+    flattenTokens(JSON.parse(fs.readFileSync(file, "utf-8")) as TokenNode, [], all);
+  }
+  flattenTokens(JSON.parse(fs.readFileSync(`tokens/theme/${theme}.json`, "utf-8")) as TokenNode, [], all);
+  let value = all["surface.default"]?.$value;
+  for (let i = 0; typeof value === "string" && value.startsWith("{") && i < 10; i++) {
+    value = all[value.slice(1, -1)]?.$value;
+  }
+  if (typeof value !== "string" || !/^#[0-9a-f]{6}$/i.test(value)) {
+    throw new Error(`surface.default du thème ${theme} introuvable ou non opaque : ${String(value)}`);
+  }
+  return value.toLowerCase();
+};
+
+const hexByte = (hex: string, i: number) => parseInt(hex.slice(i, i + 2), 16);
+/** "#rrggbb" ou "#rrggbbaa" (aplati sur backdrop) → entier Omnis rgb(). */
+const omnisColor = (raw: string, backdrop: string): number => {
+  let hex = raw.trim().toLowerCase().replace("#", "");
+  if (hex.length === 3 || hex.length === 4) hex = [...hex].map((c) => c + c).join("");
+  if (!/^[0-9a-f]{6}([0-9a-f]{2})?$/.test(hex)) throw new Error(`Couleur non hexadécimale : ${raw}`);
+  const alpha = hex.length === 8 ? hexByte(hex, 6) : 255;
+  const back = backdrop.replace("#", "");
+  const mix = (i: number) => Math.round((hexByte(hex, i) * alpha + hexByte(back, i) * (255 - alpha)) / 255);
+  return mix(0) + mix(2) * 256 + mix(4) * 65536;
+};
+
+StyleDictionary.registerTransform({
+  name: "color/omnis",
+  type: "value",
+  transitive: true,
+  filter: (token) => token.$type === "color",
+  transform: (token, platform) =>
+    typeof token.$value === "number" ? token.$value : omnisColor(String(token.$value), String(platform.backdrop)),
+});
+StyleDictionary.registerTransform({
+  name: "dimension/omnis-px",
+  type: "value",
+  transitive: true,
+  filter: (token) => token.$type === "dimension",
+  transform: (token) => {
+    if (typeof token.$value === "number") return token.$value;
+    const match = /^(-?\d+(?:\.\d+)?)px$/.exec(String(token.$value).trim());
+    if (!match) throw new Error(`Dimension attendue en px : ${token.name} = ${String(token.$value)}`);
+    return Number(match[1]);
+  },
+});
+StyleDictionary.registerFormat({
+  name: "json/omnis",
+  format: ({ dictionary, options }) => {
+    const tokens: Record<string, unknown> = {};
+    const deprecated: string[] = [];
+    for (const token of dictionary.allTokens) {
+      if (token.name in tokens) throw new Error(`Nom Omnis en doublon : ${token.name}`);
+      tokens[token.name] = token.$value;
+      if (token.$deprecated) deprecated.push(token.name);
+    }
+    return `${JSON.stringify(
+      {
+        $schema: "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
+        version: options.version,
+        theme: options.theme,
+        backdrop: options.backdrop,
+        tokens,
+        deprecated,
+      },
+      null,
+      1,
+    )}\n`;
+  },
+});
+
+for (const theme of ["light", "dark"]) {
+  const backdrop = surfaceDefault(theme);
+  const omnisSD = new StyleDictionary({
+    log: { verbosity: "verbose", warnings: "warn" },
+    source: ["tokens/base/**/*.json", `tokens/theme/${theme}.json`, "tokens/component/**/*.json"],
+    platforms: {
+      omnis: {
+        transforms: ["attribute/cti", "name/camel", "color/omnis", "dimension/omnis-px"],
+        backdrop,
+        buildPath: `${OMNIS_DIR}/`,
+        files: [
+          {
+            destination: `comete-tokens.${theme}.omnis.json`,
+            format: "json/omnis",
+            filter: (token) =>
+              !OMNIS_EXCLUDED_TYPES.has(String(token.$type)) && !OMNIS_EXCLUDED_ROOTS.has(token.path[0] ?? ""),
+            options: { theme, backdrop, version: pkg.version },
+          },
+        ],
+      },
+    },
+  });
+  await omnisSD.buildAllPlatforms();
+}
+
 // ─── 3. Assemble le fichier CSS unifié ──────────────────────────
 const primitives = fs.readFileSync(path.join(CSS_DIR, "_primitives.css"), "utf-8");
 const lightCSS = fs.readFileSync(path.join(CSS_DIR, "_semantic.light.css"), "utf-8");

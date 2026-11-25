@@ -2,6 +2,12 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-25 — `background.*.boldest` sur toutes les familles (0.40.0)
+
+- **Décision** (Axel) : palier `boldest` ajouté au fond de neutral, success, warning, critical, information et des cinq accents (`background.{famille}.boldest.{default,hovered,pressed}`), miroir de `comete.boldest` : palier 950 (survol 900, pressé 800), identique en clair et en sombre. Texte posé dessus en `text.on-dark-surface` (contraste de 13:1 à 16,8:1).
+- **Fond seul** : pas de `text`, `border` ni `icon` `boldest` pour ces familles. `icon.success`, `icon.accent.*` et `border.neutral` sont des feuilles : les transformer en groupes serait cassant (option écartée par Axel).
+- **Non cassant** : ajouts uniquement.
+
 ## 2026-11-24 — `border.on-dark-surface` (0.39.0)
 
 - **Décision** (Axel) : nouveau token `border.on-dark-surface` (`white.100`, identique en clair et en sombre), pendant de `text.on-dark-surface` et `icon.on-dark-surface`.

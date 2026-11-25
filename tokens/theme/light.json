@@ -29,6 +29,23 @@
           "$value": "{cool-grey.950}"
         }
       },
+      "boldest": {
+        "default": {
+          "$type": "color",
+          "$value": "{cool-grey.950}",
+          "$description": "Fond le plus foncé de la famille neutre, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.neutral.bold). Texte en text.on-dark-surface, jamais text.inverted."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{cool-grey.900}",
+          "$description": "État survolé de background.neutral.boldest.default (cartes bold interactives)."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{cool-grey.800}",
+          "$description": "État pressé de background.neutral.boldest.default (cartes bold interactives)."
+        }
+      },
       "subtlest": {
         "default": {
           "$type": "color",
@@ -226,6 +243,23 @@
           "$value": "{green.900}"
         }
       },
+      "boldest": {
+        "default": {
+          "$type": "color",
+          "$value": "{green.950}",
+          "$description": "Fond le plus foncé de la famille succès, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.success.bold). Texte en text.on-dark-surface, jamais text.inverted."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{green.900}",
+          "$description": "État survolé de background.success.boldest.default (cartes bold interactives)."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{green.800}",
+          "$description": "État pressé de background.success.boldest.default (cartes bold interactives)."
+        }
+      },
       "subtlest": {
         "hovered": {
           "$type": "color",
@@ -268,6 +302,23 @@
         "pressed": {
           "$type": "color",
           "$value": "{yellow.600}"
+        }
+      },
+      "boldest": {
+        "default": {
+          "$type": "color",
+          "$value": "{yellow.950}",
+          "$description": "Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{yellow.900}",
+          "$description": "État survolé de background.warning.boldest.default (cartes bold interactives)."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{yellow.800}",
+          "$description": "État pressé de background.warning.boldest.default (cartes bold interactives)."
         }
       },
       "subtlest": {
@@ -314,6 +365,23 @@
           "$value": "{red.800}"
         }
       },
+      "boldest": {
+        "default": {
+          "$type": "color",
+          "$value": "{red.950}",
+          "$description": "Fond le plus foncé de la famille critique, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.critical.bold). Texte en text.on-dark-surface, jamais text.inverted."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{red.900}",
+          "$description": "État survolé de background.critical.boldest.default (cartes bold interactives)."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{red.800}",
+          "$description": "État pressé de background.critical.boldest.default (cartes bold interactives)."
+        }
+      },
       "subtlest": {
         "pressed": {
           "$type": "color",
@@ -356,6 +424,23 @@
         "pressed": {
           "$type": "color",
           "$value": "{blue.800}"
+        }
+      },
+      "boldest": {
+        "default": {
+          "$type": "color",
+          "$value": "{blue.950}",
+          "$description": "Fond le plus foncé de la famille information, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.information.bold). Texte en text.on-dark-surface, jamais text.inverted."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{blue.900}",
+          "$description": "État survolé de background.information.boldest.default (cartes bold interactives)."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{blue.800}",
+          "$description": "État pressé de background.information.boldest.default (cartes bold interactives)."
         }
       },
       "subtlest": {
@@ -403,6 +488,23 @@
             "$value": "{purple.900}"
           }
         },
+        "boldest": {
+          "default": {
+            "$type": "color",
+            "$value": "{purple.950}",
+            "$description": "Fond le plus foncé de la famille accent purple, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.purple.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{purple.900}",
+            "$description": "État survolé de background.accent.purple.boldest.default (cartes bold interactives)."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{purple.800}",
+            "$description": "État pressé de background.accent.purple.boldest.default (cartes bold interactives)."
+          }
+        },
         "subtlest": {
           "pressed": {
             "$type": "color",
@@ -445,6 +547,23 @@
           "pressed": {
             "$type": "color",
             "$value": "{teal.900}"
+          }
+        },
+        "boldest": {
+          "default": {
+            "$type": "color",
+            "$value": "{teal.950}",
+            "$description": "Fond le plus foncé de la famille accent teal, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.teal.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{teal.900}",
+            "$description": "État survolé de background.accent.teal.boldest.default (cartes bold interactives)."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{teal.800}",
+            "$description": "État pressé de background.accent.teal.boldest.default (cartes bold interactives)."
           }
         },
         "subtlest": {
@@ -491,6 +610,23 @@
             "$value": "{turquoise.900}"
           }
         },
+        "boldest": {
+          "default": {
+            "$type": "color",
+            "$value": "{turquoise.950}",
+            "$description": "Fond le plus foncé de la famille accent turquoise, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.turquoise.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{turquoise.900}",
+            "$description": "État survolé de background.accent.turquoise.boldest.default (cartes bold interactives)."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{turquoise.800}",
+            "$description": "État pressé de background.accent.turquoise.boldest.default (cartes bold interactives)."
+          }
+        },
         "subtlest": {
           "pressed": {
             "$type": "color",
@@ -535,6 +671,23 @@
             "$value": "{magenta.900}"
           }
         },
+        "boldest": {
+          "default": {
+            "$type": "color",
+            "$value": "{magenta.950}",
+            "$description": "Fond le plus foncé de la famille accent magenta, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.magenta.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{magenta.900}",
+            "$description": "État survolé de background.accent.magenta.boldest.default (cartes bold interactives)."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{magenta.800}",
+            "$description": "État pressé de background.accent.magenta.boldest.default (cartes bold interactives)."
+          }
+        },
         "subtlest": {
           "pressed": {
             "$type": "color",
@@ -577,6 +730,23 @@
           "pressed": {
             "$type": "color",
             "$value": "{blue-grey.900}"
+          }
+        },
+        "boldest": {
+          "default": {
+            "$type": "color",
+            "$value": "{blue-grey.950}",
+            "$description": "Fond le plus foncé de la famille accent blue-grey, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.blue-grey.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{blue-grey.900}",
+            "$description": "État survolé de background.accent.blue-grey.boldest.default (cartes bold interactives)."
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{blue-grey.800}",
+            "$description": "État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives)."
           }
         },
         "subtlest": {

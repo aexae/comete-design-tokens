@@ -293,60 +293,60 @@
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{yellow.400}"
+          "$value": "{orange.400}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{yellow.500}"
+          "$value": "{orange.500}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{yellow.600}"
+          "$value": "{orange.600}"
         }
       },
       "boldest": {
         "default": {
           "$type": "color",
-          "$value": "{yellow.950}",
+          "$value": "{orange.950}",
           "$description": "Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{yellow.900}",
+          "$value": "{orange.900}",
           "$description": "État survolé de background.warning.boldest.default (cartes bold interactives)."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{yellow.800}",
+          "$value": "{orange.800}",
           "$description": "État pressé de background.warning.boldest.default (cartes bold interactives)."
         }
       },
       "subtlest": {
         "pressed": {
           "$type": "color",
-          "$value": "{yellow.300}"
+          "$value": "{orange.300}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{yellow.200}"
+          "$value": "{orange.200}"
         },
         "default": {
           "$type": "color",
-          "$value": "{yellow.100}"
+          "$value": "{orange.100}"
         }
       },
       "subtler": {
         "default": {
           "$type": "color",
-          "$value": "{yellow.200}"
+          "$value": "{orange.200}"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{yellow.300}"
+          "$value": "{orange.300}"
         },
         "pressed": {
           "$type": "color",
-          "$value": "{yellow.400}"
+          "$value": "{orange.400}"
         }
       }
     },
@@ -914,7 +914,7 @@
       },
       "warning": {
         "$type": "color",
-        "$value": "{yellow.50}"
+        "$value": "{orange.50}"
       }
     },
     "mask": {
@@ -1195,7 +1195,7 @@
     "on-light-surface": {
       "$type": "color",
       "$value": "{cool-grey.950}",
-      "$description": "Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted)."
+      "$description": "Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, orange) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted)."
     },
     "on-dark-surface": {
       "$type": "color",
@@ -1245,11 +1245,11 @@
     "warning": {
       "bold": {
         "$type": "color",
-        "$value": "{yellow.600}"
+        "$value": "{orange.600}"
       },
       "subtle": {
         "$type": "color",
-        "$value": "{yellow.200}"
+        "$value": "{orange.200}"
       }
     },
     "information": {
@@ -1415,7 +1415,7 @@
     },
     "warning": {
       "$type": "color",
-      "$value": "{yellow.800}"
+      "$value": "{orange.800}"
     },
     "critical": {
       "$type": "color",
@@ -1498,7 +1498,7 @@
     "on-light-surface": {
       "$type": "color",
       "$value": "{cool-grey.950}",
-      "$description": "Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface."
+      "$description": "Icône foncée fixe sur les surfaces claires fixes (fond warning bold, orange), identique en clair et en sombre. Pendant de text.on-light-surface."
     },
     "on-dark-surface": {
       "$type": "color",

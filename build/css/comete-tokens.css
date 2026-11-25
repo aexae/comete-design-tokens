@@ -473,18 +473,18 @@
   --background-success-subtler-default: #a4f6ca;
   --background-success-subtler-hovered: #6aebae;
   --background-success-subtler-pressed: #2fd88e;
-  --background-warning-bold-default: #facc15;
-  --background-warning-bold-hovered: #eabd08;
-  --background-warning-bold-pressed: #caa204;
-  --background-warning-boldest-default: #292410; /** Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted. */
-  --background-warning-boldest-hovered: #715e12; /** État survolé de background.warning.boldest.default (cartes bold interactives). */
-  --background-warning-boldest-pressed: #856d0e; /** État pressé de background.warning.boldest.default (cartes bold interactives). */
-  --background-warning-subtlest-pressed: #fdd847;
-  --background-warning-subtlest-hovered: #fee78a;
-  --background-warning-subtlest-default: #fef2c3;
-  --background-warning-subtler-default: #fee78a;
-  --background-warning-subtler-hovered: #fdd847;
-  --background-warning-subtler-pressed: #facc15;
+  --background-warning-bold-default: #feb939;
+  --background-warning-bold-hovered: #fca013;
+  --background-warning-bold-pressed: #f68909;
+  --background-warning-boldest-default: #441f06; /** Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted. */
+  --background-warning-boldest-hovered: #7e4210; /** État survolé de background.warning.boldest.default (cartes bold interactives). */
+  --background-warning-boldest-pressed: #9c4f10; /** État pressé de background.warning.boldest.default (cartes bold interactives). */
+  --background-warning-subtlest-pressed: #ffd672;
+  --background-warning-subtlest-hovered: #ffe8a9;
+  --background-warning-subtlest-default: #fff6d4;
+  --background-warning-subtler-default: #ffe8a9;
+  --background-warning-subtler-hovered: #ffd672;
+  --background-warning-subtler-pressed: #feb939;
   --background-critical-bold-default: #e12121;
   --background-critical-bold-hovered: #be1717;
   --background-critical-bold-pressed: #9d1717;
@@ -596,7 +596,7 @@
   --surface-overlay-accent-magenta: #fcf3f9;
   --surface-overlay-accent-blue-grey: #f5f7fa;
   --surface-overlay-information: #eff8ff;
-  --surface-overlay-warning: #fdfee8;
+  --surface-overlay-warning: #fffbed;
   --surface-mask-default: rgba(5, 12, 31, 0.49); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
   --surface-mask-hovered: rgba(8, 15, 33, 0.31); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
   --surface-mask-pressed: rgba(11, 18, 14, 0.14); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
@@ -653,7 +653,7 @@
   --text-comete-hovered: #2354aa;
   --text-comete-pressed: #2467d1;
   --text-comete-boldest: #1e3661; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
-  --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+  --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, orange) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --border-disabled: rgba(9, 9, 11, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #eaedee;
@@ -663,8 +663,8 @@
   --border-success-subtle: #a4f6ca;
   --border-critical-bold: #e12121;
   --border-critical-subtle: #ffc8c8;
-  --border-warning-bold: #caa204;
-  --border-warning-subtle: #fee78a;
+  --border-warning-bold: #f68909;
+  --border-warning-subtle: #ffe8a9;
   --border-information-bold: #0076d8;
   --border-information-subtle: #b4e3ff;
   --border-selected: #429aef;
@@ -698,7 +698,7 @@
   --icon-default: #32415a;
   --icon-disabled: rgba(9, 9, 11, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --icon-inverted: #f7f8f8;
-  --icon-warning: #856d0e;
+  --icon-warning: #9c4f10;
   --icon-critical: #e12121;
   --icon-success: #009b60;
   --icon-brand-default: #2354aa; /** Miroir de icon.comete.default pour la charte du client (BrandProvider). */
@@ -716,7 +716,7 @@
   --icon-accent-blue-grey: #58759f;
   --icon-day: #f68909;
   --icon-night: #0076d8;
-  --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
+  --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, orange), identique en clair et en sombre. Pendant de text.on-light-surface. */
   --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
   --icon-bold: #252a2c;
   --logo-comete-default: #1e3661; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
@@ -791,18 +791,18 @@
   --background-success-subtler-default: #036240;
   --background-success-subtler-hovered: #00784d;
   --background-success-subtler-pressed: #009b60;
-  --background-warning-bold-default: #eabd08;
-  --background-warning-bold-hovered: #facc15;
-  --background-warning-bold-pressed: #fdd847;
-  --background-warning-boldest-default: #292410; /** Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted. */
-  --background-warning-boldest-hovered: #715e12; /** État survolé de background.warning.boldest.default (cartes bold interactives). */
-  --background-warning-boldest-pressed: #856d0e; /** État pressé de background.warning.boldest.default (cartes bold interactives). */
-  --background-warning-subtlest-pressed: #eabd08;
-  --background-warning-subtlest-hovered: #caa204;
-  --background-warning-subtlest-default: #a18207;
-  --background-warning-subtler-default: #856d0e;
-  --background-warning-subtler-hovered: #a18207;
-  --background-warning-subtler-pressed: #caa204;
+  --background-warning-bold-default: #fca013;
+  --background-warning-bold-hovered: #feb939;
+  --background-warning-bold-pressed: #ffd672;
+  --background-warning-boldest-default: #441f06; /** Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted. */
+  --background-warning-boldest-hovered: #7e4210; /** État survolé de background.warning.boldest.default (cartes bold interactives). */
+  --background-warning-boldest-pressed: #9c4f10; /** État pressé de background.warning.boldest.default (cartes bold interactives). */
+  --background-warning-subtlest-pressed: #fca013;
+  --background-warning-subtlest-hovered: #f68909;
+  --background-warning-subtlest-default: #c56509;
+  --background-warning-subtler-default: #9c4f10;
+  --background-warning-subtler-hovered: #c56509;
+  --background-warning-subtler-pressed: #f68909;
   --background-critical-bold-default: #e12121;
   --background-critical-bold-hovered: #f44040;
   --background-critical-bold-pressed: #fc6d6d;
@@ -914,7 +914,7 @@
   --surface-overlay-accent-magenta: #47102d;
   --surface-overlay-accent-blue-grey: #1e2533;
   --surface-overlay-information: #023059;
-  --surface-overlay-warning: #292410;
+  --surface-overlay-warning: #441f06;
   --surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
   --surface-mask-hovered: rgba(191, 219, 248, 0.28); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
   --surface-mask-pressed: rgba(166, 197, 226, 0.16); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
@@ -971,7 +971,7 @@
   --text-comete-hovered: #c1e3fc;
   --text-comete-pressed: #97d2f9;
   --text-comete-boldest: #f0f8fe; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
-  --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+  --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, orange) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
   --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --border-subtle: #3f4a4d;
@@ -981,8 +981,8 @@
   --border-success-subtle: #036240;
   --border-critical-bold: #f44040;
   --border-critical-subtle: #9d1717;
-  --border-warning-bold: #eabd08;
-  --border-warning-subtle: #856d0e;
+  --border-warning-bold: #fca013;
+  --border-warning-subtle: #9c4f10;
   --border-information-bold: #009bfe;
   --border-information-subtle: #005391;
   --border-selected: #66b8f4;
@@ -1016,7 +1016,7 @@
   --icon-default: #eaedf4;
   --icon-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
   --icon-inverted: #374043;
-  --icon-warning: #fdd847;
+  --icon-warning: #ffd672;
   --icon-critical: #ffa2a2;
   --icon-success: #2fd88e;
   --icon-brand-default: #c1e3fc; /** Miroir de icon.comete.default pour la charte du client (BrandProvider). */
@@ -1034,7 +1034,7 @@
   --icon-accent-blue-grey: #a8b9d1;
   --icon-day: #feb939;
   --icon-night: #26b5ff;
-  --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
+  --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, orange), identique en clair et en sombre. Pendant de text.on-light-surface. */
   --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
   --icon-bold: #f7f8f8;
   --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */
@@ -1107,18 +1107,18 @@
     --background-success-subtler-default: #036240;
     --background-success-subtler-hovered: #00784d;
     --background-success-subtler-pressed: #009b60;
-    --background-warning-bold-default: #eabd08;
-    --background-warning-bold-hovered: #facc15;
-    --background-warning-bold-pressed: #fdd847;
-    --background-warning-boldest-default: #292410; /** Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted. */
-    --background-warning-boldest-hovered: #715e12; /** État survolé de background.warning.boldest.default (cartes bold interactives). */
-    --background-warning-boldest-pressed: #856d0e; /** État pressé de background.warning.boldest.default (cartes bold interactives). */
-    --background-warning-subtlest-pressed: #eabd08;
-    --background-warning-subtlest-hovered: #caa204;
-    --background-warning-subtlest-default: #a18207;
-    --background-warning-subtler-default: #856d0e;
-    --background-warning-subtler-hovered: #a18207;
-    --background-warning-subtler-pressed: #caa204;
+    --background-warning-bold-default: #fca013;
+    --background-warning-bold-hovered: #feb939;
+    --background-warning-bold-pressed: #ffd672;
+    --background-warning-boldest-default: #441f06; /** Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted. */
+    --background-warning-boldest-hovered: #7e4210; /** État survolé de background.warning.boldest.default (cartes bold interactives). */
+    --background-warning-boldest-pressed: #9c4f10; /** État pressé de background.warning.boldest.default (cartes bold interactives). */
+    --background-warning-subtlest-pressed: #fca013;
+    --background-warning-subtlest-hovered: #f68909;
+    --background-warning-subtlest-default: #c56509;
+    --background-warning-subtler-default: #9c4f10;
+    --background-warning-subtler-hovered: #c56509;
+    --background-warning-subtler-pressed: #f68909;
     --background-critical-bold-default: #e12121;
     --background-critical-bold-hovered: #f44040;
     --background-critical-bold-pressed: #fc6d6d;
@@ -1230,7 +1230,7 @@
     --surface-overlay-accent-magenta: #47102d;
     --surface-overlay-accent-blue-grey: #1e2533;
     --surface-overlay-information: #023059;
-    --surface-overlay-warning: #292410;
+    --surface-overlay-warning: #441f06;
     --surface-mask-default: rgba(155, 180, 202, 0.5); /** Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default. */
     --surface-mask-hovered: rgba(191, 219, 248, 0.28); /** Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image. */
     --surface-mask-pressed: rgba(166, 197, 226, 0.16); /** Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt. */
@@ -1287,7 +1287,7 @@
     --text-comete-hovered: #c1e3fc;
     --text-comete-pressed: #97d2f9;
     --text-comete-boldest: #f0f8fe; /** Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete.default). */
-    --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, jaune) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
+    --text-on-light-surface: #252a2c; /** Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, orange) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted). */
     --text-on-dark-surface: #ffffff; /** Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted). */
     --border-disabled: rgba(255, 255, 255, 0.2); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --border-subtle: #3f4a4d;
@@ -1297,8 +1297,8 @@
     --border-success-subtle: #036240;
     --border-critical-bold: #f44040;
     --border-critical-subtle: #9d1717;
-    --border-warning-bold: #eabd08;
-    --border-warning-subtle: #856d0e;
+    --border-warning-bold: #fca013;
+    --border-warning-subtle: #9c4f10;
     --border-information-bold: #009bfe;
     --border-information-subtle: #005391;
     --border-selected: #66b8f4;
@@ -1332,7 +1332,7 @@
     --icon-default: #eaedf4;
     --icon-disabled: rgba(255, 255, 255, 0.4); /** DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composants. */
     --icon-inverted: #374043;
-    --icon-warning: #fdd847;
+    --icon-warning: #ffd672;
     --icon-critical: #ffa2a2;
     --icon-success: #2fd88e;
     --icon-brand-default: #c1e3fc; /** Miroir de icon.comete.default pour la charte du client (BrandProvider). */
@@ -1350,7 +1350,7 @@
     --icon-accent-blue-grey: #a8b9d1;
     --icon-day: #feb939;
     --icon-night: #26b5ff;
-    --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, jaune), identique en clair et en sombre. Pendant de text.on-light-surface. */
+    --icon-on-light-surface: #252a2c; /** Icône foncée fixe sur les surfaces claires fixes (fond warning bold, orange), identique en clair et en sombre. Pendant de text.on-light-surface. */
     --icon-on-dark-surface: #ffffff; /** Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface. */
     --icon-bold: #f7f8f8;
     --logo-comete-default: #ffffff; /** Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest). */

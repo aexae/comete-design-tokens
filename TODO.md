@@ -75,8 +75,8 @@ Relevé pendant l'alignement `brand` = `comete` (0.26.0). À traiter dans le cha
 - **Surfaces** (signalé par Axel) : ~~`surface.critical` doublon de `overlay.critical`, hiérarchie
   à plat contre `elevation`~~ réglé en 0.34.0 (`surface.*` aplati, `critical` supprimé). Restent :
   `overlay.default` et `raise.default` valent tous deux `white.100` en clair (distinguer par
-  l'ombre, ou fusionner) ; `overlay.warning` pointe sur `yellow.50` dans le repo et `orange/50`
-  dans Figma (dérive à trancher) ; Figma porte encore `DEPRECATED-background/surface/comete` et
+  l'ombre, ou fusionner) ; ~~`overlay.warning` pointe sur `yellow.50` dans le repo et `orange/50`
+  dans Figma~~ réglé en 0.41.0 (orange) ; Figma porte encore `DEPRECATED-background/surface/comete` et
   `DEPRECATED-background/surface/elevation/overlay/accent` (à supprimer avec leurs instances).
 - ~~**Valeurs Figma ≠ repo sur `comete` / `brand`**~~ fait en 0.27.0 (2026-11-19) : Figma
   réaligné sur le code (`bold`, `subtlest` des deux familles), `logo/comete/default`
@@ -105,11 +105,10 @@ Relevé pendant l'alignement `brand` = `comete` (0.26.0). À traiter dans le cha
 
 ### À réconcilier (divergences relevées pendant le miroir)
 
-- **`warning` : `yellow` (repo historique) vs `orange` (Figma).** Le miroir a
-  aligné sur Figma (`text.warning.*` = `{orange.*}`), ce qui **change la couleur
-  warning globale** (#856d0e olive → #9c4f10 orange) partout (SectionMessage,
-  Banner, etc.), pas seulement le bouton. À confirmer : garder orange (Figma) ou
-  revenir à yellow.
+- ~~**`warning` : `yellow` (repo historique) vs `orange` (Figma).**~~ FAIT 0.41.0
+  (2026-11-25) : toute la famille warning passe en `orange`, comme Figma (décision d'Axel).
+  Reste : en sombre, `text.warning.default` sur `background.warning.subtlest` ne fait que
+  3,3:1 (3,0:1 avant), sous le 4,5:1 du texte courant.
 - **`text.brand` non restructuré.** Figma l'a groupé (default/hovered/pressed) avec
   des valeurs qui divergent du repo (brand/default Figma = `comete.blue.700` vs repo
   `comete.blue.900`). Laissé tel quel car c'est la couleur cliente runtime

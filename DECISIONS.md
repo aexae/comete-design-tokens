@@ -2,6 +2,13 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-25 — `warning` aligné sur Figma : `orange` partout (0.41.0)
+
+- **Décision** (Axel) : « aligne le code sur Figma ». Les fonds (`bold`, `boldest`, `subtler`, `subtlest`), `border.warning.*`, `icon.warning` et `surface.overlay.warning` passent de `yellow` à `orange`, aux mêmes paliers. `text.warning.*` l'était depuis le 19/11.
+- **Raison** : Figma n'a pas de palette `yellow` (supprimée le 2026-11-20) et le warning y était orange. Le code restait en jaune sauf pour le texte.
+- **Contrastes** : `text.on-light-surface` sur `warning.bold` 8,4:1 en clair et 7,0:1 en sombre. Les autres couples sont équivalents ou meilleurs.
+- **Non cassant** : aucun nom ne change, seule la teinte. La palette primitive `yellow` reste publiée.
+
 ## 2026-11-25 — `background.*.boldest` sur toutes les familles (0.40.0)
 
 - **Décision** (Axel) : palier `boldest` ajouté au fond de neutral, success, warning, critical, information et des cinq accents (`background.{famille}.boldest.{default,hovered,pressed}`), miroir de `comete.boldest` : palier 950 (survol 900, pressé 800), identique en clair et en sombre. Texte posé dessus en `text.on-dark-surface` (contraste de 13:1 à 16,8:1).

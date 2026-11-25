@@ -183,24 +183,34 @@ StyleDictionary.registerTransform({
     return Number(match[1]);
   },
 });
+/** Niveau d'un token d'après son fichier source : base, theme ou component. */
+const omnisTier = (filePath: string): string => {
+  const match = /^tokens[\\/](base|theme|component)[\\/]/.exec(filePath);
+  const tier = match?.[1];
+  if (!tier) throw new Error(`Niveau Omnis inconnu pour ${filePath}`);
+  return tier;
+};
 StyleDictionary.registerFormat({
   name: "json/omnis",
   format: ({ dictionary, options }) => {
     const tokens: Record<string, unknown> = {};
     const deprecated: string[] = [];
+    const catalog: { name: string; type: string; tier: string }[] = [];
     for (const token of dictionary.allTokens) {
       if (token.name in tokens) throw new Error(`Nom Omnis en doublon : ${token.name}`);
       tokens[token.name] = token.$value;
       if (token.$deprecated) deprecated.push(token.name);
+      catalog.push({ name: token.name, type: String(token.$type), tier: omnisTier(String(token.filePath)) });
     }
     return `${JSON.stringify(
       {
-        $schema: "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
+        schema: "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
         version: options.version,
         theme: options.theme,
         backdrop: options.backdrop,
         tokens,
         deprecated,
+        catalog,
       },
       null,
       1,

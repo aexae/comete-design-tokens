@@ -1,6 +1,6 @@
 {
- "$schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
- "version": "0.45.0",
+ "schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
+ "version": "0.46.0",
  "theme": "dark",
  "backdrop": "#374043",
  "tokens": {
@@ -1163,5 +1163,5757 @@
   "textLinkPressed",
   "borderDisabled",
   "iconDisabled"
+ ],
+ "catalog": [
+  {
+   "name": "mobile",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "tablet",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "laptop",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "desktop",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "red50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "red950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "green950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greyAlpha500A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greyAlpha400A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greyAlpha300A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greyAlpha200A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greyAlpha100A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "greySolid950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white0",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white2",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white4",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white6",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white8",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white10",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white20",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white30",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white40",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white60",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white70",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white80",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white90",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "white100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black0",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black2",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black4",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black6",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black8",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black10",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black20",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black30",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black40",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black60",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black70",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black80",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black90",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "black100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "purple950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "coolGrey950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "yellow950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blue950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "orange950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "lime950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "magenta950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "teal950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "turquoise950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreyAlpha500A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreyAlpha400A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreyAlpha300A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreyAlpha200A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreyAlpha100A",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "darkGreySolid950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "blueGrey950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeBlue950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow50",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow100",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow200",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow300",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow400",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow500",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow600",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow700",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow800",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow900",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "cometeYellow950",
+   "type": "color",
+   "tier": "base"
+  },
+  {
+   "name": "controlHeightCompact",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlHeightDefault",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlHeightTouch",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlRadiusCompact",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlRadiusDefault",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlRadiusTouch",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlPaddingXCompact",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlPaddingXDefault",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlPaddingXTouch",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlIconCompact",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlIconDefault",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "controlIconTouch",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "opacity0",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "opacity25",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "opacity50",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "opacity75",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "opacity100",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "opacityDisabled",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "opacityOverlay",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "radius0",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius0125",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius025",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius0375",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius050",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius0625",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius075",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius100",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius125",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius150",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius200",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radius300",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "radiusRound",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size0",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size0125",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size025",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size0375",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size050",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size0625",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size075",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size100",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size125",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size150",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size175",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size200",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size225",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size250",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size300",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size350",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size400",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size500",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size600",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size700",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size800",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size1000",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size1200",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size1600",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size3200",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size6400",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "size12800",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space0",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space025",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space0375",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space050",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space075",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space100",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space150",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space200",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space125",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space250",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space300",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space350",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space400",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space500",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space600",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space700",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space800",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space1000",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space1200",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "space1600",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontFamilyCode",
+   "type": "text",
+   "tier": "base"
+  },
+  {
+   "name": "fontFamilyPrimary",
+   "type": "text",
+   "tier": "base"
+  },
+  {
+   "name": "fontFamilyNotoSans",
+   "type": "text",
+   "tier": "base"
+  },
+  {
+   "name": "fontFamilyNotoSansMono",
+   "type": "text",
+   "tier": "base"
+  },
+  {
+   "name": "fontStyleItalic",
+   "type": "text",
+   "tier": "base"
+  },
+  {
+   "name": "fontStyleNormal",
+   "type": "text",
+   "tier": "base"
+  },
+  {
+   "name": "fontWeightRegular",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "fontWeightMedium",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "fontWeightSemibold",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "fontWeightBold",
+   "type": "number",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightUiXxl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightUiXl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightUiL",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightUiM",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightUiS",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightUiXs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightUiXxs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightUiXxxs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightHeroXxl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightHeroXl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightHeroL",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightHeroM",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightHeroS",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightHeroXs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "lineHeightHeroXxs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeUiXxl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeUiXl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeUiL",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeUiM",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeUiS",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeUiXs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeUiXxs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeUiXxxs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeHeroXxl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeHeroXl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeHeroL",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeHeroM",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeHeroS",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeHeroXs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "fontSizeHeroXxs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "letterSpacingNegativeTight",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "letterSpacingNegativeExtraTight",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "letterSpacingNormal",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "letterSpacingPositiveExtraWide",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "letterSpacingPositiveWide",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphSpacingXxl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphSpacingXl",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphSpacingL",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphSpacingM",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphSpacingS",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphSpacingXs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphSpacingXxs",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphSpacingNone",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphIndentL",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphIndentM",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphIndentS",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "paragraphIndentNone",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "backgroundNeutralSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInvertedSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInvertedSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInvertedSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInvertedSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInvertedSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundDisabledDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundFieldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundWarningSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCriticalSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInformationSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentPurpleSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTealSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentTurquoiseSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaSubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaSubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentMagentaSubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreyBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreyBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreyBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreyBoldestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreyBoldestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreyBoldestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreySubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreySubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreySubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreySubtlerDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreySubtlerHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundAccentBlueGreySubtlerPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleNightBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleNightBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleNightBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleNightSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleNightSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleNightSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleDayBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleDayBoldHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleDayBoldPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleDaySubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleDaySubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCycleDaySubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundFocusedDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceSunkenDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceSunkenHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceSunkenPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceRaiseDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayCritical",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlaySuccess",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayAccentPurple",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayAccentTeal",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayAccentTurquoise",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayAccentMagenta",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayAccentBlueGrey",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayInformation",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceOverlayWarning",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceMaskDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceMaskHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceMaskPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceComete",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "surfaceInverted",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textDefaultDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textDefaultHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textDefaultPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSelected",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textDisabled",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textLinkDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textLinkHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textLinkPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSubtleDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSubtleHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSubtlePressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textInvertedDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textInvertedHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textInvertedPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSubtleInverted",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSuccessDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSuccessHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSuccessPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textInformationDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textInformationHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textInformationPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textWarningDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textWarningHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textWarningPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textCriticalDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textCriticalHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textCriticalPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentPurpleDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentPurpleHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentPurplePressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentTealDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentTealHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentTealPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentTurquoiseDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentTurquoiseHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentTurquoisePressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentMagentaDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentMagentaHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentMagentaPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentBlueGreyDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentBlueGreyHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textAccentBlueGreyPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textBrandDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textBrandHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textBrandPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textBrandBoldest",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textCometeDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textCometeHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textCometePressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textCometeBoldest",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textOnLightSurface",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "textOnDarkSurface",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderDisabled",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderFocused",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderSuccessBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderSuccessSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderCriticalBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderCriticalSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderWarningBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderWarningSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderInformationBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderInformationSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderSelected",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentPurpleBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentPurpleSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentTealBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentTealSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentTurquoiseBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentTurquoiseSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentMagentaBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentMagentaSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentBlueGreyBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentBlueGreySubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderSelectedInverted",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderFocusInverted",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderNeutral",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderInvisible",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderInverted",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderOnDarkSurface",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderDayBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderDaySubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderNightBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderNightSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderBrandBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderBrandSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderBrandBoldest",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderCometeBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderCometeSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderCometeBoldest",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconDisabled",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconInverted",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconWarning",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconCritical",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconSuccess",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconBrandDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconBrandBoldest",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconCometeDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconCometeBoldest",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconSelected",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconInformation",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconSubtlest",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconAccentPurple",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconAccentTeal",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconAccentTurquoise",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconAccentMagenta",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconAccentBlueGrey",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconDay",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconNight",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconOnLightSurface",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconOnDarkSurface",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "iconBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "logoCometeDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "logoCometeGradientDark",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "logoCometeGradientLight",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "logoCometeNeutral",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "logoCometeInverted",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "logoCometeSubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "logoCometeSubtleInverted",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "blanketDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "autosaveIndicatorColorDefaultText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "autosaveIndicatorColorDefaultIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "autosaveIndicatorColorSuccessText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "autosaveIndicatorColorSuccessIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "autosaveIndicatorColorCriticalText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "autosaveIndicatorColorCriticalIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "autosaveIndicatorSpacingGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupBorderWidthXsmall",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupBorderWidthSmall",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupBorderWidthMedium",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupBorderWidthLarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupBorderWidthXlarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupBorderWidthXxlarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupBorderWidthXxxlarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupSpacingOverlapXsmall",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupSpacingOverlapSmall",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupSpacingOverlapMedium",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupSpacingOverlapLarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupSpacingOverlapXlarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupSpacingOverlapXxlarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarGroupSpacingOverlapXxxlarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorNeutralBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorNeutralBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorNeutralBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorNeutralText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorNeutralIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorCometeBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorCometeBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorCometeBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorCometeText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorCometeIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentPurpleBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentPurpleBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentPurpleBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentPurpleText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentPurpleIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTealBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTealBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTealBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTealText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTealIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTurquoiseBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTurquoiseBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTurquoiseBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTurquoiseText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentTurquoiseIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentMagentaBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentMagentaBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentMagentaBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentMagentaText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentMagentaIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentBlueGreyBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentBlueGreyBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentBlueGreyBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentBlueGreyText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorAccentBlueGreyIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorSelectedBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorSelectedText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarColorSelectedIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeXsmallContainer",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeXsmallIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeSmallContainer",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeSmallIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeMediumContainer",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeMediumIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeLargeContainer",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeLargeIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeXlargeContainer",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeXlargeIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeXxlargeContainer",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeXxlargeIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeXxxlargeContainer",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarSizeXxxlargeIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarRadius",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "avatarOpacityDisabled",
+   "type": "number",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorWarningBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorWarningText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorWarningIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorCriticalBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorCriticalText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorCriticalIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorAnnouncementBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorAnnouncementText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorAnnouncementIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorSuccessBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorSuccessText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorSuccessIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorInformationBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorInformationText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerColorInformationIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bannerSpacingGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bannerSpacingPadding",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bannerSizeIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorItemLabelDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorItemLabelSelected",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorItemIconDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorItemIconSelected",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorItemBackgroundSelected",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorActionBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorActionIcon",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavColorActionCradle",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSizeItemIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSizeActionContainer",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSizeActionIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSizeActionOffset",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSizeActionCradleRing",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSpacingPaddingTop",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSpacingPaddingX",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSpacingPaddingBottom",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSpacingItemPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSpacingItemContentPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSpacingItemGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSpacingItemBadgeOffsetTop",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavSpacingItemBadgeOffsetStart",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavRadiusItem",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavRadiusItemSelected",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavRadiusAction",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "bottomNavOpacityDisabled",
+   "type": "number",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedNeutralTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedNeutralBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedNeutralBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedNeutralBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedInvertedTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedInvertedBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedInvertedBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedInvertedBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSubtleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSubtleBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSubtleBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSubtleBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSubtlestTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSubtlestBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSubtlestBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSubtlestBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedCometeTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedCometeBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedCometeBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedCometeBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSuccessTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSuccessBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSuccessBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedSuccessBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedCriticalTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedCriticalBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedCriticalBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedCriticalBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedWarningTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedWarningBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedWarningBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedWarningBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedInformationTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedInformationBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedInformationBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedInformationBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedBrandBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedBrandBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedBrandBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedBrandTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentPurpleBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentPurpleBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentPurpleBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentPurpleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentTealBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentTealBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentTealBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentTealTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentTurquoiseBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentTurquoiseBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentTurquoiseBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentTurquoiseTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentMagentaBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentMagentaBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentMagentaBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentMagentaTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentBlueGreyBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentBlueGreyBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentBlueGreyBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorContainedAccentBlueGreyTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedNeutralTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedNeutralBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedNeutralBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedNeutralBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedInvertedTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedInvertedBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedInvertedBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedInvertedBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSubtleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSubtleBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSubtleBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSubtleBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSubtlestTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSubtlestBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSubtlestBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSubtlestBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedCometeTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedCometeBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedCometeBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedCometeBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSuccessTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSuccessBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSuccessBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedSuccessBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedCriticalTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedCriticalBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedCriticalBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedCriticalBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedWarningTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedWarningBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedWarningBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedWarningBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedInformationTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedInformationBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedInformationBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedInformationBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedBrandBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedBrandTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedBrandBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedBrandBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentPurpleBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentPurpleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentPurpleBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentPurpleBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentTealBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentTealTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentTealBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentTealBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentTurquoiseBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentTurquoiseTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentTurquoiseBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentTurquoiseBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentMagentaBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentMagentaTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentMagentaBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentMagentaBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentBlueGreyBorderDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentBlueGreyTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentBlueGreyBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorOutlinedAccentBlueGreyBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleNeutralTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleNeutralBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleNeutralBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleInvertedTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleInvertedBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleInvertedBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSubtleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSubtleBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSubtleBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSubtlestTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSubtlestBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSubtlestBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleCometeTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleCometeBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleCometeBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSuccessTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSuccessBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleSuccessBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleCriticalTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleCriticalBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleCriticalBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleWarningTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleWarningBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleWarningBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleInformationTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleInformationBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleInformationBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleBrandTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleBrandBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleBrandBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentPurpleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentPurpleBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentPurpleBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentTealTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentTealBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentTealBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentTurquoiseTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentTurquoiseBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentTurquoiseBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentMagentaTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentMagentaBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentMagentaBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentBlueGreyTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentBlueGreyBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSubtleAccentBlueGreyBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkNeutralTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkNeutralTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkNeutralTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkInvertedTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkInvertedTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkInvertedTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkCometeTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkCometeTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkCometeTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSuccessTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSuccessTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSuccessTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkCriticalTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkCriticalTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkCriticalTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkWarningTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkWarningTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkWarningTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkInformationTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkInformationTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkInformationTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtlestTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtlestTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtlestTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkBrandTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkBrandTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkBrandTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentPurpleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentPurpleTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentPurpleTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentTealTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentTealTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentTealTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentTurquoiseTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentTurquoiseTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentTurquoiseTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentMagentaTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentMagentaTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentMagentaTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentBlueGreyTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentBlueGreyTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkAccentBlueGreyTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleNeutralTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleNeutralTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleNeutralTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleInvertedTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleInvertedTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleInvertedTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleCometeTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleCometeTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleCometeTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSuccessTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSuccessTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSuccessTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleCriticalTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleCriticalTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleCriticalTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleWarningTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleWarningTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleWarningTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleInformationTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleInformationTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleInformationTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSubtleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSubtleTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSubtleTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSubtlestTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSubtlestTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleSubtlestTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleBrandTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleBrandTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleBrandTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentPurpleTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentPurpleTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentPurpleTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentTealTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentTealTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentTealTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentTurquoiseTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentTurquoiseTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentTurquoiseTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentMagentaTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentMagentaTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentMagentaTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentBlueGreyTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentBlueGreyTextHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorLinkSubtleAccentBlueGreyTextPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSelectedBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSelectedBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSelectedBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorSelectedTextDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorFocusBorder",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonColorFocusBorderInverted",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSizeCompactHeight",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSizeCompactIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSizeDefaultHeight",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSizeDefaultIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSizeTouchHeight",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSizeTouchIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSpacingCompactGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSpacingCompactPaddingX",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSpacingDefaultGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSpacingDefaultPaddingX",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSpacingDefaultPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSpacingTouchGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSpacingTouchPaddingX",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonSpacingTouchPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonRadiusCompact",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonRadiusDefault",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonRadiusTouch",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "buttonOpacityDisabled",
+   "type": "number",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarColorTitle",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarColorCompactBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarColorCompactBorder",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarSizeCompactMinHeight",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarSpacingGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarSpacingTrailingGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarSpacingLargePaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarSpacingCompactPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarSpacingTitlePaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageBarBorderWidthCompact",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageToolbarSpacingGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageToolbarSpacingPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageToolbarSpacingGroupGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageToolbarSizeSearchMinWidth",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageToolbarSizeSearchMaxWidth",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageSpacingGutterMobile",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageSpacingGutterLaptop",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageSpacingBodyPaddingTop",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageSpacingStatePaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "pageSpacingSkeletonGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorSurfaceBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorSurfaceBorder",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorHeaderTitle",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorHeaderSubtitle",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorItemBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorItemBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorItemText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorItemSelectedBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorItemSelectedBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorItemSelectedBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorItemSelectedText",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorSectionTitle",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorDivider",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorEmptyIconBackground",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorEmptyTitle",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavColorEmptyDescription",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSizeRailWidth",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSizeItemIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSizeRailItemMinHeight",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSizeHeaderLogo",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSizeHeaderMinHeight",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSizeFooterBrand",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSizeEmptyIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSizeWidth",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingGutter",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingInset",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingHeaderGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingHeaderPaddingTop",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingHeaderPaddingBottom",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingItemGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingItemPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingRailPaddingX",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingRailItemGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingSectionTitlePaddingTop",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingSectionTitlePaddingBottom",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingDividerMarginY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingFooterPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingEmptyGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingEmptyPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingEmptyPaddingX",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingEmptyTextGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingEmptyAction",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavSpacingSkeletonGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavRadiusItem",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavRadiusDivider",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavRadiusEmptyIcon",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavBorderWidthSurface",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavBorderWidthDivider",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavOpacityDisabled",
+   "type": "number",
+   "tier": "component"
+  },
+  {
+   "name": "sideNavOpacityFooterBrand",
+   "type": "number",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerSizeXsmall",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerSizeSmall",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerSizeMedium",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerSizeLarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerSizeXlarge",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerColorDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerColorInverted",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerColorCometeLight",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "spinnerColorCometeDark",
+   "type": "color",
+   "tier": "component"
+  }
  ]
 }

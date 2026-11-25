@@ -170,12 +170,13 @@ Comète SQL (Omnis Studio 6.1.3) ne consomme ni le CSS ni le package npm : elle 
 
 ```json
 {
-  "$schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
-  "version": "0.44.0",
+  "schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
+  "version": "0.46.0",
   "theme": "light",
   "backdrop": "#ffffff",
   "tokens": { "red50": 15921918, "textDefaultDefault": 2894373, "space100": 8, "fontFamilyPrimary": "Noto Sans" },
-  "deprecated": ["textDisabled"]
+  "deprecated": ["textDisabled"],
+  "catalog": [{ "name": "red50", "type": "color", "tier": "base" }, { "name": "textDefaultDefault", "type": "color", "tier": "theme" }]
 }
 ```
 
@@ -184,6 +185,7 @@ Comète SQL (Omnis Studio 6.1.3) ne consomme ni le CSS ni le package npm : elle 
 - **Dimensions** : nombre de px. **Nombres** (opacité, graisse) et **textes** (familles de police) tels quels.
 - **Exclus** : ombres, animation (`duration`, `easing`), `z-index`.
 - **Dépréciés** : conservés dans `tokens` tant qu'ils existent dans les sources, listés dans `deprecated`.
+- **Catalogue** : `catalog` donne, dans l'ordre de `tokens`, le `$type` DTCG de chaque token (`color`, `dimension`, `number`, `fontFamily`…) et son niveau `tier` (`base` = primitives, `theme` = sémantiques, `component`). Comète s'en sert pour distinguer couleurs et dimensions sans deviner d'après le nom ; aucune clé du fichier ne commence par `$`, pour rester un nom de colonne Omnis.
 - **Contrat consommateur** : `consumers/omnis.json` liste les clés lues par Comète ; `tests/consumers.test.ts` fait échouer la CI si l'une d'elles disparaît de la sortie Omnis. Renommer un token consommé impose un alias ou une coordination avec Comète avant la release.
 
 ## Commandes

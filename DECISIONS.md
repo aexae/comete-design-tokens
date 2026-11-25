@@ -2,6 +2,12 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-25 — Catalogue (`type`, `tier`) dans la sortie Omnis (0.46.0)
+
+- **Contexte** : la sortie Omnis 0.44.0 livre 1150 tokens à plat, sans leur type. Comète (fenêtre W_DESIGN_TOKENS) devinait couleurs et niveaux d'après le nom : avec les dimensions, polices et tokens de composants, cette heuristique classait `space100` en couleur et `buttonPrimaryBackgroundDefault` en sémantique.
+- **Décision** (Axel) : le type vient du dist, pas d'une heuristique Omnis. Chaque JSON Omnis ajoute `catalog`, liste ordonnée `{ name, type, tier }` : `type` = `$type` DTCG du token, `tier` = dossier source (`base`, `theme`, `component`). La clé `$schema` devient `schema` : aucune clé ne commence par `$`, pour rester un nom de colonne Omnis.
+- **Côté Comète** : le cache `#THEME#` stocke le JSON complet (tokens + catalogue + version) et W_DESIGN_TOKENS affiche les couleurs sur trois pages (thème, base, composants) d'après le catalogue. `ivBackdropHex` et l'aplatissement de l'alpha côté Omnis disparaissent, le fond de référence étant `surfaceDefault`.
+
 ## 2026-11-25 — `bold` et `boldest` en sombre : 600/500/400 et 200/100/50 (0.45.0)
 
 - **Décision** (Axel) : « passe les background boldest dark en 200/100/50 et les bold dark en 600/500/400 ». En thème sombre, `background.{famille}.boldest.{default,hovered,pressed}` vaut le palier 200/100/50 de sa palette et `background.{famille}.bold.{default,hovered,pressed}` le palier 600/500/400. Appliqué aux treize familles (neutral, brand, comete, selected pour bold, success, warning, critical, information, cinq accents). Le thème clair ne change pas.

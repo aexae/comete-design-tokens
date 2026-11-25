@@ -2,6 +2,10 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-25 — `button.color.focus.border-inverted` (0.43.0)
+
+- **Décision** (Axel) : le Button inverted a son propre anneau de focus, `button.color.focus.border-inverted` = `{border.focus-inverted}`. Le bleu de focus standard se lit mal sur `surface.inverted`.
+
 ## 2026-11-25 — Button `inverted`, `text.inverted` à états, `background.inverted.*` (0.42.0)
 
 - **Décision** (Axel) : le Button reçoit une couleur `inverted` dans chaque apparence (contained, outlined, subtle, link, link-subtle). Elle **suit le thème**, comme `surface.inverted` : bouton pour une surface inversée (encre en clair, blanc en sombre).

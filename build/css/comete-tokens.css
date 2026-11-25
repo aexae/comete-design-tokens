@@ -1788,6 +1788,7 @@
   --button-color-selected-background-pressed: var(--background-selected-subtlest-pressed);
   --button-color-selected-text-default: var(--text-selected);
   --button-color-focus-border: var(--border-focused);
+  --button-color-focus-border-inverted: var(--border-focus-inverted); /** Anneau de focus du Button inverted, lisible sur surface.inverted. */
   --button-size-compact-height: var(--control-height-compact);
   --button-size-compact-icon: var(--control-icon-compact);
   --button-size-default-height: var(--control-height-default);

@@ -2,6 +2,13 @@
 
 > Failles, faiblesses et pistes d'amélioration signalées au fil des échanges.
 
+## Suites de `bold` et `boldest` sombres (0.45.0, 2026-11-25)
+
+- **Texte sur `bold` en sombre** : `text.inverted.default` vaut cool-grey.950 en sombre, soit 2,6:1 sur neutral.bold 600, 3,1:1 sur critical, 3,2:1 sur information, 3,6:1 sur comete, 4,1:1 sur success. Le blanc (`text.on-dark-surface`) y fait 5,6:1 (neutral), 4,7:1 (critical), 4,6:1 (information) mais 4,0:1 (comete) et 3,6:1 (success). Aucun token texte ne tient AA sur comete.bold et success.bold en sombre : arbitrage Axel (changer `text.inverted` en sombre, ou les paliers 600).
+- **Button contained** (comete, success, information, brand, accents) : `button.color.*.contained.text` = `text.inverted.default` sur `background.*.bold`, donc encre sur 600 en sombre, sous AA (signalé par la session Button). À arbitrer avec le point précédent. Le Button `inverted` (`background.inverted.*`) n'est pas concerné.
+- **DS à adapter au bump 0.45.0** : `Card.module.css` (bold comete et brand sur `boldest` avec `text.on-dark-surface`, blanc sur bleu 200 en sombre, 1,3:1), `Welcome.stories.tsx` (hero boldest avec `text.on-dark-surface`), `Couleur.stories.tsx` (texte « palier 950, identique en clair et en sombre »), `generateBrandTheme.ts` (carte sombre en dur : brand bold 50/100/200, boldest 950/900/800, à passer en 600/500/400 et 200/100/50).
+- **Figma** : collection `semantics`, douze familles sur treize encore aux anciennes valeurs sombres pour `background/*/bold` et `boldest` (seule `comete` est alignée).
+
 ## Suites de `icon.on-comete` et des voiles (2026-11-20)
 
 - ~~**`icon.on-warning` : dérive Figma ↔ repo**~~ : FAIT en 0.33.0, `icon.on-light-surface` (ex `icon.on-warning`) vaut cool-grey.950 partout.

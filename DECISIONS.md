@@ -2,6 +2,14 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-25 — `bold` et `boldest` en sombre : 600/500/400 et 200/100/50 (0.45.0)
+
+- **Décision** (Axel) : « passe les background boldest dark en 200/100/50 et les bold dark en 600/500/400 ». En thème sombre, `background.{famille}.boldest.{default,hovered,pressed}` vaut le palier 200/100/50 de sa palette et `background.{famille}.bold.{default,hovered,pressed}` le palier 600/500/400. Appliqué aux treize familles (neutral, brand, comete, selected pour bold, success, warning, critical, information, cinq accents). Le thème clair ne change pas.
+- **Conséquence de doctrine** : `boldest` n'est plus un navy fixe « identique en clair et en sombre », il suit le thème comme `bold`. La seule surface navy fixe reste `surface.comete`. Les descriptions de `*.boldest.default`, `surface.comete`, `text/border/icon.on-dark-surface` et le README sont réécrits en conséquence : texte sur `boldest` en `text.inverted` (encre 950 sur 200 en sombre, 9,9:1 à 12:1), `text.on-dark-surface` réservé à `surface.comete` et `critical.bold`.
+- **Figma** : au moment de la décision, seule la famille `comete` portait déjà ces valeurs dans la collection `semantics` (bold 600/500/400, boldest 200/100/50 en sombre). Les douze autres familles sont encore aux anciennes valeurs côté Figma, à aligner.
+- **Contrastes non résolus** (voir TODO) : en sombre, `text.inverted` (encre 950) sur un `bold` 600 tombe sous AA texte (neutral 2,6:1, critical 3,1:1, information 3,2:1, comete 3,6:1, success 4,1:1) et le blanc n'y est AA que pour neutral, critical et information (comete 4,0:1, success 3,6:1). Le choix du texte sur `bold` en sombre est à arbitrer.
+- **Non cassant** : aucun nom ne change, seules les valeurs sombres. Le DS (alpha.202, tokens 0.43.0) n'est pas affecté avant son bump.
+
 ## 2026-11-25 — Sortie Omnis et contrat consommateur Comète SQL (0.44.0)
 
 - **Contexte** : Comète SQL (Omnis 6.1.3) lisait les JSON sources sur `main` (`tokens/base/color`, `tokens/base/brand`, `tokens/theme/*`) et résolvait elle-même références, noms et alpha. Le renommage `brand` → `comete` (0.25.0) et la restructuration de `text.*` (0.20.0) l'ont cassée sans que rien ne le détecte.

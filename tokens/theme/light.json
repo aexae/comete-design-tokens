@@ -33,7 +33,7 @@
         "default": {
           "$type": "color",
           "$value": "{cool-grey.950}",
-          "$description": "Fond le plus foncé de la famille neutre, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.neutral.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          "$description": "Fond neutre le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, neutral.bold. Texte en text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -147,7 +147,7 @@
         "default": {
           "$type": "color",
           "$value": "{comete.blue.950}",
-          "$description": "Miroir de background.comete.boldest.default pour la charte du client (généré par BrandProvider, navy Comète par défaut). Surfaces d'identité ambiantes uniquement, jamais un contrôle. Texte en text.on-dark-surface."
+          "$description": "Miroir de background.comete.boldest.default pour la charte du client (BrandProvider). Suit le thème. Jamais un contrôle. Texte en text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -208,7 +208,7 @@
         "default": {
           "$type": "color",
           "$value": "{comete.blue.950}",
-          "$description": "Navy Comète (« Bleu Comète » de la charte) : fond d'identité pour le chrome applicatif, les cartes bold comete et les supports de communication, identique en clair et en sombre. Jamais sur un contrôle ni un appel à l'action (background.comete.bold). Texte en text.on-dark-surface (12:1), jamais text.inverted."
+          "$description": "Fond Comète le plus contrasté, qui suit le thème (navy en clair, bleu clair en sombre) : carte bold comete. Navy fixe : surface.comete. Texte en text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -278,7 +278,7 @@
         "default": {
           "$type": "color",
           "$value": "{green.950}",
-          "$description": "Fond le plus foncé de la famille succès, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.success.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          "$description": "Fond succès le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, success.bold. Texte en text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -339,7 +339,7 @@
         "default": {
           "$type": "color",
           "$value": "{orange.950}",
-          "$description": "Fond le plus foncé de la famille avertissement, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.warning.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          "$description": "Fond avertissement le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, warning.bold. Texte en text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -400,7 +400,7 @@
         "default": {
           "$type": "color",
           "$value": "{red.950}",
-          "$description": "Fond le plus foncé de la famille critique, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.critical.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          "$description": "Fond critique le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, critical.bold. Texte en text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -461,7 +461,7 @@
         "default": {
           "$type": "color",
           "$value": "{blue.950}",
-          "$description": "Fond le plus foncé de la famille information, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.information.bold). Texte en text.on-dark-surface, jamais text.inverted."
+          "$description": "Fond information le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, information.bold. Texte en text.inverted."
         },
         "hovered": {
           "$type": "color",
@@ -523,7 +523,7 @@
           "default": {
             "$type": "color",
             "$value": "{purple.950}",
-            "$description": "Fond le plus foncé de la famille accent purple, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.purple.bold). Texte en text.on-dark-surface, jamais text.inverted."
+            "$description": "Fond accent purple le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.purple.bold. Texte en text.inverted."
           },
           "hovered": {
             "$type": "color",
@@ -584,7 +584,7 @@
           "default": {
             "$type": "color",
             "$value": "{teal.950}",
-            "$description": "Fond le plus foncé de la famille accent teal, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.teal.bold). Texte en text.on-dark-surface, jamais text.inverted."
+            "$description": "Fond accent teal le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.teal.bold. Texte en text.inverted."
           },
           "hovered": {
             "$type": "color",
@@ -645,7 +645,7 @@
           "default": {
             "$type": "color",
             "$value": "{turquoise.950}",
-            "$description": "Fond le plus foncé de la famille accent turquoise, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.turquoise.bold). Texte en text.on-dark-surface, jamais text.inverted."
+            "$description": "Fond accent turquoise le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.turquoise.bold. Texte en text.inverted."
           },
           "hovered": {
             "$type": "color",
@@ -706,7 +706,7 @@
           "default": {
             "$type": "color",
             "$value": "{magenta.950}",
-            "$description": "Fond le plus foncé de la famille accent magenta, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.magenta.bold). Texte en text.on-dark-surface, jamais text.inverted."
+            "$description": "Fond accent magenta le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.magenta.bold. Texte en text.inverted."
           },
           "hovered": {
             "$type": "color",
@@ -767,7 +767,7 @@
           "default": {
             "$type": "color",
             "$value": "{blue-grey.950}",
-            "$description": "Fond le plus foncé de la famille accent blue-grey, identique en clair et en sombre : bandeau, carte bold ou visuel qui doit rester foncé quel que soit le thème. Jamais sur un contrôle ni un appel à l'action (background.accent.blue-grey.bold). Texte en text.on-dark-surface, jamais text.inverted."
+            "$description": "Fond accent blue-grey le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.blue-grey.bold. Texte en text.inverted."
           },
           "hovered": {
             "$type": "color",
@@ -968,7 +968,7 @@
     "comete": {
       "$type": "color",
       "$value": "{comete.blue.950}",
-      "$description": "Surface navy Comète, identique en thème clair et sombre : en-têtes, barres, bandeaux et pages de présentation. Non interactive, sans état. Texte en text.on-dark-surface (12:1), jamais text.inverted (encre en sombre). Pour une carte ou un bloc avec états, background.comete.boldest."
+      "$description": "Surface navy Comète, identique en clair et en sombre : en-tête, barre, bandeau. Sans état. Texte en text.on-dark-surface, jamais text.inverted."
     },
     "inverted": {
       "$type": "color",
@@ -1244,7 +1244,7 @@
     "on-dark-surface": {
       "$type": "color",
       "$value": "{white.100}",
-      "$description": "Texte blanc fixe sur les surfaces sombres fixes, identiques en clair et en sombre : navy Comète (background.surface.comete, background.comete.boldest, background.brand.boldest) et background.critical.bold (red 600 dans les deux thèmes). 12:1 sur navy. Pas sur les fonds bold qui suivent le thème (text.inverted)."
+      "$description": "Texte blanc fixe sur une surface sombre fixe (surface.comete, critical.bold), dans les deux thèmes. Fonds bold et boldest qui suivent le thème : text.inverted."
     }
   },
   "border": {
@@ -1389,7 +1389,7 @@
     "on-dark-surface": {
       "$type": "color",
       "$value": "{white.100}",
-      "$description": "Bordure blanche fixe sur les surfaces sombres fixes, identiques en clair et en sombre (navy Comète : background.surface.comete, background.comete.boldest, background.brand.boldest). Pendant de text.on-dark-surface et icon.on-dark-surface. Pas border.inverted, qui devient foncée en sombre."
+      "$description": "Bordure blanche fixe sur une surface sombre fixe (surface.comete). Pendant de text.on-dark-surface. Suit le thème : border.inverted."
     },
     "day": {
       "bold": {
@@ -1547,7 +1547,7 @@
     "on-dark-surface": {
       "$type": "color",
       "$value": "{white.100}",
-      "$description": "Icône blanche fixe sur les surfaces sombres fixes (navy Comète, background.critical.bold), identique en clair et en sombre. Pendant de text.on-dark-surface."
+      "$description": "Icône blanche fixe sur une surface sombre fixe (surface.comete, critical.bold), dans les deux thèmes. Pendant de text.on-dark-surface."
     },
     "bold": {
       "$type": "color",

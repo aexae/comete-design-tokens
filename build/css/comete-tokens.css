@@ -1822,8 +1822,8 @@
   --quick-actions-menu-list-spacing-padding-bottom: var(--space1600); /** Place réservée en bas de la liste au bouton d'action et à la barre (128 px), hors zone de sécurité */
   --quick-actions-menu-list-spacing-gap: var(--space150); /** Écart entre deux items (12 px) */
   --quick-actions-menu-item-color-background-default: var(--surface-default); /** Fond d'un item. Toujours neutre : le ton de l'action ne va que sur la pastille d'icône (IconTile) */
-  --quick-actions-menu-item-color-background-hovered: var(--background-neutral-subtlest-hovered); /** Fond d'un item survolée */
-  --quick-actions-menu-item-color-background-pressed: var(--background-neutral-subtlest-pressed); /** Fond d'un item pressée */
+  --quick-actions-menu-item-color-background-hovered: var(--background-neutral-subtlest-hovered); /** Fond d'un item survolé */
+  --quick-actions-menu-item-color-background-pressed: var(--background-neutral-subtlest-pressed); /** Fond d'un item pressé */
   --quick-actions-menu-item-color-text: var(--text-default-default); /** Libellé d'un item */
   --quick-actions-menu-item-spacing-gap: var(--space200); /** Écart entre la pastille d'icône et le libellé (16 px) */
   --quick-actions-menu-item-spacing-padding-y: var(--space100); /** Marge intérieure verticale d'un item (8 px) */

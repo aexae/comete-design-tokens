@@ -1,6 +1,6 @@
 {
  "schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
- "version": "0.47.0",
+ "version": "0.48.0",
  "theme": "dark",
  "backdrop": "#374043",
  "tokens": {
@@ -1095,20 +1095,20 @@
   "pageSpacingBodyPaddingTop": 8,
   "pageSpacingStatePaddingY": 48,
   "pageSpacingSkeletonGap": 24,
-  "quickActionsColorOverlay": 8878697,
-  "quickActionsColorRowBackgroundDefault": 4407351,
-  "quickActionsColorRowBackgroundHovered": 5065279,
-  "quickActionsColorRowBackgroundPressed": 4407351,
-  "quickActionsColorRowLabel": 16316663,
-  "quickActionsSizeRowMinHeight": 56,
-  "quickActionsSpacingListPadding": 16,
-  "quickActionsSpacingListPaddingBottom": 128,
-  "quickActionsSpacingListGap": 12,
-  "quickActionsSpacingRowGap": 16,
-  "quickActionsSpacingRowPaddingY": 8,
-  "quickActionsSpacingRowPaddingStart": 8,
-  "quickActionsSpacingRowPaddingEnd": 24,
-  "quickActionsRadiusRow": 1024,
+  "quickActionsMenuColorBlanket": 8878697,
+  "quickActionsMenuListSpacingPadding": 16,
+  "quickActionsMenuListSpacingPaddingBottom": 128,
+  "quickActionsMenuListSpacingGap": 12,
+  "quickActionsMenuItemColorBackgroundDefault": 4407351,
+  "quickActionsMenuItemColorBackgroundHovered": 5065279,
+  "quickActionsMenuItemColorBackgroundPressed": 4407351,
+  "quickActionsMenuItemColorText": 16316663,
+  "quickActionsMenuItemSizeMinHeight": 56,
+  "quickActionsMenuItemSpacingGap": 16,
+  "quickActionsMenuItemSpacingPaddingY": 8,
+  "quickActionsMenuItemSpacingPaddingStart": 8,
+  "quickActionsMenuItemSpacingPaddingEnd": 24,
+  "quickActionsMenuItemRadius": 1024,
   "sideNavColorSurfaceBackground": 4407351,
   "sideNavColorSurfaceBorder": 5065279,
   "sideNavColorHeaderTitle": 16316663,
@@ -6635,72 +6635,72 @@
    "tier": "component"
   },
   {
-   "name": "quickActionsColorOverlay",
+   "name": "quickActionsMenuColorBlanket",
    "type": "color",
    "tier": "component"
   },
   {
-   "name": "quickActionsColorRowBackgroundDefault",
+   "name": "quickActionsMenuListSpacingPadding",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsMenuListSpacingPaddingBottom",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsMenuListSpacingGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsMenuItemColorBackgroundDefault",
    "type": "color",
    "tier": "component"
   },
   {
-   "name": "quickActionsColorRowBackgroundHovered",
+   "name": "quickActionsMenuItemColorBackgroundHovered",
    "type": "color",
    "tier": "component"
   },
   {
-   "name": "quickActionsColorRowBackgroundPressed",
+   "name": "quickActionsMenuItemColorBackgroundPressed",
    "type": "color",
    "tier": "component"
   },
   {
-   "name": "quickActionsColorRowLabel",
+   "name": "quickActionsMenuItemColorText",
    "type": "color",
    "tier": "component"
   },
   {
-   "name": "quickActionsSizeRowMinHeight",
+   "name": "quickActionsMenuItemSizeMinHeight",
    "type": "dimension",
    "tier": "component"
   },
   {
-   "name": "quickActionsSpacingListPadding",
+   "name": "quickActionsMenuItemSpacingGap",
    "type": "dimension",
    "tier": "component"
   },
   {
-   "name": "quickActionsSpacingListPaddingBottom",
+   "name": "quickActionsMenuItemSpacingPaddingY",
    "type": "dimension",
    "tier": "component"
   },
   {
-   "name": "quickActionsSpacingListGap",
+   "name": "quickActionsMenuItemSpacingPaddingStart",
    "type": "dimension",
    "tier": "component"
   },
   {
-   "name": "quickActionsSpacingRowGap",
+   "name": "quickActionsMenuItemSpacingPaddingEnd",
    "type": "dimension",
    "tier": "component"
   },
   {
-   "name": "quickActionsSpacingRowPaddingY",
-   "type": "dimension",
-   "tier": "component"
-  },
-  {
-   "name": "quickActionsSpacingRowPaddingStart",
-   "type": "dimension",
-   "tier": "component"
-  },
-  {
-   "name": "quickActionsSpacingRowPaddingEnd",
-   "type": "dimension",
-   "tier": "component"
-  },
-  {
-   "name": "quickActionsRadiusRow",
+   "name": "quickActionsMenuItemRadius",
    "type": "dimension",
    "tier": "component"
   },

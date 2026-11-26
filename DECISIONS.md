@@ -2,6 +2,13 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-26 — Règle de nommage des tokens de composant
+
+- **Décision** (Axel) : `composant . [enfant…] . [variante…] . catégorie . propriété . état`. Enfants et variantes (apparence, couleur, taille, densité, breakpoint) passent avant la catégorie, l'état est toujours en feuille (convention A, celle de SLDS 2 et de notre couche sémantique). Un morceau visuel à forme propre devient un élément nommé (convention C, Material 3) : `bottom-nav.item.indicator`. Les tokens de la racine restent sous le nom du composant.
+- **Propriété de couleur** : la famille sémantique de l'alias (`background`, `text`, `icon`, `border`, `surface`, `blanket`, `logo`). Un token se lit comme l'alias qu'il pointe : `button.contained.critical.color.background.hovered` → `{background.critical.bold.hovered}`. Les états d'un même rôle pointent vers la même famille.
+- **Portée** : toutes les familles existantes (492 tokens, 474 renommés), cassant pour les apps. Table complète dans `docs/renommage-tokens-composant.md`, règle dans le README. Le test `tests/component-naming.test.ts` sera ajouté avec le renommage.
+- **Contexte** : `quick-actions` 0.47.0 rangeait l'enfant après la catégorie (`quick-actions.color.row.*`) et mélangeait `surface.default` et `background.neutral.subtlest.*` sur les états de la rangée. Ce mélange attend l'arbitrage de la doctrine surface / background.
+
 ## 2026-11-26 — Tokens de composant `quick-actions` (0.47.0)
 
 - **Décision** (Axel) : « migre les 2 vers la couche composant avec des tokens dédiés ». `QuickActions` et sa rangée passent de tokens sémantiques et de base directs à une famille `quick-actions.*` : voile, fond de rangée default/hovered/pressed, libellé, hauteur minimale, espacements de la liste et de la rangée, rayon et élévation de la rangée.

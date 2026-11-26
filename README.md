@@ -138,6 +138,37 @@ Correspondance (clair via `black`, sombre via `white`, même opacité) :
 
 Règle : pour tout nouveau token ou composant disabled, réutiliser ces primitives alpha. Ne jamais revenir à un gris solide, ce qui réintroduirait la régression de contraste et la perte d'adaptation à la surface.
 
+### Tokens de composant : nommage (règle)
+
+Règle décidée par Axel le 2026-11-26. Tout token de `tokens/component/**` la respecte. Le test `tests/component-naming.test.ts` la vérifie.
+
+```
+composant . [enfant…] . [variante…] . catégorie . propriété . état
+```
+
+- **Composant** : nom kebab-case du composant (`button`, `side-nav`, `quick-actions`).
+- **Enfant** : sous-élément du composant, du plus englobant au plus fin (`side-nav.rail.item`, `quick-actions.row`). Les tokens de la racine du composant (la barre, le panneau, le voile) n'ont pas d'enfant : `bottom-nav.color.surface`, `quick-actions.color.blanket`.
+- **Variante** : apparence, couleur, taille, densité, breakpoint (`button.contained.critical`, `avatar.xsmall`, `page.laptop`). Comme l'enfant, elle passe **avant** la catégorie.
+- **Élément nommé** : un morceau visuel qui a sa propre forme (pastille, anneau, pastille d'icône) devient un enfant nommé, à la Material 3 : `bottom-nav.item.indicator`, `bottom-nav.action.cradle`, `side-nav.empty.icon`. On ne le traduit pas en état artificiel (`radius.item-selected`).
+- **Catégorie** : `color`, `size`, `spacing`, `radius`, `border-width`, `opacity`, `elevation`. Une seule par token.
+- **Propriété** : pour `color`, la **famille sémantique** de l'alias, premier segment de sa référence : `background`, `text`, `icon`, `border`, `surface`, `blanket`, `logo` (jamais `label`, `title`, `fill`, ni la propriété CSS). Un séparateur peint en `background` CSS mais aliasé sur `border.subtle` s'appelle `color.border`, une barre aliasée sur `surface.default` s'appelle `color.surface`.
+- **État** : toujours en **feuille**, après la propriété, avec le vocabulaire des sémantiques : `default`, `hovered`, `pressed`, `selected`, `disabled`, `focus`. Les états combinés sont composés : `selected-hovered`, `selected-pressed`, `focus-inverted`.
+
+Un token de composant se lit comme l'alias qu'il pointe : `button.contained.critical.color.background.hovered` → `{background.critical.bold.hovered}`.
+
+**Cohérence des alias** : les états d'un même rôle pointent vers la même famille sémantique (jamais une `surface` au repos et des `background` au survol). Une incohérence relevée dans le code existant se signale et s'arbitre avant de créer le token, elle ne se recopie pas.
+
+Exemples :
+
+| Token | Lecture |
+|---|---|
+| `bottom-nav.item.color.text.selected` | composant, enfant, catégorie, propriété, état |
+| `bottom-nav.item.indicator.color.background` | élément nommé (pastille) sous l'enfant |
+| `side-nav.item.color.background.selected-hovered` | état combiné en feuille |
+| `side-nav.rail.item.size.min-height` | variante (rail) puis enfant |
+| `button.contained.critical.color.background.hovered` | variantes (apparence, couleur) puis catégorie |
+| `avatar.xsmall.size.container` | variante de taille |
+
 ## Architecture
 
 ```
@@ -220,8 +251,9 @@ Le même workflow crée la **GitHub Release** du tag et y attache `comete-tokens
 1. Éditer le JSON concerné dans `tokens/base/**` (primitive) ou `tokens/theme/{light,dark}.json` (sémantique)
 2. Un token sémantique doit référencer une primitive (`"$value": "{Comete.blue.500}"`), jamais une valeur littérale
 3. Toute modification sémantique doit être faite **dans les deux thèmes**
-4. `pnpm build && pnpm test`
-5. Committer les sources **et** `build/css/comete-tokens.css`
+4. Un token de composant (`tokens/component/<composant>/tokens.json`) suit la règle de nommage ci-dessus, et le composant est ajouté à `COMPONENTS` dans `build.ts`
+5. `pnpm build && pnpm test`
+6. Committer les sources **et** `build/css/comete-tokens.css`
 
 ## Stack
 

@@ -1,6 +1,6 @@
 # Inventaire des tokens
 
-> Généré par `pnpm inventory` le 2026-11-25. Ne pas éditer à la main : la source est `tokens/**/*.json`.
+> Généré par `pnpm inventory` le 2026-11-26. Ne pas éditer à la main : la source est `tokens/**/*.json`.
 
 Usages = occurrences de `var(--token)` dans le design system (`src/` hors tests, puis `storybook/stories/`).
 Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**, **dépréciée**, ok.
@@ -9,13 +9,13 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Lot | Tokens | Décrits (ok) | À écrire ou réécrire | Non consommés par le DS |
 |---|---:|---:|---:|---:|
-| A | 87 | 22 (25 %) | 58 | 37 |
+| A | 87 | 22 (25 %) | 58 | 36 |
 | B | 72 | 12 (17 %) | 60 | 37 |
 | C | 158 | 31 (20 %) | 127 | 96 |
 | D | 197 | 25 (13 %) | 172 | 79 |
 | E | 200 | 0 (0 %) | 200 | 197 |
-| F | 477 | 162 (34 %) | 315 | 26 |
-| **Total** | **1191** | **252 (21 %)** | **932** | **472** |
+| F | 492 | 176 (36 %) | 316 | 23 |
+| **Total** | **1206** | **266 (22 %)** | **933** | **468** |
 
 ## Lot A — sémantique neutre : text, background, border, icon (default, neutral, surface, selected…)
 
@@ -67,7 +67,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--surface-mask-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 0 / 0 | ok | Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'en… |
 | `--surface-mask-hovered` | color | #080f214f | #bfdbf847 | `grey.alpha.400A` | 0 / 0 | ok | Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour… |
 | `--surface-mask-pressed` | color | #0b120e24 | #a6c5e229 | `grey.alpha.300A` | 0 / 0 | ok | Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doi… |
-| `--surface-inverted` | color | #252a2c | #ffffff | `cool-grey.950` | 0 / 5 | ok | Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page :… |
+| `--surface-inverted` | color | #252a2c | #ffffff | `cool-grey.950` | 0 / 6 | ok | Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page :… |
 | `--text-default-default` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 59 / 54 | absente |  |
 | `--text-default-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
 | `--text-default-pressed` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | absente |  |
@@ -79,7 +79,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--text-subtle-default` | color | #49585b | #b5c1c4 | `cool-grey.700` | 29 / 43 | absente |  |
 | `--text-subtle-hovered` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | absente |  |
 | `--text-subtle-pressed` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
-| `--text-inverted-default` | color | #ffffff | #252a2c | `white.100` | 0 / 0 | ok | Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre). |
+| `--text-inverted-default` | color | #ffffff | #252a2c | `white.100` | 43 / 5 | ok | Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre). |
 | `--text-inverted-hovered` | color | #ffffffcc | #3f4a4d | `white.80` | 0 / 0 | ok | État survolé de text.inverted.default (lien inversé). |
 | `--text-inverted-pressed` | color | #ffffffb3 | #49585b | `white.70` | 0 / 0 | ok | État pressé de text.inverted.default (lien inversé). |
 | `--text-subtle-inverted` | color | #b5c1c4 | #49585b | `cool-grey.300` | 0 / 0 | absente |  |
@@ -414,7 +414,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--radius0125` | dimension | 1px | = | `Size0125` | 1 / 0 | tautologique | Radius0125 (1 px) |
 | `--radius025` | dimension | 2px | = | `Size025` | 4 / 0 | tautologique | Radius025 (2 px) |
 | `--radius0375` | dimension | 3px | = | `Size0375` | 28 / 7 | tautologique | Radius0375 (3 px) |
-| `--radius050` | dimension | 4px | = | `Size050` | 27 / 6 | tautologique | Radius050 (4 px) |
+| `--radius050` | dimension | 4px | = | `Size050` | 27 / 7 | tautologique | Radius050 (4 px) |
 | `--radius0625` | dimension | 5px | = | `Size0625` | 1 / 0 | tautologique | Radius0625 (5 px) |
 | `--radius075` | dimension | 6px | = | `Size075` | 3 / 1 | tautologique | Radius075 (6 px) |
 | `--radius100` | dimension | 8px | = | `Size100` | 4 / 4 | tautologique | Radius100 (8 px) |
@@ -478,10 +478,10 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--space075` | dimension | 6px | = | `Size075` | 34 / 11 | tautologique | Spacing 075 (6 px) |
 | `--space100` | dimension | 8px | = | `Size100` | 63 / 47 | tautologique | Spacing 100 (8 px) |
 | `--space150` | dimension | 12px | = | `Size150` | 23 / 40 | tautologique | Spacing 150 (12 px) |
-| `--space200` | dimension | 16px | = | `Size200` | 44 / 73 | tautologique | Spacing 200 (16 px) |
+| `--space200` | dimension | 16px | = | `Size200` | 44 / 75 | tautologique | Spacing 200 (16 px) |
 | `--space125` | dimension | 10px | = | `Size125` | 3 / 7 | tautologique | Spacing 125 (10 px) |
 | `--space250` | dimension | 20px | = | `Size250` | 2 / 3 | tautologique | Spacing 250 (20 px) |
-| `--space300` | dimension | 24px | = | `Size300` | 21 / 37 | tautologique | Spacing 300 (24 px) |
+| `--space300` | dimension | 24px | = | `Size300` | 21 / 38 | tautologique | Spacing 300 (24 px) |
 | `--space350` | dimension | 28px | = | `Size350` | 0 / 0 | tautologique | Spacing 350 (28 px) |
 | `--space400` | dimension | 32px | = | `Size400` | 2 / 13 | tautologique | Spacing 400 (32 px) |
 | `--space500` | dimension | 40px | = | `Size500` | 0 / 0 | tautologique | Spacing 500 (40 px) |
@@ -768,7 +768,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 ## Lot F — tokens de composants
 
-477 tokens.
+492 tokens.
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
@@ -895,10 +895,10 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-contained-neutral-background-default` | color | #eaedee | #49585b | `background.neutral.subtler.default` | 1 / 0 | absente |  |
 | `--button-color-contained-neutral-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtler.hovered` | 1 / 0 | absente |  |
 | `--button-color-contained-neutral-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtler.pressed` | 1 / 0 | absente |  |
-| `--button-color-contained-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 0 / 0 | absente |  |
-| `--button-color-contained-inverted-background-default` | color | #ffffff1a | #0515240f | `background.inverted.subtler.default` | 0 / 0 | absente |  |
-| `--button-color-contained-inverted-background-hovered` | color | #ffffff33 | #0b120e24 | `background.inverted.subtler.hovered` | 0 / 0 | absente |  |
-| `--button-color-contained-inverted-background-pressed` | color | #ffffff4d | #080f214f | `background.inverted.subtler.pressed` | 0 / 0 | absente |  |
+| `--button-color-contained-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
+| `--button-color-contained-inverted-background-default` | color | #ffffff1a | #0515240f | `background.inverted.subtler.default` | 1 / 0 | absente |  |
+| `--button-color-contained-inverted-background-hovered` | color | #ffffff33 | #0b120e24 | `background.inverted.subtler.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-inverted-background-pressed` | color | #ffffff4d | #080f214f | `background.inverted.subtler.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
 | `--button-color-contained-subtle-background-default` | color | #eaedee | #49585b | `background.neutral.subtler.default` | 1 / 0 | ok | Fond au repos du bouton contained subtle : même gris que contained neutral (background.neutral.subtler.defaul… |
 | `--button-color-contained-subtle-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtler.hovered` | 1 / 0 | absente |  |
@@ -955,10 +955,10 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-outlined-neutral-border-default` | color | #b5c1c4 | #49585b | `border.bold` | 1 / 0 | absente |  |
 | `--button-color-outlined-neutral-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-outlined-neutral-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
-| `--button-color-outlined-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 0 / 0 | absente |  |
-| `--button-color-outlined-inverted-border-default` | color | #ffffff | #252a2c | `border.inverted` | 0 / 0 | absente |  |
-| `--button-color-outlined-inverted-background-hovered` | color | #ffffff1a | #0515240f | `background.inverted.subtlest.hovered` | 0 / 0 | absente |  |
-| `--button-color-outlined-inverted-background-pressed` | color | #ffffff33 | #0b120e24 | `background.inverted.subtlest.pressed` | 0 / 0 | absente |  |
+| `--button-color-outlined-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
+| `--button-color-outlined-inverted-border-default` | color | #ffffff | #252a2c | `border.inverted` | 1 / 0 | absente |  |
+| `--button-color-outlined-inverted-background-hovered` | color | #ffffff1a | #0515240f | `background.inverted.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-outlined-inverted-background-pressed` | color | #ffffff33 | #0b120e24 | `background.inverted.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-subtle-border-default` | color | #b5c1c4 | #49585b | `border.bold` | 1 / 0 | absente |  |
 | `--button-color-outlined-subtle-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
@@ -1014,9 +1014,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-subtle-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
 | `--button-color-subtle-neutral-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-neutral-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
-| `--button-color-subtle-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 0 / 0 | absente |  |
-| `--button-color-subtle-inverted-background-hovered` | color | #ffffff1a | #0515240f | `background.inverted.subtlest.hovered` | 0 / 0 | absente |  |
-| `--button-color-subtle-inverted-background-pressed` | color | #ffffff33 | #0b120e24 | `background.inverted.subtlest.pressed` | 0 / 0 | absente |  |
+| `--button-color-subtle-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
+| `--button-color-subtle-inverted-background-hovered` | color | #ffffff1a | #0515240f | `background.inverted.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-subtle-inverted-background-pressed` | color | #ffffff33 | #0b120e24 | `background.inverted.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
 | `--button-color-subtle-subtle-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-subtle-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
@@ -1059,9 +1059,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-link-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
 | `--button-color-link-neutral-text-hovered` | color | #374043 | #eaedee | `text.default.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-neutral-text-pressed` | color | #3f4a4d | #d8dedf | `text.default.pressed` | 1 / 0 | absente |  |
-| `--button-color-link-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 0 / 0 | absente |  |
-| `--button-color-link-inverted-text-hovered` | color | #ffffffcc | #3f4a4d | `text.inverted.hovered` | 0 / 0 | absente |  |
-| `--button-color-link-inverted-text-pressed` | color | #ffffffb3 | #49585b | `text.inverted.pressed` | 0 / 0 | absente |  |
+| `--button-color-link-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
+| `--button-color-link-inverted-text-hovered` | color | #ffffffcc | #3f4a4d | `text.inverted.hovered` | 1 / 0 | absente |  |
+| `--button-color-link-inverted-text-pressed` | color | #ffffffb3 | #49585b | `text.inverted.pressed` | 1 / 0 | absente |  |
 | `--button-color-link-comete-text-default` | color | #224986 | #dceefd | `text.comete.default` | 1 / 0 | absente |  |
 | `--button-color-link-comete-text-hovered` | color | #2354aa | #c1e3fc | `text.comete.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-comete-text-pressed` | color | #2467d1 | #97d2f9 | `text.comete.pressed` | 1 / 0 | absente |  |
@@ -1104,9 +1104,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-link-subtle-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-neutral-text-hovered` | color | #3f4a4d | #d8dedf | `text.subtle.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-neutral-text-pressed` | color | #3f4a4d | #d8dedf | `text.default.pressed` | 1 / 0 | absente |  |
-| `--button-color-link-subtle-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 0 / 0 | absente |  |
-| `--button-color-link-subtle-inverted-text-hovered` | color | #ffffffcc | #3f4a4d | `text.inverted.hovered` | 0 / 0 | absente |  |
-| `--button-color-link-subtle-inverted-text-pressed` | color | #ffffffb3 | #49585b | `text.inverted.pressed` | 0 / 0 | absente |  |
+| `--button-color-link-subtle-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
+| `--button-color-link-subtle-inverted-text-hovered` | color | #ffffffcc | #3f4a4d | `text.inverted.hovered` | 1 / 0 | absente |  |
+| `--button-color-link-subtle-inverted-text-pressed` | color | #ffffffb3 | #49585b | `text.inverted.pressed` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-comete-text-default` | color | #224986 | #dceefd | `text.comete.default` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-comete-text-hovered` | color | #2354aa | #c1e3fc | `text.comete.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-comete-text-pressed` | color | #2467d1 | #97d2f9 | `text.comete.pressed` | 1 / 0 | absente |  |
@@ -1151,7 +1151,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-selected-background-pressed` | color | #97d2f9 | #2354aa | `background.selected.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-selected-text-default` | color | #2c7ee4 | #c1e3fc | `text.selected` | 3 / 0 | absente |  |
 | `--button-color-focus-border` | color | #429aef | #66b8f4 | `border.focused` | 1 / 0 | absente |  |
-| `--button-color-focus-border-inverted` | color | #dceefd | #224986 | `border.focus-inverted` | 0 / 0 | ok | Anneau de focus du Button inverted, lisible sur surface.inverted. |
+| `--button-color-focus-border-inverted` | color | #dceefd | #224986 | `border.focus-inverted` | 1 / 0 | ok | Anneau de focus du Button inverted, lisible sur surface.inverted. |
 | `--button-size-compact-height` | dimension | 24px | = | `Control.Height.Compact` | 2 / 0 | absente |  |
 | `--button-size-compact-icon` | dimension | 16px | = | `Control.Icon.Compact` | 1 / 0 | absente |  |
 | `--button-size-default-height` | dimension | 32px | = | `Control.Height.Default` | 3 / 0 | absente |  |
@@ -1190,6 +1190,21 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--page-toolbar-spacing-group-gap` | dimension | 8px | = | `Space100` | 3 / 0 | ok | Espace entre les éléments des zones filters, start et end (8 px) |
 | `--page-toolbar-size-search-min-width` | dimension | 160px | = |  | 1 / 0 | ok | Largeur minimale du champ de recherche (160 px, placeholder lisible). Valeur brute : aucun token d'échelle |
 | `--page-toolbar-size-search-max-width` | dimension | 240px | = |  | 1 / 0 | ok | Largeur maximale du champ de recherche (240 px). Valeur brute : aucun token d'échelle |
+| `--quick-actions-color-overlay` | color | #050c1f7d | #9bb4ca80 | `blanket.default` | 0 / 0 | ok | Voile plein écran sous les rangées |
+| `--quick-actions-color-row-background-default` | color | #ffffff | #374043 | `surface.default` | 0 / 0 | ok | Fond d'une rangée. Toujours neutre : le ton de l'action ne va que sur la pastille d'icône (IconTile) |
+| `--quick-actions-color-row-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 0 / 0 | ok | Fond d'une rangée survolée |
+| `--quick-actions-color-row-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 0 / 0 | ok | Fond d'une rangée pressée |
+| `--quick-actions-color-row-label` | color | #252a2c | #f7f8f8 | `text.default.default` | 0 / 0 | trop courte | Libellé d'une rangée |
+| `--quick-actions-size-row-min-height` | dimension | 56px | = | `Size700` | 0 / 0 | ok | Hauteur minimale d'une rangée (56 px) : pastille de 40 px et padding vertical de 8 px |
+| `--quick-actions-spacing-list-padding` | dimension | 16px | = | `Space200` | 0 / 0 | ok | Marge intérieure de la liste, en haut et sur les côtés (16 px) |
+| `--quick-actions-spacing-list-padding-bottom` | dimension | 128px | = | `Space1600` | 0 / 0 | ok | Place réservée en bas de la liste au bouton d'action et à la barre (128 px), hors zone de sécurité |
+| `--quick-actions-spacing-list-gap` | dimension | 12px | = | `Space150` | 0 / 0 | ok | Écart entre deux rangées (12 px) |
+| `--quick-actions-spacing-row-gap` | dimension | 16px | = | `Space200` | 0 / 0 | ok | Écart entre la pastille d'icône et le libellé (16 px) |
+| `--quick-actions-spacing-row-padding-y` | dimension | 8px | = | `Space100` | 0 / 0 | ok | Marge intérieure verticale d'une rangée (8 px) |
+| `--quick-actions-spacing-row-padding-start` | dimension | 8px | = | `Space100` | 0 / 0 | ok | Marge intérieure côté pastille (8 px), égale au vertical pour centrer la pastille dans l'arrondi |
+| `--quick-actions-spacing-row-padding-end` | dimension | 24px | = | `Space300` | 0 / 0 | ok | Marge intérieure côté libellé (24 px) |
+| `--quick-actions-radius-row` | dimension | 1024px | = | `RadiusRound` | 0 / 0 | ok | Coins d'une rangée (pilule) |
+| `--quick-actions-elevation-row` | shadow | ["{shadow.key.3}","{shadow.ambiant.3}"] | = | `elevation.medium` | 0 / 0 | ok | Ombre d'une rangée, qui flotte au-dessus du voile |
 | `--side-nav-color-surface-background` | color | #ffffff | #374043 | `surface.default` | 2 / 0 | ok | Fond du panneau de navigation (aussi le fond au survol d'un item désactivé) |
 | `--side-nav-color-surface-border` | color | #eaedee | #3f4a4d | `border.subtle` | 1 / 0 | ok | Bordure droite du panneau, séparation avec le contenu |
 | `--side-nav-color-header-title` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | ok | Nom de l'application dans l'en-tête |

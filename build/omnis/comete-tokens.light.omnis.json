@@ -1,6 +1,6 @@
 {
  "schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
- "version": "0.46.0",
+ "version": "0.47.0",
  "theme": "light",
  "backdrop": "#ffffff",
  "tokens": {
@@ -1095,6 +1095,20 @@
   "pageSpacingBodyPaddingTop": 8,
   "pageSpacingStatePaddingY": 48,
   "pageSpacingSkeletonGap": 24,
+  "quickActionsColorOverlay": 9537668,
+  "quickActionsColorRowBackgroundDefault": 16777215,
+  "quickActionsColorRowBackgroundHovered": 15658474,
+  "quickActionsColorRowBackgroundPressed": 14671576,
+  "quickActionsColorRowLabel": 2894373,
+  "quickActionsSizeRowMinHeight": 56,
+  "quickActionsSpacingListPadding": 16,
+  "quickActionsSpacingListPaddingBottom": 128,
+  "quickActionsSpacingListGap": 12,
+  "quickActionsSpacingRowGap": 16,
+  "quickActionsSpacingRowPaddingY": 8,
+  "quickActionsSpacingRowPaddingStart": 8,
+  "quickActionsSpacingRowPaddingEnd": 24,
+  "quickActionsRadiusRow": 1024,
   "sideNavColorSurfaceBackground": 16777215,
   "sideNavColorSurfaceBorder": 15658474,
   "sideNavColorHeaderTitle": 2894373,
@@ -6617,6 +6631,76 @@
   },
   {
    "name": "pageSpacingSkeletonGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsColorOverlay",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsColorRowBackgroundDefault",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsColorRowBackgroundHovered",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsColorRowBackgroundPressed",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsColorRowLabel",
+   "type": "color",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsSizeRowMinHeight",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsSpacingListPadding",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsSpacingListPaddingBottom",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsSpacingListGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsSpacingRowGap",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsSpacingRowPaddingY",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsSpacingRowPaddingStart",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsSpacingRowPaddingEnd",
+   "type": "dimension",
+   "tier": "component"
+  },
+  {
+   "name": "quickActionsRadiusRow",
    "type": "dimension",
    "tier": "component"
   },

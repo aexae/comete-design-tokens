@@ -2,6 +2,13 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-26 — Tokens de composant `quick-actions` (0.47.0)
+
+- **Décision** (Axel) : « migre les 2 vers la couche composant avec des tokens dédiés ». `QuickActions` et sa rangée passent de tokens sémantiques et de base directs à une famille `quick-actions.*` : voile, fond de rangée default/hovered/pressed, libellé, hauteur minimale, espacements de la liste et de la rangée, rayon et élévation de la rangée.
+- **Hors famille** : la pastille d'icône reste un `IconTile` (ses couleurs par ton lui appartiennent), la typographie reste sur `base/typography` comme pour la BottomNav, et le focus passe par `FocusRing` (anneau `border.focused` commun), sans token dédié.
+- **`spacing.list.padding-bottom`** (`Space1600`, 128 px) remplace le `calc(size800 * 2)` du DS. La variable locale `--quick-actions-offset` reste surchargeable côté DS.
+- **Build** : `quick-actions` ajouté à la liste `COMPONENTS` de `build.ts`, sans quoi la famille n'est pas émise.
+
 ## 2026-11-25 — Catalogue (`type`, `tier`) dans la sortie Omnis (0.46.0)
 
 - **Contexte** : la sortie Omnis 0.44.0 livre 1150 tokens à plat, sans leur type. Comète (fenêtre W_DESIGN_TOKENS) devinait couleurs et niveaux d'après le nom : avec les dimensions, polices et tokens de composants, cette heuristique classait `space100` en couleur et `buttonPrimaryBackgroundDefault` en sémantique.

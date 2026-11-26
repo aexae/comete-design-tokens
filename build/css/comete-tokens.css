@@ -1430,6 +1430,7 @@
   --button-opacity-disabled: var(--opacity-disabled); /** Opacité du bouton désactivé (couleur conservée, estompée) */
   --page-bar-size-compact-min-height: var(--size700); /** Hauteur minimale de la barre compacte (56 px), hors zone de sécurité iOS */
   --page-bar-border-width-compact: var(--size0125); /** Épaisseur du filet bas de la barre compacte (1 px) */
+  --quick-actions-size-row-min-height: var(--size700); /** Hauteur minimale d'une rangée (56 px) : pastille de 40 px et padding vertical de 8 px */
   --side-nav-size-rail-width: var(--size1000); /** Largeur du panneau en mode rail (80 px) */
   --side-nav-size-item-icon: var(--size300); /** Icône d'item (24 px), fixe aussi la hauteur de ligne : hauteur d'item = icône + 2 × spacing.item.padding-y (36 px) */
   --side-nav-size-rail-item-min-height: var(--size400); /** Hauteur minimale d'un item en rail (32 px) */
@@ -1816,6 +1817,20 @@
   --page-spacing-body-padding-top: var(--space100); /** Retrait haut du Body, sous la toolbar (8 px). Pas de retrait bas */
   --page-spacing-state-padding-y: var(--space600); /** Marge verticale de l'état vide ou erreur centré dans le Body (48 px) */
   --page-spacing-skeleton-gap: var(--space300); /** Espace entre les blocs du squelette de chargement du Body (24 px) */
+  --quick-actions-color-overlay: var(--blanket-default); /** Voile plein écran sous les rangées */
+  --quick-actions-color-row-background-default: var(--surface-default); /** Fond d'une rangée. Toujours neutre : le ton de l'action ne va que sur la pastille d'icône (IconTile) */
+  --quick-actions-color-row-background-hovered: var(--background-neutral-subtlest-hovered); /** Fond d'une rangée survolée */
+  --quick-actions-color-row-background-pressed: var(--background-neutral-subtlest-pressed); /** Fond d'une rangée pressée */
+  --quick-actions-color-row-label: var(--text-default-default); /** Libellé d'une rangée */
+  --quick-actions-spacing-list-padding: var(--space200); /** Marge intérieure de la liste, en haut et sur les côtés (16 px) */
+  --quick-actions-spacing-list-padding-bottom: var(--space1600); /** Place réservée en bas de la liste au bouton d'action et à la barre (128 px), hors zone de sécurité */
+  --quick-actions-spacing-list-gap: var(--space150); /** Écart entre deux rangées (12 px) */
+  --quick-actions-spacing-row-gap: var(--space200); /** Écart entre la pastille d'icône et le libellé (16 px) */
+  --quick-actions-spacing-row-padding-y: var(--space100); /** Marge intérieure verticale d'une rangée (8 px) */
+  --quick-actions-spacing-row-padding-start: var(--space100); /** Marge intérieure côté pastille (8 px), égale au vertical pour centrer la pastille dans l'arrondi */
+  --quick-actions-spacing-row-padding-end: var(--space300); /** Marge intérieure côté libellé (24 px) */
+  --quick-actions-radius-row: var(--radius-round); /** Coins d'une rangée (pilule) */
+  --quick-actions-elevation-row: var(--elevation-medium); /** Ombre d'une rangée, qui flotte au-dessus du voile */
   --side-nav-color-surface-background: var(--surface-default); /** Fond du panneau de navigation (aussi le fond au survol d'un item désactivé) */
   --side-nav-color-surface-border: var(--border-subtle); /** Bordure droite du panneau, séparation avec le contenu */
   --side-nav-color-header-title: var(--text-default-default); /** Nom de l'application dans l'en-tête */

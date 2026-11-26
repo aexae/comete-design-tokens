@@ -2,6 +2,13 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-26 — `quick-actions` → `quick-actions-menu` (0.48.0, CASSANT)
+
+- **Décision** (Axel) : le composant `QuickActions` devient `QuickActionsMenu` et sa rangée `QuickActionsRow` devient `QuickActionsItem`, en code, dans Figma et dans les tokens.
+- **Tokens** : la famille `quick-actions.*` devient `quick-actions-menu.*` et l'enfant `row` devient `item`. La règle de nommage du 26/11 est appliquée au passage (enfant avant la catégorie, `overlay` → `color.blanket`, `label` → `color.text`). Les 15 alias et valeurs ne changent pas.
+- **Non tranché** : `item.color.background.default` pointe toujours vers `surface.default`, et les états survolé et pressé vers `background.neutral.subtlest.*`. On attend l'arbitrage d'Axel sur la doctrine surface / background.
+- **Figma** : les 14 variables `quick-actions/*` ont été renommées sur place (les liaisons sont conservées), avec leur code syntax WEB mis à jour.
+
 ## 2026-11-26 — Règle de nommage des tokens de composant
 
 - **Décision** (Axel) : `composant . [enfant…] . [variante…] . catégorie . propriété . état`. Enfants et variantes (apparence, couleur, taille, densité, breakpoint) passent avant la catégorie, l'état est toujours en feuille (convention A, celle de SLDS 2 et de notre couche sémantique). Un morceau visuel à forme propre devient un élément nommé (convention C, Material 3) : `bottom-nav.item.indicator`. Les tokens de la racine restent sous le nom du composant.

@@ -146,8 +146,8 @@ Règle décidée par Axel le 2026-11-26. Tout token de `tokens/component/**` la 
 composant . [enfant…] . [variante…] . catégorie . propriété . état
 ```
 
-- **Composant** : nom kebab-case du composant (`button`, `side-nav`, `quick-actions`).
-- **Enfant** : sous-élément du composant, du plus englobant au plus fin (`side-nav.rail.item`, `quick-actions.row`). Les tokens de la racine du composant (la barre, le panneau, le voile) n'ont pas d'enfant : `bottom-nav.color.surface`, `quick-actions.color.blanket`.
+- **Composant** : nom kebab-case du composant (`button`, `side-nav`, `quick-actions-menu`).
+- **Enfant** : sous-élément du composant, du plus englobant au plus fin (`side-nav.rail.item`, `quick-actions-menu.item`). Les tokens de la racine du composant (la barre, le panneau, le voile) n'ont pas d'enfant : `bottom-nav.color.surface`, `quick-actions-menu.color.blanket`.
 - **Variante** : apparence, couleur, taille, densité, breakpoint (`button.contained.critical`, `avatar.xsmall`, `page.laptop`). Comme l'enfant, elle passe **avant** la catégorie.
 - **Élément nommé** : un morceau visuel qui a sa propre forme (pastille, anneau, pastille d'icône) devient un enfant nommé, à la Material 3 : `bottom-nav.item.indicator`, `bottom-nav.action.cradle`, `side-nav.empty.icon`. On ne le traduit pas en état artificiel (`radius.item-selected`).
 - **Catégorie** : `color`, `size`, `spacing`, `radius`, `border-width`, `opacity`, `elevation`. Une seule par token.

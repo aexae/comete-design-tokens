@@ -85,7 +85,7 @@ const COMPONENTS = new Set([
   "page-toolbar",
   "side-nav",
   "bottom-nav",
-  "quick-actions",
+  "quick-actions-menu",
 ]);
 const isComponentToken = (token: { path: string[] }) => COMPONENTS.has(token.path[0] ?? "");
 const componentSD = new StyleDictionary({

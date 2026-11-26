@@ -2,9 +2,9 @@
 
 Table ancien → nouveau, à valider avant exécution. Règle : README, section « Tokens de composant : nommage », vérifiée par `tests/component-naming.test.ts`. Noms CSS : points remplacés par des tirets (`button.contained.critical.color.background.hovered` → `--button-contained-critical-color-background-hovered`).
 
-492 tokens : 476 renommés, 16 inchangés.
+492 tokens : 476 renommés (dont les 15 de `quick-actions-menu`, déjà faits en 0.48.0), 16 inchangés.
 
-**En attente d'arbitrage** : `quick-actions.row.color.background.default` pointe vers `surface.default` alors que `hovered` et `pressed` pointent vers `background.neutral.subtlest.*` (doctrine surface / background à rediscuter). Le test de garde échouera tant que ce point n'est pas tranché.
+**En attente d'arbitrage** : `quick-actions-menu.item.color.background.default` pointe vers `surface.default` alors que `hovered` et `pressed` pointent vers `background.neutral.subtlest.*` (doctrine surface / background à rediscuter). Le test de garde échouera tant que ce point n'est pas tranché.
 
 ## autosave-indicator (7)
 
@@ -469,25 +469,29 @@ Table ancien → nouveau, à valider avant exécution. Règle : README, section 
 | `page.spacing.state.padding-y` | `page.state.spacing.padding-y` | `{Space600}` |
 | `page.spacing.skeleton.gap` | `page.skeleton.spacing.gap` | `{Space300}` |
 
-## quick-actions (15)
+## quick-actions-menu (15), FAIT en 0.48.0
+
+Composant renommé `QuickActions` → `QuickActionsMenu` et enfant `row` → `item` (Figma
+`QuickActionsRow` → `QuickActionsItem`), décision d'Axel du 2026-11-26. Règle de nommage déjà
+appliquée.
 
 | Ancien | Nouveau | Valeur |
 |---|---|---|
-| `quick-actions.color.overlay` | `quick-actions.color.blanket` | `{blanket.default}` |
-| `quick-actions.color.row.background.default` | `quick-actions.row.color.background.default` | `{surface.default}` |
-| `quick-actions.color.row.background.hovered` | `quick-actions.row.color.background.hovered` | `{background.neutral.subtlest.hovered}` |
-| `quick-actions.color.row.background.pressed` | `quick-actions.row.color.background.pressed` | `{background.neutral.subtlest.pressed}` |
-| `quick-actions.color.row.label` | `quick-actions.row.color.text` | `{text.default.default}` |
-| `quick-actions.size.row.min-height` | `quick-actions.row.size.min-height` | `{Size700}` |
-| `quick-actions.spacing.list.padding` | `quick-actions.list.spacing.padding` | `{Space200}` |
-| `quick-actions.spacing.list.padding-bottom` | `quick-actions.list.spacing.padding-bottom` | `{Space1600}` |
-| `quick-actions.spacing.list.gap` | `quick-actions.list.spacing.gap` | `{Space150}` |
-| `quick-actions.spacing.row.gap` | `quick-actions.row.spacing.gap` | `{Space200}` |
-| `quick-actions.spacing.row.padding-y` | `quick-actions.row.spacing.padding-y` | `{Space100}` |
-| `quick-actions.spacing.row.padding-start` | `quick-actions.row.spacing.padding-start` | `{Space100}` |
-| `quick-actions.spacing.row.padding-end` | `quick-actions.row.spacing.padding-end` | `{Space300}` |
-| `quick-actions.radius.row` | `quick-actions.row.radius` | `{RadiusRound}` |
-| `quick-actions.elevation.row` | `quick-actions.row.elevation` | `{elevation.medium}` |
+| `quick-actions.color.overlay` | `quick-actions-menu.color.blanket` | `{blanket.default}` |
+| `quick-actions.color.row.background.default` | `quick-actions-menu.item.color.background.default` | `{surface.default}` |
+| `quick-actions.color.row.background.hovered` | `quick-actions-menu.item.color.background.hovered` | `{background.neutral.subtlest.hovered}` |
+| `quick-actions.color.row.background.pressed` | `quick-actions-menu.item.color.background.pressed` | `{background.neutral.subtlest.pressed}` |
+| `quick-actions.color.row.label` | `quick-actions-menu.item.color.text` | `{text.default.default}` |
+| `quick-actions.size.row.min-height` | `quick-actions-menu.item.size.min-height` | `{Size700}` |
+| `quick-actions.spacing.list.padding` | `quick-actions-menu.list.spacing.padding` | `{Space200}` |
+| `quick-actions.spacing.list.padding-bottom` | `quick-actions-menu.list.spacing.padding-bottom` | `{Space1600}` |
+| `quick-actions.spacing.list.gap` | `quick-actions-menu.list.spacing.gap` | `{Space150}` |
+| `quick-actions.spacing.row.gap` | `quick-actions-menu.item.spacing.gap` | `{Space200}` |
+| `quick-actions.spacing.row.padding-y` | `quick-actions-menu.item.spacing.padding-y` | `{Space100}` |
+| `quick-actions.spacing.row.padding-start` | `quick-actions-menu.item.spacing.padding-start` | `{Space100}` |
+| `quick-actions.spacing.row.padding-end` | `quick-actions-menu.item.spacing.padding-end` | `{Space300}` |
+| `quick-actions.radius.row` | `quick-actions-menu.item.radius` | `{RadiusRound}` |
+| `quick-actions.elevation.row` | `quick-actions-menu.item.elevation` | `{elevation.medium}` |
 
 ## side-nav (50)
 

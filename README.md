@@ -254,6 +254,7 @@ Le même workflow crée la **GitHub Release** du tag et y attache `comete-tokens
 4. Un token de composant (`tokens/component/<composant>/tokens.json`) suit la règle de nommage ci-dessus, et le composant est ajouté à `COMPONENTS` dans `build.ts`
 5. `pnpm build && pnpm test`
 6. Committer les sources **et** `build/css/comete-tokens.css`
+7. Décrire le token (`$description`) : usage, texte ou icône à poser dessus, token à préférer dans les cas voisins. 160 caractères au plus (70 pour un état, « État survolé de <token>. »). Pas de fait d'inventaire ni de ratio chiffré : la classe de contraste suffit (« AA texte », « AA composant », « sous AA », « décorative »). Un lot se pose avec `pnpm inventory && pnpm descriptions:apply <lot.json>` (`{ "--nom-css": "description" }`).
 
 ## Stack
 

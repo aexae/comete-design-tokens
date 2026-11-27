@@ -2,6 +2,12 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-27 — Breakpoints préfixés et alignés sur le DS (0.49.0, CASSANT)
+
+- **Décision** (Axel) : les tokens de breakpoint prennent le préfixe `breakpoint` et les valeurs du code du DS (`BREAKPOINTS` de `src/tokens/breakpoints.ts`) : `--breakpoint-sm` 600 px, `--breakpoint-md` 900 px, `--breakpoint-lg` 1200 px. `--mobile` (0), `--tablet` (600), `--laptop` (1200) et `--desktop` (1920) sont retirés.
+- **Raison** : noms sans préfixe exposés à des collisions avec les variables des applications, et échelle différente de celle que le DS utilise réellement (pas de 900, un 0 et un 1920 inutilisés). Aucun usage relevé dans le DS ni dans les applications.
+- **Limite** : un `@media` / `@container` ne lit pas `var()`. Ces tokens documentent l'échelle et alimentent la sortie Omnis (`breakpointSm/Md/Lg`) ; les CSS du DS recopient les valeurs, sous la garde de `breakpoints.test.ts`.
+
 ## 2026-11-26 — `quick-actions` → `quick-actions-menu` (0.48.0, CASSANT)
 
 - **Décision** (Axel) : le composant `QuickActions` devient `QuickActionsMenu` et sa rangée `QuickActionsRow` devient `QuickActionsItem`, en code, dans Figma et dans les tokens.

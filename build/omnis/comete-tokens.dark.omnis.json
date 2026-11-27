@@ -1,6 +1,6 @@
 {
  "schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
- "version": "0.51.0",
+ "version": "0.51.1",
  "theme": "dark",
  "backdrop": "#374043",
  "tokens": {

@@ -541,9 +541,9 @@
   --background-accent-turquoise-subtlest-default: #c0fffc;
   --background-accent-turquoise-subtlest-hovered: #81fffb;
   --background-accent-turquoise-subtlest-pressed: #3afff9;
-  --background-accent-turquoise-subtle-default: #c0fffc;
-  --background-accent-turquoise-subtle-hovered: #81fffb;
-  --background-accent-turquoise-subtle-pressed: #3afff9;
+  --background-accent-turquoise-subtle-default: #81fffb;
+  --background-accent-turquoise-subtle-hovered: #3afff9;
+  --background-accent-turquoise-subtle-pressed: #00ffef;
   --background-accent-turquoise-bold-default: #00b7b1;
   --background-accent-turquoise-bold-hovered: #00918d;
   --background-accent-turquoise-bold-pressed: #007271;

@@ -248,9 +248,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-turquoise-subtlest-default` | color | #c0fffc | #045d5d | `turquoise.100` | 6 / 0 | absente |  |
 | `--background-accent-turquoise-subtlest-hovered` | color | #81fffb | #007271 | `turquoise.200` | 3 / 0 | absente |  |
 | `--background-accent-turquoise-subtlest-pressed` | color | #3afff9 | #00918d | `turquoise.300` | 3 / 0 | absente |  |
-| `--background-accent-turquoise-subtle-default` | color | #c0fffc | #007271 | `turquoise.100` | 0 / 0 | absente |  |
-| `--background-accent-turquoise-subtle-hovered` | color | #81fffb | #00918d | `turquoise.200` | 0 / 0 | absente |  |
-| `--background-accent-turquoise-subtle-pressed` | color | #3afff9 | #00b7b1 | `turquoise.300` | 0 / 0 | absente |  |
+| `--background-accent-turquoise-subtle-default` | color | #81fffb | #007271 | `turquoise.200` | 0 / 0 | absente |  |
+| `--background-accent-turquoise-subtle-hovered` | color | #3afff9 | #00918d | `turquoise.300` | 0 / 0 | absente |  |
+| `--background-accent-turquoise-subtle-pressed` | color | #00ffef | #00b7b1 | `turquoise.400` | 0 / 0 | absente |  |
 | `--background-accent-turquoise-bold-default` | color | #00b7b1 | #00ffef | `turquoise.600` | 4 / 0 | absente |  |
 | `--background-accent-turquoise-bold-hovered` | color | #00918d | #3afff9 | `turquoise.700` | 2 / 0 | absente |  |
 | `--background-accent-turquoise-bold-pressed` | color | #007271 | #81fffb | `turquoise.800` | 2 / 0 | absente |  |

@@ -649,15 +649,15 @@
         "subtle": {
           "default": {
             "$type": "color",
-            "$value": "{turquoise.100}"
+            "$value": "{turquoise.200}"
           },
           "hovered": {
             "$type": "color",
-            "$value": "{turquoise.200}"
+            "$value": "{turquoise.300}"
           },
           "pressed": {
             "$type": "color",
-            "$value": "{turquoise.300}"
+            "$value": "{turquoise.400}"
           }
         },
         "bold": {

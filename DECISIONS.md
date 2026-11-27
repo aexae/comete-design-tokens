@@ -2,6 +2,10 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-27 — `accent.turquoise.subtle` en clair calé sur Figma (0.51.1)
+
+- **Décision** (Axel) : turquoise corrigé dans Figma, `background.accent.turquoise.subtle` en clair passe de 100/200/300 à 200/300/400. Il ne duplique plus `accent.turquoise.subtlest` (100/200/300). Le sombre ne change pas.
+
 ## 2026-11-27 — Fonds calés sur les variables Figma (0.51.0)
 
 - **Décision** (Axel) : « cale le code sur Figma pour les écarts ». Axel a corrigé la collection `semantics` (neutral, brand, accents, cycle, neutral subtlest sombre), le code reprend ses valeurs. 60 valeurs changent, aucun nom.

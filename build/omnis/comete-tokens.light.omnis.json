@@ -1,6 +1,6 @@
 {
  "schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
- "version": "0.51.0",
+ "version": "0.51.1",
  "theme": "light",
  "backdrop": "#ffffff",
  "tokens": {
@@ -484,9 +484,9 @@
   "backgroundAccentTurquoiseSubtlestDefault": 16580544,
   "backgroundAccentTurquoiseSubtlestHovered": 16514945,
   "backgroundAccentTurquoiseSubtlestPressed": 16383802,
-  "backgroundAccentTurquoiseSubtleDefault": 16580544,
-  "backgroundAccentTurquoiseSubtleHovered": 16514945,
-  "backgroundAccentTurquoiseSubtlePressed": 16383802,
+  "backgroundAccentTurquoiseSubtleDefault": 16514945,
+  "backgroundAccentTurquoiseSubtleHovered": 16383802,
+  "backgroundAccentTurquoiseSubtlePressed": 15728384,
   "backgroundAccentTurquoiseBoldDefault": 11646720,
   "backgroundAccentTurquoiseBoldHovered": 9277696,
   "backgroundAccentTurquoiseBoldPressed": 7434752,

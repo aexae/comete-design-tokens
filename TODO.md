@@ -14,7 +14,8 @@
 - **neutral.bold en sombre sous AA** : cool-grey.500, `text.inverted` (encre) à 3,7:1 et `icon.inverted` (cool-grey.900) à 2,7:1, sous AA texte et sous AA composant. Touche badge, tag bold, case cochée, snackbar, Button contained neutral. Pistes : neutral.bold sombre à 400 (encre 5,3:1, icône 3,9:1) ou texte blanc sur 500 (3,9:1, insuffisant). Arbitrage Axel.
 - **Icônes inversées en sombre** : `icon.inverted` (cool-grey.900) est sous 4,5:1 sur comete, information et blue-grey bold (3,4:1 à 3,6:1) mais au-dessus de 3:1, donc AA composant seulement.
 - **neutral.subtlest plus contrasté que neutral.subtle en sombre** : sur surface.default (cool-grey.900), subtlest 600 fait 1,9:1 et subtle 800 fait 1,16:1. L'échelle s'inverse en sombre. À confirmer par Axel.
-- **accent.turquoise : subtle et subtlest identiques en clair** (100/200/300 tous les deux, Figma et code). À différencier.
+- ~~**accent.turquoise : subtle et subtlest identiques en clair**~~ : FAIT en 0.51.1, subtle en 200/300/400.
+- **icon.accent.turquoise sous 3:1 en clair** (turquoise.600) : 2,5:1 sur blanc, 2,1:1 sur turquoise.subtle (200). Défaut antérieur à 0.51.1. turquoise.700 donnerait 3,2:1 sur 200. Arbitrage Axel.
 - ~~Texte sur `bold` en sombre, Button contained, Figma à aligner~~ : FAIT en 0.51.0, sauf neutral (voir ci-dessus).
 - ~~DS à adapter au bump 0.45.0~~ : FAIT en DS alpha.203 (session Button). Reste pour 0.51.0 : `generateBrandTheme.ts`, brand bold sombre 500/400/300.
 

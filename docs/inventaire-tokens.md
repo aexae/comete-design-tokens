@@ -23,15 +23,15 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
-| `--background-neutral-subtlest-default` | color | #f7f8f8 | #49585b | `cool-grey.50` | 14 / 24 | absente |  |
-| `--background-neutral-subtlest-hovered` | color | #eaedee | #3f4a4d | `cool-grey.100` | 6 / 2 | absente |  |
-| `--background-neutral-subtlest-pressed` | color | #d8dedf | #374043 | `cool-grey.200` | 5 / 0 | absente |  |
-| `--background-neutral-subtle-default` | color | #eaedee | #49585b | `cool-grey.100` | 0 / 0 | absente |  |
-| `--background-neutral-subtle-hovered` | color | #d8dedf | #596b70 | `cool-grey.200` | 0 / 0 | absente |  |
-| `--background-neutral-subtle-pressed` | color | #b5c1c4 | #6f8488 | `cool-grey.300` | 0 / 0 | absente |  |
-| `--background-neutral-bold-default` | color | #3f4a4d | #596b70 | `cool-grey.800` | 10 / 8 | absente |  |
-| `--background-neutral-bold-hovered` | color | #374043 | #6f8488 | `cool-grey.900` | 6 / 0 | absente |  |
-| `--background-neutral-bold-pressed` | color | #252a2c | #8d9fa3 | `cool-grey.950` | 6 / 0 | absente |  |
+| `--background-neutral-subtlest-default` | color | #f7f8f8 | #596b70 | `cool-grey.50` | 14 / 24 | absente |  |
+| `--background-neutral-subtlest-hovered` | color | #eaedee | #6f8488 | `cool-grey.100` | 6 / 2 | absente |  |
+| `--background-neutral-subtlest-pressed` | color | #d8dedf | #8d9fa3 | `cool-grey.200` | 5 / 0 | absente |  |
+| `--background-neutral-subtle-default` | color | #eaedee | #3f4a4d | `cool-grey.100` | 0 / 0 | absente |  |
+| `--background-neutral-subtle-hovered` | color | #d8dedf | #49585b | `cool-grey.200` | 0 / 0 | absente |  |
+| `--background-neutral-subtle-pressed` | color | #b5c1c4 | #596b70 | `cool-grey.300` | 0 / 0 | absente |  |
+| `--background-neutral-bold-default` | color | #3f4a4d | #6f8488 | `cool-grey.800` | 10 / 8 | absente |  |
+| `--background-neutral-bold-hovered` | color | #374043 | #8d9fa3 | `cool-grey.900` | 6 / 0 | absente |  |
+| `--background-neutral-bold-pressed` | color | #252a2c | #b5c1c4 | `cool-grey.950` | 6 / 0 | absente |  |
 | `--background-neutral-boldest-default` | color | #252a2c | #d8dedf | `cool-grey.950` | 0 / 0 | ok | Fond neutre le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, neutral.… |
 | `--background-neutral-boldest-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | ok | État survolé de background.neutral.boldest.default (cartes bold interactives). |
 | `--background-neutral-boldest-pressed` | color | #3f4a4d | #f7f8f8 | `cool-grey.800` | 0 / 0 | ok | État pressé de background.neutral.boldest.default (cartes bold interactives). |
@@ -45,9 +45,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-selected-subtle-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 0 / 0 | absente |  |
 | `--background-selected-subtle-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 0 / 0 | absente |  |
 | `--background-selected-subtle-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 0 / 0 | absente |  |
-| `--background-selected-bold-default` | color | #2354aa | #2c7ee4 | `comete.blue.800` | 5 / 0 | absente |  |
-| `--background-selected-bold-hovered` | color | #224986 | #429aef | `comete.blue.900` | 2 / 0 | absente |  |
-| `--background-selected-bold-pressed` | color | #1e3661 | #66b8f4 | `comete.blue.950` | 2 / 0 | absente |  |
+| `--background-selected-bold-default` | color | #2354aa | #c1e3fc | `comete.blue.800` | 5 / 0 | absente |  |
+| `--background-selected-bold-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 2 / 0 | absente |  |
+| `--background-selected-bold-pressed` | color | #1e3661 | #f0f8fe | `comete.blue.950` | 2 / 0 | absente |  |
 | `--background-field-default` | color | #ffffff | #252a2c | `white.100` | 6 / 12 | ok | Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce … |
 | `--background-focused-default` | color | #429aef | #66b8f4 | `comete.blue.500` | 3 / 0 | absente |  |
 | `--surface-default` | color | #ffffff | #374043 | `white.100` | 9 / 12 | absente |  |
@@ -118,27 +118,27 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
-| `--background-success-subtlest-default` | color | #d0fbe2 | #245041 | `green.100` | 6 / 3 | absente |  |
-| `--background-success-subtlest-hovered` | color | #a4f6ca | #036240 | `green.200` | 3 / 0 | absente |  |
-| `--background-success-subtlest-pressed` | color | #6aebae | #00784d | `green.300` | 3 / 0 | absente |  |
+| `--background-success-subtlest-default` | color | #d0fbe2 | #0e2d24 | `green.100` | 6 / 3 | absente |  |
+| `--background-success-subtlest-hovered` | color | #a4f6ca | #245041 | `green.200` | 3 / 0 | absente |  |
+| `--background-success-subtlest-pressed` | color | #6aebae | #036240 | `green.300` | 3 / 0 | absente |  |
 | `--background-success-subtle-default` | color | #a4f6ca | #036240 | `green.200` | 0 / 0 | absente |  |
 | `--background-success-subtle-hovered` | color | #6aebae | #00784d | `green.300` | 0 / 0 | absente |  |
 | `--background-success-subtle-pressed` | color | #2fd88e | #009b60 | `green.400` | 0 / 0 | absente |  |
-| `--background-success-bold-default` | color | #00784d | #009b60 | `green.700` | 8 / 2 | absente |  |
-| `--background-success-bold-hovered` | color | #036240 | #0abf76 | `green.800` | 2 / 0 | absente |  |
-| `--background-success-bold-pressed` | color | #245041 | #2fd88e | `green.900` | 2 / 0 | absente |  |
+| `--background-success-bold-default` | color | #00784d | #2fd88e | `green.700` | 8 / 2 | absente |  |
+| `--background-success-bold-hovered` | color | #036240 | #6aebae | `green.800` | 2 / 0 | absente |  |
+| `--background-success-bold-pressed` | color | #245041 | #a4f6ca | `green.900` | 2 / 0 | absente |  |
 | `--background-success-boldest-default` | color | #0e2d24 | #a4f6ca | `green.950` | 0 / 0 | ok | Fond succès le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, success.… |
 | `--background-success-boldest-hovered` | color | #245041 | #d0fbe2 | `green.900` | 0 / 0 | ok | État survolé de background.success.boldest.default (cartes bold interactives). |
 | `--background-success-boldest-pressed` | color | #036240 | #ebfef4 | `green.800` | 0 / 0 | ok | État pressé de background.success.boldest.default (cartes bold interactives). |
-| `--background-warning-subtlest-default` | color | #fff6d4 | #c56509 | `orange.100` | 7 / 3 | absente |  |
-| `--background-warning-subtlest-hovered` | color | #ffe8a9 | #f68909 | `orange.200` | 3 / 0 | absente |  |
-| `--background-warning-subtlest-pressed` | color | #ffd672 | #fca013 | `orange.300` | 3 / 0 | absente |  |
+| `--background-warning-subtlest-default` | color | #fff6d4 | #441f06 | `orange.100` | 7 / 3 | absente |  |
+| `--background-warning-subtlest-hovered` | color | #ffe8a9 | #7e4210 | `orange.200` | 3 / 0 | absente |  |
+| `--background-warning-subtlest-pressed` | color | #ffd672 | #9c4f10 | `orange.300` | 3 / 0 | absente |  |
 | `--background-warning-subtle-default` | color | #ffe8a9 | #9c4f10 | `orange.200` | 0 / 0 | absente |  |
 | `--background-warning-subtle-hovered` | color | #ffd672 | #c56509 | `orange.300` | 0 / 0 | absente |  |
 | `--background-warning-subtle-pressed` | color | #feb939 | #f68909 | `orange.400` | 0 / 0 | absente |  |
-| `--background-warning-bold-default` | color | #feb939 | #f68909 | `orange.400` | 8 / 4 | absente |  |
-| `--background-warning-bold-hovered` | color | #fca013 | = | `orange.500` | 2 / 0 | absente |  |
-| `--background-warning-bold-pressed` | color | #f68909 | #feb939 | `orange.600` | 2 / 0 | absente |  |
+| `--background-warning-bold-default` | color | #feb939 | = | `orange.400` | 8 / 4 | absente |  |
+| `--background-warning-bold-hovered` | color | #fca013 | #ffd672 | `orange.500` | 2 / 0 | absente |  |
+| `--background-warning-bold-pressed` | color | #f68909 | #ffe8a9 | `orange.600` | 2 / 0 | absente |  |
 | `--background-warning-boldest-default` | color | #441f06 | #ffe8a9 | `orange.950` | 0 / 0 | ok | Fond avertissement le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, w… |
 | `--background-warning-boldest-hovered` | color | #7e4210 | #fff6d4 | `orange.900` | 0 / 0 | ok | État survolé de background.warning.boldest.default (cartes bold interactives). |
 | `--background-warning-boldest-pressed` | color | #9c4f10 | #fffbed | `orange.800` | 0 / 0 | ok | État pressé de background.warning.boldest.default (cartes bold interactives). |
@@ -160,9 +160,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-information-subtle-default` | color | #b4e3ff | #005391 | `blue.200` | 0 / 0 | absente |  |
 | `--background-information-subtle-hovered` | color | #71cdff | #0060b0 | `blue.300` | 0 / 0 | absente |  |
 | `--background-information-subtle-pressed` | color | #26b5ff | #0076d8 | `blue.400` | 0 / 0 | absente |  |
-| `--background-information-bold-default` | color | #0076d8 | = | `blue.600` | 8 / 0 | absente |  |
-| `--background-information-bold-hovered` | color | #0060b0 | #009bfe | `blue.700` | 4 / 0 | absente |  |
-| `--background-information-bold-pressed` | color | #005391 | #26b5ff | `blue.800` | 4 / 0 | absente |  |
+| `--background-information-bold-default` | color | #0076d8 | #009bfe | `blue.600` | 8 / 0 | absente |  |
+| `--background-information-bold-hovered` | color | #0060b0 | #26b5ff | `blue.700` | 4 / 0 | absente |  |
+| `--background-information-bold-pressed` | color | #005391 | #71cdff | `blue.800` | 4 / 0 | absente |  |
 | `--background-information-boldest-default` | color | #023059 | #b4e3ff | `blue.950` | 0 / 0 | ok | Fond information le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, inf… |
 | `--background-information-boldest-hovered` | color | #034477 | #ddf1ff | `blue.900` | 0 / 0 | ok | État survolé de background.information.boldest.default (cartes bold interactives). |
 | `--background-information-boldest-pressed` | color | #005391 | #eff8ff | `blue.800` | 0 / 0 | ok | État pressé de background.information.boldest.default (cartes bold interactives). |
@@ -203,9 +203,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-brand-subtle-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
 | `--background-brand-subtle-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | absente |  |
 | `--background-brand-subtle-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | absente |  |
-| `--background-brand-bold-default` | color | #2467d1 | #2c7ee4 | `comete.blue.700` | 0 / 4 | absente |  |
-| `--background-brand-bold-hovered` | color | #2354aa | #429aef | `comete.blue.800` | 0 / 0 | absente |  |
-| `--background-brand-bold-pressed` | color | #224986 | #66b8f4 | `comete.blue.900` | 0 / 0 | absente |  |
+| `--background-brand-bold-default` | color | #2467d1 | #429aef | `comete.blue.700` | 0 / 4 | absente |  |
+| `--background-brand-bold-hovered` | color | #2354aa | #66b8f4 | `comete.blue.800` | 0 / 0 | absente |  |
+| `--background-brand-bold-pressed` | color | #224986 | #97d2f9 | `comete.blue.900` | 0 / 0 | absente |  |
 | `--background-brand-boldest-default` | color | #1e3661 | #c1e3fc | `comete.blue.950` | 1 / 0 | ok | Miroir de background.comete.boldest.default pour la charte du client (BrandProvider). Suit le thème. Jamais u… |
 | `--background-brand-boldest-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 1 / 0 | ok | État survolé de background.brand.boldest.default. |
 | `--background-brand-boldest-pressed` | color | #2354aa | #f0f8fe | `comete.blue.800` | 1 / 0 | ok | État pressé de background.brand.boldest.default. |
@@ -215,9 +215,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-comete-subtle-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
 | `--background-comete-subtle-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | absente |  |
 | `--background-comete-subtle-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | absente |  |
-| `--background-comete-bold-default` | color | #2467d1 | #2c7ee4 | `comete.blue.700` | 9 / 0 | absente |  |
-| `--background-comete-bold-hovered` | color | #2354aa | #429aef | `comete.blue.800` | 2 / 0 | absente |  |
-| `--background-comete-bold-pressed` | color | #224986 | #66b8f4 | `comete.blue.900` | 1 / 0 | absente |  |
+| `--background-comete-bold-default` | color | #2467d1 | #429aef | `comete.blue.700` | 9 / 0 | absente |  |
+| `--background-comete-bold-hovered` | color | #2354aa | #66b8f4 | `comete.blue.800` | 2 / 0 | absente |  |
+| `--background-comete-bold-pressed` | color | #224986 | #97d2f9 | `comete.blue.900` | 1 / 0 | absente |  |
 | `--background-comete-boldest-default` | color | #1e3661 | #c1e3fc | `comete.blue.950` | 1 / 0 | ok | Fond Comète le plus contrasté, qui suit le thème (navy en clair, bleu clair en sombre) : carte bold comete. N… |
 | `--background-comete-boldest-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 1 / 0 | ok | État survolé de background.comete.boldest.default (cartes bold interactives). |
 | `--background-comete-boldest-pressed` | color | #2354aa | #f0f8fe | `comete.blue.800` | 1 / 0 | ok | État pressé de background.comete.boldest.default (cartes bold interactives). |
@@ -227,9 +227,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-purple-subtle-default` | color | #d1d4f4 | #51458e | `purple.200` | 0 / 0 | absente |  |
 | `--background-accent-purple-subtle-hovered` | color | #b5b8ec | #5e4db2 | `purple.300` | 0 / 0 | absente |  |
 | `--background-accent-purple-subtle-pressed` | color | #9897e2 | #6e5dc6 | `purple.400` | 0 / 0 | absente |  |
-| `--background-accent-purple-bold-default` | color | #6e5dc6 | = | `purple.600` | 6 / 1 | absente |  |
-| `--background-accent-purple-bold-hovered` | color | #5e4db2 | #8270db | `purple.700` | 2 / 0 | absente |  |
-| `--background-accent-purple-bold-pressed` | color | #453d72 | #9897e2 | `purple.900` | 2 / 0 | absente |  |
+| `--background-accent-purple-bold-default` | color | #6e5dc6 | #9897e2 | `purple.600` | 6 / 1 | absente |  |
+| `--background-accent-purple-bold-hovered` | color | #5e4db2 | #b5b8ec | `purple.700` | 2 / 0 | absente |  |
+| `--background-accent-purple-bold-pressed` | color | #453d72 | #d1d4f4 | `purple.900` | 2 / 0 | absente |  |
 | `--background-accent-purple-boldest-default` | color | #292442 | #d1d4f4 | `purple.950` | 0 / 0 | ok | Fond accent purple le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, a… |
 | `--background-accent-purple-boldest-hovered` | color | #453d72 | #e6e8f9 | `purple.900` | 0 / 0 | ok | État survolé de background.accent.purple.boldest.default (cartes bold interactives). |
 | `--background-accent-purple-boldest-pressed` | color | #51458e | #f3f0ff | `purple.800` | 0 / 0 | ok | État pressé de background.accent.purple.boldest.default (cartes bold interactives). |
@@ -239,21 +239,21 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-teal-subtle-default` | color | #afe3f2 | #215069 | `teal.200` | 0 / 0 | absente |  |
 | `--background-accent-teal-subtle-hovered` | color | #79cee7 | #1e6080 | `teal.300` | 0 / 0 | absente |  |
 | `--background-accent-teal-subtle-pressed` | color | #42b2d7 | #1c759e | `teal.400` | 0 / 0 | absente |  |
-| `--background-accent-teal-bold-default` | color | #1c759e | = | `teal.600` | 4 / 0 | absente |  |
-| `--background-accent-teal-bold-hovered` | color | #1e6080 | #1f92bb | `teal.700` | 2 / 0 | absente |  |
-| `--background-accent-teal-bold-pressed` | color | #1f435a | #42b2d7 | `teal.900` | 2 / 0 | absente |  |
+| `--background-accent-teal-bold-default` | color | #1c759e | #42b2d7 | `teal.600` | 4 / 0 | absente |  |
+| `--background-accent-teal-bold-hovered` | color | #1e6080 | #79cee7 | `teal.700` | 2 / 0 | absente |  |
+| `--background-accent-teal-bold-pressed` | color | #215069 | #afe3f2 | `teal.800` | 2 / 0 | absente |  |
 | `--background-accent-teal-boldest-default` | color | #0f2b3d | #afe3f2 | `teal.950` | 0 / 0 | ok | Fond accent teal le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, acc… |
 | `--background-accent-teal-boldest-hovered` | color | #1f435a | #d5f1f8 | `teal.900` | 0 / 0 | ok | État survolé de background.accent.teal.boldest.default (cartes bold interactives). |
 | `--background-accent-teal-boldest-pressed` | color | #215069 | #eefafd | `teal.800` | 0 / 0 | ok | État pressé de background.accent.teal.boldest.default (cartes bold interactives). |
-| `--background-accent-turquoise-subtlest-default` | color | #edfffd | #045d5d | `turquoise.50` | 6 / 0 | absente |  |
-| `--background-accent-turquoise-subtlest-hovered` | color | #c0fffc | #007271 | `turquoise.100` | 3 / 0 | absente |  |
-| `--background-accent-turquoise-subtlest-pressed` | color | #81fffb | #00918d | `turquoise.200` | 3 / 0 | absente |  |
+| `--background-accent-turquoise-subtlest-default` | color | #c0fffc | #045d5d | `turquoise.100` | 6 / 0 | absente |  |
+| `--background-accent-turquoise-subtlest-hovered` | color | #81fffb | #007271 | `turquoise.200` | 3 / 0 | absente |  |
+| `--background-accent-turquoise-subtlest-pressed` | color | #3afff9 | #00918d | `turquoise.300` | 3 / 0 | absente |  |
 | `--background-accent-turquoise-subtle-default` | color | #c0fffc | #007271 | `turquoise.100` | 0 / 0 | absente |  |
 | `--background-accent-turquoise-subtle-hovered` | color | #81fffb | #00918d | `turquoise.200` | 0 / 0 | absente |  |
 | `--background-accent-turquoise-subtle-pressed` | color | #3afff9 | #00b7b1 | `turquoise.300` | 0 / 0 | absente |  |
-| `--background-accent-turquoise-bold-default` | color | #00918d | #00b7b1 | `turquoise.700` | 4 / 0 | absente |  |
-| `--background-accent-turquoise-bold-hovered` | color | #007271 | #00e2d5 | `turquoise.800` | 2 / 0 | absente |  |
-| `--background-accent-turquoise-bold-pressed` | color | #045d5d | #00ffef | `turquoise.900` | 2 / 0 | absente |  |
+| `--background-accent-turquoise-bold-default` | color | #00b7b1 | #00ffef | `turquoise.600` | 4 / 0 | absente |  |
+| `--background-accent-turquoise-bold-hovered` | color | #00918d | #3afff9 | `turquoise.700` | 2 / 0 | absente |  |
+| `--background-accent-turquoise-bold-pressed` | color | #007271 | #81fffb | `turquoise.800` | 2 / 0 | absente |  |
 | `--background-accent-turquoise-boldest-default` | color | #00373a | #81fffb | `turquoise.950` | 0 / 0 | ok | Fond accent turquoise le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle… |
 | `--background-accent-turquoise-boldest-hovered` | color | #045d5d | #c0fffc | `turquoise.900` | 0 / 0 | ok | État survolé de background.accent.turquoise.boldest.default (cartes bold interactives). |
 | `--background-accent-turquoise-boldest-pressed` | color | #007271 | #edfffd | `turquoise.800` | 0 / 0 | ok | État pressé de background.accent.turquoise.boldest.default (cartes bold interactives). |
@@ -263,9 +263,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-magenta-subtle-default` | color | #f6d4eb | #8d275d | `magenta.200` | 0 / 0 | absente |  |
 | `--background-accent-magenta-subtle-hovered` | color | #efb2da | #aa2c6f | `magenta.300` | 0 / 0 | absente |  |
 | `--background-accent-magenta-subtle-pressed` | color | #e581c1 | #c63c8a | `magenta.400` | 0 / 0 | absente |  |
-| `--background-accent-magenta-bold-default` | color | #c63c8a | = | `magenta.600` | 4 / 0 | absente |  |
-| `--background-accent-magenta-bold-hovered` | color | #aa2c6f | #da62ac | `magenta.700` | 2 / 0 | absente |  |
-| `--background-accent-magenta-bold-pressed` | color | #762550 | #e581c1 | `magenta.900` | 2 / 0 | absente |  |
+| `--background-accent-magenta-bold-default` | color | #c63c8a | #e581c1 | `magenta.600` | 4 / 0 | absente |  |
+| `--background-accent-magenta-bold-hovered` | color | #aa2c6f | #efb2da | `magenta.700` | 2 / 0 | absente |  |
+| `--background-accent-magenta-bold-pressed` | color | #8d275d | #f6d4eb | `magenta.800` | 2 / 0 | absente |  |
 | `--background-accent-magenta-boldest-default` | color | #47102d | #f6d4eb | `magenta.950` | 0 / 0 | ok | Fond accent magenta le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, … |
 | `--background-accent-magenta-boldest-hovered` | color | #762550 | #f9eaf5 | `magenta.900` | 0 / 0 | ok | État survolé de background.accent.magenta.boldest.default (cartes bold interactives). |
 | `--background-accent-magenta-boldest-pressed` | color | #8d275d | #fcf3f9 | `magenta.800` | 0 / 0 | ok | État pressé de background.accent.magenta.boldest.default (cartes bold interactives). |
@@ -275,9 +275,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-blue-grey-subtle-default` | color | #d1d9e6 | #32415a | `blue-grey.200` | 0 / 0 | absente |  |
 | `--background-accent-blue-grey-subtle-hovered` | color | #a8b9d1 | #384b6c | `blue-grey.300` | 0 / 0 | absente |  |
 | `--background-accent-blue-grey-subtle-pressed` | color | #7993b7 | #455d84 | `blue-grey.400` | 0 / 0 | absente |  |
-| `--background-accent-blue-grey-bold-default` | color | #455d84 | = | `blue-grey.600` | 4 / 0 | absente |  |
-| `--background-accent-blue-grey-bold-hovered` | color | #384b6c | #58759f | `blue-grey.700` | 2 / 0 | absente |  |
-| `--background-accent-blue-grey-bold-pressed` | color | #2c374b | #7993b7 | `blue-grey.900` | 2 / 0 | absente |  |
+| `--background-accent-blue-grey-bold-default` | color | #455d84 | #7993b7 | `blue-grey.600` | 4 / 0 | absente |  |
+| `--background-accent-blue-grey-bold-hovered` | color | #384b6c | #a8b9d1 | `blue-grey.700` | 2 / 0 | absente |  |
+| `--background-accent-blue-grey-bold-pressed` | color | #32415a | #d1d9e6 | `blue-grey.800` | 2 / 0 | absente |  |
 | `--background-accent-blue-grey-boldest-default` | color | #1e2533 | #d1d9e6 | `blue-grey.950` | 0 / 0 | ok | Fond accent blue-grey le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle… |
 | `--background-accent-blue-grey-boldest-hovered` | color | #2c374b | #eaedf4 | `blue-grey.900` | 0 / 0 | ok | État survolé de background.accent.blue-grey.boldest.default (cartes bold interactives). |
 | `--background-accent-blue-grey-boldest-pressed` | color | #32415a | #f5f7fa | `blue-grey.800` | 0 / 0 | ok | État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives). |
@@ -290,9 +290,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-cycle-day-subtle-default` | color | #fffbed | #441f06 | `orange.50` | 0 / 0 | absente |  |
 | `--background-cycle-day-subtle-hovered` | color | #fff6d4 | #7e4210 | `orange.100` | 0 / 0 | absente |  |
 | `--background-cycle-day-subtle-pressed` | color | #ffe8a9 | #9c4f10 | `orange.200` | 0 / 0 | absente |  |
-| `--background-cycle-day-bold-default` | color | #feb939 | #f68909 | `orange.400` | 0 / 0 | absente |  |
-| `--background-cycle-day-bold-hovered` | color | #fca013 | = | `orange.500` | 0 / 0 | absente |  |
-| `--background-cycle-day-bold-pressed` | color | #f68909 | #feb939 | `orange.600` | 0 / 0 | absente |  |
+| `--background-cycle-day-bold-default` | color | #feb939 | = | `orange.400` | 0 / 0 | absente |  |
+| `--background-cycle-day-bold-hovered` | color | #fca013 | #ffd672 | `orange.500` | 0 / 0 | absente |  |
+| `--background-cycle-day-bold-pressed` | color | #f68909 | #ffe8a9 | `orange.600` | 0 / 0 | absente |  |
 | `--surface-comete` | color | #1e3661 | = | `comete.blue.950` | 0 / 2 | ok | Surface navy Comète, identique en clair et en sombre : en-tête, barre, bandeau. Sans état. Texte en text.on-d… |
 | `--text-accent-purple-default` | color | #5e4db2 | #d1d4f4 | `purple.700` | 4 / 0 | absente |  |
 | `--text-accent-purple-hovered` | color | #51458e | #e6e8f9 | `purple.800` | 0 / 0 | absente |  |
@@ -779,9 +779,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--autosave-indicator-color-critical-text` | color | #9d1717 | #ffc8c8 | `text.critical.default` | 0 / 0 | ok | Libellé de l'état critical |
 | `--autosave-indicator-color-critical-icon` | color | #e12121 | #ffa2a2 | `icon.critical` | 0 / 0 | ok | Icône ou spinner de l'état critical |
 | `--autosave-indicator-spacing-gap` | dimension | 2px | = | `Space025` | 0 / 0 | ok | Espace entre l'icône et le libellé (2 px) |
-| `--avatar-color-neutral-background-default` | color | #eaedee | #49585b | `background.neutral.subtle.default` | 2 / 0 | absente |  |
-| `--avatar-color-neutral-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtle.hovered` | 2 / 0 | absente |  |
-| `--avatar-color-neutral-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtle.pressed` | 2 / 0 | absente |  |
+| `--avatar-color-neutral-background-default` | color | #eaedee | #3f4a4d | `background.neutral.subtle.default` | 2 / 0 | absente |  |
+| `--avatar-color-neutral-background-hovered` | color | #d8dedf | #49585b | `background.neutral.subtle.hovered` | 2 / 0 | absente |  |
+| `--avatar-color-neutral-background-pressed` | color | #b5c1c4 | #596b70 | `background.neutral.subtle.pressed` | 2 / 0 | absente |  |
 | `--avatar-color-neutral-text` | color | #252a2c | #f7f8f8 | `text.default.default` | 2 / 0 | ok | Initiales de l'avatar neutral |
 | `--avatar-color-neutral-icon` | color | #32415a | #eaedf4 | `icon.default` | 1 / 0 | ok | Icône de l'avatar neutral |
 | `--avatar-color-comete-background-default` | color | #dceefd | #1e3661 | `background.comete.subtlest.default` | 1 / 0 | absente |  |
@@ -799,9 +799,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--avatar-color-accent-teal-background-pressed` | color | #79cee7 | #1e6080 | `background.accent.teal.subtlest.pressed` | 1 / 0 | absente |  |
 | `--avatar-color-accent-teal-text` | color | #215069 | #afe3f2 | `text.accent.teal.default` | 1 / 0 | ok | Initiales de l'avatar accent-teal |
 | `--avatar-color-accent-teal-icon` | color | #1f92bb | #79cee7 | `icon.accent.teal` | 1 / 0 | ok | Icône de l'avatar accent-teal |
-| `--avatar-color-accent-turquoise-background-default` | color | #edfffd | #045d5d | `background.accent.turquoise.subtlest.default` | 1 / 0 | absente |  |
-| `--avatar-color-accent-turquoise-background-hovered` | color | #c0fffc | #007271 | `background.accent.turquoise.subtlest.hovered` | 1 / 0 | absente |  |
-| `--avatar-color-accent-turquoise-background-pressed` | color | #81fffb | #00918d | `background.accent.turquoise.subtlest.pressed` | 1 / 0 | absente |  |
+| `--avatar-color-accent-turquoise-background-default` | color | #c0fffc | #045d5d | `background.accent.turquoise.subtlest.default` | 1 / 0 | absente |  |
+| `--avatar-color-accent-turquoise-background-hovered` | color | #81fffb | #007271 | `background.accent.turquoise.subtlest.hovered` | 1 / 0 | absente |  |
+| `--avatar-color-accent-turquoise-background-pressed` | color | #3afff9 | #00918d | `background.accent.turquoise.subtlest.pressed` | 1 / 0 | absente |  |
 | `--avatar-color-accent-turquoise-text` | color | #007271 | #81fffb | `text.accent.turquoise.default` | 1 / 0 | ok | Initiales de l'avatar accent-turquoise |
 | `--avatar-color-accent-turquoise-icon` | color | #00b7b1 | #3afff9 | `icon.accent.turquoise` | 1 / 0 | ok | Icône de l'avatar accent-turquoise |
 | `--avatar-color-accent-magenta-background-default` | color | #f9eaf5 | #762550 | `background.accent.magenta.subtlest.default` | 1 / 0 | absente |  |
@@ -847,19 +847,19 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--avatar-group-spacing-overlap-xlarge` | dimension | -16px | = |  | 1 / 0 | ok | Chevauchement des avatars xlarge empilés (marge négative, 25 % du diamètre) |
 | `--avatar-group-spacing-overlap-xxlarge` | dimension | -24px | = |  | 1 / 0 | ok | Chevauchement des avatars xxlarge empilés (marge négative, 25 % du diamètre) |
 | `--avatar-group-spacing-overlap-xxxlarge` | dimension | -32px | = |  | 1 / 0 | ok | Chevauchement des avatars xxxlarge empilés (marge négative, 25 % du diamètre) |
-| `--banner-color-warning-background` | color | #feb939 | #f68909 | `background.warning.bold.default` | 1 / 0 | ok | Fond du bandeau warning (jaune) |
+| `--banner-color-warning-background` | color | #feb939 | = | `background.warning.bold.default` | 1 / 0 | ok | Fond du bandeau warning (jaune) |
 | `--banner-color-warning-text` | color | #252a2c | = | `text.on-light-surface` | 1 / 0 | ok | Message du bandeau warning (texte sombre fixe, lisible sur le jaune) |
 | `--banner-color-warning-icon` | color | #252a2c | = | `icon.on-light-surface` | 1 / 0 | ok | Icône contextuelle du bandeau warning |
 | `--banner-color-critical-background` | color | #e12121 | = | `background.critical.bold.default` | 1 / 0 | ok | Fond du bandeau critical (rouge) |
 | `--banner-color-critical-text` | color | #ffffff | = | `text.on-dark-surface` | 1 / 0 | ok | Message du bandeau critical (texte inversé) |
 | `--banner-color-critical-icon` | color | #ffffff | = | `icon.on-dark-surface` | 1 / 0 | ok | Icône contextuelle du bandeau critical |
-| `--banner-color-announcement-background` | color | #6e5dc6 | = | `background.accent.purple.bold.default` | 1 / 0 | ok | Fond du bandeau announcement (violet accent : nouveauté, mise à jour majeure) |
+| `--banner-color-announcement-background` | color | #6e5dc6 | #9897e2 | `background.accent.purple.bold.default` | 1 / 0 | ok | Fond du bandeau announcement (violet accent : nouveauté, mise à jour majeure) |
 | `--banner-color-announcement-text` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | ok | Message du bandeau announcement (texte inversé) |
 | `--banner-color-announcement-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône contextuelle du bandeau announcement |
-| `--banner-color-success-background` | color | #00784d | #009b60 | `background.success.bold.default` | 1 / 0 | ok | Fond du bandeau success (vert) |
+| `--banner-color-success-background` | color | #00784d | #2fd88e | `background.success.bold.default` | 1 / 0 | ok | Fond du bandeau success (vert) |
 | `--banner-color-success-text` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | ok | Message du bandeau success (texte inversé) |
 | `--banner-color-success-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône contextuelle du bandeau success |
-| `--banner-color-information-background` | color | #0076d8 | = | `background.information.bold.default` | 1 / 0 | ok | Fond du bandeau information (bleu) |
+| `--banner-color-information-background` | color | #0076d8 | #009bfe | `background.information.bold.default` | 1 / 0 | ok | Fond du bandeau information (bleu) |
 | `--banner-color-information-text` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | ok | Message du bandeau information (texte inversé) |
 | `--banner-color-information-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône contextuelle du bandeau information |
 | `--banner-spacing-gap` | dimension | 12px | = | `Space150` | 1 / 0 | ok | Espace entre l'icône et le message (12 px) |
@@ -871,7 +871,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--bottom-nav-color-item-icon-default` | color | #6f8488 | = | `icon.subtlest` | 1 / 0 | trop courte | Icône d'un item au repos |
 | `--bottom-nav-color-item-icon-selected` | color | #2c7ee4 | #97d2f9 | `icon.selected` | 1 / 0 | ok | Icône d'un item sélectionné, et croix de fermeture d'un item ouvert |
 | `--bottom-nav-color-item-background-selected` | color | #dceefd | #1e3661 | `background.selected.subtle.default` | 2 / 0 | ok | Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé … |
-| `--bottom-nav-color-action-background` | color | #2467d1 | #2c7ee4 | `background.comete.bold.default` | 1 / 0 | ok | Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client |
+| `--bottom-nav-color-action-background` | color | #2467d1 | #429aef | `background.comete.bold.default` | 1 / 0 | ok | Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client |
 | `--bottom-nav-color-action-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône du bouton d'action central |
 | `--bottom-nav-color-action-cradle` | color | #ffffff | #252a2c | `background.field.default` | 1 / 0 | ok | Anneau (cradle) autour de la moitié haute du bouton d'action |
 | `--bottom-nav-size-item-icon` | dimension | 24px | = | `Size300` | 2 / 0 | trop courte | Icône d'un item (24 px) |
@@ -892,97 +892,97 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--bottom-nav-radius-action` | dimension | 1024px | = | `RadiusRound` | 2 / 0 | ok | Bouton d'action central et son anneau |
 | `--bottom-nav-opacity-disabled` | number | 0.38 | = | `opacity.disabled` | 1 / 0 | ok | Opacité d'un item désactivé |
 | `--button-color-contained-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
-| `--button-color-contained-neutral-background-default` | color | #eaedee | #49585b | `background.neutral.subtle.default` | 1 / 0 | absente |  |
-| `--button-color-contained-neutral-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-neutral-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-neutral-background-default` | color | #eaedee | #3f4a4d | `background.neutral.subtle.default` | 1 / 0 | absente |  |
+| `--button-color-contained-neutral-background-hovered` | color | #d8dedf | #49585b | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-neutral-background-pressed` | color | #b5c1c4 | #596b70 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
 | `--button-color-contained-inverted-background-default` | color | #ffffff1a | #0515240f | `background.inverted.subtle.default` | 1 / 0 | absente |  |
 | `--button-color-contained-inverted-background-hovered` | color | #ffffff33 | #0b120e24 | `background.inverted.subtle.hovered` | 1 / 0 | absente |  |
 | `--button-color-contained-inverted-background-pressed` | color | #ffffff4d | #080f214f | `background.inverted.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
-| `--button-color-contained-subtle-background-default` | color | #eaedee | #49585b | `background.neutral.subtle.default` | 1 / 0 | ok | Fond au repos du bouton contained subtle : même gris que contained neutral (background.neutral.subtle.default… |
-| `--button-color-contained-subtle-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-subtle-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-subtle-background-default` | color | #eaedee | #3f4a4d | `background.neutral.subtle.default` | 1 / 0 | ok | Fond au repos du bouton contained subtle : même gris que contained neutral (background.neutral.subtle.default… |
+| `--button-color-contained-subtle-background-hovered` | color | #d8dedf | #49585b | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-subtle-background-pressed` | color | #b5c1c4 | #596b70 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-subtlest-text-default` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | absente |  |
-| `--button-color-contained-subtlest-background-default` | color | #eaedee | #49585b | `background.neutral.subtle.default` | 1 / 0 | ok | Fond au repos du bouton contained subtlest : même gris que contained neutral (background.neutral.subtle.defau… |
-| `--button-color-contained-subtlest-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-subtlest-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-subtlest-background-default` | color | #eaedee | #3f4a4d | `background.neutral.subtle.default` | 1 / 0 | ok | Fond au repos du bouton contained subtlest : même gris que contained neutral (background.neutral.subtle.defau… |
+| `--button-color-contained-subtlest-background-hovered` | color | #d8dedf | #49585b | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-subtlest-background-pressed` | color | #b5c1c4 | #596b70 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-comete-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-comete-background-default` | color | #2467d1 | #2c7ee4 | `background.comete.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-comete-background-hovered` | color | #2354aa | #429aef | `background.comete.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-comete-background-pressed` | color | #224986 | #66b8f4 | `background.comete.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-comete-background-default` | color | #2467d1 | #429aef | `background.comete.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-comete-background-hovered` | color | #2354aa | #66b8f4 | `background.comete.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-comete-background-pressed` | color | #224986 | #97d2f9 | `background.comete.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-success-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-success-background-default` | color | #00784d | #009b60 | `background.success.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-success-background-hovered` | color | #036240 | #0abf76 | `background.success.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-success-background-pressed` | color | #245041 | #2fd88e | `background.success.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-success-background-default` | color | #00784d | #2fd88e | `background.success.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-success-background-hovered` | color | #036240 | #6aebae | `background.success.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-success-background-pressed` | color | #245041 | #a4f6ca | `background.success.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-critical-text-default` | color | #ffffff | = | `text.on-dark-surface` | 1 / 0 | ok | Texte blanc fixe : background.critical.bold reste red 600 en sombre |
 | `--button-color-contained-critical-background-default` | color | #e12121 | = | `background.critical.bold.default` | 1 / 0 | absente |  |
 | `--button-color-contained-critical-background-hovered` | color | #be1717 | #f44040 | `background.critical.bold.hovered` | 1 / 0 | absente |  |
 | `--button-color-contained-critical-background-pressed` | color | #9d1717 | #fc6d6d | `background.critical.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-warning-text-default` | color | #252a2c | = | `text.on-light-surface` | 1 / 0 | absente |  |
-| `--button-color-contained-warning-background-default` | color | #feb939 | #f68909 | `background.warning.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-warning-background-hovered` | color | #fca013 | = | `background.warning.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-warning-background-pressed` | color | #f68909 | #feb939 | `background.warning.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-warning-background-default` | color | #feb939 | = | `background.warning.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-warning-background-hovered` | color | #fca013 | #ffd672 | `background.warning.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-warning-background-pressed` | color | #f68909 | #ffe8a9 | `background.warning.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-information-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-information-background-default` | color | #0076d8 | = | `background.information.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-information-background-hovered` | color | #0060b0 | #009bfe | `background.information.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-information-background-pressed` | color | #005391 | #26b5ff | `background.information.bold.pressed` | 1 / 0 | absente |  |
-| `--button-color-contained-brand-background-default` | color | #2467d1 | #2c7ee4 | `background.brand.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-brand-background-hovered` | color | #2354aa | #429aef | `background.brand.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-brand-background-pressed` | color | #224986 | #66b8f4 | `background.brand.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-information-background-default` | color | #0076d8 | #009bfe | `background.information.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-information-background-hovered` | color | #0060b0 | #26b5ff | `background.information.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-information-background-pressed` | color | #005391 | #71cdff | `background.information.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-brand-background-default` | color | #2467d1 | #429aef | `background.brand.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-brand-background-hovered` | color | #2354aa | #66b8f4 | `background.brand.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-brand-background-pressed` | color | #224986 | #97d2f9 | `background.brand.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-brand-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-purple-background-default` | color | #6e5dc6 | = | `background.accent.purple.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-purple-background-hovered` | color | #5e4db2 | #8270db | `background.accent.purple.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-purple-background-pressed` | color | #453d72 | #9897e2 | `background.accent.purple.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-purple-background-default` | color | #6e5dc6 | #9897e2 | `background.accent.purple.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-purple-background-hovered` | color | #5e4db2 | #b5b8ec | `background.accent.purple.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-purple-background-pressed` | color | #453d72 | #d1d4f4 | `background.accent.purple.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-accent-purple-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-teal-background-default` | color | #1c759e | = | `background.accent.teal.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-teal-background-hovered` | color | #1e6080 | #1f92bb | `background.accent.teal.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-teal-background-pressed` | color | #1f435a | #42b2d7 | `background.accent.teal.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-teal-background-default` | color | #1c759e | #42b2d7 | `background.accent.teal.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-teal-background-hovered` | color | #1e6080 | #79cee7 | `background.accent.teal.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-teal-background-pressed` | color | #215069 | #afe3f2 | `background.accent.teal.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-accent-teal-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-turquoise-background-default` | color | #00918d | #00b7b1 | `background.accent.turquoise.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-turquoise-background-hovered` | color | #007271 | #00e2d5 | `background.accent.turquoise.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-turquoise-background-pressed` | color | #045d5d | #00ffef | `background.accent.turquoise.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-turquoise-background-default` | color | #00b7b1 | #00ffef | `background.accent.turquoise.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-turquoise-background-hovered` | color | #00918d | #3afff9 | `background.accent.turquoise.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-turquoise-background-pressed` | color | #007271 | #81fffb | `background.accent.turquoise.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-accent-turquoise-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-magenta-background-default` | color | #c63c8a | = | `background.accent.magenta.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-magenta-background-hovered` | color | #aa2c6f | #da62ac | `background.accent.magenta.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-magenta-background-pressed` | color | #762550 | #e581c1 | `background.accent.magenta.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-magenta-background-default` | color | #c63c8a | #e581c1 | `background.accent.magenta.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-magenta-background-hovered` | color | #aa2c6f | #efb2da | `background.accent.magenta.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-magenta-background-pressed` | color | #8d275d | #f6d4eb | `background.accent.magenta.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-accent-magenta-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-blue-grey-background-default` | color | #455d84 | = | `background.accent.blue-grey.bold.default` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-blue-grey-background-hovered` | color | #384b6c | #58759f | `background.accent.blue-grey.bold.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-accent-blue-grey-background-pressed` | color | #2c374b | #7993b7 | `background.accent.blue-grey.bold.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-blue-grey-background-default` | color | #455d84 | #7993b7 | `background.accent.blue-grey.bold.default` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-blue-grey-background-hovered` | color | #384b6c | #a8b9d1 | `background.accent.blue-grey.bold.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-accent-blue-grey-background-pressed` | color | #32415a | #d1d9e6 | `background.accent.blue-grey.bold.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-accent-blue-grey-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-neutral-border-default` | color | #b5c1c4 | #49585b | `border.bold` | 1 / 0 | absente |  |
-| `--button-color-outlined-neutral-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-outlined-neutral-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-outlined-neutral-background-hovered` | color | #eaedee | #6f8488 | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-outlined-neutral-background-pressed` | color | #d8dedf | #8d9fa3 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-inverted-border-default` | color | #ffffff | #252a2c | `border.inverted` | 1 / 0 | absente |  |
 | `--button-color-outlined-inverted-background-hovered` | color | #ffffff1a | #0515240f | `background.inverted.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-outlined-inverted-background-pressed` | color | #ffffff33 | #0b120e24 | `background.inverted.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-subtle-border-default` | color | #b5c1c4 | #49585b | `border.bold` | 1 / 0 | absente |  |
-| `--button-color-outlined-subtle-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-outlined-subtle-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-outlined-subtle-background-hovered` | color | #eaedee | #6f8488 | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-outlined-subtle-background-pressed` | color | #d8dedf | #8d9fa3 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-subtlest-text-default` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-subtlest-border-default` | color | #eaedee | #3f4a4d | `border.subtle` | 1 / 0 | absente |  |
-| `--button-color-outlined-subtlest-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-outlined-subtlest-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-outlined-subtlest-background-hovered` | color | #eaedee | #6f8488 | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-outlined-subtlest-background-pressed` | color | #d8dedf | #8d9fa3 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-comete-text-default` | color | #224986 | #dceefd | `text.comete.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-comete-border-default` | color | #224986 | #dceefd | `border.comete.bold` | 1 / 0 | absente |  |
 | `--button-color-outlined-comete-background-hovered` | color | #c1e3fc | #224986 | `background.comete.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-outlined-comete-background-pressed` | color | #97d2f9 | #2354aa | `background.comete.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-success-text-default` | color | #036240 | #6aebae | `text.success.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-success-border-default` | color | #009b60 | #0abf76 | `border.success.bold` | 1 / 0 | absente |  |
-| `--button-color-outlined-success-background-hovered` | color | #a4f6ca | #036240 | `background.success.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-outlined-success-background-pressed` | color | #6aebae | #00784d | `background.success.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-outlined-success-background-hovered` | color | #a4f6ca | #245041 | `background.success.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-outlined-success-background-pressed` | color | #6aebae | #036240 | `background.success.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-critical-text-default` | color | #9d1717 | #ffc8c8 | `text.critical.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-critical-border-default` | color | #e12121 | #f44040 | `border.critical.bold` | 1 / 0 | absente |  |
 | `--button-color-outlined-critical-background-hovered` | color | #ffc8c8 | #9d1717 | `background.critical.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-outlined-critical-background-pressed` | color | #ffa2a2 | #be1717 | `background.critical.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-warning-text-default` | color | #9c4f10 | #ffe8a9 | `text.warning.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-warning-border-default` | color | #f68909 | #fca013 | `border.warning.bold` | 1 / 0 | absente |  |
-| `--button-color-outlined-warning-background-hovered` | color | #ffe8a9 | #f68909 | `background.warning.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-outlined-warning-background-pressed` | color | #ffd672 | #fca013 | `background.warning.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-outlined-warning-background-hovered` | color | #ffe8a9 | #7e4210 | `background.warning.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-outlined-warning-background-pressed` | color | #ffd672 | #9c4f10 | `background.warning.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-information-text-default` | color | #0060b0 | #b4e3ff | `text.information.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-information-border-default` | color | #0076d8 | #009bfe | `border.information.bold` | 1 / 0 | absente |  |
 | `--button-color-outlined-information-background-hovered` | color | #b4e3ff | #005391 | `background.information.subtlest.hovered` | 1 / 0 | absente |  |
@@ -1001,8 +1001,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-outlined-accent-teal-background-pressed` | color | #79cee7 | #1e6080 | `background.accent.teal.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-accent-turquoise-border-default` | color | #00e2d5 | = | `border.accent.turquoise.bold` | 1 / 0 | absente |  |
 | `--button-color-outlined-accent-turquoise-text-default` | color | #007271 | #81fffb | `text.accent.turquoise.default` | 1 / 0 | absente |  |
-| `--button-color-outlined-accent-turquoise-background-hovered` | color | #c0fffc | #007271 | `background.accent.turquoise.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-outlined-accent-turquoise-background-pressed` | color | #81fffb | #00918d | `background.accent.turquoise.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-outlined-accent-turquoise-background-hovered` | color | #81fffb | #007271 | `background.accent.turquoise.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-outlined-accent-turquoise-background-pressed` | color | #3afff9 | #00918d | `background.accent.turquoise.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-outlined-accent-magenta-border-default` | color | #da62ac | = | `border.accent.magenta.bold` | 1 / 0 | absente |  |
 | `--button-color-outlined-accent-magenta-text-default` | color | #8d275d | #f6d4eb | `text.accent.magenta.default` | 1 / 0 | absente |  |
 | `--button-color-outlined-accent-magenta-background-hovered` | color | #f6d4eb | #8d275d | `background.accent.magenta.subtlest.hovered` | 1 / 0 | absente |  |
@@ -1012,29 +1012,29 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-outlined-accent-blue-grey-background-hovered` | color | #d1d9e6 | #32415a | `background.accent.blue-grey.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-outlined-accent-blue-grey-background-pressed` | color | #a8b9d1 | #384b6c | `background.accent.blue-grey.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
-| `--button-color-subtle-neutral-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-subtle-neutral-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-subtle-neutral-background-hovered` | color | #eaedee | #6f8488 | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-subtle-neutral-background-pressed` | color | #d8dedf | #8d9fa3 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
 | `--button-color-subtle-inverted-background-hovered` | color | #ffffff1a | #0515240f | `background.inverted.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-inverted-background-pressed` | color | #ffffff33 | #0b120e24 | `background.inverted.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
-| `--button-color-subtle-subtle-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-subtle-subtle-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-subtle-subtle-background-hovered` | color | #eaedee | #6f8488 | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-subtle-subtle-background-pressed` | color | #d8dedf | #8d9fa3 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-subtlest-text-default` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | absente |  |
-| `--button-color-subtle-subtlest-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-subtle-subtlest-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-subtle-subtlest-background-hovered` | color | #eaedee | #6f8488 | `background.neutral.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-subtle-subtlest-background-pressed` | color | #d8dedf | #8d9fa3 | `background.neutral.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-comete-text-default` | color | #224986 | #dceefd | `text.comete.default` | 1 / 0 | absente |  |
 | `--button-color-subtle-comete-background-hovered` | color | #c1e3fc | #224986 | `background.comete.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-comete-background-pressed` | color | #97d2f9 | #2354aa | `background.comete.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-success-text-default` | color | #036240 | #6aebae | `text.success.default` | 1 / 0 | absente |  |
-| `--button-color-subtle-success-background-hovered` | color | #a4f6ca | #036240 | `background.success.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-subtle-success-background-pressed` | color | #6aebae | #00784d | `background.success.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-subtle-success-background-hovered` | color | #a4f6ca | #245041 | `background.success.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-subtle-success-background-pressed` | color | #6aebae | #036240 | `background.success.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-critical-text-default` | color | #9d1717 | #ffc8c8 | `text.critical.default` | 1 / 0 | absente |  |
 | `--button-color-subtle-critical-background-hovered` | color | #ffc8c8 | #9d1717 | `background.critical.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-critical-background-pressed` | color | #ffa2a2 | #be1717 | `background.critical.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-warning-text-default` | color | #9c4f10 | #ffe8a9 | `text.warning.default` | 1 / 0 | absente |  |
-| `--button-color-subtle-warning-background-hovered` | color | #ffe8a9 | #f68909 | `background.warning.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-subtle-warning-background-pressed` | color | #ffd672 | #fca013 | `background.warning.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-subtle-warning-background-hovered` | color | #ffe8a9 | #7e4210 | `background.warning.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-subtle-warning-background-pressed` | color | #ffd672 | #9c4f10 | `background.warning.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-information-text-default` | color | #0060b0 | #b4e3ff | `text.information.default` | 1 / 0 | absente |  |
 | `--button-color-subtle-information-background-hovered` | color | #b4e3ff | #005391 | `background.information.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-information-background-pressed` | color | #71cdff | #0060b0 | `background.information.subtlest.pressed` | 1 / 0 | absente |  |
@@ -1048,8 +1048,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-subtle-accent-teal-background-hovered` | color | #afe3f2 | #215069 | `background.accent.teal.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-accent-teal-background-pressed` | color | #79cee7 | #1e6080 | `background.accent.teal.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-accent-turquoise-text-default` | color | #007271 | #81fffb | `text.accent.turquoise.default` | 1 / 0 | absente |  |
-| `--button-color-subtle-accent-turquoise-background-hovered` | color | #c0fffc | #007271 | `background.accent.turquoise.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-subtle-accent-turquoise-background-pressed` | color | #81fffb | #00918d | `background.accent.turquoise.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-subtle-accent-turquoise-background-hovered` | color | #81fffb | #007271 | `background.accent.turquoise.subtlest.hovered` | 1 / 0 | absente |  |
+| `--button-color-subtle-accent-turquoise-background-pressed` | color | #3afff9 | #00918d | `background.accent.turquoise.subtlest.pressed` | 1 / 0 | absente |  |
 | `--button-color-subtle-accent-magenta-text-default` | color | #8d275d | #f6d4eb | `text.accent.magenta.default` | 1 / 0 | absente |  |
 | `--button-color-subtle-accent-magenta-background-hovered` | color | #f6d4eb | #8d275d | `background.accent.magenta.subtlest.hovered` | 1 / 0 | absente |  |
 | `--button-color-subtle-accent-magenta-background-pressed` | color | #efb2da | #aa2c6f | `background.accent.magenta.subtlest.pressed` | 1 / 0 | absente |  |
@@ -1195,8 +1195,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--quick-actions-menu-list-spacing-padding-bottom` | dimension | 128px | = | `Space1600` | 1 / 0 | ok | Place réservée en bas de la liste au bouton d'action et à la barre (128 px), hors zone de sécurité |
 | `--quick-actions-menu-list-spacing-gap` | dimension | 12px | = | `Space150` | 1 / 0 | ok | Écart entre deux items (12 px) |
 | `--quick-actions-menu-item-color-background-default` | color | #ffffff | #374043 | `surface.default` | 1 / 0 | ok | Fond d'un item. Toujours neutre : le ton de l'action ne va que sur la pastille d'icône (IconTile) |
-| `--quick-actions-menu-item-color-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | trop courte | Fond d'un item survolé |
-| `--quick-actions-menu-item-color-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | trop courte | Fond d'un item pressé |
+| `--quick-actions-menu-item-color-background-hovered` | color | #eaedee | #6f8488 | `background.neutral.subtlest.hovered` | 1 / 0 | trop courte | Fond d'un item survolé |
+| `--quick-actions-menu-item-color-background-pressed` | color | #d8dedf | #8d9fa3 | `background.neutral.subtlest.pressed` | 1 / 0 | trop courte | Fond d'un item pressé |
 | `--quick-actions-menu-item-color-text` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | trop courte | Libellé d'un item |
 | `--quick-actions-menu-item-size-min-height` | dimension | 56px | = | `Size700` | 1 / 0 | ok | Hauteur minimale d'un item (56 px) : pastille de 40 px et padding vertical de 8 px |
 | `--quick-actions-menu-item-spacing-gap` | dimension | 16px | = | `Space200` | 1 / 0 | ok | Écart entre la pastille d'icône et le libellé (16 px) |
@@ -1209,8 +1209,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--side-nav-color-surface-border` | color | #eaedee | #3f4a4d | `border.subtle` | 1 / 0 | ok | Bordure droite du panneau, séparation avec le contenu |
 | `--side-nav-color-header-title` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | ok | Nom de l'application dans l'en-tête |
 | `--side-nav-color-header-subtitle` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | ok | Sous-titre de l'en-tête (module, client) |
-| `--side-nav-color-item-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | trop courte | Fond d'un item au survol |
-| `--side-nav-color-item-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | trop courte | Fond d'un item à l'appui |
+| `--side-nav-color-item-background-hovered` | color | #eaedee | #6f8488 | `background.neutral.subtlest.hovered` | 1 / 0 | trop courte | Fond d'un item au survol |
+| `--side-nav-color-item-background-pressed` | color | #d8dedf | #8d9fa3 | `background.neutral.subtlest.pressed` | 1 / 0 | trop courte | Fond d'un item à l'appui |
 | `--side-nav-color-item-text` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | ok | Libellé d'un item non sélectionné |
 | `--side-nav-color-item-selected-background-default` | color | #dceefd | #1e3661 | `background.selected.subtle.default` | 2 / 0 | ok | Fond de l'item de la page courante |
 | `--side-nav-color-item-selected-background-hovered` | color | #c1e3fc | #224986 | `background.selected.subtle.hovered` | 2 / 0 | ok | Fond de l'item de la page courante au survol |
@@ -1218,7 +1218,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--side-nav-color-item-selected-text` | color | #2c7ee4 | #c1e3fc | `text.selected` | 1 / 0 | ok | Libellé de l'item de la page courante |
 | `--side-nav-color-section-title` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | ok | Titre de section (capitales) |
 | `--side-nav-color-divider` | color | #eaedee | #3f4a4d | `border.subtle` | 1 / 0 | ok | Séparateur entre groupes d'items |
-| `--side-nav-color-empty-icon-background` | color | #f7f8f8 | #49585b | `background.neutral.subtlest.default` | 1 / 0 | ok | Pastille de l'icône de l'état vide |
+| `--side-nav-color-empty-icon-background` | color | #f7f8f8 | #596b70 | `background.neutral.subtlest.default` | 1 / 0 | ok | Pastille de l'icône de l'état vide |
 | `--side-nav-color-empty-title` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | trop courte | Titre de l'état vide |
 | `--side-nav-color-empty-description` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | ok | Description de l'état vide |
 | `--side-nav-size-rail-width` | dimension | 80px | = | `Size1000` | 1 / 0 | ok | Largeur du panneau en mode rail (80 px) |

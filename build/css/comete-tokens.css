@@ -534,19 +534,19 @@
   --background-accent-teal-subtle-pressed: #42b2d7;
   --background-accent-teal-bold-default: #1c759e;
   --background-accent-teal-bold-hovered: #1e6080;
-  --background-accent-teal-bold-pressed: #1f435a;
+  --background-accent-teal-bold-pressed: #215069;
   --background-accent-teal-boldest-default: #0f2b3d; /** Fond accent teal le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.teal.bold. Texte en text.inverted. */
   --background-accent-teal-boldest-hovered: #1f435a; /** État survolé de background.accent.teal.boldest.default (cartes bold interactives). */
   --background-accent-teal-boldest-pressed: #215069; /** État pressé de background.accent.teal.boldest.default (cartes bold interactives). */
-  --background-accent-turquoise-subtlest-default: #edfffd;
-  --background-accent-turquoise-subtlest-hovered: #c0fffc;
-  --background-accent-turquoise-subtlest-pressed: #81fffb;
+  --background-accent-turquoise-subtlest-default: #c0fffc;
+  --background-accent-turquoise-subtlest-hovered: #81fffb;
+  --background-accent-turquoise-subtlest-pressed: #3afff9;
   --background-accent-turquoise-subtle-default: #c0fffc;
   --background-accent-turquoise-subtle-hovered: #81fffb;
   --background-accent-turquoise-subtle-pressed: #3afff9;
-  --background-accent-turquoise-bold-default: #00918d;
-  --background-accent-turquoise-bold-hovered: #007271;
-  --background-accent-turquoise-bold-pressed: #045d5d;
+  --background-accent-turquoise-bold-default: #00b7b1;
+  --background-accent-turquoise-bold-hovered: #00918d;
+  --background-accent-turquoise-bold-pressed: #007271;
   --background-accent-turquoise-boldest-default: #00373a; /** Fond accent turquoise le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.turquoise.bold. Texte en text.inverted. */
   --background-accent-turquoise-boldest-hovered: #045d5d; /** État survolé de background.accent.turquoise.boldest.default (cartes bold interactives). */
   --background-accent-turquoise-boldest-pressed: #007271; /** État pressé de background.accent.turquoise.boldest.default (cartes bold interactives). */
@@ -558,7 +558,7 @@
   --background-accent-magenta-subtle-pressed: #e581c1;
   --background-accent-magenta-bold-default: #c63c8a;
   --background-accent-magenta-bold-hovered: #aa2c6f;
-  --background-accent-magenta-bold-pressed: #762550;
+  --background-accent-magenta-bold-pressed: #8d275d;
   --background-accent-magenta-boldest-default: #47102d; /** Fond accent magenta le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.magenta.bold. Texte en text.inverted. */
   --background-accent-magenta-boldest-hovered: #762550; /** État survolé de background.accent.magenta.boldest.default (cartes bold interactives). */
   --background-accent-magenta-boldest-pressed: #8d275d; /** État pressé de background.accent.magenta.boldest.default (cartes bold interactives). */
@@ -570,7 +570,7 @@
   --background-accent-blue-grey-subtle-pressed: #7993b7;
   --background-accent-blue-grey-bold-default: #455d84;
   --background-accent-blue-grey-bold-hovered: #384b6c;
-  --background-accent-blue-grey-bold-pressed: #2c374b;
+  --background-accent-blue-grey-bold-pressed: #32415a;
   --background-accent-blue-grey-boldest-default: #1e2533; /** Fond accent blue-grey le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.blue-grey.bold. Texte en text.inverted. */
   --background-accent-blue-grey-boldest-hovered: #2c374b; /** État survolé de background.accent.blue-grey.boldest.default (cartes bold interactives). */
   --background-accent-blue-grey-boldest-pressed: #32415a; /** État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives). */
@@ -742,15 +742,15 @@
  */
 
 [data-theme="dark"] {
-  --background-neutral-subtlest-default: #49585b;
-  --background-neutral-subtlest-hovered: #3f4a4d;
-  --background-neutral-subtlest-pressed: #374043;
-  --background-neutral-subtle-default: #49585b;
-  --background-neutral-subtle-hovered: #596b70;
-  --background-neutral-subtle-pressed: #6f8488;
-  --background-neutral-bold-default: #596b70;
-  --background-neutral-bold-hovered: #6f8488;
-  --background-neutral-bold-pressed: #8d9fa3;
+  --background-neutral-subtlest-default: #596b70;
+  --background-neutral-subtlest-hovered: #6f8488;
+  --background-neutral-subtlest-pressed: #8d9fa3;
+  --background-neutral-subtle-default: #3f4a4d;
+  --background-neutral-subtle-hovered: #49585b;
+  --background-neutral-subtle-pressed: #596b70;
+  --background-neutral-bold-default: #6f8488;
+  --background-neutral-bold-hovered: #8d9fa3;
+  --background-neutral-bold-pressed: #b5c1c4;
   --background-neutral-boldest-default: #d8dedf; /** Fond neutre le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, neutral.bold. Texte en text.inverted. */
   --background-neutral-boldest-hovered: #eaedee; /** État survolé de background.neutral.boldest.default (cartes bold interactives). */
   --background-neutral-boldest-pressed: #f7f8f8; /** État pressé de background.neutral.boldest.default (cartes bold interactives). */
@@ -767,9 +767,9 @@
   --background-brand-subtle-default: #2354aa;
   --background-brand-subtle-hovered: #2467d1;
   --background-brand-subtle-pressed: #2c7ee4;
-  --background-brand-bold-default: #2c7ee4;
-  --background-brand-bold-hovered: #429aef;
-  --background-brand-bold-pressed: #66b8f4;
+  --background-brand-bold-default: #429aef;
+  --background-brand-bold-hovered: #66b8f4;
+  --background-brand-bold-pressed: #97d2f9;
   --background-brand-boldest-default: #c1e3fc; /** Miroir de background.comete.boldest.default pour la charte du client (BrandProvider). Suit le thème. Jamais un contrôle. Texte en text.inverted. */
   --background-brand-boldest-hovered: #dceefd; /** État survolé de background.brand.boldest.default. */
   --background-brand-boldest-pressed: #f0f8fe; /** État pressé de background.brand.boldest.default. */
@@ -779,40 +779,40 @@
   --background-comete-subtle-default: #2354aa;
   --background-comete-subtle-hovered: #2467d1;
   --background-comete-subtle-pressed: #2c7ee4;
-  --background-comete-bold-default: #2c7ee4;
-  --background-comete-bold-hovered: #429aef;
-  --background-comete-bold-pressed: #66b8f4;
+  --background-comete-bold-default: #429aef;
+  --background-comete-bold-hovered: #66b8f4;
+  --background-comete-bold-pressed: #97d2f9;
   --background-comete-boldest-default: #c1e3fc; /** Fond Comète le plus contrasté, qui suit le thème (navy en clair, bleu clair en sombre) : carte bold comete. Navy fixe : surface.comete. Texte en text.inverted. */
   --background-comete-boldest-hovered: #dceefd; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
   --background-comete-boldest-pressed: #f0f8fe; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
   --background-selected-subtle-default: #1e3661;
   --background-selected-subtle-hovered: #224986;
   --background-selected-subtle-pressed: #2354aa;
-  --background-selected-bold-default: #2c7ee4;
-  --background-selected-bold-hovered: #429aef;
-  --background-selected-bold-pressed: #66b8f4;
+  --background-selected-bold-default: #c1e3fc;
+  --background-selected-bold-hovered: #dceefd;
+  --background-selected-bold-pressed: #f0f8fe;
   --background-field-default: #252a2c; /** Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default. */
-  --background-success-subtlest-default: #245041;
-  --background-success-subtlest-hovered: #036240;
-  --background-success-subtlest-pressed: #00784d;
+  --background-success-subtlest-default: #0e2d24;
+  --background-success-subtlest-hovered: #245041;
+  --background-success-subtlest-pressed: #036240;
   --background-success-subtle-default: #036240;
   --background-success-subtle-hovered: #00784d;
   --background-success-subtle-pressed: #009b60;
-  --background-success-bold-default: #009b60;
-  --background-success-bold-hovered: #0abf76;
-  --background-success-bold-pressed: #2fd88e;
+  --background-success-bold-default: #2fd88e;
+  --background-success-bold-hovered: #6aebae;
+  --background-success-bold-pressed: #a4f6ca;
   --background-success-boldest-default: #a4f6ca; /** Fond succès le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, success.bold. Texte en text.inverted. */
   --background-success-boldest-hovered: #d0fbe2; /** État survolé de background.success.boldest.default (cartes bold interactives). */
   --background-success-boldest-pressed: #ebfef4; /** État pressé de background.success.boldest.default (cartes bold interactives). */
-  --background-warning-subtlest-default: #c56509;
-  --background-warning-subtlest-hovered: #f68909;
-  --background-warning-subtlest-pressed: #fca013;
+  --background-warning-subtlest-default: #441f06;
+  --background-warning-subtlest-hovered: #7e4210;
+  --background-warning-subtlest-pressed: #9c4f10;
   --background-warning-subtle-default: #9c4f10;
   --background-warning-subtle-hovered: #c56509;
   --background-warning-subtle-pressed: #f68909;
-  --background-warning-bold-default: #f68909;
-  --background-warning-bold-hovered: #fca013;
-  --background-warning-bold-pressed: #feb939;
+  --background-warning-bold-default: #feb939;
+  --background-warning-bold-hovered: #ffd672;
+  --background-warning-bold-pressed: #ffe8a9;
   --background-warning-boldest-default: #ffe8a9; /** Fond avertissement le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, warning.bold. Texte en text.inverted. */
   --background-warning-boldest-hovered: #fff6d4; /** État survolé de background.warning.boldest.default (cartes bold interactives). */
   --background-warning-boldest-pressed: #fffbed; /** État pressé de background.warning.boldest.default (cartes bold interactives). */
@@ -834,9 +834,9 @@
   --background-information-subtle-default: #005391;
   --background-information-subtle-hovered: #0060b0;
   --background-information-subtle-pressed: #0076d8;
-  --background-information-bold-default: #0076d8;
-  --background-information-bold-hovered: #009bfe;
-  --background-information-bold-pressed: #26b5ff;
+  --background-information-bold-default: #009bfe;
+  --background-information-bold-hovered: #26b5ff;
+  --background-information-bold-pressed: #71cdff;
   --background-information-boldest-default: #b4e3ff; /** Fond information le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, information.bold. Texte en text.inverted. */
   --background-information-boldest-hovered: #ddf1ff; /** État survolé de background.information.boldest.default (cartes bold interactives). */
   --background-information-boldest-pressed: #eff8ff; /** État pressé de background.information.boldest.default (cartes bold interactives). */
@@ -846,9 +846,9 @@
   --background-accent-purple-subtle-default: #51458e;
   --background-accent-purple-subtle-hovered: #5e4db2;
   --background-accent-purple-subtle-pressed: #6e5dc6;
-  --background-accent-purple-bold-default: #6e5dc6;
-  --background-accent-purple-bold-hovered: #8270db;
-  --background-accent-purple-bold-pressed: #9897e2;
+  --background-accent-purple-bold-default: #9897e2;
+  --background-accent-purple-bold-hovered: #b5b8ec;
+  --background-accent-purple-bold-pressed: #d1d4f4;
   --background-accent-purple-boldest-default: #d1d4f4; /** Fond accent purple le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.purple.bold. Texte en text.inverted. */
   --background-accent-purple-boldest-hovered: #e6e8f9; /** État survolé de background.accent.purple.boldest.default (cartes bold interactives). */
   --background-accent-purple-boldest-pressed: #f3f0ff; /** État pressé de background.accent.purple.boldest.default (cartes bold interactives). */
@@ -858,9 +858,9 @@
   --background-accent-teal-subtle-default: #215069;
   --background-accent-teal-subtle-hovered: #1e6080;
   --background-accent-teal-subtle-pressed: #1c759e;
-  --background-accent-teal-bold-default: #1c759e;
-  --background-accent-teal-bold-hovered: #1f92bb;
-  --background-accent-teal-bold-pressed: #42b2d7;
+  --background-accent-teal-bold-default: #42b2d7;
+  --background-accent-teal-bold-hovered: #79cee7;
+  --background-accent-teal-bold-pressed: #afe3f2;
   --background-accent-teal-boldest-default: #afe3f2; /** Fond accent teal le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.teal.bold. Texte en text.inverted. */
   --background-accent-teal-boldest-hovered: #d5f1f8; /** État survolé de background.accent.teal.boldest.default (cartes bold interactives). */
   --background-accent-teal-boldest-pressed: #eefafd; /** État pressé de background.accent.teal.boldest.default (cartes bold interactives). */
@@ -870,9 +870,9 @@
   --background-accent-turquoise-subtle-default: #007271;
   --background-accent-turquoise-subtle-hovered: #00918d;
   --background-accent-turquoise-subtle-pressed: #00b7b1;
-  --background-accent-turquoise-bold-default: #00b7b1;
-  --background-accent-turquoise-bold-hovered: #00e2d5;
-  --background-accent-turquoise-bold-pressed: #00ffef;
+  --background-accent-turquoise-bold-default: #00ffef;
+  --background-accent-turquoise-bold-hovered: #3afff9;
+  --background-accent-turquoise-bold-pressed: #81fffb;
   --background-accent-turquoise-boldest-default: #81fffb; /** Fond accent turquoise le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.turquoise.bold. Texte en text.inverted. */
   --background-accent-turquoise-boldest-hovered: #c0fffc; /** État survolé de background.accent.turquoise.boldest.default (cartes bold interactives). */
   --background-accent-turquoise-boldest-pressed: #edfffd; /** État pressé de background.accent.turquoise.boldest.default (cartes bold interactives). */
@@ -882,9 +882,9 @@
   --background-accent-magenta-subtle-default: #8d275d;
   --background-accent-magenta-subtle-hovered: #aa2c6f;
   --background-accent-magenta-subtle-pressed: #c63c8a;
-  --background-accent-magenta-bold-default: #c63c8a;
-  --background-accent-magenta-bold-hovered: #da62ac;
-  --background-accent-magenta-bold-pressed: #e581c1;
+  --background-accent-magenta-bold-default: #e581c1;
+  --background-accent-magenta-bold-hovered: #efb2da;
+  --background-accent-magenta-bold-pressed: #f6d4eb;
   --background-accent-magenta-boldest-default: #f6d4eb; /** Fond accent magenta le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.magenta.bold. Texte en text.inverted. */
   --background-accent-magenta-boldest-hovered: #f9eaf5; /** État survolé de background.accent.magenta.boldest.default (cartes bold interactives). */
   --background-accent-magenta-boldest-pressed: #fcf3f9; /** État pressé de background.accent.magenta.boldest.default (cartes bold interactives). */
@@ -894,9 +894,9 @@
   --background-accent-blue-grey-subtle-default: #32415a;
   --background-accent-blue-grey-subtle-hovered: #384b6c;
   --background-accent-blue-grey-subtle-pressed: #455d84;
-  --background-accent-blue-grey-bold-default: #455d84;
-  --background-accent-blue-grey-bold-hovered: #58759f;
-  --background-accent-blue-grey-bold-pressed: #7993b7;
+  --background-accent-blue-grey-bold-default: #7993b7;
+  --background-accent-blue-grey-bold-hovered: #a8b9d1;
+  --background-accent-blue-grey-bold-pressed: #d1d9e6;
   --background-accent-blue-grey-boldest-default: #d1d9e6; /** Fond accent blue-grey le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.blue-grey.bold. Texte en text.inverted. */
   --background-accent-blue-grey-boldest-hovered: #eaedf4; /** État survolé de background.accent.blue-grey.boldest.default (cartes bold interactives). */
   --background-accent-blue-grey-boldest-pressed: #f5f7fa; /** État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives). */
@@ -909,9 +909,9 @@
   --background-cycle-day-subtle-default: #441f06;
   --background-cycle-day-subtle-hovered: #7e4210;
   --background-cycle-day-subtle-pressed: #9c4f10;
-  --background-cycle-day-bold-default: #f68909;
-  --background-cycle-day-bold-hovered: #fca013;
-  --background-cycle-day-bold-pressed: #feb939;
+  --background-cycle-day-bold-default: #feb939;
+  --background-cycle-day-bold-hovered: #ffd672;
+  --background-cycle-day-bold-pressed: #ffe8a9;
   --background-focused-default: #66b8f4;
   --surface-default: #374043;
   --surface-sunken-default: #252a2c;
@@ -1066,15 +1066,15 @@
 /* ── Fallback: prefers-color-scheme ──────────────────────────── */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --background-neutral-subtlest-default: #49585b;
-    --background-neutral-subtlest-hovered: #3f4a4d;
-    --background-neutral-subtlest-pressed: #374043;
-    --background-neutral-subtle-default: #49585b;
-    --background-neutral-subtle-hovered: #596b70;
-    --background-neutral-subtle-pressed: #6f8488;
-    --background-neutral-bold-default: #596b70;
-    --background-neutral-bold-hovered: #6f8488;
-    --background-neutral-bold-pressed: #8d9fa3;
+    --background-neutral-subtlest-default: #596b70;
+    --background-neutral-subtlest-hovered: #6f8488;
+    --background-neutral-subtlest-pressed: #8d9fa3;
+    --background-neutral-subtle-default: #3f4a4d;
+    --background-neutral-subtle-hovered: #49585b;
+    --background-neutral-subtle-pressed: #596b70;
+    --background-neutral-bold-default: #6f8488;
+    --background-neutral-bold-hovered: #8d9fa3;
+    --background-neutral-bold-pressed: #b5c1c4;
     --background-neutral-boldest-default: #d8dedf; /** Fond neutre le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, neutral.bold. Texte en text.inverted. */
     --background-neutral-boldest-hovered: #eaedee; /** État survolé de background.neutral.boldest.default (cartes bold interactives). */
     --background-neutral-boldest-pressed: #f7f8f8; /** État pressé de background.neutral.boldest.default (cartes bold interactives). */
@@ -1091,9 +1091,9 @@
     --background-brand-subtle-default: #2354aa;
     --background-brand-subtle-hovered: #2467d1;
     --background-brand-subtle-pressed: #2c7ee4;
-    --background-brand-bold-default: #2c7ee4;
-    --background-brand-bold-hovered: #429aef;
-    --background-brand-bold-pressed: #66b8f4;
+    --background-brand-bold-default: #429aef;
+    --background-brand-bold-hovered: #66b8f4;
+    --background-brand-bold-pressed: #97d2f9;
     --background-brand-boldest-default: #c1e3fc; /** Miroir de background.comete.boldest.default pour la charte du client (BrandProvider). Suit le thème. Jamais un contrôle. Texte en text.inverted. */
     --background-brand-boldest-hovered: #dceefd; /** État survolé de background.brand.boldest.default. */
     --background-brand-boldest-pressed: #f0f8fe; /** État pressé de background.brand.boldest.default. */
@@ -1103,40 +1103,40 @@
     --background-comete-subtle-default: #2354aa;
     --background-comete-subtle-hovered: #2467d1;
     --background-comete-subtle-pressed: #2c7ee4;
-    --background-comete-bold-default: #2c7ee4;
-    --background-comete-bold-hovered: #429aef;
-    --background-comete-bold-pressed: #66b8f4;
+    --background-comete-bold-default: #429aef;
+    --background-comete-bold-hovered: #66b8f4;
+    --background-comete-bold-pressed: #97d2f9;
     --background-comete-boldest-default: #c1e3fc; /** Fond Comète le plus contrasté, qui suit le thème (navy en clair, bleu clair en sombre) : carte bold comete. Navy fixe : surface.comete. Texte en text.inverted. */
     --background-comete-boldest-hovered: #dceefd; /** État survolé de background.comete.boldest.default (cartes bold interactives). */
     --background-comete-boldest-pressed: #f0f8fe; /** État pressé de background.comete.boldest.default (cartes bold interactives). */
     --background-selected-subtle-default: #1e3661;
     --background-selected-subtle-hovered: #224986;
     --background-selected-subtle-pressed: #2354aa;
-    --background-selected-bold-default: #2c7ee4;
-    --background-selected-bold-hovered: #429aef;
-    --background-selected-bold-pressed: #66b8f4;
+    --background-selected-bold-default: #c1e3fc;
+    --background-selected-bold-hovered: #dceefd;
+    --background-selected-bold-pressed: #f0f8fe;
     --background-field-default: #252a2c; /** Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default. */
-    --background-success-subtlest-default: #245041;
-    --background-success-subtlest-hovered: #036240;
-    --background-success-subtlest-pressed: #00784d;
+    --background-success-subtlest-default: #0e2d24;
+    --background-success-subtlest-hovered: #245041;
+    --background-success-subtlest-pressed: #036240;
     --background-success-subtle-default: #036240;
     --background-success-subtle-hovered: #00784d;
     --background-success-subtle-pressed: #009b60;
-    --background-success-bold-default: #009b60;
-    --background-success-bold-hovered: #0abf76;
-    --background-success-bold-pressed: #2fd88e;
+    --background-success-bold-default: #2fd88e;
+    --background-success-bold-hovered: #6aebae;
+    --background-success-bold-pressed: #a4f6ca;
     --background-success-boldest-default: #a4f6ca; /** Fond succès le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, success.bold. Texte en text.inverted. */
     --background-success-boldest-hovered: #d0fbe2; /** État survolé de background.success.boldest.default (cartes bold interactives). */
     --background-success-boldest-pressed: #ebfef4; /** État pressé de background.success.boldest.default (cartes bold interactives). */
-    --background-warning-subtlest-default: #c56509;
-    --background-warning-subtlest-hovered: #f68909;
-    --background-warning-subtlest-pressed: #fca013;
+    --background-warning-subtlest-default: #441f06;
+    --background-warning-subtlest-hovered: #7e4210;
+    --background-warning-subtlest-pressed: #9c4f10;
     --background-warning-subtle-default: #9c4f10;
     --background-warning-subtle-hovered: #c56509;
     --background-warning-subtle-pressed: #f68909;
-    --background-warning-bold-default: #f68909;
-    --background-warning-bold-hovered: #fca013;
-    --background-warning-bold-pressed: #feb939;
+    --background-warning-bold-default: #feb939;
+    --background-warning-bold-hovered: #ffd672;
+    --background-warning-bold-pressed: #ffe8a9;
     --background-warning-boldest-default: #ffe8a9; /** Fond avertissement le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, warning.bold. Texte en text.inverted. */
     --background-warning-boldest-hovered: #fff6d4; /** État survolé de background.warning.boldest.default (cartes bold interactives). */
     --background-warning-boldest-pressed: #fffbed; /** État pressé de background.warning.boldest.default (cartes bold interactives). */
@@ -1158,9 +1158,9 @@
     --background-information-subtle-default: #005391;
     --background-information-subtle-hovered: #0060b0;
     --background-information-subtle-pressed: #0076d8;
-    --background-information-bold-default: #0076d8;
-    --background-information-bold-hovered: #009bfe;
-    --background-information-bold-pressed: #26b5ff;
+    --background-information-bold-default: #009bfe;
+    --background-information-bold-hovered: #26b5ff;
+    --background-information-bold-pressed: #71cdff;
     --background-information-boldest-default: #b4e3ff; /** Fond information le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, information.bold. Texte en text.inverted. */
     --background-information-boldest-hovered: #ddf1ff; /** État survolé de background.information.boldest.default (cartes bold interactives). */
     --background-information-boldest-pressed: #eff8ff; /** État pressé de background.information.boldest.default (cartes bold interactives). */
@@ -1170,9 +1170,9 @@
     --background-accent-purple-subtle-default: #51458e;
     --background-accent-purple-subtle-hovered: #5e4db2;
     --background-accent-purple-subtle-pressed: #6e5dc6;
-    --background-accent-purple-bold-default: #6e5dc6;
-    --background-accent-purple-bold-hovered: #8270db;
-    --background-accent-purple-bold-pressed: #9897e2;
+    --background-accent-purple-bold-default: #9897e2;
+    --background-accent-purple-bold-hovered: #b5b8ec;
+    --background-accent-purple-bold-pressed: #d1d4f4;
     --background-accent-purple-boldest-default: #d1d4f4; /** Fond accent purple le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.purple.bold. Texte en text.inverted. */
     --background-accent-purple-boldest-hovered: #e6e8f9; /** État survolé de background.accent.purple.boldest.default (cartes bold interactives). */
     --background-accent-purple-boldest-pressed: #f3f0ff; /** État pressé de background.accent.purple.boldest.default (cartes bold interactives). */
@@ -1182,9 +1182,9 @@
     --background-accent-teal-subtle-default: #215069;
     --background-accent-teal-subtle-hovered: #1e6080;
     --background-accent-teal-subtle-pressed: #1c759e;
-    --background-accent-teal-bold-default: #1c759e;
-    --background-accent-teal-bold-hovered: #1f92bb;
-    --background-accent-teal-bold-pressed: #42b2d7;
+    --background-accent-teal-bold-default: #42b2d7;
+    --background-accent-teal-bold-hovered: #79cee7;
+    --background-accent-teal-bold-pressed: #afe3f2;
     --background-accent-teal-boldest-default: #afe3f2; /** Fond accent teal le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.teal.bold. Texte en text.inverted. */
     --background-accent-teal-boldest-hovered: #d5f1f8; /** État survolé de background.accent.teal.boldest.default (cartes bold interactives). */
     --background-accent-teal-boldest-pressed: #eefafd; /** État pressé de background.accent.teal.boldest.default (cartes bold interactives). */
@@ -1194,9 +1194,9 @@
     --background-accent-turquoise-subtle-default: #007271;
     --background-accent-turquoise-subtle-hovered: #00918d;
     --background-accent-turquoise-subtle-pressed: #00b7b1;
-    --background-accent-turquoise-bold-default: #00b7b1;
-    --background-accent-turquoise-bold-hovered: #00e2d5;
-    --background-accent-turquoise-bold-pressed: #00ffef;
+    --background-accent-turquoise-bold-default: #00ffef;
+    --background-accent-turquoise-bold-hovered: #3afff9;
+    --background-accent-turquoise-bold-pressed: #81fffb;
     --background-accent-turquoise-boldest-default: #81fffb; /** Fond accent turquoise le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.turquoise.bold. Texte en text.inverted. */
     --background-accent-turquoise-boldest-hovered: #c0fffc; /** État survolé de background.accent.turquoise.boldest.default (cartes bold interactives). */
     --background-accent-turquoise-boldest-pressed: #edfffd; /** État pressé de background.accent.turquoise.boldest.default (cartes bold interactives). */
@@ -1206,9 +1206,9 @@
     --background-accent-magenta-subtle-default: #8d275d;
     --background-accent-magenta-subtle-hovered: #aa2c6f;
     --background-accent-magenta-subtle-pressed: #c63c8a;
-    --background-accent-magenta-bold-default: #c63c8a;
-    --background-accent-magenta-bold-hovered: #da62ac;
-    --background-accent-magenta-bold-pressed: #e581c1;
+    --background-accent-magenta-bold-default: #e581c1;
+    --background-accent-magenta-bold-hovered: #efb2da;
+    --background-accent-magenta-bold-pressed: #f6d4eb;
     --background-accent-magenta-boldest-default: #f6d4eb; /** Fond accent magenta le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.magenta.bold. Texte en text.inverted. */
     --background-accent-magenta-boldest-hovered: #f9eaf5; /** État survolé de background.accent.magenta.boldest.default (cartes bold interactives). */
     --background-accent-magenta-boldest-pressed: #fcf3f9; /** État pressé de background.accent.magenta.boldest.default (cartes bold interactives). */
@@ -1218,9 +1218,9 @@
     --background-accent-blue-grey-subtle-default: #32415a;
     --background-accent-blue-grey-subtle-hovered: #384b6c;
     --background-accent-blue-grey-subtle-pressed: #455d84;
-    --background-accent-blue-grey-bold-default: #455d84;
-    --background-accent-blue-grey-bold-hovered: #58759f;
-    --background-accent-blue-grey-bold-pressed: #7993b7;
+    --background-accent-blue-grey-bold-default: #7993b7;
+    --background-accent-blue-grey-bold-hovered: #a8b9d1;
+    --background-accent-blue-grey-bold-pressed: #d1d9e6;
     --background-accent-blue-grey-boldest-default: #d1d9e6; /** Fond accent blue-grey le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, accent.blue-grey.bold. Texte en text.inverted. */
     --background-accent-blue-grey-boldest-hovered: #eaedf4; /** État survolé de background.accent.blue-grey.boldest.default (cartes bold interactives). */
     --background-accent-blue-grey-boldest-pressed: #f5f7fa; /** État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives). */
@@ -1233,9 +1233,9 @@
     --background-cycle-day-subtle-default: #441f06;
     --background-cycle-day-subtle-hovered: #7e4210;
     --background-cycle-day-subtle-pressed: #9c4f10;
-    --background-cycle-day-bold-default: #f68909;
-    --background-cycle-day-bold-hovered: #fca013;
-    --background-cycle-day-bold-pressed: #feb939;
+    --background-cycle-day-bold-default: #feb939;
+    --background-cycle-day-bold-hovered: #ffd672;
+    --background-cycle-day-bold-pressed: #ffe8a9;
     --background-focused-default: #66b8f4;
     --surface-default: #374043;
     --surface-sunken-default: #252a2c;

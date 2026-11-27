@@ -9,12 +9,14 @@
 - **PR #9 (descriptions du lot A)** : la branche `descriptions-lot-a` porte encore les anciens noms et l'ancien ordre. Elle entrera en conflit avec main sur `light.json` et `dark.json`. Rejouer le renommage et le tri dessus avant de la fusionner.
 - **`selected.subtle` au palier 100** : le nom est cohérent avec `bold`, pas avec la valeur du `subtle` des autres familles (200). Assumé, à garder en tête si une famille `selected` à quatre niveaux apparaît.
 
-## Suites de `bold` et `boldest` sombres (0.45.0, 2026-11-25)
+## Suites des fonds calés sur Figma (0.51.0, 2026-11-27)
 
-- **Texte sur `bold` en sombre** : `text.inverted.default` vaut cool-grey.950 en sombre, soit 2,6:1 sur neutral.bold 600, 3,1:1 sur critical, 3,2:1 sur information, 3,6:1 sur comete, 4,1:1 sur success. Le blanc (`text.on-dark-surface`) y fait 5,6:1 (neutral), 4,7:1 (critical), 4,6:1 (information) mais 4,0:1 (comete) et 3,6:1 (success). Aucun token texte ne tient AA sur comete.bold et success.bold en sombre : arbitrage Axel (changer `text.inverted` en sombre, ou les paliers 600).
-- **Button contained** (comete, success, information, brand, accents) : `button.color.*.contained.text` = `text.inverted.default` sur `background.*.bold`, donc encre sur 600 en sombre, sous AA (signalé par la session Button). À arbitrer avec le point précédent. Le Button `inverted` (`background.inverted.*`) n'est pas concerné.
-- **DS à adapter au bump 0.45.0** : `Card.module.css` (bold comete et brand sur `boldest` avec `text.on-dark-surface`, blanc sur bleu 200 en sombre, 1,3:1), `Welcome.stories.tsx` (hero boldest avec `text.on-dark-surface`), `Couleur.stories.tsx` (texte « palier 950, identique en clair et en sombre »), `generateBrandTheme.ts` (carte sombre en dur : brand bold 50/100/200, boldest 950/900/800, à passer en 600/500/400 et 200/100/50).
-- **Figma** : collection `semantics`, douze familles sur treize encore aux anciennes valeurs sombres pour `background/*/bold` et `boldest` (seule `comete` est alignée).
+- **neutral.bold en sombre sous AA** : cool-grey.500, `text.inverted` (encre) à 3,7:1 et `icon.inverted` (cool-grey.900) à 2,7:1, sous AA texte et sous AA composant. Touche badge, tag bold, case cochée, snackbar, Button contained neutral. Pistes : neutral.bold sombre à 400 (encre 5,3:1, icône 3,9:1) ou texte blanc sur 500 (3,9:1, insuffisant). Arbitrage Axel.
+- **Icônes inversées en sombre** : `icon.inverted` (cool-grey.900) est sous 4,5:1 sur comete, information et blue-grey bold (3,4:1 à 3,6:1) mais au-dessus de 3:1, donc AA composant seulement.
+- **neutral.subtlest plus contrasté que neutral.subtle en sombre** : sur surface.default (cool-grey.900), subtlest 600 fait 1,9:1 et subtle 800 fait 1,16:1. L'échelle s'inverse en sombre. À confirmer par Axel.
+- **accent.turquoise : subtle et subtlest identiques en clair** (100/200/300 tous les deux, Figma et code). À différencier.
+- ~~Texte sur `bold` en sombre, Button contained, Figma à aligner~~ : FAIT en 0.51.0, sauf neutral (voir ci-dessus).
+- ~~DS à adapter au bump 0.45.0~~ : FAIT en DS alpha.203 (session Button). Reste pour 0.51.0 : `generateBrandTheme.ts`, brand bold sombre 500/400/300.
 
 ## Suites de `icon.on-comete` et des voiles (2026-11-20)
 

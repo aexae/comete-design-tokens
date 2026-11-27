@@ -114,7 +114,7 @@ Sept familles (plus `surface`), déclinées par **intention** puis par **état**
 - **`comete-*`** — couleur fixe de la marque Comète, jamais surchargée par un client.
 - **`brand-*`** — charte du client, surchargeable à l'exécution. **Miroir rôle pour rôle de `comete-*`**, mêmes valeurs par défaut (bleu Comète). Le design system fournit un `BrandProvider` qui génère et injecte ces valeurs.
 
-Chaque famille porte quatre niveaux d'emphase de fond : `subtlest`, `subtle`, `bold` (bleu action, `comete-blue-700` en clair et `comete-blue-600` en sombre, pour les contrôles et appels à l'action) et `boldest` (le palier le plus contrasté, `comete-blue-950` en clair et `comete-blue-200` en sombre, cartes bold et bandeaux, jamais sur un contrôle). Les deux suivent le thème. `text`, `border` et `icon` ont aussi leur `boldest`. La surface navy non interactive est `--surface-comete` (identique en clair et en sombre).
+Chaque famille porte quatre niveaux d'emphase de fond : `subtlest`, `subtle`, `bold` (bleu action, `comete-blue-700` en clair et `comete-blue-500` en sombre, pour les contrôles et appels à l'action) et `boldest` (le palier le plus contrasté, `comete-blue-950` en clair et `comete-blue-200` en sombre, cartes bold et bandeaux, jamais sur un contrôle). Les deux suivent le thème. `text`, `border` et `icon` ont aussi leur `boldest`. La surface navy non interactive est `--surface-comete` (identique en clair et en sombre).
 
 #### `surface-*` vs `background-*` (doctrine)
 

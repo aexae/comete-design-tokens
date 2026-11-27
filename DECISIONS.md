@@ -2,6 +2,15 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-27 — Fonds calés sur les variables Figma (0.51.0)
+
+- **Décision** (Axel) : « cale le code sur Figma pour les écarts ». Axel a corrigé la collection `semantics` (neutral, brand, accents, cycle, neutral subtlest sombre), le code reprend ses valeurs. 60 valeurs changent, aucun nom.
+- **Sombre** : `bold` en 500/400/300 pour neutral, comete, brand, information ; en 400/300/200 pour success, warning, les cinq accents et `cycle.day` ; en 200/100/50 pour selected ; critical reste en 600/500/400. `neutral.subtle` en 800/700/600, `neutral.subtlest` en 600/500/400, `success.subtlest` et `warning.subtlest` en 950/900/800. Les `boldest` restent en 200/100/50, brand compris.
+- **Clair** : `pressed` des bold magenta, teal et blue-grey à 800 ; `accent.turquoise.bold` en 600/700/800 ; `accent.turquoise.subtlest` en 100/200/300.
+- **Contrastes** : `text.inverted` (encre en sombre) passe AA texte sur tous les bold sombres (4,6:1 à 11,4:1) sauf neutral.bold (3,7:1). Le blanc reste sur critical.bold (4,7:1). Voir TODO.
+- **Figma** : descriptions de `semantics` vidées en attendant la validation des descriptions du code (elles disent l'usage, jamais la valeur). Code syntax WEB de `background/inverted/subtlest/default` corrigée (pointait sur `--background-inverted-subtle-default`).
+- **Non cassant** : valeurs seules. Impact DS au bump : `generateBrandTheme.ts`, carte sombre brand bold à passer de 600/500/400 à 500/400/300.
+
 ## 2026-11-27 — `subtler` devient `subtle`, ordre des niveaux imposé (0.50.0, CASSANT)
 
 - **Décision** (Axel) : l'échelle d'emphase des fonds est `subtlest` / `subtle` / `bold` / `boldest`. `background.*.subtler` devient `background.*.subtle` pour treize familles (neutral, inverted, brand, comete, success, warning, critical, information, cinq accents). `background.selected.subtlest`, `background.cycle.day.subtlest` et `background.cycle.night.subtlest` deviennent `subtle`, en miroir de leur `bold`.

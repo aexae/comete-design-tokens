@@ -4,9 +4,12 @@
  "theme": "dark",
  "backdrop": "#374043",
  "tokens": {
-  "breakpointSm": 600,
-  "breakpointMd": 900,
-  "breakpointLg": 1200,
+  "breakpointWatch": 0,
+  "breakpointMobile": 280,
+  "breakpointTablet": 600,
+  "breakpointLaptop": 1200,
+  "breakpointDesktop": 1536,
+  "breakpointTv": 1920,
   "red50": 15921918,
   "red100": 14803455,
   "red200": 13158655,
@@ -1179,17 +1182,32 @@
  ],
  "catalog": [
   {
-   "name": "breakpointSm",
+   "name": "breakpointWatch",
    "type": "dimension",
    "tier": "base"
   },
   {
-   "name": "breakpointMd",
+   "name": "breakpointMobile",
    "type": "dimension",
    "tier": "base"
   },
   {
-   "name": "breakpointLg",
+   "name": "breakpointTablet",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "breakpointLaptop",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "breakpointDesktop",
+   "type": "dimension",
+   "tier": "base"
+  },
+  {
+   "name": "breakpointTv",
    "type": "dimension",
    "tier": "base"
   },

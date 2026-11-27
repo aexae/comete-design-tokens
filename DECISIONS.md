@@ -2,11 +2,21 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
-## 2026-11-27 — Breakpoints préfixés et alignés sur le DS (0.49.0, CASSANT)
+## 2026-11-27 — Breakpoints préfixés, échelle watch → tv (0.49.0, CASSANT)
 
-- **Décision** (Axel) : les tokens de breakpoint prennent le préfixe `breakpoint` et les valeurs du code du DS (`BREAKPOINTS` de `src/tokens/breakpoints.ts`) : `--breakpoint-sm` 600 px, `--breakpoint-md` 900 px, `--breakpoint-lg` 1200 px. `--mobile` (0), `--tablet` (600), `--laptop` (1200) et `--desktop` (1920) sont retirés.
-- **Raison** : noms sans préfixe exposés à des collisions avec les variables des applications, et échelle différente de celle que le DS utilise réellement (pas de 900, un 0 et un 1920 inutilisés). Aucun usage relevé dans le DS ni dans les applications.
-- **Limite** : un `@media` / `@container` ne lit pas `var()`. Ces tokens documentent l'échelle et alimentent la sortie Omnis (`breakpointSm/Md/Lg`) ; les CSS du DS recopient les valeurs, sous la garde de `breakpoints.test.ts`.
+- **Décision** (Axel) : six breakpoints aux noms explicites, préfixés `breakpoint` :
+  `--breakpoint-watch` 0, `--breakpoint-mobile` 280, `--breakpoint-tablet` 600,
+  `--breakpoint-laptop` 1200, `--breakpoint-desktop` 1536, `--breakpoint-tv` 1920. Les anciens
+  `--mobile`, `--tablet`, `--laptop`, `--desktop` (sans préfixe) sont retirés.
+- **Valeurs** : reprises du tableau Breakpoints de Figma (issu de comete_webapp) en ne gardant
+  que les noms explicites. `mobile` à 280 pour couvrir l'écran externe des pliants ; `desktop`
+  à 1536, début du petit desktop ; `watch` et `tv` ajoutés (montres ; démos et présentations,
+  vidéoprojecteurs et TV en 1920 — les moniteurs 1920 correspondent aussi). L'ancien palier
+  900 disparaît : le DS bascule sur `tablet`.
+- **Miroir** : `BREAKPOINTS` du DS (mêmes clés, mêmes valeurs) et la collection Figma
+  `base/breakpoints` (code syntax `var(--breakpoint-*)`). Sortie Omnis : `breakpointWatch`…
+- **Limite** : un `@media` / `@container` ne lit pas `var()` ; les CSS du DS recopient les
+  valeurs sous la garde de `breakpoints.test.ts`.
 
 ## 2026-11-26 — `quick-actions` → `quick-actions-menu` (0.48.0, CASSANT)
 

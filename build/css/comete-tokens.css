@@ -25,9 +25,12 @@
   --easing-exit: cubic-bezier(0.2, 0, 1, 0.9); /** Elements leaving the screen */
   --easing-emphasized: cubic-bezier(0.23, 1, 0.32, 1); /** Strong ease-out: fast start, long soft landing (selection indicators, state changes that must feel instant) */
   --easing-linear: linear; /** Constant speed (spinners, progress) */
-  --breakpoint-sm: 600px; /** Bascule tablette (600 px). Miroir de BREAKPOINTS.sm du DS : seuil tablet de Grid, Table hideBelow sm. */
-  --breakpoint-md: 900px; /** Palier intermédiaire (900 px). Miroir de BREAKPOINTS.md du DS : Table hideBelow md. */
-  --breakpoint-lg: 1200px; /** Bascule desktop (1200 px). Miroir de BREAKPOINTS.lg du DS : seuil desktop de Grid, Table hideBelow lg, gouttière de Page. */
+  --breakpoint-watch: 0px; /** Montres connectées (0 px et plus). Miroir de BREAKPOINTS.watch. */
+  --breakpoint-mobile: 280px; /** Smartphones, écran externe des pliants compris (280 px et plus). Miroir de BREAKPOINTS.mobile. */
+  --breakpoint-tablet: 600px; /** Tablette, smartphone en paysage (600 px et plus). Miroir de BREAKPOINTS.tablet : Grid tablet, Table hideBelow tablet ; Page.Bar compact, Button collapseLabel et BottomNav (application) en dessous. */
+  --breakpoint-laptop: 1200px; /** Ordinateur portable (1200 px et plus). Miroir de BREAKPOINTS.laptop : Grid laptop, Table hideBelow laptop, SideNav persistante (web), gouttière de Page. */
+  --breakpoint-desktop: 1536px; /** Ordinateur fixe, à partir du petit desktop (1536 px et plus). Miroir de BREAKPOINTS.desktop. */
+  --breakpoint-tv: 1920px; /** TV et vidéoprojecteurs, démos et présentations (1920 px et plus). Les moniteurs de bureau 1920 correspondent aussi. Miroir de BREAKPOINTS.tv. */
   --red-50: #fef2f2;
   --red-100: #ffe1e1;
   --red-200: #ffc8c8;
@@ -1811,8 +1814,8 @@
   --page-toolbar-spacing-gap: var(--space100); /** Espace entre recherche, filtres, start et end (8 px) */
   --page-toolbar-spacing-padding-y: var(--space100); /** Retrait vertical de la toolbar (8 px) */
   --page-toolbar-spacing-group-gap: var(--space100); /** Espace entre les éléments des zones filters, start et end (8 px) */
-  --page-spacing-gutter-mobile: var(--space150); /** Gouttière horizontale de la page sous 1200 px (mobile et tablette), partagée par Bar, Toolbar et Body (12 px) */
-  --page-spacing-gutter-laptop: var(--space300); /** Gouttière horizontale de la page à partir de 1200 px, partagée par Bar, Toolbar et Body (24 px) */
+  --page-spacing-gutter-mobile: var(--space150); /** Gouttière horizontale de la page sous le breakpoint laptop (mobile et tablette), partagée par Bar, Toolbar et Body (12 px) */
+  --page-spacing-gutter-laptop: var(--space300); /** Gouttière horizontale de la page à partir du breakpoint laptop, partagée par Bar, Toolbar et Body (24 px) */
   --page-spacing-body-padding-top: var(--space100); /** Retrait haut du Body, sous la toolbar (8 px). Pas de retrait bas */
   --page-spacing-state-padding-y: var(--space600); /** Marge verticale de l'état vide ou erreur centré dans le Body (48 px) */
   --page-spacing-skeleton-gap: var(--space300); /** Espace entre les blocs du squelette de chargement du Body (24 px) */

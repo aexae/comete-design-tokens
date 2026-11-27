@@ -1,13 +1,12 @@
 {
  "schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
- "version": "0.48.0",
+ "version": "0.49.0",
  "theme": "light",
  "backdrop": "#ffffff",
  "tokens": {
-  "mobile": 0,
-  "tablet": 600,
-  "laptop": 1200,
-  "desktop": 1920,
+  "breakpointSm": 600,
+  "breakpointMd": 900,
+  "breakpointLg": 1200,
   "red50": 15921918,
   "red100": 14803455,
   "red200": 13158655,
@@ -1180,22 +1179,17 @@
  ],
  "catalog": [
   {
-   "name": "mobile",
+   "name": "breakpointSm",
    "type": "dimension",
    "tier": "base"
   },
   {
-   "name": "tablet",
+   "name": "breakpointMd",
    "type": "dimension",
    "tier": "base"
   },
   {
-   "name": "laptop",
-   "type": "dimension",
-   "tier": "base"
-  },
-  {
-   "name": "desktop",
+   "name": "breakpointLg",
    "type": "dimension",
    "tier": "base"
   },

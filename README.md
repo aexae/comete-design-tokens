@@ -76,7 +76,7 @@ Un fichier CSS — `build/css/comete-tokens.css` — contenant **640 custom prop
 | Ombres | `--shadow-key-0..6`, `--shadow-ambiant-0..6` et les composites `--elevation-none/xsmall/small/medium/large/xlarge/xxlarge` |
 | Animation | `--duration-*` (instant → slower), `--easing-*` (default, entrance, exit, linear) |
 | Contrôles | `--control-{height,radius,padding-x,icon}-{compact,default,touch}` — densité partagée par les composants interactifs |
-| Divers | `--z-index-*` (hide → toast), `--opacity-*`, breakpoints (`--mobile`, `--tablet`, `--laptop`, `--desktop`) |
+| Divers | `--z-index-*` (hide → toast), `--opacity-*`, breakpoints `--breakpoint-{sm,md,lg}` (600 / 900 / 1200 px, miroir de `BREAKPOINTS` du DS) |
 
 #### Échelle d'espacement (`--space*`)
 

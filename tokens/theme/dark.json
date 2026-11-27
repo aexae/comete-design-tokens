@@ -1,7 +1,21 @@
 {
   "background": {
     "neutral": {
-      "subtler": {
+      "subtlest": {
+        "default": {
+          "$type": "color",
+          "$value": "{cool-grey.700}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{cool-grey.800}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{cool-grey.900}"
+        }
+      },
+      "subtle": {
         "default": {
           "$type": "color",
           "$value": "{cool-grey.700}"
@@ -45,41 +59,15 @@
           "$value": "{cool-grey.50}",
           "$description": "État pressé de background.neutral.boldest.default (cartes bold interactives)."
         }
-      },
-      "subtlest": {
-        "default": {
-          "$type": "color",
-          "$value": "{cool-grey.700}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{cool-grey.800}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{cool-grey.900}"
-        }
       }
     },
     "inverted": {
-      "subtler": {
+      "subtlest": {
         "default": {
           "$type": "color",
-          "$value": "{grey.alpha.200A}",
-          "$description": "Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester juste sur tout fond inversé."
+          "$value": "{grey.alpha.100A}",
+          "$description": "Fond translucide le plus discret d'un contrôle posé sur surface.inverted."
         },
-        "hovered": {
-          "$type": "color",
-          "$value": "{grey.alpha.300A}",
-          "$description": "État survolé de background.inverted.subtler.default."
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{grey.alpha.400A}",
-          "$description": "État pressé de background.inverted.subtler.default."
-        }
-      },
-      "subtlest": {
         "hovered": {
           "$type": "color",
           "$value": "{grey.alpha.200A}",
@@ -89,6 +77,23 @@
           "$type": "color",
           "$value": "{grey.alpha.300A}",
           "$description": "Fond d'appui d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted)."
+        }
+      },
+      "subtle": {
+        "default": {
+          "$type": "color",
+          "$value": "{grey.alpha.200A}",
+          "$description": "Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester juste sur tout fond inversé."
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{grey.alpha.300A}",
+          "$description": "État survolé de background.inverted.subtle.default."
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{grey.alpha.400A}",
+          "$description": "État pressé de background.inverted.subtle.default."
         }
       }
     },
@@ -115,6 +120,20 @@
           "$value": "{comete.blue.800}"
         }
       },
+      "subtle": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.800}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.700}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.600}"
+        }
+      },
       "bold": {
         "default": {
           "$type": "color",
@@ -127,20 +146,6 @@
         "pressed": {
           "$type": "color",
           "$value": "{comete.blue.400}"
-        }
-      },
-      "subtler": {
-        "default": {
-          "$type": "color",
-          "$value": "{comete.blue.800}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{comete.blue.700}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{comete.blue.600}"
         }
       },
       "boldest": {
@@ -176,6 +181,20 @@
           "$value": "{comete.blue.800}"
         }
       },
+      "subtle": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.800}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.700}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.600}"
+        }
+      },
       "bold": {
         "default": {
           "$type": "color",
@@ -188,20 +207,6 @@
         "pressed": {
           "$type": "color",
           "$value": "{comete.blue.400}"
-        }
-      },
-      "subtler": {
-        "default": {
-          "$type": "color",
-          "$value": "{comete.blue.800}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{comete.blue.700}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{comete.blue.600}"
         }
       },
       "boldest": {
@@ -223,7 +228,25 @@
       }
     },
     "selected": {
+      "subtle": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.950}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{comete.blue.900}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{comete.blue.800}"
+        }
+      },
       "bold": {
+        "default": {
+          "$type": "color",
+          "$value": "{comete.blue.600}"
+        },
         "hovered": {
           "$type": "color",
           "$value": "{comete.blue.500}"
@@ -231,24 +254,6 @@
         "pressed": {
           "$type": "color",
           "$value": "{comete.blue.400}"
-        },
-        "default": {
-          "$type": "color",
-          "$value": "{comete.blue.600}"
-        }
-      },
-      "subtlest": {
-        "pressed": {
-          "$type": "color",
-          "$value": "{comete.blue.800}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{comete.blue.900}"
-        },
-        "default": {
-          "$type": "color",
-          "$value": "{comete.blue.950}"
         }
       }
     },
@@ -260,6 +265,34 @@
       }
     },
     "success": {
+      "subtlest": {
+        "default": {
+          "$type": "color",
+          "$value": "{green.900}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{green.800}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{green.700}"
+        }
+      },
+      "subtle": {
+        "default": {
+          "$type": "color",
+          "$value": "{green.800}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{green.700}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{green.600}"
+        }
+      },
       "bold": {
         "default": {
           "$type": "color",
@@ -290,37 +323,37 @@
           "$value": "{green.50}",
           "$description": "État pressé de background.success.boldest.default (cartes bold interactives)."
         }
-      },
-      "subtlest": {
-        "hovered": {
-          "$type": "color",
-          "$value": "{green.800}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{green.700}"
-        },
-        "default": {
-          "$type": "color",
-          "$value": "{green.900}"
-        }
-      },
-      "subtler": {
-        "default": {
-          "$type": "color",
-          "$value": "{green.800}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{green.700}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{green.600}"
-        }
       }
     },
     "warning": {
+      "subtlest": {
+        "default": {
+          "$type": "color",
+          "$value": "{orange.700}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{orange.600}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{orange.500}"
+        }
+      },
+      "subtle": {
+        "default": {
+          "$type": "color",
+          "$value": "{orange.800}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{orange.700}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{orange.600}"
+        }
+      },
       "bold": {
         "default": {
           "$type": "color",
@@ -351,37 +384,37 @@
           "$value": "{orange.50}",
           "$description": "État pressé de background.warning.boldest.default (cartes bold interactives)."
         }
-      },
-      "subtlest": {
-        "pressed": {
-          "$type": "color",
-          "$value": "{orange.500}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{orange.600}"
-        },
-        "default": {
-          "$type": "color",
-          "$value": "{orange.700}"
-        }
-      },
-      "subtler": {
-        "default": {
-          "$type": "color",
-          "$value": "{orange.800}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{orange.700}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{orange.600}"
-        }
       }
     },
     "critical": {
+      "subtlest": {
+        "default": {
+          "$type": "color",
+          "$value": "{red.900}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{red.800}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{red.700}"
+        }
+      },
+      "subtle": {
+        "default": {
+          "$type": "color",
+          "$value": "{red.800}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{red.700}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{red.600}"
+        }
+      },
       "bold": {
         "default": {
           "$type": "color",
@@ -412,37 +445,37 @@
           "$value": "{red.50}",
           "$description": "État pressé de background.critical.boldest.default (cartes bold interactives)."
         }
-      },
-      "subtlest": {
-        "pressed": {
-          "$type": "color",
-          "$value": "{red.700}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{red.800}"
-        },
-        "default": {
-          "$type": "color",
-          "$value": "{red.900}"
-        }
-      },
-      "subtler": {
-        "default": {
-          "$type": "color",
-          "$value": "{red.800}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{red.700}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{red.600}"
-        }
       }
     },
     "information": {
+      "subtlest": {
+        "default": {
+          "$type": "color",
+          "$value": "{blue.900}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{blue.800}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{blue.700}"
+        }
+      },
+      "subtle": {
+        "default": {
+          "$type": "color",
+          "$value": "{blue.800}"
+        },
+        "hovered": {
+          "$type": "color",
+          "$value": "{blue.700}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$value": "{blue.600}"
+        }
+      },
       "bold": {
         "default": {
           "$type": "color",
@@ -473,38 +506,38 @@
           "$value": "{blue.50}",
           "$description": "État pressé de background.information.boldest.default (cartes bold interactives)."
         }
-      },
-      "subtlest": {
-        "pressed": {
-          "$type": "color",
-          "$value": "{blue.700}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{blue.800}"
-        },
-        "default": {
-          "$type": "color",
-          "$value": "{blue.900}"
-        }
-      },
-      "subtler": {
-        "default": {
-          "$type": "color",
-          "$value": "{blue.800}"
-        },
-        "hovered": {
-          "$type": "color",
-          "$value": "{blue.700}"
-        },
-        "pressed": {
-          "$type": "color",
-          "$value": "{blue.600}"
-        }
       }
     },
     "accent": {
       "purple": {
+        "subtlest": {
+          "default": {
+            "$type": "color",
+            "$value": "{purple.900}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{purple.800}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{purple.700}"
+          }
+        },
+        "subtle": {
+          "default": {
+            "$type": "color",
+            "$value": "{purple.800}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{purple.700}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{purple.600}"
+          }
+        },
         "bold": {
           "default": {
             "$type": "color",
@@ -535,37 +568,37 @@
             "$value": "{purple.50}",
             "$description": "État pressé de background.accent.purple.boldest.default (cartes bold interactives)."
           }
-        },
-        "subtlest": {
-          "pressed": {
-            "$type": "color",
-            "$value": "{purple.700}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{purple.800}"
-          },
-          "default": {
-            "$type": "color",
-            "$value": "{purple.900}"
-          }
-        },
-        "subtler": {
-          "default": {
-            "$type": "color",
-            "$value": "{purple.800}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{purple.700}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{purple.600}"
-          }
         }
       },
       "teal": {
+        "subtlest": {
+          "default": {
+            "$type": "color",
+            "$value": "{teal.900}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{teal.800}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{teal.700}"
+          }
+        },
+        "subtle": {
+          "default": {
+            "$type": "color",
+            "$value": "{teal.800}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{teal.700}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{teal.600}"
+          }
+        },
         "bold": {
           "default": {
             "$type": "color",
@@ -596,37 +629,37 @@
             "$value": "{teal.50}",
             "$description": "État pressé de background.accent.teal.boldest.default (cartes bold interactives)."
           }
-        },
-        "subtlest": {
-          "pressed": {
-            "$type": "color",
-            "$value": "{teal.700}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{teal.800}"
-          },
-          "default": {
-            "$type": "color",
-            "$value": "{teal.900}"
-          }
-        },
-        "subtler": {
-          "default": {
-            "$type": "color",
-            "$value": "{teal.800}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{teal.700}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{teal.600}"
-          }
         }
       },
       "turquoise": {
+        "subtlest": {
+          "default": {
+            "$type": "color",
+            "$value": "{turquoise.900}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{turquoise.800}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{turquoise.700}"
+          }
+        },
+        "subtle": {
+          "default": {
+            "$type": "color",
+            "$value": "{turquoise.800}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{turquoise.700}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{turquoise.600}"
+          }
+        },
         "bold": {
           "default": {
             "$type": "color",
@@ -657,37 +690,37 @@
             "$value": "{turquoise.50}",
             "$description": "État pressé de background.accent.turquoise.boldest.default (cartes bold interactives)."
           }
-        },
-        "subtlest": {
-          "pressed": {
-            "$type": "color",
-            "$value": "{turquoise.700}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{turquoise.800}"
-          },
-          "default": {
-            "$type": "color",
-            "$value": "{turquoise.900}"
-          }
-        },
-        "subtler": {
-          "default": {
-            "$type": "color",
-            "$value": "{turquoise.800}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{turquoise.700}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{turquoise.600}"
-          }
         }
       },
       "magenta": {
+        "subtlest": {
+          "default": {
+            "$type": "color",
+            "$value": "{magenta.900}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{magenta.800}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{magenta.700}"
+          }
+        },
+        "subtle": {
+          "default": {
+            "$type": "color",
+            "$value": "{magenta.800}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{magenta.700}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{magenta.600}"
+          }
+        },
         "bold": {
           "default": {
             "$type": "color",
@@ -718,37 +751,37 @@
             "$value": "{magenta.50}",
             "$description": "État pressé de background.accent.magenta.boldest.default (cartes bold interactives)."
           }
-        },
-        "subtlest": {
-          "pressed": {
-            "$type": "color",
-            "$value": "{magenta.700}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{magenta.800}"
-          },
-          "default": {
-            "$type": "color",
-            "$value": "{magenta.900}"
-          }
-        },
-        "subtler": {
-          "default": {
-            "$type": "color",
-            "$value": "{magenta.800}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{magenta.700}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{magenta.600}"
-          }
         }
       },
       "blue-grey": {
+        "subtlest": {
+          "default": {
+            "$type": "color",
+            "$value": "{blue-grey.900}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{blue-grey.800}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{blue-grey.700}"
+          }
+        },
+        "subtle": {
+          "default": {
+            "$type": "color",
+            "$value": "{blue-grey.800}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{blue-grey.700}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{blue-grey.600}"
+          }
+        },
         "bold": {
           "default": {
             "$type": "color",
@@ -779,39 +812,25 @@
             "$value": "{blue-grey.50}",
             "$description": "État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives)."
           }
-        },
-        "subtlest": {
-          "default": {
-            "$type": "color",
-            "$value": "{blue-grey.900}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{blue-grey.800}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{blue-grey.700}"
-          }
-        },
-        "subtler": {
-          "default": {
-            "$type": "color",
-            "$value": "{blue-grey.800}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{blue-grey.700}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{blue-grey.600}"
-          }
         }
       }
     },
     "cycle": {
       "night": {
+        "subtle": {
+          "default": {
+            "$type": "color",
+            "$value": "{blue.950}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{blue.900}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{blue.800}"
+          }
+        },
         "bold": {
           "default": {
             "$type": "color",
@@ -825,23 +844,23 @@
             "$type": "color",
             "$value": "{blue.200}"
           }
-        },
-        "subtlest": {
-          "default": {
-            "$type": "color",
-            "$value": "{blue.950}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{blue.900}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{blue.800}"
-          }
         }
       },
       "day": {
+        "subtle": {
+          "default": {
+            "$type": "color",
+            "$value": "{orange.950}"
+          },
+          "hovered": {
+            "$type": "color",
+            "$value": "{orange.900}"
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{orange.800}"
+          }
+        },
         "bold": {
           "default": {
             "$type": "color",
@@ -854,20 +873,6 @@
           "pressed": {
             "$type": "color",
             "$value": "{orange.400}"
-          }
-        },
-        "subtlest": {
-          "default": {
-            "$type": "color",
-            "$value": "{orange.950}"
-          },
-          "hovered": {
-            "$type": "color",
-            "$value": "{orange.900}"
-          },
-          "pressed": {
-            "$type": "color",
-            "$value": "{orange.800}"
           }
         }
       }
@@ -1021,18 +1026,18 @@
         "$description": "DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrices."
       }
     },
-    "subtle": {
+    "subtlest": {
       "default": {
         "$type": "color",
-        "$value": "{cool-grey.300}"
+        "$value": "{cool-grey.500}"
       },
       "hovered": {
         "$type": "color",
-        "$value": "{cool-grey.200}"
+        "$value": "{cool-grey.400}"
       },
       "pressed": {
         "$type": "color",
-        "$value": "{cool-grey.100}"
+        "$value": "{cool-grey.300}"
       }
     },
     "inverted": {
@@ -1112,18 +1117,18 @@
         "$value": "{red.50}"
       }
     },
-    "subtlest": {
+    "subtle": {
       "default": {
         "$type": "color",
-        "$value": "{cool-grey.500}"
+        "$value": "{cool-grey.300}"
       },
       "hovered": {
         "$type": "color",
-        "$value": "{cool-grey.400}"
+        "$value": "{cool-grey.200}"
       },
       "pressed": {
         "$type": "color",
-        "$value": "{cool-grey.300}"
+        "$value": "{cool-grey.100}"
       }
     },
     "accent": {
@@ -1267,43 +1272,43 @@
       "$value": "{cool-grey.700}"
     },
     "success": {
-      "bold": {
-        "$type": "color",
-        "$value": "{green.500}"
-      },
       "subtle": {
         "$type": "color",
         "$value": "{green.800}"
+      },
+      "bold": {
+        "$type": "color",
+        "$value": "{green.500}"
       }
     },
     "critical": {
-      "bold": {
-        "$type": "color",
-        "$value": "{red.500}"
-      },
       "subtle": {
         "$type": "color",
         "$value": "{red.800}"
+      },
+      "bold": {
+        "$type": "color",
+        "$value": "{red.500}"
       }
     },
     "warning": {
-      "bold": {
-        "$type": "color",
-        "$value": "{orange.500}"
-      },
       "subtle": {
         "$type": "color",
         "$value": "{orange.800}"
+      },
+      "bold": {
+        "$type": "color",
+        "$value": "{orange.500}"
       }
     },
     "information": {
-      "bold": {
-        "$type": "color",
-        "$value": "{blue.500}"
-      },
       "subtle": {
         "$type": "color",
         "$value": "{blue.800}"
+      },
+      "bold": {
+        "$type": "color",
+        "$value": "{blue.500}"
       }
     },
     "selected": {
@@ -1312,53 +1317,53 @@
     },
     "accent": {
       "purple": {
-        "bold": {
-          "$type": "color",
-          "$value": "{purple.500}"
-        },
         "subtle": {
           "$type": "color",
           "$value": "{purple.800}"
+        },
+        "bold": {
+          "$type": "color",
+          "$value": "{purple.500}"
         }
       },
       "teal": {
-        "bold": {
-          "$type": "color",
-          "$value": "{teal.500}"
-        },
         "subtle": {
           "$type": "color",
           "$value": "{teal.800}"
+        },
+        "bold": {
+          "$type": "color",
+          "$value": "{teal.500}"
         }
       },
       "turquoise": {
-        "bold": {
-          "$type": "color",
-          "$value": "{turquoise.500}"
-        },
         "subtle": {
           "$type": "color",
           "$value": "{turquoise.800}"
+        },
+        "bold": {
+          "$type": "color",
+          "$value": "{turquoise.500}"
         }
       },
       "magenta": {
-        "bold": {
-          "$type": "color",
-          "$value": "{magenta.500}"
-        },
         "subtle": {
           "$type": "color",
           "$value": "{magenta.800}"
+        },
+        "bold": {
+          "$type": "color",
+          "$value": "{magenta.500}"
         }
       },
       "blue-grey": {
-        "bold": {
-          "$type": "color",
-          "$value": "{blue-grey.500}"
-        },
         "subtle": {
           "$type": "color",
           "$value": "{blue-grey.800}"
+        },
+        "bold": {
+          "$type": "color",
+          "$value": "{blue-grey.500}"
         }
       }
     },
@@ -1392,33 +1397,33 @@
       "$description": "Bordure blanche fixe sur une surface sombre fixe (surface.comete). Pendant de text.on-dark-surface. Suit le thème : border.inverted."
     },
     "day": {
-      "bold": {
-        "$type": "color",
-        "$value": "{orange.500}"
-      },
       "subtle": {
         "$type": "color",
         "$value": "{orange.900}"
+      },
+      "bold": {
+        "$type": "color",
+        "$value": "{orange.500}"
       }
     },
     "night": {
-      "bold": {
-        "$type": "color",
-        "$value": "{blue.500}"
-      },
       "subtle": {
         "$type": "color",
         "$value": "{blue.700}"
+      },
+      "bold": {
+        "$type": "color",
+        "$value": "{blue.500}"
       }
     },
     "brand": {
-      "bold": {
-        "$type": "color",
-        "$value": "{comete.blue.100}"
-      },
       "subtle": {
         "$type": "color",
         "$value": "{comete.blue.800}"
+      },
+      "bold": {
+        "$type": "color",
+        "$value": "{comete.blue.100}"
       },
       "boldest": {
         "$type": "color",
@@ -1427,13 +1432,13 @@
       }
     },
     "comete": {
-      "bold": {
-        "$type": "color",
-        "$value": "{comete.blue.100}"
-      },
       "subtle": {
         "$type": "color",
         "$value": "{comete.blue.800}"
+      },
+      "bold": {
+        "$type": "color",
+        "$value": "{comete.blue.100}"
       },
       "boldest": {
         "$type": "color",
@@ -1501,13 +1506,13 @@
       "$type": "color",
       "$value": "{blue.300}"
     },
-    "subtle": {
-      "$type": "color",
-      "$value": "{cool-grey.400}"
-    },
     "subtlest": {
       "$type": "color",
       "$value": "{cool-grey.500}"
+    },
+    "subtle": {
+      "$type": "color",
+      "$value": "{cool-grey.400}"
     },
     "accent": {
       "purple": {

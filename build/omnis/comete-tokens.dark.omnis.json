@@ -1,6 +1,6 @@
 {
  "schema": "https://github.com/aexae/comete-design-tokens/tree/main/build/omnis#v1",
- "version": "0.49.0",
+ "version": "0.50.0",
  "theme": "dark",
  "backdrop": "#374043",
  "tokens": {
@@ -359,175 +359,176 @@
   "paragraphIndentM": 24,
   "paragraphIndentS": 16,
   "paragraphIndentNone": 0,
-  "backgroundNeutralSubtlerDefault": 5986377,
-  "backgroundNeutralSubtlerHovered": 7367513,
-  "backgroundNeutralSubtlerPressed": 8946799,
+  "backgroundNeutralSubtlestDefault": 5986377,
+  "backgroundNeutralSubtlestHovered": 5065279,
+  "backgroundNeutralSubtlestPressed": 4407351,
+  "backgroundNeutralSubtleDefault": 5986377,
+  "backgroundNeutralSubtleHovered": 7367513,
+  "backgroundNeutralSubtlePressed": 8946799,
   "backgroundNeutralBoldDefault": 7367513,
   "backgroundNeutralBoldHovered": 8946799,
   "backgroundNeutralBoldPressed": 10723213,
   "backgroundNeutralBoldestDefault": 14671576,
   "backgroundNeutralBoldestHovered": 15658474,
   "backgroundNeutralBoldestPressed": 16316663,
-  "backgroundNeutralSubtlestDefault": 5986377,
-  "backgroundNeutralSubtlestHovered": 5065279,
-  "backgroundNeutralSubtlestPressed": 4407351,
-  "backgroundInvertedSubtlerDefault": 4275508,
-  "backgroundInvertedSubtlerHovered": 3947057,
-  "backgroundInvertedSubtlerPressed": 3682600,
+  "backgroundInvertedSubtlestDefault": 4341558,
   "backgroundInvertedSubtlestHovered": 4275508,
   "backgroundInvertedSubtlestPressed": 3947057,
+  "backgroundInvertedSubtleDefault": 4275508,
+  "backgroundInvertedSubtleHovered": 3947057,
+  "backgroundInvertedSubtlePressed": 3682600,
   "backgroundDisabledDefault": 5657419,
   "backgroundBrandSubtlestDefault": 6370846,
   "backgroundBrandSubtlestHovered": 8800546,
   "backgroundBrandSubtlestPressed": 11162659,
+  "backgroundBrandSubtleDefault": 11162659,
+  "backgroundBrandSubtleHovered": 13723428,
+  "backgroundBrandSubtlePressed": 14974508,
   "backgroundBrandBoldDefault": 14974508,
   "backgroundBrandBoldHovered": 15702594,
   "backgroundBrandBoldPressed": 16037990,
-  "backgroundBrandSubtlerDefault": 11162659,
-  "backgroundBrandSubtlerHovered": 13723428,
-  "backgroundBrandSubtlerPressed": 14974508,
   "backgroundBrandBoldestDefault": 16573377,
   "backgroundBrandBoldestHovered": 16641756,
   "backgroundBrandBoldestPressed": 16709872,
   "backgroundCometeSubtlestDefault": 6370846,
   "backgroundCometeSubtlestHovered": 8800546,
   "backgroundCometeSubtlestPressed": 11162659,
+  "backgroundCometeSubtleDefault": 11162659,
+  "backgroundCometeSubtleHovered": 13723428,
+  "backgroundCometeSubtlePressed": 14974508,
   "backgroundCometeBoldDefault": 14974508,
   "backgroundCometeBoldHovered": 15702594,
   "backgroundCometeBoldPressed": 16037990,
-  "backgroundCometeSubtlerDefault": 11162659,
-  "backgroundCometeSubtlerHovered": 13723428,
-  "backgroundCometeSubtlerPressed": 14974508,
   "backgroundCometeBoldestDefault": 16573377,
   "backgroundCometeBoldestHovered": 16641756,
   "backgroundCometeBoldestPressed": 16709872,
+  "backgroundSelectedSubtleDefault": 6370846,
+  "backgroundSelectedSubtleHovered": 8800546,
+  "backgroundSelectedSubtlePressed": 11162659,
+  "backgroundSelectedBoldDefault": 14974508,
   "backgroundSelectedBoldHovered": 15702594,
   "backgroundSelectedBoldPressed": 16037990,
-  "backgroundSelectedBoldDefault": 14974508,
-  "backgroundSelectedSubtlestPressed": 11162659,
-  "backgroundSelectedSubtlestHovered": 8800546,
-  "backgroundSelectedSubtlestDefault": 6370846,
   "backgroundFieldDefault": 2894373,
+  "backgroundSuccessSubtlestDefault": 4280356,
+  "backgroundSuccessSubtlestHovered": 4219395,
+  "backgroundSuccessSubtlestPressed": 5076992,
+  "backgroundSuccessSubtleDefault": 4219395,
+  "backgroundSuccessSubtleHovered": 5076992,
+  "backgroundSuccessSubtlePressed": 6331136,
   "backgroundSuccessBoldDefault": 6331136,
   "backgroundSuccessBoldHovered": 7782154,
   "backgroundSuccessBoldPressed": 9361455,
   "backgroundSuccessBoldestDefault": 13301412,
   "backgroundSuccessBoldestHovered": 14875600,
   "backgroundSuccessBoldestPressed": 16056043,
-  "backgroundSuccessSubtlestHovered": 4219395,
-  "backgroundSuccessSubtlestPressed": 5076992,
-  "backgroundSuccessSubtlestDefault": 4280356,
-  "backgroundSuccessSubtlerDefault": 4219395,
-  "backgroundSuccessSubtlerHovered": 5076992,
-  "backgroundSuccessSubtlerPressed": 6331136,
+  "backgroundWarningSubtlestDefault": 615877,
+  "backgroundWarningSubtlestHovered": 625142,
+  "backgroundWarningSubtlestPressed": 1286396,
+  "backgroundWarningSubtleDefault": 1068956,
+  "backgroundWarningSubtleHovered": 615877,
+  "backgroundWarningSubtlePressed": 625142,
   "backgroundWarningBoldDefault": 625142,
   "backgroundWarningBoldHovered": 1286396,
   "backgroundWarningBoldPressed": 3783166,
   "backgroundWarningBoldestDefault": 11135231,
   "backgroundWarningBoldestHovered": 13956863,
   "backgroundWarningBoldestPressed": 15596543,
-  "backgroundWarningSubtlestPressed": 1286396,
-  "backgroundWarningSubtlestHovered": 625142,
-  "backgroundWarningSubtlestDefault": 615877,
-  "backgroundWarningSubtlerDefault": 1068956,
-  "backgroundWarningSubtlerHovered": 615877,
-  "backgroundWarningSubtlerPressed": 625142,
+  "backgroundCriticalSubtlestDefault": 1710722,
+  "backgroundCriticalSubtlestHovered": 1513373,
+  "backgroundCriticalSubtlestPressed": 1513406,
+  "backgroundCriticalSubtleDefault": 1513373,
+  "backgroundCriticalSubtleHovered": 1513406,
+  "backgroundCriticalSubtlePressed": 2171361,
   "backgroundCriticalBoldDefault": 2171361,
   "backgroundCriticalBoldHovered": 4210932,
   "backgroundCriticalBoldPressed": 7171580,
   "backgroundCriticalBoldestDefault": 13158655,
   "backgroundCriticalBoldestHovered": 14803455,
   "backgroundCriticalBoldestPressed": 15921918,
-  "backgroundCriticalSubtlestPressed": 1513406,
-  "backgroundCriticalSubtlestHovered": 1513373,
-  "backgroundCriticalSubtlestDefault": 1710722,
-  "backgroundCriticalSubtlerDefault": 1513373,
-  "backgroundCriticalSubtlerHovered": 1513406,
-  "backgroundCriticalSubtlerPressed": 2171361,
+  "backgroundInformationSubtlestDefault": 7816195,
+  "backgroundInformationSubtlestHovered": 9523968,
+  "backgroundInformationSubtlestPressed": 11558912,
+  "backgroundInformationSubtleDefault": 9523968,
+  "backgroundInformationSubtleHovered": 11558912,
+  "backgroundInformationSubtlePressed": 14185984,
   "backgroundInformationBoldDefault": 14185984,
   "backgroundInformationBoldHovered": 16685824,
   "backgroundInformationBoldPressed": 16758054,
   "backgroundInformationBoldestDefault": 16769972,
   "backgroundInformationBoldestHovered": 16773597,
   "backgroundInformationBoldestPressed": 16775407,
-  "backgroundInformationSubtlestPressed": 11558912,
-  "backgroundInformationSubtlestHovered": 9523968,
-  "backgroundInformationSubtlestDefault": 7816195,
-  "backgroundInformationSubtlerDefault": 9523968,
-  "backgroundInformationSubtlerHovered": 11558912,
-  "backgroundInformationSubtlerPressed": 14185984,
+  "backgroundAccentPurpleSubtlestDefault": 7486789,
+  "backgroundAccentPurpleSubtlestHovered": 9323857,
+  "backgroundAccentPurpleSubtlestPressed": 11685214,
+  "backgroundAccentPurpleSubtleDefault": 9323857,
+  "backgroundAccentPurpleSubtleHovered": 11685214,
+  "backgroundAccentPurpleSubtlePressed": 13000046,
   "backgroundAccentPurpleBoldDefault": 13000046,
   "backgroundAccentPurpleBoldHovered": 14381186,
   "backgroundAccentPurpleBoldPressed": 14849944,
   "backgroundAccentPurpleBoldestDefault": 16045265,
   "backgroundAccentPurpleBoldestHovered": 16378086,
   "backgroundAccentPurpleBoldestPressed": 16773363,
-  "backgroundAccentPurpleSubtlestPressed": 11685214,
-  "backgroundAccentPurpleSubtlestHovered": 9323857,
-  "backgroundAccentPurpleSubtlestDefault": 7486789,
-  "backgroundAccentPurpleSubtlerDefault": 9323857,
-  "backgroundAccentPurpleSubtlerHovered": 11685214,
-  "backgroundAccentPurpleSubtlerPressed": 13000046,
+  "backgroundAccentTealSubtlestDefault": 5915423,
+  "backgroundAccentTealSubtlestHovered": 6901793,
+  "backgroundAccentTealSubtlestPressed": 8413214,
+  "backgroundAccentTealSubtleDefault": 6901793,
+  "backgroundAccentTealSubtleHovered": 8413214,
+  "backgroundAccentTealSubtlePressed": 10384668,
   "backgroundAccentTealBoldDefault": 10384668,
   "backgroundAccentTealBoldHovered": 12292639,
   "backgroundAccentTealBoldPressed": 14135874,
   "backgroundAccentTealBoldestDefault": 15917999,
   "backgroundAccentTealBoldestHovered": 16314837,
   "backgroundAccentTealBoldestPressed": 16644846,
-  "backgroundAccentTealSubtlestPressed": 8413214,
-  "backgroundAccentTealSubtlestHovered": 6901793,
-  "backgroundAccentTealSubtlestDefault": 5915423,
-  "backgroundAccentTealSubtlerDefault": 6901793,
-  "backgroundAccentTealSubtlerHovered": 8413214,
-  "backgroundAccentTealSubtlerPressed": 10384668,
+  "backgroundAccentTurquoiseSubtlestDefault": 6118660,
+  "backgroundAccentTurquoiseSubtlestHovered": 7434752,
+  "backgroundAccentTurquoiseSubtlestPressed": 9277696,
+  "backgroundAccentTurquoiseSubtleDefault": 7434752,
+  "backgroundAccentTurquoiseSubtleHovered": 9277696,
+  "backgroundAccentTurquoiseSubtlePressed": 11646720,
   "backgroundAccentTurquoiseBoldDefault": 11646720,
   "backgroundAccentTurquoiseBoldHovered": 14017024,
   "backgroundAccentTurquoiseBoldPressed": 15728384,
   "backgroundAccentTurquoiseBoldestDefault": 16514945,
   "backgroundAccentTurquoiseBoldestHovered": 16580544,
   "backgroundAccentTurquoiseBoldestPressed": 16646125,
-  "backgroundAccentTurquoiseSubtlestPressed": 9277696,
-  "backgroundAccentTurquoiseSubtlestHovered": 7434752,
-  "backgroundAccentTurquoiseSubtlestDefault": 6118660,
-  "backgroundAccentTurquoiseSubtlerDefault": 7434752,
-  "backgroundAccentTurquoiseSubtlerHovered": 9277696,
-  "backgroundAccentTurquoiseSubtlerPressed": 11646720,
+  "backgroundAccentMagentaSubtlestDefault": 5252470,
+  "backgroundAccentMagentaSubtlestHovered": 6104973,
+  "backgroundAccentMagentaSubtlestPressed": 7285930,
+  "backgroundAccentMagentaSubtleDefault": 6104973,
+  "backgroundAccentMagentaSubtleHovered": 7285930,
+  "backgroundAccentMagentaSubtlePressed": 9059526,
   "backgroundAccentMagentaBoldDefault": 9059526,
   "backgroundAccentMagentaBoldHovered": 11297498,
   "backgroundAccentMagentaBoldPressed": 12681701,
   "backgroundAccentMagentaBoldestDefault": 15455478,
   "backgroundAccentMagentaBoldestHovered": 16116473,
   "backgroundAccentMagentaBoldestPressed": 16380924,
-  "backgroundAccentMagentaSubtlestPressed": 7285930,
-  "backgroundAccentMagentaSubtlestHovered": 6104973,
-  "backgroundAccentMagentaSubtlestDefault": 5252470,
-  "backgroundAccentMagentaSubtlerDefault": 6104973,
-  "backgroundAccentMagentaSubtlerHovered": 7285930,
-  "backgroundAccentMagentaSubtlerPressed": 9059526,
+  "backgroundAccentBlueGreySubtlestDefault": 4929324,
+  "backgroundAccentBlueGreySubtlestHovered": 5914930,
+  "backgroundAccentBlueGreySubtlestPressed": 7097144,
+  "backgroundAccentBlueGreySubtleDefault": 5914930,
+  "backgroundAccentBlueGreySubtleHovered": 7097144,
+  "backgroundAccentBlueGreySubtlePressed": 8674629,
   "backgroundAccentBlueGreyBoldDefault": 8674629,
   "backgroundAccentBlueGreyBoldHovered": 10450264,
   "backgroundAccentBlueGreyBoldPressed": 12030841,
   "backgroundAccentBlueGreyBoldestDefault": 15129041,
   "backgroundAccentBlueGreyBoldestHovered": 16051690,
   "backgroundAccentBlueGreyBoldestPressed": 16447477,
-  "backgroundAccentBlueGreySubtlestDefault": 4929324,
-  "backgroundAccentBlueGreySubtlestHovered": 5914930,
-  "backgroundAccentBlueGreySubtlestPressed": 7097144,
-  "backgroundAccentBlueGreySubtlerDefault": 5914930,
-  "backgroundAccentBlueGreySubtlerHovered": 7097144,
-  "backgroundAccentBlueGreySubtlerPressed": 8674629,
+  "backgroundCycleNightSubtleDefault": 5844994,
+  "backgroundCycleNightSubtleHovered": 7816195,
+  "backgroundCycleNightSubtlePressed": 9523968,
   "backgroundCycleNightBoldDefault": 16758054,
   "backgroundCycleNightBoldHovered": 16764273,
   "backgroundCycleNightBoldPressed": 16769972,
-  "backgroundCycleNightSubtlestDefault": 5844994,
-  "backgroundCycleNightSubtlestHovered": 7816195,
-  "backgroundCycleNightSubtlestPressed": 9523968,
+  "backgroundCycleDaySubtleDefault": 401220,
+  "backgroundCycleDaySubtleHovered": 1065598,
+  "backgroundCycleDaySubtlePressed": 1068956,
   "backgroundCycleDayBoldDefault": 625142,
   "backgroundCycleDayBoldHovered": 1286396,
   "backgroundCycleDayBoldPressed": 3783166,
-  "backgroundCycleDaySubtlestDefault": 401220,
-  "backgroundCycleDaySubtlestHovered": 1065598,
-  "backgroundCycleDaySubtlestPressed": 1068956,
   "backgroundFocusedDefault": 16037990,
   "surfaceDefault": 4407351,
   "surfaceSunkenDefault": 2894373,
@@ -557,9 +558,9 @@
   "textLinkDefault": 16764273,
   "textLinkHovered": 16769972,
   "textLinkPressed": 16773597,
-  "textSubtleDefault": 12894645,
-  "textSubtleHovered": 14671576,
-  "textSubtlePressed": 15658474,
+  "textSubtlestDefault": 8946799,
+  "textSubtlestHovered": 10723213,
+  "textSubtlestPressed": 12894645,
   "textInvertedDefault": 2894373,
   "textInvertedHovered": 5065279,
   "textInvertedPressed": 5986377,
@@ -576,9 +577,9 @@
   "textCriticalDefault": 13158655,
   "textCriticalHovered": 14803455,
   "textCriticalPressed": 15921918,
-  "textSubtlestDefault": 8946799,
-  "textSubtlestHovered": 10723213,
-  "textSubtlestPressed": 12894645,
+  "textSubtleDefault": 12894645,
+  "textSubtleHovered": 14671576,
+  "textSubtlePressed": 15658474,
   "textAccentPurpleDefault": 16045265,
   "textAccentPurpleHovered": 16378086,
   "textAccentPurplePressed": 16773363,
@@ -608,25 +609,25 @@
   "borderSubtle": 5065279,
   "borderFocused": 16037990,
   "borderBold": 5986377,
-  "borderSuccessBold": 7782154,
   "borderSuccessSubtle": 4219395,
-  "borderCriticalBold": 4210932,
+  "borderSuccessBold": 7782154,
   "borderCriticalSubtle": 1513373,
-  "borderWarningBold": 1286396,
+  "borderCriticalBold": 4210932,
   "borderWarningSubtle": 1068956,
-  "borderInformationBold": 16685824,
+  "borderWarningBold": 1286396,
   "borderInformationSubtle": 9523968,
+  "borderInformationBold": 16685824,
   "borderSelected": 16037990,
-  "borderAccentPurpleBold": 14381186,
   "borderAccentPurpleSubtle": 9323857,
-  "borderAccentTealBold": 12292639,
+  "borderAccentPurpleBold": 14381186,
   "borderAccentTealSubtle": 6901793,
-  "borderAccentTurquoiseBold": 14017024,
+  "borderAccentTealBold": 12292639,
   "borderAccentTurquoiseSubtle": 7434752,
-  "borderAccentMagentaBold": 11297498,
+  "borderAccentTurquoiseBold": 14017024,
   "borderAccentMagentaSubtle": 6104973,
-  "borderAccentBlueGreyBold": 10450264,
+  "borderAccentMagentaBold": 11297498,
   "borderAccentBlueGreySubtle": 5914930,
+  "borderAccentBlueGreyBold": 10450264,
   "borderSelectedInverted": 11162659,
   "borderFocusInverted": 8800546,
   "borderNeutral": 16316664,
@@ -634,15 +635,15 @@
   "borderInvisible": 2894373,
   "borderInverted": 2894373,
   "borderOnDarkSurface": 16777215,
-  "borderDayBold": 1286396,
   "borderDaySubtle": 1065598,
-  "borderNightBold": 16685824,
+  "borderDayBold": 1286396,
   "borderNightSubtle": 11558912,
-  "borderBrandBold": 16641756,
+  "borderNightBold": 16685824,
   "borderBrandSubtle": 11162659,
+  "borderBrandBold": 16641756,
   "borderBrandBoldest": 16709872,
-  "borderCometeBold": 16641756,
   "borderCometeSubtle": 11162659,
+  "borderCometeBold": 16641756,
   "borderCometeBoldest": 16709872,
   "iconDefault": 16051690,
   "iconDisabled": 9342087,
@@ -656,8 +657,8 @@
   "iconCometeBoldest": 16709872,
   "iconSelected": 16372375,
   "iconInformation": 16764273,
-  "iconSubtle": 10723213,
   "iconSubtlest": 8946799,
+  "iconSubtle": 10723213,
   "iconAccentPurple": 15513781,
   "iconAccentTeal": 15191673,
   "iconAccentTurquoise": 16383802,
@@ -2954,17 +2955,32 @@
    "tier": "base"
   },
   {
-   "name": "backgroundNeutralSubtlerDefault",
+   "name": "backgroundNeutralSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundNeutralSubtlerHovered",
+   "name": "backgroundNeutralSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundNeutralSubtlerPressed",
+   "name": "backgroundNeutralSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralSubtleDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralSubtleHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundNeutralSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -2999,32 +3015,7 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundNeutralSubtlestDefault",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundNeutralSubtlestHovered",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundNeutralSubtlestPressed",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundInvertedSubtlerDefault",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundInvertedSubtlerHovered",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundInvertedSubtlerPressed",
+   "name": "backgroundInvertedSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
@@ -3035,6 +3026,21 @@
   },
   {
    "name": "backgroundInvertedSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInvertedSubtleDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInvertedSubtleHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundInvertedSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3059,6 +3065,21 @@
    "tier": "theme"
   },
   {
+   "name": "backgroundBrandSubtleDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandSubtleHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundBrandSubtlePressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
    "name": "backgroundBrandBoldDefault",
    "type": "color",
    "tier": "theme"
@@ -3070,21 +3091,6 @@
   },
   {
    "name": "backgroundBrandBoldPressed",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundBrandSubtlerDefault",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundBrandSubtlerHovered",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundBrandSubtlerPressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3119,6 +3125,21 @@
    "tier": "theme"
   },
   {
+   "name": "backgroundCometeSubtleDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeSubtleHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundCometeSubtlePressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
    "name": "backgroundCometeBoldDefault",
    "type": "color",
    "tier": "theme"
@@ -3130,21 +3151,6 @@
   },
   {
    "name": "backgroundCometeBoldPressed",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundCometeSubtlerDefault",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundCometeSubtlerHovered",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundCometeSubtlerPressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3164,6 +3170,26 @@
    "tier": "theme"
   },
   {
+   "name": "backgroundSelectedSubtleDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedSubtleHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedSubtlePressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSelectedBoldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
    "name": "backgroundSelectedBoldHovered",
    "type": "color",
    "tier": "theme"
@@ -3174,27 +3200,37 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundSelectedBoldDefault",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundSelectedSubtlestPressed",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundSelectedSubtlestHovered",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundSelectedSubtlestDefault",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
    "name": "backgroundFieldDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlestDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlestHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlestPressed",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtleDefault",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtleHovered",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "backgroundSuccessSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3229,32 +3265,32 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundSuccessSubtlestHovered",
+   "name": "backgroundWarningSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundSuccessSubtlestPressed",
+   "name": "backgroundWarningSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundSuccessSubtlestDefault",
+   "name": "backgroundWarningSubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundSuccessSubtlerDefault",
+   "name": "backgroundWarningSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundSuccessSubtlerHovered",
+   "name": "backgroundWarningSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundSuccessSubtlerPressed",
+   "name": "backgroundWarningSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3289,32 +3325,32 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundWarningSubtlestPressed",
+   "name": "backgroundCriticalSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundWarningSubtlestHovered",
+   "name": "backgroundCriticalSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundWarningSubtlestDefault",
+   "name": "backgroundCriticalSubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundWarningSubtlerDefault",
+   "name": "backgroundCriticalSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundWarningSubtlerHovered",
+   "name": "backgroundCriticalSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundWarningSubtlerPressed",
+   "name": "backgroundCriticalSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3349,32 +3385,32 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundCriticalSubtlestPressed",
+   "name": "backgroundInformationSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundCriticalSubtlestHovered",
+   "name": "backgroundInformationSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundCriticalSubtlestDefault",
+   "name": "backgroundInformationSubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundCriticalSubtlerDefault",
+   "name": "backgroundInformationSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundCriticalSubtlerHovered",
+   "name": "backgroundInformationSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundCriticalSubtlerPressed",
+   "name": "backgroundInformationSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3409,32 +3445,32 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundInformationSubtlestPressed",
+   "name": "backgroundAccentPurpleSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundInformationSubtlestHovered",
+   "name": "backgroundAccentPurpleSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundInformationSubtlestDefault",
+   "name": "backgroundAccentPurpleSubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundInformationSubtlerDefault",
+   "name": "backgroundAccentPurpleSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundInformationSubtlerHovered",
+   "name": "backgroundAccentPurpleSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundInformationSubtlerPressed",
+   "name": "backgroundAccentPurpleSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3469,32 +3505,32 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentPurpleSubtlestPressed",
+   "name": "backgroundAccentTealSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentPurpleSubtlestHovered",
+   "name": "backgroundAccentTealSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentPurpleSubtlestDefault",
+   "name": "backgroundAccentTealSubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentPurpleSubtlerDefault",
+   "name": "backgroundAccentTealSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentPurpleSubtlerHovered",
+   "name": "backgroundAccentTealSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentPurpleSubtlerPressed",
+   "name": "backgroundAccentTealSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3529,32 +3565,32 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTealSubtlestPressed",
+   "name": "backgroundAccentTurquoiseSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTealSubtlestHovered",
+   "name": "backgroundAccentTurquoiseSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTealSubtlestDefault",
+   "name": "backgroundAccentTurquoiseSubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTealSubtlerDefault",
+   "name": "backgroundAccentTurquoiseSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTealSubtlerHovered",
+   "name": "backgroundAccentTurquoiseSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTealSubtlerPressed",
+   "name": "backgroundAccentTurquoiseSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3589,32 +3625,32 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTurquoiseSubtlestPressed",
+   "name": "backgroundAccentMagentaSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTurquoiseSubtlestHovered",
+   "name": "backgroundAccentMagentaSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTurquoiseSubtlestDefault",
+   "name": "backgroundAccentMagentaSubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTurquoiseSubtlerDefault",
+   "name": "backgroundAccentMagentaSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTurquoiseSubtlerHovered",
+   "name": "backgroundAccentMagentaSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentTurquoiseSubtlerPressed",
+   "name": "backgroundAccentMagentaSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3649,32 +3685,32 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentMagentaSubtlestPressed",
+   "name": "backgroundAccentBlueGreySubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentMagentaSubtlestHovered",
+   "name": "backgroundAccentBlueGreySubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentMagentaSubtlestDefault",
+   "name": "backgroundAccentBlueGreySubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentMagentaSubtlerDefault",
+   "name": "backgroundAccentBlueGreySubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentMagentaSubtlerHovered",
+   "name": "backgroundAccentBlueGreySubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentMagentaSubtlerPressed",
+   "name": "backgroundAccentBlueGreySubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3709,32 +3745,17 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentBlueGreySubtlestDefault",
+   "name": "backgroundCycleNightSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentBlueGreySubtlestHovered",
+   "name": "backgroundCycleNightSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundAccentBlueGreySubtlestPressed",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundAccentBlueGreySubtlerDefault",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundAccentBlueGreySubtlerHovered",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundAccentBlueGreySubtlerPressed",
+   "name": "backgroundCycleNightSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3754,17 +3775,17 @@
    "tier": "theme"
   },
   {
-   "name": "backgroundCycleNightSubtlestDefault",
+   "name": "backgroundCycleDaySubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundCycleNightSubtlestHovered",
+   "name": "backgroundCycleDaySubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "backgroundCycleNightSubtlestPressed",
+   "name": "backgroundCycleDaySubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3780,21 +3801,6 @@
   },
   {
    "name": "backgroundCycleDayBoldPressed",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundCycleDaySubtlestDefault",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundCycleDaySubtlestHovered",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
-   "name": "backgroundCycleDaySubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
@@ -3944,17 +3950,17 @@
    "tier": "theme"
   },
   {
-   "name": "textSubtleDefault",
+   "name": "textSubtlestDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "textSubtleHovered",
+   "name": "textSubtlestHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "textSubtlePressed",
+   "name": "textSubtlestPressed",
    "type": "color",
    "tier": "theme"
   },
@@ -4039,17 +4045,17 @@
    "tier": "theme"
   },
   {
-   "name": "textSubtlestDefault",
+   "name": "textSubtleDefault",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "textSubtlestHovered",
+   "name": "textSubtleHovered",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "textSubtlestPressed",
+   "name": "textSubtlePressed",
    "type": "color",
    "tier": "theme"
   },
@@ -4199,17 +4205,12 @@
    "tier": "theme"
   },
   {
-   "name": "borderSuccessBold",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
    "name": "borderSuccessSubtle",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "borderCriticalBold",
+   "name": "borderSuccessBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4219,7 +4220,7 @@
    "tier": "theme"
   },
   {
-   "name": "borderWarningBold",
+   "name": "borderCriticalBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4229,7 +4230,7 @@
    "tier": "theme"
   },
   {
-   "name": "borderInformationBold",
+   "name": "borderWarningBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4239,12 +4240,12 @@
    "tier": "theme"
   },
   {
-   "name": "borderSelected",
+   "name": "borderInformationBold",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "borderAccentPurpleBold",
+   "name": "borderSelected",
    "type": "color",
    "tier": "theme"
   },
@@ -4254,7 +4255,7 @@
    "tier": "theme"
   },
   {
-   "name": "borderAccentTealBold",
+   "name": "borderAccentPurpleBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4264,7 +4265,7 @@
    "tier": "theme"
   },
   {
-   "name": "borderAccentTurquoiseBold",
+   "name": "borderAccentTealBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4274,7 +4275,7 @@
    "tier": "theme"
   },
   {
-   "name": "borderAccentMagentaBold",
+   "name": "borderAccentTurquoiseBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4284,12 +4285,17 @@
    "tier": "theme"
   },
   {
-   "name": "borderAccentBlueGreyBold",
+   "name": "borderAccentMagentaBold",
    "type": "color",
    "tier": "theme"
   },
   {
    "name": "borderAccentBlueGreySubtle",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
+   "name": "borderAccentBlueGreyBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4329,17 +4335,12 @@
    "tier": "theme"
   },
   {
-   "name": "borderDayBold",
-   "type": "color",
-   "tier": "theme"
-  },
-  {
    "name": "borderDaySubtle",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "borderNightBold",
+   "name": "borderDayBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4349,7 +4350,7 @@
    "tier": "theme"
   },
   {
-   "name": "borderBrandBold",
+   "name": "borderNightBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4359,17 +4360,22 @@
    "tier": "theme"
   },
   {
+   "name": "borderBrandBold",
+   "type": "color",
+   "tier": "theme"
+  },
+  {
    "name": "borderBrandBoldest",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "borderCometeBold",
+   "name": "borderCometeSubtle",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "borderCometeSubtle",
+   "name": "borderCometeBold",
    "type": "color",
    "tier": "theme"
   },
@@ -4439,12 +4445,12 @@
    "tier": "theme"
   },
   {
-   "name": "iconSubtle",
+   "name": "iconSubtlest",
    "type": "color",
    "tier": "theme"
   },
   {
-   "name": "iconSubtlest",
+   "name": "iconSubtle",
    "type": "color",
    "tier": "theme"
   },

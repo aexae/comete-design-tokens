@@ -41,9 +41,9 @@ Table ancien → nouveau, à valider avant exécution. Règle : README, section 
 
 | Ancien | Nouveau | Valeur |
 |---|---|---|
-| `avatar.color.neutral.background.default` | `avatar.neutral.color.background.default` | `{background.neutral.subtler.default}` |
-| `avatar.color.neutral.background.hovered` | `avatar.neutral.color.background.hovered` | `{background.neutral.subtler.hovered}` |
-| `avatar.color.neutral.background.pressed` | `avatar.neutral.color.background.pressed` | `{background.neutral.subtler.pressed}` |
+| `avatar.color.neutral.background.default` | `avatar.neutral.color.background.default` | `{background.neutral.subtle.default}` |
+| `avatar.color.neutral.background.hovered` | `avatar.neutral.color.background.hovered` | `{background.neutral.subtle.hovered}` |
+| `avatar.color.neutral.background.pressed` | `avatar.neutral.color.background.pressed` | `{background.neutral.subtle.pressed}` |
 | `avatar.color.neutral.text` | `avatar.neutral.color.text` | `{text.default.default}` |
 | `avatar.color.neutral.icon` | `avatar.neutral.color.icon` | `{icon.default}` |
 | `avatar.color.comete.background.default` | `avatar.comete.color.background.default` | `{background.comete.subtlest.default}` |
@@ -76,7 +76,7 @@ Table ancien → nouveau, à valider avant exécution. Règle : README, section 
 | `avatar.color.accent-blue-grey.background.pressed` | `avatar.accent-blue-grey.color.background.pressed` | `{background.accent.blue-grey.subtlest.pressed}` |
 | `avatar.color.accent-blue-grey.text` | `avatar.accent-blue-grey.color.text` | `{text.accent.blue-grey.default}` |
 | `avatar.color.accent-blue-grey.icon` | `avatar.accent-blue-grey.color.icon` | `{icon.accent.blue-grey}` |
-| `avatar.color.selected.background` | `avatar.color.background.selected` | `{background.selected.subtlest.default}` |
+| `avatar.color.selected.background` | `avatar.color.background.selected` | `{background.selected.subtle.default}` |
 | `avatar.color.selected.text` | `avatar.color.text.selected` | `{text.selected}` |
 | `avatar.color.selected.icon` | `avatar.color.icon.selected` | `{icon.selected}` |
 | `avatar.size.xsmall.container` | `avatar.xsmall.size.container` | `{Size200}` |
@@ -128,7 +128,7 @@ Table ancien → nouveau, à valider avant exécution. Règle : README, section 
 | `bottom-nav.color.item.label.selected` | `bottom-nav.item.color.text.selected` | `{text.selected}` |
 | `bottom-nav.color.item.icon.default` | `bottom-nav.item.color.icon.default` | `{icon.subtlest}` |
 | `bottom-nav.color.item.icon.selected` | `bottom-nav.item.color.icon.selected` | `{icon.selected}` |
-| `bottom-nav.color.item.background.selected` | `bottom-nav.item.indicator.color.background` | `{background.selected.subtlest.default}` |
+| `bottom-nav.color.item.background.selected` | `bottom-nav.item.indicator.color.background` | `{background.selected.subtle.default}` |
 | `bottom-nav.color.action.background` | `bottom-nav.action.color.background` | `{background.comete.bold.default}` |
 | `bottom-nav.color.action.icon` | `bottom-nav.action.color.icon` | `{icon.inverted}` |
 | `bottom-nav.color.action.cradle` | `bottom-nav.action.cradle.color.background` | `{background.field.default}` |
@@ -155,21 +155,21 @@ Table ancien → nouveau, à valider avant exécution. Règle : README, section 
 | Ancien | Nouveau | Valeur |
 |---|---|---|
 | `button.color.contained.neutral.text.default` | `button.contained.neutral.color.text.default` | `{text.default.default}` |
-| `button.color.contained.neutral.background.default` | `button.contained.neutral.color.background.default` | `{background.neutral.subtler.default}` |
-| `button.color.contained.neutral.background.hovered` | `button.contained.neutral.color.background.hovered` | `{background.neutral.subtler.hovered}` |
-| `button.color.contained.neutral.background.pressed` | `button.contained.neutral.color.background.pressed` | `{background.neutral.subtler.pressed}` |
+| `button.color.contained.neutral.background.default` | `button.contained.neutral.color.background.default` | `{background.neutral.subtle.default}` |
+| `button.color.contained.neutral.background.hovered` | `button.contained.neutral.color.background.hovered` | `{background.neutral.subtle.hovered}` |
+| `button.color.contained.neutral.background.pressed` | `button.contained.neutral.color.background.pressed` | `{background.neutral.subtle.pressed}` |
 | `button.color.contained.inverted.text.default` | `button.contained.inverted.color.text.default` | `{text.inverted.default}` |
-| `button.color.contained.inverted.background.default` | `button.contained.inverted.color.background.default` | `{background.inverted.subtler.default}` |
-| `button.color.contained.inverted.background.hovered` | `button.contained.inverted.color.background.hovered` | `{background.inverted.subtler.hovered}` |
-| `button.color.contained.inverted.background.pressed` | `button.contained.inverted.color.background.pressed` | `{background.inverted.subtler.pressed}` |
+| `button.color.contained.inverted.background.default` | `button.contained.inverted.color.background.default` | `{background.inverted.subtle.default}` |
+| `button.color.contained.inverted.background.hovered` | `button.contained.inverted.color.background.hovered` | `{background.inverted.subtle.hovered}` |
+| `button.color.contained.inverted.background.pressed` | `button.contained.inverted.color.background.pressed` | `{background.inverted.subtle.pressed}` |
 | `button.color.contained.subtle.text.default` | `button.contained.subtle.color.text.default` | `{text.subtle.default}` |
-| `button.color.contained.subtle.background.default` | `button.contained.subtle.color.background.default` | `{background.neutral.subtler.default}` |
-| `button.color.contained.subtle.background.hovered` | `button.contained.subtle.color.background.hovered` | `{background.neutral.subtler.hovered}` |
-| `button.color.contained.subtle.background.pressed` | `button.contained.subtle.color.background.pressed` | `{background.neutral.subtler.pressed}` |
+| `button.color.contained.subtle.background.default` | `button.contained.subtle.color.background.default` | `{background.neutral.subtle.default}` |
+| `button.color.contained.subtle.background.hovered` | `button.contained.subtle.color.background.hovered` | `{background.neutral.subtle.hovered}` |
+| `button.color.contained.subtle.background.pressed` | `button.contained.subtle.color.background.pressed` | `{background.neutral.subtle.pressed}` |
 | `button.color.contained.subtlest.text.default` | `button.contained.subtlest.color.text.default` | `{text.subtlest.default}` |
-| `button.color.contained.subtlest.background.default` | `button.contained.subtlest.color.background.default` | `{background.neutral.subtler.default}` |
-| `button.color.contained.subtlest.background.hovered` | `button.contained.subtlest.color.background.hovered` | `{background.neutral.subtler.hovered}` |
-| `button.color.contained.subtlest.background.pressed` | `button.contained.subtlest.color.background.pressed` | `{background.neutral.subtler.pressed}` |
+| `button.color.contained.subtlest.background.default` | `button.contained.subtlest.color.background.default` | `{background.neutral.subtle.default}` |
+| `button.color.contained.subtlest.background.hovered` | `button.contained.subtlest.color.background.hovered` | `{background.neutral.subtle.hovered}` |
+| `button.color.contained.subtlest.background.pressed` | `button.contained.subtlest.color.background.pressed` | `{background.neutral.subtle.pressed}` |
 | `button.color.contained.comete.text.default` | `button.contained.comete.color.text.default` | `{text.inverted.default}` |
 | `button.color.contained.comete.background.default` | `button.contained.comete.color.background.default` | `{background.comete.bold.default}` |
 | `button.color.contained.comete.background.hovered` | `button.contained.comete.color.background.hovered` | `{background.comete.bold.hovered}` |
@@ -409,9 +409,9 @@ Table ancien → nouveau, à valider avant exécution. Règle : README, section 
 | `button.color.link-subtle.accent-blue-grey.text.default` | `button.link-subtle.accent-blue-grey.color.text.default` | `{text.accent.blue-grey.default}` |
 | `button.color.link-subtle.accent-blue-grey.text.hovered` | `button.link-subtle.accent-blue-grey.color.text.hovered` | `{text.accent.blue-grey.hovered}` |
 | `button.color.link-subtle.accent-blue-grey.text.pressed` | `button.link-subtle.accent-blue-grey.color.text.pressed` | `{text.accent.blue-grey.pressed}` |
-| `button.color.selected.background.default` | `button.color.background.selected` | `{background.selected.subtlest.default}` |
-| `button.color.selected.background.hovered` | `button.color.background.selected-hovered` | `{background.selected.subtlest.hovered}` |
-| `button.color.selected.background.pressed` | `button.color.background.selected-pressed` | `{background.selected.subtlest.pressed}` |
+| `button.color.selected.background.default` | `button.color.background.selected` | `{background.selected.subtle.default}` |
+| `button.color.selected.background.hovered` | `button.color.background.selected-hovered` | `{background.selected.subtle.hovered}` |
+| `button.color.selected.background.pressed` | `button.color.background.selected-pressed` | `{background.selected.subtle.pressed}` |
 | `button.color.selected.text.default` | `button.color.text.selected` | `{text.selected}` |
 | `button.color.focus.border` | `button.color.border.focus` | `{border.focused}` |
 | `button.color.focus.border-inverted` | `button.color.border.focus-inverted` | `{border.focus-inverted}` |
@@ -504,9 +504,9 @@ appliquée.
 | `side-nav.color.item.background.hovered` | `side-nav.item.color.background.hovered` | `{background.neutral.subtlest.hovered}` |
 | `side-nav.color.item.background.pressed` | `side-nav.item.color.background.pressed` | `{background.neutral.subtlest.pressed}` |
 | `side-nav.color.item.text` | `side-nav.item.color.text.default` | `{text.subtle.default}` |
-| `side-nav.color.item-selected.background.default` | `side-nav.item.color.background.selected` | `{background.selected.subtlest.default}` |
-| `side-nav.color.item-selected.background.hovered` | `side-nav.item.color.background.selected-hovered` | `{background.selected.subtlest.hovered}` |
-| `side-nav.color.item-selected.background.pressed` | `side-nav.item.color.background.selected-pressed` | `{background.selected.subtlest.pressed}` |
+| `side-nav.color.item-selected.background.default` | `side-nav.item.color.background.selected` | `{background.selected.subtle.default}` |
+| `side-nav.color.item-selected.background.hovered` | `side-nav.item.color.background.selected-hovered` | `{background.selected.subtle.hovered}` |
+| `side-nav.color.item-selected.background.pressed` | `side-nav.item.color.background.selected-pressed` | `{background.selected.subtle.pressed}` |
 | `side-nav.color.item-selected.text` | `side-nav.item.color.text.selected` | `{text.selected}` |
 | `side-nav.color.section-title` | `side-nav.section-title.color.text` | `{text.subtle.default}` |
 | `side-nav.color.divider` | `side-nav.divider.color.border` | `{border.subtle}` |

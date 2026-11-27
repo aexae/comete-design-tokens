@@ -2,6 +2,13 @@
 
 > Failles, faiblesses et pistes d'amélioration signalées au fil des échanges.
 
+## Suites du renommage `subtler` → `subtle` (0.50.0, 2026-11-27)
+
+- **Comète SQL (Omnis)** : les clés `background*Subtler*`, `backgroundSelectedSubtlest*` et `backgroundCycle*Subtlest*` n'existent plus dans la sortie Omnis. La classe `oTheme` doit lire les nouvelles clés avant de consommer la 0.50.0, sinon les couleurs concernées reviennent vides.
+- **`background.inverted.subtlest.default` en sombre** : `grey.alpha.100A` posé par analogie, non validé par le design. À confirmer ou corriger.
+- **PR #9 (descriptions du lot A)** : la branche `descriptions-lot-a` porte encore les anciens noms et l'ancien ordre. Elle entrera en conflit avec main sur `light.json` et `dark.json`. Rejouer le renommage et le tri dessus avant de la fusionner.
+- **`selected.subtle` au palier 100** : le nom est cohérent avec `bold`, pas avec la valeur du `subtle` des autres familles (200). Assumé, à garder en tête si une famille `selected` à quatre niveaux apparaît.
+
 ## Suites de `bold` et `boldest` sombres (0.45.0, 2026-11-25)
 
 - **Texte sur `bold` en sombre** : `text.inverted.default` vaut cool-grey.950 en sombre, soit 2,6:1 sur neutral.bold 600, 3,1:1 sur critical, 3,2:1 sur information, 3,6:1 sur comete, 4,1:1 sur success. Le blanc (`text.on-dark-surface`) y fait 5,6:1 (neutral), 4,7:1 (critical), 4,6:1 (information) mais 4,0:1 (comete) et 3,6:1 (success). Aucun token texte ne tient AA sur comete.bold et success.bold en sombre : arbitrage Axel (changer `text.inverted` en sombre, ou les paliers 600).

@@ -1,6 +1,6 @@
 # Inventaire des tokens
 
-> Généré par `pnpm inventory` le 2026-11-26. Ne pas éditer à la main : la source est `tokens/**/*.json`.
+> Généré par `pnpm inventory` le 2026-11-27. Ne pas éditer à la main : la source est `tokens/**/*.json`.
 
 Usages = occurrences de `var(--token)` dans le design system (`src/` hors tests, puis `storybook/stories/`).
 Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**, **dépréciée**, ok.
@@ -9,47 +9,48 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Lot | Tokens | Décrits (ok) | À écrire ou réécrire | Non consommés par le DS |
 |---|---:|---:|---:|---:|
-| A | 87 | 22 (25 %) | 58 | 36 |
+| A | 88 | 23 (26 %) | 58 | 43 |
 | B | 72 | 12 (17 %) | 60 | 37 |
 | C | 158 | 31 (20 %) | 127 | 96 |
-| D | 197 | 25 (13 %) | 172 | 79 |
+| D | 196 | 26 (13 %) | 170 | 78 |
 | E | 200 | 0 (0 %) | 200 | 197 |
-| F | 492 | 176 (36 %) | 316 | 23 |
-| **Total** | **1206** | **266 (22 %)** | **933** | **468** |
+| F | 492 | 173 (35 %) | 319 | 8 |
+| **Total** | **1206** | **265 (22 %)** | **934** | **459** |
 
 ## Lot A — sémantique neutre : text, background, border, icon (default, neutral, surface, selected…)
 
-87 tokens.
+88 tokens.
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
-| `--background-neutral-subtler-default` | color | #eaedee | #49585b | `cool-grey.100` | 10 / 10 | absente |  |
-| `--background-neutral-subtler-hovered` | color | #d8dedf | #596b70 | `cool-grey.200` | 16 / 1 | absente |  |
-| `--background-neutral-subtler-pressed` | color | #b5c1c4 | #6f8488 | `cool-grey.300` | 13 / 1 | absente |  |
+| `--background-neutral-subtlest-default` | color | #f7f8f8 | #49585b | `cool-grey.50` | 14 / 24 | absente |  |
+| `--background-neutral-subtlest-hovered` | color | #eaedee | #3f4a4d | `cool-grey.100` | 6 / 2 | absente |  |
+| `--background-neutral-subtlest-pressed` | color | #d8dedf | #374043 | `cool-grey.200` | 5 / 0 | absente |  |
+| `--background-neutral-subtle-default` | color | #eaedee | #49585b | `cool-grey.100` | 0 / 0 | absente |  |
+| `--background-neutral-subtle-hovered` | color | #d8dedf | #596b70 | `cool-grey.200` | 0 / 0 | absente |  |
+| `--background-neutral-subtle-pressed` | color | #b5c1c4 | #6f8488 | `cool-grey.300` | 0 / 0 | absente |  |
 | `--background-neutral-bold-default` | color | #3f4a4d | #596b70 | `cool-grey.800` | 10 / 8 | absente |  |
 | `--background-neutral-bold-hovered` | color | #374043 | #6f8488 | `cool-grey.900` | 6 / 0 | absente |  |
 | `--background-neutral-bold-pressed` | color | #252a2c | #8d9fa3 | `cool-grey.950` | 6 / 0 | absente |  |
 | `--background-neutral-boldest-default` | color | #252a2c | #d8dedf | `cool-grey.950` | 0 / 0 | ok | Fond neutre le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, neutral.… |
 | `--background-neutral-boldest-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | ok | État survolé de background.neutral.boldest.default (cartes bold interactives). |
 | `--background-neutral-boldest-pressed` | color | #3f4a4d | #f7f8f8 | `cool-grey.800` | 0 / 0 | ok | État pressé de background.neutral.boldest.default (cartes bold interactives). |
-| `--background-neutral-subtlest-default` | color | #f7f8f8 | #49585b | `cool-grey.50` | 14 / 24 | absente |  |
-| `--background-neutral-subtlest-hovered` | color | #eaedee | #3f4a4d | `cool-grey.100` | 7 / 2 | absente |  |
-| `--background-neutral-subtlest-pressed` | color | #d8dedf | #374043 | `cool-grey.200` | 6 / 0 | absente |  |
-| `--background-inverted-subtler-default` | color | #ffffff1a | #0515240f | `white.10` | 0 / 0 | ok | Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester… |
-| `--background-inverted-subtler-hovered` | color | #ffffff33 | #0b120e24 | `white.20` | 0 / 0 | ok | État survolé de background.inverted.subtler.default. |
-| `--background-inverted-subtler-pressed` | color | #ffffff4d | #080f214f | `white.30` | 0 / 0 | ok | État pressé de background.inverted.subtler.default. |
+| `--background-inverted-subtlest-default` | color | #ffffff0f | #17171708 | `white.6` | 0 / 0 | ok | Fond translucide le plus discret d'un contrôle posé sur surface.inverted. |
 | `--background-inverted-subtlest-hovered` | color | #ffffff1a | #0515240f | `white.10` | 0 / 0 | ok | Fond de survol d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). |
 | `--background-inverted-subtlest-pressed` | color | #ffffff33 | #0b120e24 | `white.20` | 0 / 0 | ok | Fond d'appui d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). |
+| `--background-inverted-subtle-default` | color | #ffffff1a | #0515240f | `white.10` | 0 / 0 | ok | Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester… |
+| `--background-inverted-subtle-hovered` | color | #ffffff33 | #0b120e24 | `white.20` | 0 / 0 | ok | État survolé de background.inverted.subtle.default. |
+| `--background-inverted-subtle-pressed` | color | #ffffff4d | #080f214f | `white.30` | 0 / 0 | ok | État pressé de background.inverted.subtle.default. |
 | `--background-disabled-default` | color | #09090b1a | #ffffff1a | `black.10` | 9 / 0 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
+| `--background-selected-subtle-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 0 / 0 | absente |  |
+| `--background-selected-subtle-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 0 / 0 | absente |  |
+| `--background-selected-subtle-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 0 / 0 | absente |  |
+| `--background-selected-bold-default` | color | #2354aa | #2c7ee4 | `comete.blue.800` | 5 / 0 | absente |  |
 | `--background-selected-bold-hovered` | color | #224986 | #429aef | `comete.blue.900` | 2 / 0 | absente |  |
 | `--background-selected-bold-pressed` | color | #1e3661 | #66b8f4 | `comete.blue.950` | 2 / 0 | absente |  |
-| `--background-selected-bold-default` | color | #2354aa | #2c7ee4 | `comete.blue.800` | 5 / 0 | absente |  |
-| `--background-selected-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 3 / 0 | absente |  |
-| `--background-selected-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 4 / 0 | absente |  |
-| `--background-selected-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 4 / 9 | absente |  |
 | `--background-field-default` | color | #ffffff | #252a2c | `white.100` | 6 / 12 | ok | Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce … |
-| `--background-focused-default` | color | #429aef | #66b8f4 | `comete.blue.500` | 4 / 0 | absente |  |
-| `--surface-default` | color | #ffffff | #374043 | `white.100` | 10 / 12 | absente |  |
+| `--background-focused-default` | color | #429aef | #66b8f4 | `comete.blue.500` | 3 / 0 | absente |  |
+| `--surface-default` | color | #ffffff | #374043 | `white.100` | 9 / 12 | absente |  |
 | `--surface-sunken-default` | color | #f7f8f8 | #252a2c | `cool-grey.50` | 2 / 14 | absente |  |
 | `--surface-sunken-hovered` | color | #eaedee | #374043 | `cool-grey.100` | 1 / 0 | absente |  |
 | `--surface-sunken-pressed` | color | #d8dedf | #3f4a4d | `cool-grey.200` | 0 / 0 | absente |  |
@@ -68,7 +69,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--surface-mask-hovered` | color | #080f214f | #bfdbf847 | `grey.alpha.400A` | 0 / 0 | ok | Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour… |
 | `--surface-mask-pressed` | color | #0b120e24 | #a6c5e229 | `grey.alpha.300A` | 0 / 0 | ok | Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doi… |
 | `--surface-inverted` | color | #252a2c | #ffffff | `cool-grey.950` | 0 / 6 | ok | Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page :… |
-| `--text-default-default` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 59 / 54 | absente |  |
+| `--text-default-default` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 58 / 54 | absente |  |
 | `--text-default-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
 | `--text-default-pressed` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | absente |  |
 | `--text-selected` | color | #2c7ee4 | #c1e3fc | `comete.blue.600` | 4 / 15 | absente |  |
@@ -76,18 +77,18 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--text-link-default` | color | #0076d8 | #71cdff | `blue.600` | 0 / 0 | dépréciée | DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrice… |
 | `--text-link-hovered` | color | #0060b0 | #b4e3ff | `blue.700` | 0 / 0 | dépréciée | DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrice… |
 | `--text-link-pressed` | color | #005391 | #ddf1ff | `blue.800` | 0 / 0 | dépréciée | DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrice… |
-| `--text-subtle-default` | color | #49585b | #b5c1c4 | `cool-grey.700` | 29 / 43 | absente |  |
-| `--text-subtle-hovered` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | absente |  |
-| `--text-subtle-pressed` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
+| `--text-subtlest-default` | color | #6f8488 | = | `cool-grey.500` | 19 / 71 | absente |  |
+| `--text-subtlest-hovered` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 0 / 0 | absente |  |
+| `--text-subtlest-pressed` | color | #49585b | #b5c1c4 | `cool-grey.700` | 0 / 0 | absente |  |
 | `--text-inverted-default` | color | #ffffff | #252a2c | `white.100` | 43 / 5 | ok | Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre). |
 | `--text-inverted-hovered` | color | #ffffffcc | #3f4a4d | `white.80` | 0 / 0 | ok | État survolé de text.inverted.default (lien inversé). |
 | `--text-inverted-pressed` | color | #ffffffb3 | #49585b | `white.70` | 0 / 0 | ok | État pressé de text.inverted.default (lien inversé). |
 | `--text-subtle-inverted` | color | #b5c1c4 | #49585b | `cool-grey.300` | 0 / 0 | absente |  |
-| `--text-subtlest-default` | color | #6f8488 | = | `cool-grey.500` | 19 / 71 | absente |  |
-| `--text-subtlest-hovered` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 0 / 0 | absente |  |
-| `--text-subtlest-pressed` | color | #49585b | #b5c1c4 | `cool-grey.700` | 0 / 0 | absente |  |
+| `--text-subtle-default` | color | #49585b | #b5c1c4 | `cool-grey.700` | 29 / 43 | absente |  |
+| `--text-subtle-hovered` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | absente |  |
+| `--text-subtle-pressed` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
 | `--text-on-light-surface` | color | #252a2c | = | `cool-grey.950` | 8 / 0 | ok | Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, orange)… |
-| `--text-on-dark-surface` | color | #ffffff | = | `white.100` | 11 / 4 | ok | Texte blanc fixe sur une surface sombre fixe (surface.comete, critical.bold), dans les deux thèmes. Fonds bol… |
+| `--text-on-dark-surface` | color | #ffffff | = | `white.100` | 7 / 4 | ok | Texte blanc fixe sur une surface sombre fixe (surface.comete, critical.bold), dans les deux thèmes. Fonds bol… |
 | `--border-disabled` | color | #09090b33 | #ffffff33 | `black.20` | 4 / 0 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
 | `--border-subtle` | color | #eaedee | #3f4a4d | `cool-grey.100` | 7 / 22 | absente |  |
 | `--border-focused` | color | #429aef | #66b8f4 | `comete.blue.500` | 18 / 10 | absente |  |
@@ -104,12 +105,12 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--icon-disabled` | color | #09090b66 | #ffffff66 | `black.40` | 9 / 2 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
 | `--icon-inverted` | color | #f7f8f8 | #374043 | `cool-grey.50` | 4 / 0 | absente |  |
 | `--icon-selected` | color | #2c7ee4 | #97d2f9 | `comete.blue.600` | 2 / 0 | absente |  |
-| `--icon-subtle` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 13 / 0 | absente |  |
 | `--icon-subtlest` | color | #6f8488 | = | `cool-grey.500` | 11 / 0 | absente |  |
+| `--icon-subtle` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 13 / 0 | absente |  |
 | `--icon-on-light-surface` | color | #252a2c | = | `cool-grey.950` | 3 / 0 | ok | Icône foncée fixe sur les surfaces claires fixes (fond warning bold, orange), identique en clair et en sombre… |
-| `--icon-on-dark-surface` | color | #ffffff | = | `white.100` | 6 / 0 | ok | Icône blanche fixe sur une surface sombre fixe (surface.comete, critical.bold), dans les deux thèmes. Pendant… |
+| `--icon-on-dark-surface` | color | #ffffff | = | `white.100` | 3 / 0 | ok | Icône blanche fixe sur une surface sombre fixe (surface.comete, critical.bold), dans les deux thèmes. Pendant… |
 | `--icon-bold` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 1 / 0 | absente |  |
-| `--blanket-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 5 / 0 | ok | Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, … |
+| `--blanket-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 4 / 0 | ok | Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, … |
 
 ## Lot B — sémantique de statut : success, warning, critical, information
 
@@ -117,54 +118,54 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
+| `--background-success-subtlest-default` | color | #d0fbe2 | #245041 | `green.100` | 6 / 3 | absente |  |
+| `--background-success-subtlest-hovered` | color | #a4f6ca | #036240 | `green.200` | 3 / 0 | absente |  |
+| `--background-success-subtlest-pressed` | color | #6aebae | #00784d | `green.300` | 3 / 0 | absente |  |
+| `--background-success-subtle-default` | color | #a4f6ca | #036240 | `green.200` | 0 / 0 | absente |  |
+| `--background-success-subtle-hovered` | color | #6aebae | #00784d | `green.300` | 0 / 0 | absente |  |
+| `--background-success-subtle-pressed` | color | #2fd88e | #009b60 | `green.400` | 0 / 0 | absente |  |
 | `--background-success-bold-default` | color | #00784d | #009b60 | `green.700` | 8 / 2 | absente |  |
 | `--background-success-bold-hovered` | color | #036240 | #0abf76 | `green.800` | 2 / 0 | absente |  |
 | `--background-success-bold-pressed` | color | #245041 | #2fd88e | `green.900` | 2 / 0 | absente |  |
 | `--background-success-boldest-default` | color | #0e2d24 | #a4f6ca | `green.950` | 0 / 0 | ok | Fond succès le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, success.… |
 | `--background-success-boldest-hovered` | color | #245041 | #d0fbe2 | `green.900` | 0 / 0 | ok | État survolé de background.success.boldest.default (cartes bold interactives). |
 | `--background-success-boldest-pressed` | color | #036240 | #ebfef4 | `green.800` | 0 / 0 | ok | État pressé de background.success.boldest.default (cartes bold interactives). |
-| `--background-success-subtlest-hovered` | color | #a4f6ca | #036240 | `green.200` | 3 / 0 | absente |  |
-| `--background-success-subtlest-pressed` | color | #6aebae | #00784d | `green.300` | 3 / 0 | absente |  |
-| `--background-success-subtlest-default` | color | #d0fbe2 | #245041 | `green.100` | 6 / 3 | absente |  |
-| `--background-success-subtler-default` | color | #a4f6ca | #036240 | `green.200` | 0 / 0 | absente |  |
-| `--background-success-subtler-hovered` | color | #6aebae | #00784d | `green.300` | 0 / 0 | absente |  |
-| `--background-success-subtler-pressed` | color | #2fd88e | #009b60 | `green.400` | 0 / 0 | absente |  |
+| `--background-warning-subtlest-default` | color | #fff6d4 | #c56509 | `orange.100` | 7 / 3 | absente |  |
+| `--background-warning-subtlest-hovered` | color | #ffe8a9 | #f68909 | `orange.200` | 3 / 0 | absente |  |
+| `--background-warning-subtlest-pressed` | color | #ffd672 | #fca013 | `orange.300` | 3 / 0 | absente |  |
+| `--background-warning-subtle-default` | color | #ffe8a9 | #9c4f10 | `orange.200` | 0 / 0 | absente |  |
+| `--background-warning-subtle-hovered` | color | #ffd672 | #c56509 | `orange.300` | 0 / 0 | absente |  |
+| `--background-warning-subtle-pressed` | color | #feb939 | #f68909 | `orange.400` | 0 / 0 | absente |  |
 | `--background-warning-bold-default` | color | #feb939 | #f68909 | `orange.400` | 8 / 4 | absente |  |
 | `--background-warning-bold-hovered` | color | #fca013 | = | `orange.500` | 2 / 0 | absente |  |
 | `--background-warning-bold-pressed` | color | #f68909 | #feb939 | `orange.600` | 2 / 0 | absente |  |
 | `--background-warning-boldest-default` | color | #441f06 | #ffe8a9 | `orange.950` | 0 / 0 | ok | Fond avertissement le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, w… |
 | `--background-warning-boldest-hovered` | color | #7e4210 | #fff6d4 | `orange.900` | 0 / 0 | ok | État survolé de background.warning.boldest.default (cartes bold interactives). |
 | `--background-warning-boldest-pressed` | color | #9c4f10 | #fffbed | `orange.800` | 0 / 0 | ok | État pressé de background.warning.boldest.default (cartes bold interactives). |
-| `--background-warning-subtlest-pressed` | color | #ffd672 | #fca013 | `orange.300` | 3 / 0 | absente |  |
-| `--background-warning-subtlest-hovered` | color | #ffe8a9 | #f68909 | `orange.200` | 3 / 0 | absente |  |
-| `--background-warning-subtlest-default` | color | #fff6d4 | #c56509 | `orange.100` | 7 / 3 | absente |  |
-| `--background-warning-subtler-default` | color | #ffe8a9 | #9c4f10 | `orange.200` | 0 / 0 | absente |  |
-| `--background-warning-subtler-hovered` | color | #ffd672 | #c56509 | `orange.300` | 0 / 0 | absente |  |
-| `--background-warning-subtler-pressed` | color | #feb939 | #f68909 | `orange.400` | 0 / 0 | absente |  |
+| `--background-critical-subtlest-default` | color | #ffe1e1 | #821a1a | `red.100` | 7 / 0 | absente |  |
+| `--background-critical-subtlest-hovered` | color | #ffc8c8 | #9d1717 | `red.200` | 5 / 0 | absente |  |
+| `--background-critical-subtlest-pressed` | color | #ffa2a2 | #be1717 | `red.300` | 5 / 0 | absente |  |
+| `--background-critical-subtle-default` | color | #ffc8c8 | #9d1717 | `red.200` | 0 / 0 | absente |  |
+| `--background-critical-subtle-hovered` | color | #ffa2a2 | #be1717 | `red.300` | 0 / 0 | absente |  |
+| `--background-critical-subtle-pressed` | color | #fc6d6d | #e12121 | `red.400` | 0 / 0 | absente |  |
 | `--background-critical-bold-default` | color | #e12121 | = | `red.600` | 10 / 2 | absente |  |
 | `--background-critical-bold-hovered` | color | #be1717 | #f44040 | `red.700` | 4 / 0 | absente |  |
 | `--background-critical-bold-pressed` | color | #9d1717 | #fc6d6d | `red.800` | 4 / 0 | absente |  |
 | `--background-critical-boldest-default` | color | #2e1717 | #ffc8c8 | `red.950` | 0 / 0 | ok | Fond critique le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, critic… |
 | `--background-critical-boldest-hovered` | color | #821a1a | #ffe1e1 | `red.900` | 0 / 0 | ok | État survolé de background.critical.boldest.default (cartes bold interactives). |
 | `--background-critical-boldest-pressed` | color | #9d1717 | #fef2f2 | `red.800` | 0 / 0 | ok | État pressé de background.critical.boldest.default (cartes bold interactives). |
-| `--background-critical-subtlest-pressed` | color | #ffa2a2 | #be1717 | `red.300` | 5 / 0 | absente |  |
-| `--background-critical-subtlest-hovered` | color | #ffc8c8 | #9d1717 | `red.200` | 5 / 0 | absente |  |
-| `--background-critical-subtlest-default` | color | #ffe1e1 | #821a1a | `red.100` | 7 / 0 | absente |  |
-| `--background-critical-subtler-default` | color | #ffc8c8 | #9d1717 | `red.200` | 0 / 0 | absente |  |
-| `--background-critical-subtler-hovered` | color | #ffa2a2 | #be1717 | `red.300` | 0 / 0 | absente |  |
-| `--background-critical-subtler-pressed` | color | #fc6d6d | #e12121 | `red.400` | 0 / 0 | absente |  |
+| `--background-information-subtlest-default` | color | #ddf1ff | #034477 | `blue.100` | 6 / 1 | absente |  |
+| `--background-information-subtlest-hovered` | color | #b4e3ff | #005391 | `blue.200` | 5 / 0 | absente |  |
+| `--background-information-subtlest-pressed` | color | #71cdff | #0060b0 | `blue.300` | 5 / 0 | absente |  |
+| `--background-information-subtle-default` | color | #b4e3ff | #005391 | `blue.200` | 0 / 0 | absente |  |
+| `--background-information-subtle-hovered` | color | #71cdff | #0060b0 | `blue.300` | 0 / 0 | absente |  |
+| `--background-information-subtle-pressed` | color | #26b5ff | #0076d8 | `blue.400` | 0 / 0 | absente |  |
 | `--background-information-bold-default` | color | #0076d8 | = | `blue.600` | 8 / 0 | absente |  |
 | `--background-information-bold-hovered` | color | #0060b0 | #009bfe | `blue.700` | 4 / 0 | absente |  |
 | `--background-information-bold-pressed` | color | #005391 | #26b5ff | `blue.800` | 4 / 0 | absente |  |
 | `--background-information-boldest-default` | color | #023059 | #b4e3ff | `blue.950` | 0 / 0 | ok | Fond information le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, inf… |
 | `--background-information-boldest-hovered` | color | #034477 | #ddf1ff | `blue.900` | 0 / 0 | ok | État survolé de background.information.boldest.default (cartes bold interactives). |
 | `--background-information-boldest-pressed` | color | #005391 | #eff8ff | `blue.800` | 0 / 0 | ok | État pressé de background.information.boldest.default (cartes bold interactives). |
-| `--background-information-subtlest-pressed` | color | #71cdff | #0060b0 | `blue.300` | 5 / 0 | absente |  |
-| `--background-information-subtlest-hovered` | color | #b4e3ff | #005391 | `blue.200` | 5 / 0 | absente |  |
-| `--background-information-subtlest-default` | color | #ddf1ff | #034477 | `blue.100` | 6 / 1 | absente |  |
-| `--background-information-subtler-default` | color | #b4e3ff | #005391 | `blue.200` | 0 / 0 | absente |  |
-| `--background-information-subtler-hovered` | color | #71cdff | #0060b0 | `blue.300` | 0 / 0 | absente |  |
-| `--background-information-subtler-pressed` | color | #26b5ff | #0076d8 | `blue.400` | 0 / 0 | absente |  |
 | `--text-success-default` | color | #036240 | #6aebae | `green.800` | 5 / 5 | absente |  |
 | `--text-success-hovered` | color | #245041 | #a4f6ca | `green.900` | 0 / 0 | absente |  |
 | `--text-success-pressed` | color | #0e2d24 | #d0fbe2 | `green.950` | 0 / 0 | absente |  |
@@ -177,14 +178,14 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--text-critical-default` | color | #9d1717 | #ffc8c8 | `red.800` | 16 / 2 | absente |  |
 | `--text-critical-hovered` | color | #821a1a | #ffe1e1 | `red.900` | 0 / 0 | absente |  |
 | `--text-critical-pressed` | color | #2e1717 | #fef2f2 | `red.950` | 0 / 0 | absente |  |
-| `--border-success-bold` | color | #009b60 | #0abf76 | `green.600` | 3 / 2 | absente |  |
 | `--border-success-subtle` | color | #a4f6ca | #036240 | `green.200` | 0 / 0 | absente |  |
-| `--border-critical-bold` | color | #e12121 | #f44040 | `red.600` | 5 / 0 | absente |  |
+| `--border-success-bold` | color | #009b60 | #0abf76 | `green.600` | 3 / 2 | absente |  |
 | `--border-critical-subtle` | color | #ffc8c8 | #9d1717 | `red.200` | 0 / 0 | absente |  |
-| `--border-warning-bold` | color | #f68909 | #fca013 | `orange.600` | 3 / 1 | absente |  |
+| `--border-critical-bold` | color | #e12121 | #f44040 | `red.600` | 5 / 0 | absente |  |
 | `--border-warning-subtle` | color | #ffe8a9 | #9c4f10 | `orange.200` | 0 / 0 | absente |  |
-| `--border-information-bold` | color | #0076d8 | #009bfe | `blue.600` | 3 / 1 | absente |  |
+| `--border-warning-bold` | color | #f68909 | #fca013 | `orange.600` | 3 / 1 | absente |  |
 | `--border-information-subtle` | color | #b4e3ff | #005391 | `blue.200` | 0 / 0 | absente |  |
+| `--border-information-bold` | color | #0076d8 | #009bfe | `blue.600` | 3 / 1 | absente |  |
 | `--icon-warning` | color | #9c4f10 | #ffd672 | `orange.800` | 1 / 0 | absente |  |
 | `--icon-critical` | color | #e12121 | #ffa2a2 | `red.600` | 2 / 0 | absente |  |
 | `--icon-success` | color | #009b60 | #2fd88e | `green.600` | 1 / 0 | absente |  |
@@ -199,99 +200,99 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-brand-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 3 / 5 | absente |  |
 | `--background-brand-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 1 / 0 | absente |  |
 | `--background-brand-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 1 / 0 | absente |  |
+| `--background-brand-subtle-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
+| `--background-brand-subtle-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | absente |  |
+| `--background-brand-subtle-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | absente |  |
 | `--background-brand-bold-default` | color | #2467d1 | #2c7ee4 | `comete.blue.700` | 0 / 4 | absente |  |
 | `--background-brand-bold-hovered` | color | #2354aa | #429aef | `comete.blue.800` | 0 / 0 | absente |  |
 | `--background-brand-bold-pressed` | color | #224986 | #66b8f4 | `comete.blue.900` | 0 / 0 | absente |  |
-| `--background-brand-subtler-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
-| `--background-brand-subtler-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | absente |  |
-| `--background-brand-subtler-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | absente |  |
 | `--background-brand-boldest-default` | color | #1e3661 | #c1e3fc | `comete.blue.950` | 1 / 0 | ok | Miroir de background.comete.boldest.default pour la charte du client (BrandProvider). Suit le thème. Jamais u… |
 | `--background-brand-boldest-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 1 / 0 | ok | État survolé de background.brand.boldest.default. |
 | `--background-brand-boldest-pressed` | color | #2354aa | #f0f8fe | `comete.blue.800` | 1 / 0 | ok | État pressé de background.brand.boldest.default. |
 | `--background-comete-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 7 / 1 | absente |  |
 | `--background-comete-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 5 / 1 | absente |  |
 | `--background-comete-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 3 / 0 | absente |  |
+| `--background-comete-subtle-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
+| `--background-comete-subtle-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | absente |  |
+| `--background-comete-subtle-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | absente |  |
 | `--background-comete-bold-default` | color | #2467d1 | #2c7ee4 | `comete.blue.700` | 9 / 0 | absente |  |
 | `--background-comete-bold-hovered` | color | #2354aa | #429aef | `comete.blue.800` | 2 / 0 | absente |  |
 | `--background-comete-bold-pressed` | color | #224986 | #66b8f4 | `comete.blue.900` | 1 / 0 | absente |  |
-| `--background-comete-subtler-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
-| `--background-comete-subtler-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | absente |  |
-| `--background-comete-subtler-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | absente |  |
 | `--background-comete-boldest-default` | color | #1e3661 | #c1e3fc | `comete.blue.950` | 1 / 0 | ok | Fond Comète le plus contrasté, qui suit le thème (navy en clair, bleu clair en sombre) : carte bold comete. N… |
 | `--background-comete-boldest-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 1 / 0 | ok | État survolé de background.comete.boldest.default (cartes bold interactives). |
 | `--background-comete-boldest-pressed` | color | #2354aa | #f0f8fe | `comete.blue.800` | 1 / 0 | ok | État pressé de background.comete.boldest.default (cartes bold interactives). |
+| `--background-accent-purple-subtlest-default` | color | #e6e8f9 | #453d72 | `purple.100` | 6 / 0 | absente |  |
+| `--background-accent-purple-subtlest-hovered` | color | #d1d4f4 | #51458e | `purple.200` | 3 / 0 | absente |  |
+| `--background-accent-purple-subtlest-pressed` | color | #b5b8ec | #5e4db2 | `purple.300` | 3 / 0 | absente |  |
+| `--background-accent-purple-subtle-default` | color | #d1d4f4 | #51458e | `purple.200` | 0 / 0 | absente |  |
+| `--background-accent-purple-subtle-hovered` | color | #b5b8ec | #5e4db2 | `purple.300` | 0 / 0 | absente |  |
+| `--background-accent-purple-subtle-pressed` | color | #9897e2 | #6e5dc6 | `purple.400` | 0 / 0 | absente |  |
 | `--background-accent-purple-bold-default` | color | #6e5dc6 | = | `purple.600` | 6 / 1 | absente |  |
 | `--background-accent-purple-bold-hovered` | color | #5e4db2 | #8270db | `purple.700` | 2 / 0 | absente |  |
 | `--background-accent-purple-bold-pressed` | color | #453d72 | #9897e2 | `purple.900` | 2 / 0 | absente |  |
 | `--background-accent-purple-boldest-default` | color | #292442 | #d1d4f4 | `purple.950` | 0 / 0 | ok | Fond accent purple le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, a… |
 | `--background-accent-purple-boldest-hovered` | color | #453d72 | #e6e8f9 | `purple.900` | 0 / 0 | ok | État survolé de background.accent.purple.boldest.default (cartes bold interactives). |
 | `--background-accent-purple-boldest-pressed` | color | #51458e | #f3f0ff | `purple.800` | 0 / 0 | ok | État pressé de background.accent.purple.boldest.default (cartes bold interactives). |
-| `--background-accent-purple-subtlest-pressed` | color | #b5b8ec | #5e4db2 | `purple.300` | 3 / 0 | absente |  |
-| `--background-accent-purple-subtlest-hovered` | color | #d1d4f4 | #51458e | `purple.200` | 3 / 0 | absente |  |
-| `--background-accent-purple-subtlest-default` | color | #e6e8f9 | #453d72 | `purple.100` | 6 / 0 | absente |  |
-| `--background-accent-purple-subtler-default` | color | #d1d4f4 | #51458e | `purple.200` | 0 / 0 | absente |  |
-| `--background-accent-purple-subtler-hovered` | color | #b5b8ec | #5e4db2 | `purple.300` | 0 / 0 | absente |  |
-| `--background-accent-purple-subtler-pressed` | color | #9897e2 | #6e5dc6 | `purple.400` | 0 / 0 | absente |  |
+| `--background-accent-teal-subtlest-default` | color | #d5f1f8 | #1f435a | `teal.100` | 6 / 0 | absente |  |
+| `--background-accent-teal-subtlest-hovered` | color | #afe3f2 | #215069 | `teal.200` | 3 / 0 | absente |  |
+| `--background-accent-teal-subtlest-pressed` | color | #79cee7 | #1e6080 | `teal.300` | 3 / 0 | absente |  |
+| `--background-accent-teal-subtle-default` | color | #afe3f2 | #215069 | `teal.200` | 0 / 0 | absente |  |
+| `--background-accent-teal-subtle-hovered` | color | #79cee7 | #1e6080 | `teal.300` | 0 / 0 | absente |  |
+| `--background-accent-teal-subtle-pressed` | color | #42b2d7 | #1c759e | `teal.400` | 0 / 0 | absente |  |
 | `--background-accent-teal-bold-default` | color | #1c759e | = | `teal.600` | 4 / 0 | absente |  |
 | `--background-accent-teal-bold-hovered` | color | #1e6080 | #1f92bb | `teal.700` | 2 / 0 | absente |  |
 | `--background-accent-teal-bold-pressed` | color | #1f435a | #42b2d7 | `teal.900` | 2 / 0 | absente |  |
 | `--background-accent-teal-boldest-default` | color | #0f2b3d | #afe3f2 | `teal.950` | 0 / 0 | ok | Fond accent teal le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, acc… |
 | `--background-accent-teal-boldest-hovered` | color | #1f435a | #d5f1f8 | `teal.900` | 0 / 0 | ok | État survolé de background.accent.teal.boldest.default (cartes bold interactives). |
 | `--background-accent-teal-boldest-pressed` | color | #215069 | #eefafd | `teal.800` | 0 / 0 | ok | État pressé de background.accent.teal.boldest.default (cartes bold interactives). |
-| `--background-accent-teal-subtlest-pressed` | color | #79cee7 | #1e6080 | `teal.300` | 3 / 0 | absente |  |
-| `--background-accent-teal-subtlest-hovered` | color | #afe3f2 | #215069 | `teal.200` | 3 / 0 | absente |  |
-| `--background-accent-teal-subtlest-default` | color | #d5f1f8 | #1f435a | `teal.100` | 6 / 0 | absente |  |
-| `--background-accent-teal-subtler-default` | color | #afe3f2 | #215069 | `teal.200` | 0 / 0 | absente |  |
-| `--background-accent-teal-subtler-hovered` | color | #79cee7 | #1e6080 | `teal.300` | 0 / 0 | absente |  |
-| `--background-accent-teal-subtler-pressed` | color | #42b2d7 | #1c759e | `teal.400` | 0 / 0 | absente |  |
+| `--background-accent-turquoise-subtlest-default` | color | #edfffd | #045d5d | `turquoise.50` | 6 / 0 | absente |  |
+| `--background-accent-turquoise-subtlest-hovered` | color | #c0fffc | #007271 | `turquoise.100` | 3 / 0 | absente |  |
+| `--background-accent-turquoise-subtlest-pressed` | color | #81fffb | #00918d | `turquoise.200` | 3 / 0 | absente |  |
+| `--background-accent-turquoise-subtle-default` | color | #c0fffc | #007271 | `turquoise.100` | 0 / 0 | absente |  |
+| `--background-accent-turquoise-subtle-hovered` | color | #81fffb | #00918d | `turquoise.200` | 0 / 0 | absente |  |
+| `--background-accent-turquoise-subtle-pressed` | color | #3afff9 | #00b7b1 | `turquoise.300` | 0 / 0 | absente |  |
 | `--background-accent-turquoise-bold-default` | color | #00918d | #00b7b1 | `turquoise.700` | 4 / 0 | absente |  |
 | `--background-accent-turquoise-bold-hovered` | color | #007271 | #00e2d5 | `turquoise.800` | 2 / 0 | absente |  |
 | `--background-accent-turquoise-bold-pressed` | color | #045d5d | #00ffef | `turquoise.900` | 2 / 0 | absente |  |
 | `--background-accent-turquoise-boldest-default` | color | #00373a | #81fffb | `turquoise.950` | 0 / 0 | ok | Fond accent turquoise le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle… |
 | `--background-accent-turquoise-boldest-hovered` | color | #045d5d | #c0fffc | `turquoise.900` | 0 / 0 | ok | État survolé de background.accent.turquoise.boldest.default (cartes bold interactives). |
 | `--background-accent-turquoise-boldest-pressed` | color | #007271 | #edfffd | `turquoise.800` | 0 / 0 | ok | État pressé de background.accent.turquoise.boldest.default (cartes bold interactives). |
-| `--background-accent-turquoise-subtlest-pressed` | color | #81fffb | #00918d | `turquoise.200` | 3 / 0 | absente |  |
-| `--background-accent-turquoise-subtlest-hovered` | color | #c0fffc | #007271 | `turquoise.100` | 3 / 0 | absente |  |
-| `--background-accent-turquoise-subtlest-default` | color | #edfffd | #045d5d | `turquoise.50` | 6 / 0 | absente |  |
-| `--background-accent-turquoise-subtler-default` | color | #c0fffc | #007271 | `turquoise.100` | 0 / 0 | absente |  |
-| `--background-accent-turquoise-subtler-hovered` | color | #81fffb | #00918d | `turquoise.200` | 0 / 0 | absente |  |
-| `--background-accent-turquoise-subtler-pressed` | color | #3afff9 | #00b7b1 | `turquoise.300` | 0 / 0 | absente |  |
+| `--background-accent-magenta-subtlest-default` | color | #f9eaf5 | #762550 | `magenta.100` | 6 / 0 | absente |  |
+| `--background-accent-magenta-subtlest-hovered` | color | #f6d4eb | #8d275d | `magenta.200` | 3 / 0 | absente |  |
+| `--background-accent-magenta-subtlest-pressed` | color | #efb2da | #aa2c6f | `magenta.300` | 3 / 0 | absente |  |
+| `--background-accent-magenta-subtle-default` | color | #f6d4eb | #8d275d | `magenta.200` | 0 / 0 | absente |  |
+| `--background-accent-magenta-subtle-hovered` | color | #efb2da | #aa2c6f | `magenta.300` | 0 / 0 | absente |  |
+| `--background-accent-magenta-subtle-pressed` | color | #e581c1 | #c63c8a | `magenta.400` | 0 / 0 | absente |  |
 | `--background-accent-magenta-bold-default` | color | #c63c8a | = | `magenta.600` | 4 / 0 | absente |  |
 | `--background-accent-magenta-bold-hovered` | color | #aa2c6f | #da62ac | `magenta.700` | 2 / 0 | absente |  |
 | `--background-accent-magenta-bold-pressed` | color | #762550 | #e581c1 | `magenta.900` | 2 / 0 | absente |  |
 | `--background-accent-magenta-boldest-default` | color | #47102d | #f6d4eb | `magenta.950` | 0 / 0 | ok | Fond accent magenta le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, … |
 | `--background-accent-magenta-boldest-hovered` | color | #762550 | #f9eaf5 | `magenta.900` | 0 / 0 | ok | État survolé de background.accent.magenta.boldest.default (cartes bold interactives). |
 | `--background-accent-magenta-boldest-pressed` | color | #8d275d | #fcf3f9 | `magenta.800` | 0 / 0 | ok | État pressé de background.accent.magenta.boldest.default (cartes bold interactives). |
-| `--background-accent-magenta-subtlest-pressed` | color | #efb2da | #aa2c6f | `magenta.300` | 3 / 0 | absente |  |
-| `--background-accent-magenta-subtlest-hovered` | color | #f6d4eb | #8d275d | `magenta.200` | 3 / 0 | absente |  |
-| `--background-accent-magenta-subtlest-default` | color | #f9eaf5 | #762550 | `magenta.100` | 6 / 0 | absente |  |
-| `--background-accent-magenta-subtler-default` | color | #f6d4eb | #8d275d | `magenta.200` | 0 / 0 | absente |  |
-| `--background-accent-magenta-subtler-hovered` | color | #efb2da | #aa2c6f | `magenta.300` | 0 / 0 | absente |  |
-| `--background-accent-magenta-subtler-pressed` | color | #e581c1 | #c63c8a | `magenta.400` | 0 / 0 | absente |  |
+| `--background-accent-blue-grey-subtlest-default` | color | #eaedf4 | #2c374b | `blue-grey.100` | 6 / 0 | absente |  |
+| `--background-accent-blue-grey-subtlest-hovered` | color | #d1d9e6 | #32415a | `blue-grey.200` | 3 / 0 | absente |  |
+| `--background-accent-blue-grey-subtlest-pressed` | color | #a8b9d1 | #384b6c | `blue-grey.300` | 3 / 0 | absente |  |
+| `--background-accent-blue-grey-subtle-default` | color | #d1d9e6 | #32415a | `blue-grey.200` | 0 / 0 | absente |  |
+| `--background-accent-blue-grey-subtle-hovered` | color | #a8b9d1 | #384b6c | `blue-grey.300` | 0 / 0 | absente |  |
+| `--background-accent-blue-grey-subtle-pressed` | color | #7993b7 | #455d84 | `blue-grey.400` | 0 / 0 | absente |  |
 | `--background-accent-blue-grey-bold-default` | color | #455d84 | = | `blue-grey.600` | 4 / 0 | absente |  |
 | `--background-accent-blue-grey-bold-hovered` | color | #384b6c | #58759f | `blue-grey.700` | 2 / 0 | absente |  |
 | `--background-accent-blue-grey-bold-pressed` | color | #2c374b | #7993b7 | `blue-grey.900` | 2 / 0 | absente |  |
 | `--background-accent-blue-grey-boldest-default` | color | #1e2533 | #d1d9e6 | `blue-grey.950` | 0 / 0 | ok | Fond accent blue-grey le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle… |
 | `--background-accent-blue-grey-boldest-hovered` | color | #2c374b | #eaedf4 | `blue-grey.900` | 0 / 0 | ok | État survolé de background.accent.blue-grey.boldest.default (cartes bold interactives). |
 | `--background-accent-blue-grey-boldest-pressed` | color | #32415a | #f5f7fa | `blue-grey.800` | 0 / 0 | ok | État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives). |
-| `--background-accent-blue-grey-subtlest-default` | color | #eaedf4 | #2c374b | `blue-grey.100` | 6 / 0 | absente |  |
-| `--background-accent-blue-grey-subtlest-hovered` | color | #d1d9e6 | #32415a | `blue-grey.200` | 3 / 0 | absente |  |
-| `--background-accent-blue-grey-subtlest-pressed` | color | #a8b9d1 | #384b6c | `blue-grey.300` | 3 / 0 | absente |  |
-| `--background-accent-blue-grey-subtler-default` | color | #d1d9e6 | #32415a | `blue-grey.200` | 0 / 0 | absente |  |
-| `--background-accent-blue-grey-subtler-hovered` | color | #a8b9d1 | #384b6c | `blue-grey.300` | 0 / 0 | absente |  |
-| `--background-accent-blue-grey-subtler-pressed` | color | #7993b7 | #455d84 | `blue-grey.400` | 0 / 0 | absente |  |
+| `--background-cycle-night-subtle-default` | color | #eff8ff | #023059 | `blue.50` | 0 / 0 | absente |  |
+| `--background-cycle-night-subtle-hovered` | color | #ddf1ff | #034477 | `blue.100` | 0 / 0 | absente |  |
+| `--background-cycle-night-subtle-pressed` | color | #b4e3ff | #005391 | `blue.200` | 0 / 0 | absente |  |
 | `--background-cycle-night-bold-default` | color | #0060b0 | #26b5ff | `blue.700` | 0 / 0 | absente |  |
 | `--background-cycle-night-bold-hovered` | color | #005391 | #71cdff | `blue.800` | 0 / 0 | absente |  |
 | `--background-cycle-night-bold-pressed` | color | #034477 | #b4e3ff | `blue.900` | 0 / 0 | absente |  |
-| `--background-cycle-night-subtlest-default` | color | #eff8ff | #023059 | `blue.50` | 0 / 0 | absente |  |
-| `--background-cycle-night-subtlest-hovered` | color | #ddf1ff | #034477 | `blue.100` | 0 / 0 | absente |  |
-| `--background-cycle-night-subtlest-pressed` | color | #b4e3ff | #005391 | `blue.200` | 0 / 0 | absente |  |
+| `--background-cycle-day-subtle-default` | color | #fffbed | #441f06 | `orange.50` | 0 / 0 | absente |  |
+| `--background-cycle-day-subtle-hovered` | color | #fff6d4 | #7e4210 | `orange.100` | 0 / 0 | absente |  |
+| `--background-cycle-day-subtle-pressed` | color | #ffe8a9 | #9c4f10 | `orange.200` | 0 / 0 | absente |  |
 | `--background-cycle-day-bold-default` | color | #feb939 | #f68909 | `orange.400` | 0 / 0 | absente |  |
 | `--background-cycle-day-bold-hovered` | color | #fca013 | = | `orange.500` | 0 / 0 | absente |  |
 | `--background-cycle-day-bold-pressed` | color | #f68909 | #feb939 | `orange.600` | 0 / 0 | absente |  |
-| `--background-cycle-day-subtlest-default` | color | #fffbed | #441f06 | `orange.50` | 0 / 0 | absente |  |
-| `--background-cycle-day-subtlest-hovered` | color | #fff6d4 | #7e4210 | `orange.100` | 0 / 0 | absente |  |
-| `--background-cycle-day-subtlest-pressed` | color | #ffe8a9 | #9c4f10 | `orange.200` | 0 / 0 | absente |  |
 | `--surface-comete` | color | #1e3661 | = | `comete.blue.950` | 0 / 2 | ok | Surface navy Comète, identique en clair et en sombre : en-tête, barre, bandeau. Sans état. Texte en text.on-d… |
 | `--text-accent-purple-default` | color | #5e4db2 | #d1d4f4 | `purple.700` | 4 / 0 | absente |  |
 | `--text-accent-purple-hovered` | color | #51458e | #e6e8f9 | `purple.800` | 0 / 0 | absente |  |
@@ -316,25 +317,25 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--text-comete-hovered` | color | #2354aa | #c1e3fc | `comete.blue.800` | 0 / 0 | absente |  |
 | `--text-comete-pressed` | color | #2467d1 | #97d2f9 | `comete.blue.700` | 0 / 0 | absente |  |
 | `--text-comete-boldest` | color | #1e3661 | #f0f8fe | `comete.blue.950` | 0 / 0 | ok | Texte navy Comète pour les titres d'identité sur fond clair. Pas pour les liens ni les contrôles (text.comete… |
-| `--border-accent-purple-bold` | color | #8270db | = | `purple.500` | 3 / 0 | absente |  |
 | `--border-accent-purple-subtle` | color | #d1d4f4 | #51458e | `purple.200` | 0 / 0 | absente |  |
-| `--border-accent-teal-bold` | color | #1f92bb | = | `teal.500` | 3 / 0 | absente |  |
+| `--border-accent-purple-bold` | color | #8270db | = | `purple.500` | 3 / 0 | absente |  |
 | `--border-accent-teal-subtle` | color | #afe3f2 | #215069 | `teal.200` | 0 / 0 | absente |  |
-| `--border-accent-turquoise-bold` | color | #00e2d5 | = | `turquoise.500` | 3 / 0 | absente |  |
+| `--border-accent-teal-bold` | color | #1f92bb | = | `teal.500` | 3 / 0 | absente |  |
 | `--border-accent-turquoise-subtle` | color | #81fffb | #007271 | `turquoise.200` | 0 / 0 | absente |  |
-| `--border-accent-magenta-bold` | color | #da62ac | = | `magenta.500` | 3 / 0 | absente |  |
+| `--border-accent-turquoise-bold` | color | #00e2d5 | = | `turquoise.500` | 3 / 0 | absente |  |
 | `--border-accent-magenta-subtle` | color | #f6d4eb | #8d275d | `magenta.200` | 0 / 0 | absente |  |
-| `--border-accent-blue-grey-bold` | color | #58759f | = | `blue-grey.500` | 3 / 0 | absente |  |
+| `--border-accent-magenta-bold` | color | #da62ac | = | `magenta.500` | 3 / 0 | absente |  |
 | `--border-accent-blue-grey-subtle` | color | #d1d9e6 | #32415a | `blue-grey.200` | 0 / 0 | absente |  |
-| `--border-day-bold` | color | #f68909 | #fca013 | `orange.600` | 0 / 0 | absente |  |
+| `--border-accent-blue-grey-bold` | color | #58759f | = | `blue-grey.500` | 3 / 0 | absente |  |
 | `--border-day-subtle` | color | #fff6d4 | #7e4210 | `orange.100` | 0 / 0 | absente |  |
-| `--border-night-bold` | color | #0076d8 | #009bfe | `blue.600` | 0 / 0 | absente |  |
+| `--border-day-bold` | color | #f68909 | #fca013 | `orange.600` | 0 / 0 | absente |  |
 | `--border-night-subtle` | color | #71cdff | #0060b0 | `blue.300` | 0 / 0 | absente |  |
-| `--border-brand-bold` | color | #224986 | #dceefd | `comete.blue.900` | 2 / 0 | absente |  |
+| `--border-night-bold` | color | #0076d8 | #009bfe | `blue.600` | 0 / 0 | absente |  |
 | `--border-brand-subtle` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
+| `--border-brand-bold` | color | #224986 | #dceefd | `comete.blue.900` | 2 / 0 | absente |  |
 | `--border-brand-boldest` | color | #1e3661 | #f0f8fe | `comete.blue.950` | 0 / 0 | ok | Miroir de border.comete.boldest pour la charte du client (BrandProvider). |
-| `--border-comete-bold` | color | #224986 | #dceefd | `comete.blue.900` | 8 / 3 | absente |  |
 | `--border-comete-subtle` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
+| `--border-comete-bold` | color | #224986 | #dceefd | `comete.blue.900` | 8 / 3 | absente |  |
 | `--border-comete-boldest` | color | #1e3661 | #f0f8fe | `comete.blue.950` | 0 / 0 | ok | Bordure navy Comète, accent d'identité le plus appuyé. Pas pour les contrôles (border.comete.bold). |
 | `--icon-brand-default` | color | #2354aa | #c1e3fc | `comete.blue.800` | 0 / 1 | ok | Miroir de icon.comete.default pour la charte du client (BrandProvider). |
 | `--icon-brand-boldest` | color | #1e3661 | #f0f8fe | `comete.blue.950` | 0 / 0 | ok | Miroir de icon.comete.boldest pour la charte du client (BrandProvider). |
@@ -357,7 +358,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 ## Lot D — primitives hors couleur : spacing, sizing, radius, typographie, control, ombres, animation, z-index, breakpoints, opacité
 
-197 tokens.
+196 tokens.
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
@@ -371,10 +372,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--easing-exit` | other | cubic-bezier(0.2, 0, 1, 0.9) | = |  | 0 / 0 | ok | Elements leaving the screen |
 | `--easing-emphasized` | other | cubic-bezier(0.23, 1, 0.32, 1) | = |  | 5 / 0 | ok | Strong ease-out: fast start, long soft landing (selection indicators, state changes that must feel instant) |
 | `--easing-linear` | other | linear | = |  | 1 / 0 | ok | Constant speed (spinners, progress) |
-| `--mobile` | dimension | 0px | = |  | 0 / 0 | trop courte | Smartphone |
-| `--tablet` | dimension | 600px | = |  | 0 / 0 | trop courte | Tablette |
-| `--laptop` | dimension | 1200px | = |  | 0 / 0 | ok | Ordinateur portable (ou tablette en paysage) |
-| `--desktop` | dimension | 1920px | = |  | 0 / 0 | ok | Ordinateur fixe / grands écrans |
+| `--breakpoint-sm` | dimension | 600px | = |  | 0 / 0 | ok | Bascule tablette (600 px). Miroir de BREAKPOINTS.sm du DS : seuil tablet de Grid, Table hideBelow sm. |
+| `--breakpoint-md` | dimension | 900px | = |  | 0 / 0 | ok | Palier intermédiaire (900 px). Miroir de BREAKPOINTS.md du DS : Table hideBelow md. |
+| `--breakpoint-lg` | dimension | 1200px | = |  | 0 / 0 | ok | Bascule desktop (1200 px). Miroir de BREAKPOINTS.lg du DS : seuil desktop de Grid, Table hideBelow lg, goutti… |
 | `--dark-grey-alpha-500-a` | color | #9bb4ca80 | = |  | 0 / 0 | absente |  |
 | `--dark-grey-alpha-400-a` | color | #bfdbf847 | = |  | 0 / 0 | absente |  |
 | `--dark-grey-alpha-300-a` | color | #a6c5e229 | = |  | 0 / 0 | absente |  |
@@ -422,7 +422,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--radius150` | dimension | 12px | = | `Size150` | 1 / 3 | tautologique | Radius150 (12 px) |
 | `--radius200` | dimension | 16px | = | `Size200` | 1 / 11 | tautologique | Radius200 (16 px) |
 | `--radius300` | dimension | 24px | = | `Size300` | 2 / 0 | tautologique | Radius300 (24 px) |
-| `--radius-round` | dimension | 1024px | = | `Size12800` | 25 / 5 | trop courte | RadiusROUND (1024 px) |
+| `--radius-round` | dimension | 1024px | = | `Size12800` | 24 / 5 | trop courte | RadiusROUND (1024 px) |
 | `--shadow-key-0` | shadow | {"offsetX":"0px","offsetY":"0px","blur":"0px","spread":"0px","color":"#00000000"} | = |  | 0 / 0 | absente |  |
 | `--shadow-key-1` | shadow | {"offsetX":"0px","offsetY":"1px","blur":"2px","spread":"0px","color":"#1e36610d"} | = |  | 0 / 0 | absente |  |
 | `--shadow-key-2` | shadow | {"offsetX":"0px","offsetY":"1px","blur":"2px","spread":"0px","color":"#1e366114"} | = |  | 0 / 0 | absente |  |
@@ -440,13 +440,13 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--elevation-none` | shadow | ["{shadow.key.0}","{shadow.ambiant.0}"] | = |  | 0 / 0 | absente |  |
 | `--elevation-xsmall` | shadow | ["{shadow.key.1}","{shadow.ambiant.1}"] | = |  | 1 / 2 | absente |  |
 | `--elevation-small` | shadow | ["{shadow.key.2}","{shadow.ambiant.2}"] | = |  | 2 / 1 | absente |  |
-| `--elevation-medium` | shadow | ["{shadow.key.3}","{shadow.ambiant.3}"] | = |  | 3 / 1 | absente |  |
+| `--elevation-medium` | shadow | ["{shadow.key.3}","{shadow.ambiant.3}"] | = |  | 1 / 1 | absente |  |
 | `--elevation-large` | shadow | ["{shadow.key.4}","{shadow.ambiant.4}"] | = |  | 7 / 0 | absente |  |
 | `--elevation-xlarge` | shadow | ["{shadow.key.5}","{shadow.ambiant.5}"] | = |  | 2 / 0 | absente |  |
 | `--elevation-xxlarge` | shadow | ["{shadow.key.6}","{shadow.ambiant.6}"] | = |  | 0 / 0 | absente |  |
 | `--size0` | dimension | 0px | = |  | 1 / 0 | tautologique | 0 |
 | `--size0125` | dimension | 1px | = |  | 16 / 1 | tautologique | 1 |
-| `--size025` | dimension | 2px | = |  | 22 / 0 | tautologique | 2 |
+| `--size025` | dimension | 2px | = |  | 21 / 0 | tautologique | 2 |
 | `--size0375` | dimension | 3px | = |  | 2 / 0 | tautologique | 3 |
 | `--size050` | dimension | 4px | = |  | 12 / 1 | tautologique | 4 |
 | `--size0625` | dimension | 5px | = |  | 2 / 0 | tautologique | 5 |
@@ -461,10 +461,10 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--size300` | dimension | 24px | = |  | 29 / 3 | tautologique | 24 |
 | `--size350` | dimension | 28px | = |  | 5 / 0 | tautologique | 28 |
 | `--size400` | dimension | 32px | = |  | 22 / 2 | tautologique | 32 |
-| `--size500` | dimension | 40px | = |  | 10 / 1 | tautologique | 40 |
+| `--size500` | dimension | 40px | = |  | 9 / 1 | tautologique | 40 |
 | `--size600` | dimension | 48px | = |  | 5 / 0 | tautologique | 48 |
 | `--size700` | dimension | 56px | = |  | 0 / 0 | tautologique | 56 |
-| `--size800` | dimension | 64px | = |  | 2 / 0 | tautologique | 64 |
+| `--size800` | dimension | 64px | = |  | 1 / 0 | tautologique | 64 |
 | `--size1000` | dimension | 80px | = |  | 0 / 0 | tautologique | 80 |
 | `--size1200` | dimension | 96px | = |  | 1 / 0 | tautologique | 96 |
 | `--size1600` | dimension | 128px | = |  | 1 / 0 | tautologique | 128 |
@@ -476,12 +476,12 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--space0375` | dimension | 3px | = | `Size0375` | 0 / 0 | tautologique | Spacing 0375 (3 px) |
 | `--space050` | dimension | 4px | = | `Size050` | 50 / 14 | tautologique | Spacing 050 (4 px) |
 | `--space075` | dimension | 6px | = | `Size075` | 34 / 11 | tautologique | Spacing 075 (6 px) |
-| `--space100` | dimension | 8px | = | `Size100` | 63 / 47 | tautologique | Spacing 100 (8 px) |
-| `--space150` | dimension | 12px | = | `Size150` | 23 / 40 | tautologique | Spacing 150 (12 px) |
-| `--space200` | dimension | 16px | = | `Size200` | 44 / 75 | tautologique | Spacing 200 (16 px) |
+| `--space100` | dimension | 8px | = | `Size100` | 60 / 47 | tautologique | Spacing 100 (8 px) |
+| `--space150` | dimension | 12px | = | `Size150` | 22 / 40 | tautologique | Spacing 150 (12 px) |
+| `--space200` | dimension | 16px | = | `Size200` | 40 / 75 | tautologique | Spacing 200 (16 px) |
 | `--space125` | dimension | 10px | = | `Size125` | 3 / 7 | tautologique | Spacing 125 (10 px) |
 | `--space250` | dimension | 20px | = | `Size250` | 2 / 3 | tautologique | Spacing 250 (20 px) |
-| `--space300` | dimension | 24px | = | `Size300` | 21 / 38 | tautologique | Spacing 300 (24 px) |
+| `--space300` | dimension | 24px | = | `Size300` | 20 / 38 | tautologique | Spacing 300 (24 px) |
 | `--space350` | dimension | 28px | = | `Size350` | 0 / 0 | tautologique | Spacing 350 (28 px) |
 | `--space400` | dimension | 32px | = | `Size400` | 2 / 13 | tautologique | Spacing 400 (32 px) |
 | `--space500` | dimension | 40px | = | `Size500` | 0 / 0 | tautologique | Spacing 500 (40 px) |
@@ -779,9 +779,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--autosave-indicator-color-critical-text` | color | #9d1717 | #ffc8c8 | `text.critical.default` | 0 / 0 | ok | Libellé de l'état critical |
 | `--autosave-indicator-color-critical-icon` | color | #e12121 | #ffa2a2 | `icon.critical` | 0 / 0 | ok | Icône ou spinner de l'état critical |
 | `--autosave-indicator-spacing-gap` | dimension | 2px | = | `Space025` | 0 / 0 | ok | Espace entre l'icône et le libellé (2 px) |
-| `--avatar-color-neutral-background-default` | color | #eaedee | #49585b | `background.neutral.subtler.default` | 2 / 0 | absente |  |
-| `--avatar-color-neutral-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtler.hovered` | 2 / 0 | absente |  |
-| `--avatar-color-neutral-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtler.pressed` | 2 / 0 | absente |  |
+| `--avatar-color-neutral-background-default` | color | #eaedee | #49585b | `background.neutral.subtle.default` | 2 / 0 | absente |  |
+| `--avatar-color-neutral-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtle.hovered` | 2 / 0 | absente |  |
+| `--avatar-color-neutral-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtle.pressed` | 2 / 0 | absente |  |
 | `--avatar-color-neutral-text` | color | #252a2c | #f7f8f8 | `text.default.default` | 2 / 0 | ok | Initiales de l'avatar neutral |
 | `--avatar-color-neutral-icon` | color | #32415a | #eaedf4 | `icon.default` | 1 / 0 | ok | Icône de l'avatar neutral |
 | `--avatar-color-comete-background-default` | color | #dceefd | #1e3661 | `background.comete.subtlest.default` | 1 / 0 | absente |  |
@@ -814,7 +814,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--avatar-color-accent-blue-grey-background-pressed` | color | #a8b9d1 | #384b6c | `background.accent.blue-grey.subtlest.pressed` | 1 / 0 | absente |  |
 | `--avatar-color-accent-blue-grey-text` | color | #32415a | #d1d9e6 | `text.accent.blue-grey.default` | 1 / 0 | ok | Initiales de l'avatar accent-blue-grey |
 | `--avatar-color-accent-blue-grey-icon` | color | #58759f | #a8b9d1 | `icon.accent.blue-grey` | 1 / 0 | ok | Icône de l'avatar accent-blue-grey |
-| `--avatar-color-selected-background` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 2 / 0 | ok | Fond de l'avatar sélectionné, prime sur la couleur et les états |
+| `--avatar-color-selected-background` | color | #dceefd | #1e3661 | `background.selected.subtle.default` | 2 / 0 | ok | Fond de l'avatar sélectionné, prime sur la couleur et les états |
 | `--avatar-color-selected-text` | color | #2c7ee4 | #c1e3fc | `text.selected` | 2 / 0 | ok | Initiales de l'avatar sélectionné |
 | `--avatar-color-selected-icon` | color | #2c7ee4 | #97d2f9 | `icon.selected` | 1 / 0 | ok | Icône de l'avatar sélectionné |
 | `--avatar-size-xsmall-container` | dimension | 16px | = | `Size200` | 2 / 0 | trop courte | Avatar xsmall (16 px) |
@@ -870,7 +870,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--bottom-nav-color-item-label-selected` | color | #2c7ee4 | #c1e3fc | `text.selected` | 1 / 0 | ok | Libellé d'un item sélectionné ou ouvert |
 | `--bottom-nav-color-item-icon-default` | color | #6f8488 | = | `icon.subtlest` | 1 / 0 | trop courte | Icône d'un item au repos |
 | `--bottom-nav-color-item-icon-selected` | color | #2c7ee4 | #97d2f9 | `icon.selected` | 1 / 0 | ok | Icône d'un item sélectionné, et croix de fermeture d'un item ouvert |
-| `--bottom-nav-color-item-background-selected` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 2 / 0 | ok | Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé … |
+| `--bottom-nav-color-item-background-selected` | color | #dceefd | #1e3661 | `background.selected.subtle.default` | 2 / 0 | ok | Pastille derrière l'icône et le libellé d'un item sélectionné ou ouvert. Sert aussi de découpe au badge posé … |
 | `--bottom-nav-color-action-background` | color | #2467d1 | #2c7ee4 | `background.comete.bold.default` | 1 / 0 | ok | Fond du bouton d'action central (FAB). Bleu action Comète fixe, jamais la charte client |
 | `--bottom-nav-color-action-icon` | color | #f7f8f8 | #374043 | `icon.inverted` | 1 / 0 | ok | Icône du bouton d'action central |
 | `--bottom-nav-color-action-cradle` | color | #ffffff | #252a2c | `background.field.default` | 1 / 0 | ok | Anneau (cradle) autour de la moitié haute du bouton d'action |
@@ -892,21 +892,21 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--bottom-nav-radius-action` | dimension | 1024px | = | `RadiusRound` | 2 / 0 | ok | Bouton d'action central et son anneau |
 | `--bottom-nav-opacity-disabled` | number | 0.38 | = | `opacity.disabled` | 1 / 0 | ok | Opacité d'un item désactivé |
 | `--button-color-contained-neutral-text-default` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | absente |  |
-| `--button-color-contained-neutral-background-default` | color | #eaedee | #49585b | `background.neutral.subtler.default` | 1 / 0 | absente |  |
-| `--button-color-contained-neutral-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtler.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-neutral-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtler.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-neutral-background-default` | color | #eaedee | #49585b | `background.neutral.subtle.default` | 1 / 0 | absente |  |
+| `--button-color-contained-neutral-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-neutral-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-inverted-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
-| `--button-color-contained-inverted-background-default` | color | #ffffff1a | #0515240f | `background.inverted.subtler.default` | 1 / 0 | absente |  |
-| `--button-color-contained-inverted-background-hovered` | color | #ffffff33 | #0b120e24 | `background.inverted.subtler.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-inverted-background-pressed` | color | #ffffff4d | #080f214f | `background.inverted.subtler.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-inverted-background-default` | color | #ffffff1a | #0515240f | `background.inverted.subtle.default` | 1 / 0 | absente |  |
+| `--button-color-contained-inverted-background-hovered` | color | #ffffff33 | #0b120e24 | `background.inverted.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-inverted-background-pressed` | color | #ffffff4d | #080f214f | `background.inverted.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-subtle-text-default` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | absente |  |
-| `--button-color-contained-subtle-background-default` | color | #eaedee | #49585b | `background.neutral.subtler.default` | 1 / 0 | ok | Fond au repos du bouton contained subtle : même gris que contained neutral (background.neutral.subtler.defaul… |
-| `--button-color-contained-subtle-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtler.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-subtle-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtler.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-subtle-background-default` | color | #eaedee | #49585b | `background.neutral.subtle.default` | 1 / 0 | ok | Fond au repos du bouton contained subtle : même gris que contained neutral (background.neutral.subtle.default… |
+| `--button-color-contained-subtle-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-subtle-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-subtlest-text-default` | color | #6f8488 | = | `text.subtlest.default` | 1 / 0 | absente |  |
-| `--button-color-contained-subtlest-background-default` | color | #eaedee | #49585b | `background.neutral.subtler.default` | 1 / 0 | ok | Fond au repos du bouton contained subtlest : même gris que contained neutral (background.neutral.subtler.defa… |
-| `--button-color-contained-subtlest-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtler.hovered` | 1 / 0 | absente |  |
-| `--button-color-contained-subtlest-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtler.pressed` | 1 / 0 | absente |  |
+| `--button-color-contained-subtlest-background-default` | color | #eaedee | #49585b | `background.neutral.subtle.default` | 1 / 0 | ok | Fond au repos du bouton contained subtlest : même gris que contained neutral (background.neutral.subtle.defau… |
+| `--button-color-contained-subtlest-background-hovered` | color | #d8dedf | #596b70 | `background.neutral.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-contained-subtlest-background-pressed` | color | #b5c1c4 | #6f8488 | `background.neutral.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-contained-comete-text-default` | color | #ffffff | #252a2c | `text.inverted.default` | 1 / 0 | absente |  |
 | `--button-color-contained-comete-background-default` | color | #2467d1 | #2c7ee4 | `background.comete.bold.default` | 1 / 0 | absente |  |
 | `--button-color-contained-comete-background-hovered` | color | #2354aa | #429aef | `background.comete.bold.hovered` | 1 / 0 | absente |  |
@@ -1146,9 +1146,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--button-color-link-subtle-accent-blue-grey-text-default` | color | #32415a | #d1d9e6 | `text.accent.blue-grey.default` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-accent-blue-grey-text-hovered` | color | #2c374b | #eaedf4 | `text.accent.blue-grey.hovered` | 1 / 0 | absente |  |
 | `--button-color-link-subtle-accent-blue-grey-text-pressed` | color | #1e2533 | #f5f7fa | `text.accent.blue-grey.pressed` | 1 / 0 | absente |  |
-| `--button-color-selected-background-default` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 1 / 0 | absente |  |
-| `--button-color-selected-background-hovered` | color | #c1e3fc | #224986 | `background.selected.subtlest.hovered` | 1 / 0 | absente |  |
-| `--button-color-selected-background-pressed` | color | #97d2f9 | #2354aa | `background.selected.subtlest.pressed` | 1 / 0 | absente |  |
+| `--button-color-selected-background-default` | color | #dceefd | #1e3661 | `background.selected.subtle.default` | 1 / 0 | absente |  |
+| `--button-color-selected-background-hovered` | color | #c1e3fc | #224986 | `background.selected.subtle.hovered` | 1 / 0 | absente |  |
+| `--button-color-selected-background-pressed` | color | #97d2f9 | #2354aa | `background.selected.subtle.pressed` | 1 / 0 | absente |  |
 | `--button-color-selected-text-default` | color | #2c7ee4 | #c1e3fc | `text.selected` | 3 / 0 | absente |  |
 | `--button-color-focus-border` | color | #429aef | #66b8f4 | `border.focused` | 1 / 0 | absente |  |
 | `--button-color-focus-border-inverted` | color | #dceefd | #224986 | `border.focus-inverted` | 1 / 0 | ok | Anneau de focus du Button inverted, lisible sur surface.inverted. |
@@ -1190,21 +1190,21 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--page-toolbar-spacing-group-gap` | dimension | 8px | = | `Space100` | 3 / 0 | ok | Espace entre les éléments des zones filters, start et end (8 px) |
 | `--page-toolbar-size-search-min-width` | dimension | 160px | = |  | 1 / 0 | ok | Largeur minimale du champ de recherche (160 px, placeholder lisible). Valeur brute : aucun token d'échelle |
 | `--page-toolbar-size-search-max-width` | dimension | 240px | = |  | 1 / 0 | ok | Largeur maximale du champ de recherche (240 px). Valeur brute : aucun token d'échelle |
-| `--quick-actions-color-overlay` | color | #050c1f7d | #9bb4ca80 | `blanket.default` | 0 / 0 | ok | Voile plein écran sous les rangées |
-| `--quick-actions-color-row-background-default` | color | #ffffff | #374043 | `surface.default` | 0 / 0 | ok | Fond d'une rangée. Toujours neutre : le ton de l'action ne va que sur la pastille d'icône (IconTile) |
-| `--quick-actions-color-row-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 0 / 0 | ok | Fond d'une rangée survolée |
-| `--quick-actions-color-row-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 0 / 0 | ok | Fond d'une rangée pressée |
-| `--quick-actions-color-row-label` | color | #252a2c | #f7f8f8 | `text.default.default` | 0 / 0 | trop courte | Libellé d'une rangée |
-| `--quick-actions-size-row-min-height` | dimension | 56px | = | `Size700` | 0 / 0 | ok | Hauteur minimale d'une rangée (56 px) : pastille de 40 px et padding vertical de 8 px |
-| `--quick-actions-spacing-list-padding` | dimension | 16px | = | `Space200` | 0 / 0 | ok | Marge intérieure de la liste, en haut et sur les côtés (16 px) |
-| `--quick-actions-spacing-list-padding-bottom` | dimension | 128px | = | `Space1600` | 0 / 0 | ok | Place réservée en bas de la liste au bouton d'action et à la barre (128 px), hors zone de sécurité |
-| `--quick-actions-spacing-list-gap` | dimension | 12px | = | `Space150` | 0 / 0 | ok | Écart entre deux rangées (12 px) |
-| `--quick-actions-spacing-row-gap` | dimension | 16px | = | `Space200` | 0 / 0 | ok | Écart entre la pastille d'icône et le libellé (16 px) |
-| `--quick-actions-spacing-row-padding-y` | dimension | 8px | = | `Space100` | 0 / 0 | ok | Marge intérieure verticale d'une rangée (8 px) |
-| `--quick-actions-spacing-row-padding-start` | dimension | 8px | = | `Space100` | 0 / 0 | ok | Marge intérieure côté pastille (8 px), égale au vertical pour centrer la pastille dans l'arrondi |
-| `--quick-actions-spacing-row-padding-end` | dimension | 24px | = | `Space300` | 0 / 0 | ok | Marge intérieure côté libellé (24 px) |
-| `--quick-actions-radius-row` | dimension | 1024px | = | `RadiusRound` | 0 / 0 | ok | Coins d'une rangée (pilule) |
-| `--quick-actions-elevation-row` | shadow | ["{shadow.key.3}","{shadow.ambiant.3}"] | = | `elevation.medium` | 0 / 0 | ok | Ombre d'une rangée, qui flotte au-dessus du voile |
+| `--quick-actions-menu-color-blanket` | color | #050c1f7d | #9bb4ca80 | `blanket.default` | 1 / 0 | ok | Voile plein écran sous les items |
+| `--quick-actions-menu-list-spacing-padding` | dimension | 16px | = | `Space200` | 2 / 0 | ok | Marge intérieure de la liste, en haut et sur les côtés (16 px) |
+| `--quick-actions-menu-list-spacing-padding-bottom` | dimension | 128px | = | `Space1600` | 1 / 0 | ok | Place réservée en bas de la liste au bouton d'action et à la barre (128 px), hors zone de sécurité |
+| `--quick-actions-menu-list-spacing-gap` | dimension | 12px | = | `Space150` | 1 / 0 | ok | Écart entre deux items (12 px) |
+| `--quick-actions-menu-item-color-background-default` | color | #ffffff | #374043 | `surface.default` | 1 / 0 | ok | Fond d'un item. Toujours neutre : le ton de l'action ne va que sur la pastille d'icône (IconTile) |
+| `--quick-actions-menu-item-color-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | trop courte | Fond d'un item survolé |
+| `--quick-actions-menu-item-color-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | trop courte | Fond d'un item pressé |
+| `--quick-actions-menu-item-color-text` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | trop courte | Libellé d'un item |
+| `--quick-actions-menu-item-size-min-height` | dimension | 56px | = | `Size700` | 1 / 0 | ok | Hauteur minimale d'un item (56 px) : pastille de 40 px et padding vertical de 8 px |
+| `--quick-actions-menu-item-spacing-gap` | dimension | 16px | = | `Space200` | 1 / 0 | ok | Écart entre la pastille d'icône et le libellé (16 px) |
+| `--quick-actions-menu-item-spacing-padding-y` | dimension | 8px | = | `Space100` | 2 / 0 | ok | Marge intérieure verticale d'un item (8 px) |
+| `--quick-actions-menu-item-spacing-padding-start` | dimension | 8px | = | `Space100` | 1 / 0 | ok | Marge intérieure côté pastille (8 px), égale au vertical pour centrer la pastille dans l'arrondi |
+| `--quick-actions-menu-item-spacing-padding-end` | dimension | 24px | = | `Space300` | 1 / 0 | ok | Marge intérieure côté libellé (24 px) |
+| `--quick-actions-menu-item-radius` | dimension | 1024px | = | `RadiusRound` | 1 / 0 | trop courte | Coins d'un item (pilule) |
+| `--quick-actions-menu-item-elevation` | shadow | ["{shadow.key.3}","{shadow.ambiant.3}"] | = | `elevation.medium` | 1 / 0 | ok | Ombre d'un item, qui flotte au-dessus du voile |
 | `--side-nav-color-surface-background` | color | #ffffff | #374043 | `surface.default` | 2 / 0 | ok | Fond du panneau de navigation (aussi le fond au survol d'un item désactivé) |
 | `--side-nav-color-surface-border` | color | #eaedee | #3f4a4d | `border.subtle` | 1 / 0 | ok | Bordure droite du panneau, séparation avec le contenu |
 | `--side-nav-color-header-title` | color | #252a2c | #f7f8f8 | `text.default.default` | 1 / 0 | ok | Nom de l'application dans l'en-tête |
@@ -1212,9 +1212,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--side-nav-color-item-background-hovered` | color | #eaedee | #3f4a4d | `background.neutral.subtlest.hovered` | 1 / 0 | trop courte | Fond d'un item au survol |
 | `--side-nav-color-item-background-pressed` | color | #d8dedf | #374043 | `background.neutral.subtlest.pressed` | 1 / 0 | trop courte | Fond d'un item à l'appui |
 | `--side-nav-color-item-text` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | ok | Libellé d'un item non sélectionné |
-| `--side-nav-color-item-selected-background-default` | color | #dceefd | #1e3661 | `background.selected.subtlest.default` | 2 / 0 | ok | Fond de l'item de la page courante |
-| `--side-nav-color-item-selected-background-hovered` | color | #c1e3fc | #224986 | `background.selected.subtlest.hovered` | 2 / 0 | ok | Fond de l'item de la page courante au survol |
-| `--side-nav-color-item-selected-background-pressed` | color | #97d2f9 | #2354aa | `background.selected.subtlest.pressed` | 2 / 0 | ok | Fond de l'item de la page courante à l'appui |
+| `--side-nav-color-item-selected-background-default` | color | #dceefd | #1e3661 | `background.selected.subtle.default` | 2 / 0 | ok | Fond de l'item de la page courante |
+| `--side-nav-color-item-selected-background-hovered` | color | #c1e3fc | #224986 | `background.selected.subtle.hovered` | 2 / 0 | ok | Fond de l'item de la page courante au survol |
+| `--side-nav-color-item-selected-background-pressed` | color | #97d2f9 | #2354aa | `background.selected.subtle.pressed` | 2 / 0 | ok | Fond de l'item de la page courante à l'appui |
 | `--side-nav-color-item-selected-text` | color | #2c7ee4 | #c1e3fc | `text.selected` | 1 / 0 | ok | Libellé de l'item de la page courante |
 | `--side-nav-color-section-title` | color | #49585b | #b5c1c4 | `text.subtle.default` | 1 / 0 | ok | Titre de section (capitales) |
 | `--side-nav-color-divider` | color | #eaedee | #3f4a4d | `border.subtle` | 1 / 0 | ok | Séparateur entre groupes d'items |

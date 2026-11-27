@@ -2,6 +2,15 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-27 — `subtler` devient `subtle`, ordre des niveaux imposé (0.50.0, CASSANT)
+
+- **Décision** (Axel) : l'échelle d'emphase des fonds est `subtlest` / `subtle` / `bold` / `boldest`. `background.*.subtler` devient `background.*.subtle` pour treize familles (neutral, inverted, brand, comete, success, warning, critical, information, cinq accents). `background.selected.subtlest`, `background.cycle.day.subtlest` et `background.cycle.night.subtlest` deviennent `subtle`, en miroir de leur `bold`.
+- **Raison** : cohérence avec `bold` (il n'existe pas de `bolder`) et avec `text`, `border` et `icon` qui disent déjà `subtle`. Les familles à deux niveaux portent le couple `subtle` / `bold`.
+- **Valeurs inchangées** : seuls les noms bougent. `selected.subtle` reste au palier 100 (décision d'Axel), alors que le `subtle` des autres familles est au palier 200.
+- **Ordre** (règle permanente d'Axel) : dans les JSON comme dans les variables Figma, les niveaux sont toujours rangés `subtlest`, `subtle`, `bold`, `boldest`, et les états `default`, `hovered`, `pressed`. Les deux fichiers de thème sont retriés.
+- **Ajout** : `background.inverted.subtlest.default` (`white.6` en clair, valeur d'Axel). En sombre, `grey.alpha.100A` par analogie avec l'échelle existante, choix de la session à confirmer (voir TODO).
+- **Cassant, sans alias** : les variables CSS `--background-*-subtler-*`, `--background-selected-subtlest-*` et `--background-cycle-*-subtlest-*` disparaissent, ainsi que les clés Omnis correspondantes (`backgroundNeutralSubtlerDefault` devient `backgroundNeutralSubtleDefault`). Impact Omnis accepté par Axel. `consumers/omnis.json` suit les nouveaux noms.
+
 ## 2026-11-27 — Breakpoints préfixés et alignés sur le DS (0.49.0, CASSANT)
 
 - **Décision** (Axel) : les tokens de breakpoint prennent le préfixe `breakpoint` et les valeurs du code du DS (`BREAKPOINTS` de `src/tokens/breakpoints.ts`) : `--breakpoint-sm` 600 px, `--breakpoint-md` 900 px, `--breakpoint-lg` 1200 px. `--mobile` (0), `--tablet` (600), `--laptop` (1200) et `--desktop` (1920) sont retirés.

@@ -9,13 +9,13 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Lot | Tokens | Décrits (ok) | À écrire ou réécrire | Non consommés par le DS |
 |---|---:|---:|---:|---:|
-| A | 88 | 23 (26 %) | 58 | 43 |
+| A | 88 | 81 (92 %) | 0 | 43 |
 | B | 72 | 12 (17 %) | 60 | 37 |
-| C | 158 | 31 (20 %) | 127 | 96 |
+| C | 158 | 47 (30 %) | 111 | 96 |
 | D | 196 | 26 (13 %) | 170 | 78 |
 | E | 200 | 0 (0 %) | 200 | 197 |
 | F | 492 | 173 (35 %) | 319 | 8 |
-| **Total** | **1206** | **265 (22 %)** | **934** | **459** |
+| **Total** | **1206** | **339 (28 %)** | **860** | **459** |
 
 ## Lot A — sémantique neutre : text, background, border, icon (default, neutral, surface, selected…)
 
@@ -23,94 +23,94 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
-| `--background-neutral-subtlest-default` | color | #f7f8f8 | #596b70 | `cool-grey.50` | 14 / 24 | absente |  |
-| `--background-neutral-subtlest-hovered` | color | #eaedee | #6f8488 | `cool-grey.100` | 6 / 2 | absente |  |
-| `--background-neutral-subtlest-pressed` | color | #d8dedf | #8d9fa3 | `cool-grey.200` | 5 / 0 | absente |  |
-| `--background-neutral-subtle-default` | color | #eaedee | #3f4a4d | `cool-grey.100` | 0 / 0 | absente |  |
-| `--background-neutral-subtle-hovered` | color | #d8dedf | #49585b | `cool-grey.200` | 0 / 0 | absente |  |
-| `--background-neutral-subtle-pressed` | color | #b5c1c4 | #596b70 | `cool-grey.300` | 0 / 0 | absente |  |
-| `--background-neutral-bold-default` | color | #3f4a4d | #6f8488 | `cool-grey.800` | 10 / 8 | absente |  |
-| `--background-neutral-bold-hovered` | color | #374043 | #8d9fa3 | `cool-grey.900` | 6 / 0 | absente |  |
-| `--background-neutral-bold-pressed` | color | #252a2c | #b5c1c4 | `cool-grey.950` | 6 / 0 | absente |  |
-| `--background-neutral-boldest-default` | color | #252a2c | #d8dedf | `cool-grey.950` | 0 / 0 | ok | Fond neutre le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, neutral.… |
-| `--background-neutral-boldest-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | ok | État survolé de background.neutral.boldest.default (cartes bold interactives). |
-| `--background-neutral-boldest-pressed` | color | #3f4a4d | #f7f8f8 | `cool-grey.800` | 0 / 0 | ok | État pressé de background.neutral.boldest.default (cartes bold interactives). |
+| `--background-neutral-subtlest-default` | color | #f7f8f8 | #596b70 | `cool-grey.50` | 14 / 24 | ok | Fond gris le plus léger : avatar, icon tile neutre. |
+| `--background-neutral-subtlest-hovered` | color | #eaedee | #6f8488 | `cool-grey.100` | 6 / 2 | ok | État survolé d'un élément posé sur background.neutral.subtlest. |
+| `--background-neutral-subtlest-pressed` | color | #d8dedf | #8d9fa3 | `cool-grey.200` | 5 / 0 | ok | État pressé d'un élément posé sur background.neutral.subtlest. |
+| `--background-neutral-subtle-default` | color | #eaedee | #3f4a4d | `cool-grey.100` | 0 / 0 | ok | Fond des contrôles neutres à l'état de repos : bouton contained neutral, tag, badge, switch inactif. Texte en… |
+| `--background-neutral-subtle-hovered` | color | #d8dedf | #49585b | `cool-grey.200` | 0 / 0 | ok | État survolé de background.neutral.subtle.default. |
+| `--background-neutral-subtle-pressed` | color | #b5c1c4 | #596b70 | `cool-grey.300` | 0 / 0 | ok | État pressé de background.neutral.subtle.default. |
+| `--background-neutral-bold-default` | color | #3f4a4d | #6f8488 | `cool-grey.800` | 10 / 8 | ok | Fond gris foncé plein pour les éléments d'interface neutres importants : badge, tag bold. Texte en text.inver… |
+| `--background-neutral-bold-hovered` | color | #374043 | #8d9fa3 | `cool-grey.900` | 6 / 0 | ok | État survolé de background.neutral.bold.default. |
+| `--background-neutral-bold-pressed` | color | #252a2c | #b5c1c4 | `cool-grey.950` | 6 / 0 | ok | État pressé de background.neutral.bold.default. |
+| `--background-neutral-boldest-default` | color | #252a2c | #d8dedf | `cool-grey.950` | 0 / 0 | ok | Fond neutre le plus contrasté. |
+| `--background-neutral-boldest-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | ok | État survolé de background.neutral.boldest.default. |
+| `--background-neutral-boldest-pressed` | color | #3f4a4d | #f7f8f8 | `cool-grey.800` | 0 / 0 | ok | État pressé de background.neutral.boldest.default. |
 | `--background-inverted-subtlest-default` | color | #ffffff0f | #17171708 | `white.6` | 0 / 0 | ok | Fond translucide le plus discret d'un contrôle posé sur surface.inverted. |
-| `--background-inverted-subtlest-hovered` | color | #ffffff1a | #0515240f | `white.10` | 0 / 0 | ok | Fond de survol d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). |
-| `--background-inverted-subtlest-pressed` | color | #ffffff33 | #0b120e24 | `white.20` | 0 / 0 | ok | Fond d'appui d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted). |
-| `--background-inverted-subtle-default` | color | #ffffff1a | #0515240f | `white.10` | 0 / 0 | ok | Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester… |
+| `--background-inverted-subtlest-hovered` | color | #ffffff1a | #0515240f | `white.10` | 0 / 0 | ok | État survolé d'un contrôle sans fond posé sur surface.inverted. |
+| `--background-inverted-subtlest-pressed` | color | #ffffff33 | #0b120e24 | `white.20` | 0 / 0 | ok | État pressé d'un contrôle sans fond posé sur surface.inverted. |
+| `--background-inverted-subtle-default` | color | #ffffff1a | #0515240f | `white.10` | 0 / 0 | ok | Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted), juste sur tout fond inv… |
 | `--background-inverted-subtle-hovered` | color | #ffffff33 | #0b120e24 | `white.20` | 0 / 0 | ok | État survolé de background.inverted.subtle.default. |
 | `--background-inverted-subtle-pressed` | color | #ffffff4d | #080f214f | `white.30` | 0 / 0 | ok | État pressé de background.inverted.subtle.default. |
 | `--background-disabled-default` | color | #09090b1a | #ffffff1a | `black.10` | 9 / 0 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
-| `--background-selected-subtle-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 0 / 0 | absente |  |
-| `--background-selected-subtle-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 0 / 0 | absente |  |
-| `--background-selected-subtle-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 0 / 0 | absente |  |
-| `--background-selected-bold-default` | color | #2354aa | #c1e3fc | `comete.blue.800` | 5 / 0 | absente |  |
-| `--background-selected-bold-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 2 / 0 | absente |  |
-| `--background-selected-bold-pressed` | color | #1e3661 | #f0f8fe | `comete.blue.950` | 2 / 0 | absente |  |
-| `--background-field-default` | color | #ffffff | #252a2c | `white.100` | 6 / 12 | ok | Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce … |
-| `--background-focused-default` | color | #429aef | #66b8f4 | `comete.blue.500` | 3 / 0 | absente |  |
-| `--surface-default` | color | #ffffff | #374043 | `white.100` | 9 / 12 | absente |  |
-| `--surface-sunken-default` | color | #f7f8f8 | #252a2c | `cool-grey.50` | 2 / 14 | absente |  |
-| `--surface-sunken-hovered` | color | #eaedee | #374043 | `cool-grey.100` | 1 / 0 | absente |  |
-| `--surface-sunken-pressed` | color | #d8dedf | #3f4a4d | `cool-grey.200` | 0 / 0 | absente |  |
-| `--surface-raise-default` | color | #ffffff | #49585b | `white.100` | 8 / 2 | absente |  |
-| `--surface-overlay-default` | color | #ffffff | #3f4a4d | `white.100` | 7 / 0 | absente |  |
-| `--surface-overlay-critical` | color | #fef2f2 | #2e1717 | `red.50` | 0 / 0 | absente |  |
-| `--surface-overlay-success` | color | #ebfef4 | #0e2d24 | `green.50` | 0 / 0 | absente |  |
-| `--surface-overlay-accent-purple` | color | #f3f0ff | #292442 | `purple.50` | 0 / 0 | absente |  |
-| `--surface-overlay-accent-teal` | color | #eefafd | #0f2b3d | `teal.50` | 0 / 0 | absente |  |
-| `--surface-overlay-accent-turquoise` | color | #edfffd | #00373a | `turquoise.50` | 0 / 0 | absente |  |
-| `--surface-overlay-accent-magenta` | color | #fcf3f9 | #47102d | `magenta.50` | 0 / 0 | absente |  |
-| `--surface-overlay-accent-blue-grey` | color | #f5f7fa | #1e2533 | `blue-grey.50` | 0 / 0 | absente |  |
-| `--surface-overlay-information` | color | #eff8ff | #023059 | `blue.50` | 0 / 0 | absente |  |
-| `--surface-overlay-warning` | color | #fffbed | #441f06 | `orange.50` | 0 / 0 | absente |  |
-| `--surface-mask-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 0 / 0 | ok | Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'en… |
-| `--surface-mask-hovered` | color | #080f214f | #bfdbf847 | `grey.alpha.400A` | 0 / 0 | ok | Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour… |
-| `--surface-mask-pressed` | color | #0b120e24 | #a6c5e229 | `grey.alpha.300A` | 0 / 0 | ok | Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doi… |
-| `--surface-inverted` | color | #252a2c | #ffffff | `cool-grey.950` | 0 / 6 | ok | Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page :… |
-| `--text-default-default` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 58 / 54 | absente |  |
-| `--text-default-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
-| `--text-default-pressed` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | absente |  |
-| `--text-selected` | color | #2c7ee4 | #c1e3fc | `comete.blue.600` | 4 / 15 | absente |  |
+| `--background-selected-subtle-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 0 / 0 | ok | Fond de l'élément sélectionné dans une liste, un menu, une navigation ou un tableau. Texte en text.selected, … |
+| `--background-selected-subtle-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 0 / 0 | ok | État survolé d'un élément sélectionné (background.selected.subtle). |
+| `--background-selected-subtle-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 0 / 0 | ok | État pressé d'un élément sélectionné (background.selected.subtle). |
+| `--background-selected-bold-default` | color | #2354aa | #c1e3fc | `comete.blue.800` | 5 / 0 | ok | Fond plein de sélection : toggle button actif, switch. |
+| `--background-selected-bold-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 2 / 0 | ok | État survolé de background.selected.bold.default. |
+| `--background-selected-bold-pressed` | color | #1e3661 | #f0f8fe | `comete.blue.950` | 2 / 0 | ok | État pressé de background.selected.bold.default. |
+| `--background-field-default` | color | #ffffff | #252a2c | `white.100` | 6 / 12 | ok | Remplissage des champs et contrôles posés sur une surface : champ, case non cochée, pouce du Switch. |
+| `--background-focused-default` | color | #429aef | #66b8f4 | `comete.blue.500` | 3 / 0 | ok | Indicateur de focus clavier quand il ne peut pas être une bordure : cellule de tableau, puce radio, action ra… |
+| `--surface-default` | color | #ffffff | #374043 | `white.100` | 9 / 12 | ok | Surface de base : page, panneau, tableau, liste, menu, anneau de découpe (Badge). Porte une profondeur, pas u… |
+| `--surface-sunken-default` | color | #f7f8f8 | #252a2c | `cool-grey.50` | 2 / 14 | ok | Surface en creux sous la base : fond de page derrière des cartes, zone de dépôt, champ de saisie au repos. |
+| `--surface-sunken-hovered` | color | #eaedee | #374043 | `cool-grey.100` | 1 / 0 | ok | État survolé d'une surface en creux (champ au repos survolé). |
+| `--surface-sunken-pressed` | color | #d8dedf | #3f4a4d | `cool-grey.200` | 0 / 0 | ok | État pressé d'une surface en creux. |
+| `--surface-raise-default` | color | #ffffff | #49585b | `white.100` | 8 / 2 | ok | Surface surélevée au-dessus de la base : popover, sélecteurs de date et d'heure. S'accompagne d'une ombre ele… |
+| `--surface-overlay-default` | color | #ffffff | #3f4a4d | `white.100` | 7 / 0 | ok | Surface de la couche modale, posée sur blanket.default : boîte de dialogue, tiroir, spotlight. Niveau le plus… |
+| `--surface-overlay-critical` | color | #fef2f2 | #2e1717 | `red.50` | 0 / 0 | ok | Teinte la plus claire de critical pour une surface modale ou un encart d'erreur. Texte en text.critical ou te… |
+| `--surface-overlay-success` | color | #ebfef4 | #0e2d24 | `green.50` | 0 / 0 | ok | Teinte la plus claire de success pour une surface modale ou un encart de confirmation. Texte en text.success … |
+| `--surface-overlay-accent-purple` | color | #f3f0ff | #292442 | `purple.50` | 0 / 0 | ok | Teinte la plus claire de l'accent purple pour une surface ou un encart décoratif. Catégoriel, sans sens de st… |
+| `--surface-overlay-accent-teal` | color | #eefafd | #0f2b3d | `teal.50` | 0 / 0 | ok | Teinte la plus claire de l'accent teal pour une surface ou un encart décoratif. Catégoriel, sans sens de stat… |
+| `--surface-overlay-accent-turquoise` | color | #edfffd | #00373a | `turquoise.50` | 0 / 0 | ok | Teinte la plus claire de l'accent turquoise pour une surface ou un encart décoratif. Catégoriel, sans sens de… |
+| `--surface-overlay-accent-magenta` | color | #fcf3f9 | #47102d | `magenta.50` | 0 / 0 | ok | Teinte la plus claire de l'accent magenta pour une surface ou un encart décoratif. Catégoriel, sans sens de s… |
+| `--surface-overlay-accent-blue-grey` | color | #f5f7fa | #1e2533 | `blue-grey.50` | 0 / 0 | ok | Teinte la plus claire de l'accent blue-grey pour une surface ou un encart décoratif. Catégoriel, sans sens de… |
+| `--surface-overlay-information` | color | #eff8ff | #023059 | `blue.50` | 0 / 0 | ok | Teinte la plus claire d'information pour une surface modale ou un encart informatif. Texte en text.informatio… |
+| `--surface-overlay-warning` | color | #fffbed | #441f06 | `orange.50` | 0 / 0 | ok | Teinte la plus claire de warning pour une surface modale ou un encart d'avertissement. Texte en text.default … |
+| `--surface-mask-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 0 / 0 | ok | Voile local posé sur un élément : chargement d'une table, média en cours d'envoi, zone inactive. Pour la couc… |
+| `--surface-mask-hovered` | color | #080f214f | #bfdbf847 | `grey.alpha.400A` | 0 / 0 | ok | Voile local au survol d'un média cliquable, plus léger que default. |
+| `--surface-mask-pressed` | color | #0b120e24 | #a6c5e229 | `grey.alpha.300A` | 0 / 0 | ok | Voile local à l'appui d'un média cliquable, plus léger que hovered. |
+| `--surface-inverted` | color | #252a2c | #ffffff | `cool-grey.950` | 0 / 6 | ok | Surface inversée par rapport au thème (encre en clair, blanc en sombre) : logo inversé, encart contrasté. Tex… |
+| `--text-default-default` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 58 / 54 | ok | Texte principal : corps, titres, libellés, valeurs. AA texte sur toute surface claire. Sur fond bold, text.in… |
+| `--text-default-hovered` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | ok | Texte principal survolé (lien discret, texte cliquable sans fond). |
+| `--text-default-pressed` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | ok | Texte principal pressé (lien discret, texte cliquable sans fond). |
+| `--text-selected` | color | #2c7ee4 | #c1e3fc | `comete.blue.600` | 4 / 15 | ok | Texte de l'élément sélectionné : liste, menu, navigation, badge. Bleu Comète fixe. AA composant seulement : l… |
 | `--text-disabled` | color | #09090b66 | #ffffff66 | `black.40` | 48 / 1 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
 | `--text-link-default` | color | #0076d8 | #71cdff | `blue.600` | 0 / 0 | dépréciée | DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrice… |
 | `--text-link-hovered` | color | #0060b0 | #b4e3ff | `blue.700` | 0 / 0 | dépréciée | DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrice… |
 | `--text-link-pressed` | color | #005391 | #ddf1ff | `blue.800` | 0 / 0 | dépréciée | DEPRECATED : utiliser button.color.link.* via le Button link. Supprimé après migration des apps consommatrice… |
-| `--text-subtlest-default` | color | #6f8488 | = | `cool-grey.500` | 19 / 71 | absente |  |
-| `--text-subtlest-hovered` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 0 / 0 | absente |  |
-| `--text-subtlest-pressed` | color | #49585b | #b5c1c4 | `cool-grey.700` | 0 / 0 | absente |  |
-| `--text-inverted-default` | color | #ffffff | #252a2c | `white.100` | 43 / 5 | ok | Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre). |
+| `--text-subtlest-default` | color | #6f8488 | = | `cool-grey.500` | 19 / 71 | ok | Texte tertiaire : placeholder, mention, compteur, jour hors mois. Sous AA en petit texte : réservé au texte d… |
+| `--text-subtlest-hovered` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 0 / 0 | ok | Texte tertiaire survolé (bouton subtlest, lien discret). |
+| `--text-subtlest-pressed` | color | #49585b | #b5c1c4 | `cool-grey.700` | 0 / 0 | ok | Texte tertiaire pressé (bouton subtlest, lien discret). |
+| `--text-inverted-default` | color | #ffffff | #252a2c | `white.100` | 43 / 5 | ok | Texte sur surface.inverted et sur fond bold : bandeau, tag bold, bouton plein, snackbar. Suit le thème : sur … |
 | `--text-inverted-hovered` | color | #ffffffcc | #3f4a4d | `white.80` | 0 / 0 | ok | État survolé de text.inverted.default (lien inversé). |
 | `--text-inverted-pressed` | color | #ffffffb3 | #49585b | `white.70` | 0 / 0 | ok | État pressé de text.inverted.default (lien inversé). |
-| `--text-subtle-inverted` | color | #b5c1c4 | #49585b | `cool-grey.300` | 0 / 0 | absente |  |
-| `--text-subtle-default` | color | #49585b | #b5c1c4 | `cool-grey.700` | 29 / 43 | absente |  |
-| `--text-subtle-hovered` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | absente |  |
-| `--text-subtle-pressed` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | absente |  |
-| `--text-on-light-surface` | color | #252a2c | = | `cool-grey.950` | 8 / 0 | ok | Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, orange)… |
+| `--text-subtle-inverted` | color | #b5c1c4 | #49585b | `cool-grey.300` | 0 / 0 | ok | Texte secondaire sur fond bold, aux côtés de text.inverted. Suit le thème : sur une surface navy fixe, text.o… |
+| `--text-subtle-default` | color | #49585b | #b5c1c4 | `cool-grey.700` | 29 / 43 | ok | Texte secondaire : description, aide de champ, métadonnée, en-tête de colonne, fil d'Ariane. AA texte. Pas po… |
+| `--text-subtle-hovered` | color | #3f4a4d | #d8dedf | `cool-grey.800` | 0 / 0 | ok | Texte secondaire survolé (lien discret, bouton subtle). |
+| `--text-subtle-pressed` | color | #374043 | #eaedee | `cool-grey.900` | 0 / 0 | ok | Texte secondaire pressé (lien discret, bouton subtle). |
+| `--text-on-light-surface` | color | #252a2c | = | `cool-grey.950` | 8 / 0 | ok | Texte foncé fixe sur une surface claire fixe (warning bold, orange), dans les deux thèmes. Fond bold qui suit… |
 | `--text-on-dark-surface` | color | #ffffff | = | `white.100` | 7 / 4 | ok | Texte blanc fixe sur une surface sombre fixe (surface.comete, critical.bold), dans les deux thèmes. Fonds bol… |
 | `--border-disabled` | color | #09090b33 | #ffffff33 | `black.20` | 4 / 0 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
-| `--border-subtle` | color | #eaedee | #3f4a4d | `cool-grey.100` | 7 / 22 | absente |  |
-| `--border-focused` | color | #429aef | #66b8f4 | `comete.blue.500` | 18 / 10 | absente |  |
-| `--border-bold` | color | #b5c1c4 | #49585b | `cool-grey.300` | 5 / 2 | absente |  |
-| `--border-selected` | color | #429aef | #66b8f4 | `comete.blue.500` | 9 / 2 | absente |  |
-| `--border-selected-inverted` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
-| `--border-focus-inverted` | color | #dceefd | #224986 | `comete.blue.100` | 0 / 0 | absente |  |
-| `--border-neutral` | color | #374043 | #f8f8f8 | `cool-grey.900` | 4 / 0 | absente |  |
-| `--border-default` | color | #d8dedf | #49585b | `cool-grey.200` | 19 / 46 | absente |  |
-| `--border-invisible` | color | #ffffff | #252a2c | `white.100` | 0 / 0 | absente |  |
-| `--border-inverted` | color | #ffffff | #252a2c | `white.100` | 1 / 0 | absente |  |
+| `--border-subtle` | color | #eaedee | #3f4a4d | `cool-grey.100` | 7 / 22 | ok | Séparateur discret : filet de liste, diviseur, bord de page, accordéon. Plus léger que border.default. |
+| `--border-focused` | color | #429aef | #66b8f4 | `comete.blue.500` | 18 / 10 | ok | Anneau de focus clavier : FocusRing et tout contrôle focalisable. AA composant. Jamais décoratif, jamais remp… |
+| `--border-bold` | color | #b5c1c4 | #49585b | `cool-grey.300` | 5 / 2 | ok | Bordure appuyée : bouton outlined, diviseur fort, onglet, champ en relief. Décorative : ne porte pas seule un… |
+| `--border-selected` | color | #429aef | #66b8f4 | `comete.blue.500` | 9 / 2 | ok | Bordure de l'élément sélectionné : onglet actif, option de menu, indicateur de dépôt. Bleu Comète fixe. Ne pa… |
+| `--border-selected-inverted` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | ok | Bordure de sélection sur fond bold ou sombre. |
+| `--border-focus-inverted` | color | #dceefd | #224986 | `comete.blue.100` | 0 / 0 | ok | Anneau de focus sur fond bold ou sombre. |
+| `--border-neutral` | color | #374043 | #f8f8f8 | `cool-grey.900` | 4 / 0 | ok | Bordure gris foncé, proche de l'encre, pour un bloc contrasté (Bleed outlined). Sur fond clair uniquement. |
+| `--border-default` | color | #d8dedf | #49585b | `cool-grey.200` | 19 / 46 | ok | Bordure courante des conteneurs et contrôles : champ, carte, menu, tableau, onglet, tag. Décorative : ne port… |
+| `--border-invisible` | color | #ffffff | #252a2c | `white.100` | 0 / 0 | ok | Bordure de la couleur de la surface, pour réserver l'épaisseur sans la montrer. Blanc en clair, encre en somb… |
+| `--border-inverted` | color | #ffffff | #252a2c | `white.100` | 1 / 0 | ok | Bordure blanche sur fond bold ou sombre (carte bold). Suit le thème, comme text.inverted. |
 | `--border-on-dark-surface` | color | #ffffff | = | `white.100` | 0 / 3 | ok | Bordure blanche fixe sur une surface sombre fixe (surface.comete). Pendant de text.on-dark-surface. Suit le t… |
-| `--icon-default` | color | #32415a | #eaedf4 | `blue-grey.800` | 2 / 0 | absente |  |
+| `--icon-default` | color | #32415a | #eaedf4 | `blue-grey.800` | 2 / 0 | ok | Icône principale, aux côtés de text.default. AA texte. Teinte blue-grey, légèrement distincte de l'encre. |
 | `--icon-disabled` | color | #09090b66 | #ffffff66 | `black.40` | 9 / 2 | dépréciée | DEPRECATED : utiliser <composant>/opacity/disabled (opacité). Supprimé après migration des derniers composant… |
-| `--icon-inverted` | color | #f7f8f8 | #374043 | `cool-grey.50` | 4 / 0 | absente |  |
-| `--icon-selected` | color | #2c7ee4 | #97d2f9 | `comete.blue.600` | 2 / 0 | absente |  |
-| `--icon-subtlest` | color | #6f8488 | = | `cool-grey.500` | 11 / 0 | absente |  |
-| `--icon-subtle` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 13 / 0 | absente |  |
+| `--icon-inverted` | color | #f7f8f8 | #374043 | `cool-grey.50` | 4 / 0 | ok | Icône sur fond bold ou sombre, aux côtés de text.inverted. Suit le thème. |
+| `--icon-selected` | color | #2c7ee4 | #97d2f9 | `comete.blue.600` | 2 / 0 | ok | Icône de l'élément sélectionné, aux côtés de text.selected. Bleu Comète fixe. |
+| `--icon-subtlest` | color | #6f8488 | = | `cool-grey.500` | 11 / 0 | ok | Icône tertiaire : décorative ou placeholder de champ. Sous AA en sombre : ne porte pas seule une information. |
+| `--icon-subtle` | color | #596b70 | #8d9fa3 | `cool-grey.600` | 13 / 0 | ok | Icône secondaire : chevron, icône de champ, curseur d'action, barre de défilement. AA composant dans les deux… |
 | `--icon-on-light-surface` | color | #252a2c | = | `cool-grey.950` | 3 / 0 | ok | Icône foncée fixe sur les surfaces claires fixes (fond warning bold, orange), identique en clair et en sombre… |
 | `--icon-on-dark-surface` | color | #ffffff | = | `white.100` | 3 / 0 | ok | Icône blanche fixe sur une surface sombre fixe (surface.comete, critical.bold), dans les deux thèmes. Pendant… |
-| `--icon-bold` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 1 / 0 | absente |  |
-| `--blanket-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 4 / 0 | ok | Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, … |
+| `--icon-bold` | color | #252a2c | #f7f8f8 | `cool-grey.950` | 1 / 0 | ok | Icône la plus appuyée, qui suit le thème (encre en clair, claire en sombre) : glyphe du pouce du Switch warni… |
+| `--blanket-default` | color | #050c1f7d | #9bb4ca80 | `grey.alpha.500A` | 4 / 0 | ok | Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois. … |
 
 ## Lot B — sémantique de statut : success, warning, critical, information
 
@@ -127,9 +127,9 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-success-bold-default` | color | #00784d | #2fd88e | `green.700` | 8 / 2 | absente |  |
 | `--background-success-bold-hovered` | color | #036240 | #6aebae | `green.800` | 2 / 0 | absente |  |
 | `--background-success-bold-pressed` | color | #245041 | #a4f6ca | `green.900` | 2 / 0 | absente |  |
-| `--background-success-boldest-default` | color | #0e2d24 | #a4f6ca | `green.950` | 0 / 0 | ok | Fond succès le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, success.… |
-| `--background-success-boldest-hovered` | color | #245041 | #d0fbe2 | `green.900` | 0 / 0 | ok | État survolé de background.success.boldest.default (cartes bold interactives). |
-| `--background-success-boldest-pressed` | color | #036240 | #ebfef4 | `green.800` | 0 / 0 | ok | État pressé de background.success.boldest.default (cartes bold interactives). |
+| `--background-success-boldest-default` | color | #0e2d24 | #a4f6ca | `green.950` | 0 / 0 | ok | Fond succès le plus contrasté. |
+| `--background-success-boldest-hovered` | color | #245041 | #d0fbe2 | `green.900` | 0 / 0 | ok | État survolé de background.success.boldest.default. |
+| `--background-success-boldest-pressed` | color | #036240 | #ebfef4 | `green.800` | 0 / 0 | ok | État pressé de background.success.boldest.default. |
 | `--background-warning-subtlest-default` | color | #fff6d4 | #441f06 | `orange.100` | 7 / 3 | absente |  |
 | `--background-warning-subtlest-hovered` | color | #ffe8a9 | #7e4210 | `orange.200` | 3 / 0 | absente |  |
 | `--background-warning-subtlest-pressed` | color | #ffd672 | #9c4f10 | `orange.300` | 3 / 0 | absente |  |
@@ -140,8 +140,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-warning-bold-hovered` | color | #fca013 | #ffd672 | `orange.500` | 2 / 0 | absente |  |
 | `--background-warning-bold-pressed` | color | #f68909 | #ffe8a9 | `orange.600` | 2 / 0 | absente |  |
 | `--background-warning-boldest-default` | color | #441f06 | #ffe8a9 | `orange.950` | 0 / 0 | ok | Fond avertissement le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, w… |
-| `--background-warning-boldest-hovered` | color | #7e4210 | #fff6d4 | `orange.900` | 0 / 0 | ok | État survolé de background.warning.boldest.default (cartes bold interactives). |
-| `--background-warning-boldest-pressed` | color | #9c4f10 | #fffbed | `orange.800` | 0 / 0 | ok | État pressé de background.warning.boldest.default (cartes bold interactives). |
+| `--background-warning-boldest-hovered` | color | #7e4210 | #fff6d4 | `orange.900` | 0 / 0 | ok | État survolé de background.warning.boldest.default. |
+| `--background-warning-boldest-pressed` | color | #9c4f10 | #fffbed | `orange.800` | 0 / 0 | ok | État pressé de background.warning.boldest.default. |
 | `--background-critical-subtlest-default` | color | #ffe1e1 | #821a1a | `red.100` | 7 / 0 | absente |  |
 | `--background-critical-subtlest-hovered` | color | #ffc8c8 | #9d1717 | `red.200` | 5 / 0 | absente |  |
 | `--background-critical-subtlest-pressed` | color | #ffa2a2 | #be1717 | `red.300` | 5 / 0 | absente |  |
@@ -152,8 +152,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-critical-bold-hovered` | color | #be1717 | #f44040 | `red.700` | 4 / 0 | absente |  |
 | `--background-critical-bold-pressed` | color | #9d1717 | #fc6d6d | `red.800` | 4 / 0 | absente |  |
 | `--background-critical-boldest-default` | color | #2e1717 | #ffc8c8 | `red.950` | 0 / 0 | ok | Fond critique le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, critic… |
-| `--background-critical-boldest-hovered` | color | #821a1a | #ffe1e1 | `red.900` | 0 / 0 | ok | État survolé de background.critical.boldest.default (cartes bold interactives). |
-| `--background-critical-boldest-pressed` | color | #9d1717 | #fef2f2 | `red.800` | 0 / 0 | ok | État pressé de background.critical.boldest.default (cartes bold interactives). |
+| `--background-critical-boldest-hovered` | color | #821a1a | #ffe1e1 | `red.900` | 0 / 0 | ok | État survolé de background.critical.boldest.default. |
+| `--background-critical-boldest-pressed` | color | #9d1717 | #fef2f2 | `red.800` | 0 / 0 | ok | État pressé de background.critical.boldest.default. |
 | `--background-information-subtlest-default` | color | #ddf1ff | #034477 | `blue.100` | 6 / 1 | absente |  |
 | `--background-information-subtlest-hovered` | color | #b4e3ff | #005391 | `blue.200` | 5 / 0 | absente |  |
 | `--background-information-subtlest-pressed` | color | #71cdff | #0060b0 | `blue.300` | 5 / 0 | absente |  |
@@ -164,8 +164,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-information-bold-hovered` | color | #0060b0 | #26b5ff | `blue.700` | 4 / 0 | absente |  |
 | `--background-information-bold-pressed` | color | #005391 | #71cdff | `blue.800` | 4 / 0 | absente |  |
 | `--background-information-boldest-default` | color | #023059 | #b4e3ff | `blue.950` | 0 / 0 | ok | Fond information le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, inf… |
-| `--background-information-boldest-hovered` | color | #034477 | #ddf1ff | `blue.900` | 0 / 0 | ok | État survolé de background.information.boldest.default (cartes bold interactives). |
-| `--background-information-boldest-pressed` | color | #005391 | #eff8ff | `blue.800` | 0 / 0 | ok | État pressé de background.information.boldest.default (cartes bold interactives). |
+| `--background-information-boldest-hovered` | color | #034477 | #ddf1ff | `blue.900` | 0 / 0 | ok | État survolé de background.information.boldest.default. |
+| `--background-information-boldest-pressed` | color | #005391 | #eff8ff | `blue.800` | 0 / 0 | ok | État pressé de background.information.boldest.default. |
 | `--text-success-default` | color | #036240 | #6aebae | `green.800` | 5 / 5 | absente |  |
 | `--text-success-hovered` | color | #245041 | #a4f6ca | `green.900` | 0 / 0 | absente |  |
 | `--text-success-pressed` | color | #0e2d24 | #d0fbe2 | `green.950` | 0 / 0 | absente |  |
@@ -197,30 +197,30 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 
 | Token | Type | Clair | Sombre | Alias | Usages src / stories | Diagnostic | Description actuelle |
 |---|---|---|---|---|---:|---|---|
-| `--background-brand-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 3 / 5 | absente |  |
-| `--background-brand-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 1 / 0 | absente |  |
-| `--background-brand-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 1 / 0 | absente |  |
-| `--background-brand-subtle-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
-| `--background-brand-subtle-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | absente |  |
-| `--background-brand-subtle-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | absente |  |
-| `--background-brand-bold-default` | color | #2467d1 | #429aef | `comete.blue.700` | 0 / 4 | absente |  |
-| `--background-brand-bold-hovered` | color | #2354aa | #66b8f4 | `comete.blue.800` | 0 / 0 | absente |  |
-| `--background-brand-bold-pressed` | color | #224986 | #97d2f9 | `comete.blue.900` | 0 / 0 | absente |  |
-| `--background-brand-boldest-default` | color | #1e3661 | #c1e3fc | `comete.blue.950` | 1 / 0 | ok | Miroir de background.comete.boldest.default pour la charte du client (BrandProvider). Suit le thème. Jamais u… |
+| `--background-brand-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 3 / 5 | ok | Miroir de background.comete.subtlest.default pour tester la charte du client (BrandProvider). |
+| `--background-brand-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 1 / 0 | ok | État survolé de background.brand.subtlest.default. |
+| `--background-brand-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 1 / 0 | ok | État pressé de background.brand.subtlest.default. |
+| `--background-brand-subtle-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | ok | Miroir de background.comete.subtle.default pour tester la charte du client (BrandProvider). |
+| `--background-brand-subtle-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | ok | État survolé de background.brand.subtle.default. |
+| `--background-brand-subtle-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | ok | État pressé de background.brand.subtle.default. |
+| `--background-brand-bold-default` | color | #2467d1 | #429aef | `comete.blue.700` | 0 / 4 | ok | Miroir de background.comete.bold.default pour tester la charte du client (BrandProvider). |
+| `--background-brand-bold-hovered` | color | #2354aa | #66b8f4 | `comete.blue.800` | 0 / 0 | ok | État survolé de background.brand.bold.default. |
+| `--background-brand-bold-pressed` | color | #224986 | #97d2f9 | `comete.blue.900` | 0 / 0 | ok | État pressé de background.brand.bold.default. |
+| `--background-brand-boldest-default` | color | #1e3661 | #c1e3fc | `comete.blue.950` | 1 / 0 | ok | Miroir de background.comete.boldest.default pour tester la charte du client (BrandProvider). |
 | `--background-brand-boldest-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 1 / 0 | ok | État survolé de background.brand.boldest.default. |
 | `--background-brand-boldest-pressed` | color | #2354aa | #f0f8fe | `comete.blue.800` | 1 / 0 | ok | État pressé de background.brand.boldest.default. |
-| `--background-comete-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 7 / 1 | absente |  |
-| `--background-comete-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 5 / 1 | absente |  |
-| `--background-comete-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 3 / 0 | absente |  |
-| `--background-comete-subtle-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | absente |  |
-| `--background-comete-subtle-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | absente |  |
-| `--background-comete-subtle-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | absente |  |
-| `--background-comete-bold-default` | color | #2467d1 | #429aef | `comete.blue.700` | 9 / 0 | absente |  |
-| `--background-comete-bold-hovered` | color | #2354aa | #66b8f4 | `comete.blue.800` | 2 / 0 | absente |  |
-| `--background-comete-bold-pressed` | color | #224986 | #97d2f9 | `comete.blue.900` | 1 / 0 | absente |  |
+| `--background-comete-subtlest-default` | color | #dceefd | #1e3661 | `comete.blue.100` | 7 / 1 | ok | Fond Comète le moins contrasté |
+| `--background-comete-subtlest-hovered` | color | #c1e3fc | #224986 | `comete.blue.200` | 5 / 1 | ok | État survolé de background.comete.subtlest.default. |
+| `--background-comete-subtlest-pressed` | color | #97d2f9 | #2354aa | `comete.blue.300` | 3 / 0 | ok | État pressé de background.comete.subtlest.default. |
+| `--background-comete-subtle-default` | color | #c1e3fc | #2354aa | `comete.blue.200` | 0 / 0 | trop courte | Fond Comète léger |
+| `--background-comete-subtle-hovered` | color | #97d2f9 | #2467d1 | `comete.blue.300` | 0 / 0 | ok | État survolé de background.comete.subtle.default. |
+| `--background-comete-subtle-pressed` | color | #66b8f4 | #2c7ee4 | `comete.blue.400` | 0 / 0 | ok | État pressé de background.comete.subtle.default. |
+| `--background-comete-bold-default` | color | #2467d1 | #429aef | `comete.blue.700` | 9 / 0 | trop courte | Fond Comète moyen |
+| `--background-comete-bold-hovered` | color | #2354aa | #66b8f4 | `comete.blue.800` | 2 / 0 | ok | État survolé de background.comete.bold.default. |
+| `--background-comete-bold-pressed` | color | #224986 | #97d2f9 | `comete.blue.900` | 1 / 0 | ok | État pressé de background.comete.bold.default. |
 | `--background-comete-boldest-default` | color | #1e3661 | #c1e3fc | `comete.blue.950` | 1 / 0 | ok | Fond Comète le plus contrasté, qui suit le thème (navy en clair, bleu clair en sombre) : carte bold comete. N… |
-| `--background-comete-boldest-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 1 / 0 | ok | État survolé de background.comete.boldest.default (cartes bold interactives). |
-| `--background-comete-boldest-pressed` | color | #2354aa | #f0f8fe | `comete.blue.800` | 1 / 0 | ok | État pressé de background.comete.boldest.default (cartes bold interactives). |
+| `--background-comete-boldest-hovered` | color | #224986 | #dceefd | `comete.blue.900` | 1 / 0 | ok | État survolé de background.comete.boldest.default. |
+| `--background-comete-boldest-pressed` | color | #2354aa | #f0f8fe | `comete.blue.800` | 1 / 0 | ok | État pressé de background.comete.boldest.default. |
 | `--background-accent-purple-subtlest-default` | color | #e6e8f9 | #453d72 | `purple.100` | 6 / 0 | absente |  |
 | `--background-accent-purple-subtlest-hovered` | color | #d1d4f4 | #51458e | `purple.200` | 3 / 0 | absente |  |
 | `--background-accent-purple-subtlest-pressed` | color | #b5b8ec | #5e4db2 | `purple.300` | 3 / 0 | absente |  |
@@ -231,8 +231,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-purple-bold-hovered` | color | #5e4db2 | #b5b8ec | `purple.700` | 2 / 0 | absente |  |
 | `--background-accent-purple-bold-pressed` | color | #453d72 | #d1d4f4 | `purple.900` | 2 / 0 | absente |  |
 | `--background-accent-purple-boldest-default` | color | #292442 | #d1d4f4 | `purple.950` | 0 / 0 | ok | Fond accent purple le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, a… |
-| `--background-accent-purple-boldest-hovered` | color | #453d72 | #e6e8f9 | `purple.900` | 0 / 0 | ok | État survolé de background.accent.purple.boldest.default (cartes bold interactives). |
-| `--background-accent-purple-boldest-pressed` | color | #51458e | #f3f0ff | `purple.800` | 0 / 0 | ok | État pressé de background.accent.purple.boldest.default (cartes bold interactives). |
+| `--background-accent-purple-boldest-hovered` | color | #453d72 | #e6e8f9 | `purple.900` | 0 / 0 | ok | État survolé de background.accent.purple.boldest.default. |
+| `--background-accent-purple-boldest-pressed` | color | #51458e | #f3f0ff | `purple.800` | 0 / 0 | ok | État pressé de background.accent.purple.boldest.default. |
 | `--background-accent-teal-subtlest-default` | color | #d5f1f8 | #1f435a | `teal.100` | 6 / 0 | absente |  |
 | `--background-accent-teal-subtlest-hovered` | color | #afe3f2 | #215069 | `teal.200` | 3 / 0 | absente |  |
 | `--background-accent-teal-subtlest-pressed` | color | #79cee7 | #1e6080 | `teal.300` | 3 / 0 | absente |  |
@@ -243,8 +243,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-teal-bold-hovered` | color | #1e6080 | #79cee7 | `teal.700` | 2 / 0 | absente |  |
 | `--background-accent-teal-bold-pressed` | color | #215069 | #afe3f2 | `teal.800` | 2 / 0 | absente |  |
 | `--background-accent-teal-boldest-default` | color | #0f2b3d | #afe3f2 | `teal.950` | 0 / 0 | ok | Fond accent teal le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, acc… |
-| `--background-accent-teal-boldest-hovered` | color | #1f435a | #d5f1f8 | `teal.900` | 0 / 0 | ok | État survolé de background.accent.teal.boldest.default (cartes bold interactives). |
-| `--background-accent-teal-boldest-pressed` | color | #215069 | #eefafd | `teal.800` | 0 / 0 | ok | État pressé de background.accent.teal.boldest.default (cartes bold interactives). |
+| `--background-accent-teal-boldest-hovered` | color | #1f435a | #d5f1f8 | `teal.900` | 0 / 0 | ok | État survolé de background.accent.teal.boldest.default. |
+| `--background-accent-teal-boldest-pressed` | color | #215069 | #eefafd | `teal.800` | 0 / 0 | ok | État pressé de background.accent.teal.boldest.default. |
 | `--background-accent-turquoise-subtlest-default` | color | #c0fffc | #045d5d | `turquoise.100` | 6 / 0 | absente |  |
 | `--background-accent-turquoise-subtlest-hovered` | color | #81fffb | #007271 | `turquoise.200` | 3 / 0 | absente |  |
 | `--background-accent-turquoise-subtlest-pressed` | color | #3afff9 | #00918d | `turquoise.300` | 3 / 0 | absente |  |
@@ -255,8 +255,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-turquoise-bold-hovered` | color | #00918d | #3afff9 | `turquoise.700` | 2 / 0 | absente |  |
 | `--background-accent-turquoise-bold-pressed` | color | #007271 | #81fffb | `turquoise.800` | 2 / 0 | absente |  |
 | `--background-accent-turquoise-boldest-default` | color | #00373a | #81fffb | `turquoise.950` | 0 / 0 | ok | Fond accent turquoise le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle… |
-| `--background-accent-turquoise-boldest-hovered` | color | #045d5d | #c0fffc | `turquoise.900` | 0 / 0 | ok | État survolé de background.accent.turquoise.boldest.default (cartes bold interactives). |
-| `--background-accent-turquoise-boldest-pressed` | color | #007271 | #edfffd | `turquoise.800` | 0 / 0 | ok | État pressé de background.accent.turquoise.boldest.default (cartes bold interactives). |
+| `--background-accent-turquoise-boldest-hovered` | color | #045d5d | #c0fffc | `turquoise.900` | 0 / 0 | ok | État survolé de background.accent.turquoise.boldest.default. |
+| `--background-accent-turquoise-boldest-pressed` | color | #007271 | #edfffd | `turquoise.800` | 0 / 0 | ok | État pressé de background.accent.turquoise.boldest.default. |
 | `--background-accent-magenta-subtlest-default` | color | #f9eaf5 | #762550 | `magenta.100` | 6 / 0 | absente |  |
 | `--background-accent-magenta-subtlest-hovered` | color | #f6d4eb | #8d275d | `magenta.200` | 3 / 0 | absente |  |
 | `--background-accent-magenta-subtlest-pressed` | color | #efb2da | #aa2c6f | `magenta.300` | 3 / 0 | absente |  |
@@ -267,8 +267,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-magenta-bold-hovered` | color | #aa2c6f | #efb2da | `magenta.700` | 2 / 0 | absente |  |
 | `--background-accent-magenta-bold-pressed` | color | #8d275d | #f6d4eb | `magenta.800` | 2 / 0 | absente |  |
 | `--background-accent-magenta-boldest-default` | color | #47102d | #f6d4eb | `magenta.950` | 0 / 0 | ok | Fond accent magenta le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, … |
-| `--background-accent-magenta-boldest-hovered` | color | #762550 | #f9eaf5 | `magenta.900` | 0 / 0 | ok | État survolé de background.accent.magenta.boldest.default (cartes bold interactives). |
-| `--background-accent-magenta-boldest-pressed` | color | #8d275d | #fcf3f9 | `magenta.800` | 0 / 0 | ok | État pressé de background.accent.magenta.boldest.default (cartes bold interactives). |
+| `--background-accent-magenta-boldest-hovered` | color | #762550 | #f9eaf5 | `magenta.900` | 0 / 0 | ok | État survolé de background.accent.magenta.boldest.default. |
+| `--background-accent-magenta-boldest-pressed` | color | #8d275d | #fcf3f9 | `magenta.800` | 0 / 0 | ok | État pressé de background.accent.magenta.boldest.default. |
 | `--background-accent-blue-grey-subtlest-default` | color | #eaedf4 | #2c374b | `blue-grey.100` | 6 / 0 | absente |  |
 | `--background-accent-blue-grey-subtlest-hovered` | color | #d1d9e6 | #32415a | `blue-grey.200` | 3 / 0 | absente |  |
 | `--background-accent-blue-grey-subtlest-pressed` | color | #a8b9d1 | #384b6c | `blue-grey.300` | 3 / 0 | absente |  |
@@ -279,8 +279,8 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--background-accent-blue-grey-bold-hovered` | color | #384b6c | #a8b9d1 | `blue-grey.700` | 2 / 0 | absente |  |
 | `--background-accent-blue-grey-bold-pressed` | color | #32415a | #d1d9e6 | `blue-grey.800` | 2 / 0 | absente |  |
 | `--background-accent-blue-grey-boldest-default` | color | #1e2533 | #d1d9e6 | `blue-grey.950` | 0 / 0 | ok | Fond accent blue-grey le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle… |
-| `--background-accent-blue-grey-boldest-hovered` | color | #2c374b | #eaedf4 | `blue-grey.900` | 0 / 0 | ok | État survolé de background.accent.blue-grey.boldest.default (cartes bold interactives). |
-| `--background-accent-blue-grey-boldest-pressed` | color | #32415a | #f5f7fa | `blue-grey.800` | 0 / 0 | ok | État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives). |
+| `--background-accent-blue-grey-boldest-hovered` | color | #2c374b | #eaedf4 | `blue-grey.900` | 0 / 0 | ok | État survolé de background.accent.blue-grey.boldest.default. |
+| `--background-accent-blue-grey-boldest-pressed` | color | #32415a | #f5f7fa | `blue-grey.800` | 0 / 0 | ok | État pressé de background.accent.blue-grey.boldest.default. |
 | `--background-cycle-night-subtle-default` | color | #eff8ff | #023059 | `blue.50` | 0 / 0 | absente |  |
 | `--background-cycle-night-subtle-hovered` | color | #ddf1ff | #034477 | `blue.100` | 0 / 0 | absente |  |
 | `--background-cycle-night-subtle-pressed` | color | #b4e3ff | #005391 | `blue.200` | 0 / 0 | absente |  |
@@ -348,7 +348,7 @@ Diagnostic : **absente**, **tautologique** (répète la valeur), **trop courte**
 | `--icon-accent-blue-grey` | color | #58759f | #a8b9d1 | `blue-grey.500` | 0 / 0 | absente |  |
 | `--icon-day` | color | #f68909 | #feb939 | `orange.600` | 0 / 0 | absente |  |
 | `--icon-night` | color | #0076d8 | #26b5ff | `blue.600` | 0 / 0 | absente |  |
-| `--logo-comete-default` | color | #1e3661 | #ffffff | `comete.blue.950` | 0 / 0 | ok | Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas uti… |
+| `--logo-comete-default` | color | #1e3661 | #ffffff | `comete.blue.950` | 0 / 0 | ok | Couleur principale du logo Comète : navy en clair, blanc en sombre, alignée sur Figma. Pas pour du texte ni d… |
 | `--logo-comete-gradient-dark` | color | #f8bf01 | = | `comete.yellow.500` | 0 / 0 | absente |  |
 | `--logo-comete-gradient-light` | color | #fff146 | = | `comete.yellow.300` | 0 / 0 | absente |  |
 | `--logo-comete-neutral` | color | #224986 | #dceefd | `comete.blue.900` | 0 / 0 | absente |  |

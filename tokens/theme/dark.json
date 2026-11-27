@@ -4,60 +4,69 @@
       "subtlest": {
         "default": {
           "$type": "color",
-          "$value": "{cool-grey.600}"
+          "$value": "{cool-grey.600}",
+          "$description": "Fond gris le plus léger : avatar, icon tile neutre."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{cool-grey.500}"
+          "$value": "{cool-grey.500}",
+          "$description": "État survolé d'un élément posé sur background.neutral.subtlest."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{cool-grey.400}"
+          "$value": "{cool-grey.400}",
+          "$description": "État pressé d'un élément posé sur background.neutral.subtlest."
         }
       },
       "subtle": {
         "default": {
           "$type": "color",
-          "$value": "{cool-grey.800}"
+          "$value": "{cool-grey.800}",
+          "$description": "Fond des contrôles neutres à l'état de repos : bouton contained neutral, tag, badge, switch inactif. Texte en text.default ou text.subtle sur ce background."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{cool-grey.700}"
+          "$value": "{cool-grey.700}",
+          "$description": "État survolé de background.neutral.subtle.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{cool-grey.600}"
+          "$value": "{cool-grey.600}",
+          "$description": "État pressé de background.neutral.subtle.default."
         }
       },
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{cool-grey.500}"
+          "$value": "{cool-grey.500}",
+          "$description": "Fond gris foncé plein pour les éléments d'interface neutres importants : badge, tag bold. Texte en text.inverted, icône en icon.inverted."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{cool-grey.400}"
+          "$value": "{cool-grey.400}",
+          "$description": "État survolé de background.neutral.bold.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{cool-grey.300}"
+          "$value": "{cool-grey.300}",
+          "$description": "État pressé de background.neutral.bold.default."
         }
       },
       "boldest": {
         "default": {
           "$type": "color",
           "$value": "{cool-grey.200}",
-          "$description": "Fond neutre le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, neutral.bold. Texte en text.inverted."
+          "$description": "Fond neutre le plus contrasté."
         },
         "hovered": {
           "$type": "color",
           "$value": "{cool-grey.100}",
-          "$description": "État survolé de background.neutral.boldest.default (cartes bold interactives)."
+          "$description": "État survolé de background.neutral.boldest.default."
         },
         "pressed": {
           "$type": "color",
           "$value": "{cool-grey.50}",
-          "$description": "État pressé de background.neutral.boldest.default (cartes bold interactives)."
+          "$description": "État pressé de background.neutral.boldest.default."
         }
       }
     },
@@ -71,19 +80,19 @@
         "hovered": {
           "$type": "color",
           "$value": "{grey.alpha.200A}",
-          "$description": "Fond de survol d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted)."
+          "$description": "État survolé d'un contrôle sans fond posé sur surface.inverted."
         },
         "pressed": {
           "$type": "color",
           "$value": "{grey.alpha.300A}",
-          "$description": "Fond d'appui d'un contrôle sans fond posé sur surface.inverted (Button outlined et subtle inverted)."
+          "$description": "État pressé d'un contrôle sans fond posé sur surface.inverted."
         }
       },
       "subtle": {
         "default": {
           "$type": "color",
           "$value": "{grey.alpha.200A}",
-          "$description": "Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted). Translucide pour rester juste sur tout fond inversé."
+          "$description": "Fond translucide d'un contrôle posé sur surface.inverted (Button contained inverted), juste sur tout fond inversé."
         },
         "hovered": {
           "$type": "color",
@@ -109,50 +118,59 @@
       "subtlest": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.950}"
+          "$value": "{comete.blue.950}",
+          "$description": "Miroir de background.comete.subtlest.default pour tester la charte du client (BrandProvider)."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.900}"
+          "$value": "{comete.blue.900}",
+          "$description": "État survolé de background.brand.subtlest.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.800}"
+          "$value": "{comete.blue.800}",
+          "$description": "État pressé de background.brand.subtlest.default."
         }
       },
       "subtle": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.800}"
+          "$value": "{comete.blue.800}",
+          "$description": "Miroir de background.comete.subtle.default pour tester la charte du client (BrandProvider)."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.700}"
+          "$value": "{comete.blue.700}",
+          "$description": "État survolé de background.brand.subtle.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.600}"
+          "$value": "{comete.blue.600}",
+          "$description": "État pressé de background.brand.subtle.default."
         }
       },
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.500}"
+          "$value": "{comete.blue.500}",
+          "$description": "Miroir de background.comete.bold.default pour tester la charte du client (BrandProvider)."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.400}"
+          "$value": "{comete.blue.400}",
+          "$description": "État survolé de background.brand.bold.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.300}"
+          "$value": "{comete.blue.300}",
+          "$description": "État pressé de background.brand.bold.default."
         }
       },
       "boldest": {
         "default": {
           "$type": "color",
           "$value": "{comete.blue.200}",
-          "$description": "Miroir de background.comete.boldest.default pour la charte du client (BrandProvider). Suit le thème. Jamais un contrôle. Texte en text.inverted."
+          "$description": "Miroir de background.comete.boldest.default pour tester la charte du client (BrandProvider)."
         },
         "hovered": {
           "$type": "color",
@@ -170,43 +188,52 @@
       "subtlest": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.950}"
+          "$value": "{comete.blue.950}",
+          "$description": "Fond Comète le moins contrasté"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.900}"
+          "$value": "{comete.blue.900}",
+          "$description": "État survolé de background.comete.subtlest.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.800}"
+          "$value": "{comete.blue.800}",
+          "$description": "État pressé de background.comete.subtlest.default."
         }
       },
       "subtle": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.800}"
+          "$value": "{comete.blue.800}",
+          "$description": "Fond Comète léger"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.700}"
+          "$value": "{comete.blue.700}",
+          "$description": "État survolé de background.comete.subtle.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.600}"
+          "$value": "{comete.blue.600}",
+          "$description": "État pressé de background.comete.subtle.default."
         }
       },
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.500}"
+          "$value": "{comete.blue.500}",
+          "$description": "Fond Comète moyen"
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.400}"
+          "$value": "{comete.blue.400}",
+          "$description": "État survolé de background.comete.bold.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.300}"
+          "$value": "{comete.blue.300}",
+          "$description": "État pressé de background.comete.bold.default."
         }
       },
       "boldest": {
@@ -218,12 +245,12 @@
         "hovered": {
           "$type": "color",
           "$value": "{comete.blue.100}",
-          "$description": "État survolé de background.comete.boldest.default (cartes bold interactives)."
+          "$description": "État survolé de background.comete.boldest.default."
         },
         "pressed": {
           "$type": "color",
           "$value": "{comete.blue.50}",
-          "$description": "État pressé de background.comete.boldest.default (cartes bold interactives)."
+          "$description": "État pressé de background.comete.boldest.default."
         }
       }
     },
@@ -231,29 +258,35 @@
       "subtle": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.950}"
+          "$value": "{comete.blue.950}",
+          "$description": "Fond de l'élément sélectionné dans une liste, un menu, une navigation ou un tableau. Texte en text.selected, icône en icon.selected."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.900}"
+          "$value": "{comete.blue.900}",
+          "$description": "État survolé d'un élément sélectionné (background.selected.subtle)."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.800}"
+          "$value": "{comete.blue.800}",
+          "$description": "État pressé d'un élément sélectionné (background.selected.subtle)."
         }
       },
       "bold": {
         "default": {
           "$type": "color",
-          "$value": "{comete.blue.200}"
+          "$value": "{comete.blue.200}",
+          "$description": "Fond plein de sélection : toggle button actif, switch."
         },
         "hovered": {
           "$type": "color",
-          "$value": "{comete.blue.100}"
+          "$value": "{comete.blue.100}",
+          "$description": "État survolé de background.selected.bold.default."
         },
         "pressed": {
           "$type": "color",
-          "$value": "{comete.blue.50}"
+          "$value": "{comete.blue.50}",
+          "$description": "État pressé de background.selected.bold.default."
         }
       }
     },
@@ -261,7 +294,7 @@
       "default": {
         "$type": "color",
         "$value": "{cool-grey.950}",
-        "$description": "Remplissage des champs et contrôles posés sur une surface : champ de saisie, case à cocher non cochée, pouce du Switch, badge, barre de navigation basse. Blanc en clair, encre (cool-grey 950) en sombre, plus sombre que surface.default. Pour la page et les conteneurs, utiliser surface.default."
+        "$description": "Remplissage des champs et contrôles posés sur une surface : champ, case non cochée, pouce du Switch."
       }
     },
     "success": {
@@ -311,17 +344,17 @@
         "default": {
           "$type": "color",
           "$value": "{green.200}",
-          "$description": "Fond succès le plus contrasté (950 en clair, 200 en sombre) : carte bold, bandeau. Pour un contrôle, success.bold. Texte en text.inverted."
+          "$description": "Fond succès le plus contrasté."
         },
         "hovered": {
           "$type": "color",
           "$value": "{green.100}",
-          "$description": "État survolé de background.success.boldest.default (cartes bold interactives)."
+          "$description": "État survolé de background.success.boldest.default."
         },
         "pressed": {
           "$type": "color",
           "$value": "{green.50}",
-          "$description": "État pressé de background.success.boldest.default (cartes bold interactives)."
+          "$description": "État pressé de background.success.boldest.default."
         }
       }
     },
@@ -377,12 +410,12 @@
         "hovered": {
           "$type": "color",
           "$value": "{orange.100}",
-          "$description": "État survolé de background.warning.boldest.default (cartes bold interactives)."
+          "$description": "État survolé de background.warning.boldest.default."
         },
         "pressed": {
           "$type": "color",
           "$value": "{orange.50}",
-          "$description": "État pressé de background.warning.boldest.default (cartes bold interactives)."
+          "$description": "État pressé de background.warning.boldest.default."
         }
       }
     },
@@ -438,12 +471,12 @@
         "hovered": {
           "$type": "color",
           "$value": "{red.100}",
-          "$description": "État survolé de background.critical.boldest.default (cartes bold interactives)."
+          "$description": "État survolé de background.critical.boldest.default."
         },
         "pressed": {
           "$type": "color",
           "$value": "{red.50}",
-          "$description": "État pressé de background.critical.boldest.default (cartes bold interactives)."
+          "$description": "État pressé de background.critical.boldest.default."
         }
       }
     },
@@ -499,12 +532,12 @@
         "hovered": {
           "$type": "color",
           "$value": "{blue.100}",
-          "$description": "État survolé de background.information.boldest.default (cartes bold interactives)."
+          "$description": "État survolé de background.information.boldest.default."
         },
         "pressed": {
           "$type": "color",
           "$value": "{blue.50}",
-          "$description": "État pressé de background.information.boldest.default (cartes bold interactives)."
+          "$description": "État pressé de background.information.boldest.default."
         }
       }
     },
@@ -561,12 +594,12 @@
           "hovered": {
             "$type": "color",
             "$value": "{purple.100}",
-            "$description": "État survolé de background.accent.purple.boldest.default (cartes bold interactives)."
+            "$description": "État survolé de background.accent.purple.boldest.default."
           },
           "pressed": {
             "$type": "color",
             "$value": "{purple.50}",
-            "$description": "État pressé de background.accent.purple.boldest.default (cartes bold interactives)."
+            "$description": "État pressé de background.accent.purple.boldest.default."
           }
         }
       },
@@ -622,12 +655,12 @@
           "hovered": {
             "$type": "color",
             "$value": "{teal.100}",
-            "$description": "État survolé de background.accent.teal.boldest.default (cartes bold interactives)."
+            "$description": "État survolé de background.accent.teal.boldest.default."
           },
           "pressed": {
             "$type": "color",
             "$value": "{teal.50}",
-            "$description": "État pressé de background.accent.teal.boldest.default (cartes bold interactives)."
+            "$description": "État pressé de background.accent.teal.boldest.default."
           }
         }
       },
@@ -683,12 +716,12 @@
           "hovered": {
             "$type": "color",
             "$value": "{turquoise.100}",
-            "$description": "État survolé de background.accent.turquoise.boldest.default (cartes bold interactives)."
+            "$description": "État survolé de background.accent.turquoise.boldest.default."
           },
           "pressed": {
             "$type": "color",
             "$value": "{turquoise.50}",
-            "$description": "État pressé de background.accent.turquoise.boldest.default (cartes bold interactives)."
+            "$description": "État pressé de background.accent.turquoise.boldest.default."
           }
         }
       },
@@ -744,12 +777,12 @@
           "hovered": {
             "$type": "color",
             "$value": "{magenta.100}",
-            "$description": "État survolé de background.accent.magenta.boldest.default (cartes bold interactives)."
+            "$description": "État survolé de background.accent.magenta.boldest.default."
           },
           "pressed": {
             "$type": "color",
             "$value": "{magenta.50}",
-            "$description": "État pressé de background.accent.magenta.boldest.default (cartes bold interactives)."
+            "$description": "État pressé de background.accent.magenta.boldest.default."
           }
         }
       },
@@ -805,12 +838,12 @@
           "hovered": {
             "$type": "color",
             "$value": "{blue-grey.100}",
-            "$description": "État survolé de background.accent.blue-grey.boldest.default (cartes bold interactives)."
+            "$description": "État survolé de background.accent.blue-grey.boldest.default."
           },
           "pressed": {
             "$type": "color",
             "$value": "{blue-grey.50}",
-            "$description": "État pressé de background.accent.blue-grey.boldest.default (cartes bold interactives)."
+            "$description": "État pressé de background.accent.blue-grey.boldest.default."
           }
         }
       }
@@ -880,94 +913,110 @@
     "focused": {
       "default": {
         "$type": "color",
-        "$value": "{comete.blue.400}"
+        "$value": "{comete.blue.400}",
+        "$description": "Indicateur de focus clavier quand il ne peut pas être une bordure : cellule de tableau, puce radio, action rapide. Même bleu que border.focused."
       }
     }
   },
   "surface": {
     "default": {
       "$type": "color",
-      "$value": "{cool-grey.900}"
+      "$value": "{cool-grey.900}",
+      "$description": "Surface de base : page, panneau, tableau, liste, menu, anneau de découpe (Badge). Porte une profondeur, pas un sens : pour un sens, background.*."
     },
     "sunken": {
       "default": {
         "$type": "color",
-        "$value": "{cool-grey.950}"
+        "$value": "{cool-grey.950}",
+        "$description": "Surface en creux sous la base : fond de page derrière des cartes, zone de dépôt, champ de saisie au repos."
       },
       "hovered": {
         "$type": "color",
-        "$value": "{cool-grey.900}"
+        "$value": "{cool-grey.900}",
+        "$description": "État survolé d'une surface en creux (champ au repos survolé)."
       },
       "pressed": {
         "$type": "color",
-        "$value": "{cool-grey.800}"
+        "$value": "{cool-grey.800}",
+        "$description": "État pressé d'une surface en creux."
       }
     },
     "raise": {
       "default": {
         "$type": "color",
-        "$value": "{cool-grey.700}"
+        "$value": "{cool-grey.700}",
+        "$description": "Surface surélevée au-dessus de la base : popover, sélecteurs de date et d'heure. S'accompagne d'une ombre elevation.*."
       }
     },
     "overlay": {
       "default": {
         "$type": "color",
-        "$value": "{cool-grey.800}"
+        "$value": "{cool-grey.800}",
+        "$description": "Surface de la couche modale, posée sur blanket.default : boîte de dialogue, tiroir, spotlight. Niveau le plus haut, au-dessus de raise."
       },
       "critical": {
         "$type": "color",
-        "$value": "{red.950}"
+        "$value": "{red.950}",
+        "$description": "Teinte la plus claire de critical pour une surface modale ou un encart d'erreur. Texte en text.critical ou text.default."
       },
       "success": {
         "$type": "color",
-        "$value": "{green.950}"
+        "$value": "{green.950}",
+        "$description": "Teinte la plus claire de success pour une surface modale ou un encart de confirmation. Texte en text.success ou text.default."
       },
       "accent": {
         "purple": {
           "$type": "color",
-          "$value": "{purple.950}"
+          "$value": "{purple.950}",
+          "$description": "Teinte la plus claire de l'accent purple pour une surface ou un encart décoratif. Catégoriel, sans sens de statut."
         },
         "teal": {
           "$type": "color",
-          "$value": "{teal.950}"
+          "$value": "{teal.950}",
+          "$description": "Teinte la plus claire de l'accent teal pour une surface ou un encart décoratif. Catégoriel, sans sens de statut."
         },
         "turquoise": {
           "$type": "color",
-          "$value": "{turquoise.950}"
+          "$value": "{turquoise.950}",
+          "$description": "Teinte la plus claire de l'accent turquoise pour une surface ou un encart décoratif. Catégoriel, sans sens de statut."
         },
         "magenta": {
           "$type": "color",
-          "$value": "{magenta.950}"
+          "$value": "{magenta.950}",
+          "$description": "Teinte la plus claire de l'accent magenta pour une surface ou un encart décoratif. Catégoriel, sans sens de statut."
         },
         "blue-grey": {
           "$type": "color",
-          "$value": "{blue-grey.950}"
+          "$value": "{blue-grey.950}",
+          "$description": "Teinte la plus claire de l'accent blue-grey pour une surface ou un encart décoratif. Catégoriel, sans sens de statut."
         }
       },
       "information": {
         "$type": "color",
-        "$value": "{blue.950}"
+        "$value": "{blue.950}",
+        "$description": "Teinte la plus claire d'information pour une surface modale ou un encart informatif. Texte en text.information ou text.default."
       },
       "warning": {
         "$type": "color",
-        "$value": "{orange.950}"
+        "$value": "{orange.950}",
+        "$description": "Teinte la plus claire de warning pour une surface modale ou un encart d'avertissement. Texte en text.default (text.warning est sous AA en petit texte)."
       }
     },
     "mask": {
       "default": {
         "$type": "color",
         "$value": "{dark-grey.alpha.500A}",
-        "$description": "Voile local posé sur un élément, pas sur l'écran : chargement d'une table ou d'une liste, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, utiliser blanket.default."
+        "$description": "Voile local posé sur un élément : chargement d'une table, média en cours d'envoi, zone inactive. Pour la couche modale plein écran, blanket.default."
       },
       "hovered": {
         "$type": "color",
         "$value": "{dark-grey.alpha.400A}",
-        "$description": "Voile local au survol d'un média cliquable (MediaPicker, galerie, pièce jointe) : plus léger que default pour laisser lire l'image."
+        "$description": "Voile local au survol d'un média cliquable, plus léger que default."
       },
       "pressed": {
         "$type": "color",
         "$value": "{dark-grey.alpha.300A}",
-        "$description": "Voile local à la pression d'un média cliquable : encore plus léger que hovered, l'image se révèle sous le doigt."
+        "$description": "Voile local à l'appui d'un média cliquable, plus léger que hovered."
       }
     },
     "comete": {
@@ -978,27 +1027,31 @@
     "inverted": {
       "$type": "color",
       "$value": "{white.100}",
-      "$description": "Surface inversée par rapport au thème (encre en clair, blanc en sombre) pour un bloc qui s'oppose à la page : démonstration d'un logo inversé, encart contrasté. Texte en text.inverted. Pas une surface navy (surface.comete) ni un fond de statut."
+      "$description": "Surface inversée par rapport au thème (encre en clair, blanc en sombre) : logo inversé, encart contrasté. Texte en text.inverted. Navy fixe : surface.comete."
     }
   },
   "text": {
     "default": {
       "default": {
         "$type": "color",
-        "$value": "{cool-grey.50}"
+        "$value": "{cool-grey.50}",
+        "$description": "Texte principal : corps, titres, libellés, valeurs. AA texte sur toute surface claire. Sur fond bold, text.inverted."
       },
       "hovered": {
         "$type": "color",
-        "$value": "{cool-grey.100}"
+        "$value": "{cool-grey.100}",
+        "$description": "Texte principal survolé (lien discret, texte cliquable sans fond)."
       },
       "pressed": {
         "$type": "color",
-        "$value": "{cool-grey.200}"
+        "$value": "{cool-grey.200}",
+        "$description": "Texte principal pressé (lien discret, texte cliquable sans fond)."
       }
     },
     "selected": {
       "$type": "color",
-      "$value": "{comete.blue.200}"
+      "$value": "{comete.blue.200}",
+      "$description": "Texte de l'élément sélectionné : liste, menu, navigation, badge. Bleu Comète fixe. AA composant seulement : libellés de 14 px medium et plus."
     },
     "disabled": {
       "$type": "color",
@@ -1029,22 +1082,25 @@
     "subtlest": {
       "default": {
         "$type": "color",
-        "$value": "{cool-grey.500}"
+        "$value": "{cool-grey.500}",
+        "$description": "Texte tertiaire : placeholder, mention, compteur, jour hors mois. Sous AA en petit texte : réservé au texte de 24 px et plus ou non essentiel."
       },
       "hovered": {
         "$type": "color",
-        "$value": "{cool-grey.400}"
+        "$value": "{cool-grey.400}",
+        "$description": "Texte tertiaire survolé (bouton subtlest, lien discret)."
       },
       "pressed": {
         "$type": "color",
-        "$value": "{cool-grey.300}"
+        "$value": "{cool-grey.300}",
+        "$description": "Texte tertiaire pressé (bouton subtlest, lien discret)."
       }
     },
     "inverted": {
       "default": {
         "$type": "color",
         "$value": "{cool-grey.950}",
-        "$description": "Texte sur surface.inverted et sur les fonds qui s'inversent avec le thème (blanc en clair, encre en sombre)."
+        "$description": "Texte sur surface.inverted et sur fond bold : bandeau, tag bold, bouton plein, snackbar. Suit le thème : sur une surface navy fixe, text.on-dark-surface."
       },
       "hovered": {
         "$type": "color",
@@ -1059,7 +1115,8 @@
     },
     "subtle-inverted": {
       "$type": "color",
-      "$value": "{cool-grey.700}"
+      "$value": "{cool-grey.700}",
+      "$description": "Texte secondaire sur fond bold, aux côtés de text.inverted. Suit le thème : sur une surface navy fixe, text.on-dark-surface."
     },
     "success": {
       "default": {
@@ -1120,15 +1177,18 @@
     "subtle": {
       "default": {
         "$type": "color",
-        "$value": "{cool-grey.300}"
+        "$value": "{cool-grey.300}",
+        "$description": "Texte secondaire : description, aide de champ, métadonnée, en-tête de colonne, fil d'Ariane. AA texte. Pas pour l'information essentielle."
       },
       "hovered": {
         "$type": "color",
-        "$value": "{cool-grey.200}"
+        "$value": "{cool-grey.200}",
+        "$description": "Texte secondaire survolé (lien discret, bouton subtle)."
       },
       "pressed": {
         "$type": "color",
-        "$value": "{cool-grey.100}"
+        "$value": "{cool-grey.100}",
+        "$description": "Texte secondaire pressé (lien discret, bouton subtle)."
       }
     },
     "accent": {
@@ -1244,7 +1304,7 @@
     "on-light-surface": {
       "$type": "color",
       "$value": "{cool-grey.950}",
-      "$description": "Texte foncé fixe sur les surfaces claires fixes, identiques en clair et en sombre (fond warning bold, orange) : ne suit pas le thème. Pas sur les fonds bold qui suivent le thème (text.inverted)."
+      "$description": "Texte foncé fixe sur une surface claire fixe (warning bold, orange), dans les deux thèmes. Fond bold qui suit le thème : text.inverted."
     },
     "on-dark-surface": {
       "$type": "color",
@@ -1261,15 +1321,18 @@
     },
     "subtle": {
       "$type": "color",
-      "$value": "{cool-grey.800}"
+      "$value": "{cool-grey.800}",
+      "$description": "Séparateur discret : filet de liste, diviseur, bord de page, accordéon. Plus léger que border.default."
     },
     "focused": {
       "$type": "color",
-      "$value": "{comete.blue.400}"
+      "$value": "{comete.blue.400}",
+      "$description": "Anneau de focus clavier : FocusRing et tout contrôle focalisable. AA composant. Jamais décoratif, jamais remplacé par une couleur de statut."
     },
     "bold": {
       "$type": "color",
-      "$value": "{cool-grey.700}"
+      "$value": "{cool-grey.700}",
+      "$description": "Bordure appuyée : bouton outlined, diviseur fort, onglet, champ en relief. Décorative : ne porte pas seule une information."
     },
     "success": {
       "subtle": {
@@ -1313,7 +1376,8 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{comete.blue.400}"
+      "$value": "{comete.blue.400}",
+      "$description": "Bordure de l'élément sélectionné : onglet actif, option de menu, indicateur de dépôt. Bleu Comète fixe. Ne pas cumuler avec border.focused sur un même bord."
     },
     "accent": {
       "purple": {
@@ -1369,27 +1433,33 @@
     },
     "selected-inverted": {
       "$type": "color",
-      "$value": "{comete.blue.800}"
+      "$value": "{comete.blue.800}",
+      "$description": "Bordure de sélection sur fond bold ou sombre."
     },
     "focus-inverted": {
       "$type": "color",
-      "$value": "{comete.blue.900}"
+      "$value": "{comete.blue.900}",
+      "$description": "Anneau de focus sur fond bold ou sombre."
     },
     "neutral": {
       "$type": "color",
-      "$value": "{grey.solid.100}"
+      "$value": "{grey.solid.100}",
+      "$description": "Bordure gris foncé, proche de l'encre, pour un bloc contrasté (Bleed outlined). Sur fond clair uniquement."
     },
     "default": {
       "$type": "color",
-      "$value": "{cool-grey.700}"
+      "$value": "{cool-grey.700}",
+      "$description": "Bordure courante des conteneurs et contrôles : champ, carte, menu, tableau, onglet, tag. Décorative : ne porte pas seule une information."
     },
     "invisible": {
       "$type": "color",
-      "$value": "{cool-grey.950}"
+      "$value": "{cool-grey.950}",
+      "$description": "Bordure de la couleur de la surface, pour réserver l'épaisseur sans la montrer. Blanc en clair, encre en sombre, pas transparent."
     },
     "inverted": {
       "$type": "color",
-      "$value": "{cool-grey.950}"
+      "$value": "{cool-grey.950}",
+      "$description": "Bordure blanche sur fond bold ou sombre (carte bold). Suit le thème, comme text.inverted."
     },
     "on-dark-surface": {
       "$type": "color",
@@ -1450,7 +1520,8 @@
   "icon": {
     "default": {
       "$type": "color",
-      "$value": "{blue-grey.100}"
+      "$value": "{blue-grey.100}",
+      "$description": "Icône principale, aux côtés de text.default. AA texte. Teinte blue-grey, légèrement distincte de l'encre."
     },
     "disabled": {
       "$type": "color",
@@ -1460,7 +1531,8 @@
     },
     "inverted": {
       "$type": "color",
-      "$value": "{cool-grey.900}"
+      "$value": "{cool-grey.900}",
+      "$description": "Icône sur fond bold ou sombre, aux côtés de text.inverted. Suit le thème."
     },
     "warning": {
       "$type": "color",
@@ -1500,7 +1572,8 @@
     },
     "selected": {
       "$type": "color",
-      "$value": "{comete.blue.300}"
+      "$value": "{comete.blue.300}",
+      "$description": "Icône de l'élément sélectionné, aux côtés de text.selected. Bleu Comète fixe."
     },
     "information": {
       "$type": "color",
@@ -1508,11 +1581,13 @@
     },
     "subtlest": {
       "$type": "color",
-      "$value": "{cool-grey.500}"
+      "$value": "{cool-grey.500}",
+      "$description": "Icône tertiaire : décorative ou placeholder de champ. Sous AA en sombre : ne porte pas seule une information."
     },
     "subtle": {
       "$type": "color",
-      "$value": "{cool-grey.400}"
+      "$value": "{cool-grey.400}",
+      "$description": "Icône secondaire : chevron, icône de champ, curseur d'action, barre de défilement. AA composant dans les deux thèmes."
     },
     "accent": {
       "purple": {
@@ -1556,7 +1631,8 @@
     },
     "bold": {
       "$type": "color",
-      "$value": "{cool-grey.50}"
+      "$value": "{cool-grey.50}",
+      "$description": "Icône la plus appuyée, qui suit le thème (encre en clair, claire en sombre) : glyphe du pouce du Switch warning ou critical au repos."
     }
   },
   "logo": {
@@ -1564,7 +1640,7 @@
       "default": {
         "$type": "color",
         "$value": "{white.100}",
-        "$description": "Couleur principale du logo Comète : navy en thème clair, blanc en thème sombre (aligné sur Figma). Ne pas utiliser pour du texte ou des fonds (background.surface.comete, text.comete.boldest)."
+        "$description": "Couleur principale du logo Comète : navy en clair, blanc en sombre, alignée sur Figma. Pas pour du texte ni des fonds (surface.comete, text.comete.boldest)."
       },
       "gradient-dark": {
         "$type": "color",
@@ -1596,7 +1672,7 @@
     "default": {
       "$type": "color",
       "$value": "{dark-grey.alpha.500A}",
-      "$description": "Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois, couvre et bloque la page. Pour un voile local posé sur un élément, utiliser background.surface.mask."
+      "$description": "Voile plein écran sous une couche modale (Drawer, ModalDialog, QuickActions, Spotlight) : un seul à la fois. Pour un voile local sur un élément, surface.mask."
     }
   }
 }

@@ -19,13 +19,18 @@
 - ~~Texte sur `bold` en sombre, Button contained, Figma à aligner~~ : FAIT en 0.51.0, sauf neutral (voir ci-dessus).
 - ~~DS à adapter au bump 0.45.0~~ : FAIT en DS alpha.203 (session Button). Reste pour 0.51.0 : `generateBrandTheme.ts`, brand bold sombre 500/400/300.
 
+## Descriptions des tokens : faits sortis des descriptions (2026-11-25)
+
+- **Tokens de thème sans consommateur dans le DS** (à confirmer ou supprimer) : `surface.sunken.pressed`, `surface.overlay.{critical,success,information,warning}`, `surface.overlay.accent.*` (surfaces à arbitrer vs background, voir la philosophie globale consolidée), `text.subtle-inverted`, `border.selected-inverted`, `border.focus-inverted` (FocusRing n'a pas de variante inversée), `border.invisible`.
+- **Ratios de contraste** : retirés des descriptions (classes AA à la place). À publier dans `docs/inventaire-tokens.md` via `pnpm inventory` si on veut les garder visibles.
+
 ## Suites de `icon.on-comete` et des voiles (2026-11-20)
 
 - ~~**`icon.on-warning` : dérive Figma ↔ repo**~~ : FAIT en 0.33.0, `icon.on-light-surface` (ex `icon.on-warning`) vaut cool-grey.950 partout.
 - ~~**comete-icons** : `IconColor` n'a pas de valeur `on-comete`~~ : FAIT, `on-dark-surface` en comete-icons 0.13.0.
 - ~~**Cadre « Dark background » de la page Spinner (Figma)**~~ : FAIT, relié à `surface/default` en mode sombre (Axel), `DEPRECATED-background/alpha/default` supprimée.
 - ~~**background vs surface**~~ : FAIT, doctrine dans le README et DECISIONS (0.34.0).
-- **Lot A** : les descriptions de `blanket`, `surface.mask.*` sont désormais sur main ; retirer du lot A celles des tokens supprimés (`interaction.*`, `alpha.default`, `surface.critical`) et reprendre les chemins `surface.*` (0.34.0).
+- ~~**Lot A**~~ : FAIT dans la PR #9 (rebasée sur 0.42.0, chemins `surface.*`, tokens supprimés retirés). Les descriptions de `blanket`, `surface.mask.*` sont désormais sur main ; retirer du lot A celles des tokens supprimés (`interaction.*`, `alpha.default`, `surface.critical`) et reprendre les chemins `surface.*` (0.34.0).
 - **`surface.comete`** : une surface qui porte la marque (navy) est à la frontière de la doctrine (une surface ne porte pas de sens). Tolérée parce que non interactive et sans état ; si un second cas apparaît (surface critical, surface brand), préférer un `background.*.boldest` et ne pas étendre `surface`.
 - ~~**`background.default.*`** : nom trompeur depuis la doctrine~~ : FAIT en 0.36.0, `background.field.default` et `surface.inverted`.
 - **Badge** (DS) : l'anneau de découpe (`box-shadow`) et la bordure d'AvatarGroup gardent `--surface-default` parce qu'ils imitent la surface sous l'élément. Documenter dans la description de `surface.default`.

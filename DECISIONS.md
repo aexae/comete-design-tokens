@@ -2,6 +2,13 @@
 
 > Journal des décisions (date, décision, contexte / raison).
 
+## 2026-11-25 — Règles de rédaction des descriptions de tokens (PR #9, lot A)
+
+- **Décision** (Axel, sur comparaison avec les 472 descriptions d'Atlaskit) : une description dit l'usage, le texte ou l'icône à poser dessus et le token à préférer dans les cas voisins. Plafond de **160 caractères** pour un token par défaut, **70** pour un état (`hovered`, `pressed`), forme « État survolé de <token>. »
+- **Hors description** : les faits d'inventaire (« sans consommateur dans le DS »), les notes de bug et les ratios de contraste chiffrés, qui périment à chaque changement de valeur. Le contraste est exprimé par sa classe : « AA texte » (4,5:1 et plus), « AA composant » (3:1 et plus), « sous AA », « décorative ».
+- **Raison** : nos descriptions étaient deux fois plus longues que celles d'Atlaskit (médiane 112 caractères contre 54) pour un contenu plus juste. Les faits d'inventaire et les chiffres vivent dans `docs/inventaire-tokens.md` et `TODO.md`.
+- **Outil** : `pnpm inventory && pnpm descriptions:apply <lot.json>` (`scripts/set-descriptions.ts`), lot = `{ "--nom-css": "description" }`, appliqué dans `light.json` et `dark.json`.
+
 ## 2026-11-27 — `accent.turquoise.subtle` en clair calé sur Figma (0.51.1)
 
 - **Décision** (Axel) : turquoise corrigé dans Figma, `background.accent.turquoise.subtle` en clair passe de 100/200/300 à 200/300/400. Il ne duplique plus `accent.turquoise.subtlest` (100/200/300). Le sombre ne change pas.
